@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_cache">
+      <scope ilk="namespace" line="1" lineend="187" name="RI">
+        <scope classrefs="Object" ilk="class" line="3" lineend="125" name="ClassEntry">
+          <scope ilk="function" line="5" lineend="5" name="name" />
+          <scope ilk="function" line="6" lineend="6" name="path_names" />
+          <scope attributes="__ctor__" ilk="function" line="8" lineend="15" name="initialize" signature="initialize(path_name, name, in_class)" />
+          <scope doc="We found this class in more tha one place, so add in the&#xA;name from there." ilk="function" line="19" lineend="21" name="add_path" signature="add_path(path)" />
+          <scope doc="read in our methods and any classes and modules in our&#xA;namespace." ilk="function" line="30" lineend="58" name="load_from" signature="load_from(dir)" />
+          <scope doc="Return a list of any classes or modules that we contain that&#xA;match a given string" ilk="function" line="63" lineend="65" name="contained_modules_matching" signature="contained_modules_matching(name)" />
+          <scope ilk="function" line="67" lineend="69" name="classes_and_modules" signature="classes_and_modules" />
+          <scope doc="Return an exact match to a particular name" ilk="function" line="72" lineend="74" name="contained_class_named" signature="contained_class_named(name)" />
+          <scope doc="return the list of local methods matching name We&apos;re split&#xA;into two because we need distinct behavior when called from&#xA;the _toplevel_" ilk="function" line="79" lineend="81" name="methods_matching" signature="methods_matching(name, is_class_method)" />
+          <scope doc="Find methods matching &apos;name&apos; in ourselves and in any classes&#xA;we contain" ilk="function" line="85" lineend="91" name="recursively_find_methods_matching" signature="recursively_find_methods_matching(name, is_class_method)" />
+          <scope doc="Return our full name" ilk="function" line="95" lineend="99" name="full_name" signature="full_name" />
+          <scope doc="Return a list of all out method names" ilk="function" line="102" lineend="106" name="all_method_names" signature="all_method_names" />
+          <scope doc="Return a list of all our methods matching a given string." ilk="function" line="114" lineend="124" name="local_methods_matching" signature="local_methods_matching(name, is_class_method)" />
+        </scope>
+        <scope classrefs="ClassEntry" doc="A TopLevelEntry is like a class entry, but when asked to&#xA;search for methods searches all classes, not just itself" ilk="class" line="130" lineend="143" name="TopLevelEntry">
+          <scope ilk="function" line="131" lineend="133" name="methods_matching" signature="methods_matching(name, is_class_method)" />
+          <scope ilk="function" line="135" lineend="137" name="full_name" signature="full_name" />
+          <scope ilk="function" line="139" lineend="141" name="module_named" signature="module_named(name)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="145" lineend="167" name="MethodEntry">
+          <scope ilk="function" line="146" lineend="146" name="name" />
+          <scope ilk="function" line="147" lineend="147" name="path_name" />
+          <scope attributes="__ctor__" ilk="function" line="149" lineend="154" name="initialize" signature="initialize(path_name, name, is_class_method, in_class)" />
+          <scope ilk="function" line="156" lineend="166" name="full_name" signature="full_name" />
+        </scope>
+        <scope classrefs="Object" doc="We represent everything know about all &apos;ri&apos; files accessible&#xA;to this program" ilk="class" line="172" lineend="186" name="RiCache">
+          <scope ilk="function" line="174" lineend="174" name="toplevel" />
+          <scope attributes="__ctor__" ilk="function" line="176" lineend="184" name="initialize" signature="initialize(dirs)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,36 @@
+<scope ilk="blob" lang="Ruby" name="soap/mapping/wsdlencodedregistry">
+      <import line="9" module="xsd/qname" symbol="*" />
+      <import line="10" module="xsd/namedelements" symbol="*" />
+      <import line="11" module="soap/baseData" symbol="*" />
+      <import line="12" module="soap/mapping/mapping" symbol="*" />
+      <import line="13" module="soap/mapping/typeMap" symbol="*" />
+      <scope doc="SOAP4R - WSDL encoded mapping registry." ilk="namespace" line="16" name="SOAP" />
+      <scope ilk="namespace" line="17" name="Mapping" />
+      <scope classrefs="Registry" ilk="class" line="20" lineend="276" name="WSDLEncodedRegistry">
+        <scope ilk="function" line="23" lineend="23" name="definedelements" />
+        <scope ilk="function" line="24" lineend="24" name="definedtypes" />
+        <scope ilk="function" line="25" lineend="25" name="excn_handler_obj2soap" />
+        <scope ilk="function" line="25" lineend="25" name="excn_handler_obj2soap=" />
+        <scope ilk="function" line="26" lineend="26" name="excn_handler_soap2obj" />
+        <scope ilk="function" line="26" lineend="26" name="excn_handler_soap2obj=" />
+        <scope attributes="__ctor__" ilk="function" line="28" lineend="39" name="initialize" signature="initialize(definedtypes = XSD::NamedElements::Empty)" />
+        <scope ilk="function" line="41" lineend="60" name="obj2soap" signature="obj2soap(obj, qname = nil)" />
+        <scope doc="map anything for now: must refer WSDL while mapping." ilk="function" line="63" lineend="77" name="soap2obj" signature="soap2obj(node, obj_class = nil)" />
+        <scope ilk="function" line="81" lineend="93" name="any2soap" signature="any2soap(obj, qname)" />
+        <scope ilk="function" line="95" lineend="114" name="soap2soap" signature="soap2soap(obj, type_qname)" />
+        <scope ilk="function" line="116" lineend="122" name="obj2typesoap" signature="obj2typesoap(obj, type)" />
+        <scope ilk="function" line="124" lineend="129" name="simpleobj2soap" signature="simpleobj2soap(obj, type)" />
+        <scope ilk="function" line="131" lineend="147" name="complexobj2soap" signature="complexobj2soap(obj, type)" />
+        <scope ilk="function" line="149" lineend="160" name="base2soap" signature="base2soap(obj, type)" />
+        <scope ilk="function" line="162" lineend="170" name="struct2soap" signature="struct2soap(obj, type_qname, type)" />
+        <scope ilk="function" line="172" lineend="183" name="array2soap" signature="array2soap(obj, type_qname, type)" />
+        <scope ilk="function" line="187" lineend="203" name="map2soap" signature="map2soap(obj, type_qname, type)" />
+        <scope ilk="function" line="205" lineend="212" name="elements2soap" signature="elements2soap(obj, soap_obj, elements)" />
+        <scope ilk="function" line="214" lineend="224" name="any2obj" signature="any2obj(node, obj_class)" />
+        <scope ilk="function" line="226" lineend="232" name="soap2stubobj" signature="soap2stubobj(node, obj_class)" />
+        <scope ilk="function" line="234" lineend="269" name="add_elements2stubobj" signature="add_elements2stubobj(node, obj)" />
+        <scope doc="it caches @@schema_element." ilk="function" line="273" lineend="275" name="schema_element_definition" signature="schema_element_definition(klass)" />
+        <import symbol="TraverseSupport" />
+      </scope>
+    </scope>
+    

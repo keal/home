@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="webrick/accesslog">
+      <scope doc="accesslog.rb -- Access log handling utilities" ilk="namespace" line="10" lineend="67" name="WEBrick">
+        <scope ilk="namespace" line="11" lineend="66" name="AccessLog">
+          <scope classrefs="StandardError" ilk="class" line="12" lineend="12" name="AccessLogError" />
+          <scope doc="This format specification is a subset of mod_log_config of&#xA;Apache." ilk="function" line="25" lineend="47" name="setup_params" signature="setup_params(config, req, res)" />
+          <scope ilk="function" line="49" lineend="65" name="format" signature="format(format_string, params)" />
+        </scope>
+      </scope>
+    </scope>
+    

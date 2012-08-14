@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/operationBinding">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL bound operation definition." ilk="namespace" line="12" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="15" lineend="105" name="OperationBinding">
+        <scope ilk="function" line="16" lineend="16" name="name" />
+        <scope ilk="function" line="17" lineend="17" name="input" />
+        <scope ilk="function" line="18" lineend="18" name="output" />
+        <scope ilk="function" line="19" lineend="19" name="fault" />
+        <scope ilk="function" line="20" lineend="20" name="soapoperation" />
+        <scope attributes="__ctor__" doc="required" ilk="function" line="22" lineend="29" name="initialize" signature="initialize" />
+        <scope ilk="function" line="31" lineend="33" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="35" lineend="37" name="porttype" signature="porttype" />
+        <scope ilk="function" line="39" lineend="41" name="find_operation" signature="find_operation" />
+        <scope ilk="function" line="43" lineend="49" name="soapoperation_name" signature="soapoperation_name" />
+        <scope ilk="function" line="51" lineend="61" name="soapoperation_style" signature="soapoperation_style" />
+        <scope ilk="function" line="63" lineend="69" name="soapaction" signature="soapaction" />
+        <scope ilk="function" line="71" lineend="95" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="97" lineend="104" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

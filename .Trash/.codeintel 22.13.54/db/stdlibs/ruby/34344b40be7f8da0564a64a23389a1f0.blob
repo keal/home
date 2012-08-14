@@ -1,0 +1,87 @@
+<scope ilk="blob" lang="Ruby" name="soap/wsdlDriver">
+      <import line="9" module="wsdl/parser" symbol="*" />
+      <import line="10" module="wsdl/importer" symbol="*" />
+      <import line="11" module="xsd/qname" symbol="*" />
+      <import line="12" module="xsd/codegen/gensupport" symbol="*" />
+      <import line="13" module="soap/mapping/wsdlencodedregistry" symbol="*" />
+      <import line="14" module="soap/mapping/wsdlliteralregistry" symbol="*" />
+      <import line="15" module="soap/rpc/driver" symbol="*" />
+      <import line="16" module="wsdl/soap/methodDefCreator" symbol="*" />
+      <scope doc="SOAP4R - SOAP WSDL driver Copyright (C) 2002, 2003, 2005&#xA;NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="19" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="22" lineend="158" name="WSDLDriverFactory">
+        <scope classrefs="StandardError" ilk="class" line="23" lineend="23" name="FactoryError" />
+        <scope ilk="function" line="25" lineend="25" name="wsdl" />
+        <scope attributes="__ctor__" ilk="function" line="27" lineend="30" name="initialize" signature="initialize(wsdl)" />
+        <scope ilk="function" line="32" lineend="34" name="inspect" signature="inspect" />
+        <scope ilk="function" line="36" lineend="42" name="create_rpc_driver" signature="create_rpc_driver(servicename = nil, portname = nil)" />
+        <scope doc="depricated old interface" ilk="function" line="45" lineend="49" name="create_driver" signature="create_driver(servicename = nil, portname = nil)" />
+        <scope doc="Backward compatibility." ilk="function" line="56" lineend="82" name="find_port" signature="find_port(servicename = nil, portname = nil)" />
+        <scope ilk="function" line="84" lineend="93" name="init_driver" signature="init_driver(drv, port)" />
+        <scope ilk="function" line="95" lineend="121" name="add_operation" signature="add_operation(drv, port)" />
+        <scope ilk="function" line="123" lineend="125" name="import" signature="import(location)" />
+        <scope ilk="function" line="127" lineend="140" name="create_param_def" signature="create_param_def(op_bind)" />
+        <scope ilk="function" line="142" lineend="148" name="partqname" signature="partqname(part)" />
+        <scope ilk="function" line="150" lineend="152" name="param_def" signature="param_def(type, name, klass, partqname)" />
+        <scope ilk="function" line="154" lineend="157" name="filter_parts" signature="filter_parts(partsdef, partssource)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="161" lineend="572" name="WSDLDriver">
+        <scope classrefs="Object" ilk="class" line="162" lineend="193" name="self">
+          <scope ilk="function" line="164" lineend="175" name="__attr_proxy" signature="__attr_proxy(symbol, assignable = false)" />
+          <scope ilk="function" line="177" lineend="191" name="__attr_proxy" signature="__attr_proxy(symbol, assignable = false)" />
+        </scope>
+        <scope doc="for RPC marshal" ilk="function" line="206" lineend="208" name="httpproxy" signature="httpproxy" />
+        <scope ilk="function" line="210" lineend="212" name="httpproxy=" signature="httpproxy=(httpproxy)" />
+        <scope ilk="function" line="214" lineend="216" name="wiredump_dev" signature="wiredump_dev" />
+        <scope ilk="function" line="218" lineend="220" name="wiredump_dev=" signature="wiredump_dev=(wiredump_dev)" />
+        <scope ilk="function" line="222" lineend="224" name="mandatorycharset" signature="mandatorycharset" />
+        <scope ilk="function" line="226" lineend="228" name="mandatorycharset=" signature="mandatorycharset=(mandatorycharset)" />
+        <scope ilk="function" line="230" lineend="232" name="wiredump_file_base" signature="wiredump_file_base" />
+        <scope ilk="function" line="234" lineend="236" name="wiredump_file_base=" signature="wiredump_file_base=(wiredump_file_base)" />
+        <scope attributes="__ctor__" ilk="function" line="238" lineend="240" name="initialize" signature="initialize(wsdl, port, logdev)" />
+        <scope ilk="function" line="242" lineend="244" name="inspect" signature="inspect" />
+        <scope ilk="function" line="246" lineend="248" name="reset_stream" signature="reset_stream" />
+        <scope classrefs="Object" doc="Backward compatibility." ilk="class" line="253" lineend="571" name="Servant__">
+          <scope ilk="function" line="256" lineend="256" name="options" />
+          <scope ilk="function" line="257" lineend="257" name="port" />
+          <scope ilk="function" line="259" lineend="259" name="soapaction" />
+          <scope ilk="function" line="259" lineend="259" name="soapaction=" />
+          <scope ilk="function" line="260" lineend="260" name="default_encodingstyle" />
+          <scope ilk="function" line="260" lineend="260" name="default_encodingstyle=" />
+          <scope ilk="function" line="261" lineend="261" name="allow_unqualified_element" />
+          <scope ilk="function" line="261" lineend="261" name="allow_unqualified_element=" />
+          <scope ilk="function" line="262" lineend="262" name="generate_explicit_type" />
+          <scope ilk="function" line="262" lineend="262" name="generate_explicit_type=" />
+          <scope ilk="function" line="263" lineend="263" name="mapping_registry" />
+          <scope ilk="function" line="263" lineend="263" name="mapping_registry=" />
+          <scope ilk="function" line="264" lineend="264" name="wsdl_mapping_registry" />
+          <scope ilk="function" line="264" lineend="264" name="wsdl_mapping_registry=" />
+          <scope attributes="__ctor__" ilk="function" line="266" lineend="298" name="initialize" signature="initialize(host, wsdl, port, logdev)" />
+          <scope ilk="function" line="300" lineend="302" name="inspect" signature="inspect" />
+          <scope ilk="function" line="304" lineend="306" name="endpoint_url" signature="endpoint_url" />
+          <scope ilk="function" line="308" lineend="310" name="endpoint_url=" signature="endpoint_url=(endpoint_url)" />
+          <scope ilk="function" line="312" lineend="314" name="headerhandler" signature="headerhandler" />
+          <scope ilk="function" line="316" lineend="318" name="streamhandler" signature="streamhandler" />
+          <scope ilk="function" line="320" lineend="322" name="test_loopback_response" signature="test_loopback_response" />
+          <scope ilk="function" line="324" lineend="326" name="reset_stream" signature="reset_stream" />
+          <scope ilk="function" line="328" lineend="357" name="rpc_call" signature="rpc_call(name, *values)" />
+          <scope doc="req_header: [[element, mustunderstand,&#xA;encodingstyle(QName/String)], ...] req_body:&#xA;SOAPBasetype/SOAPCompoundtype" ilk="function" line="361" lineend="379" name="document_send" signature="document_send(name, header_obj, body_obj)" />
+          <scope ilk="function" line="383" lineend="390" name="create_options" signature="create_options(hash = nil)" />
+          <scope ilk="function" line="392" lineend="396" name="set_wiredump_file_base" signature="set_wiredump_file_base(name)" />
+          <scope ilk="function" line="398" lineend="409" name="create_request_header" signature="create_request_header" />
+          <scope ilk="function" line="411" lineend="413" name="receive_headers" signature="receive_headers(headers)" />
+          <scope ilk="function" line="415" lineend="418" name="create_request_body" signature="create_request_body(op_info, *values)" />
+          <scope ilk="function" line="420" lineend="436" name="create_method_struct" signature="create_method_struct(op_info, *params)" />
+          <scope ilk="function" line="438" lineend="446" name="create_method_obj" signature="create_method_obj(names, params)" />
+          <scope ilk="function" line="448" lineend="471" name="header_from_obj" signature="header_from_obj(obj, op_info)" />
+          <scope ilk="function" line="473" lineend="481" name="headeritem_from_obj" signature="headeritem_from_obj(obj, name)" />
+          <scope ilk="function" line="483" lineend="505" name="body_from_obj" signature="body_from_obj(obj, op_info)" />
+          <scope ilk="function" line="507" lineend="515" name="bodyitem_from_obj" signature="bodyitem_from_obj(obj, name)" />
+          <scope ilk="function" line="517" lineend="535" name="add_method_interface" signature="add_method_interface(op_info)" />
+          <scope ilk="function" line="537" lineend="546" name="add_rpc_method_interface" signature="add_rpc_method_interface(name, parts_names)" />
+          <scope ilk="function" line="548" lineend="553" name="add_document_method_interface" signature="add_document_method_interface(name, parts_names)" />
+          <scope ilk="function" line="555" lineend="570" name="setup_options" signature="setup_options" />
+          <import symbol="SOAP" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="xsd/codegen">
+      <import line="9" module="xsd/codegen/gensupport" symbol="*" />
+      <import line="10" module="xsd/codegen/moduledef" symbol="*" />
+      <import line="11" module="xsd/codegen/classdef" symbol="*" />
+      <import line="12" module="xsd/codegen/methoddef" symbol="*" />
+    </scope>
+    

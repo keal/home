@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="pathnametest">
+      <scope classrefs="Test::Unit::TestCase" ilk="class" name="PathnameTest">
+        <scope classrefs="Object" ilk="class" name="AnotherStringLike" />
+      </scope>
+    </scope>
+    

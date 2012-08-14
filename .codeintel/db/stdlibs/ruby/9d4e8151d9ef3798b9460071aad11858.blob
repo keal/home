@@ -1,0 +1,29 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/test/TestParse">
+      <import line="1" module="test/unit" symbol="*" />
+      <import line="5" module="rdoc/markup/simple_markup" symbol="*" />
+      <scope classrefs="Test::Unit::" ilk="class" line="9" lineend="503" name="TestParse">
+        <scope classrefs="Object" ilk="class" line="11" lineend="52" name="MockOutput">
+          <scope ilk="function" line="12" name="start_accepting" signature="start_accepting" />
+          <scope ilk="function" line="16" lineend="18" name="end_accepting" signature="end_accepting" />
+          <scope ilk="function" line="20" lineend="22" name="accept_paragraph" signature="accept_paragraph(am, fragment)" />
+          <scope ilk="function" line="24" lineend="26" name="accept_verbatim" signature="accept_verbatim(am, fragment)" />
+          <scope ilk="function" line="28" lineend="30" name="accept_list_start" signature="accept_list_start(am, fragment)" />
+          <scope ilk="function" line="32" lineend="34" name="accept_list_end" signature="accept_list_end(am, fragment)" />
+          <scope ilk="function" line="36" lineend="38" name="accept_list_item" signature="accept_list_item(am, fragment)" />
+          <scope ilk="function" line="40" lineend="42" name="accept_blank_line" signature="accept_blank_line(am, fragment)" />
+          <scope ilk="function" line="44" lineend="46" name="accept_heading" signature="accept_heading(am, fragment)" />
+          <scope ilk="function" line="48" lineend="50" name="accept_rule" signature="accept_rule(am, fragment)" />
+        </scope>
+        <scope ilk="function" line="54" lineend="59" name="basic_conv" signature="basic_conv(str)" />
+        <scope ilk="function" line="61" lineend="66" name="line_types" signature="line_types(str, expected)" />
+        <scope ilk="function" line="68" lineend="83" name="line_groups" signature="line_groups(str, expected)" />
+        <scope ilk="function" line="85" lineend="108" name="test_tabs" signature="test_tabs" />
+        <scope ilk="function" line="110" lineend="122" name="test_whitespace" signature="test_whitespace" />
+        <scope ilk="function" line="124" lineend="199" name="test_types" signature="test_types" />
+        <scope ilk="function" line="201" lineend="352" name="test_groups" signature="test_groups" />
+        <scope ilk="function" line="354" lineend="442" name="test_verbatim_merge" signature="test_verbatim_merge" />
+        <scope ilk="function" line="444" lineend="467" name="test_list_split" signature="test_list_split" />
+        <scope ilk="function" line="470" lineend="500" name="test_headings" signature="test_headings" />
+      </scope>
+    </scope>
+    

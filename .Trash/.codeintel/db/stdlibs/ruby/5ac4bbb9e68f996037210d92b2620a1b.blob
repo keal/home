@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="irb/xmp">
+      <import line="13" module="irb" symbol="*" />
+      <import line="14" module="irb/frame" symbol="*" />
+      <scope classrefs="Object" doc="xmp.rb - irb version of gotoken xmp $Release Version: 0.9$&#xA;$Revision: 1.3 $ $Date: 2002/07/09 11:17:16 $ by Keiju&#xA;ISHITSUKA(Nippon Rational Inc.)" ilk="class" line="16" lineend="79" name="XMP">
+        <scope attributes="__ctor__" ilk="function" line="19" lineend="34" name="initialize" signature="initialize(bind = nil)" />
+        <scope ilk="function" line="36" lineend="53" name="puts" signature="puts(exps)" />
+        <scope classrefs="IRB::InputMethod" ilk="class" line="55" lineend="78" name="StringInputMethod">
+          <scope attributes="__ctor__" ilk="function" line="56" lineend="59" name="initialize" signature="initialize" />
+          <scope ilk="function" line="61" lineend="63" name="eof?" signature="eof?" />
+          <scope ilk="function" line="65" lineend="73" name="gets" signature="gets" />
+          <scope ilk="function" line="75" lineend="77" name="puts" signature="puts(exps)" />
+        </scope>
+      </scope>
+      <scope ilk="function" line="81" lineend="86" name="xmp" signature="xmp(exps, bind = nil)" />
+    </scope>
+    

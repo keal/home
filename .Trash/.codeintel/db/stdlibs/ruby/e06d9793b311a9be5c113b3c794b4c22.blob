@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="process/gid">
+      <scope ilk="namespace" name="Process">
+      <scope doc="The Process::GID module contains a collection of module&#xA;functions which can be used to portably get, set, and switch&#xA;the current process&apos;s real, effective, and saved group IDs." ilk="namespace" name="GID">
+        <scope doc="Change the current process&apos;s real and effective group ID to&#xA;that specified by `integer&apos;. Returns the new group ID." ilk="function" name="change_privilege" signature="Process::GID.change_privilege(integer)   =&gt; fixnum" />
+        <scope doc="Returns the effective group ID for this process. Not&#xA;available on all platforms." ilk="function" name="eid" signature="Process.egid          =&gt; fixnum&#xA;Process::GID.eid      =&gt; fixnum&#xA;Process::Sys.geteid   =&gt; fixnum" />
+        <scope doc="Alias for #grant_privilege" ilk="function" name="eid=" signature="(p1)" />
+        <scope doc="Set the effective group ID, and if possible, the saved group&#xA;ID of the process to the given `integer&apos;. Returns the new&#xA;effective group ID." ilk="function" name="grant_privilege" signature="Process::GID.grant_privilege(integer)    =&gt; fixnum&#xA;Process::GID.eid = integer               =&gt; fixnum" />
+        <scope doc="Exchange real and effective group IDs and return the new&#xA;effective group ID. Not available on all platforms." ilk="function" name="re_exchange" signature="Process::GID.re_exchange   =&gt; fixnum" />
+        <scope doc="Returns true if the real and effective group IDs of a&#xA;process may be exchanged on the current platform." ilk="function" name="re_exchangeable?" signature="Process::GID.re_exchangeable?   =&gt; true or false" />
+        <scope doc="Returns the (real) group ID for this process." ilk="function" name="rid" signature="Process.gid           =&gt; fixnum&#xA;Process::GID.rid      =&gt; fixnum&#xA;Process::Sys.getgid   =&gt; fixnum" />
+        <scope doc="Returns true if the current platform has saved group ID&#xA;functionality." ilk="function" name="sid_available?" signature="Process::GID.sid_available?   =&gt; true or false" />
+        <scope doc="Switch the effective and real group IDs of the current&#xA;process. If a `block&apos; is given, the group IDs will be&#xA;switched back after the block is executed." ilk="function" name="switch" signature="Process::GID.switch              =&gt; fixnum&#xA;Process::GID.switch {|| block}   =&gt; object" />
+      </scope>
+     </scope>
+    </scope>
+    

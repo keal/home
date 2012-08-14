@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/error">
+      <import line="5" module="test/unit/util/backtracefilter" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="7" lineend="54" name="Test">
+        <scope ilk="namespace" line="8" lineend="53" name="Unit">
+          <scope classrefs="Object" doc="Encapsulates an error in a test." ilk="class" line="13" lineend="52" name="Error">
+            <scope ilk="function" line="16" lineend="16" name="test_name" />
+            <scope ilk="function" line="16" lineend="16" name="exception" />
+            <scope attributes="__ctor__" doc="Creates a new Error with the given test_name and exception." ilk="function" line="22" lineend="25" name="initialize" signature="initialize(test_name, exception)" />
+            <scope doc="Returns a single character representation of an error." ilk="function" line="28" lineend="30" name="single_character_display" signature="single_character_display" />
+            <scope doc="Returns the message associated with the error." ilk="function" line="33" lineend="35" name="message" signature="message" />
+            <scope doc="Returns a brief version of the error description." ilk="function" line="38" lineend="40" name="short_display" signature="short_display" />
+            <scope doc="Returns a verbose version of the error description." ilk="function" line="43" lineend="46" name="long_display" signature="long_display" />
+            <scope doc="Overridden to return long_display." ilk="function" line="49" lineend="51" name="to_s" signature="to_s" />
+            <import symbol="Util::BacktraceFilter" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

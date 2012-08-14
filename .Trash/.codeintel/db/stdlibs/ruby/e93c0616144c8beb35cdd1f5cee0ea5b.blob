@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="sortedset">
+      <scope classrefs="Set" doc="SortedSet implements a set which elements are sorted in&#xA;order. See Set." ilk="class" name="SortedSet" />
+    </scope>
+    

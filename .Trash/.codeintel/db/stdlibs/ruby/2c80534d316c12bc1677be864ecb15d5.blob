@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="win32ole_param">
+      <scope classrefs="Object" doc="WIN32OLE_PARAM objects represent param information of the&#xA;OLE method." ilk="class" name="WIN32OLE_PARAM">
+        <scope doc="Returns default value. If the default value does not exist,&#xA;this method returns nil." ilk="function" name="default" signature="WIN32OLE_PARAM#default" />
+        <scope doc="Returns true if the parameter is input." ilk="function" name="input?" signature="WIN32OLE_PARAM#input?" />
+        <scope doc="Returns name." ilk="function" name="name" signature="WIN32OLE_PARAM#name" />
+        <scope doc="Returns OLE type of WIN32OLE_PARAM object(parameter of OLE&#xA;method)." ilk="function" name="ole_type" signature="WIN32OLE_PARAM#ole_type" />
+        <scope doc="Returns detail information of type of argument." ilk="function" name="ole_type_detail" signature="WIN32OLE_PARAM#ole_type_detail" />
+        <scope doc="Returns true if argument is optional." ilk="function" name="optional?" signature="WIN32OLE_PARAM#optional?" />
+        <scope doc="Returns true if argument is output." ilk="function" name="output?" signature="WIN32OLE#output?" />
+        <scope doc="Returns true if argument is return value." ilk="function" name="retval?" signature="WIN32OLE_PARAM#retval?" />
+        <scope doc="Alias for #name" ilk="function" name="to_s" signature="()" />
+      </scope>
+    </scope>
+    

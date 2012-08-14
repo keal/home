@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parsers/streamparser">
+      <scope ilk="namespace" line="1" lineend="46" name="REXML">
+        <scope ilk="namespace" line="2" lineend="45" name="Parsers">
+          <scope classrefs="Object" ilk="class" line="3" lineend="44" name="StreamParser">
+            <scope attributes="__ctor__" ilk="function" line="4" lineend="7" name="initialize" signature="initialize" />
+            <scope ilk="function" line="9" lineend="11" name="add_listener" signature="add_listener( listener )" />
+            <scope ilk="function" line="13" lineend="43" name="parse" signature="parse" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

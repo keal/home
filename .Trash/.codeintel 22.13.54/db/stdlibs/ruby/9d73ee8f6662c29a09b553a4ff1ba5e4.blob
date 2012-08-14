@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="tk/itemconfig">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tkutil" symbol="*" />
+      <import line="6" module="tk/itemfont.rb" symbol="*" />
+      <scope doc="tk/itemconfig.rb : control item/tag configuration of widget" ilk="namespace" line="8" lineend="111" name="TkItemConfigOptkeys">
+        <scope ilk="function" line="11" lineend="13" name="__item_numval_optkeys" signature="__item_numval_optkeys(id)" />
+        <scope ilk="function" line="16" lineend="18" name="__item_numstrval_optkeys" signature="__item_numstrval_optkeys(id)" />
+        <scope ilk="function" line="21" lineend="23" name="__item_boolval_optkeys" signature="__item_boolval_optkeys(id)" />
+        <scope ilk="function" line="26" lineend="35" name="__item_strval_optkeys" signature="__item_strval_optkeys(id)" />
+        <scope ilk="function" line="38" lineend="40" name="__item_listval_optkeys" signature="__item_listval_optkeys(id)" />
+        <scope ilk="function" line="43" lineend="46" name="__item_numlistval_optkeys" signature="__item_numlistval_optkeys(id)" />
+        <scope ilk="function" line="49" lineend="51" name="__item_tkvariable_optkeys" signature="__item_tkvariable_optkeys(id)" />
+        <scope ilk="function" line="54" lineend="58" name="__item_val2ruby_optkeys" signature="__item_val2ruby_optkeys(id)" />
+        <scope ilk="function" line="61" lineend="66" name="__item_ruby2val_optkeys" signature="__item_ruby2val_optkeys(id)" />
+        <scope ilk="function" line="69" lineend="76" name="__item_methodcall_optkeys" signature="__item_methodcall_optkeys(id)" />
+        <scope ilk="function" line="81" lineend="84" name="__item_keyonly_optkeys" signature="__item_keyonly_optkeys(id)" />
+        <scope ilk="function" line="88" lineend="106" name="__conv_item_keyonly_opts" signature="__conv_item_keyonly_opts(id, keys)" />
+        <scope ilk="function" line="108" lineend="110" name="itemconfig_hash_kv" signature="itemconfig_hash_kv(id, keys, enc_mode = nil, conf = nil)" />
+      </scope>
+      <scope ilk="namespace" line="113" lineend="1056" name="TkItemConfigMethod">
+        <scope ilk="function" line="118" lineend="121" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="124" lineend="127" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="130" lineend="133" name="__item_confinfo_cmd" signature="__item_confinfo_cmd(id)" />
+        <scope ilk="function" line="136" lineend="140" name="__item_configinfo_struct" signature="__item_configinfo_struct(id)" />
+        <scope ilk="function" line="145" lineend="148" name="tagid" signature="tagid(tagOrId)" />
+        <scope ilk="function" line="152" lineend="226" name="itemcget" signature="itemcget(tagOrId, option)" />
+        <scope ilk="function" line="228" lineend="290" name="itemconfigure" signature="itemconfigure(tagOrId, slot, value=None)" />
+        <scope ilk="function" line="292" lineend="1022" name="itemconfiginfo" signature="itemconfiginfo(tagOrId, slot = nil)" />
+        <scope ilk="function" line="1024" lineend="1055" name="current_itemconfiginfo" signature="current_itemconfiginfo(tagOrId, slot = nil)" />
+      </scope>
+    </scope>
+    

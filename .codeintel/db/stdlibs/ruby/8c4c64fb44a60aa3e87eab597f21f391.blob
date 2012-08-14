@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/titleframe">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/frame" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/titleframe.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="12" lineend="13" name="TitleFrame" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="27" name="Tk::BWidget::">
+        <scope ilk="function" line="22" lineend="26" name="get_frame" signature="get_frame(&amp;b)" />
+      </scope>
+    </scope>
+    

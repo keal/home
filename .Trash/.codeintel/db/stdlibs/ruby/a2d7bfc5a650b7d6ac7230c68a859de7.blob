@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="rss/2.0">
+      <import line="1" module="rss/0.9" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="169" name="RSS">
+        <scope classrefs="Object" ilk="class" line="5" lineend="163" name="Rss">
+          <scope classrefs="Object" ilk="class" line="7" lineend="161" name="Channel">
+            <scope ilk="function" line="15" lineend="17" name="ttl=" signature="ttl=(value)" />
+            <scope ilk="function" line="33" lineend="40" name="other_element" signature="other_element(need_convert, indent)" />
+            <scope ilk="function" line="44" lineend="46" name="children" signature="children" />
+            <scope ilk="function" line="49" lineend="61" name="_tags" signature="_tags" />
+            <scope classrefs="Object" ilk="class" line="65" lineend="159" name="Item">
+              <scope ilk="function" line="91" lineend="101" name="other_element" signature="other_element(need_convert, indent)" />
+              <scope ilk="function" line="105" lineend="107" name="children" signature="children" />
+              <scope ilk="function" line="110" lineend="116" name="_tags" signature="_tags" />
+              <scope ilk="function" line="119" lineend="122" name="setup_maker_element" signature="setup_maker_element(item)" />
+              <scope classrefs="Element" ilk="class" line="124" lineend="157" name="Guid">
+                <scope attributes="__ctor__" ilk="function" line="136" lineend="140" name="initialize" signature="initialize(isPermaLink=nil, content=nil)" />
+                <scope ilk="function" line="143" lineend="147" name="_attrs" signature="_attrs" />
+                <scope ilk="function" line="149" lineend="151" name="maker_target" signature="maker_target(item)" />
+                <scope ilk="function" line="153" lineend="156" name="setup_maker_attributes" signature="setup_maker_attributes(guid)" />
+                <import symbol="RSS09" />
+              </scope>
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

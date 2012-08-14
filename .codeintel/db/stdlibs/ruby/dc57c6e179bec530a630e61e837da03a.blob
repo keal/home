@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/tile/radiobutton">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/radiobutton" symbol="*" />
+      <import line="8" module="tkextlib/blt/tile.rb" symbol="*" />
+      <scope doc="tkextlib/blt/tile/radiobutton.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="17" name="Tk::BLT">
+        <scope ilk="namespace" line="11" lineend="16" name="Tile">
+          <scope classrefs="TkRadiobutton" ilk="class" line="12" lineend="14" name="Radiobutton" />
+        </scope>
+      </scope>
+    </scope>
+    

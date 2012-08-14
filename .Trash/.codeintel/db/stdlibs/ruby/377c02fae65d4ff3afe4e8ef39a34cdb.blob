@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parsers/sax2parser">
+      <import line="1" module="rexml/parsers/baseparser" symbol="*" />
+      <import line="2" module="rexml/parseexception" symbol="*" />
+      <import line="3" module="rexml/namespace" symbol="*" />
+      <import line="4" module="rexml/text" symbol="*" />
+      <scope ilk="namespace" line="6" lineend="232" name="REXML">
+        <scope ilk="namespace" line="7" name="Parsers">
+          <scope classrefs="Object" doc="SAX2Parser" ilk="class" line="9" name="SAX2Parser">
+            <scope attributes="__ctor__" ilk="function" line="10" lineend="18" name="initialize" signature="initialize" />
+          </scope>
+        </scope>
+        <scope ilk="function" line="20" lineend="22" name="add_listener" signature="add_listener( listener )" />
+        <scope doc="Listen arguments:" ilk="function" line="54" lineend="70" name="listen" signature="listen( *args, &amp;blok )" />
+        <scope ilk="function" line="72" lineend="79" name="deafen" signature="deafen( listener=nil, &amp;blok )" />
+        <scope ilk="function" line="81" lineend="172" name="parse" signature="parse" />
+        <scope ilk="function" line="175" lineend="184" name="handle" signature="handle( symbol, *arguments )" />
+        <scope doc="The following methods are duplicates, but it is faster than&#xA;using a helper" ilk="function" line="188" lineend="201" name="get_procs" signature="get_procs( symbol, name )" />
+        <scope ilk="function" line="202" lineend="214" name="get_listeners" signature="get_listeners( symbol, name )" />
+        <scope ilk="function" line="216" lineend="223" name="add" signature="add( pair )" />
+        <scope ilk="function" line="225" lineend="229" name="get_namespace" signature="get_namespace( prefix )" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="xsd/charset">
+      <scope doc="XSD4R - Charset handling library." ilk="namespace" line="9" name="XSD" />
+      <scope ilk="namespace" line="12" lineend="184" name="Charset">
+        <scope classrefs="StandardError" ilk="class" line="15" lineend="15" name="XSDError" />
+        <scope classrefs="XSDError" ilk="class" line="16" lineend="16" name="CharsetError" />
+        <scope classrefs="CharsetError" ilk="class" line="17" lineend="17" name="UnknownCharsetError" />
+        <scope classrefs="CharsetError" ilk="class" line="18" lineend="18" name="CharsetConversionError" />
+        <scope attributes="__classmethod__" doc="Maps" ilk="function" line="26" lineend="68" name="init" signature="Charset.init">
+          <import line="32" module="xsd/iconvcharset" symbol="*" />
+          <import line="50" module="nkf" symbol="*" />
+          <import line="59" module="uconv" symbol="*" />
+        </scope>
+        <scope attributes="__classmethod__" doc="handlers" ilk="function" line="84" lineend="86" name="encoding" signature="Charset.encoding" />
+        <scope attributes="__classmethod__" ilk="function" line="88" lineend="91" name="encoding=" signature="Charset.encoding=(encoding)" />
+        <scope attributes="__classmethod__" ilk="function" line="93" lineend="95" name="xml_encoding_label" signature="Charset.xml_encoding_label" />
+        <scope attributes="__classmethod__" ilk="function" line="97" lineend="99" name="encoding_to_xml" signature="Charset.encoding_to_xml(str, charset)" />
+        <scope attributes="__classmethod__" ilk="function" line="101" lineend="103" name="encoding_from_xml" signature="Charset.encoding_from_xml(str, charset)" />
+        <scope attributes="__classmethod__" ilk="function" line="105" lineend="114" name="encoding_conv" signature="Charset.encoding_conv(str, enc_from, enc_to)" />
+        <scope attributes="__classmethod__" ilk="function" line="116" lineend="118" name="charset_label" signature="Charset.charset_label(encoding)" />
+        <scope attributes="__classmethod__" ilk="function" line="120" lineend="126" name="charset_str" signature="Charset.charset_str(label)" />
+        <scope attributes="__classmethod__" doc="11110uuu 10uuuzzz 10yyyyyy 10xxxxxx" ilk="function" line="154" lineend="156" name="is_us_ascii" signature="Charset.is_us_ascii(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="158" lineend="160" name="is_utf8" signature="Charset.is_utf8(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="162" lineend="164" name="is_euc" signature="Charset.is_euc(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="166" lineend="168" name="is_sjis" signature="Charset.is_sjis(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="170" lineend="183" name="is_ces" signature="Charset.is_ces(str, code = $KCODE)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encodings/ICONV">
+      <import line="1" module="iconv" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="22" name="REXML">
+        <scope ilk="namespace" line="5" lineend="21" name="Encoding">
+          <scope ilk="function" line="6" lineend="8" name="decode_iconv" signature="decode_iconv(str)" />
+          <scope ilk="function" line="10" lineend="12" name="encode_iconv" signature="encode_iconv(content)" />
+          <scope classrefs="Object" ilk="class" line="16" lineend="19" name="obj" />
+        </scope>
+      </scope>
+    </scope>
+    

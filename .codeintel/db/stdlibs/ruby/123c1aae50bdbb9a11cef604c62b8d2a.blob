@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/canvasprintdialog">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/canvasprintdialog.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Canvasprintdialog" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="38" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="get_output" signature="get_output" />
+        <scope ilk="function" line="25" lineend="27" name="print" signature="print" />
+        <scope ilk="function" line="29" lineend="32" name="refresh" signature="refresh" />
+        <scope ilk="function" line="34" lineend="37" name="set_canvas" signature="set_canvas(win)" />
+      </scope>
+    </scope>
+    

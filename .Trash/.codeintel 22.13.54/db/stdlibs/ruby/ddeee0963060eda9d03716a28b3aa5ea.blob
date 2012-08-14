@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="rss/xmlscanner">
+      <import line="1" module="xmlscan/scanner" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="102" name="RSS">
+        <scope classrefs="BaseParser" ilk="class" line="5" lineend="20" name="XMLScanParser">
+          <scope ilk="function" line="8" lineend="10" name="listener" signature="listener" />
+          <scope ilk="function" line="12" lineend="18" name="_parse" signature="_parse" />
+        </scope>
+        <scope classrefs="BaseListener" ilk="class" line="22" lineend="100" name="XMLScanListener">
+          <scope ilk="function" line="35" lineend="37" name="on_xmldecl_version" signature="on_xmldecl_version(str)" />
+          <scope ilk="function" line="39" lineend="41" name="on_xmldecl_encoding" signature="on_xmldecl_encoding(str)" />
+          <scope ilk="function" line="43" lineend="45" name="on_xmldecl_standalone" signature="on_xmldecl_standalone(str)" />
+          <scope ilk="function" line="47" lineend="49" name="on_xmldecl_end" signature="on_xmldecl_end" />
+          <scope ilk="function" line="55" lineend="57" name="on_etag" signature="on_etag(name)" />
+          <scope ilk="function" line="59" lineend="61" name="on_entityref" signature="on_entityref(ref)" />
+          <scope ilk="function" line="63" lineend="65" name="on_charref" signature="on_charref(code)" />
+          <scope ilk="function" line="69" lineend="71" name="on_stag" signature="on_stag(name)" />
+          <scope ilk="function" line="73" lineend="75" name="on_attribute" signature="on_attribute(name)" />
+          <scope ilk="function" line="77" lineend="79" name="on_attr_value" signature="on_attr_value(str)" />
+          <scope ilk="function" line="81" lineend="83" name="on_attr_entityref" signature="on_attr_entityref(ref)" />
+          <scope ilk="function" line="85" lineend="87" name="on_attr_charref" signature="on_attr_charref(code)" />
+          <scope ilk="function" line="91" lineend="93" name="on_stag_end" signature="on_stag_end(name)" />
+          <scope ilk="function" line="95" lineend="98" name="on_stag_end_empty" signature="on_stag_end_empty(name)" />
+          <import symbol="XMLScan::Visitor" />
+          <import symbol="ListenerMixin" />
+        </scope>
+      </scope>
+    </scope>
+    

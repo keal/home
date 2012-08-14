@@ -1,0 +1,49 @@
+<scope ilk="blob" lang="Ruby" name="shell/command-processor">
+      <import line="13" module="e2mmap" symbol="*" />
+      <import line="14" module="ftools" symbol="*" />
+      <import line="15" module="thread" symbol="*" />
+      <import line="17" module="shell/error" symbol="*" />
+      <import line="18" module="shell/filter" symbol="*" />
+      <import line="19" module="shell/system-command" symbol="*" />
+      <import line="20" module="shell/builtin-command" symbol="*" />
+      <scope classrefs="Object" doc="shell/command-controller.rb - $Release Version: 0.6.0 $&#xA;$Revision: 1.8.2.2 $ $Date: 2004/04/18 23:20:33 $ by Keiju&#xA;ISHITSUKA(Nippon Rational Inc.)" ilk="class" line="22" lineend="592" name="Shell">
+        <scope classrefs="Object" ilk="class" line="23" lineend="591" name="CommandProcessor">
+          <scope attributes="__classmethod__" doc="include Error" ilk="function" line="30" lineend="42" name="initialize" signature="self.initialize">
+            <scope attributes="__classmethod__" doc="define CommandProccessor#methods to Shell#methods and&#xA;Filter#methods" ilk="function" line="39" lineend="41" name="method_added" signature="self.method_added(id)" />
+          </scope>
+          <scope attributes="__classmethod__" doc="include run file." ilk="function" line="47" lineend="58" name="run_config" signature="self.run_config" />
+          <scope attributes="__ctor__" ilk="function" line="60" lineend="63" name="initialize" signature="initialize(shell)" />
+          <scope doc="CommandProcessor#expand_path(path) path:   String return:&#xA;String returns the absolute path for &lt;path&gt;" ilk="function" line="71" lineend="73" name="expand_path" signature="expand_path(path)" />
+          <scope doc="File related commands Shell#foreach Shell#open Shell#unlink&#xA;Shell#test" ilk="function" line="93" lineend="102" name="foreach" signature="foreach(path = nil, *rs)" />
+          <scope doc="CommandProcessor#open(path, mode) path:   String mode:&#xA;String return: File or Dir Same as:" ilk="function" line="114" lineend="123" name="open" signature="open(path, mode)" />
+          <scope doc="public :open" ilk="function" line="132" lineend="139" name="unlink" signature="unlink(path)" />
+          <scope doc="CommandProcessor#test(command, file1, file2)&#xA;CommandProcessor#[command, file1, file2] command: char or&#xA;String or Symbol file1:   String file2:   String(optional)" ilk="function" line="158" lineend="181" name="test" signature="test(command, file1, file2=nil)" />
+          <scope doc="Dir related methods" ilk="function" line="196" lineend="200" name="mkdir" signature="mkdir(*path)" />
+          <scope doc="CommandProcessor#rmdir(*path) path: String same as&#xA;Dir.rmdir()" ilk="function" line="207" lineend="211" name="rmdir" signature="rmdir(*path)" />
+          <scope doc="CommandProcessor#system(command, *opts) command: String&#xA;opts:    String return:  SystemCommand Same as system()&#xA;function" ilk="function" line="223" lineend="232" name="system" signature="system(command, *opts)" />
+          <scope doc="ProcessCommand#rehash clear command hash table." ilk="function" line="238" lineend="240" name="rehash" signature="rehash" />
+          <scope doc="ProcessCommand#transact" ilk="function" line="245" lineend="247" name="check_point" signature="check_point" />
+          <scope ilk="function" line="250" lineend="256" name="transact" signature="transact(&amp;block)" />
+          <scope doc="internal commands" ilk="function" line="261" lineend="263" name="out" signature="out(dev = STDOUT, &amp;block)" />
+          <scope ilk="function" line="265" lineend="267" name="echo" signature="echo(*strings)" />
+          <scope ilk="function" line="269" lineend="271" name="cat" signature="cat(*filenames)" />
+          <scope doc="def sort(*filenames) Sort.new(self, *filenames) end" ilk="function" line="277" lineend="279" name="glob" signature="glob(pattern)" />
+          <scope ilk="function" line="281" lineend="290" name="append" signature="append(to, filter)" />
+          <scope ilk="function" line="292" lineend="294" name="tee" signature="tee(file)" />
+          <scope ilk="function" line="296" lineend="298" name="concat" signature="concat(*jobs)" />
+          <scope doc="%pwd, %cwd -&gt; @pwd" ilk="function" line="301" lineend="310" name="notify" signature="notify(*opts, &amp;block)" />
+          <scope doc="private functions" ilk="function" line="315" lineend="328" name="effect_umask" signature="effect_umask" />
+          <scope ilk="function" line="331" lineend="353" name="find_system_command" signature="find_system_command(command)" />
+          <scope attributes="__classmethod__" doc="CommandProcessor.def_system_command(command, path) command:&#xA;String path:     String define &apos;command()&apos; method as method." ilk="function" line="361" lineend="372" name="def_system_command" signature="self.def_system_command(command, path = command)" />
+          <scope attributes="__classmethod__" ilk="function" line="374" lineend="380" name="undef_system_command" signature="self.undef_system_command(command)" />
+          <scope attributes="__classmethod__" doc="define command alias ex) def_alias_command(&quot;ls_c&quot;, &quot;ls&quot;,&#xA;&quot;-C&quot;, &quot;-F&quot;) def_alias_command(&quot;ls_c&quot;, &quot;ls&quot;){|*opts| [&quot;-C&quot;,&#xA;&quot;-F&quot;, *opts]}" ilk="function" line="388" lineend="390" name="alias_map" signature="self.alias_map" />
+          <scope attributes="__classmethod__" ilk="function" line="391" lineend="418" name="alias_command" signature="self.alias_command(ali, command, *opts, &amp;block)" />
+          <scope attributes="__classmethod__" ilk="function" line="420" lineend="424" name="unalias_command" signature="self.unalias_command(ali)" />
+          <scope attributes="__classmethod__" doc="CommandProcessor.def_builtin_commands(delegation_class,&#xA;command_specs) delegation_class: Class or Module&#xA;command_specs: [[command_name, [argument,...]],...]&#xA;command_name: String arguments:    String" ilk="function" line="437" lineend="460" name="def_builtin_commands" signature="self.def_builtin_commands(delegation_class, command_specs)" />
+          <scope attributes="__classmethod__" doc="CommandProcessor.install_system_commands(pre) pre: String -&#xA;command name prefix defines every command which belongs in&#xA;default_system_path via CommandProcessor.command()." ilk="function" line="471" lineend="493" name="install_system_commands" signature="self.install_system_commands(pre = &quot;sys_&quot;)" />
+          <scope attributes="__classmethod__" doc="------------------------------------------------------------&#xA;----------" ilk="function" line="500" lineend="534" name="add_delegate_command_to_shell" signature="self.add_delegate_command_to_shell(id)" />
+          <scope attributes="__classmethod__" doc="define default builtin commands" ilk="function" line="539" lineend="589" name="install_builtin_commands" signature="self.install_builtin_commands" />
+        </scope>
+      </scope>
+    </scope>
+    

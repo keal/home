@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="un">
+      <import line="24" module="fileutils" symbol="*" />
+      <import line="25" module="optparse" symbol="*" />
+      <scope doc="= un.rb" ilk="namespace" line="27" lineend="30" name="FileUtils" />
+      <scope ilk="function" line="32" lineend="56" name="setup" signature="setup(options = &quot;&quot;)" />
+      <scope doc="Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY" ilk="function" line="68" lineend="77" name="cp" signature="cp" />
+      <scope doc="Create a link to the specified TARGET with LINK_NAME." ilk="function" line="89" lineend="98" name="ln" signature="ln" />
+      <scope doc="Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY." ilk="function" line="108" lineend="114" name="mv" signature="mv" />
+      <scope doc="Remove the FILE" ilk="function" line="126" lineend="133" name="rm" signature="rm" />
+      <scope doc="Create the DIR, if they do not already exist." ilk="function" line="144" lineend="150" name="mkdir" signature="mkdir" />
+      <scope doc="Remove the DIR." ilk="function" line="160" lineend="164" name="rmdir" signature="rmdir" />
+      <scope doc="Copy SOURCE to DEST." ilk="function" line="177" lineend="185" name="install" signature="install" />
+      <scope doc="Change the mode of each FILE to OCTAL-MODE." ilk="function" line="195" lineend="200" name="chmod" signature="chmod" />
+      <scope doc="Update the access and modification times of each FILE to the&#xA;current time." ilk="function" line="210" lineend="214" name="touch" signature="touch" />
+      <scope doc="Display help message." ilk="function" line="222" lineend="235" name="help" signature="help" />
+    </scope>
+    

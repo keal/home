@@ -1,0 +1,56 @@
+<scope ilk="blob" lang="Ruby" name="yaml/types">
+      <scope doc="-*- mode: ruby; ruby-indent-level: 4 -*- vim: sw=4" ilk="namespace" line="6" lineend="194" name="YAML">
+        <scope classrefs="Object" doc="Default private type" ilk="class" line="11" lineend="24" name="PrivateType">
+          <scope attributes="__classmethod__" ilk="function" line="12" name="tag_subclasses?" signature="self.tag_subclasses?" />
+          <scope ilk="function" line="13" lineend="13" name="type_id" />
+          <scope ilk="function" line="13" lineend="13" name="type_id=" />
+          <scope ilk="function" line="13" lineend="13" name="value" />
+          <scope ilk="function" line="13" lineend="13" name="value=" />
+          <scope attributes="__ctor__" ilk="function" line="15" lineend="18" name="initialize" signature="initialize( type, val )" />
+          <scope ilk="function" line="19" lineend="21" name="to_yaml" signature="to_yaml( opts = {} )" />
+        </scope>
+        <scope classrefs="Object" doc="Default domain type" ilk="class" line="29" lineend="42" name="DomainType">
+          <scope attributes="__classmethod__" ilk="function" line="30" name="tag_subclasses?" signature="self.tag_subclasses?" />
+          <scope ilk="function" line="31" lineend="31" name="domain" />
+          <scope ilk="function" line="31" lineend="31" name="domain=" />
+          <scope ilk="function" line="31" lineend="31" name="type_id" />
+          <scope ilk="function" line="31" lineend="31" name="type_id=" />
+          <scope ilk="function" line="31" lineend="31" name="value" />
+          <scope ilk="function" line="31" lineend="31" name="value=" />
+          <scope attributes="__ctor__" ilk="function" line="33" lineend="36" name="initialize" signature="initialize( domain, type, val )" />
+          <scope ilk="function" line="37" lineend="39" name="to_yaml" signature="to_yaml( opts = {} )" />
+        </scope>
+        <scope classrefs="Object" doc="Unresolved objects" ilk="class" line="47" lineend="58" name="Object">
+          <scope attributes="__classmethod__" ilk="function" line="48" name="tag_subclasses?" signature="self.tag_subclasses?" />
+          <scope ilk="function" line="49" lineend="57" name="to_yaml" signature="to_yaml( opts = {} )" />
+        </scope>
+        <scope classrefs="::Hash" doc="YAML Hash class to support comments and defaults" ilk="class" line="63" lineend="81" name="SpecialHash">
+          <scope ilk="function" line="64" lineend="64" name="default" />
+          <scope ilk="function" line="64" lineend="64" name="default=" />
+          <scope ilk="function" line="65" lineend="67" name="inspect" signature="inspect" />
+          <scope ilk="function" line="68" lineend="70" name="to_s" signature="to_s" />
+          <scope ilk="function" line="71" lineend="76" name="update" signature="update( h )" />
+          <scope ilk="function" line="77" lineend="80" name="to_yaml" signature="to_yaml( opts = {} )" />
+        </scope>
+        <scope classrefs="::Array" doc="Builtin collection: !omap" ilk="class" line="86" lineend="136" name="Omap">
+          <scope ilk="function" line="88" lineend="101" name="yaml_initialize" signature="yaml_initialize( tag, val )" />
+          <scope ilk="function" line="102" lineend="108" name="self" signature="self." />
+          <scope ilk="function" line="109" lineend="111" name="[]" signature="[]( k" />
+          <scope ilk="function" line="112" lineend="120" name="[]=" signature="[]=( k" />
+          <scope ilk="function" line="121" lineend="123" name="has_key?" signature="has_key?( k )" />
+          <scope ilk="function" line="124" lineend="126" name="is_complex_yaml?" signature="is_complex_yaml?" />
+          <scope ilk="function" line="127" lineend="135" name="to_yaml" signature="to_yaml( opts = {} )" />
+        </scope>
+        <scope classrefs="::Array" doc="Builtin collection: !pairs" ilk="class" line="141" lineend="186" name="Pairs">
+          <scope ilk="function" line="143" lineend="156" name="yaml_initialize" signature="yaml_initialize( tag, val )" />
+          <scope ilk="function" line="157" lineend="163" name="self" signature="self." />
+          <scope ilk="function" line="164" lineend="166" name="[]" signature="[]( k" />
+          <scope ilk="function" line="167" lineend="170" name="[]=" signature="[]=( k" />
+          <scope ilk="function" line="171" lineend="173" name="has_key?" signature="has_key?( k )" />
+          <scope ilk="function" line="174" lineend="176" name="is_complex_yaml?" signature="is_complex_yaml?" />
+          <scope ilk="function" line="177" lineend="185" name="to_yaml" signature="to_yaml( opts = {} )" />
+        </scope>
+        <scope classrefs="::Hash" doc="Builtin collection: !set" ilk="class" line="191" lineend="193" name="Set" />
+      </scope>
+    </scope>
+    

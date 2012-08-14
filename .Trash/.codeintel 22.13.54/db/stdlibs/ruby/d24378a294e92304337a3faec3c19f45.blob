@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="tk/composite">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/composite.rb :" ilk="namespace" line="6" lineend="293" name="TkComposite">
+        <scope attributes="__ctor__" ilk="function" line="10" lineend="26" name="initialize" signature="initialize(parent=nil, *args)" />
+        <scope ilk="function" line="28" lineend="30" name="epath" signature="epath" />
+        <scope ilk="function" line="32" name="initialize_composite" signature="initialize_composite(*args)" />
+        <scope ilk="function" line="35" lineend="45" name="option_methods" signature="option_methods(*opts)" />
+        <scope ilk="function" line="47" lineend="65" name="delegate_alias" signature="delegate_alias(alias_opt, option, *wins)" />
+        <scope ilk="function" line="67" lineend="69" name="delegate" signature="delegate(option, *wins)" />
+        <scope ilk="function" line="71" lineend="101" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="103" lineend="138" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="140" lineend="292" name="configinfo" signature="configinfo(slot = nil)" />
+      </scope>
+    </scope>
+    

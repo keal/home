@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="bigdecimal/math">
+      <scope doc="Contents: sqrt(x, prec) sin (x, prec) cos (x, prec) atan(x,&#xA;prec)  Note: |x|&lt;1, x=0.9999 may not converge." ilk="namespace" line="24" lineend="196" name="BigMath">
+        <scope ilk="function" line="25" lineend="27" name="sqrt" signature="sqrt(x,prec)" />
+        <scope ilk="function" line="29" lineend="52" name="sin" signature="sin(x, prec)" />
+        <scope ilk="function" line="54" lineend="77" name="cos" signature="cos(x, prec)" />
+        <scope ilk="function" line="79" lineend="97" name="atan" signature="atan(x, prec)" />
+        <scope ilk="function" line="99" lineend="118" name="exp" signature="exp(x, prec)" />
+        <scope ilk="function" line="120" lineend="139" name="log" signature="log(x, prec)" />
+        <scope ilk="function" line="141" lineend="177" name="PI" signature="PI(prec)" />
+        <scope ilk="function" line="179" lineend="195" name="E" signature="E(prec)" />
+      </scope>
+    </scope>
+    

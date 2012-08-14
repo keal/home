@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="readbytes">
+      <scope classrefs="IOError" doc="readbytes.rb" ilk="class" line="6" lineend="12" name="TruncatedDataError">
+        <scope attributes="__ctor__" ilk="function" line="7" lineend="10" name="initialize" signature="initialize(mesg, data)" />
+        <scope ilk="function" line="11" lineend="11" name="data" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="14" lineend="25" name="IO">
+        <scope ilk="function" line="15" lineend="24" name="readbytes" signature="readbytes(n)" />
+      </scope>
+    </scope>
+    

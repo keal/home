@@ -1,0 +1,144 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/parsers/parse_rb">
+      <import line="16" module="e2mmap" symbol="*" />
+      <import line="17" module="irb/slex" symbol="*" />
+      <import line="19" module="rdoc/code_objects" symbol="*" />
+      <import line="20" module="rdoc/tokenstream" symbol="*" />
+      <import line="22" module="rdoc/markup/simple_markup/preprocess" symbol="*" />
+      <import line="24" module="rdoc/parsers/parserfactory" symbol="*" />
+      <scope doc="Definitions of all tokens involved in the lexical analysis" ilk="namespace" line="30" lineend="306" name="RubyToken">
+        <scope classrefs="Object" ilk="class" line="39" lineend="57" name="Token">
+          <scope ilk="function" line="41" lineend="41" name="text" />
+          <scope attributes="__ctor__" ilk="function" line="43" lineend="47" name="initialize" signature="initialize(line_no, char_no)" />
+          <scope doc="Because we&apos;re used in contexts that expect to return a&#xA;token, we set the text string and then return ourselves" ilk="function" line="51" lineend="54" name="set_text" signature="set_text(text)" />
+          <scope ilk="function" line="56" lineend="56" name="line_no" />
+          <scope ilk="function" line="56" lineend="56" name="char_no" />
+          <scope ilk="function" line="56" lineend="56" name="text" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="59" lineend="61" name="TkNode">
+          <scope ilk="function" line="60" lineend="60" name="node" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="63" lineend="69" name="TkId">
+          <scope attributes="__ctor__" ilk="function" line="64" lineend="67" name="initialize" signature="initialize(line_no, char_no, name)" />
+          <scope ilk="function" line="68" lineend="68" name="name" />
+        </scope>
+        <scope classrefs="TkId" ilk="class" line="71" lineend="72" name="TkKW" />
+        <scope classrefs="Token" ilk="class" line="74" lineend="79" name="TkVal">
+          <scope attributes="__ctor__" ilk="function" line="75" lineend="78" name="initialize" signature="initialize(line_no, char_no, value = nil)" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="81" lineend="85" name="TkOp">
+          <scope ilk="function" line="82" lineend="84" name="name" signature="name" />
+        </scope>
+        <scope classrefs="TkOp" ilk="class" line="87" lineend="94" name="TkOPASGN">
+          <scope attributes="__ctor__" ilk="function" line="88" lineend="92" name="initialize" signature="initialize(line_no, char_no, op)" />
+          <scope ilk="function" line="93" lineend="93" name="op" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="96" lineend="102" name="TkUnknownChar">
+          <scope attributes="__ctor__" ilk="function" line="97" lineend="100" name="initialize" signature="initialize(line_no, char_no, id)" />
+          <scope ilk="function" line="101" lineend="101" name="name" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="104" lineend="105" name="TkError" />
+        <scope ilk="function" line="107" lineend="110" name="set_token_position" signature="set_token_position(line, char)" />
+        <scope ilk="function" line="112" lineend="129" name="Token" signature="Token(token, value = nil)" />
+        <scope attributes="__classmethod__" doc="{reading =&gt; token_class} {reading =&gt; [token_class, *opt]}" ilk="function" line="270" lineend="297" name="def_token" signature="RubyToken.def_token(token_n, super_token = Token, reading = nil, *opts)" />
+      </scope>
+      <scope classrefs="Object" doc="Lexical analyzer for Ruby source" ilk="class" line="312" lineend="1355" name="RubyLex">
+        <scope classrefs="Object" doc="Read an input stream character by character." ilk="class" line="344" lineend="425" name="BufferedReader">
+          <scope ilk="function" line="346" lineend="346" name="line_num" />
+          <scope attributes="__ctor__" ilk="function" line="348" lineend="365" name="initialize" signature="initialize(content)" />
+          <scope ilk="function" line="367" lineend="369" name="column" signature="column" />
+          <scope ilk="function" line="371" lineend="388" name="getc" signature="getc" />
+          <scope ilk="function" line="390" lineend="392" name="getc_already_read" signature="getc_already_read" />
+          <scope ilk="function" line="394" lineend="400" name="ungetc" signature="ungetc(ch)" />
+          <scope ilk="function" line="402" lineend="406" name="get_read" signature="get_read" />
+          <scope ilk="function" line="408" lineend="415" name="peek" signature="peek(at)" />
+          <scope ilk="function" line="417" lineend="419" name="peek_equal" signature="peek_equal(str)" />
+          <scope ilk="function" line="421" lineend="424" name="divert_read_from" signature="divert_read_from(reserve)" />
+        </scope>
+        <scope ilk="function" line="440" lineend="440" name="continue" />
+        <scope ilk="function" line="441" lineend="441" name="lex_state" />
+        <scope attributes="__classmethod__" doc="end of nested class BufferedReader" ilk="function" line="443" lineend="445" name="debug?" signature="RubyLex.debug?" />
+        <scope attributes="__ctor__" ilk="function" line="447" lineend="467" name="initialize" signature="initialize(content)" />
+        <scope ilk="function" line="469" lineend="469" name="skip_space" />
+        <scope ilk="function" line="470" lineend="470" name="read_auto_clean_up" />
+        <scope ilk="function" line="471" lineend="471" name="exception_on_syntax_error" />
+        <scope ilk="function" line="473" lineend="473" name="indent" />
+        <scope doc="io functions" ilk="function" line="476" lineend="478" name="line_no" signature="line_no" />
+        <scope ilk="function" line="480" lineend="482" name="char_no" signature="char_no" />
+        <scope ilk="function" line="484" lineend="486" name="get_read" signature="get_read" />
+        <scope ilk="function" line="488" lineend="490" name="getc" signature="getc" />
+        <scope ilk="function" line="492" lineend="494" name="getc_of_rests" signature="getc_of_rests" />
+        <scope ilk="function" line="496" lineend="504" name="gets" signature="gets" />
+        <scope ilk="function" line="507" lineend="509" name="ungetc" signature="ungetc(c = nil)" />
+        <scope ilk="function" line="511" lineend="513" name="peek_equal?" signature="peek_equal?(str)" />
+        <scope ilk="function" line="515" lineend="517" name="peek" signature="peek(i = 0)" />
+        <scope ilk="function" line="519" lineend="531" name="lex" signature="lex" />
+        <scope ilk="function" line="533" lineend="550" name="token" signature="token" />
+        <scope doc=", &quot;when&quot;" ilk="function" line="589" lineend="773" name="lex_init" signature="lex_init()" />
+        <scope ilk="function" line="775" lineend="962" name="lex_int2" signature="lex_int2" />
+        <scope ilk="function" line="964" lineend="997" name="identify_gvar" signature="identify_gvar" />
+        <scope ilk="function" line="999" lineend="1072" name="identify_identifier" signature="identify_identifier" />
+        <scope ilk="function" line="1074" lineend="1121" name="identify_here_document" signature="identify_here_document" />
+        <scope ilk="function" line="1123" lineend="1140" name="identify_quotation" signature="identify_quotation(initial_char)" />
+        <scope ilk="function" line="1142" lineend="1202" name="identify_number" signature="identify_number(start)" />
+        <scope ilk="function" line="1204" lineend="1252" name="identify_string" signature="identify_string(ltype, quoted = ltype, opener=nil, initial_char = nil)" />
+        <scope ilk="function" line="1254" lineend="1267" name="skip_inner_expression" signature="skip_inner_expression" />
+        <scope ilk="function" line="1269" lineend="1290" name="identify_comment" signature="identify_comment" />
+        <scope ilk="function" line="1292" lineend="1354" name="read_escape" signature="read_escape" />
+        <import symbol="RubyToken" />
+        <import symbol="IRB" />
+      </scope>
+      <scope doc="Extract code elements from a source file, returning a&#xA;TopLevel object containing the constituent file elements." ilk="namespace" line="1364" lineend="2598" name="RDoc">
+        <scope classrefs="Object" ilk="class" line="1378" name="RubyParser">
+          <scope attributes="__ctor__" ilk="function" line="1387" lineend="1397" name="initialize" signature="initialize(top_level, file_name, content, options, stats)" />
+          <scope ilk="function" line="1399" lineend="1425" name="scan" signature="scan" />
+          <scope ilk="function" line="1429" lineend="1435" name="warn" signature="warn(msg)" />
+          <scope ilk="function" line="1437" lineend="1440" name="error" signature="error(msg)" />
+          <scope ilk="function" line="1442" lineend="1447" name="progress" signature="progress(char)" />
+          <scope ilk="function" line="1449" lineend="1452" name="add_token_listener" signature="add_token_listener(obj)" />
+          <scope ilk="function" line="1454" lineend="1456" name="remove_token_listener" signature="remove_token_listener(obj)" />
+          <scope ilk="function" line="1458" lineend="1492" name="get_tk" signature="get_tk" />
+          <scope ilk="function" line="1494" lineend="1497" name="peek_tk" signature="peek_tk" />
+          <scope ilk="function" line="1499" lineend="1507" name="unget_tk" signature="unget_tk(tk)" />
+          <scope ilk="function" line="1509" lineend="1517" name="skip_tkspace" signature="skip_tkspace(skip_nl = true)" />
+          <scope ilk="function" line="1519" lineend="1523" name="get_tkread" signature="get_tkread" />
+          <scope ilk="function" line="1525" lineend="1527" name="peek_read" signature="peek_read" />
+          <scope doc="Look for the first comment in a file that isn&apos;t a shebang&#xA;line." ilk="function" line="1535" lineend="1557" name="collect_first_comment" signature="collect_first_comment" />
+          <scope ilk="function" line="1559" lineend="1564" name="parse_toplevel_statements" signature="parse_toplevel_statements(container)" />
+          <scope ilk="function" line="1566" lineend="1720" name="parse_statements" signature="parse_statements(container, single=NORMAL, current_method=nil, comment=&apos;&apos;)" />
+          <scope ilk="function" line="1722" lineend="1772" name="parse_class" signature="parse_class(container, single, tk, comment, &amp;block)" />
+          <scope ilk="function" line="1774" lineend="1785" name="parse_module" signature="parse_module(container, single, tk, comment)" />
+          <scope doc="Look for the name of a class of module (optionally with a&#xA;leading :: or with :: separated named) and return the&#xA;ultimate name and container" ilk="function" line="1790" lineend="1814" name="get_class_or_module" signature="get_class_or_module(container)" />
+          <scope ilk="function" line="1816" lineend="1869" name="parse_constant" signature="parse_constant(container, single, tk, comment)" />
+          <scope ilk="function" line="1871" lineend="1990" name="parse_method" signature="parse_method(container, single, tk, comment)" />
+          <scope ilk="function" line="1992" lineend="1996" name="skip_method" signature="skip_method(container)" />
+          <scope doc="Capture the method&apos;s parameters." ilk="function" line="2005" lineend="2013" name="parse_method_parameters" signature="parse_method_parameters(method)" />
+          <scope ilk="function" line="2015" lineend="2065" name="parse_method_or_yield_parameters" signature="parse_method_or_yield_parameters(method=nil, modifiers=METHOD_MODIFIERS)" />
+          <scope doc="skip the var [in] part of a &apos;for&apos; statement" ilk="function" line="2068" lineend="2074" name="skip_for_variable" signature="skip_for_variable" />
+          <scope doc="while, until, and for have an optional" ilk="function" line="2077" lineend="2114" name="skip_optional_do_after_expression" signature="skip_optional_do_after_expression" />
+          <scope doc="Return a superclass, which can be either a constant of an&#xA;expression" ilk="function" line="2119" lineend="2147" name="get_class_specification" signature="get_class_specification" />
+          <scope ilk="function" line="2149" lineend="2185" name="parse_call_parameters" signature="parse_call_parameters(tk)" />
+          <scope doc="Parse a constant, which might be qualified by one or more&#xA;class or module names" ilk="function" line="2191" lineend="2209" name="get_constant" signature="get_constant" />
+          <scope doc="Get a constant that may be surrounded by parens" ilk="function" line="2213" lineend="2230" name="get_constant_with_optional_parens" signature="get_constant_with_optional_parens" />
+          <scope doc="Directives are modifier comments that can appear after&#xA;class, module, or method names." ilk="function" line="2243" lineend="2258" name="read_directive" signature="read_directive(allowed)" />
+          <scope ilk="function" line="2261" lineend="2288" name="read_documentation_modifiers" signature="read_documentation_modifiers(context, allow)" />
+          <scope doc="Look for directives in a normal comment block:" ilk="function" line="2298" lineend="2339" name="look_for_directives_in" signature="look_for_directives_in(context, comment)" />
+          <scope ilk="function" line="2341" lineend="2344" name="remove_private_comments" signature="remove_private_comments(comment)" />
+          <scope ilk="function" line="2348" lineend="2360" name="get_symbol_or_name" signature="get_symbol_or_name" />
+          <scope ilk="function" line="2362" lineend="2382" name="parse_alias" signature="parse_alias(context, single, tk, comment)" />
+          <scope ilk="function" line="2384" lineend="2386" name="parse_yield_parameters" signature="parse_yield_parameters" />
+          <import symbol="RubyToken" />
+          <import symbol="TokenStream" />
+        </scope>
+        <scope ilk="function" line="2388" lineend="2394" name="parse_yield" signature="parse_yield(context, single, tk, method)" />
+        <scope ilk="function" line="2396" lineend="2420" name="parse_require" signature="parse_require(context, comment)" />
+        <scope ilk="function" line="2422" lineend="2432" name="parse_include" signature="parse_include(context, comment)" />
+        <scope ilk="function" line="2434" lineend="2446" name="get_bool" signature="get_bool" />
+        <scope ilk="function" line="2448" lineend="2469" name="parse_attr" signature="parse_attr(context, single, tk, comment)" />
+        <scope ilk="function" line="2471" lineend="2500" name="parse_visibility" signature="parse_visibility(container, single, tk)" />
+        <scope ilk="function" line="2502" lineend="2525" name="parse_attr_accessor" signature="parse_attr_accessor(context, single, tk, comment)" />
+        <scope ilk="function" line="2527" lineend="2533" name="skip_tkspace_comment" signature="skip_tkspace_comment(skip_nl = true)" />
+        <scope ilk="function" line="2535" lineend="2583" name="parse_symbol_arg" signature="parse_symbol_arg(no = nil)" />
+        <scope ilk="function" line="2585" lineend="2595" name="parse_symbol_in_arg" signature="parse_symbol_in_arg" />
+      </scope>
+    </scope>
+    

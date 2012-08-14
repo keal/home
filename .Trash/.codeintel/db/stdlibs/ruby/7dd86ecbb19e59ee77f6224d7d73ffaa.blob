@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="yaml/error">
+      <scope doc="Error messages and exception class" ilk="namespace" line="5" lineend="34" name="YAML">
+        <scope classrefs="StandardError" doc="YAML Error classes" ilk="class" line="30" lineend="30" name="Error" />
+        <scope classrefs="Error" ilk="class" line="31" lineend="31" name="ParseError" />
+        <scope classrefs="StandardError" ilk="class" line="32" lineend="32" name="TypeError" />
+      </scope>
+    </scope>
+    

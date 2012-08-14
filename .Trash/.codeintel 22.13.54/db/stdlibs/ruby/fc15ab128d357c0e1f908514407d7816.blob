@@ -1,0 +1,72 @@
+<scope ilk="blob" lang="Ruby" name="rss/parser">
+      <import line="1" module="forwardable" symbol="*" />
+      <import line="2" module="open-uri" symbol="*" />
+      <import line="4" module="rss/rss" symbol="*" />
+      <scope ilk="namespace" line="6" lineend="445" name="RSS">
+        <scope classrefs="Error" ilk="class" line="8" lineend="20" name="NotWellFormedError">
+          <scope ilk="function" line="9" lineend="9" name="line" />
+          <scope ilk="function" line="9" lineend="9" name="element" />
+          <scope attributes="__ctor__" ilk="function" line="10" lineend="19" name="initialize" signature="initialize(line=nil, element=nil)" />
+        </scope>
+        <scope classrefs="Error" ilk="class" line="22" lineend="27" name="XMLParserNotFound">
+          <scope attributes="__ctor__" ilk="function" line="23" lineend="26" name="initialize" signature="initialize" />
+        </scope>
+        <scope classrefs="Error" ilk="class" line="29" lineend="35" name="NotValidXMLParser">
+          <scope attributes="__ctor__" ilk="function" line="30" lineend="34" name="initialize" signature="initialize(parser)" />
+        </scope>
+        <scope classrefs="InvalidRSSError" ilk="class" line="37" lineend="44" name="NSError">
+          <scope ilk="function" line="38" lineend="38" name="tag" />
+          <scope ilk="function" line="38" lineend="38" name="prefix" />
+          <scope ilk="function" line="38" lineend="38" name="uri" />
+          <scope attributes="__ctor__" ilk="function" line="39" lineend="43" name="initialize" signature="initialize(tag, prefix, require_uri)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="46" lineend="112" name="Parser">
+          <scope classrefs="Object" ilk="class" line="50" lineend="73" name="self">
+            <scope ilk="function" line="54" lineend="56" name="default_parser" signature="default_parser" />
+            <scope ilk="function" line="58" lineend="64" name="default_parser=" signature="default_parser=(new_value)" />
+            <scope ilk="function" line="66" lineend="71" name="parse" signature="parse(rss, do_validate=true, ignore_unknown_element=true, parser_class=default_parser)" />
+          </scope>
+          <scope attributes="__ctor__" ilk="function" line="80" lineend="82" name="initialize" signature="initialize(rss, parser_class=self.class.default_parser)" />
+          <scope ilk="function" line="85" lineend="97" name="normalize_rss" signature="normalize_rss(rss)" />
+          <scope ilk="function" line="99" lineend="101" name="maybe_xml?" signature="maybe_xml?(source)" />
+          <scope ilk="function" line="103" lineend="111" name="to_uri" signature="to_uri(rss)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="114" lineend="148" name="BaseParser">
+          <scope attributes="__ctor__" ilk="function" line="116" lineend="119" name="initialize" signature="initialize(rss)" />
+          <scope ilk="function" line="121" lineend="123" name="rss" signature="rss" />
+          <scope ilk="function" line="125" lineend="127" name="ignore_unknown_element" signature="ignore_unknown_element" />
+          <scope ilk="function" line="129" lineend="131" name="ignore_unknown_element=" signature="ignore_unknown_element=(new_value)" />
+          <scope ilk="function" line="133" lineend="135" name="do_validate" signature="do_validate" />
+          <scope ilk="function" line="137" lineend="139" name="do_validate=" signature="do_validate=(new_value)" />
+          <scope ilk="function" line="141" lineend="146" name="parse" signature="parse" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="150" lineend="235" name="BaseListener">
+          <scope classrefs="Object" ilk="class" line="154" lineend="233" name="self">
+            <scope ilk="function" line="160" lineend="163" name="install_setter" signature="install_setter(uri, tag_name, setter)" />
+            <scope ilk="function" line="165" lineend="171" name="setter" signature="setter(uri, tag_name)" />
+            <scope ilk="function" line="173" lineend="179" name="available_tags" signature="available_tags(uri)" />
+            <scope ilk="function" line="181" lineend="184" name="register_uri" signature="register_uri(uri, name)" />
+            <scope ilk="function" line="186" lineend="188" name="uri_registered?" signature="uri_registered?(uri, name)" />
+            <scope ilk="function" line="190" lineend="193" name="install_class_name" signature="install_class_name(uri, tag_name, class_name)" />
+            <scope ilk="function" line="195" lineend="201" name="class_name" signature="class_name(uri, tag_name)" />
+            <scope ilk="function" line="203" lineend="206" name="install_get_text_element" signature="install_get_text_element(uri, name, setter)" />
+            <scope ilk="function" line="210" lineend="231" name="def_get_text_element" signature="def_get_text_element(uri, name, file, line)" />
+          </scope>
+        </scope>
+        <scope ilk="namespace" line="237" lineend="422" name="ListenerMixin">
+          <scope attributes="__ctor__" ilk="function" line="244" lineend="255" name="initialize" signature="initialize" />
+          <scope ilk="function" line="257" lineend="259" name="xmldecl" signature="xmldecl(version, encoding, standalone)" />
+          <scope ilk="function" line="261" lineend="268" name="instruction" signature="instruction(name, content)" />
+          <scope ilk="function" line="270" lineend="292" name="tag_start" signature="tag_start(name, attributes)" />
+          <scope ilk="function" line="294" lineend="304" name="tag_end" signature="tag_end(name)" />
+          <scope ilk="function" line="306" lineend="308" name="text" signature="text(data)" />
+          <scope ilk="function" line="313" lineend="319" name="parse_pi_content" signature="parse_pi_content(content)" />
+          <scope ilk="function" line="321" lineend="338" name="start_else_element" signature="start_else_element(local, prefix, attrs, ns)" />
+          <scope ilk="function" line="341" lineend="344" name="split_name" signature="split_name(name)" />
+          <scope ilk="function" line="346" lineend="354" name="check_ns" signature="check_ns(tag_name, prefix, ns, require_uri)" />
+          <scope ilk="function" line="356" lineend="368" name="start_get_text_element" signature="start_get_text_element(tag_name, prefix, ns, required_uri)" />
+          <scope ilk="function" line="370" lineend="420" name="start_have_something_element" signature="start_have_something_element(tag_name, prefix, attrs, ns, klass)" />
+        </scope>
+      </scope>
+    </scope>
+    

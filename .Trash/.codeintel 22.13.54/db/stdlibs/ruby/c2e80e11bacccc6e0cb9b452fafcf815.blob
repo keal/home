@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="yaml/tag">
+      <scope doc="-*- mode: ruby; ruby-indent-level: 4; tab-width: 4 -*- vim:&#xA;sw=4 ts=4 $Id: tag.rb,v 1.1.2.2 2005/09/27 22:57:53 nobu Exp&#xA;$" ilk="namespace" line="8" lineend="51" name="YAML">
+        <scope attributes="__classmethod__" doc="Associates a taguri _tag_ with a Ruby class _cls_." ilk="function" line="35" lineend="40" name="tag_class" signature="YAML.tag_class( tag, cls )" />
+        <scope attributes="__classmethod__" doc="Returns the complete dictionary of taguris, paired with&#xA;classes." ilk="function" line="48" lineend="50" name="tagged_classes" signature="YAML.tagged_classes" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="53" lineend="89" name="Module">
+        <scope doc=":nodoc: all Adds a taguri _tag_ to a class, used when&#xA;dumping or loading the class in YAML." ilk="function" line="57" lineend="78" name="yaml_as" signature="yaml_as( tag, sc = true )">
+          <scope ilk="function" line="61" lineend="72" name="taguri" signature="taguri" />
+          <scope attributes="__classmethod__" ilk="function" line="73" lineend="74" name="yaml_tag_subclasses?" signature="self.yaml_tag_subclasses?" />
+        </scope>
+        <scope doc="Transforms the subclass name into a name suitable for&#xA;display in a subclassed tag." ilk="function" line="81" lineend="83" name="yaml_tag_class_name" signature="yaml_tag_class_name" />
+        <scope doc="Transforms the subclass name found in the tag into a Ruby&#xA;constant name." ilk="function" line="86" lineend="88" name="yaml_tag_read_class" signature="yaml_tag_read_class( name )" />
+      </scope>
+    </scope>
+    

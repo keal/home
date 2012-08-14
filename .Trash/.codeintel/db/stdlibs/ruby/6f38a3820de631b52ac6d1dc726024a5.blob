@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/radiobox">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/radiobox.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Radiobox" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="116" name="Tk::Iwidgets::">
+        <scope ilk="function" line="25" lineend="27" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="30" lineend="32" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="35" lineend="37" name="__item_boolval_optkeys" signature="__item_boolval_optkeys(id)" />
+        <scope ilk="function" line="40" lineend="47" name="tagid" signature="tagid(tagOrId)" />
+        <scope ilk="function" line="59" lineend="71" name="add" signature="add(tag=nil, keys={})" />
+        <scope ilk="function" line="73" lineend="76" name="delete" signature="delete(idx)" />
+        <scope ilk="function" line="78" lineend="81" name="deselect" signature="deselect(idx)" />
+        <scope ilk="function" line="83" lineend="86" name="flash" signature="flash(idx)" />
+        <scope ilk="function" line="88" lineend="92" name="get" signature="get(idx)" />
+        <scope ilk="function" line="94" lineend="96" name="index" signature="index(idx)" />
+        <scope ilk="function" line="98" lineend="110" name="insert" signature="insert(idx, tag=nil, keys={})" />
+        <scope ilk="function" line="112" lineend="115" name="select" signature="select(idx)" />
+        <import symbol="TkItemConfigMethod" />
+      </scope>
+    </scope>
+    

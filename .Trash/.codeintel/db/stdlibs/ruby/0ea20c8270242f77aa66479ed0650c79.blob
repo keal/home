@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="drb/timeridconv">
+      <import line="1" module="drb/drb" symbol="*" />
+      <import line="2" module="monitor" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="89" name="DRb">
+        <scope classrefs="DRbIdConv" ilk="class" line="5" lineend="88" name="TimerIdConv">
+          <scope classrefs="Object" ilk="class" line="6" lineend="72" name="TimerHolder2">
+            <scope classrefs="RuntimeError" ilk="class" line="9" lineend="9" name="InvalidIndexError" />
+            <scope attributes="__ctor__" ilk="function" line="11" lineend="19" name="initialize" signature="initialize(timeout=600)" />
+            <scope ilk="function" line="21" lineend="27" name="add" signature="add(obj)" />
+            <scope ilk="function" line="29" lineend="39" name="fetch" signature="fetch(key, dv=@sentinel)" />
+            <scope ilk="function" line="41" lineend="47" name="include?" signature="include?(key)" />
+            <scope ilk="function" line="49" lineend="53" name="peek" signature="peek(key)" />
+            <scope ilk="function" line="56" lineend="62" name="alternate" signature="alternate" />
+            <scope ilk="function" line="64" lineend="71" name="keeper" signature="keeper" />
+            <import symbol="MonitorMixin" />
+          </scope>
+          <scope attributes="__ctor__" ilk="function" line="74" lineend="76" name="initialize" signature="initialize(timeout=600)" />
+          <scope ilk="function" line="78" lineend="83" name="to_obj" signature="to_obj(ref)" />
+          <scope ilk="function" line="85" lineend="87" name="to_id" signature="to_id(obj)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="datetime">
+      <scope classrefs="Date" doc="Class representing a date and time." ilk="class" name="DateTime">
+        <scope attributes="__classmethod__" doc="Create a new DateTime object corresponding to the specified&#xA;Civil Date and hour h, minute min, second s." ilk="function" name="civil" signature="(y=-4712, m=1, d=1, h=0, min=0, s=0, of=0, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Create a new DateTime object corresponding to the specified&#xA;Commercial Date and hour h, minute min, second s." ilk="function" name="commercial" signature="(y=1582, w=41, d=5, h=0, min=0, s=0, of=0, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Create a new DateTime object corresponding to the specified&#xA;Julian Day Number jd and hour h, minute min, second s." ilk="function" name="jd" signature="(jd=0, h=0, min=0, s=0, of=0, sg=ITALY)" />
+        <scope attributes="__classmethod__ private" ilk="function" name="new_with_hash" signature="(elem, sg)" />
+        <scope attributes="__classmethod__" doc="Create a new DateTime object representing the current time." ilk="function" name="now" signature="(sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Create a new DateTime object corresponding to the specified&#xA;Ordinal Date and hour h, minute min, second s." ilk="function" name="ordinal" signature="(y=-4712, d=1, h=0, min=0, s=0, of=0, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Create a new DateTime object by parsing from a String,&#xA;without specifying the format." ilk="function" name="parse" signature="(str=&apos;-4712-01-01T00:00:00Z&apos;, comp=false, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Create a new DateTime object by parsing from a String&#xA;according to a specified format." ilk="function" name="strptime" signature="(str=&apos;-4712-01-01T00:00:00Z&apos;, fmt=&apos;%FT%T%Z&apos;, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Do hour h, minute min, and second s constitute a valid time?" ilk="function" name="valid_time?" signature="(h, min, s)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/htext">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/itemconfig.rb" symbol="*" />
+      <import line="8" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/htext.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="110" name="Tk::BLT">
+        <scope classrefs="TkWindow" ilk="class" line="11" lineend="109" name="Htext">
+          <scope ilk="function" line="29" lineend="31" name="__strval_optkeys" signature="__strval_optkeys" />
+          <scope ilk="function" line="34" lineend="37" name="append" signature="append(win, keys={})" />
+          <scope ilk="function" line="39" lineend="42" name="goto_line" signature="goto_line(idx)" />
+          <scope ilk="function" line="43" lineend="45" name="current_line" signature="current_line" />
+          <scope ilk="function" line="47" lineend="49" name="index" signature="index(str)" />
+          <scope ilk="function" line="51" lineend="53" name="line_pos" signature="line_pos(str)" />
+          <scope ilk="function" line="55" lineend="57" name="range" signature="range(from=None, to=None)" />
+          <scope ilk="function" line="59" lineend="62" name="scan_mark" signature="scan_mark(pos)" />
+          <scope ilk="function" line="64" lineend="67" name="scan_dragto" signature="scan_dragto(pos)" />
+          <scope ilk="function" line="69" lineend="72" name="search" signature="search(pat, from=None, to=None)" />
+          <scope ilk="function" line="74" lineend="77" name="selection_adjust" signature="selection_adjust(index)" />
+          <scope ilk="function" line="78" lineend="81" name="selection_clear" signature="selection_clear()" />
+          <scope ilk="function" line="82" lineend="85" name="selection_from" signature="selection_from(index)" />
+          <scope ilk="function" line="86" lineend="89" name="selection_line" signature="selection_line(index)" />
+          <scope ilk="function" line="90" lineend="92" name="selection_present" signature="selection_present()" />
+          <scope ilk="function" line="93" lineend="96" name="selection_range" signature="selection_range(first, last)" />
+          <scope ilk="function" line="97" lineend="100" name="selection_to" signature="selection_to(index)" />
+          <scope ilk="function" line="101" lineend="104" name="selection_word" signature="selection_word(index)" />
+          <scope ilk="function" line="106" lineend="108" name="windows" signature="windows(pat=None)" />
+          <import symbol="TkItemConfigMethod" />
+          <import symbol="Scrollable" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tkDND/tkdnd">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/tkDND/setup.rb" symbol="*" />
+      <scope doc="call setup script" ilk="namespace" line="16" lineend="160" name="Tk">
+        <scope ilk="namespace" line="17" lineend="159" name="TkDND">
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+          <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="31" lineend="62" name="DND_Subst" />
+          <scope ilk="namespace" line="64" lineend="158" name="DND">
+            <scope attributes="__classmethod__" ilk="function" line="65" lineend="71" name="version" signature="self.version" />
+            <scope ilk="function" line="73" lineend="81" name="dnd_bindtarget_info" signature="dnd_bindtarget_info(type=nil, event=nil)" />
+            <scope doc="def dnd_bindtarget(type, event, cmd=Proc.new, prior=50,&#xA;*args) event = tk_event_sequence(event) if&#xA;prior.kind_of?(Numeric) tk_call(&apos;dnd&apos;, &apos;bindtarget&apos;, @path,&#xA;type, event, install_bind_for_event_class(DND_Subst, cmd,&#xA;*args)," ilk="function" line="95" lineend="116" name="dnd_bindtarget" signature="dnd_bindtarget(type, event, *args)" />
+            <scope ilk="function" line="118" lineend="121" name="dnd_cleartarget" signature="dnd_cleartarget" />
+            <scope ilk="function" line="123" lineend="129" name="dnd_bindsource_info" signature="dnd_bindsource_info(type=nil)" />
+            <scope doc="def dnd_bindsource(type, cmd=Proc.new, prior=None)&#xA;tk_call(&apos;dnd&apos;, &apos;bindsource&apos;, @path, type, cmd, prior) self&#xA;end" ilk="function" line="135" lineend="147" name="dnd_bindsource" signature="dnd_bindsource(type, *args)" />
+            <scope ilk="function" line="149" lineend="152" name="dnd_clearsource" signature="dnd_clearsource()" />
+            <scope ilk="function" line="154" lineend="157" name="dnd_drag" signature="dnd_drag(keys=nil)" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="162" lineend="164" name="TkWindow">
+        <import symbol="Tk::TkDND::" />
+      </scope>
+    </scope>
+    

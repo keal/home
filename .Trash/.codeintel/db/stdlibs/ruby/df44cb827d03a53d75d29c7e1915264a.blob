@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="tk/msgcat">
+      <import line="5" module="tk" symbol="*" />
+      <scope classrefs="TkObject" doc="class TkMsgCatalog" ilk="class" line="8" lineend="289" name="TkMsgCatalog">
+        <scope attributes="__classmethod__" doc="extend TkMsgCatalog" ilk="function" line="27" lineend="29" name="package_name" signature="self.package_name" />
+        <scope attributes="__classmethod__" ilk="function" line="58" lineend="86" name="callback" signature="self.callback(namespace, locale, src_str, *args)" />
+        <scope attributes="__ctor__" ilk="function" line="88" lineend="99" name="initialize" signature="initialize(namespace = nil)" />
+        <scope ilk="function" line="100" lineend="100" name="msgcat_ext" />
+        <scope ilk="function" line="100" lineend="100" name="msgcat_ext=" />
+        <scope ilk="function" line="102" lineend="136" name="method_missing" signature="method_missing(id, *args)" />
+        <scope attributes="__classmethod__" doc="*args ::= form, arg, arg, ..." ilk="function" line="139" lineend="144" name="translate" signature="self.translate(*args)" />
+        <scope classrefs="Object" ilk="class" line="145" lineend="148" name="self" />
+        <scope ilk="function" line="149" lineend="155" name="translate" signature="translate(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="159" lineend="161" name="maxlen" signature="self.maxlen(*src_strings)" />
+        <scope ilk="function" line="162" lineend="164" name="maxlen" signature="maxlen(*src_strings)" />
+        <scope attributes="__classmethod__" ilk="function" line="166" lineend="168" name="locale" signature="self.locale" />
+        <scope ilk="function" line="169" lineend="171" name="locale" signature="locale" />
+        <scope attributes="__classmethod__" ilk="function" line="173" lineend="175" name="locale=" signature="self.locale=(locale)" />
+        <scope ilk="function" line="176" lineend="178" name="locale=" signature="locale=(locale)" />
+        <scope attributes="__classmethod__" ilk="function" line="180" lineend="182" name="preferences" signature="self.preferences" />
+        <scope ilk="function" line="183" lineend="185" name="preferences" signature="preferences" />
+        <scope attributes="__classmethod__" ilk="function" line="187" lineend="189" name="load_tk" signature="self.load_tk(dir)" />
+        <scope attributes="__classmethod__" ilk="function" line="191" lineend="201" name="load_rb" signature="self.load_rb(dir)" />
+        <scope ilk="function" line="203" lineend="205" name="load_tk" signature="load_tk(dir)" />
+        <scope ilk="function" line="207" lineend="217" name="load_rb" signature="load_rb(dir)" />
+        <scope attributes="__classmethod__" ilk="function" line="219" lineend="221" name="load" signature="self.load(dir)" />
+        <scope attributes="__classmethod__" ilk="function" line="224" lineend="236" name="set_translation" signature="self.set_translation(locale, src_str, trans_str=None, enc=&apos;utf-8&apos;)" />
+        <scope ilk="function" line="237" lineend="252" name="set_translation" signature="set_translation(locale, src_str, trans_str=None, enc=&apos;utf-8&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="254" lineend="266" name="set_translation_list" signature="self.set_translation_list(locale, trans_list, enc=&apos;utf-8&apos;)" />
+        <scope ilk="function" line="267" lineend="281" name="set_translation_list" signature="set_translation_list(locale, trans_list, enc=&apos;utf-8&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="283" lineend="285" name="def_unknown_proc" signature="self.def_unknown_proc(cmd=Proc.new)" />
+        <scope ilk="function" line="286" lineend="288" name="def_unknown_proc" signature="def_unknown_proc(cmd=Proc.new)" />
+        <import symbol="TkCore" />
+      </scope>
+    </scope>
+    

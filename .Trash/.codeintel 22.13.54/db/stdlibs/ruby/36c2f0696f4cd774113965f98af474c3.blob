@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="rss/taxonomy">
+      <import line="3" module="rss/1.0" symbol="*" />
+      <scope doc="Experimental" ilk="namespace" line="5" lineend="32" name="RSS">
+        <scope ilk="namespace" line="20" lineend="25" name="TaxonomyModel" />
+        <scope classrefs="Object" ilk="class" line="27" lineend="27" name="Channel" />
+        <scope classrefs="Object" ilk="class" line="28" lineend="28" name="Item" />
+        <scope classrefs="Object" ilk="class" line="29" lineend="29" name="Image" />
+        <scope classrefs="Object" ilk="class" line="30" lineend="30" name="TextInput" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="irb/extend-command">
+      <scope doc="irb/extend-command.rb - irb extend command $Release Version:&#xA;0.9.5$ $Revision: 1.4.2.2 $ $Date: 2005/04/19 19:24:57 $ by&#xA;Keiju ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="12" lineend="263" name="IRB">
+        <scope doc="IRB extended command" ilk="namespace" line="16" lineend="185" name="ExtendCommandBundle">
+          <scope ilk="function" line="23" lineend="25" name="irb_exit" signature="irb_exit(ret = 0)" />
+          <scope ilk="function" line="27" lineend="29" name="irb_context" signature="irb_context" />
+          <scope doc="[:popw, NO_OVERRIDE]," ilk="function" line="109" lineend="113" name="EXCB.install_extend_commands" signature="EXCB.install_extend_commands" />
+          <scope doc="aliases = [commans_alias, flag], ..." ilk="function" line="116" lineend="148" name="EXCB.def_extend_command" signature="EXCB.def_extend_command(cmd_name, cmd_class, load_file = nil, *aliases)">
+            <scope ilk="function" line="127" lineend="135" name="require" signature="require">
+              <scope doc="{cmd_name}(*opts, &amp;b)" ilk="function" line="130" lineend="132" name="ExtendCommand" signature="ExtendCommand::" />
+            </scope>
+            <scope ilk="function" line="139" lineend="141" name="ExtendCommand" signature="ExtendCommand::" />
+          </scope>
+          <scope doc="override = {NO_OVERRIDE, OVERRIDE_PRIVATE_ONLY,&#xA;OVERRIDE_ALL}" ilk="function" line="151" lineend="169" name="install_alias_method" signature="install_alias_method(to, from, override = NO_OVERRIDE)">
+            <scope classrefs="Object" ilk="class" line="159" lineend="159" name="self" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="171" lineend="173" name="irb_original_method_name" signature="self.irb_original_method_name(method_name)" />
+          <scope ilk="function" line="175" lineend="182" name="EXCB.extend_object" signature="EXCB.extend_object(obj)">
+            <scope classrefs="Object" ilk="class" line="176" lineend="176" name="obj" />
+          </scope>
+        </scope>
+        <scope doc="extension support for Context" ilk="namespace" line="188" lineend="219" name="ContextExtender">
+          <scope ilk="function" line="199" lineend="203" name="CE.install_extend_commands" signature="CE.install_extend_commands" />
+          <scope ilk="function" line="205" lineend="216" name="CE.def_extend_command" signature="CE.def_extend_command(cmd_name, load_file, *aliases)">
+            <scope ilk="function" line="207" lineend="211" name="Context.module_eval" signature="Context.module_eval" />
+          </scope>
+        </scope>
+        <scope ilk="namespace" line="221" lineend="262" name="MethodExtender">
+          <scope ilk="function" line="222" lineend="234" name="def_pre_proc" signature="def_pre_proc(base_method, extend_method)">
+            <scope ilk="function" line="229" lineend="232" name="send" signature="send" />
+          </scope>
+          <scope ilk="function" line="236" lineend="248" name="def_post_proc" signature="def_post_proc(base_method, extend_method)">
+            <scope ilk="function" line="243" lineend="246" name="send" signature="send" />
+          </scope>
+          <scope doc="return #{prefix}#{name}#{postfix}&lt;num&gt;" ilk="function" line="251" lineend="261" name="new_alias_name" signature="new_alias_name(name, prefix = &quot;__alias_of__&quot;, postfix = &quot;__&quot;)" />
+        </scope>
+      </scope>
+    </scope>
+    

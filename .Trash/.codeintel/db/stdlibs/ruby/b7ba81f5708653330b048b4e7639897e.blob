@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/widget">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;widget&apos;, &apos;3.0&apos;)" ilk="namespace" line="15" lineend="30" name="Tk::Tcllib">
+        <scope ilk="namespace" line="16" lineend="29" name="Widget">
+          <scope attributes="__classmethod__" ilk="function" line="18" lineend="20" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="22" lineend="28" name="package_version" signature="self.package_version" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="32" lineend="48" name="Tk::Tcllib::" />
+    </scope>
+    

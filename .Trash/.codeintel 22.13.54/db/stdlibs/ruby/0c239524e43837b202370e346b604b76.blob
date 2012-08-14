@@ -1,0 +1,75 @@
+<scope ilk="blob" lang="Ruby" name="rexml/validation/relaxng">
+      <import line="1" module="rexml/validation/validation" symbol="*" />
+      <import line="2" module="rexml/parsers/baseparser" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="559" name="REXML">
+        <scope ilk="namespace" line="5" lineend="558" name="Validation">
+          <scope classrefs="Object" doc="Implemented: * empty * element * attribute * text" ilk="class" line="34" lineend="124" name="RelaxNG">
+            <scope ilk="function" line="40" lineend="40" name="current" />
+            <scope ilk="function" line="40" lineend="40" name="current=" />
+            <scope ilk="function" line="41" lineend="41" name="count" />
+            <scope ilk="function" line="41" lineend="41" name="count=" />
+            <scope ilk="function" line="42" lineend="42" name="references" />
+            <scope attributes="__ctor__" doc="FIXME: Namespaces" ilk="function" line="45" lineend="119" name="initialize" signature="initialize" />
+            <scope ilk="function" line="121" lineend="123" name="receive" signature="receive" />
+            <import symbol="Validator" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="126" lineend="253" name="State">
+            <scope attributes="__ctor__" ilk="function" line="127" lineend="134" name="initialize" signature="initialize( context )" />
+            <scope ilk="function" line="136" lineend="140" name="reset" signature="reset" />
+            <scope ilk="function" line="142" lineend="144" name="previous=" signature="previous=( previous )" />
+            <scope ilk="function" line="146" lineend="175" name="next" signature="next( event )" />
+            <scope ilk="function" line="177" lineend="183" name="to_s" signature="to_s" />
+            <scope ilk="function" line="185" lineend="190" name="inspect" signature="inspect" />
+            <scope ilk="function" line="192" lineend="194" name="expected" signature="expected" />
+            <scope ilk="function" line="196" lineend="198" name="&lt;&lt;" signature="&lt;&lt;( event" />
+            <scope ilk="function" line="202" lineend="208" name="expand_ref_in" signature="expand_ref_in( arry, ind )" />
+            <scope ilk="function" line="210" lineend="218" name="add_event_to_arry" signature="add_event_to_arry( arry, evt )" />
+            <scope ilk="function" line="220" lineend="252" name="generate_event" signature="generate_event( event )" />
+          </scope>
+          <scope classrefs="State" ilk="class" line="256" lineend="260" name="Sequence">
+            <scope ilk="function" line="257" lineend="259" name="matches?" signature="matches?(event)" />
+          </scope>
+          <scope classrefs="State" ilk="class" line="263" lineend="283" name="Optional">
+            <scope ilk="function" line="264" lineend="272" name="next" signature="next( event )" />
+            <scope ilk="function" line="274" lineend="277" name="matches?" signature="matches?(event)" />
+            <scope ilk="function" line="279" lineend="282" name="expected" signature="expected" />
+          </scope>
+          <scope classrefs="Optional" ilk="class" line="286" lineend="312" name="ZeroOrMore">
+            <scope ilk="function" line="287" lineend="306" name="next" signature="next( event )" />
+            <scope ilk="function" line="308" lineend="311" name="expected" signature="expected" />
+          </scope>
+          <scope classrefs="State" ilk="class" line="315" lineend="359" name="OneOrMore">
+            <scope attributes="__ctor__" ilk="function" line="316" lineend="319" name="initialize" signature="initialize" />
+            <scope ilk="function" line="321" lineend="324" name="reset" signature="reset" />
+            <scope ilk="function" line="326" lineend="345" name="next" signature="next( event )" />
+            <scope ilk="function" line="347" lineend="350" name="matches?" signature="matches?( event )" />
+            <scope ilk="function" line="352" lineend="358" name="expected" signature="expected" />
+          </scope>
+          <scope classrefs="State" ilk="class" line="362" lineend="445" name="Choice">
+            <scope attributes="__ctor__" ilk="function" line="363" lineend="366" name="initialize" signature="initialize" />
+            <scope ilk="function" line="368" lineend="372" name="reset" signature="reset" />
+            <scope ilk="function" line="374" lineend="376" name="&lt;&lt;" signature="&lt;&lt;( event" />
+            <scope ilk="function" line="378" lineend="404" name="next" signature="next( event )" />
+            <scope ilk="function" line="406" lineend="409" name="matches?" signature="matches?( event )" />
+            <scope ilk="function" line="411" lineend="422" name="expected" signature="expected" />
+            <scope ilk="function" line="424" lineend="426" name="inspect" signature="inspect" />
+            <scope ilk="function" line="429" lineend="444" name="add_event_to_arry" signature="add_event_to_arry( arry, evt )" />
+          </scope>
+          <scope classrefs="Choice" ilk="class" line="448" lineend="545" name="Interleave">
+            <scope attributes="__ctor__" ilk="function" line="449" lineend="452" name="initialize" signature="initialize" />
+            <scope ilk="function" line="454" lineend="456" name="reset" signature="reset" />
+            <scope ilk="function" line="458" lineend="485" name="next_current" signature="next_current( event )" />
+            <scope ilk="function" line="488" lineend="522" name="next" signature="next( event )" />
+            <scope ilk="function" line="524" lineend="527" name="matches?" signature="matches?( event )" />
+            <scope ilk="function" line="529" lineend="540" name="expected" signature="expected" />
+            <scope ilk="function" line="542" lineend="544" name="inspect" signature="inspect" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="547" lineend="557" name="Ref">
+            <scope attributes="__ctor__" ilk="function" line="548" lineend="550" name="initialize" signature="initialize" />
+            <scope ilk="function" line="551" lineend="553" name="to_s" signature="to_s" />
+            <scope ilk="function" line="554" lineend="556" name="inspect" signature="inspect" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

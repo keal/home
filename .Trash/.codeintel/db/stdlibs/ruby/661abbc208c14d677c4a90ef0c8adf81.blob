@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="rexml/rexml">
+      <scope doc="REXML is an XML toolkit for Ruby[http://www.ruby-lang.org],&#xA;in Ruby." ilk="namespace" line="22" lineend="29" name="REXML" />
+    </scope>
+    

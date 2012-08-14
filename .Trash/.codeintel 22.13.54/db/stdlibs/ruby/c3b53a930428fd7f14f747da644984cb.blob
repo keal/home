@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="tk/mngfocus">
+      <import line="5" module="tk" symbol="*" />
+      <scope doc="tk/mngfocus.rb : methods for Tcl/Tk standard library&#xA;&apos;focus.tcl&apos; by Hidetoshi Nagai &lt;nagai@ai.kyutech.ac.jp&gt;" ilk="namespace" line="7" lineend="33" name="TkManageFocus">
+        <scope attributes="__classmethod__" ilk="function" line="16" lineend="18" name="followsMouse" signature="TkManageFocus.followsMouse" />
+        <scope attributes="__classmethod__" ilk="function" line="20" lineend="22" name="next" signature="TkManageFocus.next(win)" />
+        <scope ilk="function" line="23" lineend="25" name="focusNext" signature="focusNext" />
+        <scope attributes="__classmethod__" ilk="function" line="27" lineend="29" name="prev" signature="TkManageFocus.prev(win)" />
+        <scope ilk="function" line="30" lineend="32" name="focusPrev" signature="focusPrev" />
+      </scope>
+    </scope>
+    

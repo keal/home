@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="tk/frame">
+      <import line="4" module="tk" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/frame.rb : treat frame widget" ilk="class" line="6" lineend="128" name="TkFrame">
+        <scope doc="old version def initialize(parent=nil, keys=nil) if&#xA;keys.kind_of? Hash keys = keys.dup @classname =&#xA;keys.delete(&apos;classname&apos;) if keys.key?(&apos;classname&apos;)" ilk="function" line="33" lineend="35" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope attributes="__ctor__" ilk="function" line="38" lineend="74" name="initialize" signature="initialize(parent=nil, keys=nil)" />
+        <scope doc="def create_self(keys) if keys and keys != None&#xA;tk_call_without_enc(&apos;frame&apos;, @path, *hash_kv(keys)) else&#xA;tk_call_without_enc( &apos;frame&apos;, @path)" ilk="function" line="85" lineend="87" name="database_classname" signature="database_classname" />
+        <scope attributes="__classmethod__" ilk="function" line="89" lineend="95" name="database_class" signature="self.database_class" />
+        <scope attributes="__classmethod__" ilk="function" line="96" lineend="98" name="database_classname" signature="self.database_classname" />
+        <scope attributes="__classmethod__" ilk="function" line="100" lineend="106" name="bind" signature="self.bind(*args, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="107" lineend="113" name="bind_append" signature="self.bind_append(*args, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="114" lineend="120" name="bind_remove" signature="self.bind_remove(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="121" lineend="127" name="bindinfo" signature="self.bindinfo(*args)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,61 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tile/treeview">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tkextlib/tile.rb" symbol="*" />
+      <scope doc="treeview widget by Hidetoshi NAGAI (nagai@ai.kyutech.ac.jp)" ilk="namespace" line="8" lineend="133" name="Tk">
+        <scope ilk="namespace" line="9" lineend="132" name="Tile">
+          <scope classrefs="TkWindow" ilk="class" line="10" lineend="11" name="Treeview" />
+          <scope ilk="namespace" line="13" lineend="131" name="TreeviewConfig">
+            <scope ilk="function" line="16" lineend="18" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+            <scope ilk="function" line="21" lineend="23" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+            <scope ilk="function" line="26" lineend="35" name="__item_numstrval_optkeys" signature="__item_numstrval_optkeys(id)" />
+            <scope ilk="function" line="38" lineend="47" name="__item_strval_optkeys" signature="__item_strval_optkeys(id)" />
+            <scope ilk="function" line="50" lineend="59" name="__item_boolval_optkeys" signature="__item_boolval_optkeys(id)" />
+            <scope ilk="function" line="62" lineend="71" name="__item_listval_optkeys" signature="__item_listval_optkeys(id)" />
+            <scope doc="Treeview Item" ilk="function" line="83" lineend="85" name="itemcget" signature="itemcget(tagOrId, option)" />
+            <scope ilk="function" line="86" lineend="88" name="itemconfigure" signature="itemconfigure(tagOrId, slot, value=None)" />
+            <scope ilk="function" line="89" lineend="91" name="itemconfiginfo" signature="itemconfiginfo(tagOrId, slot=nil)" />
+            <scope ilk="function" line="92" lineend="94" name="current_itemconfiginfo" signature="current_itemconfiginfo(tagOrId, slot=nil)" />
+            <scope doc="Treeview Column" ilk="function" line="97" lineend="99" name="columncget" signature="columncget(tagOrId, option)" />
+            <scope ilk="function" line="100" lineend="102" name="columnconfigure" signature="columnconfigure(tagOrId, slot, value=None)" />
+            <scope ilk="function" line="103" lineend="105" name="columnconfiginfo" signature="columnconfiginfo(tagOrId, slot=nil)" />
+            <scope ilk="function" line="106" lineend="108" name="current_columnconfiginfo" signature="current_columnconfiginfo(tagOrId, slot=nil)" />
+            <scope doc="Treeview Heading" ilk="function" line="115" lineend="117" name="headingcget" signature="headingcget(tagOrId, option)" />
+            <scope ilk="function" line="118" lineend="120" name="headingconfigure" signature="headingconfigure(tagOrId, slot, value=None)" />
+            <scope ilk="function" line="121" lineend="123" name="headingconfiginfo" signature="headingconfiginfo(tagOrId, slot=nil)" />
+            <scope ilk="function" line="124" lineend="126" name="current_headingconfiginfo" signature="current_headingconfiginfo(tagOrId, slot=nil)" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="135" lineend="280" name="Tk::Tile::">
+        <scope attributes="__classmethod__" ilk="function" line="149" lineend="151" name="style" signature="self.style(*args)" />
+        <scope ilk="function" line="153" lineend="159" name="tagid" signature="tagid(id)" />
+        <scope ilk="function" line="161" lineend="163" name="children" signature="children(item)" />
+        <scope ilk="function" line="164" lineend="168" name="set_children" signature="set_children(item, *items)" />
+        <scope ilk="function" line="170" lineend="173" name="delete" signature="delete(*items)" />
+        <scope ilk="function" line="175" lineend="178" name="detach" signature="detach(*items)" />
+        <scope ilk="function" line="180" lineend="182" name="exist?" signature="exist?(item)" />
+        <scope ilk="function" line="184" lineend="186" name="focus_item" signature="focus_item(item = None)" />
+        <scope ilk="function" line="188" lineend="194" name="identify" signature="identify(x, y)" />
+        <scope ilk="function" line="196" lineend="198" name="index" signature="index(item)" />
+        <scope ilk="function" line="200" lineend="209" name="insert" signature="insert(parent, idx, keys={})" />
+        <scope ilk="function" line="211" lineend="213" name="instate" signature="instate(spec, cmd=Proc.new)" />
+        <scope ilk="function" line="214" lineend="216" name="state" signature="state(spec=None)" />
+        <scope ilk="function" line="218" lineend="221" name="move" signature="move(item, parent, idx)" />
+        <scope ilk="function" line="223" lineend="225" name="next" signature="next(item)" />
+        <scope ilk="function" line="227" lineend="229" name="parent" signature="parent(item)" />
+        <scope ilk="function" line="231" lineend="233" name="prev" signature="prev(item)" />
+        <scope ilk="function" line="235" lineend="238" name="see" signature="see(item)" />
+        <scope ilk="function" line="240" lineend="242" name="selection" signature="selection" />
+        <scope ilk="function" line="245" lineend="248" name="selection_add" signature="selection_add(*items)" />
+        <scope ilk="function" line="249" lineend="252" name="selection_remove" signature="selection_remove(*items)" />
+        <scope ilk="function" line="253" lineend="256" name="selection_set" signature="selection_set(*items)" />
+        <scope ilk="function" line="257" lineend="260" name="selection_toggle" signature="selection_toggle(*items)" />
+        <scope ilk="function" line="262" lineend="272" name="get_directory" signature="get_directory(item)" />
+        <scope ilk="function" line="273" lineend="275" name="get" signature="get(item, col)" />
+        <scope ilk="function" line="276" lineend="279" name="set" signature="set(item, col, value)" />
+        <import symbol="Tk::Tile::" />
+        <import symbol="Scrollable" />
+        <import symbol="Tk::Tile::" />
+      </scope>
+    </scope>
+    

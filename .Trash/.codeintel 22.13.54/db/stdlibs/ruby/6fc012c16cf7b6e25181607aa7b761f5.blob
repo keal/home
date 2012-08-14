@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="Win32API">
+      <scope classrefs="Object" ilk="class" name="Win32API">
+        <scope ilk="function" name="Call" />
+        <scope ilk="function" name="call" />
+      </scope>
+    </scope>
+    

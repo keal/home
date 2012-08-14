@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="rexml/dtd/entitydecl">
+      <import line="1" module="rexml/child" symbol="*" />
+      <scope ilk="namespace" line="2" lineend="56" name="REXML">
+        <scope ilk="namespace" line="3" lineend="55" name="DTD">
+          <scope classrefs="Child" ilk="class" line="4" lineend="54" name="EntityDecl">
+            <scope attributes="__ctor__" doc="&lt;!ENTITY name SYSTEM &quot;...&quot;&gt; &lt;!ENTITY name &quot;...&quot;&gt;" ilk="function" line="13" lineend="35" name="initialize" signature="initialize" />
+            <scope ilk="function" line="37" lineend="42" name="to_s" signature="to_s" />
+            <scope ilk="function" line="44" lineend="47" name="write" signature="write( output, indent )" />
+            <scope attributes="__classmethod__" ilk="function" line="49" lineend="53" name="parse_source" signature="EntityDecl.parse_source" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

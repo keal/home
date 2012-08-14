@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="tk/root">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/wm" symbol="*" />
+      <import line="6" module="tk/menuspec" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/root.rb : treat root widget" ilk="class" line="8" lineend="108" name="TkRoot">
+        <scope ilk="function" line="12" lineend="14" name="__methodcall_optkeys" signature="__methodcall_optkeys" />
+        <scope attributes="__classmethod__" ilk="function" line="38" lineend="67" name="new" signature="TkRoot.new(keys=nil, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="72" lineend="75" name="to_eval" signature="self.to_eval" />
+        <scope ilk="function" line="77" lineend="79" name="create_self" signature="create_self" />
+        <scope ilk="function" line="82" lineend="84" name="path" signature="path" />
+        <scope ilk="function" line="86" lineend="95" name="add_menu" signature="add_menu(menu_info, tearoff=false, opts=nil)" />
+        <scope ilk="function" line="97" lineend="103" name="add_menubar" signature="add_menubar(menu_spec, tearoff=false, opts=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="105" lineend="107" name="destroy" signature="TkRoot.destroy" />
+        <import symbol="Wm" />
+        <import symbol="TkMenuSpec" />
+      </scope>
+    </scope>
+    

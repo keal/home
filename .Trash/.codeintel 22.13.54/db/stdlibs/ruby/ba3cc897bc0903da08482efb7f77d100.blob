@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encodings/SHIFT_JIS">
+      <import line="1" module="rexml/encodings/SHIFT-JIS" symbol="*" />
+    </scope>
+    

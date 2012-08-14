@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/param">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL param definition." ilk="namespace" line="12" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="15" lineend="82" name="Param">
+        <scope ilk="function" line="16" lineend="16" name="message" />
+        <scope ilk="function" line="17" lineend="17" name="name" />
+        <scope ilk="function" line="18" lineend="18" name="soapbody" />
+        <scope ilk="function" line="19" lineend="19" name="soapheader" />
+        <scope ilk="function" line="20" lineend="20" name="soapfault" />
+        <scope attributes="__ctor__" doc="optional but required for fault." ilk="function" line="22" lineend="29" name="initialize" signature="initialize" />
+        <scope ilk="function" line="31" lineend="33" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="35" lineend="37" name="find_message" signature="find_message" />
+        <scope ilk="function" line="39" lineend="45" name="soapbody_use" signature="soapbody_use" />
+        <scope ilk="function" line="47" lineend="67" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="69" lineend="81" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

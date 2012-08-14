@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="date/format">
+      <import line="4" module="rational" symbol="*" />
+      <scope classrefs="Object" doc="format.rb: Written by Tadayoshi Funaba 1999-2005 $Id:&#xA;format.rb,v 2.15 2005-02-06 13:28:48+09 tadf Exp $" ilk="class" line="6" lineend="586" name="Date">
+        <scope attributes="__classmethod__" ilk="function" line="53" lineend="238" name="__strptime" signature="self.__strptime(str, fmt, elem)" />
+        <scope attributes="__classmethod__" ilk="function" line="242" lineend="245" name="_strptime" signature="self._strptime(str, fmt=&apos;%F&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="250" lineend="477" name="_parse" signature="self._parse(str, comp=false)" />
+        <scope attributes="__classmethod__" ilk="function" line="479" lineend="489" name="zone_to_diff" signature="self.zone_to_diff(str)" />
+        <scope ilk="function" line="491" lineend="578" name="strftime" signature="strftime(fmt=&apos;%F&apos;)" />
+        <scope doc="alias_method :format, :strftime" ilk="function" line="582" name="asctime" signature="asctime()" />
+      </scope>
+      <scope classrefs="Date" ilk="class" line="588" lineend="598" name="DateTime">
+        <scope attributes="__classmethod__" ilk="function" line="590" lineend="592" name="_strptime" signature="self._strptime(str, fmt=&apos;%FT%T%Z&apos;)" />
+        <scope ilk="function" line="594" lineend="596" name="strftime" signature="strftime(fmt=&apos;%FT%T%Z&apos;)" />
+      </scope>
+    </scope>
+    

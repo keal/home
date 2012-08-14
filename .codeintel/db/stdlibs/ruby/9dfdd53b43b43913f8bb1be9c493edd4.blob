@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/parsers/parserfactory">
+      <import line="1" module="rdoc/parsers/parse_simple" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="99" name="RDoc">
+        <scope doc="A parser is simple a class that implements" ilk="namespace" line="47" lineend="98" name="ParserFactory">
+          <scope doc="Record the fact that a particular class parses files that&#xA;match a given extension" ilk="function" line="56" lineend="58" name="parse_files_matching" signature="parse_files_matching(regexp)" />
+          <scope attributes="__classmethod__" doc="Return a parser that can handle a particular extension" ilk="function" line="62" lineend="64" name="can_parse" signature="ParserFactory.can_parse(file_name)" />
+          <scope attributes="__classmethod__" doc="Alias an extension to another extension." ilk="function" line="70" lineend="75" name="alias_extension" signature="ParserFactory.alias_extension(old_ext, new_ext)" />
+          <scope attributes="__classmethod__" doc="Find the correct parser for a particular file name." ilk="function" line="80" lineend="97" name="parser_for" signature="ParserFactory.parser_for(top_level, file_name, body, options, stats)" />
+        </scope>
+      </scope>
+    </scope>
+    

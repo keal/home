@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="xsd/codegen/moduledef">
+      <import line="9" module="xsd/codegen/gensupport" symbol="*" />
+      <import line="10" module="xsd/codegen/methoddef" symbol="*" />
+      <import line="11" module="xsd/codegen/commentdef" symbol="*" />
+      <import line="169" module="xsd/codegen/moduledef" symbol="*" />
+      <scope doc="XSD4R - Generating module definition code Copyright (C) 2004&#xA;NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="14" name="XSD" />
+      <scope ilk="namespace" line="15" name="CodeGen" />
+      <scope classrefs="Object" ilk="class" line="18" lineend="161" name="ModuleDef">
+        <scope attributes="__ctor__" ilk="function" line="22" lineend="29" name="initialize" signature="initialize(name)" />
+        <scope ilk="function" line="31" lineend="33" name="def_require" signature="def_require(path)" />
+        <scope ilk="function" line="35" lineend="40" name="def_const" signature="def_const(const, value)" />
+        <scope ilk="function" line="42" lineend="44" name="def_code" signature="def_code(code)" />
+        <scope ilk="function" line="46" lineend="48" name="def_method" signature="def_method(name, *params)" />
+        <scope ilk="function" line="51" lineend="54" name="def_protectedmethod" signature="def_protectedmethod(name, *params)" />
+        <scope ilk="function" line="56" lineend="58" name="def_privatemethod" signature="def_privatemethod(name, *params)" />
+        <scope ilk="function" line="60" lineend="62" name="add_method" signature="add_method(m, visibility = :public)" />
+        <scope ilk="function" line="64" lineend="93" name="dump" signature="dump" />
+        <scope ilk="function" line="97" lineend="103" name="dump_requirepath" signature="dump_requirepath" />
+        <scope ilk="function" line="105" lineend="111" name="dump_const" signature="dump_const" />
+        <scope ilk="function" line="113" lineend="115" name="dump_code" signature="dump_code" />
+        <scope ilk="function" line="117" lineend="119" name="dump_static" signature="dump_static(str)" />
+        <scope ilk="function" line="121" lineend="135" name="dump_methods" signature="dump_methods" />
+        <scope ilk="function" line="137" lineend="143" name="dump_value" signature="dump_value(value)" />
+        <scope ilk="function" line="145" lineend="147" name="dump_package_def" signature="dump_package_def(package)" />
+        <scope ilk="function" line="149" lineend="151" name="dump_package_def_end" signature="dump_package_def_end(package)" />
+        <scope ilk="function" line="153" lineend="156" name="dump_module_def" signature="dump_module_def" />
+        <scope ilk="function" line="158" lineend="160" name="dump_module_def_end" signature="dump_module_def_end" />
+        <import symbol="GenSupport" />
+        <import symbol="CommentDef" />
+      </scope>
+    </scope>
+    

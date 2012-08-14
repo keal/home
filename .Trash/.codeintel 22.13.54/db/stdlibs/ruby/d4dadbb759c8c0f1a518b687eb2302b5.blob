@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="irb/cmd/fork">
+      <scope doc="fork.rb - $Release Version: 0.9.5 $ $Revision: 1.2.2.1 $&#xA;$Date: 2005/04/19 19:24:58 $ by Keiju ISHITSUKA(keiju@ruby-&#xA;lang.org)" ilk="namespace" line="16" lineend="37" name="IRB">
+        <scope ilk="namespace" line="17" lineend="36" name="ExtendCommand">
+          <scope classrefs="Nop" ilk="class" line="18" lineend="35" name="Fork">
+            <scope ilk="function" line="19" lineend="34" name="execute" signature="execute(&amp;block)">
+              <scope classrefs="Object" ilk="class" line="22" lineend="24" name="self" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

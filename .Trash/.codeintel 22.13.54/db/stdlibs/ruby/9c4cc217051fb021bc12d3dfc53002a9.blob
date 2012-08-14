@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="uri/https">
+      <import line="9" module="uri/http" symbol="*" />
+      <scope doc="= uri/https.rb" ilk="namespace" line="11" lineend="16" name="URI">
+        <scope classrefs="HTTP" ilk="class" line="12" lineend="14" name="HTTPS" />
+      </scope>
+    </scope>
+    

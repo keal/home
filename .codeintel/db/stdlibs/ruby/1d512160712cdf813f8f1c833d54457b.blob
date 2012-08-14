@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="irb/ext/history">
+      <scope doc="history.rb - $Release Version: 0.9.5$ $Revision: 1.1.2.2 $&#xA;$Date: 2005/04/19 19:24:58 $ by Keiju ISHITSUKA(keiju@ruby-&#xA;lang.org)" ilk="namespace" line="13" lineend="108" name="IRB">
+        <scope classrefs="Object" ilk="class" line="15" lineend="49" name="Context">
+          <scope ilk="function" line="21" lineend="31" name="set_last_value" signature="set_last_value(value)" />
+          <scope ilk="function" line="33" lineend="33" name="eval_history" />
+          <scope ilk="function" line="34" lineend="48" name="eval_history=" signature="eval_history=(no)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="51" lineend="107" name="History">
+          <scope attributes="__ctor__" ilk="function" line="54" lineend="57" name="initialize" signature="initialize(size = 16)" />
+          <scope ilk="function" line="59" lineend="64" name="size" signature="size(size)" />
+          <scope ilk="function" line="66" lineend="76" name="[]" signature="[](idx" />
+          <scope ilk="function" line="78" lineend="81" name="push" signature="push(no, val)" />
+          <scope ilk="function" line="85" lineend="106" name="inspect" signature="inspect" />
+        </scope>
+      </scope>
+    </scope>
+    

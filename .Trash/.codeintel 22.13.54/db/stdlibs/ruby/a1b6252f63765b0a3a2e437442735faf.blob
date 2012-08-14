@@ -1,0 +1,37 @@
+<scope ilk="blob" lang="Ruby" name="irb/ruby-token">
+      <scope doc="irb/ruby-token.rb - ruby tokens $Release Version: 0.9.5$&#xA;$Revision: 1.5.2.1 $ $Date: 2005/04/19 19:24:57 $ by Keiju&#xA;ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="12" lineend="273" name="RubyToken">
+        <scope classrefs="Object" doc="for ruby 1.4X" ilk="class" line="26" lineend="35" name="Token">
+          <scope attributes="__ctor__" ilk="function" line="27" lineend="31" name="initialize" signature="initialize(seek, line_no, char_no)" />
+          <scope ilk="function" line="32" lineend="32" name="seek" />
+          <scope ilk="function" line="33" lineend="33" name="line_no" />
+          <scope ilk="function" line="34" lineend="34" name="char_no" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="37" lineend="42" name="TkNode">
+          <scope attributes="__ctor__" ilk="function" line="38" lineend="40" name="initialize" signature="initialize(seek, line_no, char_no)" />
+          <scope ilk="function" line="41" lineend="41" name="node" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="44" lineend="50" name="TkId">
+          <scope attributes="__ctor__" ilk="function" line="45" lineend="48" name="initialize" signature="initialize(seek, line_no, char_no, name)" />
+          <scope ilk="function" line="49" lineend="49" name="name" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="52" lineend="58" name="TkVal">
+          <scope attributes="__ctor__" ilk="function" line="53" lineend="56" name="initialize" signature="initialize(seek, line_no, char_no, value = nil)" />
+          <scope ilk="function" line="57" lineend="57" name="value" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="60" lineend="62" name="TkOp">
+          <scope ilk="function" line="61" lineend="61" name="name" />
+        </scope>
+        <scope classrefs="TkOp" ilk="class" line="64" lineend="71" name="TkOPASGN">
+          <scope attributes="__ctor__" ilk="function" line="65" lineend="69" name="initialize" signature="initialize(seek, line_no, char_no, op)" />
+          <scope ilk="function" line="70" lineend="70" name="op" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="73" lineend="79" name="TkUnknownChar">
+          <scope attributes="__ctor__" ilk="function" line="74" lineend="77" name="initialize" signature="initialize(seek, line_no, char_no, id)" />
+          <scope ilk="function" line="78" lineend="78" name="name" />
+        </scope>
+        <scope classrefs="Token" ilk="class" line="81" lineend="82" name="TkError" />
+        <scope ilk="function" line="84" lineend="107" name="Token" signature="Token(token, value = nil)" />
+        <scope attributes="__classmethod__" doc="{reading =&gt; token_class} {reading =&gt; [token_class, *opt]}" ilk="function" line="250" lineend="268" name="def_token" signature="RubyToken.def_token(token_n, super_token = Token, reading = nil, *opts)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_writer">
+      <import line="1" module="fileutils" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="62" name="RI">
+        <scope classrefs="Object" ilk="class" line="4" lineend="61" name="RiWriter">
+          <scope attributes="__classmethod__" ilk="function" line="6" lineend="8" name="class_desc_path" signature="RiWriter.class_desc_path(dir, class_desc)" />
+          <scope attributes="__classmethod__" doc="Convert a name from internal form (containing punctuation)&#xA;to an external form (where punctuation is replaced by %xx)" ilk="function" line="15" lineend="17" name="internal_to_external" signature="RiWriter.internal_to_external(name)" />
+          <scope attributes="__classmethod__" doc="And the reverse operation" ilk="function" line="20" lineend="22" name="external_to_internal" signature="RiWriter.external_to_internal(name)" />
+          <scope attributes="__ctor__" ilk="function" line="24" lineend="26" name="initialize" signature="initialize(base_dir)" />
+          <scope ilk="function" line="28" lineend="30" name="remove_class" signature="remove_class(class_desc)" />
+          <scope ilk="function" line="32" lineend="39" name="add_class" signature="add_class(class_desc)" />
+          <scope ilk="function" line="41" lineend="54" name="add_method" signature="add_method(class_desc, method_desc)" />
+          <scope ilk="function" line="58" lineend="60" name="path_to_dir" signature="path_to_dir(class_name)" />
+        </scope>
+      </scope>
+    </scope>
+    

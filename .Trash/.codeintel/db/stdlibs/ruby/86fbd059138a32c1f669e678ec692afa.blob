@@ -1,0 +1,33 @@
+<scope ilk="blob" lang="Ruby" name="rexml/text">
+      <import line="1" module="rexml/entity" symbol="*" />
+      <import line="2" module="rexml/doctype" symbol="*" />
+      <import line="3" module="rexml/child" symbol="*" />
+      <import line="4" module="rexml/doctype" symbol="*" />
+      <import line="5" module="rexml/parseexception" symbol="*" />
+      <scope ilk="namespace" line="7" lineend="342" name="REXML">
+        <scope classrefs="Child" doc="Represents text nodes in an XML document" ilk="class" line="9" lineend="341" name="Text">
+          <scope ilk="function" line="19" lineend="19" name="raw" />
+          <scope ilk="function" line="19" lineend="19" name="raw=" />
+          <scope attributes="__ctor__" doc="Constructor +arg+ if a String, the content is set to the&#xA;String." ilk="function" line="59" lineend="93" name="initialize" signature="initialize(arg, respect_whitespace=false, parent=nil, raw=nil, entity_filter=nil, illegal=ILLEGAL )" />
+          <scope ilk="function" line="95" lineend="97" name="node_type" signature="node_type" />
+          <scope ilk="function" line="99" lineend="101" name="empty?" signature="empty?" />
+          <scope ilk="function" line="104" lineend="106" name="clone" signature="clone" />
+          <scope doc="Appends text to this text node." ilk="function" line="111" lineend="113" name="&lt;&lt;" signature="&lt;&lt;( to_append" />
+          <scope doc="+other+ a String or a Text +returns+ the result of (to_s &lt;=&gt;&#xA;arg.to_s)" ilk="function" line="118" lineend="120" name="&lt;=&gt;" signature="&lt;=&gt;( other" />
+          <scope doc="Returns the string value of this text node." ilk="function" line="136" lineend="147" name="to_s" signature="to_s" />
+          <scope ilk="function" line="149" lineend="151" name="inspect" signature="inspect" />
+          <scope doc="Returns the string value of this text." ilk="function" line="166" lineend="174" name="value" signature="value" />
+          <scope ilk="function" line="176" lineend="185" name="wrap" signature="wrap(string, width, addnewline=false)" />
+          <scope doc="Sets the contents of this text node." ilk="function" line="194" lineend="199" name="value=" signature="value=( val )" />
+          <scope ilk="function" line="201" lineend="211" name="indent_text" signature="indent_text(string, level=1, style=&quot;\t&quot;, indentfirstline=true)" />
+          <scope ilk="function" line="213" lineend="223" name="write" signature="write( writer, indent=-1, transitive=false, ie_hack=false )" />
+          <scope doc="FIXME This probably won&apos;t work properly" ilk="function" line="227" lineend="231" name="xpath" signature="xpath" />
+          <scope doc="Writes out text, substituting special characters beforehand." ilk="function" line="247" lineend="257" name="write_with_substitution" signature="write_with_substitution" />
+          <scope attributes="__classmethod__" doc="Reads text, substituting entities" ilk="function" line="260" lineend="282" name="read_with_substitution" signature="Text::read_with_substitution( input, illegal=nil )" />
+          <scope attributes="__classmethod__" doc="Escapes all possible entities" ilk="function" line="286" lineend="305" name="normalize" signature="Text::normalize( input, doctype=nil, entity_filter=nil )" />
+          <scope attributes="__classmethod__" doc="Unescapes all possible entities" ilk="function" line="308" lineend="340" name="unnormalize" signature="Text::unnormalize( string, doctype=nil, filter=nil, illegal=nil )" />
+          <import symbol="Comparable" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tile/tnotebook">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tkextlib/tile.rb" symbol="*" />
+      <scope doc="tnotebook widget by Hidetoshi NAGAI (nagai@ai.kyutech.ac.jp)" ilk="namespace" line="8" lineend="14" name="Tk">
+        <scope ilk="namespace" line="9" lineend="13" name="Tile">
+          <scope classrefs="TkWindow" ilk="class" line="10" lineend="11" name="TNotebook" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="110" name="Tk::Tile::">
+        <scope ilk="function" line="20" lineend="22" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="25" lineend="27" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="30" lineend="32" name="__item_listval_optkeys" signature="__item_listval_optkeys" />
+        <scope ilk="function" line="35" lineend="37" name="__item_methodcall_optkeys" signature="__item_methodcall_optkeys" />
+        <scope doc="alias tabcget itemcget" ilk="function" line="45" lineend="47" name="tabcget" signature="tabcget(tagOrId, option)" />
+        <scope attributes="__classmethod__" ilk="function" line="60" lineend="62" name="style" signature="self.style(*args)" />
+        <scope ilk="function" line="64" lineend="73" name="enable_traversal" signature="enable_traversal()" />
+        <scope ilk="function" line="75" lineend="82" name="add" signature="add(child, keys=nil)" />
+        <scope ilk="function" line="84" lineend="87" name="forget" signature="forget(idx)" />
+        <scope ilk="function" line="89" lineend="91" name="index" signature="index(idx)" />
+        <scope ilk="function" line="93" lineend="100" name="insert" signature="insert(idx, subwin, keys=nil)" />
+        <scope ilk="function" line="102" lineend="105" name="select" signature="select(idx)" />
+        <scope ilk="function" line="107" lineend="109" name="tabs" signature="tabs" />
+        <import symbol="TkItemConfigMethod" />
+        <import symbol="Tk::Tile::" />
+      </scope>
+    </scope>
+    

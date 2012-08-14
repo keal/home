@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="singleton">
+      <scope doc="The Singleton module implements the Singleton pattern." ilk="namespace" name="Singleton">
+        <scope attributes="private" doc="default marshalling strategy" ilk="function" name="_dump" signature="(depth=-1)" />
+        <scope doc="disable build-in copying methods" ilk="function" name="clone" signature="()" />
+        <scope ilk="function" name="dup" signature="()" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/history">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tk/entry" symbol="*" />
+      <import line="11" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;history&apos;, &apos;0.1&apos;)" ilk="namespace" line="16" lineend="31" name="Tk::Tcllib">
+        <scope ilk="namespace" line="17" lineend="30" name="History">
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="33" lineend="73" name="Tk::Tcllib::">
+        <scope attributes="__classmethod__" ilk="function" line="36" lineend="39" name="init" signature="self.init(entry, length=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="41" lineend="44" name="remove" signature="self.remove(entry)" />
+        <scope ilk="function" line="46" lineend="49" name="history_remove" signature="history_remove" />
+        <scope ilk="function" line="51" lineend="54" name="history_add" signature="history_add(text)" />
+        <scope ilk="function" line="56" lineend="58" name="history_get" signature="history_get" />
+        <scope ilk="function" line="60" lineend="63" name="history_clear" signature="history_clear" />
+        <scope ilk="function" line="65" lineend="68" name="history_configure" signature="history_configure(opt, value)" />
+        <scope ilk="function" line="70" lineend="72" name="history_configinfo" signature="history_configinfo(opt)" />
+      </scope>
+    </scope>
+    

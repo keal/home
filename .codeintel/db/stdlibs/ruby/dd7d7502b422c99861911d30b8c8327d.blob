@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/importer">
+      <import line="9" module="soap/httpconfigloader" symbol="*" />
+      <import line="10" module="wsdl/xmlSchema/parser" symbol="*" />
+      <scope doc="WSDL4R - XSD importer library." ilk="namespace" line="13" name="WSDL" />
+      <scope ilk="namespace" line="14" name="XMLSchema" />
+      <scope classrefs="Object" ilk="class" line="17" lineend="83" name="Importer">
+        <scope attributes="__classmethod__" ilk="function" line="18" lineend="20" name="import" signature="self.import(location, originalroot = nil)" />
+        <scope attributes="__ctor__" ilk="function" line="22" lineend="24" name="initialize" signature="initialize" />
+        <scope ilk="function" line="26" lineend="33" name="import" signature="import(location, originalroot = nil)" />
+        <scope ilk="function" line="37" lineend="43" name="parse" signature="parse(content, location, originalroot)" />
+        <scope ilk="function" line="45" lineend="67" name="fetch" signature="fetch(location)" />
+        <scope ilk="function" line="69" lineend="82" name="web_client" signature="web_client">
+          <import line="71" module="http-access2" symbol="*" />
+          <import line="78" module="soap/netHttpClient" symbol="*" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,36 @@
+<scope ilk="blob" lang="Ruby" name="rexml/light/node">
+      <import line="1" module="rexml/xmltokens" symbol="*" />
+      <import line="2" module="rexml/light/node" symbol="*" />
+      <scope doc="[ :element, parent, name, attributes, children* ] a =&#xA;Node.new a &lt;&lt; &quot;B&quot;              # =&gt; &lt;a&gt;B&lt;/a&gt; a.b # =&gt;&#xA;&lt;a&gt;B&lt;b/&gt;&lt;/a&gt; a.b[1]                        # =&gt;&#xA;&lt;a&gt;B&lt;b/&gt;&lt;b/&gt;&lt;a&gt;" ilk="namespace" line="12" lineend="196" name="REXML">
+        <scope ilk="namespace" line="13" lineend="195" name="Light">
+          <scope classrefs="Object" doc="Represents a tagged XML element." ilk="class" line="17" lineend="194" name="Node">
+            <scope attributes="__ctor__" doc="Create a new element." ilk="function" line="21" lineend="34" name="initialize" signature="initialize" />
+            <scope ilk="function" line="36" lineend="42" name="size" signature="size" />
+            <scope ilk="function" line="44" lineend="46" name="each" signature="each( &amp;block )" />
+            <scope ilk="function" line="48" lineend="50" name="name" signature="name" />
+            <scope ilk="function" line="52" lineend="56" name="name=" signature="name=( name_str, ns=nil )" />
+            <scope ilk="function" line="58" lineend="60" name="parent=" signature="parent=( node )" />
+            <scope ilk="function" line="62" lineend="65" name="local_name" signature="local_name" />
+            <scope ilk="function" line="67" lineend="69" name="local_name=" signature="local_name=( name_str )" />
+            <scope ilk="function" line="71" lineend="73" name="prefix" signature="prefix( namespace=nil )" />
+            <scope ilk="function" line="75" lineend="77" name="namespace" signature="namespace( prefix=prefix() )" />
+            <scope ilk="function" line="79" lineend="84" name="namespace=" signature="namespace=( namespace )" />
+            <scope ilk="function" line="86" lineend="96" name="[]" signature="[]( reference" />
+            <scope ilk="function" line="98" lineend="100" name="=~" signature="=~( path" />
+            <scope doc="Doesn&apos;t handle namespaces yet" ilk="function" line="103" lineend="116" name="[]=" signature="[]=( reference" />
+            <scope doc="Append a child to this element, optionally under a provided&#xA;namespace." ilk="function" line="122" lineend="131" name="&lt;&lt;" signature="&lt;&lt;" />
+            <scope ilk="function" line="133" lineend="135" name="node_type" signature="node_type" />
+            <scope ilk="function" line="137" lineend="140" name="text=" signature="text=( foo )" />
+            <scope ilk="function" line="142" lineend="145" name="root" signature="root" />
+            <scope ilk="function" line="147" lineend="149" name="has_name?" signature="has_name?( name, namespace = &apos;&apos; )" />
+            <scope ilk="function" line="151" lineend="153" name="children" signature="children" />
+            <scope ilk="function" line="155" lineend="157" name="parent" signature="parent" />
+            <scope ilk="function" line="159" lineend="161" name="to_s" signature="to_s" />
+            <scope ilk="function" line="165" lineend="170" name="namesplit" signature="namesplit" />
+            <scope ilk="function" line="172" lineend="182" name="namespace_of" signature="namespace_of( node, prefix=nil )" />
+            <scope ilk="function" line="184" lineend="193" name="prefix_of" signature="prefix_of( node, namespace=nil )" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="runit/testsuite">
+      <import line="5" module="test/unit/testsuite" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="7" lineend="26" name="RUNIT">
+        <scope classrefs="Test::Unit::" ilk="class" line="8" lineend="25" name="TestSuite">
+          <scope ilk="function" line="9" lineend="11" name="add_test" signature="add_test(*args)" />
+          <scope ilk="function" line="13" lineend="15" name="add" signature="add(*args)" />
+          <scope ilk="function" line="17" lineend="19" name="count_test_cases" signature="count_test_cases" />
+          <scope ilk="function" line="21" lineend="24" name="run" signature="run(result, &amp;progress_block)" />
+        </scope>
+      </scope>
+    </scope>
+    

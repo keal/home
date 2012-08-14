@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/cgiStubCreator">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="wsdl/soap/mappingRegistryCreator" symbol="*" />
+      <import line="11" module="wsdl/soap/methodDefCreator" symbol="*" />
+      <import line="12" module="wsdl/soap/classDefCreatorSupport" symbol="*" />
+      <scope doc="WSDL4R - Creating CGI stub code from WSDL." ilk="namespace" line="15" name="WSDL" />
+      <scope ilk="namespace" line="16" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="19" lineend="72" name="CGIStubCreator">
+        <scope ilk="function" line="22" lineend="22" name="definitions" />
+        <scope attributes="__ctor__" ilk="function" line="24" lineend="26" name="initialize" signature="initialize(definitions)" />
+        <scope ilk="function" line="28" lineend="32" name="dump" signature="dump(service_name)" />
+        <scope ilk="function" line="36" lineend="71" name="dump_porttype" signature="dump_porttype(name)" />
+        <import symbol="ClassDefCreatorSupport" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/selectcolor">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="8" module="tkextlib/bwidget/messagedlg" symbol="*" />
+      <scope doc="tkextlib/bwidget/selectcolor.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="BWidget">
+          <scope classrefs="Tk::BWidget::" ilk="class" line="12" lineend="13" name="SelectColor" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="45" name="Tk::BWidget::">
+        <scope ilk="function" line="24" lineend="28" name="dialog" signature="dialog(keys={})" />
+        <scope ilk="function" line="30" lineend="40" name="menu" signature="menu(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="42" lineend="44" name="set_color" signature="self.set_color(idx, color)" />
+      </scope>
+    </scope>
+    

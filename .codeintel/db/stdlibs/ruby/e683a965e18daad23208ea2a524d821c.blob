@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/collector/objectspace">
+      <import line="5" module="test/unit/collector" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="7" lineend="34" name="Test">
+        <scope ilk="namespace" line="8" lineend="33" name="Unit">
+          <scope ilk="namespace" line="9" lineend="32" name="Collector">
+            <scope classrefs="Object" ilk="class" line="10" lineend="31" name="ObjectSpace">
+              <scope attributes="__ctor__" ilk="function" line="15" lineend="18" name="initialize" signature="initialize(source=::ObjectSpace)" />
+              <scope ilk="function" line="20" lineend="30" name="collect" signature="collect(name=NAME)" />
+              <import symbol="Collector" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="tkmenubar">
+      <import line="4" module="tk/menubar" symbol="*" />
+    </scope>
+    

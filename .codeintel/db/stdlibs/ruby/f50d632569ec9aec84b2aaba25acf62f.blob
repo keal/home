@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tk/package">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/package.rb : package command" ilk="namespace" line="6" lineend="139" name="TkPackage">
+        <scope ilk="function" line="12" lineend="14" name="add_path" signature="add_path(path)" />
+        <scope ilk="function" line="16" lineend="19" name="forget" signature="forget(package)" />
+        <scope ilk="function" line="21" lineend="49" name="if_needed" signature="if_needed(pkg, ver, *arg, &amp;b)" />
+        <scope ilk="function" line="51" lineend="53" name="names" signature="names" />
+        <scope ilk="function" line="55" lineend="64" name="provide" signature="provide(package, version=nil)" />
+        <scope ilk="function" line="66" lineend="72" name="present" signature="present(package, version=None)" />
+        <scope ilk="function" line="74" lineend="80" name="present_exact" signature="present_exact(package, version)" />
+        <scope ilk="function" line="82" lineend="88" name="require" signature="require(package, version=None)" />
+        <scope ilk="function" line="90" lineend="96" name="require_exact" signature="require_exact(package, version)" />
+        <scope ilk="function" line="98" lineend="126" name="unknown_proc" signature="unknown_proc(*arg, &amp;b)" />
+        <scope ilk="function" line="128" lineend="130" name="versions" signature="versions(package)" />
+        <scope ilk="function" line="132" lineend="134" name="vcompare" signature="vcompare(version1, version2)" />
+        <scope ilk="function" line="136" lineend="138" name="vsatisfies" signature="vsatisfies(version1, version2)" />
+      </scope>
+    </scope>
+    

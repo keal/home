@@ -1,0 +1,142 @@
+<scope ilk="blob" lang="Ruby" name="rss/rss">
+      <import line="1" module="time" symbol="*" />
+      <import line="55" module="English" symbol="*" />
+      <import line="56" module="rss/utils" symbol="*" />
+      <import line="57" module="rss/converter" symbol="*" />
+      <import line="58" module="rss/xml-stylesheet" symbol="*" />
+      <scope classrefs="Object" ilk="class" line="3" lineend="31" name="Time">
+        <scope classrefs="Object" ilk="class" line="4" lineend="26" name="self">
+          <scope ilk="function" line="6" lineend="24" name="w3cdtf" signature="w3cdtf(date)" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="33" lineend="45" name="Enumerable">
+        <scope ilk="function" line="35" lineend="43" name="sort_by" signature="sort_by" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="47" lineend="53" name="Hash">
+        <scope ilk="function" line="49" lineend="51" name="merge" signature="merge(other)" />
+      </scope>
+      <scope ilk="namespace" line="60" lineend="903" name="RSS">
+        <scope classrefs="StandardError" ilk="class" line="68" lineend="68" name="Error" />
+        <scope classrefs="Error" ilk="class" line="70" lineend="75" name="OverlappedPrefixError">
+          <scope ilk="function" line="71" lineend="71" name="prefix" />
+          <scope attributes="__ctor__" ilk="function" line="72" lineend="74" name="initialize" signature="initialize(prefix)" />
+        </scope>
+        <scope classrefs="Error" ilk="class" line="77" lineend="77" name="InvalidRSSError" />
+        <scope classrefs="InvalidRSSError" ilk="class" line="79" lineend="85" name="MissingTagError">
+          <scope ilk="function" line="80" lineend="80" name="tag" />
+          <scope ilk="function" line="80" lineend="80" name="parent" />
+          <scope attributes="__ctor__" ilk="function" line="81" lineend="84" name="initialize" signature="initialize(tag, parent)" />
+        </scope>
+        <scope classrefs="InvalidRSSError" ilk="class" line="87" lineend="93" name="TooMuchTagError">
+          <scope ilk="function" line="88" lineend="88" name="tag" />
+          <scope ilk="function" line="88" lineend="88" name="parent" />
+          <scope attributes="__ctor__" ilk="function" line="89" lineend="92" name="initialize" signature="initialize(tag, parent)" />
+        </scope>
+        <scope classrefs="InvalidRSSError" ilk="class" line="95" lineend="101" name="MissingAttributeError">
+          <scope ilk="function" line="96" lineend="96" name="tag" />
+          <scope ilk="function" line="96" lineend="96" name="attribute" />
+          <scope attributes="__ctor__" ilk="function" line="97" lineend="100" name="initialize" signature="initialize(tag, attribute)" />
+        </scope>
+        <scope classrefs="InvalidRSSError" ilk="class" line="103" lineend="109" name="UnknownTagError">
+          <scope ilk="function" line="104" lineend="104" name="tag" />
+          <scope ilk="function" line="104" lineend="104" name="uri" />
+          <scope attributes="__ctor__" ilk="function" line="105" lineend="108" name="initialize" signature="initialize(tag, uri)" />
+        </scope>
+        <scope classrefs="InvalidRSSError" ilk="class" line="111" lineend="117" name="NotExceptedTagError">
+          <scope ilk="function" line="112" lineend="112" name="tag" />
+          <scope ilk="function" line="112" lineend="112" name="parent" />
+          <scope attributes="__ctor__" ilk="function" line="113" lineend="116" name="initialize" signature="initialize(tag, parent)" />
+        </scope>
+        <scope classrefs="InvalidRSSError" ilk="class" line="119" lineend="125" name="NotAvailableValueError">
+          <scope ilk="function" line="120" lineend="120" name="tag" />
+          <scope ilk="function" line="120" lineend="120" name="value" />
+          <scope attributes="__ctor__" ilk="function" line="121" lineend="124" name="initialize" signature="initialize(tag, value)" />
+        </scope>
+        <scope classrefs="Error" ilk="class" line="127" lineend="134" name="UnknownConversionMethodError">
+          <scope ilk="function" line="128" lineend="128" name="to" />
+          <scope ilk="function" line="128" lineend="128" name="from" />
+          <scope attributes="__ctor__" ilk="function" line="129" lineend="133" name="initialize" signature="initialize(to, from)" />
+        </scope>
+        <scope classrefs="Error" doc="for backward compatibility" ilk="class" line="138" lineend="146" name="ConversionError">
+          <scope ilk="function" line="139" lineend="139" name="string" />
+          <scope ilk="function" line="139" lineend="139" name="to" />
+          <scope ilk="function" line="139" lineend="139" name="from" />
+          <scope attributes="__ctor__" ilk="function" line="140" lineend="145" name="initialize" signature="initialize(string, to, from)" />
+        </scope>
+        <scope classrefs="Error" ilk="class" line="148" lineend="155" name="NotSetError">
+          <scope ilk="function" line="149" lineend="149" name="name" />
+          <scope ilk="function" line="149" lineend="149" name="variables" />
+          <scope attributes="__ctor__" ilk="function" line="150" lineend="154" name="initialize" signature="initialize(name, variables)" />
+        </scope>
+        <scope ilk="namespace" line="157" lineend="354" name="BaseModel">
+          <scope ilk="function" line="161" lineend="174" name="install_have_child_element" signature="install_have_child_element(name)" />
+          <scope ilk="function" line="177" lineend="193" name="install_have_children_element" signature="install_have_children_element(name, plural_name=nil)" />
+          <scope ilk="function" line="195" lineend="218" name="install_text_element" signature="install_text_element(name)" />
+          <scope ilk="function" line="220" lineend="246" name="install_date_element" signature="install_date_element(name, type, disp_name=name)" />
+          <scope ilk="function" line="249" lineend="257" name="install_element" signature="install_element(name, postfix=&quot;&quot;)" />
+          <scope ilk="function" line="259" lineend="272" name="convert_attr_reader" signature="convert_attr_reader(*attrs)" />
+          <scope ilk="function" line="274" lineend="307" name="date_writer" signature="date_writer(name, type, disp_name=name)" />
+          <scope ilk="function" line="309" lineend="336" name="def_children_accessor" signature="def_children_accessor(accessor_name, plural_name)" />
+          <scope ilk="function" line="338" lineend="352" name="def_content_only_to_s" signature="def_content_only_to_s" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="356" lineend="835" name="Element">
+          <scope classrefs="Object" ilk="class" line="370" lineend="495" name="self">
+            <scope ilk="function" line="372" lineend="374" name="must_call_validators" signature="must_call_validators" />
+            <scope ilk="function" line="375" lineend="377" name="model" signature="model" />
+            <scope ilk="function" line="378" lineend="380" name="get_attributes" signature="get_attributes" />
+            <scope ilk="function" line="381" lineend="383" name="have_children_elements" signature="have_children_elements" />
+            <scope ilk="function" line="384" lineend="386" name="need_initialize_variables" signature="need_initialize_variables" />
+            <scope ilk="function" line="387" lineend="389" name="plural_forms" signature="plural_forms" />
+            <scope ilk="function" line="392" lineend="470" name="inherited" signature="inherited(klass)" />
+            <scope ilk="function" line="472" lineend="474" name="required_prefix" signature="required_prefix" />
+            <scope ilk="function" line="476" lineend="478" name="required_uri" signature="required_uri" />
+            <scope ilk="function" line="480" lineend="485" name="install_ns" signature="install_ns(prefix, uri)" />
+            <scope ilk="function" line="487" lineend="489" name="tag_name" signature="tag_name" />
+            <scope ilk="function" line="491" lineend="493" name="indent_size" signature="indent_size" />
+          </scope>
+          <scope ilk="function" line="497" lineend="497" name="do_validate" />
+          <scope ilk="function" line="497" lineend="497" name="do_validate=" />
+          <scope attributes="__ctor__" ilk="function" line="499" lineend="503" name="initialize" signature="initialize(do_validate=true)" />
+          <scope ilk="function" line="505" lineend="507" name="tag_name" signature="tag_name" />
+          <scope ilk="function" line="509" lineend="511" name="full_name" signature="full_name" />
+          <scope ilk="function" line="513" lineend="515" name="indent_size" signature="indent_size" />
+          <scope ilk="function" line="517" lineend="526" name="converter=" signature="converter=(converter)" />
+          <scope ilk="function" line="528" lineend="534" name="convert" signature="convert(value)" />
+          <scope ilk="function" line="536" lineend="539" name="validate" signature="validate" />
+          <scope ilk="function" line="541" lineend="544" name="validate_for_stream" signature="validate_for_stream(tags)" />
+          <scope ilk="function" line="546" lineend="553" name="setup_maker" signature="setup_maker(maker)" />
+          <scope ilk="function" line="556" lineend="562" name="initialize_variables" signature="initialize_variables" />
+          <scope ilk="function" line="564" lineend="568" name="initialize_have_children_elements" signature="initialize_have_children_elements" />
+          <scope ilk="function" line="570" lineend="600" name="tag" signature="tag(indent, additional_attrs=[], &amp;block)" />
+          <scope ilk="function" line="602" lineend="610" name="make_start_tag" signature="make_start_tag(indent, next_indent, attrs)" />
+          <scope ilk="function" line="612" lineend="620" name="collect_attrs" signature="collect_attrs" />
+          <scope ilk="function" line="622" lineend="624" name="tag_name_with_prefix" signature="tag_name_with_prefix(prefix)" />
+          <scope ilk="function" line="626" lineend="628" name="calc_indent" signature="calc_indent" />
+          <scope ilk="function" line="630" lineend="632" name="maker_target" signature="maker_target(maker)" />
+          <scope ilk="function" line="634" lineend="635" name="setup_maker_attributes" signature="setup_maker_attributes(target)" />
+          <scope ilk="function" line="637" lineend="650" name="setup_maker_element" signature="setup_maker_element(target)" />
+          <scope ilk="function" line="652" lineend="654" name="not_need_to_call_setup_maker_variables" signature="not_need_to_call_setup_maker_variables" />
+          <scope ilk="function" line="656" lineend="666" name="setup_maker_elements" signature="setup_maker_elements(parent)" />
+          <scope ilk="function" line="668" lineend="679" name="set_next_element" signature="set_next_element(prefix, tag_name, next_element)" />
+          <scope doc="not String class children." ilk="function" line="682" lineend="684" name="children" signature="children" />
+          <scope doc="default #validate() argument." ilk="function" line="687" lineend="689" name="_tags" signature="_tags" />
+          <scope ilk="function" line="691" lineend="693" name="_attrs" signature="_attrs" />
+          <scope ilk="function" line="695" lineend="713" name="__validate" signature="__validate(tags=_tags, recursive=true)" />
+          <scope ilk="function" line="715" lineend="721" name="validate_attribute" signature="validate_attribute" />
+          <scope ilk="function" line="723" lineend="733" name="other_element" signature="other_element(need_convert, indent=&apos;&apos;)" />
+          <scope ilk="function" line="735" lineend="824" name="_validate" signature="_validate(tags, model=self.class.model)" />
+          <scope ilk="function" line="826" lineend="833" name="tag_filter" signature="tag_filter(tags)" />
+          <import symbol="Utils" />
+        </scope>
+        <scope ilk="namespace" line="837" lineend="901" name="RootElementMixin">
+          <scope attributes="__ctor__" ilk="function" line="843" lineend="850" name="initialize" signature="initialize(rss_version, version=nil, encoding=nil, standalone=nil)" />
+          <scope ilk="function" line="852" lineend="855" name="output_encoding=" signature="output_encoding=(enc)" />
+          <scope ilk="function" line="857" lineend="867" name="setup_maker" signature="setup_maker(maker)" />
+          <scope ilk="function" line="870" lineend="874" name="tag" signature="tag(indent, attrs, &amp;block)" />
+          <scope ilk="function" line="876" lineend="884" name="xmldecl" signature="xmldecl" />
+          <scope ilk="function" line="886" lineend="891" name="ns_declarations" signature="ns_declarations" />
+          <scope ilk="function" line="893" lineend="900" name="setup_maker_elements" signature="setup_maker_elements(maker)" />
+        </scope>
+      </scope>
+    </scope>
+    

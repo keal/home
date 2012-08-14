@@ -1,0 +1,49 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/simple_markup/fragments">
+      <import line="1" module="rdoc/markup/simple_markup/lines.rb" symbol="*" />
+      <scope doc="require &apos;rdoc/markup/simple_markup/to_flow.rb&apos;" ilk="namespace" line="4" lineend="328" name="SM">
+        <scope classrefs="Object" doc="A Fragment is a chunk of text, subclassed as a paragraph, a&#xA;list entry, or verbatim text" ilk="class" line="10" lineend="46" name="Fragment">
+          <scope ilk="function" line="11" lineend="11" name="level" />
+          <scope ilk="function" line="11" lineend="11" name="param" />
+          <scope ilk="function" line="11" lineend="11" name="txt" />
+          <scope ilk="function" line="12" lineend="12" name="type" />
+          <scope ilk="function" line="12" lineend="12" name="type=" />
+          <scope attributes="__ctor__" ilk="function" line="14" lineend="20" name="initialize" signature="initialize(level, param, type, txt)" />
+          <scope ilk="function" line="22" lineend="25" name="add_text" signature="add_text(txt)" />
+          <scope ilk="function" line="27" lineend="29" name="to_s" signature="to_s" />
+          <scope attributes="__classmethod__" doc="This is a simple factory system that lets us associate&#xA;fragement types (a string) with a subclass of fragment" ilk="function" line="37" lineend="39" name="type_name" signature="Fragment.type_name(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="41" lineend="45" name="for" signature="Fragment.for(line)" />
+        </scope>
+        <scope classrefs="Fragment" doc="A paragraph is a fragment which gets wrapped to fit." ilk="class" line="52" lineend="54" name="Paragraph" />
+        <scope classrefs="Paragraph" ilk="class" line="56" lineend="58" name="BlankLine" />
+        <scope classrefs="Paragraph" ilk="class" line="60" lineend="66" name="Heading">
+          <scope ilk="function" line="63" lineend="65" name="head_level" signature="head_level" />
+        </scope>
+        <scope classrefs="Paragraph" doc="A List is a fragment with some kind of label" ilk="class" line="72" lineend="80" name="ListBase" />
+        <scope classrefs="ListBase" ilk="class" line="82" lineend="89" name="ListItem" />
+        <scope classrefs="ListBase" ilk="class" line="91" lineend="95" name="ListStart">
+          <scope attributes="__ctor__" ilk="function" line="92" lineend="94" name="initialize" signature="initialize(level, param, type)" />
+        </scope>
+        <scope classrefs="ListBase" ilk="class" line="97" lineend="101" name="ListEnd">
+          <scope attributes="__ctor__" ilk="function" line="98" lineend="100" name="initialize" signature="initialize(level, type)" />
+        </scope>
+        <scope classrefs="Fragment" doc="Verbatim code contains lines that don&apos;t get wrapped." ilk="class" line="106" lineend="113" name="Verbatim">
+          <scope ilk="function" line="109" lineend="111" name="add_text" signature="add_text(txt)" />
+        </scope>
+        <scope classrefs="Fragment" doc="A horizontal rule" ilk="class" line="117" lineend="119" name="Rule" />
+        <scope classrefs="Object" doc="Collect groups of lines together." ilk="class" line="125" lineend="326" name="LineCollection">
+          <scope attributes="__ctor__" ilk="function" line="127" lineend="129" name="initialize" signature="initialize" />
+          <scope ilk="function" line="131" lineend="133" name="add" signature="add(fragment)" />
+          <scope ilk="function" line="135" lineend="137" name="each" signature="each(&amp;b)" />
+          <scope doc="For testing" ilk="function" line="140" lineend="142" name="to_a" signature="to_a" />
+          <scope doc="Factory for different fragment types" ilk="function" line="145" lineend="147" name="fragment_for" signature="fragment_for(*args)" />
+          <scope doc="tidy up at the end" ilk="function" line="150" lineend="155" name="normalize" signature="normalize" />
+          <scope ilk="function" line="157" lineend="159" name="to_s" signature="to_s" />
+          <scope ilk="function" line="161" lineend="187" name="accept" signature="accept(am, visitor)" />
+          <scope doc="If you have:" ilk="function" line="208" lineend="233" name="change_verbatim_blank_lines" signature="change_verbatim_blank_lines" />
+          <scope doc="List nesting is implicit given the level of Make it&#xA;explicit, just to make life a tad easier for the output&#xA;processors" ilk="function" line="239" lineend="271" name="add_list_start_and_ends" signature="add_list_start_and_ends" />
+          <scope doc="now insert start/ends between list entries at the same level&#xA;that have different element types" ilk="function" line="276" lineend="303" name="add_list_breaks" signature="add_list_breaks" />
+          <scope doc="Finally tidy up the blank lines: * change Blank/ListEnd into&#xA;ListEnd/Blank * remove blank lines at the front" ilk="function" line="309" lineend="324" name="tidy_blank_lines" signature="tidy_blank_lines (@fragments" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,51 @@
+<scope ilk="blob" lang="Ruby" name="soap/rpc/driver">
+      <import line="9" module="soap/soap" symbol="*" />
+      <import line="10" module="soap/mapping" symbol="*" />
+      <import line="11" module="soap/mapping/wsdlliteralregistry" symbol="*" />
+      <import line="12" module="soap/rpc/rpc" symbol="*" />
+      <import line="13" module="soap/rpc/proxy" symbol="*" />
+      <import line="14" module="soap/rpc/element" symbol="*" />
+      <import line="15" module="soap/streamHandler" symbol="*" />
+      <import line="16" module="soap/property" symbol="*" />
+      <import line="17" module="soap/header/handlerset" symbol="*" />
+      <scope doc="SOAP4R - SOAP RPC driver Copyright (C) 2000, 2001, 2003-2005&#xA;NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="20" name="SOAP" />
+      <scope ilk="namespace" line="21" name="RPC" />
+      <scope classrefs="Object" ilk="class" line="24" lineend="250" name="Driver">
+        <scope classrefs="Object" ilk="class" line="25" lineend="56" name="self">
+          <scope ilk="function" line="27" lineend="38" name="__attr_proxy" signature="__attr_proxy(symbol, assignable = false)" />
+          <scope ilk="function" line="40" lineend="54" name="__attr_proxy" signature="__attr_proxy(symbol, assignable = false)" />
+        </scope>
+        <scope ilk="function" line="68" lineend="68" name="proxy" />
+        <scope ilk="function" line="69" lineend="69" name="options" />
+        <scope ilk="function" line="70" lineend="70" name="soapaction" />
+        <scope ilk="function" line="70" lineend="70" name="soapaction=" />
+        <scope ilk="function" line="72" lineend="74" name="inspect" signature="inspect" />
+        <scope ilk="function" line="76" lineend="78" name="httpproxy" signature="httpproxy" />
+        <scope ilk="function" line="80" lineend="82" name="httpproxy=" signature="httpproxy=(httpproxy)" />
+        <scope ilk="function" line="84" lineend="86" name="wiredump_dev" signature="wiredump_dev" />
+        <scope ilk="function" line="88" lineend="90" name="wiredump_dev=" signature="wiredump_dev=(wiredump_dev)" />
+        <scope ilk="function" line="92" lineend="94" name="mandatorycharset" signature="mandatorycharset" />
+        <scope ilk="function" line="96" lineend="98" name="mandatorycharset=" signature="mandatorycharset=(mandatorycharset)" />
+        <scope ilk="function" line="100" lineend="102" name="wiredump_file_base" signature="wiredump_file_base" />
+        <scope ilk="function" line="104" lineend="106" name="wiredump_file_base=" signature="wiredump_file_base=(wiredump_file_base)" />
+        <scope attributes="__ctor__" ilk="function" line="108" lineend="114" name="initialize" signature="initialize(endpoint_url, namespace = nil, soapaction = nil)" />
+        <scope ilk="function" line="116" lineend="120" name="loadproperty" signature="loadproperty(propertyname)" />
+        <scope ilk="function" line="122" lineend="124" name="add_rpc_method" signature="add_rpc_method(name, *params)" />
+        <scope ilk="function" line="126" lineend="128" name="add_rpc_method_as" signature="add_rpc_method_as(name, name_as, *params)" />
+        <scope ilk="function" line="130" lineend="132" name="add_rpc_method_with_soapaction" signature="add_rpc_method_with_soapaction(name, soapaction, *params)" />
+        <scope ilk="function" line="134" lineend="139" name="add_rpc_method_with_soapaction_as" signature="add_rpc_method_with_soapaction_as(name, name_as, soapaction, *params)" />
+        <scope doc="add_method is for shortcut of typical rpc/encoded method&#xA;definition." ilk="function" line="147" lineend="151" name="add_document_method" signature="add_document_method(name, soapaction, req_qname, res_qname)" />
+        <scope ilk="function" line="153" lineend="156" name="add_rpc_operation" signature="add_rpc_operation(qname, soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="158" lineend="161" name="add_document_operation" signature="add_document_operation(soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="163" lineend="174" name="invoke" signature="invoke(headers, body)" />
+        <scope ilk="function" line="176" lineend="179" name="call" signature="call(name, *params)" />
+        <scope ilk="function" line="183" lineend="187" name="set_wiredump_file_base" signature="set_wiredump_file_base(name)" />
+        <scope ilk="function" line="189" lineend="195" name="create_header" signature="create_header(headers)" />
+        <scope ilk="function" line="197" lineend="212" name="setup_options" signature="setup_options" />
+        <scope ilk="function" line="214" lineend="218" name="add_rpc_method_interface" signature="add_rpc_method_interface(name, param_def)" />
+        <scope ilk="function" line="220" lineend="223" name="add_document_method_interface" signature="add_document_method_interface(name, param_def)" />
+        <scope ilk="function" line="226" lineend="235" name="add_method_interface" signature="add_method_interface(name, param_count)" />
+        <scope ilk="function" line="237" lineend="248" name="add_method_interface" signature="add_method_interface(name, param_count)" />
+      </scope>
+    </scope>
+    

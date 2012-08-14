@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="irb/ext/multi-irb">
+      <import line="13" module="thread" symbol="*" />
+      <scope doc="irb/multi-irb.rb - multiple irb module $Release Version:&#xA;0.9.5$ $Revision: 1.2.2.1 $ $Date: 2005/04/19 19:24:58 $ by&#xA;Keiju ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="15" lineend="241" name="IRB">
+        <scope classrefs="Object" doc="job management class" ilk="class" line="17" lineend="135" name="JobManager">
+          <scope attributes="__ctor__" ilk="function" line="20" lineend="24" name="initialize" signature="initialize" />
+          <scope ilk="function" line="26" lineend="26" name="current_job" />
+          <scope ilk="function" line="26" lineend="26" name="current_job=" />
+          <scope ilk="function" line="28" lineend="30" name="n_jobs" signature="n_jobs" />
+          <scope ilk="function" line="32" lineend="35" name="thread" signature="thread(key)" />
+          <scope ilk="function" line="37" lineend="40" name="irb" signature="irb(key)" />
+          <scope ilk="function" line="42" lineend="44" name="main_thread" signature="main_thread" />
+          <scope ilk="function" line="46" lineend="48" name="main_irb" signature="main_irb" />
+          <scope ilk="function" line="50" lineend="52" name="insert" signature="insert(irb)" />
+          <scope ilk="function" line="54" lineend="62" name="switch" signature="switch(key)" />
+          <scope ilk="function" line="64" lineend="70" name="kill" signature="kill(*keys)" />
+          <scope ilk="function" line="72" lineend="85" name="search" signature="search(key)" />
+          <scope ilk="function" line="87" lineend="108" name="delete" signature="delete(key)" />
+          <scope ilk="function" line="110" lineend="134" name="inspect" signature="inspect" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="139" lineend="141" name="JobManager" signature="IRB.JobManager" />
+        <scope attributes="__classmethod__" ilk="function" line="143" lineend="145" name="CurrentContext" signature="IRB.CurrentContext" />
+        <scope attributes="__classmethod__" doc="invoke multi-irb" ilk="function" line="148" lineend="188" name="irb" signature="IRB.irb(file = nil, *main)" />
+        <scope classrefs="Object" doc="class Context def set_last_value(value) @last_value = value&#xA;@workspace.evaluate &quot;_ =&#xA;IRB.JobManager.irb(Thread.current).context.last_value&quot; if&#xA;@eval_history #and !@__.equal?(@last_value)" ilk="class" line="213" lineend="234" name="Irb">
+          <scope ilk="function" line="214" lineend="233" name="signal_handle" signature="signal_handle" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="rexml/validation/validationexception">
+      <scope ilk="namespace" line="1" lineend="9" name="REXML">
+        <scope ilk="namespace" line="2" lineend="8" name="Validation">
+          <scope classrefs="RuntimeError" ilk="class" line="3" lineend="7" name="ValidationException">
+            <scope attributes="__ctor__" ilk="function" line="4" lineend="6" name="initialize" signature="initialize" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

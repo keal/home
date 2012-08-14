@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="shell/error">
+      <import line="13" module="e2mmap" symbol="*" />
+      <scope classrefs="Object" doc="shell/error.rb - $Release Version: 0.6.0 $ $Revision: 1.2 $&#xA;$Date: 2003/02/07 19:00:21 $ by Keiju ISHITSUKA(Nihon&#xA;Rational Software Co.,Ltd)" ilk="class" line="15" lineend="25" name="Shell">
+        <scope ilk="namespace" line="16" lineend="24" name="Error" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="runit/topublic">
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="5" lineend="8" name="RUNIT">
+        <scope ilk="namespace" line="6" lineend="7" name="ToPublic" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/assertionfailederror">
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="5" lineend="12" name="Test">
+        <scope ilk="namespace" line="6" lineend="11" name="Unit">
+          <scope classrefs="StandardError" doc="Thrown by Test::Unit::Assertions when an assertion fails." ilk="class" line="9" lineend="10" name="AssertionFailedError" />
+        </scope>
+      </scope>
+    </scope>
+    

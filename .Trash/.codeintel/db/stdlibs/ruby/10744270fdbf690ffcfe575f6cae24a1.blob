@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tk/event">
+      <import line="10" module="tkutil" symbol="*" />
+      <import line="11" module="tk" symbol="*" />
+      <scope doc="tk/event.rb - module for event" ilk="namespace" line="5" lineend="6" name="TkEvent" />
+      <scope ilk="namespace" line="15" lineend="445" name="TkEvent">
+        <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="16" lineend="400" name="Event">
+          <scope ilk="namespace" line="17" lineend="48" name="Grp" />
+          <scope doc="-----+-------------------+------------------+---------------&#xA;--------# ID |  const            |  group_flag      |&#xA;context_name         # -----+-------------------+-----------&#xA;-------+-----------------------#" ilk="namespace" line="94" lineend="95" name="TypeNum" />
+          <scope attributes="__classmethod__" ilk="function" line="111" lineend="113" name="type_id" signature="self.type_id(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="115" lineend="117" name="type_name" signature="self.type_name(id)" />
+          <scope attributes="__classmethod__" ilk="function" line="119" lineend="121" name="group_flag" signature="self.group_flag(id)" />
+          <scope ilk="namespace" line="125" lineend="148" name="StateMask" />
+          <scope doc="-------------------------------------------" ilk="function" line="215" lineend="231" name="valid_fields" signature="valid_fields(group_flag=nil)" />
+          <scope ilk="function" line="233" lineend="247" name="valid_for_generate" signature="valid_for_generate(group_flag=nil)" />
+          <scope ilk="function" line="249" lineend="290" name="generate" signature="generate(win, modkeys={})" />
+        </scope>
+        <scope ilk="function" line="404" lineend="440" name="install_bind_for_event_class" signature="install_bind_for_event_class(klass, cmd, *args)" />
+        <scope ilk="function" line="442" lineend="444" name="install_bind" signature="install_bind(cmd, *args)" />
+      </scope>
+    </scope>
+    

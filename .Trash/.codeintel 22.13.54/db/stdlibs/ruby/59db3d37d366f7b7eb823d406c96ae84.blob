@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/mappingRegistryCreator">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="wsdl/soap/classDefCreatorSupport" symbol="*" />
+      <scope doc="WSDL4R - Creating MappingRegistry code from WSDL." ilk="namespace" line="13" name="WSDL" />
+      <scope ilk="namespace" line="14" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="17" lineend="88" name="MappingRegistryCreator">
+        <scope ilk="function" line="20" lineend="20" name="definitions" />
+        <scope attributes="__ctor__" ilk="function" line="22" lineend="26" name="initialize" signature="initialize(definitions)" />
+        <scope ilk="function" line="28" lineend="43" name="dump" signature="dump(types)" />
+        <scope ilk="function" line="47" lineend="60" name="dump_typemap" signature="dump_typemap(type)" />
+        <scope ilk="function" line="62" lineend="72" name="dump_struct_typemap" signature="dump_struct_typemap(definedtype)" />
+        <scope ilk="function" line="74" lineend="87" name="dump_array_typemap" signature="dump_array_typemap(definedtype)" />
+        <import symbol="ClassDefCreatorSupport" />
+      </scope>
+    </scope>
+    

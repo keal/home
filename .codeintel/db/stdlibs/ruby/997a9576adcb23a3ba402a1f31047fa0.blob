@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/definitions">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="xsd/namedelements" symbol="*" />
+      <import line="11" module="soap/mapping" symbol="*" />
+      <scope doc="WSDL4R - WSDL additional definitions for SOAP." ilk="namespace" line="14" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="17" lineend="146" name="Definitions">
+        <scope attributes="__classmethod__" ilk="function" line="18" lineend="24" name="soap_rpc_complextypes" signature="self.soap_rpc_complextypes" />
+        <scope attributes="__classmethod__" ilk="function" line="26" lineend="37" name="array_complextype" signature="self.array_complextype" />
+        <scope attributes="__classmethod__" ilk="function" line="49" lineend="60" name="fault_complextype" signature="self.fault_complextype" />
+        <scope attributes="__classmethod__" ilk="function" line="62" lineend="71" name="exception_complextype" signature="self.exception_complextype" />
+        <scope ilk="function" line="73" lineend="76" name="soap_rpc_complextypes" signature="soap_rpc_complextypes(binding)" />
+        <scope ilk="function" line="78" lineend="90" name="collect_faulttypes" signature="collect_faulttypes" />
+        <scope ilk="function" line="94" lineend="106" name="collect_fault_messages" signature="collect_fault_messages" />
+        <scope ilk="function" line="108" lineend="128" name="rpc_operation_complextypes" signature="rpc_operation_complextypes(binding)" />
+        <scope ilk="function" line="130" lineend="132" name="op_bind_rpc?" signature="op_bind_rpc?(op_bind)" />
+        <scope ilk="function" line="134" lineend="145" name="elements_from_message" signature="elements_from_message(message)" />
+      </scope>
+    </scope>
+    

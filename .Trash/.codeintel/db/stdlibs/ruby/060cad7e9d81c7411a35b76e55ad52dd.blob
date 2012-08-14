@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="openssl">
+      <import line="17" module="openssl.so" symbol="*" />
+      <import line="19" module="openssl/bn" symbol="*" />
+      <import line="20" module="openssl/cipher" symbol="*" />
+      <import line="21" module="openssl/digest" symbol="*" />
+      <import line="22" module="openssl/ssl" symbol="*" />
+      <import line="23" module="openssl/x509" symbol="*" />
+    </scope>
+    

@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="runit/cui/testrunner">
+      <import line="5" module="test/unit/ui/console/testrunner" symbol="*" />
+      <import line="6" module="runit/testresult" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="8" lineend="51" name="RUNIT">
+        <scope ilk="namespace" line="9" lineend="50" name="CUI">
+          <scope classrefs="Test::Unit::" ilk="class" line="10" lineend="49" name="TestRunner">
+            <scope attributes="__classmethod__" ilk="function" line="13" lineend="15" name="run" signature="self.run(suite)" />
+            <scope attributes="__ctor__" ilk="function" line="17" lineend="19" name="initialize" signature="initialize" />
+            <scope ilk="function" line="21" lineend="28" name="run" signature="run(suite, quiet_mode=@@quiet_mode)">
+              <scope ilk="function" line="23" lineend="25" name="@suite" signature="@suite." />
+            </scope>
+            <scope ilk="function" line="30" lineend="40" name="create_mediator" signature="create_mediator(suite)">
+              <scope classrefs="Object" ilk="class" line="32" lineend="37" name="mediator">
+                <scope ilk="function" line="33" lineend="33" name="result_delegate=" />
+                <scope ilk="function" line="34" lineend="36" name="create_result" signature="create_result" />
+              </scope>
+            </scope>
+            <scope ilk="function" line="42" lineend="44" name="create_result" signature="create_result" />
+            <scope attributes="__classmethod__" ilk="function" line="46" lineend="48" name="quiet_mode=" signature="self.quiet_mode=(boolean)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

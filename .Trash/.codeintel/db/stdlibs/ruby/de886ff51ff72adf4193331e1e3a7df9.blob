@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="yaml/yamlnode">
+      <import line="4" module="yaml/basenode" symbol="*" />
+      <scope doc="YAML::YamlNode class" ilk="namespace" line="6" lineend="54" name="YAML">
+        <scope classrefs="Object" doc="YAML Generic Model container" ilk="class" line="11" lineend="52" name="YamlNode">
+          <scope ilk="function" line="13" lineend="13" name="kind" />
+          <scope ilk="function" line="13" lineend="13" name="kind=" />
+          <scope ilk="function" line="13" lineend="13" name="type_id" />
+          <scope ilk="function" line="13" lineend="13" name="type_id=" />
+          <scope ilk="function" line="13" lineend="13" name="value" />
+          <scope ilk="function" line="13" lineend="13" name="value=" />
+          <scope ilk="function" line="13" lineend="13" name="anchor" />
+          <scope ilk="function" line="13" lineend="13" name="anchor=" />
+          <scope attributes="__ctor__" ilk="function" line="14" lineend="29" name="initialize" signature="initialize( t, v )" />
+          <scope doc="Transform this node fully into a native type" ilk="function" line="34" lineend="50" name="transform" signature="transform" />
+          <import symbol="BaseNode" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/tcllib/setup.rb" symbol="*" />
+      <scope doc="autoload" ilk="namespace" line="41" lineend="86" name="Tk">
+        <scope ilk="namespace" line="42" lineend="85" name="Tcllib" />
+      </scope>
+    </scope>
+    

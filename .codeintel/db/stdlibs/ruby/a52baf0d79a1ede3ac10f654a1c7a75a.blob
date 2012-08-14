@@ -1,0 +1,308 @@
+<scope ilk="blob" lang="Ruby" name="resolv">
+      <import line="192" module="socket" symbol="*" />
+      <import line="193" module="fcntl" symbol="*" />
+      <import line="194" module="timeout" symbol="*" />
+      <import line="195" module="thread" symbol="*" />
+      <scope classrefs="Object" ilk="class" line="197" lineend="1884" name="Resolv">
+        <scope attributes="__classmethod__" ilk="function" line="198" lineend="200" name="getaddress" signature="self.getaddress(name)" />
+        <scope attributes="__classmethod__" ilk="function" line="202" lineend="204" name="getaddresses" signature="self.getaddresses(name)" />
+        <scope attributes="__classmethod__" ilk="function" line="206" lineend="208" name="each_address" signature="self.each_address(name, &amp;block)" />
+        <scope attributes="__classmethod__" ilk="function" line="210" lineend="212" name="getname" signature="self.getname(address)" />
+        <scope attributes="__classmethod__" ilk="function" line="214" lineend="216" name="getnames" signature="self.getnames(address)" />
+        <scope attributes="__classmethod__" ilk="function" line="218" lineend="220" name="each_name" signature="self.each_name(address, &amp;proc)" />
+        <scope attributes="__ctor__" ilk="function" line="222" lineend="224" name="initialize" signature="initialize(resolvers=[Hosts.new, DNS.new])" />
+        <scope ilk="function" line="226" lineend="229" name="getaddress" signature="getaddress(name)" />
+        <scope ilk="function" line="231" lineend="235" name="getaddresses" signature="getaddresses(name)" />
+        <scope ilk="function" line="237" lineend="250" name="each_address" signature="each_address(name)" />
+        <scope ilk="function" line="252" lineend="255" name="getname" signature="getname(address)" />
+        <scope ilk="function" line="257" lineend="261" name="getnames" signature="getnames(address)" />
+        <scope ilk="function" line="263" lineend="272" name="each_name" signature="each_name(address)" />
+        <scope classrefs="StandardError" ilk="class" line="274" lineend="275" name="ResolvError" />
+        <scope classrefs="TimeoutError" ilk="class" line="277" lineend="278" name="ResolvTimeout" />
+        <scope classrefs="Object" ilk="class" line="280" lineend="360" name="Hosts">
+          <import line="282" module="win32/resolv" symbol="*" />
+          <scope attributes="__ctor__" ilk="function" line="288" lineend="292" name="initialize" signature="initialize(filename = DefaultFileName)" />
+          <scope ilk="function" line="294" lineend="323" name="lazy_initialize" signature="lazy_initialize" />
+          <scope ilk="function" line="325" lineend="328" name="getaddress" signature="getaddress(name)" />
+          <scope ilk="function" line="330" lineend="334" name="getaddresses" signature="getaddresses(name)" />
+          <scope ilk="function" line="336" lineend="341" name="each_address" signature="each_address(name, &amp;proc)" />
+          <scope ilk="function" line="343" lineend="346" name="getname" signature="getname(address)" />
+          <scope ilk="function" line="348" lineend="352" name="getnames" signature="getnames(address)" />
+          <scope ilk="function" line="354" lineend="359" name="each_name" signature="each_name(address, &amp;proc)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="362" lineend="1712" name="DNS">
+          <scope attributes="__classmethod__" doc="STD0013 (RFC 1035, etc.) ftp://ftp.isi.edu/in-&#xA;notes/iana/assignments/dns-parameters" ilk="function" line="371" lineend="379" name="open" signature="self.open(*args)" />
+          <scope attributes="__ctor__" ilk="function" line="381" lineend="385" name="initialize" signature="initialize(config_info=nil)" />
+          <scope ilk="function" line="387" lineend="402" name="lazy_initialize" signature="lazy_initialize" />
+          <scope ilk="function" line="404" lineend="412" name="close" signature="close" />
+          <scope ilk="function" line="414" lineend="417" name="getaddress" signature="getaddress(name)" />
+          <scope ilk="function" line="419" lineend="423" name="getaddresses" signature="getaddresses(name)" />
+          <scope ilk="function" line="425" lineend="427" name="each_address" signature="each_address(name)" />
+          <scope ilk="function" line="429" lineend="432" name="getname" signature="getname(address)" />
+          <scope ilk="function" line="434" lineend="438" name="getnames" signature="getnames(address)" />
+          <scope ilk="function" line="440" lineend="452" name="each_name" signature="each_name(address)" />
+          <scope ilk="function" line="454" lineend="457" name="getresource" signature="getresource(name, typeclass)" />
+          <scope ilk="function" line="459" lineend="463" name="getresources" signature="getresources(name, typeclass)" />
+          <scope ilk="function" line="465" lineend="494" name="each_resource" signature="each_resource(name, typeclass, &amp;proc)" />
+          <scope ilk="function" line="496" lineend="525" name="extract_resources" signature="extract_resources(msg, name, typeclass)" />
+          <scope classrefs="Object" ilk="class" line="527" lineend="714" name="Requester">
+            <scope attributes="__ctor__" ilk="function" line="528" lineend="530" name="initialize" signature="initialize" />
+            <scope ilk="function" line="532" lineend="542" name="close" signature="close" />
+            <scope ilk="function" line="544" lineend="553" name="delete" signature="delete(arg)" />
+            <scope classrefs="Object" ilk="class" line="555" lineend="567" name="Sender">
+              <scope attributes="__ctor__" ilk="function" line="556" lineend="561" name="initialize" signature="initialize(msg, data, sock, queue)" />
+              <scope ilk="function" line="562" lineend="562" name="queue" />
+              <scope ilk="function" line="564" lineend="566" name="recv" signature="recv(msg)" />
+            </scope>
+            <scope classrefs="Requester" ilk="class" line="569" lineend="617" name="UnconnectedUDP">
+              <scope attributes="__ctor__" ilk="function" line="570" lineend="593" name="initialize" signature="initialize" />
+              <scope ilk="function" line="595" lineend="604" name="sender" signature="sender(msg, data, queue, host, port=Port)" />
+              <scope classrefs="Requester::Sender" ilk="class" line="606" lineend="616" name="Sender">
+                <scope attributes="__ctor__" ilk="function" line="607" lineend="611" name="initialize" signature="initialize(msg, data, sock, host, port, queue)" />
+                <scope ilk="function" line="613" lineend="615" name="send" signature="send" />
+              </scope>
+            </scope>
+            <scope classrefs="Requester" ilk="class" line="619" lineend="662" name="ConnectedUDP">
+              <scope attributes="__ctor__" ilk="function" line="620" lineend="645" name="initialize" signature="initialize(host, port=Port)" />
+              <scope ilk="function" line="647" lineend="655" name="sender" signature="sender(msg, data, queue, host=@host, port=@port)" />
+              <scope classrefs="Requester::Sender" ilk="class" line="657" lineend="661" name="Sender">
+                <scope ilk="function" line="658" lineend="660" name="send" signature="send" />
+              </scope>
+            </scope>
+            <scope classrefs="Requester" ilk="class" line="664" lineend="710" name="TCP">
+              <scope attributes="__ctor__" ilk="function" line="665" lineend="692" name="initialize" signature="initialize(host, port=Port)" />
+              <scope ilk="function" line="694" lineend="702" name="sender" signature="sender(msg, data, queue, host=@host, port=@port)" />
+              <scope classrefs="Requester::Sender" ilk="class" line="704" lineend="709" name="Sender">
+                <scope ilk="function" line="705" lineend="708" name="send" signature="send" />
+              </scope>
+            </scope>
+            <scope classrefs="StandardError" ilk="class" line="712" lineend="713" name="RequestError" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="716" lineend="891" name="Config">
+            <scope attributes="__ctor__" ilk="function" line="717" lineend="721" name="initialize" signature="initialize(config_info=nil)" />
+            <scope attributes="__classmethod__" ilk="function" line="723" lineend="755" name="parse_resolv_conf" signature="Config.parse_resolv_conf(filename)" />
+            <scope attributes="__classmethod__" ilk="function" line="757" lineend="769" name="default_config_hash" signature="Config.default_config_hash(filename=&quot;/etc/resolv.conf&quot;)" />
+            <scope ilk="function" line="771" lineend="827" name="lazy_initialize" signature="lazy_initialize" />
+            <scope ilk="function" line="829" lineend="836" name="single?" signature="single?" />
+            <scope ilk="function" line="838" lineend="852" name="generate_candidates" signature="generate_candidates(name)" />
+            <scope ilk="function" line="856" lineend="862" name="generate_timeouts" signature="generate_timeouts" />
+            <scope ilk="function" line="864" lineend="884" name="resolv" signature="resolv(name)" />
+            <scope classrefs="ResolvError" ilk="class" line="886" lineend="887" name="NXDomain" />
+            <scope classrefs="ResolvError" ilk="class" line="889" lineend="890" name="OtherResolvError" />
+          </scope>
+          <scope ilk="namespace" line="893" lineend="899" name="OpCode" />
+          <scope ilk="namespace" line="901" lineend="920" name="RCode" />
+          <scope classrefs="StandardError" ilk="class" line="922" lineend="923" name="DecodeError" />
+          <scope classrefs="StandardError" ilk="class" line="925" lineend="926" name="EncodeError" />
+          <scope ilk="namespace" line="928" lineend="962" name="Label">
+            <scope attributes="__classmethod__" ilk="function" line="929" lineend="933" name="split" signature="self.split(arg)" />
+            <scope classrefs="Object" ilk="class" line="935" lineend="961" name="Str">
+              <scope attributes="__ctor__" ilk="function" line="936" lineend="939" name="initialize" signature="initialize(string)" />
+              <scope ilk="function" line="940" lineend="940" name="string" />
+              <scope ilk="function" line="940" lineend="940" name="downcase" />
+              <scope ilk="function" line="942" lineend="944" name="to_s" signature="to_s" />
+              <scope ilk="function" line="946" lineend="948" name="inspect" signature="inspect" />
+              <scope ilk="function" line="950" lineend="952" name="==" signature="==(other" />
+              <scope ilk="function" line="954" lineend="956" name="eql?" signature="eql?(other)" />
+              <scope ilk="function" line="958" lineend="960" name="hash" signature="hash" />
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="964" lineend="1040" name="Name">
+            <scope attributes="__classmethod__" ilk="function" line="965" lineend="974" name="create" signature="self.create(arg)" />
+            <scope attributes="__ctor__" ilk="function" line="976" lineend="979" name="initialize" signature="initialize(labels, absolute=true)" />
+            <scope ilk="function" line="981" lineend="983" name="inspect" signature="inspect" />
+            <scope ilk="function" line="985" lineend="987" name="absolute?" signature="absolute?" />
+            <scope ilk="function" line="989" lineend="992" name="==" signature="==(other" />
+            <scope doc="tests subdomain-of relation." ilk="function" line="1005" lineend="1011" name="subdomain_of?" signature="subdomain_of?(other)" />
+            <scope ilk="function" line="1013" lineend="1015" name="hash" signature="hash" />
+            <scope ilk="function" line="1017" lineend="1019" name="to_a" signature="to_a" />
+            <scope ilk="function" line="1021" lineend="1023" name="length" signature="length" />
+            <scope ilk="function" line="1025" lineend="1027" name="[]" signature="[](i" />
+            <scope doc="returns the domain name as a string." ilk="function" line="1037" lineend="1039" name="to_s" signature="to_s" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1042" lineend="1360" name="Message">
+            <scope attributes="__ctor__" ilk="function" line="1045" lineend="1058" name="initialize" signature="initialize(id = (@@identifier += 1) &amp; 0xffff)" />
+            <scope ilk="function" line="1060" lineend="1060" name="id" />
+            <scope ilk="function" line="1060" lineend="1060" name="id=" />
+            <scope ilk="function" line="1060" lineend="1060" name="qr" />
+            <scope ilk="function" line="1060" lineend="1060" name="qr=" />
+            <scope ilk="function" line="1060" lineend="1060" name="opcode" />
+            <scope ilk="function" line="1060" lineend="1060" name="opcode=" />
+            <scope ilk="function" line="1060" lineend="1060" name="aa" />
+            <scope ilk="function" line="1060" lineend="1060" name="aa=" />
+            <scope ilk="function" line="1060" lineend="1060" name="tc" />
+            <scope ilk="function" line="1060" lineend="1060" name="tc=" />
+            <scope ilk="function" line="1060" lineend="1060" name="rd" />
+            <scope ilk="function" line="1060" lineend="1060" name="rd=" />
+            <scope ilk="function" line="1060" lineend="1060" name="ra" />
+            <scope ilk="function" line="1060" lineend="1060" name="ra=" />
+            <scope ilk="function" line="1060" lineend="1060" name="rcode" />
+            <scope ilk="function" line="1060" lineend="1060" name="rcode=" />
+            <scope ilk="function" line="1061" lineend="1061" name="question" />
+            <scope ilk="function" line="1061" lineend="1061" name="answer" />
+            <scope ilk="function" line="1061" lineend="1061" name="authority" />
+            <scope ilk="function" line="1061" lineend="1061" name="additional" />
+            <scope ilk="function" line="1063" lineend="1076" name="==" signature="==(other" />
+            <scope ilk="function" line="1078" lineend="1080" name="add_question" signature="add_question(name, typeclass)" />
+            <scope ilk="function" line="1082" lineend="1086" name="each_question" signature="each_question" />
+            <scope ilk="function" line="1088" lineend="1090" name="add_answer" signature="add_answer(name, ttl, data)" />
+            <scope ilk="function" line="1092" lineend="1096" name="each_answer" signature="each_answer" />
+            <scope ilk="function" line="1098" lineend="1100" name="add_authority" signature="add_authority(name, ttl, data)" />
+            <scope ilk="function" line="1102" lineend="1106" name="each_authority" signature="each_authority" />
+            <scope ilk="function" line="1108" lineend="1110" name="add_additional" signature="add_additional(name, ttl, data)" />
+            <scope ilk="function" line="1112" lineend="1116" name="each_additional" signature="each_additional" />
+            <scope ilk="function" line="1118" lineend="1122" name="each_resource" signature="each_resource" />
+            <scope ilk="function" line="1124" lineend="1153" name="encode" signature="encode" />
+            <scope classrefs="Object" ilk="class" line="1155" lineend="1215" name="MessageEncoder">
+              <scope attributes="__ctor__" ilk="function" line="1156" lineend="1160" name="initialize" signature="initialize" />
+              <scope ilk="function" line="1162" lineend="1164" name="to_s" signature="to_s" />
+              <scope ilk="function" line="1166" lineend="1168" name="put_bytes" signature="put_bytes(d)" />
+              <scope ilk="function" line="1170" lineend="1172" name="put_pack" signature="put_pack(template, *d)" />
+              <scope ilk="function" line="1174" lineend="1181" name="put_length16" signature="put_length16" />
+              <scope ilk="function" line="1183" lineend="1186" name="put_string" signature="put_string(d)" />
+              <scope ilk="function" line="1188" lineend="1192" name="put_string_list" signature="put_string_list(ds)" />
+              <scope ilk="function" line="1194" lineend="1196" name="put_name" signature="put_name(d)" />
+              <scope ilk="function" line="1198" lineend="1210" name="put_labels" signature="put_labels(d)" />
+              <scope ilk="function" line="1212" lineend="1214" name="put_label" signature="put_label(d)" />
+            </scope>
+            <scope attributes="__classmethod__" ilk="function" line="1217" lineend="1248" name="decode" signature="Message.decode(m)" />
+            <scope classrefs="Object" ilk="class" line="1250" lineend="1359" name="MessageDecoder">
+              <scope attributes="__ctor__" ilk="function" line="1251" lineend="1256" name="initialize" signature="initialize(data)" />
+              <scope ilk="function" line="1258" lineend="1270" name="get_length16" signature="get_length16" />
+              <scope ilk="function" line="1272" lineend="1276" name="get_bytes" signature="get_bytes(len = @limit - @index)" />
+              <scope ilk="function" line="1278" lineend="1296" name="get_unpack" signature="get_unpack(template)" />
+              <scope ilk="function" line="1298" lineend="1304" name="get_string" signature="get_string" />
+              <scope ilk="function" line="1306" lineend="1312" name="get_string_list" signature="get_string_list" />
+              <scope ilk="function" line="1314" lineend="1316" name="get_name" signature="get_name" />
+              <scope ilk="function" line="1318" lineend="1341" name="get_labels" signature="get_labels(limit=nil)" />
+              <scope ilk="function" line="1343" lineend="1345" name="get_label" signature="get_label" />
+              <scope ilk="function" line="1347" lineend="1351" name="get_question" signature="get_question" />
+              <scope ilk="function" line="1353" lineend="1358" name="get_rr" signature="get_rr" />
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1362" lineend="1370" name="Query">
+            <scope ilk="function" line="1363" lineend="1365" name="encode_rdata" signature="encode_rdata(msg)" />
+            <scope attributes="__classmethod__" ilk="function" line="1367" lineend="1369" name="decode_rdata" signature="self.decode_rdata(msg)" />
+          </scope>
+          <scope classrefs="Query" ilk="class" line="1372" lineend="1711" name="Resource">
+            <scope ilk="function" line="1375" lineend="1377" name="encode_rdata" signature="encode_rdata(msg)" />
+            <scope attributes="__classmethod__" ilk="function" line="1379" lineend="1381" name="decode_rdata" signature="self.decode_rdata(msg)" />
+            <scope ilk="function" line="1383" lineend="1388" name="==" signature="==(other" />
+            <scope ilk="function" line="1390" lineend="1392" name="eql?" signature="eql?(other)" />
+            <scope ilk="function" line="1394" lineend="1400" name="hash" signature="hash" />
+            <scope attributes="__classmethod__" ilk="function" line="1402" lineend="1405" name="get_class" signature="self.get_class(type_value, class_value)" />
+            <scope classrefs="Resource" ilk="class" line="1407" lineend="1429" name="Generic">
+              <scope attributes="__ctor__" ilk="function" line="1408" lineend="1410" name="initialize" signature="initialize(data)" />
+              <scope ilk="function" line="1411" lineend="1411" name="data" />
+              <scope ilk="function" line="1413" lineend="1415" name="encode_rdata" signature="encode_rdata(msg)" />
+              <scope attributes="__classmethod__" ilk="function" line="1417" lineend="1419" name="decode_rdata" signature="self.decode_rdata(msg)" />
+              <scope attributes="__classmethod__" ilk="function" line="1421" lineend="1428" name="create" signature="self.create(type_value, class_value)" />
+            </scope>
+            <scope classrefs="Resource" ilk="class" line="1431" lineend="1444" name="DomainName">
+              <scope attributes="__ctor__" ilk="function" line="1432" lineend="1434" name="initialize" signature="initialize(name)" />
+              <scope ilk="function" line="1435" lineend="1435" name="name" />
+              <scope ilk="function" line="1437" lineend="1439" name="encode_rdata" signature="encode_rdata(msg)" />
+              <scope attributes="__classmethod__" ilk="function" line="1441" lineend="1443" name="decode_rdata" signature="self.decode_rdata(msg)" />
+            </scope>
+            <scope classrefs="DomainName" doc="Standard (class generic) RRs" ilk="class" line="1449" lineend="1451" name="NS" />
+            <scope classrefs="DomainName" ilk="class" line="1453" lineend="1455" name="CNAME" />
+            <scope classrefs="Resource" ilk="class" line="1457" lineend="1484" name="SOA">
+              <scope attributes="__ctor__" ilk="function" line="1460" lineend="1468" name="initialize" signature="initialize(mname, rname, serial, refresh, retry_, expire, minimum)" />
+              <scope ilk="function" line="1469" lineend="1469" name="mname" />
+              <scope ilk="function" line="1469" lineend="1469" name="rname" />
+              <scope ilk="function" line="1469" lineend="1469" name="serial" />
+              <scope ilk="function" line="1469" lineend="1469" name="refresh" />
+              <scope ilk="function" line="1469" lineend="1469" name="retry" />
+              <scope ilk="function" line="1469" lineend="1469" name="expire" />
+              <scope ilk="function" line="1469" lineend="1469" name="minimum" />
+              <scope ilk="function" line="1471" lineend="1475" name="encode_rdata" signature="encode_rdata(msg)" />
+              <scope attributes="__classmethod__" ilk="function" line="1477" lineend="1483" name="decode_rdata" signature="self.decode_rdata(msg)" />
+            </scope>
+            <scope classrefs="DomainName" ilk="class" line="1486" lineend="1488" name="PTR" />
+            <scope classrefs="Resource" ilk="class" line="1490" lineend="1509" name="HINFO">
+              <scope attributes="__ctor__" ilk="function" line="1493" lineend="1496" name="initialize" signature="initialize(cpu, os)" />
+              <scope ilk="function" line="1497" lineend="1497" name="cpu" />
+              <scope ilk="function" line="1497" lineend="1497" name="os" />
+              <scope ilk="function" line="1499" lineend="1502" name="encode_rdata" signature="encode_rdata(msg)" />
+              <scope attributes="__classmethod__" ilk="function" line="1504" lineend="1508" name="decode_rdata" signature="self.decode_rdata(msg)" />
+            </scope>
+            <scope classrefs="Resource" ilk="class" line="1511" lineend="1530" name="MINFO">
+              <scope attributes="__ctor__" ilk="function" line="1514" lineend="1517" name="initialize" signature="initialize(rmailbx, emailbx)" />
+              <scope ilk="function" line="1518" lineend="1518" name="rmailbx" />
+              <scope ilk="function" line="1518" lineend="1518" name="emailbx" />
+              <scope ilk="function" line="1520" lineend="1523" name="encode_rdata" signature="encode_rdata(msg)" />
+              <scope attributes="__classmethod__" ilk="function" line="1525" lineend="1529" name="decode_rdata" signature="self.decode_rdata(msg)" />
+            </scope>
+            <scope classrefs="Resource" ilk="class" line="1532" lineend="1551" name="MX">
+              <scope attributes="__ctor__" ilk="function" line="1535" lineend="1538" name="initialize" signature="initialize(preference, exchange)" />
+              <scope ilk="function" line="1539" lineend="1539" name="preference" />
+              <scope ilk="function" line="1539" lineend="1539" name="exchange" />
+              <scope ilk="function" line="1541" lineend="1544" name="encode_rdata" signature="encode_rdata(msg)" />
+              <scope attributes="__classmethod__" ilk="function" line="1546" lineend="1550" name="decode_rdata" signature="self.decode_rdata(msg)" />
+            </scope>
+            <scope classrefs="Resource" ilk="class" line="1553" lineend="1573" name="TXT">
+              <scope attributes="__ctor__" ilk="function" line="1556" lineend="1558" name="initialize" signature="initialize(first_string, *rest_strings)" />
+              <scope ilk="function" line="1559" lineend="1559" name="strings" />
+              <scope ilk="function" line="1561" lineend="1563" name="data" signature="data" />
+              <scope ilk="function" line="1565" lineend="1567" name="encode_rdata" signature="encode_rdata(msg)" />
+              <scope attributes="__classmethod__" ilk="function" line="1569" lineend="1572" name="decode_rdata" signature="self.decode_rdata(msg)" />
+            </scope>
+            <scope classrefs="Query" ilk="class" line="1575" lineend="1577" name="ANY" />
+            <scope doc="ARPA Internet specific RRs" ilk="namespace" line="1584" lineend="1710" name="IN">
+              <scope classrefs="Resource" ilk="class" line="1595" lineend="1610" name="A">
+                <scope attributes="__ctor__" ilk="function" line="1598" lineend="1600" name="initialize" signature="initialize(address)" />
+                <scope ilk="function" line="1601" lineend="1601" name="address" />
+                <scope ilk="function" line="1603" lineend="1605" name="encode_rdata" signature="encode_rdata(msg)" />
+                <scope attributes="__classmethod__" ilk="function" line="1607" lineend="1609" name="decode_rdata" signature="self.decode_rdata(msg)" />
+              </scope>
+              <scope classrefs="Resource" ilk="class" line="1612" lineend="1634" name="WKS">
+                <scope attributes="__ctor__" ilk="function" line="1615" lineend="1619" name="initialize" signature="initialize(address, protocol, bitmap)" />
+                <scope ilk="function" line="1620" lineend="1620" name="address" />
+                <scope ilk="function" line="1620" lineend="1620" name="protocol" />
+                <scope ilk="function" line="1620" lineend="1620" name="bitmap" />
+                <scope ilk="function" line="1622" lineend="1626" name="encode_rdata" signature="encode_rdata(msg)" />
+                <scope attributes="__classmethod__" ilk="function" line="1628" lineend="1633" name="decode_rdata" signature="self.decode_rdata(msg)" />
+              </scope>
+              <scope classrefs="Resource" ilk="class" line="1636" lineend="1651" name="AAAA">
+                <scope attributes="__ctor__" ilk="function" line="1639" lineend="1641" name="initialize" signature="initialize(address)" />
+                <scope ilk="function" line="1642" lineend="1642" name="address" />
+                <scope ilk="function" line="1644" lineend="1646" name="encode_rdata" signature="encode_rdata(msg)" />
+                <scope attributes="__classmethod__" ilk="function" line="1648" lineend="1650" name="decode_rdata" signature="self.decode_rdata(msg)" />
+              </scope>
+              <scope classrefs="Resource" doc="SRV resource record defined in RFC 2782" ilk="class" line="1681" lineend="1708" name="SRV">
+                <scope attributes="__ctor__" doc="Create a SRV resource record." ilk="function" line="1685" lineend="1690" name="initialize" signature="initialize(priority, weight, port, target)" />
+                <scope ilk="function" line="1692" lineend="1692" name="priority" />
+                <scope ilk="function" line="1692" lineend="1692" name="weight" />
+                <scope ilk="function" line="1692" lineend="1692" name="port" />
+                <scope ilk="function" line="1692" lineend="1692" name="target" />
+                <scope ilk="function" line="1694" lineend="1699" name="encode_rdata" signature="encode_rdata(msg)" />
+                <scope attributes="__classmethod__" ilk="function" line="1701" lineend="1707" name="decode_rdata" signature="self.decode_rdata(msg)" />
+              </scope>
+            </scope>
+          </scope>
+        </scope>
+        <scope classrefs="Object" ilk="class" line="1714" lineend="1767" name="IPv4">
+          <scope attributes="__classmethod__" ilk="function" line="1717" lineend="1733" name="create" signature="self.create(arg)" />
+          <scope attributes="__ctor__" ilk="function" line="1735" lineend="1740" name="initialize" signature="initialize(address)" />
+          <scope ilk="function" line="1741" lineend="1741" name="address" />
+          <scope ilk="function" line="1743" lineend="1745" name="to_s" signature="to_s" />
+          <scope ilk="function" line="1747" lineend="1749" name="inspect" signature="inspect" />
+          <scope ilk="function" line="1751" lineend="1754" name="to_name" signature="to_name" />
+          <scope ilk="function" line="1756" lineend="1758" name="==" signature="==(other" />
+          <scope ilk="function" line="1760" lineend="1762" name="eql?" signature="eql?(other)" />
+          <scope ilk="function" line="1764" lineend="1766" name="hash" signature="hash" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="1769" lineend="1880" name="IPv6">
+          <scope attributes="__classmethod__" ilk="function" line="1797" lineend="1841" name="create" signature="self.create(arg)" />
+          <scope attributes="__ctor__" ilk="function" line="1843" lineend="1848" name="initialize" signature="initialize(address)" />
+          <scope ilk="function" line="1849" lineend="1849" name="address" />
+          <scope ilk="function" line="1851" lineend="1857" name="to_s" signature="to_s" />
+          <scope ilk="function" line="1859" lineend="1861" name="inspect" signature="inspect" />
+          <scope ilk="function" line="1863" lineend="1867" name="to_name" signature="to_name" />
+          <scope ilk="function" line="1869" lineend="1871" name="==" signature="==(other" />
+          <scope ilk="function" line="1873" lineend="1875" name="eql?" signature="eql?(other)" />
+          <scope ilk="function" line="1877" lineend="1879" name="hash" signature="hash" />
+        </scope>
+      </scope>
+    </scope>
+    

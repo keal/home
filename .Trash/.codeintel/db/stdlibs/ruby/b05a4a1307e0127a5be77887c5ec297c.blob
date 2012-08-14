@@ -1,0 +1,83 @@
+<scope ilk="blob" lang="Ruby" name="mkmf">
+      <import line="4" module="rbconfig" symbol="*" />
+      <import line="5" module="fileutils" symbol="*" />
+      <import line="6" module="shellwords" symbol="*" />
+      <scope doc="module to create Makefile for extension modules invoke like:&#xA;ruby -r mkmf extconf.rb" ilk="function" line="64" lineend="66" name="config_string" signature="config_string(key, config = CONFIG)" />
+      <scope ilk="function" line="68" lineend="70" name="dir_re" signature="dir_re(dir)" />
+      <scope ilk="function" line="81" lineend="105" name="install_dirs" signature="install_dirs(target_prefix = nil)" />
+      <scope ilk="function" line="107" lineend="110" name="map_dir" signature="map_dir(dir, map = nil)" />
+      <scope classrefs="Object" ilk="class" line="129" lineend="133" name="String">
+        <scope ilk="function" line="130" lineend="132" name="quote" signature="quote" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="134" lineend="138" name="Array">
+        <scope ilk="function" line="135" lineend="137" name="quote" signature="quote" />
+      </scope>
+      <scope ilk="function" line="140" lineend="142" name="rm_f" signature="rm_f(*files)" />
+      <scope ilk="function" line="144" lineend="148" name="modified?" signature="modified?(target, times)" />
+      <scope ilk="function" line="150" lineend="164" name="merge_libs" signature="merge_libs(*libs)" />
+      <scope ilk="namespace" line="166" lineend="215" name="Logging">
+        <scope attributes="__classmethod__" ilk="function" line="173" lineend="182" name="open" signature="self::open" />
+        <scope attributes="__classmethod__" ilk="function" line="184" lineend="188" name="message" signature="self::message(*s)" />
+        <scope attributes="__classmethod__" ilk="function" line="190" lineend="197" name="logfile" signature="self::logfile" />
+        <scope attributes="__classmethod__" ilk="function" line="199" lineend="214" name="postpone" signature="self::postpone" />
+      </scope>
+      <scope ilk="function" line="217" lineend="222" name="xsystem" signature="xsystem" />
+      <scope ilk="function" line="224" lineend="234" name="xpopen" signature="xpopen" />
+      <scope ilk="function" line="236" lineend="240" name="log_src" signature="log_src(src)" />
+      <scope ilk="function" line="254" lineend="259" name="try_do" signature="try_do(src, command, &amp;b)" />
+      <scope ilk="function" line="261" lineend="273" name="link_command" signature="link_command(ldflags, opt=&quot;&quot;, libpath=$LIBPATH)" />
+      <scope ilk="function" line="275" lineend="279" name="cc_command" signature="cc_command(opt=&quot;&quot;)" />
+      <scope ilk="function" line="281" lineend="285" name="cpp_command" signature="cpp_command(outfile, opt=&quot;&quot;)" />
+      <scope ilk="function" line="287" lineend="291" name="libpathflag" signature="libpathflag(libpath=$LIBPATH)" />
+      <scope ilk="function" line="293" lineend="295" name="try_link0" signature="try_link0(src, opt=&quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="297" lineend="301" name="try_link" signature="try_link(src, opt=&quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="303" lineend="307" name="try_compile" signature="try_compile(src, opt=&quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="309" lineend="313" name="try_cpp" signature="try_cpp(src, opt=&quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="315" lineend="322" name="cpp_include" signature="cpp_include(header)" />
+      <scope ilk="function" line="324" lineend="330" name="with_cppflags" signature="with_cppflags(flags)" />
+      <scope ilk="function" line="332" lineend="338" name="with_cflags" signature="with_cflags(flags)" />
+      <scope ilk="function" line="340" lineend="346" name="with_ldflags" signature="with_ldflags(flags)" />
+      <scope ilk="function" line="348" lineend="356" name="try_static_assert" signature="try_static_assert(expr, headers = nil, opt = &quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="358" lineend="408" name="try_constant" signature="try_constant(const, headers = nil, opt = &quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="410" name="try_func" signature="try_func(func, libs, headers = nil, &amp;b)" />
+      <scope ilk="function" line="426" lineend="435" name="try_var" signature="try_var(var, headers = nil, &amp;b)" />
+      <scope ilk="function" line="437" lineend="461" name="egrep_cpp" signature="egrep_cpp(pat, src, opt = &quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="463" lineend="472" name="macro_defined?" signature="macro_defined?(macro, src, opt = &quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="474" lineend="482" name="try_run" signature="try_run(src, opt = &quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="484" lineend="519" name="install_files" signature="install_files(mfile, ifiles, map = nil, srcprefix = nil)" />
+      <scope ilk="function" line="521" lineend="523" name="install_rb" signature="install_rb(mfile, dest, srcdir = nil)" />
+      <scope ilk="function" line="525" lineend="527" name="append_library" signature="append_library(libs, lib)" />
+      <scope ilk="function" line="529" lineend="534" name="message" signature="message(*s)" />
+      <scope ilk="function" line="536" lineend="549" name="checking_for" signature="checking_for(m, fmt = nil)" />
+      <scope ilk="function" line="551" lineend="557" name="have_macro" signature="have_macro(macro, headers = nil, opt = &quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="559" lineend="575" name="have_library" signature="have_library(lib, func = nil, header=nil, &amp;b)" />
+      <scope ilk="function" line="577" lineend="597" name="find_library" signature="find_library(lib, func, *paths, &amp;b)" />
+      <scope ilk="function" line="599" lineend="608" name="have_func" signature="have_func(func, headers = nil, &amp;b)" />
+      <scope ilk="function" line="610" lineend="619" name="have_var" signature="have_var(var, headers = nil, &amp;b)" />
+      <scope ilk="function" line="621" lineend="630" name="have_header" signature="have_header(header, &amp;b)" />
+      <scope ilk="function" line="632" lineend="649" name="find_header" signature="find_header(header, *paths)" />
+      <scope ilk="function" line="651" lineend="666" name="have_struct_member" signature="have_struct_member(type, member, header = nil, &amp;b)" />
+      <scope ilk="function" line="668" lineend="688" name="have_type" signature="have_type(type, header = nil, opt = &quot;&quot;, &amp;b)" />
+      <scope ilk="function" line="690" lineend="707" name="check_sizeof" signature="check_sizeof(type, header = nil, &amp;b)" />
+      <scope ilk="function" line="709" lineend="718" name="scalar_ptr_type?" signature="scalar_ptr_type?(type, member = nil, headers = nil, &amp;b)" />
+      <scope ilk="function" line="720" lineend="729" name="scalar_type?" signature="scalar_type?(type, member = nil, headers = nil, &amp;b)" />
+      <scope ilk="function" line="731" lineend="762" name="what_type?" signature="what_type?(type, member = nil, headers = nil, &amp;b)">
+        <scope ilk="function" line="740" lineend="742" name="fmt" signature="fmt." />
+      </scope>
+      <scope ilk="function" line="764" lineend="782" name="find_executable0" signature="find_executable0(bin, path = nil)" />
+      <scope ilk="function" line="784" lineend="788" name="find_executable" signature="find_executable(bin, path = nil)" />
+      <scope ilk="function" line="790" lineend="794" name="arg_config" signature="arg_config(config, *defaults, &amp;block)" />
+      <scope ilk="function" line="796" lineend="815" name="with_config" signature="with_config(config, *defaults)" />
+      <scope ilk="function" line="817" lineend="827" name="enable_config" signature="enable_config(config, *defaults)" />
+      <scope ilk="function" line="829" lineend="846" name="create_header" signature="create_header(header = &quot;extconf.h&quot;)" />
+      <scope ilk="function" line="848" lineend="880" name="dir_config" signature="dir_config(target, idefault=nil, ldefault=nil)" />
+      <scope ilk="function" line="882" lineend="902" name="pkg_config" signature="pkg_config(pkg)" />
+      <scope ilk="function" line="904" lineend="906" name="with_destdir" signature="with_destdir(dir)" />
+      <scope ilk="function" line="908" lineend="910" name="winsep" signature="winsep(s)" />
+      <scope ilk="function" line="912" lineend="997" name="configuration" signature="configuration(srcdir)" />
+      <scope ilk="function" line="999" lineend="1007" name="dummy_makefile" signature="dummy_makefile(srcdir)" />
+      <scope ilk="function" line="1009" lineend="1262" name="create_makefile" signature="create_makefile(target, srcprefix = nil)" />
+      <scope ilk="function" line="1264" lineend="1301" name="init_mkmf" signature="init_mkmf(config = CONFIG)" />
+      <scope ilk="function" line="1311" lineend="1316" name="mkmf_failed" signature="mkmf_failed(path)" />
+    </scope>
+    

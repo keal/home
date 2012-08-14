@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="tk/winpkg">
+      <import line="8" module="tk" symbol="*" />
+      <scope doc="tk/winpkg.rb : methods for Tcl/Tk packages for Microsoft&#xA;Windows 2000/11/22 by Hidetoshi Nagai&#xA;&lt;nagai@ai.kyutech.ac.jp&gt;" ilk="namespace" line="10" lineend="86" name="TkWinDDE">
+        <scope attributes="__classmethod__" ilk="function" line="17" lineend="19" name="package_name" signature="self.package_name" />
+        <scope doc="def servername(topic=None) tk_call(&apos;dde&apos;, &apos;servername&apos;,&#xA;topic) end" ilk="function" line="30" lineend="50" name="servername" signature="servername(*args)" />
+        <scope ilk="function" line="52" lineend="54" name="execute" signature="execute(service, topic, data)" />
+        <scope ilk="function" line="56" lineend="58" name="async_execute" signature="async_execute(service, topic, data)" />
+        <scope ilk="function" line="60" lineend="62" name="poke" signature="poke(service, topic, item, data)" />
+        <scope ilk="function" line="64" lineend="66" name="request" signature="request(service, topic, item)" />
+        <scope ilk="function" line="68" lineend="70" name="binary_request" signature="binary_request(service, topic, item)" />
+        <scope ilk="function" line="72" lineend="74" name="services" signature="services(service, topic)" />
+        <scope ilk="function" line="76" lineend="78" name="eval" signature="eval(topic, cmd, *args)" />
+        <scope ilk="function" line="80" lineend="82" name="async_eval" signature="async_eval(topic, cmd, *args)" />
+      </scope>
+      <scope ilk="namespace" line="88" lineend="143" name="TkWinRegistry">
+        <scope ilk="function" line="100" lineend="106" name="broadcast" signature="broadcast(keynam, timeout=nil)" />
+        <scope ilk="function" line="108" lineend="110" name="delete" signature="delete(keynam, valnam=None)" />
+        <scope ilk="function" line="112" lineend="114" name="get" signature="get(keynam, valnam)" />
+        <scope ilk="function" line="116" lineend="123" name="keys" signature="keys(keynam, pattern=nil)" />
+        <scope ilk="function" line="125" lineend="127" name="set" signature="set(keynam, valnam=None, data=None, dattype=None)" />
+        <scope ilk="function" line="129" lineend="131" name="type" signature="type(keynam, valnam)" />
+        <scope ilk="function" line="133" lineend="140" name="values" signature="values(keynam, pattern=nil)" />
+      </scope>
+    </scope>
+    

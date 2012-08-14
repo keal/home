@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="monitor">
+      <scope doc="Adds monitor functionality to an arbitrary object by mixing&#xA;the module with +include+." ilk="namespace" line="79" lineend="290" name="MonitorMixin">
+        <scope classrefs="Object" doc="FIXME: This isn&apos;t documented in Nutshell." ilk="class" line="86" lineend="171" name="ConditionVariable">
+          <scope classrefs="Exception" ilk="class" line="87" lineend="87" name="Timeout" />
+          <scope ilk="function" line="89" lineend="113" name="wait" signature="wait(timeout = nil)" />
+          <scope ilk="function" line="115" lineend="119" name="wait_while" signature="wait_while" />
+          <scope ilk="function" line="121" lineend="125" name="wait_until" signature="wait_until" />
+          <scope ilk="function" line="127" lineend="134" name="signal" signature="signal" />
+          <scope ilk="function" line="136" lineend="145" name="broadcast" signature="broadcast" />
+          <scope ilk="function" line="147" lineend="149" name="count_waiters" signature="count_waiters" />
+          <scope attributes="__ctor__" ilk="function" line="153" lineend="156" name="initialize" signature="initialize(monitor)" />
+          <scope ilk="function" line="158" lineend="170" name="create_timer" signature="create_timer(timeout)" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="173" lineend="176" name="extend_object" signature="self.extend_object(obj)" />
+        <scope doc="Attempts to enter exclusive section. Returns +false+ if lock&#xA;fails." ilk="function" line="181" lineend="193" name="mon_try_enter" signature="mon_try_enter" />
+        <scope doc="Enters exclusive section." ilk="function" line="200" lineend="205" name="mon_enter" signature="mon_enter" />
+        <scope doc="Leaves exclusive section." ilk="function" line="210" lineend="219" name="mon_exit" signature="mon_exit" />
+        <scope doc="Enters exclusive section and executes the block." ilk="function" line="226" lineend="233" name="mon_synchronize" signature="mon_synchronize" />
+        <scope doc="FIXME: This isn&apos;t documented in Nutshell." ilk="function" line="239" lineend="241" name="new_cond" signature="new_cond" />
+        <scope attributes="__ctor__" ilk="function" line="245" lineend="248" name="initialize" signature="initialize(*args)" />
+        <scope ilk="function" line="250" lineend="255" name="mon_initialize" signature="mon_initialize" />
+        <scope ilk="function" line="257" lineend="261" name="mon_check_owner" signature="mon_check_owner" />
+        <scope ilk="function" line="263" lineend="270" name="mon_acquire" signature="mon_acquire(queue)" />
+        <scope ilk="function" line="272" lineend="277" name="mon_release" signature="mon_release" />
+        <scope ilk="function" line="279" lineend="282" name="mon_enter_for_cond" signature="mon_enter_for_cond(count)" />
+        <scope ilk="function" line="284" lineend="289" name="mon_exit_for_cond" signature="mon_exit_for_cond" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="292" lineend="297" name="Monitor">
+        <import symbol="MonitorMixin" />
+      </scope>
+    </scope>
+    

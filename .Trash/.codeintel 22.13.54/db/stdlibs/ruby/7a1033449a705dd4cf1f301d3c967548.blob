@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="rexml/sax2listener">
+      <scope ilk="namespace" line="1" lineend="97" name="REXML">
+        <scope doc="A template for stream parser listeners." ilk="namespace" line="22" name="SAX2Listener">
+          <scope ilk="function" line="23" lineend="24" name="start_document" signature="start_document" />
+          <scope ilk="function" line="25" lineend="26" name="end_document" signature="end_document" />
+          <scope ilk="function" line="27" lineend="28" name="start_prefix_mapping" signature="start_prefix_mapping" />
+          <scope ilk="function" line="29" lineend="30" name="end_prefix_mapping" signature="end_prefix_mapping" />
+          <scope ilk="function" line="31" lineend="32" name="start_element" signature="start_element" />
+          <scope ilk="function" line="33" lineend="34" name="end_element" signature="end_element" />
+          <scope ilk="function" line="35" lineend="36" name="characters" signature="characters" />
+          <scope ilk="function" line="37" lineend="38" name="processing_instruction" signature="processing_instruction" />
+          <scope doc="Handles a doctype declaration." ilk="function" line="45" lineend="46" name="doctype" signature="doctype" />
+          <scope doc="If a doctype includes an ATTLIST declaration, it will cause&#xA;this method to be called." ilk="function" line="52" lineend="53" name="attlistdecl" signature="attlistdecl(element, pairs, contents)" />
+          <scope doc="&lt;!ELEMENT ...&gt;" ilk="function" line="55" lineend="56" name="elementdecl" signature="elementdecl" />
+          <scope doc="&lt;!ENTITY ...&gt; The argument passed to this method is an array&#xA;of the entity declaration." ilk="function" line="73" lineend="74" name="entitydecl" signature="entitydecl" />
+          <scope doc="&lt;!NOTATION ...&gt;" ilk="function" line="76" lineend="77" name="notationdecl" signature="notationdecl" />
+          <scope doc="Called when &lt;![CDATA[ ... ]]&gt; is encountered in a document." ilk="function" line="80" lineend="81" name="cdata" signature="cdata" />
+          <scope doc="Called when an XML PI is encountered in the document." ilk="function" line="88" lineend="89" name="xmldecl" signature="xmldecl" />
+          <scope doc="Called when a comment is encountered." ilk="function" line="92" lineend="93" name="comment" signature="comment" />
+        </scope>
+        <scope ilk="function" line="94" lineend="95" name="progress" signature="progress" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/choice">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema complexType definition for WSDL." ilk="namespace" line="12" name="WSDL" />
+      <scope ilk="namespace" line="13" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="65" name="Choice">
+        <scope ilk="function" line="17" lineend="17" name="minoccurs" />
+        <scope ilk="function" line="18" lineend="18" name="maxoccurs" />
+        <scope ilk="function" line="19" lineend="19" name="elements" />
+        <scope attributes="__ctor__" ilk="function" line="21" lineend="26" name="initialize" signature="initialize" />
+        <scope ilk="function" line="28" lineend="30" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="32" lineend="34" name="elementformdefault" signature="elementformdefault" />
+        <scope ilk="function" line="36" lineend="38" name="&lt;&lt;" signature="&lt;&lt;(element" />
+        <scope ilk="function" line="40" lineend="53" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="55" lineend="64" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

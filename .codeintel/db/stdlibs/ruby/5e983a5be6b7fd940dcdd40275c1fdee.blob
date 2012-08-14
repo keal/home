@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="drb/gw">
+      <import line="1" module="drb/drb" symbol="*" />
+      <import line="2" module="monitor" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="56" name="DRb">
+        <scope classrefs="DRbIdConv" ilk="class" line="5" lineend="12" name="GWIdConv">
+          <scope ilk="function" line="6" lineend="11" name="to_obj" signature="to_obj(ref)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="14" lineend="32" name="GW">
+          <scope attributes="__ctor__" ilk="function" line="16" lineend="19" name="initialize" signature="initialize" />
+          <scope ilk="function" line="21" lineend="25" name="[]" signature="[](key" />
+          <scope ilk="function" line="27" lineend="31" name="[]=" signature="[]=(key" />
+          <import symbol="MonitorMixin" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="34" lineend="55" name="DRbObject">
+          <scope attributes="__classmethod__" ilk="function" line="35" lineend="42" name="_load" signature="self._load(s)" />
+          <scope ilk="function" line="44" lineend="54" name="_dump" signature="_dump(lv)" />
+        </scope>
+      </scope>
+    </scope>
+    

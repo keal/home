@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="drb/eq">
+      <import line="1" module="drb/drb" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="16" name="DRb">
+        <scope classrefs="Object" ilk="class" line="4" lineend="15" name="DRbObject">
+          <scope ilk="function" line="5" lineend="8" name="==" signature="==(other" />
+          <scope ilk="function" line="10" lineend="12" name="hash" signature="hash" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="net/telnets">
+      <import line="56" module="net/telnet" symbol="*" />
+      <import line="57" module="openssl" symbol="*" />
+      <scope ilk="namespace" line="59" lineend="248" name="Net">
+        <scope classrefs="Object" ilk="class" line="60" lineend="247" name="Telnet">
+          <scope ilk="function" line="61" lineend="61" name="ssl" />
+          <scope doc="&quot;\001&quot; # &quot;\x01&quot; # FOLLOWS (for STARTTLS)" ilk="function" line="68" name="ssl?" signature="ssl?" />
+          <scope ilk="function" line="70" lineend="144" name="preprocess" signature="preprocess(string)" />
+          <scope doc="preprocess" ilk="function" line="148" lineend="223" name="waitfor" signature="waitfor(options)" />
+          <scope ilk="function" line="227" lineend="245" name="detect_sub_negotiation" signature="detect_sub_negotiation(data, pos)" />
+        </scope>
+      </scope>
+    </scope>
+    

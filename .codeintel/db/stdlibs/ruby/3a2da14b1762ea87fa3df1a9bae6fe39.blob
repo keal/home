@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/parsers/parse_f95">
+      <import line="3" module="rdoc/code_objects" symbol="*" />
+      <scope doc="Parse a Fortran 95 file." ilk="namespace" line="5" lineend="119" name="RDoc">
+        <scope classrefs="Object" doc="See rdoc/parsers/parse_f95.rb" ilk="class" line="9" lineend="27" name="Token">
+          <scope attributes="__ctor__" ilk="function" line="13" lineend="17" name="initialize" signature="initialize(line_no, char_no)" />
+          <scope doc="Because we&apos;re used in contexts that expect to return a&#xA;token, we set the text string and then return ourselves" ilk="function" line="20" lineend="23" name="set_text" signature="set_text(text)" />
+          <scope ilk="function" line="25" lineend="25" name="line_no" />
+          <scope ilk="function" line="25" lineend="25" name="char_no" />
+          <scope ilk="function" line="25" lineend="25" name="text" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="29" lineend="117" name="Fortran95parser">
+          <scope attributes="__ctor__" doc="prepare to parse a Fortran 95 file" ilk="function" line="35" lineend="41" name="initialize" signature="initialize(top_level, file_name, body, options, stats)" />
+          <scope doc="devine code constructs" ilk="function" line="44" lineend="95" name="scan" signature="scan" />
+          <scope ilk="function" line="97" lineend="108" name="find_comments" signature="find_comments" />
+          <scope ilk="function" line="110" lineend="115" name="progress" signature="progress(char)" />
+        </scope>
+      </scope>
+    </scope>
+    

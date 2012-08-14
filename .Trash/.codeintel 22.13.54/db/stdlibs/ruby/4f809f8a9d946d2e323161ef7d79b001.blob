@@ -1,0 +1,186 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/code_objects">
+      <import line="4" module="rdoc/tokenstream" symbol="*" />
+      <scope doc="We represent the various high-level code constructs that&#xA;appear in Ruby programs: classes, modules, methods, and so&#xA;on." ilk="namespace" line="6" lineend="765" name="RDoc">
+        <scope classrefs="Object" doc="We contain the common stuff for contexts (which are&#xA;containers) and other elements (methods, attributes and so&#xA;on)" ilk="class" line="12" lineend="108" name="CodeObject">
+          <scope ilk="function" line="14" lineend="14" name="parent" />
+          <scope ilk="function" line="14" lineend="14" name="parent=" />
+          <scope ilk="function" line="20" lineend="20" name="viewer" />
+          <scope ilk="function" line="20" lineend="20" name="viewer=" />
+          <scope ilk="function" line="24" lineend="24" name="done_documenting" />
+          <scope ilk="function" line="24" lineend="24" name="done_documenting=" />
+          <scope ilk="function" line="28" lineend="28" name="section" />
+          <scope ilk="function" line="28" lineend="28" name="section=" />
+          <scope ilk="function" line="32" lineend="32" name="document_self" />
+          <scope doc="do we document ourselves?" ilk="function" line="34" lineend="39" name="document_self=" signature="document_self=(val)" />
+          <scope doc="set and cleared by :startdoc: and :enddoc:, this is used to&#xA;toggle the capturing of documentation" ilk="function" line="43" lineend="46" name="start_doc" signature="start_doc" />
+          <scope ilk="function" line="48" lineend="51" name="stop_doc" signature="stop_doc" />
+          <scope ilk="function" line="55" lineend="55" name="document_children" />
+          <scope doc="do we document ourselves and our children" ilk="function" line="57" lineend="62" name="document_children=" signature="document_children=(val)" />
+          <scope ilk="function" line="65" lineend="65" name="force_documentation" />
+          <scope ilk="function" line="65" lineend="65" name="force_documentation=" />
+          <scope doc="Default callbacks to nothing, but this is overridden for&#xA;classes and modules" ilk="function" line="69" lineend="70" name="remove_classes_and_modules" signature="remove_classes_and_modules" />
+          <scope ilk="function" line="72" lineend="73" name="remove_methods_etc" signature="remove_methods_etc" />
+          <scope attributes="__ctor__" ilk="function" line="75" lineend="80" name="initialize" signature="initialize" />
+          <scope ilk="function" line="83" lineend="83" name="comment" />
+          <scope doc="Update the comment, but don&apos;t overwrite a real comment with&#xA;an empty one" ilk="function" line="87" lineend="89" name="comment=" signature="comment=(comment)" />
+          <scope attributes="__classmethod__" doc="There&apos;s a wee trick we pull." ilk="function" line="97" lineend="106" name="attr_overridable" signature="CodeObject.attr_overridable(name, *aliases)" />
+        </scope>
+        <scope classrefs="CodeObject" doc="A Context is something that can hold modules, classes,&#xA;methods, attributes, aliases, requires, and includes." ilk="class" line="114" lineend="458" name="Context">
+          <scope ilk="function" line="115" lineend="115" name="name" />
+          <scope ilk="function" line="115" lineend="115" name="method_list" />
+          <scope ilk="function" line="115" lineend="115" name="attributes" />
+          <scope ilk="function" line="115" lineend="115" name="aliases" />
+          <scope ilk="function" line="115" lineend="115" name="constants" />
+          <scope ilk="function" line="116" lineend="116" name="requires" />
+          <scope ilk="function" line="116" lineend="116" name="includes" />
+          <scope ilk="function" line="116" lineend="116" name="in_files" />
+          <scope ilk="function" line="116" lineend="116" name="visibility" />
+          <scope ilk="function" line="118" lineend="118" name="sections" />
+          <scope classrefs="Object" ilk="class" line="120" lineend="160" name="Section">
+            <scope ilk="function" line="121" lineend="121" name="title" />
+            <scope ilk="function" line="121" lineend="121" name="comment" />
+            <scope ilk="function" line="121" lineend="121" name="sequence" />
+            <scope attributes="__ctor__" ilk="function" line="125" lineend="130" name="initialize" signature="initialize(title, comment)" />
+            <scope doc="Set the comment for this section from the original comment&#xA;block If the first line contains :section:, strip it and use&#xA;the rest." ilk="function" line="144" lineend="159" name="set_comment" signature="set_comment(comment)" />
+          </scope>
+          <scope attributes="__ctor__" ilk="function" line="163" lineend="178" name="initialize" signature="initialize" />
+          <scope doc="map the class hash to an array externally" ilk="function" line="181" lineend="183" name="classes" signature="classes" />
+          <scope doc="map the module hash to an array externally" ilk="function" line="186" lineend="188" name="modules" signature="modules" />
+          <scope doc="Change the default visibility for new methods" ilk="function" line="191" lineend="193" name="ongoing_visibility=" signature="ongoing_visibility=(vis)" />
+          <scope doc="Given an array +methods+ of method names, set the visibility&#xA;of the corresponding AnyMethod object" ilk="function" line="198" lineend="217" name="set_visibility_for" signature="set_visibility_for(methods, vis, singleton=false)" />
+          <scope doc="Record the file that we happen to find it in" ilk="function" line="220" lineend="222" name="record_location" signature="record_location(toplevel)" />
+          <scope doc="Return true if at least part of this thing was defined in&#xA;+file+" ilk="function" line="225" lineend="227" name="defined_in?" signature="defined_in?(file)" />
+          <scope ilk="function" line="229" lineend="231" name="add_class" signature="add_class(class_type, name, superclass)" />
+          <scope ilk="function" line="233" lineend="235" name="add_module" signature="add_module(class_type, name)" />
+          <scope ilk="function" line="237" lineend="241" name="add_method" signature="add_method(a_method)" />
+          <scope ilk="function" line="243" lineend="245" name="add_attribute" signature="add_attribute(an_attribute)" />
+          <scope ilk="function" line="247" lineend="260" name="add_alias" signature="add_alias(an_alias)" />
+          <scope ilk="function" line="262" lineend="264" name="add_include" signature="add_include(an_include)" />
+          <scope ilk="function" line="266" lineend="268" name="add_constant" signature="add_constant(const)" />
+          <scope doc="Requires always get added to the top-level (file) context" ilk="function" line="271" lineend="277" name="add_require" signature="add_require(a_require)" />
+          <scope ilk="function" line="279" lineend="292" name="add_class_or_module" signature="add_class_or_module(collection, class_type, name, superclass=nil)" />
+          <scope ilk="function" line="294" lineend="298" name="add_to" signature="add_to(array, thing)" />
+          <scope doc="If a class&apos;s documentation is turned off after we&apos;ve started&#xA;collecting methods etc., we need to remove the ones we have" ilk="function" line="304" lineend="306" name="remove_methods_etc" signature="remove_methods_etc" />
+          <scope ilk="function" line="308" lineend="315" name="initialize_methods_etc" signature="initialize_methods_etc" />
+          <scope doc="and remove classes and modules when we see a :nodoc: all" ilk="function" line="318" lineend="320" name="remove_classes_and_modules" signature="remove_classes_and_modules" />
+          <scope ilk="function" line="322" lineend="325" name="initialize_classes_and_modules" signature="initialize_classes_and_modules" />
+          <scope doc="Find a named module" ilk="function" line="328" lineend="333" name="find_module_named" signature="find_module_named(name)" />
+          <scope doc="find a module at a higher scope" ilk="function" line="336" lineend="338" name="find_enclosing_module_named" signature="find_enclosing_module_named(name)" />
+          <scope doc="Iterate over all the classes and modules in this object" ilk="function" line="343" lineend="346" name="each_classmodule" signature="each_classmodule" />
+          <scope ilk="function" line="348" lineend="350" name="each_method" signature="each_method" />
+          <scope ilk="function" line="352" lineend="354" name="each_attribute" signature="each_attribute" />
+          <scope ilk="function" line="356" lineend="358" name="each_constant" signature="each_constant" />
+          <scope doc="Return the toplevel that owns us" ilk="function" line="362" lineend="367" name="toplevel" signature="toplevel" />
+          <scope doc="allow us to sort modules by name" ilk="function" line="370" lineend="372" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+          <scope doc="Look up the given symbol." ilk="function" line="377" lineend="420" name="find_symbol" signature="find_symbol(symbol, method=nil)" />
+          <scope ilk="function" line="422" lineend="427" name="find_local_symbol" signature="find_local_symbol(symbol)" />
+          <scope doc="Handle sections" ilk="function" line="431" lineend="434" name="set_current_section" signature="set_current_section(title, comment)" />
+          <scope doc="Find a named method, or return nil" ilk="function" line="439" lineend="441" name="find_method_named" signature="find_method_named(name)" />
+          <scope doc="Find a named instance method, or return nil" ilk="function" line="444" lineend="446" name="find_instance_method_named" signature="find_instance_method_named(name)" />
+          <scope doc="Find a named constant, or return nil" ilk="function" line="449" lineend="451" name="find_constant_named" signature="find_constant_named(name)" />
+          <scope doc="Find a named attribute, or return nil" ilk="function" line="454" lineend="456" name="find_attribute_named" signature="find_attribute_named(name)" />
+        </scope>
+        <scope classrefs="Context" doc="A TopLevel context is a source file" ilk="class" line="463" lineend="546" name="TopLevel">
+          <scope ilk="function" line="464" lineend="464" name="file_stat" />
+          <scope ilk="function" line="464" lineend="464" name="file_stat=" />
+          <scope ilk="function" line="465" lineend="465" name="file_relative_name" />
+          <scope ilk="function" line="465" lineend="465" name="file_relative_name=" />
+          <scope ilk="function" line="466" lineend="466" name="file_absolute_name" />
+          <scope ilk="function" line="466" lineend="466" name="file_absolute_name=" />
+          <scope ilk="function" line="467" lineend="467" name="diagram" />
+          <scope ilk="function" line="467" lineend="467" name="diagram=" />
+          <scope attributes="__classmethod__" ilk="function" line="472" lineend="475" name="reset" signature="TopLevel::reset" />
+          <scope attributes="__ctor__" ilk="function" line="477" lineend="484" name="initialize" signature="initialize(file_name)" />
+          <scope ilk="function" line="486" lineend="488" name="full_name" signature="full_name" />
+          <scope doc="Adding a class or module to a TopLevel is special, as we&#xA;only want one copy of a particular top-level class." ilk="function" line="496" lineend="516" name="add_class_or_module" signature="add_class_or_module(collection, class_type, name, superclass)" />
+          <scope attributes="__classmethod__" ilk="function" line="518" lineend="520" name="all_classes_and_modules" signature="TopLevel.all_classes_and_modules" />
+          <scope attributes="__classmethod__" ilk="function" line="522" lineend="528" name="find_class_named" signature="TopLevel.find_class_named(name)" />
+          <scope ilk="function" line="530" lineend="532" name="find_local_symbol" signature="find_local_symbol(symbol)" />
+          <scope ilk="function" line="534" lineend="538" name="find_class_or_module_named" signature="find_class_or_module_named(symbol)" />
+          <scope doc="Find a named module" ilk="function" line="541" lineend="543" name="find_module_named" signature="find_module_named(name)" />
+        </scope>
+        <scope classrefs="Context" doc="ClassModule is the base class for objects representing&#xA;either a class or a module." ilk="class" line="551" lineend="596" name="ClassModule">
+          <scope ilk="function" line="553" lineend="553" name="superclass" />
+          <scope ilk="function" line="554" lineend="554" name="diagram" />
+          <scope ilk="function" line="554" lineend="554" name="diagram=" />
+          <scope attributes="__ctor__" ilk="function" line="556" lineend="562" name="initialize" signature="initialize(name, superclass = nil)" />
+          <scope doc="Return the fully qualified name of this class or module" ilk="function" line="565" lineend="571" name="full_name" signature="full_name" />
+          <scope ilk="function" line="573" lineend="576" name="http_url" signature="http_url(prefix)" />
+          <scope doc="Return +true+ if this object represents a module" ilk="function" line="579" lineend="581" name="is_module?" signature="is_module?" />
+          <scope doc="to_s is simply for debugging" ilk="function" line="584" lineend="589" name="to_s" signature="to_s" />
+          <scope ilk="function" line="591" lineend="595" name="find_class_named" signature="find_class_named(name)" />
+        </scope>
+        <scope classrefs="ClassModule" doc="Anonymous classes" ilk="class" line="599" lineend="600" name="AnonClass" />
+        <scope classrefs="ClassModule" doc="Normal classes" ilk="class" line="603" lineend="604" name="NormalClass" />
+        <scope classrefs="ClassModule" doc="Singleton classes" ilk="class" line="607" lineend="608" name="SingleClass" />
+        <scope classrefs="ClassModule" doc="Module" ilk="class" line="611" lineend="615" name="NormalModule">
+          <scope ilk="function" line="612" lineend="614" name="is_module?" signature="is_module?" />
+        </scope>
+        <scope classrefs="CodeObject" doc="AnyMethod is the base class for objects representing methods" ilk="class" line="620" lineend="685" name="AnyMethod">
+          <scope ilk="function" line="621" lineend="621" name="name" />
+          <scope ilk="function" line="621" lineend="621" name="name=" />
+          <scope ilk="function" line="622" lineend="622" name="visibility" />
+          <scope ilk="function" line="622" lineend="622" name="visibility=" />
+          <scope ilk="function" line="623" lineend="623" name="block_params" />
+          <scope ilk="function" line="623" lineend="623" name="block_params=" />
+          <scope ilk="function" line="624" lineend="624" name="dont_rename_initialize" />
+          <scope ilk="function" line="624" lineend="624" name="dont_rename_initialize=" />
+          <scope ilk="function" line="625" lineend="625" name="singleton" />
+          <scope ilk="function" line="625" lineend="625" name="singleton=" />
+          <scope ilk="function" line="626" lineend="626" name="aliases" />
+          <scope ilk="function" line="627" lineend="627" name="is_alias_for" />
+          <scope ilk="function" line="627" lineend="627" name="is_alias_for=" />
+          <scope ilk="function" line="631" lineend="631" name="call_seq" />
+          <scope ilk="function" line="631" lineend="631" name="call_seq=" />
+          <scope attributes="__ctor__" doc="or a method we&apos;re aliasing" ilk="function" line="636" lineend="648" name="initialize" signature="initialize(text, name)" />
+          <scope ilk="function" line="650" lineend="652" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+          <scope ilk="function" line="654" lineend="658" name="to_s" signature="to_s" />
+          <scope ilk="function" line="660" lineend="680" name="param_seq" signature="param_seq" />
+          <scope ilk="function" line="682" lineend="684" name="add_alias" signature="add_alias(method)" />
+          <import symbol="TokenStream" />
+        </scope>
+        <scope classrefs="CodeObject" doc="Represent an alias, which is an old_name/ new_name pair&#xA;associated with a particular context" ilk="class" line="690" lineend="704" name="Alias">
+          <scope ilk="function" line="691" lineend="691" name="text" />
+          <scope ilk="function" line="691" lineend="691" name="text=" />
+          <scope ilk="function" line="691" lineend="691" name="old_name" />
+          <scope ilk="function" line="691" lineend="691" name="old_name=" />
+          <scope ilk="function" line="691" lineend="691" name="new_name" />
+          <scope ilk="function" line="691" lineend="691" name="new_name=" />
+          <scope ilk="function" line="691" lineend="691" name="comment" />
+          <scope ilk="function" line="691" lineend="691" name="comment=" />
+          <scope attributes="__ctor__" ilk="function" line="693" lineend="699" name="initialize" signature="initialize(text, old_name, new_name, comment)" />
+          <scope ilk="function" line="701" lineend="703" name="to_s" signature="to_s" />
+        </scope>
+        <scope classrefs="CodeObject" doc="Represent a constant" ilk="class" line="707" lineend="716" name="Constant">
+          <scope ilk="function" line="708" lineend="708" name="name" />
+          <scope ilk="function" line="708" lineend="708" name="name=" />
+          <scope ilk="function" line="708" lineend="708" name="value" />
+          <scope ilk="function" line="708" lineend="708" name="value=" />
+          <scope attributes="__ctor__" ilk="function" line="710" lineend="715" name="initialize" signature="initialize(name, value, comment)" />
+        </scope>
+        <scope classrefs="CodeObject" doc="Represent attributes" ilk="class" line="719" lineend="738" name="Attr">
+          <scope ilk="function" line="720" lineend="720" name="text" />
+          <scope ilk="function" line="720" lineend="720" name="text=" />
+          <scope ilk="function" line="720" lineend="720" name="name" />
+          <scope ilk="function" line="720" lineend="720" name="name=" />
+          <scope ilk="function" line="720" lineend="720" name="rw" />
+          <scope ilk="function" line="720" lineend="720" name="rw=" />
+          <scope ilk="function" line="720" lineend="720" name="visibility" />
+          <scope ilk="function" line="720" lineend="720" name="visibility=" />
+          <scope attributes="__ctor__" ilk="function" line="722" lineend="729" name="initialize" signature="initialize(text, name, rw, comment)" />
+          <scope ilk="function" line="731" lineend="733" name="to_s" signature="to_s" />
+          <scope ilk="function" line="735" lineend="737" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+        </scope>
+        <scope classrefs="CodeObject" doc="a required file" ilk="class" line="742" lineend="751" name="Require">
+          <scope ilk="function" line="743" lineend="743" name="name" />
+          <scope ilk="function" line="743" lineend="743" name="name=" />
+          <scope attributes="__ctor__" ilk="function" line="745" lineend="749" name="initialize" signature="initialize(name, comment)" />
+        </scope>
+        <scope classrefs="CodeObject" doc="an included module" ilk="class" line="754" lineend="763" name="Include">
+          <scope ilk="function" line="755" lineend="755" name="name" />
+          <scope ilk="function" line="755" lineend="755" name="name=" />
+          <scope attributes="__ctor__" ilk="function" line="757" lineend="761" name="initialize" signature="initialize(name, comment)" />
+        </scope>
+      </scope>
+    </scope>
+    

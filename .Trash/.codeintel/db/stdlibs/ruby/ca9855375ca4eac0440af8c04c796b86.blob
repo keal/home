@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="tk/kinput">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/kinput.rb : control kinput" ilk="namespace" line="6" lineend="71" name="TkKinput">
+        <scope attributes="__classmethod__" ilk="function" line="16" lineend="18" name="start" signature="TkKinput.start(win, style=None)" />
+        <scope ilk="function" line="19" lineend="21" name="kinput_start" signature="kinput_start(style=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="23" lineend="25" name="send_spot" signature="TkKinput.send_spot(win)" />
+        <scope ilk="function" line="26" lineend="28" name="kinput_send_spot" signature="kinput_send_spot" />
+        <scope attributes="__classmethod__" ilk="function" line="30" lineend="32" name="input_start" signature="TkKinput.input_start(win, keys=nil)" />
+        <scope ilk="function" line="33" lineend="35" name="kanji_input_start" signature="kanji_input_start(keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="37" lineend="43" name="attribute_config" signature="TkKinput.attribute_config(win, slot, value=None)" />
+        <scope ilk="function" line="44" lineend="46" name="kinput_attribute_config" signature="kinput_attribute_config(slot, value=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="48" lineend="60" name="attribute_info" signature="TkKinput.attribute_info(win, slot=nil)" />
+        <scope ilk="function" line="61" lineend="63" name="kinput_attribute_info" signature="kinput_attribute_info(slot=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="65" lineend="67" name="input_end" signature="TkKinput.input_end(win)" />
+        <scope ilk="function" line="68" lineend="70" name="kanji_input_end" signature="kanji_input_end" />
+      </scope>
+    </scope>
+    

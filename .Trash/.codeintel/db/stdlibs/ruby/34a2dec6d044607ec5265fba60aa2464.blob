@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="xsd/codegen/gensupport">
+      <scope doc="XSD4R - Code generation support Copyright (C) 2004, 2005&#xA;NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="9" name="XSD" />
+      <scope ilk="namespace" line="10" name="CodeGen" />
+      <scope ilk="namespace" line="57" lineend="162" name="GenSupport">
+        <scope ilk="function" line="58" lineend="60" name="capitalize" signature="capitalize(target)" />
+        <scope ilk="function" line="63" lineend="65" name="uncapitalize" signature="uncapitalize(target)" />
+        <scope ilk="function" line="68" lineend="76" name="safeconstname" signature="safeconstname(name)" />
+        <scope ilk="function" line="79" lineend="81" name="safeconstname?" signature="safeconstname?(name)" />
+        <scope ilk="function" line="84" lineend="91" name="safemethodname" signature="safemethodname(name)" />
+        <scope ilk="function" line="94" lineend="96" name="safemethodname?" signature="safemethodname?(name)" />
+        <scope ilk="function" line="99" lineend="106" name="safevarname" signature="safevarname(name)" />
+        <scope ilk="function" line="109" lineend="111" name="safevarname?" signature="safevarname?(name)" />
+        <scope ilk="function" line="114" lineend="116" name="keyword?" signature="keyword?(word)" />
+        <scope ilk="function" line="119" lineend="127" name="format" signature="format(str, indent = nil)" />
+        <scope ilk="function" line="131" lineend="135" name="trim_eol" signature="trim_eol(str)" />
+        <scope ilk="function" line="137" lineend="150" name="trim_indent" signature="trim_indent(str)" />
+        <scope ilk="function" line="152" lineend="157" name="untab" signature="untab(line, ts = 8)" />
+        <scope ilk="function" line="159" lineend="161" name="dump_emptyline" signature="dump_emptyline" />
+      </scope>
+    </scope>
+    

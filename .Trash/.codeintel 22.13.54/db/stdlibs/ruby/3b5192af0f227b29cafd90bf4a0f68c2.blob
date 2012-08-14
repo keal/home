@@ -1,0 +1,51 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/ui/fox/testrunner">
+      <import line="5" module="fox" symbol="*" />
+      <import line="6" module="test/unit/ui/testrunnermediator" symbol="*" />
+      <import line="7" module="test/unit/ui/testrunnerutilities" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="11" lineend="262" name="Test">
+        <scope ilk="namespace" line="12" lineend="261" name="Unit">
+          <scope ilk="namespace" line="13" lineend="260" name="UI">
+            <scope ilk="namespace" line="14" lineend="259" name="Fox">
+              <scope classrefs="Object" doc="Runs a Test::Unit::TestSuite in a Fox UI." ilk="class" line="21" lineend="250" name="TestRunner">
+                <scope attributes="__ctor__" doc="0x00FF0000 Creates a new TestRunner for running the passed&#xA;suite." ilk="function" line="30" lineend="39" name="initialize" signature="initialize(suite, output_level = NORMAL)" />
+                <scope doc="Begins the test run." ilk="function" line="42" lineend="48" name="start" signature="start" />
+                <scope ilk="function" line="50" lineend="57" name="setup_mediator" signature="setup_mediator" />
+                <scope ilk="function" line="59" lineend="66" name="attach_to_mediator" signature="attach_to_mediator" />
+                <scope ilk="function" line="68" lineend="75" name="start_ui" signature="start_ui" />
+                <scope ilk="function" line="77" lineend="79" name="stop" signature="stop" />
+                <scope ilk="function" line="81" lineend="93" name="reset_ui" signature="reset_ui(count)" />
+                <scope ilk="function" line="95" lineend="102" name="add_fault" signature="add_fault(fault)" />
+                <scope ilk="function" line="104" lineend="106" name="show_fault" signature="show_fault(fault)" />
+                <scope ilk="function" line="108" lineend="110" name="raw_show_fault" signature="raw_show_fault(string)" />
+                <scope ilk="function" line="112" lineend="114" name="clear_fault" signature="clear_fault" />
+                <scope ilk="function" line="116" lineend="127" name="result_changed" signature="result_changed(result)" />
+                <scope ilk="function" line="129" lineend="132" name="started" signature="started(result)" />
+                <scope ilk="function" line="134" lineend="136" name="test_started" signature="test_started(test_name)" />
+                <scope ilk="function" line="138" lineend="140" name="finished" signature="finished(elapsed_time)" />
+                <scope ilk="function" line="142" lineend="145" name="output_status" signature="output_status(string)" />
+                <scope ilk="function" line="147" lineend="179" name="setup_ui" signature="setup_ui" />
+                <scope ilk="function" line="181" lineend="185" name="create_application" signature="create_application" />
+                <scope ilk="function" line="187" lineend="189" name="create_window" signature="create_window(app)" />
+                <scope ilk="function" line="191" lineend="193" name="create_tooltip" signature="create_tooltip(app)" />
+                <scope ilk="function" line="195" lineend="199" name="create_main_panel" signature="create_main_panel(parent)" />
+                <scope ilk="function" line="201" lineend="203" name="create_suite_panel" signature="create_suite_panel(parent)" />
+                <scope ilk="function" line="205" lineend="207" name="create_button" signature="create_button(parent, text, action)" />
+                <scope ilk="function" line="209" lineend="211" name="create_progress_bar" signature="create_progress_bar(parent)" />
+                <scope ilk="function" line="213" lineend="215" name="create_info_panel" signature="create_info_panel(parent)" />
+                <scope ilk="function" line="217" lineend="219" name="create_label" signature="create_label(parent, text)" />
+                <scope ilk="function" line="221" lineend="223" name="create_list_panel" signature="create_list_panel(parent)" />
+                <scope ilk="function" line="225" lineend="235" name="create_fault_list" signature="create_fault_list(parent)" />
+                <scope ilk="function" line="237" lineend="239" name="create_detail_panel" signature="create_detail_panel(parent)" />
+                <scope ilk="function" line="241" lineend="243" name="create_text" signature="create_text(parent)" />
+                <scope ilk="function" line="245" lineend="249" name="create_entry" signature="create_entry(parent)" />
+              </scope>
+              <scope classrefs="FXListItem" ilk="class" line="252" lineend="258" name="FaultListItem">
+                <scope ilk="function" line="253" lineend="253" name="fault" />
+                <scope attributes="__ctor__" ilk="function" line="254" lineend="257" name="initialize" signature="initialize(fault)" />
+              </scope>
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

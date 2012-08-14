@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/complexContent">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="xsd/namedelements" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema complexContent definition for WSDL." ilk="namespace" line="13" name="WSDL" />
+      <scope ilk="namespace" line="14" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="17" lineend="88" name="ComplexContent">
+        <scope ilk="function" line="18" lineend="18" name="base" />
+        <scope ilk="function" line="18" lineend="18" name="base=" />
+        <scope ilk="function" line="19" lineend="19" name="derivetype" />
+        <scope ilk="function" line="20" lineend="20" name="content" />
+        <scope ilk="function" line="21" lineend="21" name="attributes" />
+        <scope attributes="__ctor__" ilk="function" line="23" lineend="30" name="initialize" signature="initialize" />
+        <scope ilk="function" line="32" lineend="34" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="36" lineend="38" name="elementformdefault" signature="elementformdefault" />
+        <scope ilk="function" line="40" lineend="42" name="basetype" signature="basetype" />
+        <scope ilk="function" line="44" lineend="75" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="77" lineend="87" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

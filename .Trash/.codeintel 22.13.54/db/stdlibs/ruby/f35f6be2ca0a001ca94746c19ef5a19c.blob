@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/itcl/incr_tcl">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/itcl.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;Itcl&apos;, &apos;3.2&apos;)" ilk="namespace" line="14" lineend="172" name="Tk">
+        <scope ilk="namespace" line="15" lineend="171" name="Itcl">
+          <scope attributes="__classmethod__" ilk="function" line="26" lineend="28" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="30" lineend="36" name="package_version" signature="self.package_version" />
+          <scope classrefs="TkObject" ilk="class" line="40" lineend="101" name="ItclObject">
+            <scope attributes="__ctor__" ilk="function" line="46" lineend="53" name="initialize" signature="initialize(*args)" />
+            <scope attributes="__classmethod__" ilk="function" line="55" lineend="57" name="call_proc" signature="self.call_proc(name, *args)" />
+            <scope ilk="function" line="59" lineend="61" name="call_method" signature="call_method(name, *args)" />
+            <scope ilk="function" line="63" lineend="65" name="isa" signature="isa(klass)" />
+            <scope ilk="function" line="68" lineend="70" name="info_class" signature="info_class" />
+            <scope ilk="function" line="72" lineend="74" name="info_inherit" signature="info_inherit" />
+            <scope ilk="function" line="76" lineend="78" name="info_heritage" signature="info_heritage" />
+            <scope ilk="function" line="80" lineend="89" name="info_function" signature="info_function(*args)" />
+            <scope ilk="function" line="91" lineend="100" name="info_variable" signature="info_variable(*args)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="105" lineend="107" name="body" signature="self.body(klass, func, args, body)" />
+          <scope attributes="__classmethod__" ilk="function" line="109" lineend="111" name="code" signature="self.code(cmd, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="113" lineend="115" name="code_in_namespace" signature="self.code_in_namespace(namespace, cmd, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="117" lineend="119" name="configbody" signature="self.configbody(klass, var, body)" />
+          <scope attributes="__classmethod__" ilk="function" line="121" lineend="126" name="create_itcl_class" signature="self.create_itcl_class(name, body)" />
+          <scope attributes="__classmethod__" ilk="function" line="128" lineend="130" name="delete_itcl_class" signature="self.delete_itcl_class(*names)" />
+          <scope attributes="__classmethod__" ilk="function" line="132" lineend="134" name="delete_itcl_object" signature="self.delete_itcl_object(*names)" />
+          <scope attributes="__classmethod__" ilk="function" line="136" lineend="138" name="delete_namespace" signature="self.delete_namespace(*names)" />
+          <scope attributes="__classmethod__" ilk="function" line="140" lineend="142" name="ensemble" signature="self.ensemble(name, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="144" lineend="146" name="find_classes" signature="self.find_classes(pat=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="148" lineend="150" name="find_objects" signature="self.find_objects(*args)" />
+          <scope attributes="__classmethod__" ilk="function" line="152" lineend="154" name="is_itcl_class" signature="self.is_itcl_class(target)" />
+          <scope attributes="__classmethod__" ilk="function" line="156" lineend="158" name="is_itcl_object" signature="self.is_itcl_object(target)" />
+          <scope attributes="__classmethod__" ilk="function" line="160" lineend="162" name="create_local_obj" signature="self.create_local_obj(klass, name, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="164" lineend="166" name="is_itcl_instance" signature="self.is_itcl_instance(klass, target)" />
+          <scope attributes="__classmethod__" ilk="function" line="168" lineend="170" name="scope" signature="self.scope(var)" />
+        </scope>
+      </scope>
+    </scope>
+    

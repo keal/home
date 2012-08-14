@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="webrick/utils">
+      <import line="11" module="socket" symbol="*" />
+      <import line="12" module="fcntl" symbol="*" />
+      <import line="14" module="etc" symbol="*" />
+      <scope doc="utils.rb -- Miscellaneous utilities" ilk="namespace" line="19" lineend="100" name="WEBrick">
+        <scope ilk="namespace" line="20" lineend="99" name="Utils">
+          <scope ilk="function" line="21" lineend="27" name="set_non_blocking" signature="set_non_blocking(io)" />
+          <scope ilk="function" line="30" lineend="34" name="set_close_on_exec" signature="set_close_on_exec(io)" />
+          <scope ilk="function" line="37" lineend="46" name="su" signature="su(user)" />
+          <scope ilk="function" line="49" lineend="56" name="getservername" signature="getservername" />
+          <scope ilk="function" line="59" lineend="84" name="create_listeners" signature="create_listeners(address, port, logger=nil)" />
+          <scope ilk="function" line="91" lineend="96" name="random_string" signature="random_string(len)" />
+        </scope>
+      </scope>
+    </scope>
+    

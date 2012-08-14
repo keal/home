@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/pkg_checker">
+      <import line="7" module="tk" symbol="*" />
+      <scope doc="hide root window" ilk="function" line="16" lineend="25" name="help_msg" signature="help_msg" />
+      <scope ilk="function" line="66" lineend="89" name="get_pkg_list" signature="get_pkg_list(file)" />
+      <scope ilk="function" line="91" lineend="141" name="check_pkg" signature="check_pkg(file, verbose=false)" />
+      <scope ilk="function" line="143" lineend="159" name="subdir_check" signature="subdir_check(dir, verbose=false)" />
+    </scope>
+    

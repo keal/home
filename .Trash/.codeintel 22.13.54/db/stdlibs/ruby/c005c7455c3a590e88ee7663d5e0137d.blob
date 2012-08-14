@@ -1,0 +1,36 @@
+<scope ilk="blob" lang="Ruby" name="rexml/source">
+      <import line="1" module="rexml/encoding" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="233" name="REXML">
+        <scope classrefs="Object" doc="Generates Source-s. USE THIS CLASS." ilk="class" line="5" lineend="22" name="SourceFactory">
+          <scope attributes="__classmethod__" doc="Generates a Source object @param arg Either a String, or an&#xA;IO @return a Source, or nil if a bad argument was given" ilk="function" line="9" lineend="22" name="create_from" signature="SourceFactory::create_from" />
+        </scope>
+        <scope classrefs="Object" doc="A Source can be searched for patterns, and wraps buffers and&#xA;other objects and provides consumption of text" ilk="class" line="28" name="Source">
+          <scope ilk="function" line="31" lineend="31" name="buffer" />
+          <scope ilk="function" line="33" lineend="33" name="line" />
+          <scope ilk="function" line="34" lineend="34" name="encoding" />
+          <scope attributes="__ctor__" doc="Constructor @param arg must be a String, and should be a&#xA;valid XML document" ilk="function" line="38" lineend="42" name="initialize" signature="initialize(arg)" />
+          <scope doc="Inherited from Encoding Overridden to support optimized&#xA;en/decoding" ilk="function" line="46" lineend="55" name="encoding=" signature="encoding=(enc)" />
+          <scope doc="Scans the source for a given pattern." ilk="function" line="73" lineend="78" name="scan" signature="scan(pattern, cons=false)" />
+          <scope ilk="function" line="80" lineend="81" name="read" signature="read" />
+          <scope ilk="function" line="83" lineend="85" name="consume" signature="consume( pattern )" />
+          <scope ilk="function" line="87" lineend="89" name="match_to" signature="match_to( char, pattern )" />
+          <scope ilk="function" line="91" lineend="95" name="match_to_consume" signature="match_to_consume( char, pattern )" />
+          <scope ilk="function" line="97" lineend="101" name="match" signature="match(pattern, cons=false)" />
+          <scope doc="@return true if the Source is exhausted" ilk="function" line="104" lineend="106" name="empty?" signature="empty?" />
+          <import symbol="Encoding" />
+        </scope>
+        <scope ilk="function" line="108" lineend="110" name="position" signature="position" />
+        <scope doc="@return the current line in the source" ilk="function" line="113" lineend="118" name="current_line" signature="current_line" />
+        <scope classrefs="Source" doc="A Source that wraps an IO." ilk="class" line="123" lineend="143" name="IOSource">
+          <scope attributes="__ctor__" doc="attr_reader :block_size block_size has been deprecated" ilk="function" line="127" lineend="143" name="initialize" signature="initialize(arg, block_size=500)" />
+        </scope>
+        <scope ilk="function" line="147" lineend="170" name="scan" signature="scan(pattern, cons=false)" />
+        <scope ilk="function" line="172" lineend="180" name="read" signature="read" />
+        <scope ilk="function" line="182" lineend="184" name="consume" signature="consume( pattern )" />
+        <scope ilk="function" line="186" lineend="202" name="match" signature="match( pattern, cons=false )" />
+        <scope ilk="function" line="204" lineend="206" name="empty?" signature="empty?" />
+        <scope ilk="function" line="208" lineend="210" name="position" signature="position" />
+        <scope doc="@return the current line in the source" ilk="function" line="213" lineend="223" name="current_line" signature="current_line" />
+      </scope>
+    </scope>
+    

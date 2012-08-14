@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tkDND">
+      <import line="5" module="tk" symbol="*" />
+      <import line="8" module="tkextlib/setup.rb" symbol="*" />
+      <import line="11" module="tkextlib/tkDND/setup.rb" symbol="*" />
+      <scope doc="call setup script" ilk="namespace" line="13" lineend="18" name="Tk">
+        <scope ilk="namespace" line="14" lineend="17" name="TkDND" />
+      </scope>
+    </scope>
+    

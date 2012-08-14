@@ -1,0 +1,40 @@
+<scope ilk="blob" lang="Ruby" name="irb/notifier">
+      <import line="13" module="e2mmap" symbol="*" />
+      <import line="14" module="irb/output-method" symbol="*" />
+      <scope doc="notifier.rb - optput methods used by irb $Release Version:&#xA;0.9.5$ $Revision: 1.2.4.1 $ $Date: 2005/04/19 19:24:57 $ by&#xA;Keiju ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="16" lineend="145" name="IRB">
+        <scope ilk="namespace" line="17" lineend="144" name="Notifier">
+          <scope ilk="function" line="24" lineend="26" name="def_notifier" signature="def_notifier(prefix = &quot;&quot;, output_method = StdioOutputMethod.new)" />
+          <scope classrefs="Object" ilk="class" line="29" lineend="74" name="AbstructNotifier">
+            <scope attributes="__ctor__" ilk="function" line="30" lineend="33" name="initialize" signature="initialize(prefix, base_notifier)" />
+            <scope ilk="function" line="35" lineend="35" name="prefix" />
+            <scope ilk="function" line="37" lineend="39" name="notify?" signature="notify?" />
+            <scope ilk="function" line="41" lineend="43" name="print" signature="print(*opts)" />
+            <scope ilk="function" line="45" lineend="47" name="printn" signature="printn(*opts)" />
+            <scope ilk="function" line="49" lineend="51" name="printf" signature="printf(format, *opts)" />
+            <scope ilk="function" line="53" lineend="57" name="puts" signature="puts(*objs)" />
+            <scope ilk="function" line="59" lineend="63" name="pp" signature="pp(*objs)" />
+            <scope ilk="function" line="65" lineend="69" name="ppx" signature="ppx(prefix, *objs)" />
+            <scope ilk="function" line="71" lineend="73" name="exec_if" signature="exec_if" />
+          </scope>
+          <scope classrefs="AbstructNotifier" ilk="class" line="76" lineend="109" name="CompositeNotifier">
+            <scope attributes="__ctor__" ilk="function" line="77" lineend="82" name="initialize" signature="initialize(prefix, base_notifier)" />
+            <scope ilk="function" line="84" lineend="84" name="notifiers" />
+            <scope ilk="function" line="86" lineend="90" name="def_notifier" signature="def_notifier(level, prefix = &quot;&quot;)" />
+            <scope ilk="function" line="92" lineend="92" name="level_notifier" />
+            <scope ilk="function" line="95" lineend="106" name="level_notifier=" signature="level_notifier=(value)" />
+          </scope>
+          <scope classrefs="AbstructNotifier" ilk="class" line="111" lineend="129" name="LeveledNotifier">
+            <scope attributes="__ctor__" ilk="function" line="114" lineend="118" name="initialize" signature="initialize(base, level, prefix)" />
+            <scope ilk="function" line="120" lineend="120" name="level" />
+            <scope ilk="function" line="122" lineend="124" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+            <scope ilk="function" line="126" lineend="128" name="notify?" signature="notify?" />
+            <import symbol="Comparable" />
+          </scope>
+          <scope classrefs="LeveledNotifier" ilk="class" line="131" lineend="141" name="NoMsgNotifier">
+            <scope attributes="__ctor__" ilk="function" line="132" lineend="136" name="initialize" signature="initialize" />
+            <scope ilk="function" line="138" lineend="140" name="notify?" signature="notify?" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

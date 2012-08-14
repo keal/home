@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="win32ole_event">
+      <scope classrefs="Object" doc="WIN32OLE_EVENT objects controls OLE event." ilk="class" name="WIN32OLE_EVENT">
+        <scope attributes="__classmethod__" doc="Translates and dispatches Windows message." ilk="function" name="message_loop" signature="WIN32OLE_EVENT.message_loop" />
+        <scope attributes="__classmethod__ __ctor__" doc="Returns OLE event object. The first argument specifies&#xA;WIN32OLE object." ilk="function" name="new" signature="WIN32OLE_EVENT.new(ole, event) #=&gt; WIN32OLE_EVENT object." />
+        <scope doc="Defines the callback event. If argument is omitted, this&#xA;method defines the callback of all events." ilk="function" name="on_event" signature="WIN32OLE_EVENT#on_event([event]){...}" />
+        <scope doc="Defines the callback of event. If you want modify argument&#xA;in callback, you should use this method instead of&#xA;WIN32OLE_EVENT#on_event." ilk="function" name="on_event_with_outargs" signature="WIN32OLE_EVENT#on_event_with_outargs([event]){...}" />
+      </scope>
+    </scope>
+    

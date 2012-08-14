@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="win32/resolv">
+      <import line="6" module="win32/registry" symbol="*" />
+      <scope ilk="namespace" line="8" lineend="363" name="Win32">
+        <scope ilk="namespace" line="9" lineend="363" name="Resolv">
+          <scope attributes="__classmethod__" ilk="function" line="12" lineend="16" name="get_hosts_path" signature="self.get_hosts_path" />
+          <scope attributes="__classmethod__" ilk="function" line="18" lineend="34" name="get_resolv_info" signature="self.get_resolv_info" />
+          <scope classrefs="Object" doc="VER_PLATFORM_WIN32_NT ======================================&#xA;============================== Windows NT ==================&#xA;==================================================" ilk="class" line="46" lineend="113" name="self">
+            <scope ilk="function" line="48" lineend="52" name="get_hosts_dir" signature="get_hosts_dir" />
+            <scope ilk="function" line="54" lineend="112" name="get_info" signature="get_info" />
+          </scope>
+          <scope classrefs="Object" doc="============================================================&#xA;======== Windows 9x ========================================&#xA;============================" ilk="class" line="124" lineend="251" name="self">
+            <scope doc="private" ilk="function" line="127" lineend="131" name="get_hosts_dir" signature="get_hosts_dir" />
+            <scope ilk="function" line="133" lineend="154" name="get_info" signature="get_info" />
+            <scope ilk="function" line="156" lineend="185" name="get_dhcpinfo" signature="get_dhcpinfo" />
+            <scope ilk="function" line="187" lineend="196" name="get_dhcpinfo_95" signature="get_dhcpinfo_95(reg)" />
+            <scope ilk="function" line="198" lineend="206" name="get_dhcpinfo_98" signature="get_dhcpinfo_98(reg)" />
+            <scope ilk="function" line="208" lineend="250" name="get_dhcpinfo_key" signature="get_dhcpinfo_key(version, reg, iflist)" />
+          </scope>
+          <scope ilk="namespace" line="253" lineend="361" name="WsControl">
+            <scope attributes="__classmethod__" ilk="function" line="273" lineend="296" name="wsctl" signature="self.wsctl(tei_entity, tei_instance, toi_class, toi_type, toi_id, buffsize)" />
+            <scope attributes="__classmethod__" ilk="function" line="299" lineend="360" name="get_iflist" signature="self.get_iflist" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

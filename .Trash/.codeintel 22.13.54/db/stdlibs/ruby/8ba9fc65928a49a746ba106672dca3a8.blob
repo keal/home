@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="soap/rpc/rpc">
+      <scope doc="SOAP4R - RPC utility." ilk="namespace" line="9" name="SOAP" />
+      <scope ilk="namespace" line="12" lineend="22" name="RPC">
+        <scope attributes="__classmethod__" ilk="function" line="15" lineend="21" name="defined_methods" signature="self.defined_methods(obj)" />
+      </scope>
+    </scope>
+    

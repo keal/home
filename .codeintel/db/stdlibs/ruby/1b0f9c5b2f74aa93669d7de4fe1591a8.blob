@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="tk/optionobj">
+      <import line="10" module="tk" symbol="*" />
+      <scope doc="tk/optionobj.rb : control options for a group of widgets" ilk="namespace" line="12" lineend="212" name="Tk">
+        <scope classrefs="Hash" ilk="class" line="13" lineend="211" name="OptionObj">
+          <scope attributes="__ctor__" ilk="function" line="16" lineend="20" name="initialize" signature="initialize(hash = nil)" />
+          <scope ilk="function" line="22" lineend="24" name="observ_info" signature="observ_info" />
+          <scope ilk="function" line="26" lineend="34" name="observs" signature="observs" />
+          <scope ilk="function" line="36" lineend="55" name="_remove_win" signature="_remove_win(win)" />
+          <scope ilk="function" line="58" lineend="89" name="assign" signature="assign(*wins)" />
+          <scope ilk="function" line="91" lineend="96" name="unassign" signature="unassign(*wins)" />
+          <scope ilk="function" line="98" lineend="159" name="notify" signature="notify(target = nil)" />
+          <scope ilk="function" line="162" lineend="169" name="+" signature="+(hash" />
+          <scope ilk="function" line="173" lineend="176" name="update" signature="update(hash)" />
+          <scope ilk="function" line="178" lineend="184" name="configure" signature="configure(key, value=nil)" />
+          <scope ilk="function" line="186" lineend="188" name="[]" signature="[](key" />
+          <scope ilk="function" line="191" lineend="195" name="store" signature="store(key, val)" />
+          <scope ilk="function" line="196" lineend="198" name="[]=" signature="[]=(key" />
+          <scope ilk="function" line="200" lineend="203" name="replace" signature="replace(hash)" />
+          <scope ilk="function" line="205" lineend="207" name="default" signature="default(opt)" />
+          <import symbol="TkUtil" />
+        </scope>
+      </scope>
+    </scope>
+    

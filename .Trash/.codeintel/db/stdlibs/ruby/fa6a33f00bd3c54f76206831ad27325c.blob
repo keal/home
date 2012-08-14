@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="rss/xml-stylesheet">
+      <import line="1" module="rss/utils" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="101" name="RSS">
+        <scope ilk="namespace" line="5" lineend="22" name="XMLStyleSheetMixin">
+          <scope attributes="__ctor__" ilk="function" line="7" lineend="10" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="13" lineend="21" name="xml_stylesheet_pi" signature="xml_stylesheet_pi" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="24" lineend="100" name="XMLStyleSheet">
+          <scope ilk="function" line="36" lineend="36" name="do_validate" />
+          <scope ilk="function" line="36" lineend="36" name="do_validate=" />
+          <scope attributes="__ctor__" ilk="function" line="37" lineend="49" name="initialize" signature="initialize(*attrs)" />
+          <scope ilk="function" line="51" lineend="63" name="to_s" signature="to_s" />
+          <scope ilk="function" line="66" lineend="72" name="href=" signature="href=(value)" />
+          <scope ilk="function" line="75" lineend="85" name="alternate=" signature="alternate=(value)" />
+          <scope ilk="function" line="87" lineend="92" name="setup_maker" signature="setup_maker(maker)" />
+          <scope ilk="function" line="95" lineend="98" name="guess_type" signature="guess_type(filename)" />
+          <import symbol="Utils" />
+        </scope>
+      </scope>
+    </scope>
+    

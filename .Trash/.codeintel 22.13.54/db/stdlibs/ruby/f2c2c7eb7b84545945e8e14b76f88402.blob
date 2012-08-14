@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/calendar">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/calendar.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Itk::" ilk="class" line="11" lineend="12" name="Calendar" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="106" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="26" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="29" lineend="31" name="__listval_optkeys" signature="__listval_optkeys" />
+        <scope ilk="function" line="34" lineend="36" name="__font_optkeys" signature="__font_optkeys" />
+        <scope classrefs="TkValidateCommand" ilk="class" line="43" lineend="63" name="CalendarCommand">
+          <scope classrefs="TkUtil::CallbackSubst" doc="class CalCmdArgs &lt; TkUtil::CallbackSubst" ilk="class" line="45" lineend="53" name="ValidateArgs">
+            <scope attributes="__classmethod__" ilk="function" line="50" lineend="52" name="ret_val" signature="self.ret_val(val)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="55" lineend="58" name="_config_keys[" signature="self._config_keys  [" />
+        </scope>
+        <scope ilk="function" line="65" lineend="67" name="__validation_class_list" signature="__validation_class_list" />
+        <scope ilk="function" line="84" lineend="86" name="get_string" signature="get_string" />
+        <scope ilk="function" line="89" lineend="91" name="get_clicks" signature="get_clicks" />
+        <scope ilk="function" line="93" lineend="96" name="select" signature="select(date)" />
+        <scope ilk="function" line="98" lineend="101" name="show" signature="show(date)" />
+        <scope ilk="function" line="102" lineend="105" name="show_now" signature="show_now" />
+        <import symbol="Tk::ValidateConfigure" />
+      </scope>
+    </scope>
+    

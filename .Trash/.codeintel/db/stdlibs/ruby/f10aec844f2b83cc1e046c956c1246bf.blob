@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/messagebox">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/messagebox.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Messagebox" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="91" name="Tk::Iwidgets::">
+        <scope ilk="function" line="25" lineend="27" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="30" lineend="32" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="35" lineend="42" name="tagid" signature="tagid(tagOrId)" />
+        <scope ilk="function" line="44" lineend="46" name="__item_boolval_optkeys" signature="__item_boolval_optkeys(id)" />
+        <scope ilk="function" line="59" lineend="61" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="64" lineend="74" name="type_add" signature="type_add(tag=nil, keys={})" />
+        <scope ilk="function" line="76" lineend="79" name="clear" signature="clear" />
+        <scope ilk="function" line="81" lineend="84" name="export" signature="export(file)" />
+        <scope ilk="function" line="86" lineend="89" name="issue" signature="issue(string, type=None, *args)" />
+        <import symbol="TkItemConfigMethod" />
+      </scope>
+    </scope>
+    

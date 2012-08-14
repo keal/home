@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="tk/xim">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/xim.rb : control imput_method" ilk="namespace" line="6" lineend="122" name="TkXIM">
+        <scope attributes="__classmethod__" ilk="function" line="12" lineend="28" name="useinputmethods" signature="TkXIM.useinputmethods(value = None, win = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="30" lineend="32" name="useinputmethods_displayof" signature="TkXIM.useinputmethods_displayof(win, value = None)" />
+        <scope attributes="__classmethod__" ilk="function" line="34" lineend="46" name="caret" signature="TkXIM.caret(win, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="48" lineend="59" name="configure" signature="TkXIM.configure(win, slot, value=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="61" lineend="84" name="configinfo" signature="TkXIM.configinfo(win, slot=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="86" lineend="105" name="current_configinfo" signature="TkXIM.current_configinfo(win, slot=nil)" />
+        <scope ilk="function" line="107" lineend="109" name="useinputmethods" signature="useinputmethods(value=None)" />
+        <scope ilk="function" line="111" lineend="113" name="caret" signature="caret(keys=nil)" />
+        <scope ilk="function" line="115" lineend="117" name="imconfigure" signature="imconfigure(slot, value=None)" />
+        <scope ilk="function" line="119" lineend="121" name="imconfiginfo" signature="imconfiginfo(slot=nil)" />
+      </scope>
+    </scope>
+    

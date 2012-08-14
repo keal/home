@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/style">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="tkextlib/tcllib/style.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="12" lineend="39" name="Tk::Tcllib">
+        <scope ilk="namespace" line="13" lineend="38" name="Style">
+          <scope attributes="__classmethod__" ilk="function" line="15" lineend="17" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="25" name="package_version" signature="self.package_version" />
+          <scope attributes="__classmethod__" ilk="function" line="27" lineend="29" name="not_available" signature="self.not_available" />
+          <scope attributes="__classmethod__" ilk="function" line="31" lineend="33" name="names" signature="self.names" />
+          <scope attributes="__classmethod__" ilk="function" line="35" lineend="37" name="use" signature="self.use(style)" />
+        </scope>
+      </scope>
+      <scope doc="TkPackage.require(&apos;style&apos;, &apos;0.1&apos;) TkPackage.require(&apos;style&apos;,&#xA;&apos;0.3&apos;)" ilk="namespace" line="45" lineend="61" name="Tk::Tcllib">
+        <scope classrefs="Object" ilk="class" line="46" lineend="48" name="Style" />
+        <scope ilk="namespace" line="50" lineend="60" name="Style">
+          <scope attributes="__classmethod__" ilk="function" line="53" lineend="55" name="names" signature="self.names" />
+          <scope attributes="__classmethod__" ilk="function" line="57" lineend="59" name="use" signature="self.use(style)" />
+        </scope>
+      </scope>
+    </scope>
+    

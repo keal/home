@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="uri/mailto">
+      <import line="9" module="uri/generic" symbol="*" />
+      <scope doc="= uri/mailto.rb" ilk="namespace" line="11" lineend="239" name="URI">
+        <scope classrefs="Generic" doc="RFC2368, The mailto URL scheme" ilk="class" line="16" lineend="236" name="MailTo">
+          <scope attributes="__classmethod__" doc=":startdoc:" ilk="function" line="70" lineend="102" name="build" signature="self.build(args)" />
+          <scope attributes="__ctor__" doc="== Description" ilk="function" line="111" lineend="130" name="initialize" signature="initialize(*arg)" />
+          <scope ilk="function" line="131" lineend="131" name="to" />
+          <scope ilk="function" line="132" lineend="132" name="headers" />
+          <scope ilk="function" line="134" lineend="144" name="check_to" signature="check_to(v)" />
+          <scope ilk="function" line="147" lineend="149" name="set_to" signature="set_to(v)" />
+          <scope ilk="function" line="152" lineend="156" name="to=" signature="to=(v)" />
+          <scope ilk="function" line="158" lineend="169" name="check_headers" signature="check_headers(v)" />
+          <scope ilk="function" line="172" lineend="179" name="set_headers" signature="set_headers(v)" />
+          <scope ilk="function" line="182" lineend="186" name="headers=" signature="headers=(v)" />
+          <scope ilk="function" line="188" lineend="205" name="to_s" signature="to_s" />
+          <scope doc="== Usage require &apos;uri&apos;" ilk="function" line="214" lineend="234" name="to_mailtext" signature="to_mailtext" />
+          <import symbol="REGEXP" />
+        </scope>
+      </scope>
+    </scope>
+    

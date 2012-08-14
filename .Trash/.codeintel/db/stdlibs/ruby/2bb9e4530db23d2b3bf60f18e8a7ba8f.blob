@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/generators/xml_generator">
+      <import line="2" module="ftools" symbol="*" />
+      <import line="4" module="rdoc/options" symbol="*" />
+      <import line="5" module="rdoc/markup/simple_markup" symbol="*" />
+      <import line="6" module="rdoc/markup/simple_markup/to_html" symbol="*" />
+      <import line="7" module="rdoc/generators/html_generator" symbol="*" />
+      <scope ilk="namespace" line="9" lineend="130" name="Generators">
+        <scope classrefs="HTMLGenerator" doc="Generate XML output as one big file" ilk="class" line="13" lineend="128" name="XMLGenerator">
+          <scope attributes="__classmethod__" doc="Standard generator factory" ilk="function" line="16" lineend="18" name="for" signature="XMLGenerator.for(options)" />
+          <scope attributes="__ctor__" ilk="function" line="21" lineend="23" name="initialize" signature="initialize(*args)" />
+          <scope doc="Build the initial indices and output objects based on an&#xA;array of TopLevel objects containing the extracted&#xA;information." ilk="function" line="30" lineend="38" name="generate" signature="generate(info)" />
+          <scope doc="Generate:" ilk="function" line="50" lineend="59" name="build_indices" signature="build_indices" />
+          <scope ilk="function" line="61" lineend="66" name="build_class_list" signature="build_class_list(from, html_file, class_dir)" />
+          <scope doc="Generate all the HTML." ilk="function" line="72" lineend="90" name="generate_xml" signature="generate_xml" />
+          <scope ilk="function" line="92" lineend="98" name="gen_into" signature="gen_into(list)" />
+          <scope ilk="function" line="100" lineend="102" name="gen_file_index" signature="gen_file_index" />
+          <scope ilk="function" line="104" lineend="106" name="gen_class_index" signature="gen_class_index" />
+          <scope ilk="function" line="108" lineend="110" name="gen_method_index" signature="gen_method_index" />
+          <scope ilk="function" line="113" lineend="126" name="gen_an_index" signature="gen_an_index(collection, title)" />
+        </scope>
+      </scope>
+    </scope>
+    

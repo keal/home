@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/definitions">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="xsd/namedelements" symbol="*" />
+      <scope doc="WSDL4R - WSDL definitions." ilk="namespace" line="13" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="247" name="Definitions">
+        <scope ilk="function" line="17" lineend="17" name="name" />
+        <scope ilk="function" line="18" lineend="18" name="targetnamespace" />
+        <scope ilk="function" line="19" lineend="19" name="imports" />
+        <scope ilk="function" line="21" lineend="21" name="location" />
+        <scope ilk="function" line="21" lineend="21" name="location=" />
+        <scope ilk="function" line="22" lineend="22" name="importedschema" />
+        <scope attributes="__ctor__" ilk="function" line="24" lineend="40" name="initialize" signature="initialize" />
+        <scope ilk="function" line="42" lineend="44" name="inspect" signature="inspect" />
+        <scope ilk="function" line="46" lineend="51" name="targetnamespace=" signature="targetnamespace=(targetnamespace)" />
+        <scope ilk="function" line="53" lineend="64" name="collect_attributes" signature="collect_attributes" />
+        <scope ilk="function" line="66" lineend="77" name="collect_elements" signature="collect_elements" />
+        <scope ilk="function" line="79" lineend="90" name="collect_complextypes" signature="collect_complextypes" />
+        <scope ilk="function" line="92" lineend="103" name="collect_simpletypes" signature="collect_simpletypes" />
+        <scope doc="ToDo: simpletype must be accepted..." ilk="function" line="106" lineend="108" name="add_type" signature="add_type(complextype)" />
+        <scope ilk="function" line="110" lineend="116" name="messages" signature="messages" />
+        <scope ilk="function" line="118" lineend="124" name="porttypes" signature="porttypes" />
+        <scope ilk="function" line="126" lineend="132" name="bindings" signature="bindings" />
+        <scope ilk="function" line="134" lineend="140" name="services" signature="services" />
+        <scope ilk="function" line="142" lineend="150" name="message" signature="message(name)" />
+        <scope ilk="function" line="152" lineend="160" name="porttype" signature="porttype(name)" />
+        <scope ilk="function" line="162" lineend="170" name="binding" signature="binding(name)" />
+        <scope ilk="function" line="172" lineend="180" name="service" signature="service(name)" />
+        <scope ilk="function" line="182" lineend="190" name="porttype_binding" signature="porttype_binding(name)" />
+        <scope ilk="function" line="192" lineend="224" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="226" lineend="235" name="parse_attr" signature="parse_attr(attr, value)" />
+        <scope attributes="__classmethod__" ilk="function" line="237" lineend="243" name="parse_element" signature="self.parse_element(element)" />
+      </scope>
+    </scope>
+    

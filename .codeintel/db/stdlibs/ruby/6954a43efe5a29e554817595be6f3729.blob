@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/labelentry">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/entry" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="9" module="tkextlib/bwidget/labelframe" symbol="*" />
+      <import line="10" module="tkextlib/bwidget/entry" symbol="*" />
+      <scope doc="tkextlib/bwidget/labelentry.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="12" lineend="17" name="Tk">
+        <scope ilk="namespace" line="13" lineend="16" name="BWidget">
+          <scope classrefs="TkEntry" ilk="class" line="14" lineend="15" name="LabelEntry" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="19" lineend="80" name="Tk::BWidget::">
+        <scope ilk="function" line="26" lineend="28" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="31" lineend="33" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="36" lineend="38" name="__font_optkeys" signature="__font_optkeys" />
+        <scope doc="def entrybind(*args) _bind([path, &apos;bind&apos;], *args) self end" ilk="function" line="45" lineend="54" name="entrybind" signature="entrybind(context, *args)" />
+        <scope doc="def entrybind_append(*args) _bind_append([path, &apos;bind&apos;],&#xA;*args) self end" ilk="function" line="60" lineend="69" name="entrybind_append" signature="entrybind_append(context, *args)" />
+        <scope ilk="function" line="71" lineend="74" name="entrybind_remove" signature="entrybind_remove(*args)" />
+        <scope ilk="function" line="76" lineend="79" name="entrybindinfo" signature="entrybindinfo(*args)" />
+        <import symbol="Scrollable" />
+      </scope>
+    </scope>
+    

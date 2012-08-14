@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="irb">
+      <import line="12" module="e2mmap" symbol="*" />
+      <import line="14" module="irb/init" symbol="*" />
+      <import line="15" module="irb/context" symbol="*" />
+      <import line="16" module="irb/extend-command" symbol="*" />
+      <import line="19" module="irb/ruby-lex" symbol="*" />
+      <import line="20" module="irb/input-method" symbol="*" />
+      <import line="21" module="irb/locale" symbol="*" />
+      <scope doc="require &quot;irb/workspace&quot;" ilk="namespace" line="25" lineend="342" name="IRB">
+        <scope classrefs="Exception" ilk="class" line="28" lineend="28" name="Abort" />
+        <scope attributes="__classmethod__" ilk="function" line="33" lineend="35" name="conf" signature="IRB.conf" />
+        <scope attributes="__classmethod__" doc="IRB version method" ilk="function" line="38" lineend="44" name="version" signature="IRB.version">
+          <import line="41" module="irb/version" symbol="*" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="46" lineend="48" name="CurrentContext" signature="IRB.CurrentContext" />
+        <scope attributes="__classmethod__" doc="initialize IRB and start TOP_LEVEL irb" ilk="function" line="51" lineend="73" name="start" signature="IRB.start(ap_path = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="75" lineend="77" name="irb_exit" signature="IRB.irb_exit(irb, ret)" />
+        <scope attributes="__classmethod__" ilk="function" line="79" lineend="85" name="irb_abort" signature="IRB.irb_abort(irb, exception = Abort)" />
+        <scope classrefs="Object" doc="irb interpriter main routine" ilk="class" line="90" lineend="318" name="Irb">
+          <scope attributes="__ctor__" ilk="function" line="91" lineend="98" name="initialize" signature="initialize(workspace = nil, input_method = nil, output_method = nil)" />
+          <scope ilk="function" line="99" lineend="99" name="context" />
+          <scope ilk="function" line="100" lineend="100" name="scanner" />
+          <scope ilk="function" line="100" lineend="100" name="scanner=" />
+          <scope ilk="function" line="102" lineend="191" name="eval_input" signature="eval_input" />
+          <scope ilk="function" line="193" lineend="202" name="suspend_name" signature="suspend_name(path = nil, name = nil)" />
+          <scope ilk="function" line="204" lineend="211" name="suspend_workspace" signature="suspend_workspace(workspace)" />
+          <scope ilk="function" line="213" lineend="221" name="suspend_input_method" signature="suspend_input_method(input_method)" />
+          <scope ilk="function" line="223" lineend="230" name="suspend_context" signature="suspend_context(context)" />
+          <scope ilk="function" line="232" lineend="251" name="signal_handle" signature="signal_handle" />
+          <scope ilk="function" line="253" lineend="263" name="signal_status" signature="signal_status(status)" />
+          <scope ilk="function" line="265" lineend="294" name="prompt" signature="prompt(prompt, ltype, indent, line_no)" />
+          <scope ilk="function" line="296" lineend="302" name="output_value" signature="output_value" />
+          <scope ilk="function" line="304" lineend="317" name="inspect" signature="inspect" />
+        </scope>
+        <scope doc="Singleton method" ilk="function" line="321" lineend="341" name="@CONF" signature="@CONF." />
+      </scope>
+    </scope>
+    

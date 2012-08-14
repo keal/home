@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="rexml/namespace">
+      <import line="1" module="rexml/xmltokens" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="47" name="REXML">
+        <scope doc="Adds named attributes to an object." ilk="namespace" line="5" lineend="46" name="Namespace">
+          <scope doc="Sets the name and the expanded name" ilk="function" line="14" lineend="24" name="name=" signature="name=( name )" />
+          <scope doc="Compares names optionally WITH namespaces" ilk="function" line="27" lineend="35" name="has_name?" signature="has_name?( other, ns=nil )" />
+          <scope doc="Fully expand the name, even if the prefix wasn&apos;t specified&#xA;in the source file." ilk="function" line="41" lineend="45" name="fully_expanded_name" signature="fully_expanded_name" />
+        </scope>
+      </scope>
+    </scope>
+    

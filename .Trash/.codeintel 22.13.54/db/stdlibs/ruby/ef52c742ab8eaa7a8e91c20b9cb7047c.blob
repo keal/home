@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parseexception">
+      <scope ilk="namespace" line="1" lineend="51" name="REXML">
+        <scope classrefs="RuntimeError" ilk="class" line="2" lineend="50" name="ParseException">
+          <scope ilk="function" line="3" lineend="3" name="source" />
+          <scope ilk="function" line="3" lineend="3" name="source=" />
+          <scope ilk="function" line="3" lineend="3" name="parser" />
+          <scope ilk="function" line="3" lineend="3" name="parser=" />
+          <scope ilk="function" line="3" lineend="3" name="continued_exception" />
+          <scope ilk="function" line="3" lineend="3" name="continued_exception=" />
+          <scope attributes="__ctor__" ilk="function" line="5" lineend="10" name="initialize" signature="initialize( message, source=nil, parser=nil, exception=nil )" />
+          <scope ilk="function" line="12" lineend="35" name="to_s" signature="to_s" />
+          <scope ilk="function" line="37" lineend="40" name="position" signature="position" />
+          <scope ilk="function" line="42" lineend="45" name="line" signature="line" />
+          <scope ilk="function" line="47" lineend="49" name="context" signature="context" />
+        </scope>
+      </scope>
+    </scope>
+    

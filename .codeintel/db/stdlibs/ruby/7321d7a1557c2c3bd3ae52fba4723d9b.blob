@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="ping">
+      <import line="40" module="timeout" symbol="*" />
+      <import line="41" module="socket" symbol="*" />
+      <scope doc="ping.rb -- check a host for upness" ilk="namespace" line="43" lineend="58" name="Ping">
+        <scope ilk="function" line="44" lineend="56" name="pingecho" signature="pingecho(host, timeout=5, service=&quot;echo&quot;)" />
+      </scope>
+    </scope>
+    

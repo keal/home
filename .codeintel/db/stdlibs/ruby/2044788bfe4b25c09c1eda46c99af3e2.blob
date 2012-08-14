@@ -1,0 +1,51 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/itk/incr_tk">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/menuspec" symbol="*" />
+      <import line="8" module="tkextlib/itcl.rb" symbol="*" />
+      <import line="11" module="tkextlib/itk.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;Itk&apos;, &apos;3.2&apos;)" ilk="namespace" line="16" lineend="427" name="Tk">
+        <scope ilk="namespace" line="17" lineend="426" name="Itk">
+          <scope attributes="__classmethod__" ilk="function" line="24" lineend="26" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="28" lineend="34" name="package_version" signature="self.package_version" />
+          <scope attributes="__classmethod__" ilk="function" line="36" lineend="38" name="usual" signature="self.usual(arg, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="40" lineend="42" name="usual_names" signature="self.usual_names" />
+          <scope classrefs="TkWindow" ilk="class" line="46" lineend="107" name="Archetype">
+            <scope attributes="__classmethod__" doc="WidgetClassName = &apos;Archetype&apos;.freeze&#xA;WidgetClassNames[WidgetClassName] = self" ilk="function" line="51" lineend="53" name="to_eval" signature="self.to_eval" />
+            <scope ilk="function" line="55" lineend="57" name="__destroy_hook__" signature="__destroy_hook__" />
+            <scope doc="[incr Tk] public methods" ilk="function" line="60" lineend="62" name="component" signature="component" />
+            <scope ilk="function" line="64" lineend="66" name="component_path" signature="component_path(name)" />
+            <scope ilk="function" line="69" lineend="71" name="component_invoke" signature="component_invoke(name, cmd, *args)" />
+            <scope ilk="function" line="73" lineend="76" name="component_obj" signature="component_obj(*names)" />
+          </scope>
+          <scope classrefs="Archetype" ilk="class" line="111" lineend="123" name="Toplevel">
+            <scope ilk="function" line="119" lineend="121" name="__strval_optkeys" signature="__strval_optkeys" />
+            <import symbol="Wm" />
+            <import symbol="TkMenuSpec" />
+          </scope>
+          <scope classrefs="Archetype" ilk="class" line="127" lineend="131" name="Widget" />
+          <scope classrefs="TkObject" ilk="class" line="136" lineend="425" name="Component">
+            <scope ilk="function" line="137" lineend="139" name="__cget_cmd" signature="__cget_cmd" />
+            <scope ilk="function" line="142" lineend="144" name="__config_cmd" signature="__config_cmd" />
+            <scope attributes="__classmethod__" ilk="function" line="152" lineend="160" name="id2obj" signature="self.id2obj(master, id)" />
+            <scope attributes="__classmethod__" ilk="function" line="162" lineend="187" name="new" signature="self.new(master, component=nil)" />
+            <scope attributes="__ctor__" ilk="function" line="189" lineend="202" name="initialize" signature="initialize(master, component)" />
+            <scope ilk="function" line="204" lineend="214" name="path" signature="path" />
+            <scope ilk="function" line="216" lineend="218" name="epath" signature="epath" />
+            <scope ilk="function" line="220" lineend="222" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="224" lineend="226" name="master" signature="master" />
+            <scope ilk="function" line="228" lineend="230" name="name" signature="name" />
+            <scope ilk="function" line="232" lineend="242" name="widget" signature="widget" />
+            <scope ilk="function" line="244" lineend="254" name="widget_class" signature="widget_class" />
+            <scope ilk="function" line="256" lineend="293" name="method_missing" signature="method_missing(id, *args)" />
+            <scope ilk="function" line="295" lineend="309" name="tk_send" signature="tk_send(cmd, *rest)" />
+            <scope ilk="function" line="311" lineend="325" name="tk_send_without_enc" signature="tk_send_without_enc(cmd, *rest)" />
+            <scope ilk="function" line="327" lineend="341" name="tk_send_with_enc" signature="tk_send_with_enc(cmd, *rest)" />
+            <scope doc="def bind(*args) unless @widget begin @widget =&#xA;window(tk_call(@master, &apos;component&apos;, @component)) @path =&#xA;@widget.path" ilk="function" line="354" lineend="370" name="bind" signature="bind(context, *args)" />
+            <scope doc="def bind_append(*args) unless @widget begin @widget =&#xA;window(tk_call(@master, &apos;component&apos;, @component)) @path =&#xA;@widget.path" ilk="function" line="383" lineend="399" name="bind_append" signature="bind_append(context, *args)" />
+            <scope ilk="function" line="401" lineend="411" name="bind_remove" signature="bind_remove(*args)" />
+            <scope ilk="function" line="413" lineend="423" name="bindinfo" signature="bindinfo(*args)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

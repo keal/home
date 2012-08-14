@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="dl/import">
+      <import line="3" module="dl" symbol="*" />
+      <import line="4" module="dl/types" symbol="*" />
+      <scope doc="-*- ruby -*-" ilk="namespace" line="6" lineend="225" name="DL">
+        <scope ilk="namespace" line="7" lineend="224" name="Importable">
+          <scope ilk="namespace" line="10" lineend="222" name="Internal">
+            <scope ilk="function" line="11" lineend="13" name="init_types" signature="init_types()" />
+            <scope ilk="function" line="15" lineend="17" name="init_sym" signature="init_sym()" />
+            <scope ilk="function" line="19" lineend="21" name="[]" signature="[](name" />
+            <scope ilk="function" line="23" lineend="33" name="dlload" signature="dlload(*libnames)" />
+            <scope ilk="function" line="36" lineend="54" name="parse_cproto" signature="parse_cproto(proto)" />
+            <scope doc="example: extern &quot;int strlen(char*)&quot;" ilk="function" line="59" lineend="62" name="extern" signature="extern(proto)" />
+            <scope doc="example: callback &quot;int method_name(int, char*)&quot;" ilk="function" line="67" lineend="97" name="callback" signature="callback(proto)" />
+            <scope doc="example: typealias(&quot;uint&quot;, &quot;unsigned int&quot;)" ilk="function" line="102" lineend="106" name="typealias" signature="typealias(alias_type, ty1, enc1=nil, dec1=nil, ty2=nil, enc2=nil, dec2=nil)" />
+            <scope doc="example: symbol &quot;foo_value&quot; symbol &quot;foo_func&quot;, &quot;IIP&quot;" ilk="function" line="112" lineend="129" name="symbol" signature="symbol(name, ty = nil)" />
+            <scope doc="example: import(&quot;get_length&quot;, &quot;int&quot;, [&quot;void*&quot;, &quot;int&quot;])" ilk="function" line="134" lineend="178" name="import" signature="import(name, rettype, argtypes = nil)" />
+            <scope ilk="function" line="180" lineend="182" name="_args_" signature="_args_" />
+            <scope ilk="function" line="184" lineend="186" name="_retval_" signature="_retval_" />
+            <scope ilk="function" line="188" lineend="221" name="encode_argument_types" signature="encode_argument_types(tys)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

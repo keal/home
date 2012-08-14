@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/scrollwin">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;widget::scrolledwindow&apos;, &apos;1.0&apos;)" ilk="namespace" line="15" lineend="33" name="Tk::Tcllib">
+        <scope ilk="namespace" line="16" lineend="32" name="Widget">
+          <scope classrefs="TkWindow" ilk="class" line="17" lineend="30" name="ScrolledWindow">
+            <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="35" lineend="61" name="Tk::Tcllib::">
+        <scope ilk="function" line="38" lineend="40" name="__numlistval_optkeys" signature="__numlistval_optkeys" />
+        <scope ilk="function" line="43" lineend="50" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="53" lineend="55" name="get_frame" signature="get_frame" />
+        <scope ilk="function" line="57" lineend="60" name="set_widget" signature="set_widget(widget)" />
+      </scope>
+    </scope>
+    

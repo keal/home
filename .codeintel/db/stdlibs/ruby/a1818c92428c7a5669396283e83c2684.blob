@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="mutex">
+      <scope classrefs="Object" doc="Mutex implements a simple semaphore that can be used to&#xA;coordinate access to shared data from multiple concurrent&#xA;threads." ilk="class" name="Mutex">
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a new Mutex" ilk="function" name="new" signature="()" />
+        <scope doc="If the mutex is locked, unlocks the mutex, wakes one waiting&#xA;thread, and yields in a critical section." ilk="function" name="exclusive_unlock" signature="() {|| ...}" />
+        <scope doc="Attempts to grab the lock and waits if it isn&apos;t available." ilk="function" name="lock" signature="()" />
+        <scope doc="Returns true if this lock is currently held by some thread." ilk="function" name="locked?" signature="()" />
+        <scope doc="Obtains a lock, runs the block, and releases the lock when&#xA;the block completes. See the example under Mutex." ilk="function" name="synchronize" signature="() {|| ...}" />
+        <scope doc="Attempts to obtain the lock and returns immediately. Returns&#xA;true if the lock was granted." ilk="function" name="try_lock" signature="()" />
+        <scope doc="Releases the lock. Returns nil if ref wasn&apos;t locked." ilk="function" name="unlock" signature="()" />
+      </scope>
+    </scope>
+    

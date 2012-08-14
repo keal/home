@@ -1,0 +1,74 @@
+<scope ilk="blob" lang="Ruby" name="rss/maker/image">
+      <import line="1" module="rss/image" symbol="*" />
+      <import line="2" module="rss/maker/1.0" symbol="*" />
+      <import line="3" module="rss/maker/dublincore" symbol="*" />
+      <scope ilk="namespace" line="5" lineend="145" name="RSS">
+        <scope ilk="namespace" line="6" lineend="144" name="Maker">
+          <scope ilk="namespace" line="7" lineend="46" name="ImageItemModel">
+            <scope attributes="__classmethod__" ilk="function" line="8" lineend="26" name="append_features" signature="self.append_features(klass)" />
+            <scope classrefs="Object" ilk="class" line="28" lineend="45" name="ImageItemBase">
+              <scope ilk="function" line="32" lineend="32" name="about" />
+              <scope ilk="function" line="32" lineend="32" name="about=" />
+              <scope ilk="function" line="32" lineend="32" name="resource" />
+              <scope ilk="function" line="32" lineend="32" name="resource=" />
+              <scope ilk="function" line="32" lineend="32" name="image_width" />
+              <scope ilk="function" line="32" lineend="32" name="image_width=" />
+              <scope ilk="function" line="32" lineend="32" name="image_height" />
+              <scope ilk="function" line="32" lineend="32" name="image_height=" />
+              <scope ilk="function" line="42" lineend="44" name="have_required_values?" signature="have_required_values?" />
+              <import symbol="Base" />
+              <import symbol="Maker::DublinCoreModel" />
+            </scope>
+          </scope>
+          <scope ilk="namespace" line="48" lineend="83" name="ImageFaviconModel">
+            <scope attributes="__classmethod__" ilk="function" line="49" lineend="67" name="append_features" signature="self.append_features(klass)" />
+            <scope classrefs="Object" ilk="class" line="69" lineend="82" name="ImageFaviconBase">
+              <scope ilk="function" line="73" lineend="73" name="about" />
+              <scope ilk="function" line="73" lineend="73" name="about=" />
+              <scope ilk="function" line="73" lineend="73" name="image_size" />
+              <scope ilk="function" line="73" lineend="73" name="image_size=" />
+              <scope ilk="function" line="79" lineend="81" name="have_required_values?" signature="have_required_values?" />
+              <import symbol="Base" />
+              <import symbol="Maker::DublinCoreModel" />
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="85" lineend="85" name="ChannelBase">
+            <import symbol="Maker::ImageFaviconModel" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="87" lineend="89" name="ItemsBase">
+            <scope classrefs="Object" ilk="class" line="88" lineend="88" name="ItemBase">
+              <import symbol="Maker::ImageItemModel" />
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="91" lineend="122" name="RSS10">
+            <scope classrefs="Object" ilk="class" line="92" lineend="106" name="Items">
+              <scope classrefs="Object" ilk="class" line="93" lineend="105" name="Item">
+                <scope classrefs="ImageItemBase" ilk="class" line="94" lineend="104" name="ImageItem">
+                  <scope ilk="function" line="96" lineend="103" name="to_rss" signature="to_rss(rss, current)" />
+                </scope>
+              </scope>
+            </scope>
+            <scope classrefs="Object" ilk="class" line="108" lineend="121" name="Channel">
+              <scope classrefs="ImageFaviconBase" ilk="class" line="109" lineend="120" name="ImageFavicon">
+                <scope ilk="function" line="111" lineend="119" name="to_rss" signature="to_rss(rss, current)" />
+              </scope>
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="124" lineend="142" name="RSS09">
+            <scope classrefs="Object" ilk="class" line="125" lineend="133" name="Items">
+              <scope classrefs="Object" ilk="class" line="126" lineend="132" name="Item">
+                <scope classrefs="ImageItemBase" ilk="class" line="127" lineend="131" name="ImageItem">
+                  <scope ilk="function" line="129" lineend="130" name="to_rss" signature="to_rss(*args)" />
+                </scope>
+              </scope>
+            </scope>
+            <scope classrefs="Object" ilk="class" line="135" lineend="141" name="Channel">
+              <scope classrefs="ImageFaviconBase" ilk="class" line="136" lineend="140" name="ImageFavicon">
+                <scope ilk="function" line="138" lineend="139" name="to_rss" signature="to_rss(*args)" />
+              </scope>
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

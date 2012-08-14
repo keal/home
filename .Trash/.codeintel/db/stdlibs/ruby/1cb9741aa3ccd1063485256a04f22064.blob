@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/cutbuffer">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/cutbuffer.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="23" name="Tk::BLT">
+        <scope ilk="namespace" line="10" lineend="22" name="CutBuffer">
+          <scope attributes="__classmethod__" ilk="function" line="13" lineend="15" name="get" signature="self.get(num = 0)" />
+          <scope attributes="__classmethod__" ilk="function" line="16" lineend="18" name="rotate" signature="self.rotate(count = 1)" />
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="set" signature="self.set(val, num = 0)" />
+        </scope>
+      </scope>
+    </scope>
+    

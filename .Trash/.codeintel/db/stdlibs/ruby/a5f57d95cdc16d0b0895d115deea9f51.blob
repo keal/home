@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="xsd/namedelements">
+      <scope doc="XSD4R - WSDL named element collection." ilk="namespace" line="9" name="XSD" />
+      <scope classrefs="Object" ilk="class" line="12" lineend="93" name="NamedElements">
+        <scope attributes="__ctor__" ilk="function" line="15" lineend="18" name="initialize" signature="initialize" />
+        <scope ilk="function" line="20" lineend="24" name="dup" signature="dup" />
+        <scope ilk="function" line="26" lineend="30" name="freeze" signature="freeze" />
+        <scope ilk="function" line="32" lineend="34" name="empty?" signature="empty?" />
+        <scope ilk="function" line="36" lineend="38" name="size" signature="size" />
+        <scope ilk="function" line="40" lineend="46" name="[]" signature="[](idx" />
+        <scope ilk="function" line="48" lineend="50" name="find_name" signature="find_name(name)" />
+        <scope ilk="function" line="52" lineend="54" name="keys" signature="keys" />
+        <scope ilk="function" line="56" lineend="60" name="each" signature="each" />
+        <scope ilk="function" line="62" lineend="65" name="&lt;&lt;" signature="&lt;&lt;(rhs" />
+        <scope ilk="function" line="67" lineend="69" name="delete" signature="delete(rhs)" />
+        <scope ilk="function" line="71" lineend="75" name="+" signature="+(rhs" />
+        <scope ilk="function" line="77" lineend="80" name="concat" signature="concat(rhs)" />
+        <scope ilk="function" line="86" lineend="88" name="elements=" signature="elements=(rhs)" />
+        <scope ilk="function" line="90" lineend="92" name="elements" signature="elements" />
+        <import symbol="Enumerable" />
+      </scope>
+    </scope>
+    

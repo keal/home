@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/panedwindow">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/panedwindow.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Itk::" ilk="class" line="11" lineend="12" name="Panedwindow" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="132" name="Tk::Iwidgets::">
+        <scope ilk="function" line="25" lineend="27" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="30" lineend="32" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="35" lineend="42" name="tagid" signature="tagid(tagOrId)" />
+        <scope ilk="function" line="54" lineend="56" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="59" lineend="71" name="add" signature="add(tag=nil, keys={})" />
+        <scope ilk="function" line="73" lineend="75" name="child_site_list" signature="child_site_list" />
+        <scope ilk="function" line="77" lineend="79" name="child_site" signature="child_site(idx)" />
+        <scope ilk="function" line="81" lineend="84" name="delete" signature="delete(idx)" />
+        <scope ilk="function" line="86" lineend="89" name="fraction" signature="fraction(*percentages)" />
+        <scope ilk="function" line="91" lineend="94" name="hide" signature="hide(idx)" />
+        <scope ilk="function" line="96" lineend="98" name="index" signature="index(idx)" />
+        <scope ilk="function" line="100" lineend="112" name="insert" signature="insert(idx, tag=nil, keys={})" />
+        <scope ilk="function" line="114" lineend="121" name="invoke" signature="invoke(idx=nil)" />
+        <scope ilk="function" line="123" lineend="126" name="reset" signature="reset" />
+        <scope ilk="function" line="128" lineend="131" name="show" signature="show(idx)" />
+        <import symbol="TkItemConfigMethod" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,70 @@
+<scope ilk="blob" lang="Ruby" name="tk/canvastag">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/tagfont" symbol="*" />
+      <import line="12" module="tk/canvas" symbol="*" />
+      <scope doc="tk/canvastag.rb - methods for treating canvas tags" ilk="namespace" line="7" lineend="10" name="TkcTagAccess" />
+      <scope ilk="namespace" line="14" lineend="196" name="TkcTagAccess">
+        <scope ilk="function" line="15" lineend="18" name="addtag" signature="addtag(tag)" />
+        <scope ilk="function" line="20" lineend="22" name="bbox" signature="bbox" />
+        <scope doc="def bind(seq, cmd=Proc.new, *args) @c.itembind(@id, seq,&#xA;cmd, *args) self end" ilk="function" line="28" lineend="37" name="bind" signature="bind(seq, *args)" />
+        <scope doc="def bind_append(seq, cmd=Proc.new, *args)&#xA;@c.itembind_append(@id, seq, cmd, *args) self end" ilk="function" line="43" lineend="52" name="bind_append" signature="bind_append(seq, *args)" />
+        <scope ilk="function" line="54" lineend="57" name="bind_remove" signature="bind_remove(seq)" />
+        <scope ilk="function" line="59" lineend="61" name="bindinfo" signature="bindinfo(seq=nil)" />
+        <scope ilk="function" line="63" lineend="65" name="cget" signature="cget(option)" />
+        <scope ilk="function" line="67" lineend="70" name="configure" signature="configure(key, value=None)" />
+        <scope doc="def configure(keys) @c.itemconfigure @id, keys end" ilk="function" line="75" lineend="77" name="configinfo" signature="configinfo(key=nil)" />
+        <scope ilk="function" line="79" lineend="81" name="current_configinfo" signature="current_configinfo(key=nil)" />
+        <scope ilk="function" line="83" lineend="85" name="coords" signature="coords(*args)" />
+        <scope ilk="function" line="87" lineend="90" name="dchars" signature="dchars(first, last=None)" />
+        <scope ilk="function" line="92" lineend="95" name="dtag" signature="dtag(tag_to_del=None)" />
+        <scope ilk="function" line="98" lineend="100" name="find" signature="find" />
+        <scope ilk="function" line="103" lineend="105" name="focus" signature="focus" />
+        <scope ilk="function" line="107" lineend="109" name="gettags" signature="gettags" />
+        <scope ilk="function" line="111" lineend="114" name="icursor" signature="icursor(index)" />
+        <scope ilk="function" line="116" lineend="118" name="index" signature="index(idx)" />
+        <scope ilk="function" line="120" lineend="123" name="insert" signature="insert(beforethis, string)" />
+        <scope ilk="function" line="125" lineend="128" name="lower" signature="lower(belowthis=None)" />
+        <scope ilk="function" line="130" lineend="133" name="move" signature="move(xamount, yamount)" />
+        <scope ilk="function" line="135" lineend="138" name="raise" signature="raise(abovethis=None)" />
+        <scope ilk="function" line="140" lineend="143" name="scale" signature="scale(xorigin, yorigin, xscale, yscale)" />
+        <scope ilk="function" line="145" lineend="148" name="select_adjust" signature="select_adjust(index)" />
+        <scope ilk="function" line="149" lineend="152" name="select_from" signature="select_from(index)" />
+        <scope ilk="function" line="153" lineend="156" name="select_to" signature="select_to(index)" />
+        <scope ilk="function" line="158" lineend="160" name="itemtype" signature="itemtype" />
+        <scope doc="Following operators support logical expressions of canvas&#xA;tags (for Tk8.3+)." ilk="function" line="169" lineend="175" name="&amp;" signature="&amp; (tag" />
+        <scope ilk="function" line="177" lineend="183" name="|" signature="| (tag" />
+        <scope ilk="function" line="185" lineend="191" name="^" signature="^ (tag" />
+        <scope ilk="function" line="193" lineend="195" name="-" signature="-" />
+      </scope>
+      <scope classrefs="TkObject" ilk="class" line="198" lineend="288" name="TkcTag">
+        <scope attributes="__classmethod__" ilk="function" line="206" lineend="210" name="id2obj" signature="TkcTag.id2obj(canvas, id)" />
+        <scope attributes="__ctor__" ilk="function" line="212" lineend="226" name="initialize" signature="initialize(parent, mode=nil, *args)" />
+        <scope ilk="function" line="227" lineend="229" name="id" signature="id" />
+        <scope ilk="function" line="231" lineend="237" name="exist?" signature="exist?" />
+        <scope ilk="function" line="239" lineend="243" name="delete" signature="delete" />
+        <scope ilk="function" line="247" lineend="250" name="set_to_above" signature="set_to_above(target)" />
+        <scope ilk="function" line="253" lineend="256" name="set_to_all" signature="set_to_all" />
+        <scope ilk="function" line="259" lineend="262" name="set_to_below" signature="set_to_below(target)" />
+        <scope ilk="function" line="265" lineend="268" name="set_to_closest" signature="set_to_closest(x, y, halo=None, start=None)" />
+        <scope ilk="function" line="271" lineend="274" name="set_to_enclosed" signature="set_to_enclosed(x1, y1, x2, y2)" />
+        <scope ilk="function" line="277" lineend="280" name="set_to_overlapping" signature="set_to_overlapping(x1, y1, x2, y2)" />
+        <scope ilk="function" line="283" lineend="286" name="set_to_withtag" signature="set_to_withtag(target)" />
+        <import symbol="TkcTagAccess" />
+      </scope>
+      <scope classrefs="TkcTag" ilk="class" line="290" lineend="312" name="TkcTagString">
+        <scope attributes="__classmethod__" ilk="function" line="291" lineend="297" name="new" signature="self.new(parent, name, *args)" />
+        <scope attributes="__ctor__" ilk="function" line="299" lineend="311" name="initialize" signature="initialize(parent, name, mode=nil, *args)" />
+      </scope>
+      <scope classrefs="TkcTag" ilk="class" line="315" lineend="326" name="TkcTagAll">
+        <scope attributes="__ctor__" ilk="function" line="316" lineend="325" name="initialize" signature="initialize(parent)" />
+      </scope>
+      <scope classrefs="TkcTag" ilk="class" line="328" lineend="339" name="TkcTagCurrent">
+        <scope attributes="__ctor__" ilk="function" line="329" lineend="338" name="initialize" signature="initialize(parent)" />
+      </scope>
+      <scope classrefs="TkcTag" ilk="class" line="341" lineend="375" name="TkcGroup">
+        <scope attributes="__ctor__" doc="def create_self(parent, *args)" ilk="function" line="344" lineend="356" name="initialize" signature="initialize(parent, *args)" />
+        <scope doc="private :create_self" ilk="function" line="359" lineend="365" name="include" signature="include(*tags)" />
+        <import symbol="def" />
+      </scope>
+    </scope>
+    

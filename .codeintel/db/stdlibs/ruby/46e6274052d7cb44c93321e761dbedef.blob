@@ -1,0 +1,56 @@
+<scope ilk="blob" lang="Ruby" name="win32ole">
+      <scope classrefs="Object" doc="WIN32OLE objects represent OLE Automation object in Ruby." ilk="class" name="WIN32OLE">
+        <scope ilk="namespace" name="VARIANT">
+          <variable attributes="__const__" citdl="Fixnum" name="VT_ARRAY" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_BOOL" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_BSTR" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_BYREF" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_CY" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_DATE" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_DISPATCH" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_ERROR" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_I1" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_I2" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_I4" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_INT" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_PTR" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_R4" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_R8" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_UI1" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_UI2" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_UI4" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_UINT" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_UNKNOWN" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_USERDEFINED" />
+          <variable attributes="__const__" citdl="Fixnum" name="VT_VARIANT" />
+        </scope>
+        <scope attributes="__classmethod__" doc="Returns current codepage." ilk="function" name="codepage" signature="WIN32OLE.codepage" />
+        <scope attributes="__classmethod__" doc="Sets current codepage." ilk="function" name="codepage=" signature="WIN32OLE.codepage = CP" />
+        <scope attributes="__classmethod__" doc="Returns running OLE Automation object or WIN32OLE object&#xA;from moniker. 1st argument should be OLE program id or class&#xA;id or moniker." ilk="function" name="connect" signature="WIN32OLE.connect( ole ) --&gt; aWIN32OLE" />
+        <scope attributes="__classmethod__" doc="Defines the constants of OLE Automation server as mod&apos;s&#xA;constants. The first argument is WIN32OLE object or type&#xA;library name." ilk="function" name="const_load" signature="WIN32OLE.const_load( ole, mod = WIN32OLE)" />
+        <scope attributes="__classmethod__ __ctor__" doc="Returns a new WIN32OLE object(OLE Automation object). The&#xA;first argument server specifies OLE Automation server." ilk="function" name="new" signature="WIN32OLE.new(server, [host]) -&gt; WIN32OLE object" />
+        <scope attributes="__classmethod__" doc="Invokes Release method of Dispatch interface of WIN32OLE&#xA;object. You should not use this method because this method&#xA;exists only for debugging WIN32OLE." ilk="function" name="ole_free" signature="WIN32OLE.ole_free(aWIN32OLE) --&gt; number" />
+        <scope attributes="__classmethod__" doc="Returns reference counter of Dispatch interface of WIN32OLE&#xA;object. You should not use this method because this method&#xA;exists only for debugging WIN32OLE." ilk="function" name="ole_reference_count" signature="WIN32OLE.ole_reference_count(aWIN32OLE) --&gt; number" />
+        <scope attributes="__classmethod__" doc="Displays helpfile. The 1st argument specifies WIN32OLE_TYPE&#xA;object or WIN32OLE_METHOD object or helpfile." ilk="function" name="ole_show_help" signature="WIN32OLE.ole_show_help(obj [,helpcontext])" />
+        <scope doc="Returns property of OLE object." ilk="function" name="[]" signature="WIN32OLE[&apos;property&apos;] " />
+        <scope doc="Sets property of OLE object. When you want to set property&#xA;with argument, you can use this method." ilk="function" name="[]=" signature="WIN32OLE[&apos;property&apos;]=val &#xA;WIN32OLE.setproperty(&apos;property&apos;, [arg1, arg2,...] val)" />
+        <scope doc="Runs the early binding method to get property. The 1st&#xA;argument specifies dispatch ID, the 2nd argument specifies&#xA;the array of arguments, the 3rd argument specifies the array&#xA;of the type of arguments." ilk="function" name="_getproperty" signature="WIN32OLE#_getproperty(dispid, args, types)" />
+        <scope doc="Runs the early binding method. The 1st argument specifies&#xA;dispatch ID, the 2nd argument specifies the array of&#xA;arguments, the 3rd argument specifies the array of the type&#xA;of arguments." ilk="function" name="_invoke" signature="WIN32OLE#_invoke(dispid, args, types)" />
+        <scope doc="Runs the early binding method to set property. The 1st&#xA;argument specifies dispatch ID, the 2nd argument specifies&#xA;the array of arguments, the 3rd argument specifies the array&#xA;of the type of arguments." ilk="function" name="_setproperty" signature="WIN32OLE#_setproperty(dispid, args, types)" />
+        <scope doc="Iterates over each item of OLE collection which has&#xA;IEnumVARIANT interface." ilk="function" name="each" signature="WIN32OLE#each {|i|...}" />
+        <scope doc="Runs OLE method. The first argument specifies the method&#xA;name of OLE Automation object." ilk="function" name="invoke" signature="WIN32OLE#invoke(method, [arg1,...])  =&gt; return value of method." />
+        <scope doc="Calls WIN32OLE#invoke method." ilk="function" name="method_missing" signature="WIN32OLE#method_missing(id [,arg1, arg2, ...])" />
+        <scope doc="invokes Release method of Dispatch interface of WIN32OLE&#xA;object. Usually, you do not need to call this method because&#xA;Release method called automatically when WIN32OLE object&#xA;garbaged." ilk="function" name="ole_free" signature="WIN32OLE#ole_free" />
+        <scope doc="Returns the array of WIN32OLE_METHOD object . The element of&#xA;the array is functional method of WIN32OLE object." ilk="function" name="ole_func_methods" signature="WIN32OLE#ole_func_methods" />
+        <scope doc="Returns the array of WIN32OLE_METHOD object . The element of&#xA;the array is property (gettable) of WIN32OLE object." ilk="function" name="ole_get_methods" signature="WIN32OLE#ole_get_methods" />
+        <scope doc="Returns WIN32OLE_METHOD object corresponding with method&#xA;specified by 1st argument." ilk="function" name="ole_method" signature="WIN32OLE#ole_method_help(method)" />
+        <scope doc="Alias for #ole_method" ilk="function" name="ole_method_help" signature="(p1)" />
+        <scope doc="Returns the array of WIN32OLE_METHOD object. The element is&#xA;OLE method of WIN32OLE object." ilk="function" name="ole_methods" signature="WIN32OLE#ole_methods" />
+        <scope doc="Returns WIN32OLE_TYPE object." ilk="function" name="ole_obj_help" signature="WIN32OLE#ole_obj_help" />
+        <scope doc="Returns the array of WIN32OLE_METHOD object . The element of&#xA;the array is property (settable) of WIN32OLE object." ilk="function" name="ole_put_methods" signature="WIN32OLE#ole_put_methods" />
+        <scope doc="Sets property of OLE object. When you want to set property&#xA;with argument, you can use this method." ilk="function" name="setproperty" signature="WIN32OLE[&apos;property&apos;]=val &#xA;WIN32OLE.setproperty(&apos;property&apos;, [arg1, arg2,...] val)" />
+        <variable attributes="__const__" citdl="Fixnum" name="CP_THREAD_ACP" />
+        <variable attributes="__const__" citdl="String" name="VERSION" />
+      </scope>
+    </scope>
+    

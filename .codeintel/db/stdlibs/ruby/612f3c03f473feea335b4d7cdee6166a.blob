@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="tracer">
+      <scope classrefs="Object" doc="tracer.rb - $Release Version: 0.2$ $Revision: 1.8 $ $Date:&#xA;1998/05/19 03:42:49 $ by Keiju ISHITSUKA(Nippon Rational&#xA;Inc.)" ilk="class" line="16" lineend="154" name="Tracer">
+        <scope classrefs="Object" ilk="class" line="21" lineend="25" name="self">
+          <scope ilk="function" line="22" lineend="22" name="verbose" />
+          <scope ilk="function" line="24" lineend="24" name="stdout" />
+        </scope>
+        <scope attributes="__ctor__" ilk="function" line="37" lineend="48" name="initialize" signature="initialize" />
+        <scope ilk="function" line="50" lineend="52" name="stdout" signature="stdout" />
+        <scope ilk="function" line="54" lineend="66" name="on" signature="on" />
+        <scope ilk="function" line="68" lineend="71" name="off" signature="off" />
+        <scope ilk="function" line="73" lineend="75" name="add_filter" signature="add_filter(p = proc)" />
+        <scope ilk="function" line="77" lineend="79" name="set_get_line_procs" signature="set_get_line_procs(file, p = proc)" />
+        <scope ilk="function" line="81" lineend="104" name="get_line" signature="get_line(file, line)" />
+        <scope ilk="function" line="106" lineend="112" name="get_thread_no" signature="get_thread_no" />
+        <scope ilk="function" line="114" lineend="131" name="trace_func" signature="trace_func(event, file, line, id, binding, klass, *)" />
+        <scope attributes="__classmethod__" ilk="function" line="134" lineend="140" name="on" signature="Tracer.on" />
+        <scope attributes="__classmethod__" ilk="function" line="142" lineend="144" name="off" signature="Tracer.off" />
+        <scope attributes="__classmethod__" ilk="function" line="146" lineend="148" name="set_get_line_procs" signature="Tracer.set_get_line_procs(file_name, p = proc)" />
+        <scope attributes="__classmethod__" ilk="function" line="150" lineend="152" name="add_filter" signature="Tracer.add_filter(p = proc)" />
+      </scope>
+    </scope>
+    

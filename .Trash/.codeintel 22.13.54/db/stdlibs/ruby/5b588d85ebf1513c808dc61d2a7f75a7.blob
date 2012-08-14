@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="rexml/validation/validation">
+      <import line="1" module="rexml/validation/validationexception" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="155" name="REXML">
+        <scope ilk="namespace" line="4" lineend="154" name="Validation">
+          <scope ilk="namespace" line="5" lineend="77" name="Validator">
+            <scope ilk="function" line="7" lineend="13" name="reset" signature="reset" />
+            <scope ilk="function" line="14" lineend="16" name="dump" signature="dump" />
+            <scope ilk="function" line="17" lineend="76" name="validate" signature="validate( event )" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="79" lineend="153" name="Event">
+            <scope attributes="__ctor__" ilk="function" line="80" lineend="83" name="initialize" signature="initialize(event_type, event_arg=nil )" />
+            <scope ilk="function" line="85" lineend="85" name="event_type" />
+            <scope ilk="function" line="86" lineend="86" name="event_arg" />
+            <scope ilk="function" line="86" lineend="86" name="event_arg=" />
+            <scope ilk="function" line="88" lineend="90" name="done?" signature="done?" />
+            <scope ilk="function" line="92" lineend="94" name="single?" signature="single?" />
+            <scope ilk="function" line="96" lineend="139" name="matches?" signature="matches?( event )" />
+            <scope ilk="function" line="141" lineend="144" name="==" signature="==( other" />
+            <scope ilk="function" line="146" lineend="148" name="to_s" signature="to_s" />
+            <scope ilk="function" line="150" lineend="152" name="inspect" signature="inspect" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/ui/testrunnermediator">
+      <import line="5" module="test/unit" symbol="*" />
+      <import line="6" module="test/unit/util/observable" symbol="*" />
+      <import line="7" module="test/unit/testresult" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="9" lineend="66" name="Test">
+        <scope ilk="namespace" line="10" lineend="65" name="Unit">
+          <scope ilk="namespace" line="11" lineend="64" name="UI">
+            <scope classrefs="Object" doc="Provides an interface to write any given UI against,&#xA;hopefully making it easy to write new UIs." ilk="class" line="15" lineend="63" name="TestRunnerMediator">
+              <scope attributes="__ctor__" doc="Creates a new TestRunnerMediator initialized to run the&#xA;passed suite." ilk="function" line="24" lineend="26" name="initialize" signature="initialize(suite)" />
+              <scope doc="Runs the suite the TestRunnerMediator was created with." ilk="function" line="30" lineend="54" name="run_suite" signature="run_suite" />
+              <scope doc="A factory method to create the result the mediator should&#xA;run with." ilk="function" line="60" lineend="62" name="create_result" signature="create_result" />
+              <import symbol="Util::Observable" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,88 @@
+<scope ilk="blob" lang="Ruby" name="uri/generic">
+      <import line="9" module="uri/common" symbol="*" />
+      <scope doc="= uri/generic.rb" ilk="namespace" line="11" lineend="1118" name="URI">
+        <scope classrefs="Object" doc="Base class for all URI classes." ilk="class" line="16" lineend="1117" name="Generic">
+          <scope attributes="__classmethod__" doc="Returns default port" ilk="function" line="25" lineend="27" name="default_port" signature="self.default_port" />
+          <scope ilk="function" line="29" lineend="31" name="default_port" signature="default_port" />
+          <scope attributes="__classmethod__" doc="Components of the URI in the order." ilk="function" line="44" lineend="46" name="component" signature="self.component" />
+          <scope attributes="__classmethod__" doc="DOC: FIXME!" ilk="function" line="53" lineend="55" name="use_registry" signature="self.use_registry" />
+          <scope attributes="__classmethod__" doc="== Synopsis" ilk="function" line="69" lineend="93" name="build2" signature="self.build2(args)" />
+          <scope attributes="__classmethod__" doc="== Synopsis" ilk="function" line="107" lineend="126" name="build" signature="self.build(args)" />
+          <scope attributes="__ctor__" doc="== Args" ilk="function" line="155" lineend="201" name="initialize" signature="initialize(scheme, userinfo, host, port, registry, path, opaque, query, fragment, arg_check = false)" />
+          <scope ilk="function" line="202" lineend="202" name="scheme" />
+          <scope ilk="function" line="203" lineend="203" name="host" />
+          <scope ilk="function" line="204" lineend="204" name="port" />
+          <scope ilk="function" line="205" lineend="205" name="registry" />
+          <scope ilk="function" line="206" lineend="206" name="path" />
+          <scope ilk="function" line="207" lineend="207" name="query" />
+          <scope ilk="function" line="208" lineend="208" name="opaque" />
+          <scope ilk="function" line="209" lineend="209" name="fragment" />
+          <scope doc="replace self by other URI object" ilk="function" line="212" lineend="220" name="replace!" signature="replace!(oth)" />
+          <scope ilk="function" line="223" lineend="225" name="component" signature="component" />
+          <scope ilk="function" line="227" lineend="234" name="check_scheme" signature="check_scheme(v)" />
+          <scope ilk="function" line="237" lineend="239" name="set_scheme" signature="set_scheme(v)" />
+          <scope ilk="function" line="242" lineend="246" name="scheme=" signature="scheme=(v)" />
+          <scope ilk="function" line="248" lineend="256" name="check_userinfo" signature="check_userinfo(user, password = nil)" />
+          <scope ilk="function" line="259" lineend="273" name="check_user" signature="check_user(v)" />
+          <scope ilk="function" line="276" lineend="294" name="check_password" signature="check_password(v, user = @user)" />
+          <scope doc="Sets userinfo, argument is string like &apos;name:pass&apos;" ilk="function" line="300" lineend="307" name="userinfo=" signature="userinfo=(userinfo)" />
+          <scope ilk="function" line="309" lineend="313" name="user=" signature="user=(user)" />
+          <scope ilk="function" line="315" lineend="319" name="password=" signature="password=(password)" />
+          <scope ilk="function" line="321" lineend="329" name="set_userinfo" signature="set_userinfo(user, password = nil)" />
+          <scope ilk="function" line="332" lineend="335" name="set_user" signature="set_user(v)" />
+          <scope ilk="function" line="338" lineend="341" name="set_password" signature="set_password(v)" />
+          <scope ilk="function" line="344" lineend="349" name="split_userinfo" signature="split_userinfo(ui)" />
+          <scope ilk="function" line="352" lineend="354" name="escape_userpass" signature="escape_userpass(v)" />
+          <scope ilk="function" line="357" lineend="363" name="userinfo" signature="userinfo" />
+          <scope ilk="function" line="365" lineend="367" name="user" signature="user" />
+          <scope ilk="function" line="369" lineend="371" name="password" signature="password" />
+          <scope ilk="function" line="373" lineend="385" name="check_host" signature="check_host(v)" />
+          <scope ilk="function" line="388" lineend="390" name="set_host" signature="set_host(v)" />
+          <scope ilk="function" line="393" lineend="397" name="host=" signature="host=(v)" />
+          <scope ilk="function" line="399" lineend="411" name="check_port" signature="check_port(v)" />
+          <scope ilk="function" line="414" lineend="423" name="set_port" signature="set_port(v)" />
+          <scope ilk="function" line="426" lineend="430" name="port=" signature="port=(v)" />
+          <scope ilk="function" line="432" lineend="447" name="check_registry" signature="check_registry(v)" />
+          <scope ilk="function" line="450" lineend="452" name="set_registry" signature="set_registry(v)" />
+          <scope ilk="function" line="455" lineend="459" name="registry=" signature="registry=(v)" />
+          <scope ilk="function" line="461" lineend="483" name="check_path" signature="check_path(v)" />
+          <scope ilk="function" line="486" lineend="488" name="set_path" signature="set_path(v)" />
+          <scope ilk="function" line="491" lineend="495" name="path=" signature="path=(v)" />
+          <scope ilk="function" line="497" lineend="514" name="check_query" signature="check_query(v)" />
+          <scope ilk="function" line="517" lineend="519" name="set_query" signature="set_query(v)" />
+          <scope ilk="function" line="522" lineend="526" name="query=" signature="query=(v)" />
+          <scope ilk="function" line="528" lineend="543" name="check_opaque" signature="check_opaque(v)" />
+          <scope ilk="function" line="546" lineend="548" name="set_opaque" signature="set_opaque(v)" />
+          <scope ilk="function" line="551" lineend="555" name="opaque=" signature="opaque=(v)" />
+          <scope ilk="function" line="557" lineend="566" name="check_fragment" signature="check_fragment(v)" />
+          <scope ilk="function" line="569" lineend="571" name="set_fragment" signature="set_fragment(v)" />
+          <scope ilk="function" line="574" lineend="578" name="fragment=" signature="fragment=(v)" />
+          <scope doc="Checks if URI has a path" ilk="function" line="583" lineend="589" name="hierarchical?" signature="hierarchical?" />
+          <scope doc="Checks if URI is an absolute one" ilk="function" line="594" lineend="600" name="absolute?" signature="absolute?" />
+          <scope doc="Checks if URI is relative" ilk="function" line="606" lineend="608" name="relative?" signature="relative?" />
+          <scope ilk="function" line="610" lineend="612" name="split_path" signature="split_path(path)" />
+          <scope ilk="function" line="615" lineend="675" name="merge_path" signature="merge_path(base, rel)" />
+          <scope doc="== Args" ilk="function" line="697" lineend="705" name="merge!" signature="merge!(oth)" />
+          <scope doc="== Args" ilk="function" line="725" lineend="763" name="merge" signature="merge(oth)" />
+          <scope doc="return base and rel." ilk="function" line="768" lineend="795" name="merge0" signature="merge0(oth)" />
+          <scope ilk="function" line="798" lineend="836" name="route_from_path" signature="route_from_path(src, dst)" />
+          <scope ilk="function" line="839" lineend="891" name="route_from0" signature="route_from0(oth)" />
+          <scope doc="== Args" ilk="function" line="911" lineend="929" name="route_from" signature="route_from(oth)" />
+          <scope doc="== Args" ilk="function" line="951" lineend="962" name="route_to" signature="route_to(oth)" />
+          <scope doc="Returns normalized URI" ilk="function" line="967" lineend="971" name="normalize" signature="normalize" />
+          <scope doc="Destructive version of #normalize" ilk="function" line="976" lineend="983" name="normalize!" signature="normalize!" />
+          <scope ilk="function" line="985" lineend="991" name="path_query" signature="path_query" />
+          <scope doc="Constructs String from URI" ilk="function" line="997" lineend="1036" name="to_s" signature="to_s" />
+          <scope doc="Compares to URI&apos;s" ilk="function" line="1041" lineend="1047" name="==" signature="==(oth" />
+          <scope ilk="function" line="1049" lineend="1051" name="hash" signature="hash" />
+          <scope ilk="function" line="1053" lineend="1055" name="eql?" signature="eql?(oth)" />
+          <scope doc="def ===(oth) raise NotImplementedError end" ilk="function" line="1068" lineend="1072" name="component_ary" signature="component_ary" />
+          <scope doc="== Args" ilk="function" line="1092" lineend="1101" name="select" signature="select(*components)" />
+          <scope ilk="function" line="1103" lineend="1105" name="inspect" signature="inspect" />
+          <scope ilk="function" line="1107" lineend="1116" name="coerce" signature="coerce(oth)" />
+          <import symbol="URI" />
+          <import symbol="REGEXP" />
+        </scope>
+      </scope>
+    </scope>
+    

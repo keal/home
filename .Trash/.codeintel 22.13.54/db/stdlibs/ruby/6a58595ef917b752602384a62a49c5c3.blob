@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="singleforwardable">
+      <scope classrefs="Object" doc="The SingleForwardable module provides delegation of&#xA;specified methods to a designated object, using the methods&#xA;#def_delegator and #def_delegators. This module is similar&#xA;to Forwardable, but it works on objects themselves, instead&#xA;of their defining classes." ilk="class" name="SingleForwardable">
+        <scope doc="Alias for #def_singleton_delegator" ilk="function" name="def_delegator" signature="(accessor, method, ali = method)" />
+        <scope doc="Alias for #def_singleton_delegators" ilk="function" name="def_delegators" signature="(accessor, *methods)" />
+        <scope doc="Defines a method `method&apos; which delegates to `obj&apos; (i.e. it&#xA;calls the method of the same name in `obj&apos;)." ilk="function" name="def_singleton_delegator" signature="(accessor, method, ali = method)" />
+        <scope doc="Shortcut for defining multiple delegator methods, but with&#xA;no provision for using a different name." ilk="function" name="def_singleton_delegators" signature="(accessor, *methods)" />
+      </scope>
+    </scope>
+    

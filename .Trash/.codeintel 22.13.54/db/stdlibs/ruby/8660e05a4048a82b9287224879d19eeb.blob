@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="simpledelegator">
+      <scope classrefs="Delegator" doc="A concrete implementation of Delegator, this class provides&#xA;the means to delegate all supported method calls to the&#xA;object passed into the constructor and even to change the&#xA;object being delegated to at a later time with __setobj__ ." ilk="class" name="SimpleDelegator">
+        <scope attributes="__classmethod__ __ctor__" doc="Pass in the `obj&apos; you would like to delegate method calls&#xA;to." ilk="function" name="new" signature="(obj)" />
+        <scope doc="Returns the current object method calls are being delegated&#xA;to." ilk="function" name="__getobj__" signature="()" />
+        <scope doc="Changes the delegate object to `obj&apos;." ilk="function" name="__setobj__" signature="(obj)" />
+        <scope doc="Clone support for the object returned by __getobj__." ilk="function" name="clone" signature="()" />
+        <scope doc="Duplication support for the object returned by __getobj__." ilk="function" name="dup" signature="(obj)" />
+      </scope>
+    </scope>
+    

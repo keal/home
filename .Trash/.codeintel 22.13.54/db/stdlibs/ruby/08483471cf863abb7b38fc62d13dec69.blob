@@ -1,0 +1,54 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/dot/dot">
+      <scope ilk="namespace" line="1" lineend="252" name="DOT">
+        <scope doc="if we don&apos;t like 4 spaces, we can change it any time" ilk="function" line="8" lineend="11" name="change_tab" signature="change_tab( t )" />
+        <scope classrefs="Object" doc="a root class for any element in dot notation" ilk="class" line="80" lineend="90" name="DOTSimpleElement">
+          <scope ilk="function" line="81" lineend="81" name="name" />
+          <scope ilk="function" line="81" lineend="81" name="name=" />
+          <scope attributes="__ctor__" ilk="function" line="83" lineend="85" name="initialize" signature="initialize( params = {} )" />
+          <scope ilk="function" line="87" lineend="89" name="to_s" signature="to_s" />
+        </scope>
+        <scope classrefs="DOTSimpleElement" doc="an element that has options ( node, edge or graph )" ilk="class" line="93" lineend="120" name="DOTElement">
+          <scope ilk="function" line="95" lineend="95" name="name" />
+          <scope ilk="function" line="95" lineend="95" name="name=" />
+          <scope ilk="function" line="95" lineend="95" name="options" />
+          <scope ilk="function" line="95" lineend="95" name="options=" />
+          <scope attributes="__ctor__" doc="attr_reader :parent" ilk="function" line="97" lineend="106" name="initialize" signature="initialize( params = {}, option_list = [] )" />
+          <scope ilk="function" line="108" lineend="110" name="each_option" signature="each_option" />
+          <scope ilk="function" line="112" lineend="114" name="each_option_pair" signature="each_option_pair" />
+        </scope>
+        <scope classrefs="DOTSimpleElement" doc="this is used when we build nodes that have shape=record&#xA;ports don&apos;t have options :)" ilk="class" line="125" lineend="135" name="DOTPort">
+          <scope ilk="function" line="126" lineend="126" name="label" />
+          <scope ilk="function" line="126" lineend="126" name="label=" />
+          <scope attributes="__ctor__" ilk="function" line="128" lineend="131" name="initialize" signature="initialize( params = {} )" />
+          <scope ilk="function" line="132" lineend="134" name="to_s" signature="to_s ( @name" />
+        </scope>
+        <scope classrefs="DOTElement" doc="node element" ilk="class" line="138" lineend="182" name="DOTNode">
+          <scope attributes="__ctor__" ilk="function" line="140" lineend="143" name="initialize" signature="initialize( params = {}, option_list = NODE_OPTS )" />
+          <scope ilk="function" line="145" lineend="147" name="each_port" signature="each_port" />
+          <scope ilk="function" line="149" lineend="151" name="&lt;&lt;" signature="&lt;&lt; ( thing" />
+          <scope ilk="function" line="153" lineend="155" name="push" signature="push ( thing )" />
+          <scope ilk="function" line="157" lineend="159" name="pop" signature="pop" />
+          <scope ilk="function" line="161" lineend="181" name="to_s" signature="to_s( t = &apos;&apos; )" />
+        </scope>
+        <scope classrefs="DOTElement" doc="subgraph element is the same to graph, but has another&#xA;header in dot notation" ilk="class" line="186" lineend="224" name="DOTSubgraph">
+          <scope attributes="__ctor__" ilk="function" line="188" lineend="192" name="initialize" signature="initialize( params = {}, option_list = GRAPH_OPTS )" />
+          <scope ilk="function" line="194" lineend="196" name="each_node" signature="each_node" />
+          <scope ilk="function" line="198" lineend="200" name="&lt;&lt;" signature="&lt;&lt; ( thing" />
+          <scope ilk="function" line="202" lineend="204" name="push" signature="push( thing )" />
+          <scope ilk="function" line="206" lineend="208" name="pop" signature="pop" />
+          <scope ilk="function" line="210" lineend="223" name="to_s" signature="to_s( t = &apos;&apos; )" />
+        </scope>
+        <scope classrefs="DOTSubgraph" doc="this is graph" ilk="class" line="227" lineend="232" name="DOTDigraph">
+          <scope attributes="__ctor__" ilk="function" line="228" lineend="231" name="initialize" signature="initialize( params = {}, option_list = GRAPH_OPTS )" />
+        </scope>
+        <scope classrefs="DOTElement" doc="this is edge" ilk="class" line="235" lineend="251" name="DOTEdge">
+          <scope ilk="function" line="236" lineend="236" name="from" />
+          <scope ilk="function" line="236" lineend="236" name="from=" />
+          <scope ilk="function" line="236" lineend="236" name="to" />
+          <scope ilk="function" line="236" lineend="236" name="to=" />
+          <scope attributes="__ctor__" ilk="function" line="237" lineend="241" name="initialize" signature="initialize( params = {}, option_list = EDGE_OPTS )" />
+          <scope ilk="function" line="243" lineend="250" name="to_s" signature="to_s( t = &apos;&apos; )" />
+        </scope>
+      </scope>
+    </scope>
+    

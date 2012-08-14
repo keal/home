@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/binding">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL SOAP binding definition." ilk="namespace" line="12" name="WSDL" />
+      <scope ilk="namespace" line="13" name="SOAP" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="45" name="Binding">
+        <scope ilk="function" line="17" lineend="17" name="style" />
+        <scope ilk="function" line="18" lineend="18" name="transport" />
+        <scope attributes="__ctor__" ilk="function" line="20" lineend="24" name="initialize" signature="initialize" />
+        <scope ilk="function" line="26" lineend="28" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="30" lineend="44" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

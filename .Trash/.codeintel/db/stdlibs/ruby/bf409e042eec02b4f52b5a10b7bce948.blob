@@ -1,0 +1,118 @@
+<scope ilk="blob" lang="Ruby" name="rss/maker/base">
+      <import line="1" module="forwardable" symbol="*" />
+      <import line="3" module="rss/rss" symbol="*" />
+      <scope ilk="namespace" line="5" lineend="526" name="RSS">
+        <scope ilk="namespace" line="6" lineend="525" name="Maker">
+          <scope ilk="namespace" line="8" lineend="130" name="Base">
+            <scope attributes="__classmethod__" ilk="function" line="10" lineend="60" name="append_features" signature="self.append_features(klass)" />
+            <scope attributes="__ctor__" ilk="function" line="62" lineend="65" name="initialize" signature="initialize(maker)" />
+            <scope ilk="function" line="67" lineend="69" name="have_required_values?" signature="have_required_values?" />
+            <scope ilk="function" line="72" lineend="76" name="initialize_variables" signature="initialize_variables" />
+            <scope ilk="function" line="78" lineend="82" name="setup_other_elements" signature="setup_other_elements(rss)" />
+            <scope ilk="function" line="84" lineend="86" name="current_element" signature="current_element(rss)" />
+            <scope ilk="function" line="88" lineend="103" name="setup_values" signature="setup_values(target)" />
+            <scope ilk="function" line="105" lineend="111" name="variables" signature="variables" />
+            <scope ilk="function" line="113" lineend="115" name="variable_is_set?" signature="variable_is_set?" />
+            <scope ilk="function" line="117" lineend="121" name="not_set_required_variables" signature="not_set_required_variables" />
+            <scope ilk="function" line="123" lineend="128" name="required_variables_are_set?" signature="required_variables_are_set?" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="132" lineend="194" name="RSSBase">
+            <scope classrefs="Object" ilk="class" line="135" lineend="139" name="self">
+              <scope ilk="function" line="136" lineend="138" name="make" signature="make(&amp;block)" />
+            </scope>
+            <scope ilk="function" line="156" lineend="156" name="rss_version" />
+            <scope ilk="function" line="157" lineend="157" name="version" />
+            <scope ilk="function" line="157" lineend="157" name="version=" />
+            <scope ilk="function" line="157" lineend="157" name="encoding" />
+            <scope ilk="function" line="157" lineend="157" name="encoding=" />
+            <scope ilk="function" line="157" lineend="157" name="standalone" />
+            <scope ilk="function" line="157" lineend="157" name="standalone=" />
+            <scope attributes="__ctor__" ilk="function" line="159" lineend="165" name="initialize" signature="initialize(rss_version)" />
+            <scope ilk="function" line="167" lineend="174" name="make" signature="make" />
+            <scope ilk="function" line="176" lineend="186" name="to_rss" signature="to_rss" />
+            <scope ilk="function" line="190" lineend="192" name="make_xml_stylesheets" signature="make_xml_stylesheets" />
+            <import symbol="Base" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="196" lineend="242" name="XMLStyleSheets">
+            <scope ilk="function" line="201" lineend="205" name="to_rss" signature="to_rss(rss)" />
+            <scope ilk="function" line="207" lineend="211" name="new_xml_stylesheet" signature="new_xml_stylesheet" />
+            <scope classrefs="Object" ilk="class" line="213" lineend="241" name="XMLStyleSheet">
+              <scope ilk="function" line="221" lineend="228" name="to_rss" signature="to_rss(rss)" />
+              <scope ilk="function" line="230" lineend="232" name="have_required_values?" signature="have_required_values?" />
+              <scope ilk="function" line="235" lineend="240" name="guess_type_if_need" signature="guess_type_if_need(xss)" />
+              <import symbol="Base::RSS::" />
+            </scope>
+            <import symbol="Base" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="244" lineend="371" name="ChannelBase">
+            <scope ilk="function" line="273" lineend="275" name="current_element" signature="current_element(rss)" />
+            <scope classrefs="Object" ilk="class" line="277" lineend="305" name="SkipDaysBase">
+              <scope ilk="function" line="282" lineend="286" name="new_day" signature="new_day" />
+              <scope ilk="function" line="288" lineend="290" name="current_element" signature="current_element(rss)" />
+              <scope classrefs="Object" ilk="class" line="292" lineend="304" name="DayBase">
+                <scope ilk="function" line="300" lineend="302" name="current_element" signature="current_element(rss)" />
+                <import symbol="Base" />
+              </scope>
+              <import symbol="Base" />
+            </scope>
+            <scope classrefs="Object" ilk="class" line="307" lineend="335" name="SkipHoursBase">
+              <scope ilk="function" line="312" lineend="316" name="new_hour" signature="new_hour" />
+              <scope ilk="function" line="318" lineend="320" name="current_element" signature="current_element(rss)" />
+              <scope classrefs="Object" ilk="class" line="322" lineend="334" name="HourBase">
+                <scope ilk="function" line="330" lineend="332" name="current_element" signature="current_element(rss)" />
+                <import symbol="Base" />
+              </scope>
+              <import symbol="Base" />
+            </scope>
+            <scope classrefs="Object" ilk="class" line="337" lineend="349" name="CloudBase">
+              <scope ilk="function" line="345" lineend="347" name="current_element" signature="current_element(rss)" />
+              <import symbol="Base" />
+            </scope>
+            <scope classrefs="Object" ilk="class" line="351" lineend="370" name="CategoriesBase">
+              <scope ilk="function" line="356" lineend="360" name="new_category" signature="new_category" />
+              <scope classrefs="Object" ilk="class" line="362" lineend="369" name="CategoryBase">
+                <import symbol="Base" />
+              </scope>
+              <import symbol="Base" />
+            </scope>
+            <import symbol="Base" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="373" lineend="388" name="ImageBase">
+            <scope ilk="function" line="381" lineend="383" name="link" signature="link" />
+            <scope ilk="function" line="385" lineend="387" name="current_element" signature="current_element(rss)" />
+            <import symbol="Base" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="390" lineend="509" name="ItemsBase">
+            <scope ilk="function" line="395" lineend="395" name="do_sort" />
+            <scope ilk="function" line="395" lineend="395" name="do_sort=" />
+            <scope ilk="function" line="395" lineend="395" name="max_size" />
+            <scope ilk="function" line="395" lineend="395" name="max_size=" />
+            <scope attributes="__ctor__" ilk="function" line="397" lineend="401" name="initialize" signature="initialize(maker)" />
+            <scope ilk="function" line="403" lineend="409" name="normalize" signature="normalize" />
+            <scope ilk="function" line="411" lineend="413" name="current_element" signature="current_element(rss)" />
+            <scope ilk="function" line="415" lineend="419" name="new_item" signature="new_item" />
+            <scope ilk="function" line="422" lineend="434" name="sort_if_need" signature="sort_if_need" />
+            <scope classrefs="Object" ilk="class" line="436" lineend="508" name="ItemBase">
+              <scope ilk="function" line="463" lineend="473" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+              <scope ilk="function" line="475" lineend="477" name="current_element" signature="current_element(rss)" />
+              <scope classrefs="Object" ilk="class" line="479" lineend="486" name="GuidBase">
+                <import symbol="Base" />
+              </scope>
+              <scope classrefs="Object" ilk="class" line="488" lineend="495" name="EnclosureBase">
+                <import symbol="Base" />
+              </scope>
+              <scope classrefs="Object" ilk="class" line="497" lineend="504" name="SourceBase">
+                <import symbol="Base" />
+              </scope>
+              <import symbol="Base" />
+            </scope>
+            <import symbol="Base" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="511" lineend="523" name="TextinputBase">
+            <scope ilk="function" line="519" lineend="521" name="current_element" signature="current_element(rss)" />
+            <import symbol="Base" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

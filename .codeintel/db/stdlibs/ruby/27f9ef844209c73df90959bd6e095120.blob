@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/ruler">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;widget::ruler&apos;, &apos;1.0&apos;)" ilk="namespace" line="15" lineend="32" name="Tk::Tcllib">
+        <scope ilk="namespace" line="16" lineend="31" name="Widget">
+          <scope classrefs="TkWindow" ilk="class" line="17" lineend="30" name="Ruler">
+            <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="34" lineend="65" name="Tk::Tcllib::">
+        <scope ilk="function" line="37" lineend="39" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="42" lineend="44" name="__numlistval_optkeys" signature="__numlistval_optkeys" />
+        <scope ilk="function" line="47" lineend="54" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="57" lineend="60" name="redraw" signature="redraw" />
+        <scope ilk="function" line="62" lineend="64" name="shade" signature="shade(org, dest, frac)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,133 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/tablelist_core">
+      <scope doc="tkextlib/tcllib/tablelist_core.rb" ilk="namespace" line="11" lineend="37" name="Tk">
+        <scope ilk="namespace" line="12" lineend="36" name="Tcllib">
+          <scope classrefs="TkWindow" ilk="class" line="13" lineend="34" name="Tablelist">
+            <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+            <scope attributes="__classmethod__" ilk="function" line="31" lineend="33" name="use_Tile?" signature="self.use_Tile? (Tk" />
+          </scope>
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="39" lineend="123" name="Tk::Tcllib::">
+        <scope ilk="function" line="42" lineend="48" name="_to_idx" signature="_to_idx(idx)" />
+        <scope ilk="function" line="49" lineend="60" name="_from_idx" signature="_from_idx(idx)" />
+        <scope ilk="function" line="63" lineend="65" name="__item_cget_cmd" signature="__item_cget_cmd(mixed_id)" />
+        <scope ilk="function" line="66" lineend="68" name="__item_config_cmd" signature="__item_config_cmd(mixed_id)" />
+        <scope ilk="function" line="70" lineend="72" name="cell_cget" signature="cell_cget(tagOrId, option)" />
+        <scope ilk="function" line="73" lineend="75" name="cell_configure" signature="cell_configure(tagOrId, slot, value=None)" />
+        <scope ilk="function" line="76" lineend="78" name="cell_configinfo" signature="cell_configinfo(tagOrId, slot=nil)" />
+        <scope ilk="function" line="79" lineend="81" name="current_cell_configinfo" signature="current_cell_configinfo(tagOrId, slot=nil)" />
+        <scope ilk="function" line="87" lineend="89" name="column_cget" signature="column_cget(tagOrId, option)" />
+        <scope ilk="function" line="90" lineend="92" name="column_configure" signature="column_configure(tagOrId, slot, value=None)" />
+        <scope ilk="function" line="93" lineend="95" name="column_configinfo" signature="column_configinfo(tagOrId, slot=nil)" />
+        <scope ilk="function" line="96" lineend="98" name="current_column_configinfo" signature="current_column_configinfo(tagOrId, slot=nil)" />
+        <scope ilk="function" line="104" lineend="106" name="row_cget" signature="row_cget(tagOrId, option)" />
+        <scope ilk="function" line="107" lineend="109" name="row_configure" signature="row_configure(tagOrId, slot, value=None)" />
+        <scope ilk="function" line="110" lineend="112" name="row_configinfo" signature="row_configinfo(tagOrId, slot=nil)" />
+        <scope ilk="function" line="113" lineend="115" name="current_row_configinfo" signature="current_row_configinfo(tagOrId, slot=nil)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="125" lineend="674" name="Tk::Tcllib::">
+        <scope ilk="function" line="133" lineend="140" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="145" lineend="147" name="__numval_optkeys" signature="__numval_optkeys" />
+        <scope ilk="function" line="150" lineend="152" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="155" lineend="161" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="164" lineend="166" name="__listval_optkeys" signature="__listval_optkeys" />
+        <scope ilk="function" line="169" lineend="171" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="174" lineend="178" name="__val2ruby_optkeys" signature="__val2ruby_optkeys" />
+        <scope ilk="function" line="181" lineend="188" name="__ruby2val_optkeys" signature="__ruby2val_optkeys" />
+        <scope ilk="function" line="191" lineend="193" name="__font_optkeys" signature="__font_optkeys" />
+        <scope ilk="function" line="198" lineend="204" name="__item_strval_optkeys" signature="__item_strval_optkeys(id)" />
+        <scope ilk="function" line="207" lineend="211" name="__item_boolval_optkeys" signature="__item_boolval_optkeys(id)" />
+        <scope ilk="function" line="214" lineend="220" name="__item_listval_optkeys" signature="__item_listval_optkeys(id)" />
+        <scope ilk="function" line="223" lineend="226" name="__item_font_optkeys" signature="__item_font_optkeys(id)" />
+        <scope ilk="function" line="231" lineend="234" name="activate" signature="activate(index)" />
+        <scope ilk="function" line="236" lineend="239" name="activate_cell" signature="activate_cell(index)" />
+        <scope ilk="function" line="242" lineend="253" name="get_attrib" signature="get_attrib(name=nil)" />
+        <scope ilk="function" line="254" lineend="257" name="set_attrib" signature="set_attrib(*args)" />
+        <scope ilk="function" line="259" lineend="261" name="bbox" signature="bbox(index)" />
+        <scope ilk="function" line="263" lineend="265" name="bodypath" signature="bodypath" />
+        <scope ilk="function" line="267" lineend="269" name="bodytag" signature="bodytag" />
+        <scope ilk="function" line="271" lineend="274" name="cancel_editing" signature="cancel_editing" />
+        <scope ilk="function" line="277" lineend="279" name="cellindex" signature="cellindex(idx)" />
+        <scope ilk="function" line="281" lineend="284" name="cellselection_anchor" signature="cellselection_anchor(idx)" />
+        <scope ilk="function" line="286" lineend="295" name="cellselection_clear" signature="cellselection_clear(first, last=nil)" />
+        <scope ilk="function" line="297" lineend="299" name="cellselection_includes" signature="cellselection_includes(idx)" />
+        <scope ilk="function" line="301" lineend="310" name="cellselection_set" signature="cellselection_set(first, last=nil)" />
+        <scope ilk="function" line="312" lineend="314" name="columncount" signature="columncount" />
+        <scope ilk="function" line="316" lineend="318" name="columnindex" signature="columnindex(idx)" />
+        <scope ilk="function" line="320" lineend="323" name="containing" signature="containing(y)" />
+        <scope ilk="function" line="325" lineend="335" name="containing_cell" signature="containing_cell(x, y)" />
+        <scope ilk="function" line="338" lineend="341" name="containing_column" signature="containing_column(x)" />
+        <scope ilk="function" line="344" lineend="346" name="curcellselection" signature="curcellselection" />
+        <scope ilk="function" line="348" lineend="350" name="curselection" signature="curselection" />
+        <scope ilk="function" line="352" lineend="361" name="delete_items" signature="delete_items(first, last=nil)" />
+        <scope ilk="function" line="365" lineend="374" name="delete_columns" signature="delete_columns(first, last=nil)" />
+        <scope ilk="function" line="377" lineend="380" name="edit_cell" signature="edit_cell(idx)" />
+        <scope ilk="function" line="383" lineend="385" name="editwinpath" signature="editwinpath" />
+        <scope ilk="function" line="387" lineend="389" name="entrypath" signature="entrypath" />
+        <scope ilk="function" line="391" lineend="394" name="fill_column" signature="fill_column(idx, txt)" />
+        <scope ilk="function" line="397" lineend="400" name="finish_editing" signature="finish_editing" />
+        <scope ilk="function" line="403" lineend="411" name="get" signature="get(first, last=nil)" />
+        <scope ilk="function" line="413" lineend="421" name="get_cells" signature="get_cells(first, last=nil)" />
+        <scope ilk="function" line="424" lineend="432" name="get_columns" signature="get_columns(first, last=nil)" />
+        <scope ilk="function" line="435" lineend="443" name="get_keys" signature="get_keys(first, last=nil)" />
+        <scope ilk="function" line="446" lineend="448" name="imagelabelpath" signature="imagelabelpath(idx)" />
+        <scope ilk="function" line="450" lineend="452" name="index" signature="index(idx)" />
+        <scope ilk="function" line="454" lineend="457" name="insert" signature="insert(idx, *items)" />
+        <scope ilk="function" line="459" lineend="462" name="insert_columnlist" signature="insert_columnlist(idx, columnlist)" />
+        <scope ilk="function" line="465" lineend="468" name="insert_columns" signature="insert_columns(idx, *args)" />
+        <scope ilk="function" line="471" lineend="474" name="insert_list" signature="insert_list(idx, list)" />
+        <scope ilk="function" line="477" lineend="479" name="itemlistvar" signature="itemlistvar" />
+        <scope ilk="function" line="481" lineend="483" name="labelpath" signature="labelpath(idx)" />
+        <scope ilk="function" line="485" lineend="487" name="labels" signature="labels" />
+        <scope ilk="function" line="489" lineend="492" name="move" signature="move(src, target)" />
+        <scope ilk="function" line="494" lineend="497" name="move_column" signature="move_column(src, target)" />
+        <scope ilk="function" line="500" lineend="502" name="nearest" signature="nearest(y)" />
+        <scope ilk="function" line="504" lineend="506" name="nearest_cell" signature="nearest_cell(x, y)" />
+        <scope ilk="function" line="509" lineend="511" name="nearest_column" signature="nearest_column(x)" />
+        <scope ilk="function" line="514" lineend="517" name="reject_input" signature="reject_input" />
+        <scope ilk="function" line="520" lineend="523" name="reset_sortinfo" signature="reset_sortinfo" />
+        <scope ilk="function" line="526" lineend="529" name="scan_mark" signature="scan_mark(x, y)" />
+        <scope ilk="function" line="531" lineend="534" name="scan_dragto" signature="scan_dragto(x, y)" />
+        <scope ilk="function" line="536" lineend="539" name="see" signature="see(idx)" />
+        <scope ilk="function" line="541" lineend="544" name="see_cell" signature="see_cell(idx)" />
+        <scope ilk="function" line="547" lineend="550" name="see_column" signature="see_column(idx)" />
+        <scope ilk="function" line="553" lineend="556" name="selection_anchor" signature="selection_anchor(idx)" />
+        <scope ilk="function" line="558" lineend="567" name="selection_clear" signature="selection_clear(first, last=nil)" />
+        <scope ilk="function" line="569" lineend="571" name="selection_includes" signature="selection_includes(idx)" />
+        <scope ilk="function" line="573" lineend="582" name="selection_set" signature="selection_set(first, last=nil)" />
+        <scope ilk="function" line="584" lineend="590" name="separatorpath" signature="separatorpath(idx=nil)" />
+        <scope ilk="function" line="592" lineend="594" name="separators" signature="separators" />
+        <scope ilk="function" line="596" lineend="598" name="size" signature="size" />
+        <scope ilk="function" line="600" lineend="614" name="sort" signature="sort(order=nil)" />
+        <scope ilk="function" line="615" lineend="618" name="sort_increasing" signature="sort_increasing" />
+        <scope ilk="function" line="619" lineend="622" name="sort_decreasing" signature="sort_decreasing" />
+        <scope ilk="function" line="626" lineend="640" name="sort_by_column" signature="sort_by_column(idx, order=nil)" />
+        <scope ilk="function" line="641" lineend="644" name="sort_by_column_increasing" signature="sort_by_column_increasing(idx)" />
+        <scope ilk="function" line="645" lineend="648" name="sort_by_column_decreasing" signature="sort_by_column_decreasing(idx)" />
+        <scope ilk="function" line="650" lineend="653" name="sortcolumn" signature="sortcolumn" />
+        <scope ilk="function" line="655" lineend="657" name="sortorder" signature="sortorder" />
+        <scope ilk="function" line="659" lineend="668" name="toggle_visibility" signature="toggle_visibility(first, last=nil)" />
+        <scope ilk="function" line="671" lineend="673" name="windowpath" signature="windowpath(idx)" />
+        <import symbol="Tk::Tcllib::" />
+        <import symbol="Scrollable" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="676" lineend="770" name="Tk::Tcllib::">
+        <scope doc="helper commands" ilk="function" line="679" lineend="681" name="getTablelistPath" signature="getTablelistPath(descendant)" />
+        <scope ilk="function" line="683" lineend="685" name="convEventFields" signature="convEventFields(descendant, x, y)" />
+        <scope doc="with the BWidget package" ilk="function" line="690" lineend="692" name="addBWidgetEntry" signature="addBWidgetEntry(name=None)" />
+        <scope ilk="function" line="694" lineend="696" name="addBWidgetSpinBox" signature="addBWidgetSpinBox(name=None)" />
+        <scope ilk="function" line="698" lineend="700" name="addBWidgetComboBox" signature="addBWidgetComboBox(name=None)" />
+        <scope doc="with the Iwidgets ([incr Widgets]) package" ilk="function" line="705" lineend="707" name="addIncrEntryfield" signature="addIncrEntryfield(name=None)" />
+        <scope ilk="function" line="709" lineend="717" name="addIncrDateTimeWidget" signature="addIncrDateTimeWidget(type, seconds=false, name=None)" />
+        <scope ilk="function" line="719" lineend="721" name="addIncrSpinner" signature="addIncrSpinner(name=None)" />
+        <scope ilk="function" line="723" lineend="725" name="addIncrSpinint" signature="addIncrSpinint(name=None)" />
+        <scope ilk="function" line="727" lineend="729" name="addIncrCombobox" signature="addIncrCombobox(name=None)" />
+        <scope doc="with Bryan Oakley&apos;s combobox package" ilk="function" line="734" lineend="736" name="addOakleyCombobox" signature="addOakleyCombobox(name=None)" />
+        <scope doc="with the multi-entry package Mentry is a library extension" ilk="function" line="740" lineend="747" name="addDateMentry" signature="addDateMentry(format, separator, gmt=false, name=None)" />
+        <scope ilk="function" line="749" lineend="756" name="addTimeMentry" signature="addTimeMentry(format, separator, gmt=false, name=None)" />
+        <scope ilk="function" line="758" lineend="765" name="addFixedPointMentry" signature="addFixedPointMentry(count1, count2, comma=false, name=None)" />
+        <scope ilk="function" line="767" lineend="769" name="addIPAddrMentry" signature="addIPAddrMentry(name=None)" />
+      </scope>
+    </scope>
+    

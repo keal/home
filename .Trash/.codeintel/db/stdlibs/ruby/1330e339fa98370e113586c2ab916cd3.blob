@@ -1,0 +1,29 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/bwidget/setup.rb" symbol="*" />
+      <scope doc="load all image format handlers TkPackage.require(&apos;BWidget&apos;,&#xA;&apos;1.7&apos;)" ilk="namespace" line="18" lineend="151" name="Tk">
+        <scope ilk="namespace" line="19" lineend="150" name="BWidget">
+          <scope attributes="__classmethod__" ilk="function" line="27" lineend="29" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="31" lineend="37" name="package_version" signature="self.package_version" />
+          <scope attributes="__classmethod__" ilk="function" line="39" lineend="45" name="XLFDfont" signature="self.XLFDfont(cmd, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="47" lineend="49" name="assert" signature="self.assert(exp, msg=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="51" lineend="53" name="badOptionString" signature="self.badOptionString(type, value, list)" />
+          <scope attributes="__classmethod__" ilk="function" line="55" lineend="57" name="bindMouseWheel" signature="self.bindMouseWheel(widget)" />
+          <scope attributes="__classmethod__" ilk="function" line="59" lineend="61" name="classes" signature="self.classes(klass)" />
+          <scope attributes="__classmethod__" ilk="function" line="63" lineend="65" name="clonename" signature="self.clonename(menu)" />
+          <scope attributes="__classmethod__" ilk="function" line="67" lineend="69" name="focus" signature="self.focus(opt, path)" />
+          <scope attributes="__classmethod__" ilk="function" line="71" lineend="73" name="get3dcolor" signature="self.get3dcolor(path, bgcolor)" />
+          <scope attributes="__classmethod__" ilk="function" line="75" lineend="77" name="getname" signature="self.getname(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="79" lineend="81" name="grab" signature="self.grab(opt, path)" />
+          <scope attributes="__classmethod__" ilk="function" line="83" lineend="85" name="inuse" signature="self.inuse(klass)" />
+          <scope attributes="__classmethod__" ilk="function" line="87" lineend="89" name="library" signature="self.library(klass, *klasses)" />
+          <scope attributes="__classmethod__" ilk="function" line="91" lineend="93" name="lreorder" signature="self.lreorder(list, neworder)" />
+          <scope attributes="__classmethod__" ilk="function" line="95" lineend="97" name="parsetext" signature="self.parsetext(text)" />
+          <scope attributes="__classmethod__" ilk="function" line="99" lineend="105" name="place" signature="self.place(path, w, h, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="107" lineend="109" name="write" signature="self.write(file, mode=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="111" lineend="113" name="wrongNumArgsString" signature="self.wrongNumArgsString(str)" />
+        </scope>
+      </scope>
+    </scope>
+    

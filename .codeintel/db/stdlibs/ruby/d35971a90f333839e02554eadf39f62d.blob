@@ -1,0 +1,39 @@
+<scope ilk="blob" lang="Ruby" name="xmlrpc/httpserver">
+      <import line="11" module="gserver" symbol="*" />
+      <scope classrefs="GServer" doc="Implements a simple HTTP-server by using John W." ilk="class" line="13" lineend="177" name="HttpServer">
+        <scope attributes="__ctor__" doc="handle_obj specifies the object, that receives calls to&#xA;request_handler and ip_auth_handler" ilk="function" line="18" lineend="22" name="initialize" signature="initialize(handle_obj, port = 8080, host = DEFAULT_HOST, maxConnections = 4, stdlog = $stdout, audit = true, debug = true)" />
+        <scope classrefs="Object" doc="Classes -------------------------------------------------" ilk="class" line="50" lineend="64" name="Request">
+          <scope ilk="function" line="51" lineend="51" name="data" />
+          <scope ilk="function" line="51" lineend="51" name="header" />
+          <scope ilk="function" line="51" lineend="51" name="method" />
+          <scope ilk="function" line="51" lineend="51" name="path" />
+          <scope ilk="function" line="51" lineend="51" name="proto" />
+          <scope attributes="__ctor__" ilk="function" line="53" lineend="56" name="initialize" signature="initialize(data, method=nil, path=nil, proto=nil)" />
+          <scope ilk="function" line="58" lineend="62" name="content_length" signature="content_length" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="66" lineend="75" name="Response">
+          <scope ilk="function" line="67" lineend="67" name="header" />
+          <scope ilk="function" line="68" lineend="68" name="body" />
+          <scope ilk="function" line="68" lineend="68" name="body=" />
+          <scope ilk="function" line="68" lineend="68" name="status" />
+          <scope ilk="function" line="68" lineend="68" name="status=" />
+          <scope ilk="function" line="68" lineend="68" name="status_message" />
+          <scope ilk="function" line="68" lineend="68" name="status_message=" />
+          <scope attributes="__ctor__" ilk="function" line="70" lineend="74" name="initialize" signature="initialize(status=200)" />
+        </scope>
+        <scope classrefs="Object" doc="a case-insensitive Hash class for HTTP header" ilk="class" line="81" lineend="109" name="Table">
+          <scope attributes="__ctor__" ilk="function" line="84" lineend="87" name="initialize" signature="initialize(hash={})" />
+          <scope ilk="function" line="89" lineend="91" name="[]" signature="[](key" />
+          <scope ilk="function" line="93" lineend="95" name="[]=" signature="[]=(key" />
+          <scope ilk="function" line="97" lineend="100" name="update" signature="update(hash)" />
+          <scope ilk="function" line="102" lineend="104" name="each" signature="each" />
+          <scope ilk="function" line="106" lineend="108" name="writeTo" signature="writeTo(port)" />
+          <import symbol="Enumerable" />
+        </scope>
+        <scope doc="class Table Helper Methods&#xA;------------------------------------------" ilk="function" line="114" lineend="122" name="http_header" signature="http_header(header=nil)" />
+        <scope ilk="function" line="124" lineend="126" name="http_date" signature="http_date( aTime )" />
+        <scope ilk="function" line="128" lineend="137" name="http_resp" signature="http_resp(status_code, status_message=nil, header=nil, body=nil)" />
+        <scope doc="Main Serve Loop -----------------------------------------" ilk="function" line="141" lineend="175" name="serve" signature="serve(io)" />
+      </scope>
+    </scope>
+    

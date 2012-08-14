@@ -1,0 +1,243 @@
+<scope ilk="blob" lang="Ruby" name="xsd/datatypes">
+      <import line="9" module="xsd/qname" symbol="*" />
+      <import line="10" module="xsd/charset" symbol="*" />
+      <import line="11" module="uri" symbol="*" />
+      <import line="492" module="rational" symbol="*" />
+      <import line="493" module="date" symbol="*" />
+      <scope doc="XMLSchamaDatatypes general definitions." ilk="namespace" line="17" name="XSD" />
+      <scope classrefs="StandardError" ilk="class" line="80" lineend="80" name="Error" />
+      <scope classrefs="Error" ilk="class" line="81" lineend="81" name="ValueSpaceError" />
+      <scope classrefs="Object" doc="The base class of all datatypes with Namespace." ilk="class" line="87" lineend="106" name="NSDBase">
+        <scope ilk="function" line="90" lineend="90" name="type" />
+        <scope ilk="function" line="90" lineend="90" name="type=" />
+        <scope attributes="__classmethod__" ilk="function" line="92" lineend="94" name="inherited" signature="self.inherited(klass)" />
+        <scope attributes="__classmethod__" ilk="function" line="96" lineend="98" name="types" signature="self.types" />
+        <scope attributes="__ctor__" ilk="function" line="100" lineend="101" name="initialize" signature="initialize" />
+        <scope ilk="function" line="103" lineend="105" name="init" signature="init(type)" />
+      </scope>
+      <scope classrefs="NSDBase" doc="The base class of XSD datatypes." ilk="class" line="112" lineend="172" name="XSDAnySimpleType">
+        <scope ilk="function" line="117" lineend="117" name="data" />
+        <scope ilk="function" line="119" lineend="119" name="is_nil" />
+        <scope ilk="function" line="119" lineend="119" name="is_nil=" />
+        <scope attributes="__ctor__" doc="@is_nil represents this data is nil or not." ilk="function" line="121" lineend="123" name="initialize" signature="initialize(value = nil)" />
+        <scope doc="true or raise" ilk="function" line="126" lineend="129" name="check_lexical_format" signature="check_lexical_format(value)" />
+        <scope doc="set accepts a string which follows lexical space (ex." ilk="function" line="133" lineend="142" name="set" signature="set(value)" />
+        <scope doc="to_s creates a string which follows lexical space (ex.&#xA;String: &quot;123&quot;)." ilk="function" line="145" lineend="151" name="to_s" signature="to_s()" />
+        <scope ilk="function" line="155" lineend="158" name="init" signature="init(type, value)" />
+        <scope doc="raises ValueSpaceError if check failed" ilk="function" line="161" lineend="163" name="screen_data" signature="screen_data(value)" />
+        <scope ilk="function" line="165" lineend="167" name="_set" signature="_set(value)" />
+        <scope ilk="function" line="169" lineend="171" name="_to_s" signature="_to_s" />
+        <import symbol="XSD" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="174" lineend="181" name="XSDNil">
+        <scope attributes="__ctor__" ilk="function" line="178" lineend="180" name="initialize" signature="initialize(value = nil)" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" doc="Primitive datatypes." ilk="class" line="187" lineend="202" name="XSDString">
+        <scope attributes="__ctor__" ilk="function" line="190" lineend="192" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="196" lineend="201" name="screen_data" signature="screen_data(value)" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="204" lineend="227" name="XSDBoolean">
+        <scope attributes="__ctor__" ilk="function" line="207" lineend="209" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="213" lineend="226" name="screen_data" signature="screen_data(value)" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="229" lineend="291" name="XSDDecimal">
+        <scope attributes="__ctor__" ilk="function" line="232" lineend="234" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="236" lineend="238" name="nonzero?" signature="nonzero? (@number" />
+        <scope ilk="function" line="242" lineend="248" name="screen_data" signature="screen_data(d)" />
+        <scope ilk="function" line="250" lineend="271" name="screen_data_str" signature="screen_data_str(str)" />
+        <scope ilk="function" line="273" lineend="281" name="_set" signature="_set(data)" />
+        <scope doc="0.0 -&gt; 0; right?" ilk="function" line="284" lineend="290" name="_to_s" signature="_to_s" />
+      </scope>
+      <scope ilk="namespace" line="293" lineend="300" name="FloatConstants" />
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="302" lineend="365" name="XSDFloat">
+        <scope attributes="__ctor__" ilk="function" line="306" lineend="308" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="312" lineend="336" name="screen_data" signature="screen_data(value)" />
+        <scope ilk="function" line="338" lineend="349" name="_to_s" signature="_to_s" />
+        <scope doc="Convert to single-precision 32-bit floating point value." ilk="function" line="352" lineend="360" name="narrow32bit" signature="narrow32bit(f)" />
+        <scope attributes="__classmethod__" ilk="function" line="362" lineend="364" name="positive?" signature="self.positive?(value)" />
+        <import symbol="FloatConstants" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" doc="Ruby&apos;s Float is double-precision 64-bit floating point&#xA;value." ilk="class" line="368" lineend="420" name="XSDDouble">
+        <scope attributes="__ctor__" ilk="function" line="372" lineend="374" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="378" lineend="406" name="screen_data" signature="screen_data(value)" />
+        <scope ilk="function" line="408" lineend="419" name="_to_s" signature="_to_s" />
+        <import symbol="FloatConstants" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="422" lineend="489" name="XSDDuration">
+        <scope ilk="function" line="425" lineend="425" name="sign" />
+        <scope ilk="function" line="425" lineend="425" name="sign=" />
+        <scope ilk="function" line="426" lineend="426" name="year" />
+        <scope ilk="function" line="426" lineend="426" name="year=" />
+        <scope ilk="function" line="427" lineend="427" name="month" />
+        <scope ilk="function" line="427" lineend="427" name="month=" />
+        <scope ilk="function" line="428" lineend="428" name="day" />
+        <scope ilk="function" line="428" lineend="428" name="day=" />
+        <scope ilk="function" line="429" lineend="429" name="hour" />
+        <scope ilk="function" line="429" lineend="429" name="hour=" />
+        <scope ilk="function" line="430" lineend="430" name="min" />
+        <scope ilk="function" line="430" lineend="430" name="min=" />
+        <scope ilk="function" line="431" lineend="431" name="sec" />
+        <scope ilk="function" line="431" lineend="431" name="sec=" />
+        <scope attributes="__ctor__" ilk="function" line="433" lineend="435" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="439" lineend="456" name="screen_data" signature="screen_data(value)" />
+        <scope ilk="function" line="458" lineend="466" name="_set" signature="_set(data)" />
+        <scope ilk="function" line="468" lineend="488" name="_to_s" signature="_to_s" />
+      </scope>
+      <scope ilk="namespace" line="495" lineend="585" name="XSDDateTimeImpl">
+        <scope doc="24 * 60 * 60" ilk="function" line="498" lineend="508" name="to_obj" signature="to_obj(klass)" />
+        <scope ilk="function" line="510" lineend="524" name="to_time" signature="to_time" />
+        <scope ilk="function" line="526" lineend="528" name="to_date" signature="to_date" />
+        <scope ilk="function" line="530" lineend="532" name="to_datetime" signature="to_datetime" />
+        <scope ilk="function" line="534" lineend="549" name="tz2of" signature="tz2of(str)" />
+        <scope ilk="function" line="551" lineend="559" name="of2tz" signature="of2tz(offset)" />
+        <scope ilk="function" line="561" lineend="580" name="screen_data" signature="screen_data(t)" />
+        <scope ilk="function" line="582" lineend="584" name="add_tz" signature="add_tz(s)" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="587" lineend="648" name="XSDDateTime">
+        <scope attributes="__ctor__" ilk="function" line="591" lineend="593" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="597" lineend="624" name="screen_data_str" signature="screen_data_str(t)" />
+        <scope ilk="function" line="626" lineend="632" name="_set" signature="_set(data)" />
+        <scope ilk="function" line="634" lineend="647" name="_to_s" signature="_to_s" />
+        <import symbol="XSDDateTimeImpl" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="650" lineend="698" name="XSDTime">
+        <scope attributes="__ctor__" ilk="function" line="654" lineend="656" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="660" lineend="676" name="screen_data_str" signature="screen_data_str(t)" />
+        <scope ilk="function" line="678" lineend="684" name="_set" signature="_set(data)" />
+        <scope ilk="function" line="686" lineend="697" name="_to_s" signature="_to_s" />
+        <import symbol="XSDDateTimeImpl" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="700" lineend="730" name="XSDDate">
+        <scope attributes="__ctor__" ilk="function" line="704" lineend="706" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="710" lineend="723" name="screen_data_str" signature="screen_data_str(t)" />
+        <scope ilk="function" line="725" lineend="729" name="_to_s" signature="_to_s" />
+        <import symbol="XSDDateTimeImpl" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="732" lineend="761" name="XSDGYearMonth">
+        <scope attributes="__ctor__" ilk="function" line="736" lineend="738" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="742" lineend="754" name="screen_data_str" signature="screen_data_str(t)" />
+        <scope ilk="function" line="756" lineend="760" name="_to_s" signature="_to_s" />
+        <import symbol="XSDDateTimeImpl" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="763" lineend="791" name="XSDGYear">
+        <scope attributes="__ctor__" ilk="function" line="767" lineend="769" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="773" lineend="784" name="screen_data_str" signature="screen_data_str(t)" />
+        <scope ilk="function" line="786" lineend="790" name="_to_s" signature="_to_s" />
+        <import symbol="XSDDateTimeImpl" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="793" lineend="818" name="XSDGMonthDay">
+        <scope attributes="__ctor__" ilk="function" line="797" lineend="799" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="803" lineend="812" name="screen_data_str" signature="screen_data_str(t)" />
+        <scope ilk="function" line="814" lineend="817" name="_to_s" signature="_to_s" />
+        <import symbol="XSDDateTimeImpl" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="820" lineend="844" name="XSDGDay">
+        <scope attributes="__ctor__" ilk="function" line="824" lineend="826" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="830" lineend="838" name="screen_data_str" signature="screen_data_str(t)" />
+        <scope ilk="function" line="840" lineend="843" name="_to_s" signature="_to_s" />
+        <import symbol="XSDDateTimeImpl" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="846" lineend="870" name="XSDGMonth">
+        <scope attributes="__ctor__" ilk="function" line="850" lineend="852" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="856" lineend="864" name="screen_data_str" signature="screen_data_str(t)" />
+        <scope ilk="function" line="866" lineend="869" name="_to_s" signature="_to_s" />
+        <import symbol="XSDDateTimeImpl" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="872" lineend="897" name="XSDHexBinary">
+        <scope attributes="__ctor__" doc="String in Ruby could be a binary." ilk="function" line="876" lineend="878" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="880" lineend="886" name="set_encoded" signature="set_encoded(value)" />
+        <scope ilk="function" line="888" lineend="890" name="string" signature="string" />
+        <scope ilk="function" line="894" lineend="896" name="screen_data" signature="screen_data(value)" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="899" lineend="924" name="XSDBase64Binary">
+        <scope attributes="__ctor__" doc="String in Ruby could be a binary." ilk="function" line="903" lineend="905" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="907" lineend="913" name="set_encoded" signature="set_encoded(value)" />
+        <scope ilk="function" line="915" lineend="917" name="string" signature="string" />
+        <scope ilk="function" line="921" lineend="923" name="screen_data" signature="screen_data(value)" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="926" lineend="942" name="XSDAnyURI">
+        <scope attributes="__ctor__" ilk="function" line="929" lineend="931" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="935" lineend="941" name="screen_data" signature="screen_data(value)" />
+      </scope>
+      <scope classrefs="XSDAnySimpleType" ilk="class" line="944" lineend="980" name="XSDQName">
+        <scope attributes="__ctor__" ilk="function" line="947" lineend="949" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="953" lineend="961" name="screen_data" signature="screen_data(value)" />
+        <scope ilk="function" line="963" lineend="971" name="_set" signature="_set(data)" />
+        <scope ilk="function" line="973" lineend="979" name="_to_s" signature="_to_s" />
+      </scope>
+      <scope classrefs="XSDString" doc="Derived types" ilk="class" line="986" lineend="1001" name="XSDNormalizedString">
+        <scope attributes="__ctor__" ilk="function" line="989" lineend="991" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="995" lineend="1000" name="screen_data" signature="screen_data(value)" />
+      </scope>
+      <scope classrefs="XSDDecimal" ilk="class" line="1003" lineend="1050" name="XSDInteger">
+        <scope attributes="__ctor__" ilk="function" line="1006" lineend="1008" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="10121501212" lineend="1022" name="screen_data_str" signature="screen_data_str(str)" />
+        <scope ilk="function" line="1024" lineend="1026" name="_set" signature="_set(value)" />
+        <scope ilk="function" line="1028" lineend="1030" name="_to_s" signature="_to_s()" />
+        <scope ilk="function" line="1032" lineend="1036" name="validate" signature="validate(v)" />
+        <scope ilk="function" line="1038" lineend="1040" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1042" lineend="1044" name="mininclusive" signature="mininclusive" />
+        <scope ilk="function" line="1047" lineend="1049" name="positive" signature="positive(v)" />
+      </scope>
+      <scope classrefs="XSDInteger" ilk="class" line="1052" lineend="1068" name="XSDNonPositiveInteger">
+        <scope attributes="__ctor__" ilk="function" line="1055" lineend="1057" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1061" lineend="1063" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1065" lineend="1067" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDNonPositiveInteger" ilk="class" line="1070" lineend="1086" name="XSDNegativeInteger">
+        <scope attributes="__ctor__" ilk="function" line="1073" lineend="1075" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1079" lineend="1081" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1083" lineend="1085" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDInteger" ilk="class" line="1088" lineend="1104" name="XSDLong">
+        <scope attributes="__ctor__" ilk="function" line="1091" lineend="1093" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1097" lineend="1099" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1101" lineend="1103" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDLong" ilk="class" line="1106" lineend="1122" name="XSDInt">
+        <scope attributes="__ctor__" ilk="function" line="1109" lineend="1111" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1115" lineend="1117" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1119" lineend="1121" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDInt" ilk="class" line="1124" lineend="1140" name="XSDShort">
+        <scope attributes="__ctor__" ilk="function" line="1127" lineend="1129" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1133" lineend="1135" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1137" lineend="1139" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDShort" ilk="class" line="1142" lineend="1158" name="XSDByte">
+        <scope attributes="__ctor__" ilk="function" line="1145" lineend="1147" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1151" lineend="1153" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1155" lineend="1157" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDInteger" ilk="class" line="1160" lineend="1176" name="XSDNonNegativeInteger">
+        <scope attributes="__ctor__" ilk="function" line="1163" lineend="1165" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1169" lineend="1171" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1173" lineend="1175" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDNonNegativeInteger" ilk="class" line="1178" lineend="1194" name="XSDUnsignedLong">
+        <scope attributes="__ctor__" ilk="function" line="1181" lineend="1183" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1187" lineend="1189" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1191" lineend="1193" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDUnsignedLong" ilk="class" line="1196" lineend="1212" name="XSDUnsignedInt">
+        <scope attributes="__ctor__" ilk="function" line="1199" lineend="1201" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1205" lineend="1207" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1209" lineend="1211" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDUnsignedInt" ilk="class" line="1214" lineend="1230" name="XSDUnsignedShort">
+        <scope attributes="__ctor__" ilk="function" line="1217" lineend="1219" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1223" lineend="1225" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1227" lineend="1229" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDUnsignedShort" ilk="class" line="1232" lineend="1248" name="XSDUnsignedByte">
+        <scope attributes="__ctor__" ilk="function" line="1235" lineend="1237" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1241" lineend="1243" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1245" lineend="1247" name="mininclusive" signature="mininclusive" />
+      </scope>
+      <scope classrefs="XSDNonNegativeInteger" ilk="class" line="1250" lineend="1266" name="XSDPositiveInteger">
+        <scope attributes="__ctor__" ilk="function" line="1253" lineend="1255" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="1259" lineend="1261" name="maxinclusive" signature="maxinclusive" />
+        <scope ilk="function" line="1263" lineend="1265" name="mininclusive" signature="mininclusive" />
+      </scope>
+    </scope>
+    

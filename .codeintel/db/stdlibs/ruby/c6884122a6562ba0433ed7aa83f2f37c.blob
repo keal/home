@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_driver">
+      <import line="1" module="rdoc/usage" symbol="*" />
+      <import line="2" module="rdoc/ri/ri_paths" symbol="*" />
+      <import line="3" module="rdoc/ri/ri_cache" symbol="*" />
+      <import line="4" module="rdoc/ri/ri_util" symbol="*" />
+      <import line="5" module="rdoc/ri/ri_reader" symbol="*" />
+      <import line="6" module="rdoc/ri/ri_formatter" symbol="*" />
+      <import line="7" module="rdoc/ri/ri_options" symbol="*" />
+      <scope classrefs="Object" ilk="class" line="12" lineend="145" name="RiDriver">
+        <scope attributes="__ctor__" ilk="function" line="14" lineend="30" name="initialize" signature="initialize" />
+        <scope doc="Couldn&apos;t find documentation in paths, so tell the user what&#xA;to do" ilk="function" line="35" lineend="42" name="report_missing_documentation" signature="report_missing_documentation(paths)" />
+        <scope doc="If the list of matching methods contains exactly one entry,&#xA;or if it contains an entry that exactly matches the&#xA;requested method, then display that entry, otherwise display&#xA;the list of matching method names" ilk="function" line="51" lineend="64" name="report_method_stuff" signature="report_method_stuff(requested_method_name, methods)" />
+        <scope ilk="function" line="68" lineend="81" name="report_class_stuff" signature="report_class_stuff(namespaces)" />
+        <scope ilk="function" line="86" lineend="118" name="get_info_for" signature="get_info_for(arg)" />
+        <scope ilk="function" line="122" lineend="143" name="process_args" signature="process_args" />
+      </scope>
+    </scope>
+    

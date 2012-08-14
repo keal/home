@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encodings/CP-1252">
+      <scope doc="This class was contributed by Mikko Tiihonen mikko DOT&#xA;tiihonen AT hut DOT fi" ilk="namespace" line="4" lineend="98" name="REXML">
+        <scope ilk="namespace" line="5" lineend="97" name="Encoding" />
+      </scope>
+    </scope>
+    

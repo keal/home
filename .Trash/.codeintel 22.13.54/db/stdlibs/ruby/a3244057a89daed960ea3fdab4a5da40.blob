@@ -1,0 +1,96 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tkHTML/htmlwidget">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/tkHTML/setup.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;Tkhtml&apos;, &apos;2.0&apos;)" ilk="namespace" line="17" lineend="35" name="Tk">
+        <scope classrefs="TkWindow" ilk="class" line="18" lineend="34" name="HTML_Widget">
+          <scope attributes="__classmethod__" ilk="function" line="20" lineend="22" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="24" lineend="30" name="package_version" signature="self.package_version" />
+          <scope classrefs="TkWindow" ilk="class" line="32" lineend="33" name="ClippingWindow" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="37" lineend="88" name="Tk::HTML_Widget::">
+        <scope attributes="__classmethod__" ilk="function" line="44" lineend="76" name="new" signature="self.new(parent, keys={})" />
+        <scope attributes="__ctor__" ilk="function" line="78" lineend="83" name="initialize" signature="initialize(parent)" />
+        <scope ilk="function" line="85" lineend="87" name="method_missing" signature="method_missing(m, *args, &amp;b)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="90" lineend="444" name="Tk::HTML_Widget">
+        <scope ilk="function" line="97" lineend="104" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="107" lineend="109" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope attributes="__classmethod__" doc="class methods" ilk="function" line="115" lineend="117" name="reformat" signature="self.reformat(src, dst, txt)" />
+        <scope attributes="__classmethod__" ilk="function" line="119" lineend="121" name="url_join" signature="self.url_join(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="123" lineend="125" name="url_split" signature="self.url_split(uri)" />
+        <scope attributes="__classmethod__" ilk="function" line="127" lineend="129" name="lockcopy" signature="self.lockcopy(src, dst)" />
+        <scope attributes="__classmethod__" ilk="function" line="131" lineend="133" name="gzip_file" signature="self.gzip_file(file, dat)" />
+        <scope attributes="__classmethod__" ilk="function" line="135" lineend="137" name="gunzip_file" signature="self.gunzip_file(file, dat)" />
+        <scope attributes="__classmethod__" ilk="function" line="139" lineend="141" name="gzip_data" signature="self.gzip_data(dat)" />
+        <scope attributes="__classmethod__" ilk="function" line="143" lineend="145" name="gunzip_data" signature="self.gunzip_data(dat)" />
+        <scope attributes="__classmethod__" ilk="function" line="147" lineend="149" name="base64_encode" signature="self.base64_encode(dat)" />
+        <scope attributes="__classmethod__" ilk="function" line="151" lineend="153" name="base64_decode" signature="self.base64_decode(dat)" />
+        <scope attributes="__classmethod__" ilk="function" line="155" lineend="157" name="text_format" signature="self.text_format(dat, len)" />
+        <scope attributes="__classmethod__" ilk="function" line="159" lineend="161" name="xor" signature="self.xor(cmd, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="163" lineend="165" name="stdchan" signature="self.stdchan(cmd, channel)" />
+        <scope attributes="__classmethod__" ilk="function" line="167" lineend="169" name="crc32" signature="self.crc32(data)" />
+        <scope doc="instance methods" ilk="function" line="174" lineend="176" name="clipping_window" signature="clipping_window" />
+        <scope ilk="function" line="180" lineend="183" name="bgimage" signature="bgimage(image, tid=None)" />
+        <scope ilk="function" line="185" lineend="188" name="clear" signature="clear()" />
+        <scope ilk="function" line="190" lineend="192" name="coords" signature="coords(index=None, percent=None)" />
+        <scope ilk="function" line="194" lineend="196" name="forminfo" signature="forminfo(*args)" />
+        <scope ilk="function" line="199" lineend="201" name="href" signature="href(x, y)" />
+        <scope ilk="function" line="203" lineend="206" name="image_add" signature="image_add(id, img)" />
+        <scope ilk="function" line="208" lineend="210" name="image_at" signature="image_at(x, y)" />
+        <scope ilk="function" line="212" lineend="214" name="images" signature="images()" />
+        <scope ilk="function" line="216" lineend="219" name="image_set" signature="image_set(id, num)" />
+        <scope ilk="function" line="221" lineend="224" name="image_update" signature="image_update(id, imgs)" />
+        <scope ilk="function" line="226" lineend="228" name="index" signature="index(idx, count=None, unit=None)" />
+        <scope ilk="function" line="230" lineend="232" name="insert_cursor" signature="insert_cursor(idx)" />
+        <scope ilk="function" line="234" lineend="236" name="names" signature="names()" />
+        <scope ilk="function" line="238" lineend="240" name="on_screen" signature="on_screen(id, x, y)" />
+        <scope ilk="function" line="242" lineend="244" name="over" signature="over(x, y)" />
+        <scope ilk="function" line="246" lineend="248" name="over_markup" signature="over_markup(x, y)" />
+        <scope ilk="function" line="250" lineend="252" name="over_attr" signature="over_attr(x, y, attrs)" />
+        <scope ilk="function" line="254" lineend="257" name="parse" signature="parse(txt)" />
+        <scope ilk="function" line="259" lineend="261" name="resolver" signature="resolver(*uri_args)" />
+        <scope ilk="function" line="263" lineend="266" name="selection_clear" signature="selection_clear()" />
+        <scope ilk="function" line="268" lineend="271" name="selection_set" signature="selection_set(first, last)" />
+        <scope ilk="function" line="273" lineend="275" name="refresh" signature="refresh(*opts)" />
+        <scope ilk="function" line="277" lineend="279" name="layout" signature="layout()" />
+        <scope ilk="function" line="281" lineend="283" name="sizewindow" signature="sizewindow(*args)" />
+        <scope ilk="function" line="285" lineend="287" name="postscript" signature="postscript(*args)" />
+        <scope ilk="function" line="289" lineend="291" name="source" signature="source()" />
+        <scope ilk="function" line="293" lineend="295" name="plain_text" signature="plain_text(first, last)" />
+        <scope ilk="function" line="299" lineend="302" name="text_delete" signature="text_delete(first, last)" />
+        <scope ilk="function" line="304" lineend="306" name="html_text" signature="html_text(first, last)" />
+        <scope ilk="function" line="309" lineend="312" name="text_insert" signature="text_insert(idx, txt)" />
+        <scope ilk="function" line="314" lineend="316" name="break_text" signature="break_text(idx)" />
+        <scope ilk="function" line="319" lineend="321" name="text_find" signature="text_find(txt, *args)" />
+        <scope ilk="function" line="323" lineend="325" name="text_table" signature="text_table(idx, imgs=None, attrs=None)" />
+        <scope ilk="function" line="327" lineend="330" name="token_append" signature="token_append(tag, *args)" />
+        <scope ilk="function" line="332" lineend="335" name="token_delete" signature="token_delete(first, last=None)" />
+        <scope ilk="function" line="337" lineend="340" name="token_define" signature="token_define(*args)" />
+        <scope ilk="function" line="342" lineend="344" name="token_find" signature="token_find(tag, *args)" />
+        <scope ilk="function" line="346" lineend="348" name="token_get" signature="token_get(first, last=None)" />
+        <scope ilk="function" line="350" lineend="352" name="token_list" signature="token_list(first, last=None)" />
+        <scope ilk="function" line="354" lineend="356" name="token_markup" signature="token_markup(first, last=None)" />
+        <scope ilk="function" line="358" lineend="360" name="token_DOM" signature="token_DOM(first, last=None)" />
+        <scope ilk="function" line="365" lineend="367" name="token_get_end" signature="token_get_end(idx)" />
+        <scope ilk="function" line="370" lineend="372" name="token_offset" signature="token_offset(start, num1, num2)" />
+        <scope ilk="function" line="374" lineend="376" name="token_get_attr" signature="token_get_attr(idx, name=None)" />
+        <scope ilk="function" line="378" lineend="381" name="token_set_attr" signature="token_set_attr(idx, name=None, val=None)" />
+        <scope ilk="function" line="383" lineend="391" name="token_handler" signature="token_handler(tag, cmd=nil, &amp;b)" />
+        <scope ilk="function" line="393" lineend="396" name="token_insert" signature="token_insert(idx, tag, *args)" />
+        <scope ilk="function" line="398" lineend="400" name="token_attrs" signature="token_attrs(*args)" />
+        <scope ilk="function" line="402" lineend="404" name="token_unique" signature="token_unique(*args)" />
+        <scope ilk="function" line="406" lineend="408" name="token_on_events" signature="token_on_events(*args)" />
+        <scope ilk="function" line="410" lineend="412" name="dom_nameidx" signature="dom_nameidx(tag, name)" />
+        <scope ilk="function" line="415" lineend="417" name="dom_radioidx" signature="dom_radioidx(tag, name)" />
+        <scope ilk="function" line="420" lineend="422" name="dom_id" signature="dom_id(*spec)" />
+        <scope ilk="function" line="424" lineend="426" name="dom_ids" signature="dom_ids(*spec)" />
+        <scope ilk="function" line="428" lineend="430" name="dom_value" signature="dom_value(*spec)" />
+        <scope ilk="function" line="432" lineend="434" name="dom_attr" signature="dom_attr(idx)" />
+        <scope ilk="function" line="436" lineend="438" name="dom_formel" signature="dom_formel(name)" />
+        <scope ilk="function" line="441" lineend="443" name="dom_tree" signature="dom_tree(idx, val)" />
+        <import symbol="Scrollable" />
+      </scope>
+    </scope>
+    

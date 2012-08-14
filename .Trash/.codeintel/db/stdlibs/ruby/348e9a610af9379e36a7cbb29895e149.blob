@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/messagedlg">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="8" module="tkextlib/bwidget/dialog.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/messagedlg.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="12" lineend="13" name="MessageDlg" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="178" name="Tk::BWidget::">
+        <scope attributes="__ctor__" ilk="function" line="22" lineend="37" name="initialize" signature="initialize(parent=nil, keys=nil)" />
+        <scope ilk="function" line="39" lineend="44" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="47" lineend="49" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="52" lineend="54" name="__listval_optkeys" signature="__listval_optkeys" />
+        <scope ilk="function" line="57" lineend="67" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="69" lineend="121" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="123" lineend="173" name="configinfo" signature="configinfo(slot=nil)" />
+        <scope ilk="function" line="175" lineend="177" name="create" signature="create" />
+      </scope>
+    </scope>
+    

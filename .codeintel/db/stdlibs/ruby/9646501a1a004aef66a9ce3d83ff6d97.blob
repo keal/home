@@ -1,0 +1,172 @@
+<scope ilk="blob" lang="Ruby" name="drb/drb">
+      <import line="54" module="socket" symbol="*" />
+      <import line="55" module="thread" symbol="*" />
+      <import line="56" module="fcntl" symbol="*" />
+      <import line="57" module="drb/eq" symbol="*" />
+      <scope doc="== Overview" ilk="namespace" line="350" lineend="1756" name="DRb">
+        <scope classrefs="RuntimeError" doc="Superclass of all errors raised in the DRb module." ilk="class" line="353" lineend="353" name="DRbError" />
+        <scope classrefs="DRbError" doc="Error raised when an error occurs on the underlying&#xA;communication protocol." ilk="class" line="357" lineend="357" name="DRbConnError" />
+        <scope classrefs="Object" doc="Class responsible for converting between an object and its&#xA;id." ilk="class" line="368" lineend="385" name="DRbIdConv">
+          <scope doc="Convert an object reference id to an object." ilk="function" line="374" lineend="376" name="to_obj" signature="to_obj(ref)" />
+          <scope doc="Convert an object into a reference id." ilk="function" line="382" lineend="384" name="to_id" signature="to_id(obj)" />
+        </scope>
+        <scope doc="Mixin module making an object undumpable or unmarshallable." ilk="namespace" line="393" lineend="397" name="DRbUndumped">
+          <scope ilk="function" line="394" lineend="396" name="_dump" signature="_dump(dummy)" />
+        </scope>
+        <scope classrefs="DRbError" doc="Error raised by the DRb module when an attempt is made to&#xA;refer to the context&apos;s current drb server but the context&#xA;does not have one." ilk="class" line="402" lineend="402" name="DRbServerNotFound" />
+        <scope classrefs="DRbError" doc="Error raised by the DRbProtocol module when it cannot find&#xA;any protocol implementation support the scheme specified in&#xA;a URI." ilk="class" line="406" lineend="406" name="DRbBadURI" />
+        <scope classrefs="DRbError" doc="Error raised by a dRuby protocol when it doesn&apos;t support the&#xA;scheme specified in a URI." ilk="class" line="410" lineend="410" name="DRbBadScheme" />
+        <scope classrefs="DRbError" doc="An exception wrapping a DRb::DRbUnknown object" ilk="class" line="413" lineend="431" name="DRbUnknownError">
+          <scope attributes="__ctor__" doc="Create a new DRbUnknownError for the DRb::DRbUnknown object&#xA;+unknown+" ilk="function" line="416" lineend="419" name="initialize" signature="initialize(unknown)" />
+          <scope ilk="function" line="422" lineend="422" name="unknown" />
+          <scope attributes="__classmethod__" doc="Get the wrapped DRb::DRbUnknown object." ilk="function" line="424" lineend="426" name="_load" signature="self._load(s)" />
+          <scope ilk="function" line="428" lineend="430" name="_dump" signature="_dump(lv)" />
+        </scope>
+        <scope classrefs="DRbError" ilk="class" line="433" lineend="440" name="DRbRemoteError">
+          <scope attributes="__ctor__" ilk="function" line="434" lineend="438" name="initialize" signature="initialize(error)" />
+          <scope ilk="function" line="439" lineend="439" name="reason" />
+        </scope>
+        <scope classrefs="Object" doc="Class wrapping a marshalled object whose type is unknown&#xA;locally." ilk="class" line="455" lineend="509" name="DRbUnknown">
+          <scope attributes="__ctor__" doc="Create a new DRbUnknown object." ilk="function" line="463" lineend="473" name="initialize" signature="initialize(err, buf)" />
+          <scope ilk="function" line="479" lineend="479" name="name" />
+          <scope ilk="function" line="482" lineend="482" name="buf" />
+          <scope attributes="__classmethod__" doc="Buffer contained the marshalled, unknown object." ilk="function" line="484" lineend="490" name="_load" signature="self._load(s)" />
+          <scope ilk="function" line="492" lineend="494" name="_dump" signature="_dump(lv)" />
+          <scope doc="Attempt to load the wrapped marshalled object again." ilk="function" line="501" lineend="503" name="reload" signature="reload" />
+          <scope doc="Create a DRbUnknownError exception containing this object." ilk="function" line="506" lineend="508" name="exception" signature="exception" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="511" lineend="534" name="DRbArray">
+          <scope attributes="__ctor__" ilk="function" line="512" lineend="525" name="initialize" signature="initialize(ary)" />
+          <scope attributes="__classmethod__" ilk="function" line="527" lineend="529" name="_load" signature="self._load(s)" />
+          <scope ilk="function" line="531" lineend="533" name="_dump" signature="_dump(lv)" />
+        </scope>
+        <scope classrefs="Object" doc="Handler for sending and receiving drb messages." ilk="class" line="545" lineend="642" name="DRbMessage">
+          <scope attributes="__ctor__" ilk="function" line="546" lineend="549" name="initialize" signature="initialize(config)" />
+          <scope ilk="function" line="551" lineend="559" name="dump" signature="dump(obj, error=false)" />
+          <scope ilk="function" line="561" lineend="592" name="load" signature="load(soc)" />
+          <scope ilk="function" line="594" lineend="606" name="send_request" signature="send_request(stream, ref, msg_id, arg, b)" />
+          <scope ilk="function" line="608" lineend="620" name="recv_request" signature="recv_request(stream)" />
+          <scope ilk="function" line="622" lineend="626" name="send_reply" signature="send_reply(stream, succ, result)" />
+          <scope ilk="function" line="628" lineend="632" name="recv_reply" signature="recv_reply(stream)" />
+          <scope ilk="function" line="635" lineend="641" name="make_proxy" signature="make_proxy(obj, error=false)" />
+        </scope>
+        <scope doc="Module managing the underlying network protocol(s) used by&#xA;drb." ilk="namespace" line="710" lineend="797" name="DRbProtocol">
+          <scope doc="Add a new protocol to the DRbProtocol module." ilk="function" line="713" lineend="715" name="add_protocol" signature="add_protocol(prot)" />
+          <scope doc="Open a client connection to +uri+ with the configuration&#xA;+config+." ilk="function" line="725" lineend="741" name="open" signature="open(uri, config, first=true)" />
+          <scope doc="Open a server listening for connections at +uri+ with&#xA;configuration +config+." ilk="function" line="753" lineend="765" name="open_server" signature="open_server(uri, config, first=true)" />
+          <scope doc="Parse +uri+ into a [uri, option] pair." ilk="function" line="774" lineend="788" name="uri_option" signature="uri_option(uri, config, first=true)" />
+          <scope ilk="function" line="791" lineend="795" name="auto_load" signature="auto_load(uri, config)" />
+        </scope>
+        <scope classrefs="Object" doc="The default drb protocol." ilk="class" line="802" lineend="962" name="DRbTCPSocket">
+          <scope attributes="__classmethod__" ilk="function" line="804" lineend="814" name="parse_uri" signature="self.parse_uri(uri)" />
+          <scope attributes="__classmethod__" doc="Open a client connection to +uri+ using configuration&#xA;+config+." ilk="function" line="819" lineend="825" name="open" signature="self.open(uri, config)" />
+          <scope attributes="__classmethod__" ilk="function" line="827" lineend="834" name="getservername" signature="self.getservername" />
+          <scope attributes="__classmethod__" ilk="function" line="836" lineend="851" name="open_server_inaddr_any" signature="self.open_server_inaddr_any(host, port)" />
+          <scope attributes="__classmethod__" doc="Open a server listening for connections at +uri+ using&#xA;configuration +config+." ilk="function" line="855" lineend="867" name="open_server" signature="self.open_server(uri, config)" />
+          <scope attributes="__classmethod__" doc="Parse +uri+ into a [uri, option] pair." ilk="function" line="870" lineend="873" name="uri_option" signature="self.uri_option(uri, config)" />
+          <scope attributes="__ctor__" doc="Create a new DRbTCPSocket instance." ilk="function" line="880" lineend="887" name="initialize" signature="initialize(uri, soc, config={})" />
+          <scope ilk="function" line="890" lineend="890" name="uri" />
+          <scope doc="Get the address of our TCP peer (the other end of the socket&#xA;we are bound to." ilk="function" line="894" lineend="896" name="peeraddr" signature="peeraddr" />
+          <scope doc="Get the socket." ilk="function" line="899" name="stream" signature="stream" />
+          <scope doc="On the client side, send a request to the server." ilk="function" line="902" lineend="904" name="send_request" signature="send_request(ref, msg_id, arg, b)" />
+          <scope doc="On the server side, receive a request from the client." ilk="function" line="907" lineend="909" name="recv_request" signature="recv_request" />
+          <scope doc="On the server side, send a reply to the client." ilk="function" line="912" lineend="914" name="send_reply" signature="send_reply(succ, result)" />
+          <scope doc="On the client side, receive a reply from the server." ilk="function" line="917" lineend="919" name="recv_reply" signature="recv_reply" />
+          <scope doc="Close the connection." ilk="function" line="929" lineend="934" name="close" signature="close" />
+          <scope doc="On the server side, for an instance returned by&#xA;#open_server, accept a client connection and return a new&#xA;instance to handle the server&apos;s side of this client-server&#xA;session." ilk="function" line="939" lineend="946" name="accept" signature="accept" />
+          <scope doc="Check to see if this connection is alive." ilk="function" line="949" lineend="956" name="alive?" signature="alive?" />
+          <scope ilk="function" line="958" lineend="961" name="set_sockopt" signature="set_sockopt(soc)" />
+        </scope>
+        <scope ilk="namespace" line="964" lineend="966" name="DRbProtocol" />
+        <scope classrefs="Object" ilk="class" line="968" lineend="985" name="DRbURIOption">
+          <scope attributes="__ctor__" doc=":nodoc:  I don&apos;t understand the purpose of this class..." ilk="function" line="969" lineend="971" name="initialize" signature="initialize(option)" />
+          <scope ilk="function" line="972" lineend="972" name="option" />
+          <scope ilk="function" line="973" name="to_s" signature="to_s" />
+          <scope ilk="function" line="975" lineend="978" name="==" signature="==(other" />
+          <scope ilk="function" line="980" lineend="982" name="hash" signature="hash" />
+        </scope>
+        <scope classrefs="Object" doc="Object wrapping a reference to a remote drb object." ilk="class" line="991" lineend="1133" name="DRbObject">
+          <scope attributes="__classmethod__" doc="Unmarshall a marshalled DRbObject." ilk="function" line="998" lineend="1010" name="_load" signature="self._load(s)" />
+          <scope attributes="__classmethod__" ilk="function" line="10121501212" lineend="1017" name="new_with" signature="self.new_with(uri, ref)" />
+          <scope attributes="__classmethod__" doc="Create a new DRbObject from a URI alone." ilk="function" line="1020" lineend="1022" name="new_with_uri" signature="self.new_with_uri(uri)" />
+          <scope doc="Marshall this object." ilk="function" line="1027" lineend="1029" name="_dump" signature="_dump(lv)" />
+          <scope attributes="__ctor__" doc="Create a new remote object stub." ilk="function" line="1036" lineend="1047" name="initialize" signature="initialize(obj, uri=nil)" />
+          <scope doc="Get the URI of the remote object." ilk="function" line="1050" lineend="1052" name="__drburi" signature="__drburi" />
+          <scope doc="Get the reference of the object, if local." ilk="function" line="1055" lineend="1057" name="__drbref" signature="__drbref" />
+          <scope ilk="function" line="1062" lineend="1071" name="respond_to?" signature="respond_to?(msg_id, priv=false)" />
+          <scope doc="Routes method calls to the referenced object." ilk="function" line="1074" lineend="1096" name="method_missing" signature="method_missing(msg_id, *a, &amp;b)" />
+          <scope attributes="__classmethod__" ilk="function" line="1098" lineend="1107" name="with_friend" signature="self.with_friend(uri)" />
+          <scope attributes="__classmethod__" ilk="function" line="1109" lineend="1121" name="prepare_backtrace" signature="self.prepare_backtrace(uri, result)" />
+          <scope ilk="function" line="1123" lineend="1125" name="pretty_print" signature="pretty_print(q)" />
+          <scope ilk="function" line="1127" lineend="1132" name="pretty_print_cycle" signature="pretty_print_cycle(q)" />
+        </scope>
+        <scope classrefs="Object" doc="Class handling the connection between a DRbObject and the&#xA;server the real object lives on." ilk="class" line="1144" lineend="1203" name="DRbConn">
+          <scope attributes="__classmethod__" doc=":nodoc:" ilk="function" line="1149" lineend="1182" name="open" signature="self.open(remote_uri)" />
+          <scope attributes="__ctor__" ilk="function" line="1184" lineend="1187" name="initialize" signature="initialize(remote_uri)" />
+          <scope ilk="function" line="1188" lineend="1188" name="uri" />
+          <scope doc=":nodoc:" ilk="function" line="1190" lineend="1193" name="send_message" signature="send_message(ref, msg_id, arg, block)" />
+          <scope ilk="function" line="1195" lineend="1198" name="close" signature="close" />
+          <scope ilk="function" line="1200" lineend="1202" name="alive?" signature="alive?" />
+        </scope>
+        <scope classrefs="Object" doc="Class representing a drb server instance." ilk="class" line="1216" lineend="1604" name="DRbServer">
+          <import line="1559" module="drb/invokemethod" symbol="*" />
+          <import line="1564" module="drb/invokemethod16" symbol="*" />
+          <scope attributes="__classmethod__" doc="Set the default value for the :argc_limit option." ilk="function" line="1228" lineend="1230" name="default_argc_limit" signature="self.default_argc_limit(argc)" />
+          <scope attributes="__classmethod__" doc="Set the default value for the :load_limit option." ilk="function" line="1235" lineend="1237" name="default_load_limit" signature="self.default_load_limit(sz)" />
+          <scope attributes="__classmethod__" doc="Set the default value for the :acl option." ilk="function" line="1242" lineend="1244" name="default_acl" signature="self.default_acl(acl)" />
+          <scope attributes="__classmethod__" doc="Set the default value for the :id_conv option." ilk="function" line="1249" lineend="1251" name="default_id_conv" signature="self.default_id_conv(idconv)" />
+          <scope attributes="__classmethod__" ilk="function" line="1253" lineend="1255" name="default_safe_level" signature="self.default_safe_level(level)" />
+          <scope attributes="__classmethod__" doc="Set the default value of the :verbose option." ilk="function" line="1260" lineend="1262" name="verbose=" signature="self.verbose=(on)" />
+          <scope attributes="__classmethod__" doc="Get the default value of the :verbose option." ilk="function" line="1265" lineend="1267" name="verbose" signature="self.verbose" />
+          <scope attributes="__classmethod__" ilk="function" line="1269" lineend="1279" name="make_config" signature="self.make_config(hash={})" />
+          <scope attributes="__ctor__" doc="Create a new DRbServer instance." ilk="function" line="1324" lineend="1347" name="initialize" signature="initialize(uri=nil, front=nil, config_or_acl=nil)" />
+          <scope ilk="function" line="1350" lineend="1350" name="uri" />
+          <scope ilk="function" line="1357" lineend="1357" name="thread" />
+          <scope ilk="function" line="1363" lineend="1363" name="front" />
+          <scope ilk="function" line="1366" lineend="1366" name="config" />
+          <scope ilk="function" line="1368" lineend="1368" name="safe_level" />
+          <scope doc="Set whether to operate in verbose mode." ilk="function" line="1373" name="verbose=" signature="verbose=(v)" />
+          <scope doc="Get whether the server is in verbose mode." ilk="function" line="1378" name="verbose" signature="verbose" />
+          <scope doc="Is this server alive?" ilk="function" line="1381" lineend="1383" name="alive?" signature="alive?" />
+          <scope doc="Stop this server." ilk="function" line="1386" lineend="1393" name="stop_service" signature="stop_service" />
+          <scope doc="Convert a dRuby reference to the local object it refers to." ilk="function" line="1396" lineend="1400" name="to_obj" signature="to_obj(ref)" />
+          <scope doc="Convert a local object to a dRuby reference." ilk="function" line="1403" lineend="1406" name="to_id" signature="to_id(obj)" />
+          <scope ilk="function" line="1409" lineend="1421" name="kill_sub_thread" signature="kill_sub_thread" />
+          <scope ilk="function" line="1423" lineend="1434" name="run" signature="run" />
+          <scope doc="Has a method been included in the list of insecure methods?" ilk="function" line="1444" lineend="1446" name="insecure_method?" signature="insecure_method?(msg_id)" />
+          <scope doc="Coerce an object to a string, providing our own&#xA;representation if to_s is not defined for the object." ilk="function" line="1450" lineend="1454" name="any_to_s" signature="any_to_s(obj)" />
+          <scope doc="Check that a method is callable via dRuby." ilk="function" line="1464" lineend="1478" name="check_insecure_method" signature="check_insecure_method(obj, msg_id)" />
+          <scope classrefs="Object" ilk="class" line="1481" lineend="1556" name="InvokeMethod">
+            <scope attributes="__ctor__" doc=":nodoc:" ilk="function" line="1482" lineend="1486" name="initialize" signature="initialize(drb_server, client)" />
+            <scope ilk="function" line="1488" lineend="1523" name="perform" signature="perform" />
+            <scope ilk="function" line="1526" lineend="1532" name="init_with_client" signature="init_with_client" />
+            <scope ilk="function" line="1534" lineend="1536" name="check_insecure_method" signature="check_insecure_method" />
+            <scope ilk="function" line="1538" lineend="1541" name="setup_message" signature="setup_message" />
+            <scope ilk="function" line="1543" lineend="1554" name="perform_without_block" signature="perform_without_block" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1560" lineend="1562" name="InvokeMethod">
+            <import symbol="InvokeMethod18Mixin" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1565" lineend="1567" name="InvokeMethod">
+            <import symbol="InvokeMethod16Mixin" />
+          </scope>
+          <scope doc="The main loop performed by a DRbServer&apos;s internal thread." ilk="function" line="1577" lineend="1603" name="main_loop" signature="main_loop" />
+        </scope>
+        <scope doc="Start a dRuby server locally." ilk="function" line="1623" lineend="1625" name="start_service" signature="start_service(uri=nil, front=nil, config=nil)" />
+        <scope doc="Get the &apos;current&apos; server." ilk="function" line="1644" lineend="1649" name="current_server" signature="current_server" />
+        <scope doc="Stop the local dRuby server." ilk="function" line="1656" lineend="1659" name="stop_service" signature="stop_service" />
+        <scope doc="Get the URI defining the local dRuby space." ilk="function" line="1665" lineend="1667" name="uri" signature="uri" />
+        <scope doc="Is +uri+ the URI for the current local server?" ilk="function" line="1671" lineend="1673" name="here?" signature="here?(uri)" />
+        <scope doc="Get the configuration of the current server." ilk="function" line="1680" lineend="1684" name="config" signature="config" />
+        <scope doc="Get the front object of the current server." ilk="function" line="1691" lineend="1693" name="front" signature="front" />
+        <scope doc="Convert a reference into an object using the current server." ilk="function" line="1700" lineend="1702" name="to_obj" signature="to_obj(ref)" />
+        <scope doc="Get a reference id for an object using the current server." ilk="function" line="1708" lineend="1710" name="to_id" signature="to_id(obj)" />
+        <scope doc="Get the thread of the primary server." ilk="function" line="1717" lineend="1719" name="thread" signature="thread" />
+        <scope doc="Set the default id conv object." ilk="function" line="1725" lineend="1727" name="install_id_conv" signature="install_id_conv(idconv)" />
+        <scope doc="Set the default acl." ilk="function" line="1733" lineend="1735" name="install_acl" signature="install_acl(acl)" />
+        <scope ilk="function" line="1739" lineend="1744" name="regist_server" signature="regist_server(server)" />
+        <scope ilk="function" line="1747" lineend="1749" name="remove_server" signature="remove_server(server)" />
+        <scope ilk="function" line="1752" lineend="1754" name="fetch_server" signature="fetch_server(uri)" />
+      </scope>
+    </scope>
+    

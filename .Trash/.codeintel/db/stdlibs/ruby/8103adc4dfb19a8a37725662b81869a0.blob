@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="irb/cmd/load">
+      <import line="13" module="irb/cmd/nop.rb" symbol="*" />
+      <import line="14" module="irb/ext/loader" symbol="*" />
+      <scope doc="load.rb - $Release Version: 0.9.5$ $Revision: 1.1.2.1 $&#xA;$Date: 2005/04/19 19:24:58 $ by Keiju ISHITSUKA(keiju@ruby-&#xA;lang.org)" ilk="namespace" line="16" lineend="67" name="IRB">
+        <scope ilk="namespace" line="17" lineend="65" name="ExtendCommand">
+          <scope classrefs="Nop" ilk="class" line="18" lineend="25" name="Load">
+            <scope ilk="function" line="21" lineend="24" name="execute" signature="execute(file_name, priv = nil)" />
+            <import symbol="IrbLoader" />
+          </scope>
+          <scope classrefs="Nop" ilk="class" line="27" lineend="57" name="Require">
+            <scope ilk="function" line="30" lineend="56" name="execute" signature="execute(file_name)" />
+            <import symbol="IrbLoader" />
+          </scope>
+          <scope classrefs="Nop" ilk="class" line="59" lineend="64" name="Source">
+            <scope ilk="function" line="61" lineend="63" name="execute" signature="execute(file_name)" />
+            <import symbol="IrbLoader" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

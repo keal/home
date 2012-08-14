@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tk/selection">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/selection.rb : control selection" ilk="namespace" line="6" lineend="86" name="TkSelection">
+        <scope attributes="__classmethod__" ilk="function" line="12" lineend="18" name="clear" signature="self.clear(sel=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="19" lineend="26" name="clear_on_display" signature="self.clear_on_display(win, sel=nil)" />
+        <scope ilk="function" line="27" lineend="30" name="clear" signature="clear(sel=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="32" lineend="35" name="get" signature="self.get(keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="36" lineend="40" name="get_on_display" signature="self.get_on_display(win, keys=nil)" />
+        <scope ilk="function" line="41" lineend="43" name="get" signature="get(keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="45" lineend="54" name="handle" signature="self.handle(win, func=Proc.new, keys=nil, &amp;b)" />
+        <scope ilk="function" line="55" lineend="57" name="handle" signature="handle(func=Proc.new, keys=nil, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="59" lineend="65" name="get_owner" signature="self.get_owner(sel=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="66" lineend="73" name="get_owner_on_display" signature="self.get_owner_on_display(win, sel=nil)" />
+        <scope ilk="function" line="74" lineend="77" name="get_owner" signature="get_owner(sel=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="79" lineend="81" name="set_owner" signature="self.set_owner(win, keys=nil)" />
+        <scope ilk="function" line="82" lineend="85" name="set_owner" signature="set_owner(keys=nil)" />
+      </scope>
+    </scope>
+    

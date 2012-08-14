@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tkDND/shape">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/tkDND/setup.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;shape&apos;, &apos;0.3&apos;)" ilk="namespace" line="17" lineend="119" name="Tk">
+        <scope ilk="namespace" line="18" lineend="118" name="TkDND">
+          <scope ilk="namespace" line="19" lineend="117" name="Shape">
+            <scope attributes="__classmethod__" ilk="function" line="23" lineend="25" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="36" lineend="38" name="package_version" signature="self.package_version" />
+            <scope attributes="__classmethod__" ilk="function" line="41" lineend="43" name="package_patchlevel" signature="self.package_patchlevel" />
+            <scope attributes="__classmethod__" ilk="function" line="46" lineend="48" name="version" signature="self.version" />
+            <scope ilk="function" line="53" lineend="64" name="shape_bounds" signature="shape_bounds(kind=nil)" />
+            <scope ilk="function" line="66" lineend="72" name="shape_get" signature="shape_get(kind=nil)" />
+            <scope ilk="function" line="74" lineend="81" name="shape_offset" signature="shape_offset(x, y, kind=nil)" />
+            <scope ilk="function" line="83" lineend="105" name="_parse_shapespec_param" signature="_parse_shapespec_param(args)" />
+            <scope ilk="function" line="108" lineend="111" name="shape_set" signature="shape_set(*args)" />
+            <scope ilk="function" line="113" lineend="116" name="shape_update" signature="shape_update(op, *args)" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="121" lineend="123" name="TkWindow">
+        <import symbol="Tk::TkDND::" />
+      </scope>
+    </scope>
+    

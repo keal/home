@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="benchmark">
+      <scope doc="The Benchmark module provides methods to measure and report&#xA;the time used to execute Ruby code." ilk="namespace" name="Benchmark">
+        <scope classrefs="Object" doc="A data object, representing the times associated with a&#xA;benchmark measurement." ilk="class" name="Tms">
+          <scope attributes="__classmethod__ __ctor__" doc="Returns an initialized Tms object which has `u&apos; as the user&#xA;CPU time, `s&apos; as the system CPU time, `cu&apos; as the children&apos;s&#xA;user CPU time, `cs&apos; as the children&apos;s system CPU time,&#xA;`real&apos; as the elapsed real time and `l&apos; as the label." ilk="function" name="new" signature="(u = 0.0, s = 0.0, cu = 0.0, cs = 0.0, real = 0.0, l = nil)" />
+          <scope doc="Returns a new Tms object obtained by memberwise&#xA;multiplication of the individual times for this Tms object&#xA;by `x&apos;." ilk="function" name="*" signature="(x)" />
+          <scope doc="Returns a new Tms object obtained by memberwise summation of&#xA;the individual times for this Tms object with those of the&#xA;other Tms object. This method and #/() are useful for taking&#xA;statistics." ilk="function" name="+" signature="(other)" />
+          <scope doc="Returns a new Tms object obtained by memberwise division of&#xA;the individual times for this Tms object by `x&apos;. This method&#xA;and #+() are useful for taking statistics." ilk="function" name="/" signature="(x)" />
+          <scope doc="Returns a new Tms object whose times are the sum of the&#xA;times for this Tms object, plus the time required to execute&#xA;the code block (`blk&apos;)." ilk="function" name="add" signature="() {|| ...}" />
+          <scope doc="An in-place version of #add." ilk="function" name="add!" signature="()" />
+          <scope doc="System CPU time of children" ilk="function" name="cstime" />
+          <scope doc="User CPU time of children" ilk="function" name="cutime" />
+          <scope doc="Returns the contents of this Tms object as a formatted&#xA;string, according to a format string like that passed to&#xA;Kernel.format." ilk="function" name="format" signature="(arg0 = nil, *args)" />
+          <scope doc="Label" ilk="function" name="label" />
+          <scope ilk="function" name="memberwise" signature="(op, x)" />
+          <scope doc="Elapsed real time" ilk="function" name="real" />
+          <scope doc="System CPU time" ilk="function" name="stime" />
+          <scope doc="Returns a new 6-element array, consisting of the label, user&#xA;CPU time, system CPU time, children&apos;s user CPU time,&#xA;children&apos;s system CPU time and elapsed real time." ilk="function" name="to_a" signature="()" />
+          <scope doc="Same as #format." ilk="function" name="to_s" signature="()" />
+          <scope doc="Total time, that is `utime&apos; + `stime&apos; + `cutime&apos; + `cstime&apos;" ilk="function" name="total" />
+          <scope doc="User CPU time" ilk="function" name="utime" />
+        </scope>
+        <scope classrefs="Object" doc="This class is used by the Benchmark.benchmark and&#xA;Benchmark.bm methods. It is of little direct interest to the&#xA;user." ilk="class" name="Report" />
+        <scope classrefs="Object" doc="A Job is a sequence of labelled blocks to be processed by&#xA;the Benchmark.bmbm method. It is of little direct interest&#xA;to the user." ilk="class" name="Job" />
+        <scope doc="Invokes the block with a Benchmark::Report object, which may&#xA;be used to collect and report on the results of individual&#xA;benchmark tests. Reserves `label_width&apos; leading spaces for&#xA;labels on each line." ilk="function" name="benchmark" signature="(caption = &quot;&quot;, label_width = nil, fmtstr = nil, *labels) {|report| ...}" />
+        <scope doc="A simple interface to the #benchmark method, #bm is&#xA;generates sequential reports with labels. The parameters&#xA;have the same meaning as for #benchmark." ilk="function" name="bm" signature="(label_width = 0, *labels) {|report| ...}" />
+        <scope doc="Sometimes benchmark results are skewed because code executed&#xA;earlier encounters different garbage collection overheads&#xA;than that run later. #bmbm attempts to minimize this effect&#xA;by running the tests twice, the first time as a rehearsal in&#xA;order to get the runtime environment stable, the second time&#xA;for real." ilk="function" name="bmbm" signature="(width = 0) {|job| ...}" />
+        <scope doc="Returns the time used to execute the given block as a&#xA;Benchmark::Tms object." ilk="function" name="measure" signature="(label = &quot;&quot;) {|| ...}" />
+        <scope doc="Returns the elapsed real time used to execute the given&#xA;block." ilk="function" name="realtime" signature="() {|| ...}" />
+      </scope>
+    </scope>
+    

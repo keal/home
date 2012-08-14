@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="irb/ext/workspaces">
+      <scope doc="push-ws.rb - $Release Version: 0.9.5$ $Revision: 1.1.2.1 $&#xA;$Date: 2005/04/19 19:24:58 $ by Keiju ISHITSUKA(keiju@ruby-&#xA;lang.org)" ilk="namespace" line="13" lineend="55" name="IRB">
+        <scope classrefs="Object" ilk="class" line="14" lineend="54" name="Context">
+          <scope ilk="function" line="16" lineend="18" name="irb_level" signature="irb_level" />
+          <scope ilk="function" line="20" lineend="26" name="workspaces" signature="workspaces" />
+          <scope ilk="function" line="28" lineend="45" name="push_workspace" signature="push_workspace(*_main)">
+            <scope classrefs="Object" ilk="class" line="42" lineend="42" name="main" />
+          </scope>
+          <scope ilk="function" line="47" lineend="53" name="pop_workspace" signature="pop_workspace" />
+        </scope>
+      </scope>
+    </scope>
+    

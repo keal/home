@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="tk/radiobutton">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/button" symbol="*" />
+      <scope classrefs="TkButton" doc="tk/radiobutton.rb : treat radiobutton widget" ilk="class" line="7" lineend="65" name="TkRadioButton">
+        <scope doc="def create_self(keys) if keys and keys != None&#xA;tk_call_without_enc(&apos;radiobutton&apos;, @path, *hash_kv(keys,&#xA;true)) else tk_call_without_enc(&apos;radiobutton&apos;, @path)" ilk="function" line="20" lineend="22" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="25" lineend="27" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="30" lineend="34" name="__ruby2val_optkeys" signature="__ruby2val_optkeys" />
+        <scope ilk="function" line="38" lineend="41" name="deselect" signature="deselect" />
+        <scope ilk="function" line="42" lineend="45" name="select" signature="select" />
+        <scope ilk="function" line="47" lineend="54" name="get_value" signature="get_value" />
+        <scope ilk="function" line="56" lineend="64" name="set_value" signature="set_value(val)" />
+      </scope>
+    </scope>
+    

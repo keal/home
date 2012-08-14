@@ -1,0 +1,47 @@
+<scope ilk="blob" lang="Ruby" name="soap/rpc/cgistub">
+      <import line="9" module="soap/streamHandler" symbol="*" />
+      <import line="10" module="webrick/httpresponse" symbol="*" />
+      <import line="11" module="webrick/httpstatus" symbol="*" />
+      <import line="12" module="logger" symbol="*" />
+      <import line="13" module="soap/rpc/soaplet" symbol="*" />
+      <scope doc="SOAP4R - CGI/mod_ruby stub library Copyright (C) 2001,&#xA;2003-2005  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="16" name="SOAP" />
+      <scope ilk="namespace" line="17" name="RPC" />
+      <scope classrefs="Logger::Application" ilk="class" line="27" lineend="202" name="CGIStub">
+        <scope classrefs="Object" ilk="class" line="31" lineend="37" name="SOAPRequest">
+          <scope ilk="function" line="32" lineend="32" name="body" />
+          <scope ilk="function" line="34" name="[]" signature="[](var" />
+          <scope ilk="function" line="36" name="meta_vars" signature="meta_vars" />
+        </scope>
+        <scope classrefs="SOAPRequest" ilk="class" line="39" lineend="56" name="SOAPStdinRequest">
+          <scope ilk="function" line="40" lineend="40" name="body" />
+          <scope attributes="__ctor__" ilk="function" line="42" lineend="45" name="initialize" signature="initialize(stream)" />
+          <scope ilk="function" line="47" lineend="49" name="[]" signature="[](var" />
+          <scope ilk="function" line="51" lineend="55" name="meta_vars" signature="meta_vars" />
+        </scope>
+        <scope classrefs="SOAPRequest" ilk="class" line="58" lineend="75" name="SOAPFCGIRequest">
+          <scope ilk="function" line="59" lineend="59" name="body" />
+          <scope attributes="__ctor__" ilk="function" line="61" lineend="64" name="initialize" signature="initialize(request)" />
+          <scope ilk="function" line="66" lineend="68" name="[]" signature="[](var" />
+          <scope ilk="function" line="70" lineend="74" name="meta_vars" signature="meta_vars" />
+        </scope>
+        <scope attributes="__ctor__" ilk="function" line="77" lineend="86" name="initialize" signature="initialize(appname, default_namespace)" />
+        <scope ilk="function" line="88" lineend="90" name="on_init" signature="on_init" />
+        <scope ilk="function" line="92" lineend="94" name="mapping_registry" signature="mapping_registry" />
+        <scope ilk="function" line="96" lineend="98" name="mapping_registry=" signature="mapping_registry=(value)" />
+        <scope ilk="function" line="100" lineend="102" name="generate_explicit_type" signature="generate_explicit_type" />
+        <scope ilk="function" line="104" lineend="106" name="generate_explicit_type=" signature="generate_explicit_type=(generate_explicit_type)" />
+        <scope doc="servant entry interface" ilk="function" line="110" lineend="112" name="add_rpc_servant" signature="add_rpc_servant(obj, namespace = @default_namespace)" />
+        <scope ilk="function" line="115" lineend="117" name="add_headerhandler" signature="add_headerhandler(obj)" />
+        <scope doc="method entry interface" ilk="function" line="122" lineend="124" name="add_rpc_method" signature="add_rpc_method(obj, name, *param)" />
+        <scope ilk="function" line="127" lineend="129" name="add_rpc_method_as" signature="add_rpc_method_as(obj, name, name_as, *param)" />
+        <scope ilk="function" line="132" lineend="134" name="add_rpc_method_with_namespace" signature="add_rpc_method_with_namespace(namespace, obj, name, *param)" />
+        <scope ilk="function" line="137" lineend="142" name="add_rpc_method_with_namespace_as" signature="add_rpc_method_with_namespace_as(namespace, obj, name, name_as, *param)" />
+        <scope ilk="function" line="145" lineend="147" name="add_rpc_operation" signature="add_rpc_operation(receiver, qname, soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="149" lineend="151" name="add_document_operation" signature="add_document_operation(receiver, soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="153" lineend="155" name="set_fcgi_request" signature="set_fcgi_request(request)" />
+        <scope doc="dummy; ignored" ilk="function" line="161" lineend="201" name="run" signature="run" />
+        <import symbol="SOAP" />
+        <import symbol="WEBrick" />
+      </scope>
+    </scope>
+    

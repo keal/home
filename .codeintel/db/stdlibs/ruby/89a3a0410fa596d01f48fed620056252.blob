@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="rss/utils">
+      <scope ilk="namespace" line="1" lineend="31" name="RSS">
+        <scope ilk="namespace" line="3" lineend="29" name="Utils">
+          <scope ilk="function" line="6" lineend="10" name="to_class_name" signature="to_class_name(name)" />
+          <scope ilk="function" line="12" lineend="15" name="get_file_and_line_from_caller" signature="get_file_and_line_from_caller(i=0)" />
+          <scope ilk="function" line="17" lineend="19" name="html_escape" signature="html_escape(s)" />
+          <scope ilk="function" line="22" lineend="28" name="new_with_value_if_need" signature="new_with_value_if_need(klass, value)" />
+        </scope>
+      </scope>
+    </scope>
+    

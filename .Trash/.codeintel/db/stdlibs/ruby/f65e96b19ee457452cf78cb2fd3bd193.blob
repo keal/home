@@ -1,0 +1,33 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/menubar">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/menubar.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Itk::" ilk="class" line="11" lineend="12" name="Menubar" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="210" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="26" lineend="28" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="35" lineend="37" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="40" lineend="42" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="45" lineend="47" name="__item_strval_optkeys" signature="__item_strval_optkeys(id)" />
+        <scope ilk="function" line="50" lineend="52" name="__item_tkvariable_optkeys" signature="__item_tkvariable_optkeys(id)" />
+        <scope ilk="function" line="55" lineend="62" name="tagid" signature="tagid(tagOrId)" />
+        <scope ilk="function" line="74" lineend="76" name="__methodcall_optkeys" signature="__methodcall_optkeys" />
+        <scope ilk="function" line="78" lineend="85" name="menubuttons" signature="menubuttons(val = nil)" />
+        <scope ilk="function" line="87" lineend="131" name="_parse_menu_spec" signature="_parse_menu_spec(menu_spec)" />
+        <scope ilk="function" line="135" lineend="149" name="add" signature="add(type, tag=nil, keys={})" />
+        <scope ilk="function" line="151" lineend="157" name="delete" signature="delete(path1, path2=nil)" />
+        <scope ilk="function" line="159" lineend="161" name="index" signature="index(idx)" />
+        <scope ilk="function" line="163" lineend="177" name="insert" signature="insert(idx, type, tag=nil, keys={})" />
+        <scope ilk="function" line="179" lineend="182" name="invoke" signature="invoke(idx)" />
+        <scope ilk="function" line="184" lineend="189" name="menupath" signature="menupath(pat)" />
+        <scope ilk="function" line="190" lineend="195" name="menupath_glob" signature="menupath_glob(pat)" />
+        <scope ilk="function" line="196" lineend="201" name="menupath_tclregexp" signature="menupath_tclregexp(pat)" />
+        <scope ilk="function" line="203" lineend="205" name="type" signature="type(path)" />
+        <scope ilk="function" line="207" lineend="209" name="yposition" signature="yposition(path)" />
+        <import symbol="TkItemConfigMethod" />
+      </scope>
+    </scope>
+    

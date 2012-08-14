@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/combobox">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/entry" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="9" module="tkextlib/bwidget/listbox" symbol="*" />
+      <import line="10" module="tkextlib/bwidget/spinbox" symbol="*" />
+      <scope doc="tkextlib/bwidget/combobox.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="12" lineend="17" name="Tk">
+        <scope ilk="namespace" line="13" lineend="16" name="BWidget">
+          <scope classrefs="Tk::BWidget::" ilk="class" line="14" lineend="15" name="ComboBox" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="19" lineend="45" name="Tk::BWidget::">
+        <scope ilk="function" line="26" lineend="30" name="get_listbox" signature="get_listbox(&amp;b)" />
+        <scope ilk="function" line="32" lineend="34" name="icursor" signature="icursor(idx)" />
+        <scope ilk="function" line="36" lineend="39" name="post" signature="post" />
+        <scope ilk="function" line="41" lineend="44" name="unpost" signature="unpost" />
+        <import symbol="Scrollable" />
+      </scope>
+    </scope>
+    

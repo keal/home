@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/simple_markup/to_html">
+      <import line="1" module="rdoc/markup/simple_markup/fragments" symbol="*" />
+      <import line="2" module="rdoc/markup/simple_markup/inline" symbol="*" />
+      <import line="4" module="cgi" symbol="*" />
+      <scope ilk="namespace" line="6" lineend="289" name="SM">
+        <scope classrefs="Object" ilk="class" line="8" lineend="287" name="ToHtml">
+          <scope attributes="__ctor__" ilk="function" line="21" lineend="23" name="initialize" signature="initialize" />
+          <scope doc="Set up the standard mapping of attributes to HTML tags" ilk="function" line="28" lineend="34" name="init_tags" signature="init_tags" />
+          <scope doc="Add a new set of HTML tags for an attribute." ilk="function" line="40" lineend="42" name="add_tag" signature="add_tag(name, start, stop)" />
+          <scope doc="Given an HTML tag, decorate it with class information and&#xA;the like if required." ilk="function" line="50" lineend="52" name="annotate" signature="annotate(tag)" />
+          <scope doc="Here&apos;s the client side of the visitor pattern" ilk="function" line="57" lineend="60" name="start_accepting" signature="start_accepting" />
+          <scope ilk="function" line="62" lineend="64" name="end_accepting" signature="end_accepting" />
+          <scope ilk="function" line="66" lineend="70" name="accept_paragraph" signature="accept_paragraph(am, fragment)" />
+          <scope ilk="function" line="72" lineend="76" name="accept_verbatim" signature="accept_verbatim(am, fragment)" />
+          <scope ilk="function" line="78" lineend="82" name="accept_rule" signature="accept_rule(am, fragment)" />
+          <scope ilk="function" line="84" lineend="87" name="accept_list_start" signature="accept_list_start(am, fragment)" />
+          <scope ilk="function" line="89" lineend="94" name="accept_list_end" signature="accept_list_end(am, fragment)" />
+          <scope ilk="function" line="96" lineend="103" name="accept_list_item" signature="accept_list_item(am, fragment)" />
+          <scope ilk="function" line="105" lineend="107" name="accept_blank_line" signature="accept_blank_line(am, fragment)" />
+          <scope ilk="function" line="109" lineend="111" name="accept_heading" signature="accept_heading(am, fragment)" />
+          <scope doc="This is a higher speed (if messier) version of wrap" ilk="function" line="115" lineend="140" name="wrap" signature="wrap(txt, line_len = 76)" />
+          <scope ilk="function" line="148" lineend="157" name="on_tags" signature="on_tags(res, item)" />
+          <scope ilk="function" line="159" lineend="168" name="off_tags" signature="off_tags(res, item)" />
+          <scope ilk="function" line="170" lineend="186" name="convert_flow" signature="convert_flow(flow)" />
+          <scope doc="some of these patterns are taken from SmartyPants..." ilk="function" line="190" lineend="219" name="convert_string" signature="convert_string(item)" />
+          <scope ilk="function" line="221" lineend="232" name="convert_special" signature="convert_special(special)" />
+          <scope ilk="function" line="234" lineend="239" name="convert_heading" signature="convert_heading(level, flow)" />
+          <scope ilk="function" line="241" lineend="244" name="html_list_name" signature="html_list_name(list_type, is_open_tag)" />
+          <scope ilk="function" line="246" lineend="272" name="list_item_start" signature="list_item_start(am, fragment)" />
+          <scope ilk="function" line="274" lineend="285" name="list_end_for" signature="list_end_for(fragment_type)" />
+        </scope>
+      </scope>
+    </scope>
+    

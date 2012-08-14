@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="xsd/datatypes1999">
+      <import line="9" module="xsd/datatypes" symbol="*" />
+      <scope doc="XSD4R - XML Schema Datatype 1999 support Copyright (C) 2001,&#xA;2003  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="12" lineend="20" name="XSD" />
+    </scope>
+    

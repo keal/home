@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/mainframe">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/frame" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="9" module="tkextlib/bwidget/progressbar" symbol="*" />
+      <scope doc="tkextlib/bwidget/mainframe.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="11" lineend="16" name="Tk">
+        <scope ilk="namespace" line="12" lineend="15" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="13" lineend="14" name="MainFrame" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="18" lineend="92" name="Tk::BWidget::">
+        <scope ilk="function" line="23" lineend="25" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="28" lineend="30" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="33" lineend="39" name="__val2ruby_optkeys" signature="__val2ruby_optkeys" />
+        <scope ilk="function" line="42" lineend="46" name="add_indicator" signature="add_indicator(keys={}, &amp;b)" />
+        <scope ilk="function" line="48" lineend="52" name="add_toolbar" signature="add_toolbar(&amp;b)" />
+        <scope ilk="function" line="54" lineend="58" name="get_frame" signature="get_frame(&amp;b)" />
+        <scope ilk="function" line="60" lineend="64" name="get_indicator" signature="get_indicator(idx, &amp;b)" />
+        <scope ilk="function" line="66" lineend="70" name="get_menu" signature="get_menu(menu_id, &amp;b)" />
+        <scope ilk="function" line="72" lineend="76" name="get_toolbar" signature="get_toolbar(idx, &amp;b)" />
+        <scope ilk="function" line="78" lineend="81" name="set_menustate" signature="set_menustate(tag, state)" />
+        <scope ilk="function" line="83" lineend="86" name="show_statusbar" signature="show_statusbar(name)" />
+        <scope ilk="function" line="88" lineend="91" name="show_toolbar" signature="show_toolbar(idx, mode)" />
+      </scope>
+    </scope>
+    

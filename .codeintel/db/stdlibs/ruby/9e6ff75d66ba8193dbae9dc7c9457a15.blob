@@ -1,0 +1,321 @@
+<scope ilk="blob" lang="Ruby" name="multi-tk">
+      <import line="5" module="tcltklib" symbol="*" />
+      <import line="6" module="tkutil" symbol="*" />
+      <import line="7" module="thread" symbol="*" />
+      <import line="2925" module="tk" symbol="*" />
+      <scope classrefs="Object" doc="TclTkLib.mainloop_abort_on_exception = false&#xA;TclTkLib.mainloop_abort_on_exception = nil" ilk="class" line="23" lineend="33" name="TclTkIp">
+        <scope ilk="function" line="27" lineend="32" name="new" signature="new(*args)" />
+      </scope>
+      <scope classrefs="Exception" doc="exceptiopn to treat the return value from IP" ilk="class" line="38" lineend="50" name="MultiTkIp_OK">
+        <scope attributes="__classmethod__" ilk="function" line="39" lineend="41" name="send" signature="self.send(thread, ret=nil)" />
+        <scope attributes="__ctor__" ilk="function" line="43" lineend="46" name="initialize" signature="initialize(ret=nil)" />
+        <scope ilk="function" line="48" lineend="48" name="return_value" />
+      </scope>
+      <scope classrefs="Object" doc="methods for construction" ilk="class" line="56" lineend="1167" name="MultiTkIp">
+        <scope classrefs="Object" doc="table of [name, args, body]" ilk="class" line="71" lineend="138" name="@@TK_CMD_TBL">
+          <scope ilk="function" line="78" lineend="80" name="kind_of?" signature="kind_of?(klass)" />
+          <scope ilk="function" line="82" lineend="89" name="inspect" signature="inspect" />
+          <scope ilk="function" line="91" lineend="100" name="[]" signature="[](idx" />
+          <scope ilk="function" line="102" lineend="107" name="[]=" signature="[]=(idx" />
+          <scope ilk="function" line="109" lineend="118" name="delete" signature="delete(idx, &amp;blk)" />
+          <scope ilk="function" line="120" lineend="130" name="each" signature="each(&amp;blk)" />
+          <scope ilk="function" line="132" lineend="134" name="has_key?" signature="has_key?(k)" />
+        </scope>
+        <scope ilk="function" line="196" lineend="201" name="_keys2opts" signature="_keys2opts(src_keys)" />
+        <scope ilk="function" line="204" lineend="252" name="_check_and_return" signature="_check_and_return(thread, exception, wait=0)" />
+        <scope ilk="function" line="256" lineend="258" name="set_cb_error" signature="set_cb_error(cmd = Proc.new)" />
+        <scope ilk="function" line="260" lineend="264" name="cb_error" signature="cb_error(e)" />
+        <scope ilk="function" line="268" lineend="274" name="set_safe_level" signature="set_safe_level(safe)" />
+        <scope ilk="function" line="275" lineend="277" name="safe_level=" signature="safe_level=(safe)" />
+        <scope attributes="__classmethod__" ilk="function" line="278" lineend="280" name="set_safe_level" signature="self.set_safe_level(safe)" />
+        <scope attributes="__classmethod__" ilk="function" line="281" lineend="283" name="safe_level=" signature="self.safe_level=(safe)" />
+        <scope ilk="function" line="284" lineend="286" name="safe_level" signature="safe_level" />
+        <scope attributes="__classmethod__" ilk="function" line="287" lineend="289" name="safe_level" signature="self.safe_level" />
+        <scope ilk="function" line="291" lineend="293" name="wait_on_mainloop?" signature="wait_on_mainloop?" />
+        <scope ilk="function" line="294" lineend="296" name="wait_on_mainloop=" signature="wait_on_mainloop=(bool)" />
+        <scope ilk="function" line="298" lineend="300" name="running_mainloop?" signature="running_mainloop?" />
+        <scope ilk="function" line="302" lineend="344" name="_destroy_slaves_of_slaveIP" signature="_destroy_slaves_of_slaveIP(ip)" />
+        <scope ilk="function" line="346" lineend="526" name="_receiver_eval_proc_core" signature="_receiver_eval_proc_core(safe_level, thread, cmd, *args)" />
+        <scope ilk="function" line="528" lineend="544" name="_receiver_eval_proc" signature="_receiver_eval_proc(last_thread, safe_level, thread, cmd, *args)" />
+        <scope ilk="function" line="548" lineend="564" name="_receiver_mainloop" signature="_receiver_mainloop(check_root)" />
+        <scope ilk="function" line="566" lineend="629" name="_create_receiver_and_watchdog" signature="_create_receiver_and_watchdog(lvl = $SAFE)" />
+        <scope attributes="__classmethod__" doc="defend against modification" ilk="function" line="751" lineend="772" name="inherited" signature="self.inherited(subclass)">
+          <scope classrefs="Object" doc="trust if on ThreadGroup::Default or @@DEFAULT_MASTER&apos;s&#xA;ThreadGroup" ilk="class" line="755" lineend="765" name="subclass" />
+        </scope>
+        <scope ilk="function" line="783" lineend="807" name="_parse_slaveopts" signature="_parse_slaveopts(keys)" />
+        <scope ilk="function" line="810" lineend="814" name="_create_slave_ip_name" signature="_create_slave_ip_name" />
+        <scope ilk="function" line="819" lineend="873" name="__check_safetk_optkeys" signature="__check_safetk_optkeys(optkeys)" />
+        <scope ilk="function" line="876" lineend="951" name="__create_safetk_frame" signature="__create_safetk_frame(slave_ip, slave_name, app_name, keys)" />
+        <scope ilk="function" line="954" lineend="995" name="__create_safe_slave_obj" signature="__create_safe_slave_obj(safe_opts, app_name, tk_opts)">
+          <scope doc="safe interpreter" ilk="function" line="961" lineend="963" name="slave_ip.safe_base?" signature="slave_ip.safe_base?" />
+        </scope>
+        <scope ilk="function" line="997" lineend="1007" name="__create_trusted_slave_obj" signature="__create_trusted_slave_obj(name, keys)" />
+        <scope ilk="function" line="1011" lineend="1016" name="_create_slave_object" signature="_create_slave_object(keys={})" />
+        <scope attributes="__ctor__" ilk="function" line="1020" lineend="1136" name="initialize" signature="initialize(master, safeip=true, keys={})">
+          <scope classrefs="Object" doc="@wait_on_mainloop = [false, 0].taint" ilk="class" line="1128" lineend="1130" name="self" />
+        </scope>
+        <scope ilk="function" line="1140" lineend="1165" name="_default_delete_hook" signature="_default_delete_hook(slave)" />
+      </scope>
+      <scope classrefs="Object" doc="get target IP" ilk="class" line="1171" lineend="1196" name="MultiTkIp">
+        <scope attributes="__classmethod__" ilk="function" line="1172" lineend="1174" name="_ip_id_" signature="self._ip_id_" />
+        <scope ilk="function" line="1175" lineend="1178" name="_ip_id_" signature="_ip_id_" />
+        <scope attributes="__classmethod__" ilk="function" line="1180" lineend="1195" name="__getip" signature="self.__getip" />
+      </scope>
+      <scope classrefs="Object" doc="aliases of constructor" ilk="class" line="1200" lineend="1272" name="MultiTkIp">
+        <scope ilk="function" line="1205" lineend="1225" name="new_master" signature="new_master(safe=nil, keys={})" />
+        <scope ilk="function" line="1229" lineend="1249" name="new_slave" signature="new_slave(safe=nil, keys={})" />
+        <scope ilk="function" line="1252" lineend="1270" name="new_safe_slave" signature="new_safe_slave(safe=4, keys={})" />
+      </scope>
+      <scope classrefs="Object" doc="get info" ilk="class" line="1276" lineend="1380" name="MultiTkIp">
+        <scope ilk="function" line="1277" lineend="1297" name="inspect" signature="inspect" />
+        <scope ilk="function" line="1299" lineend="1305" name="master?" signature="master?" />
+        <scope attributes="__classmethod__" ilk="function" line="1306" lineend="1308" name="master?" signature="self.master?" />
+        <scope ilk="function" line="1310" lineend="1312" name="slave?" signature="slave?" />
+        <scope attributes="__classmethod__" ilk="function" line="1313" lineend="1315" name="slave?" signature="self.slave?" />
+        <scope ilk="function" line="1317" lineend="1327" name="alive?" signature="alive?" />
+        <scope attributes="__classmethod__" ilk="function" line="1328" lineend="1330" name="alive?" signature="self.alive?" />
+        <scope ilk="function" line="1332" lineend="1334" name="path" signature="path" />
+        <scope attributes="__classmethod__" ilk="function" line="1335" lineend="1337" name="path" signature="self.path" />
+        <scope ilk="function" line="1338" lineend="1340" name="ip_name" signature="ip_name" />
+        <scope attributes="__classmethod__" ilk="function" line="1341" lineend="1343" name="ip_name" signature="self.ip_name" />
+        <scope ilk="function" line="1344" lineend="1346" name="to_eval" signature="to_eval" />
+        <scope attributes="__classmethod__" ilk="function" line="1347" lineend="1349" name="to_eval" signature="self.to_eval" />
+        <scope ilk="function" line="1351" lineend="1362" name="slaves" signature="slaves(all = false)" />
+        <scope attributes="__classmethod__" ilk="function" line="1363" lineend="1365" name="slaves" signature="self.slaves(all = false)" />
+        <scope ilk="function" line="1367" lineend="1371" name="manipulable?" signature="manipulable?" />
+        <scope attributes="__classmethod__" ilk="function" line="1372" lineend="1374" name="manipulable?" signature="self.manipulable?" />
+        <scope ilk="function" line="1376" lineend="1378" name="_is_master_of?" signature="_is_master_of?(tcltkip_obj)" />
+      </scope>
+      <scope classrefs="Object" doc="instance methods to treat tables" ilk="class" line="1384" lineend="1428" name="MultiTkIp">
+        <scope ilk="function" line="1385" lineend="1389" name="_tk_cmd_tbl" signature="_tk_cmd_tbl" />
+        <scope ilk="function" line="1391" lineend="1393" name="_tk_windows" signature="_tk_windows" />
+        <scope ilk="function" line="1395" lineend="1397" name="_tk_table_list" signature="_tk_table_list" />
+        <scope ilk="function" line="1399" lineend="1404" name="_add_new_tables" signature="_add_new_tables (@@TK_TABLE_LIST" />
+        <scope ilk="function" line="1406" lineend="1408" name="_init_ip_env" signature="_init_ip_env(script)" />
+        <scope ilk="function" line="1410" lineend="1416" name="_add_tk_procs" signature="_add_tk_procs(name, args, body)" />
+        <scope ilk="function" line="1418" lineend="1427" name="_init_ip_internal" signature="_init_ip_internal(init_ip_env, add_tk_procs)" />
+      </scope>
+      <scope classrefs="Object" doc="class methods to treat tables" ilk="class" line="1432" lineend="1476" name="MultiTkIp">
+        <scope attributes="__classmethod__" ilk="function" line="1433" lineend="1435" name="tk_cmd_tbl" signature="self.tk_cmd_tbl" />
+        <scope attributes="__classmethod__" ilk="function" line="1436" lineend="1438" name="tk_windows" signature="self.tk_windows" />
+        <scope attributes="__classmethod__" ilk="function" line="1439" lineend="1441" name="tk_object_table" signature="self.tk_object_table(id)" />
+        <scope attributes="__classmethod__" ilk="function" line="1442" lineend="1457" name="create_table" signature="self.create_table" />
+        <scope attributes="__classmethod__" ilk="function" line="1459" lineend="1464" name="init_ip_env" signature="self.init_ip_env(script = Proc.new)" />
+        <scope attributes="__classmethod__" ilk="function" line="1466" lineend="1471" name="add_tk_procs" signature="self.add_tk_procs(name, args=nil, body=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="1473" lineend="1475" name="init_ip_internal" signature="self.init_ip_internal" />
+      </scope>
+      <scope classrefs="Object" doc="for callback operation" ilk="class" line="1480" lineend="1500" name="MultiTkIp">
+        <scope attributes="__classmethod__" ilk="function" line="1481" lineend="1483" name="cb_entry_class" signature="self.cb_entry_class" />
+        <scope attributes="__classmethod__" ilk="function" line="1484" lineend="1486" name="get_cb_entry" signature="self.get_cb_entry(cmd)" />
+        <scope ilk="function" line="1488" lineend="1499" name="cb_eval" signature="cb_eval(cmd, *args)" />
+      </scope>
+      <scope classrefs="Object" doc="evaluate a procedure on the proper interpreter" ilk="class" line="1504" lineend="1734" name="MultiTkIp">
+        <scope doc="instance method" ilk="function" line="1506" lineend="1595" name="eval_proc_core" signature="eval_proc_core(req_val, cmd, *args)" />
+        <scope ilk="function" line="1598" lineend="1612" name="eval_callback" signature="eval_callback(*args)" />
+        <scope ilk="function" line="1614" lineend="1647" name="eval_proc" signature="eval_proc(*args)" />
+        <scope ilk="function" line="1650" lineend="1669" name="bg_eval_proc" signature="bg_eval_proc(*args)" />
+        <scope ilk="function" line="1675" lineend="1686" name="eval_string" signature="eval_string(cmd, *eval_args)" />
+        <scope ilk="function" line="1689" lineend="1701" name="bg_eval_string" signature="bg_eval_string(cmd, *eval_args)" />
+        <scope ilk="function" line="1706" lineend="1718" name="eval" signature="eval(*args, &amp;blk)" />
+        <scope ilk="function" line="1720" lineend="1732" name="bg_eval" signature="bg_eval(*args, &amp;blk)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="1736" lineend="1776" name="MultiTkIp">
+        <scope doc="class method" ilk="function" line="1738" lineend="1741" name="eval_proc" signature="eval_proc(*args, &amp;blk)" />
+        <scope ilk="function" line="1744" lineend="1747" name="bg_eval_proc" signature="bg_eval_proc(*args, &amp;blk)" />
+        <scope ilk="function" line="1753" lineend="1756" name="eval_string" signature="eval_string(cmd, *eval_args)" />
+        <scope ilk="function" line="1759" lineend="1762" name="bg_eval_string" signature="bg_eval_string(cmd, *eval_args)" />
+        <scope ilk="function" line="1767" lineend="1770" name="eval" signature="eval(*args, &amp;blk)" />
+        <scope ilk="function" line="1771" lineend="1774" name="bg_eval" signature="bg_eval(*args, &amp;blk)" />
+      </scope>
+      <scope classrefs="Object" doc="event loop all master/slave IPs are controled by only one&#xA;event-loop" ilk="class" line="1781" lineend="1817" name="MultiTkIp">
+        <scope ilk="function" line="1782" lineend="1784" name="mainloop" signature="mainloop(check_root = true)" />
+        <scope ilk="function" line="1785" lineend="1787" name="mainloop_watchdog" signature="mainloop_watchdog(check_root = true)" />
+        <scope ilk="function" line="1788" lineend="1790" name="do_one_event" signature="do_one_event(flag = TclTkLib::EventFlag::ALL)" />
+        <scope ilk="function" line="1791" lineend="1794" name="mainloop_abort_on_exception" signature="mainloop_abort_on_exception" />
+        <scope ilk="function" line="1795" lineend="1798" name="mainloop_abort_on_exception=" signature="mainloop_abort_on_exception=(mode)" />
+        <scope ilk="function" line="1799" lineend="1801" name="set_eventloop_tick" signature="set_eventloop_tick(tick)" />
+        <scope ilk="function" line="1802" lineend="1804" name="get_eventloop_tick" signature="get_eventloop_tick" />
+        <scope ilk="function" line="1805" lineend="1807" name="set_no_event_wait" signature="set_no_event_wait(tick)" />
+        <scope ilk="function" line="1808" lineend="1810" name="get_no_event_wait" signature="get_no_event_wait" />
+        <scope ilk="function" line="1811" lineend="1813" name="set_eventloop_weight" signature="set_eventloop_weight(loop_max, no_event_tick)" />
+        <scope ilk="function" line="1814" lineend="1816" name="get_eventloop_weight" signature="get_eventloop_weight" />
+      </scope>
+      <scope classrefs="Object" doc="class methods to delegate to TclTkIp" ilk="class" line="1820" lineend="1983" name="MultiTkIp">
+        <scope ilk="function" line="1821" lineend="1823" name="method_missing" signature="method_missing(id, *args)" />
+        <scope ilk="function" line="1825" lineend="1827" name="make_safe" signature="make_safe" />
+        <scope ilk="function" line="1829" lineend="1831" name="safe?" signature="safe?" />
+        <scope ilk="function" line="1833" lineend="1839" name="safe_base?" signature="safe_base?" />
+        <scope ilk="function" line="1841" lineend="1843" name="allow_ruby_exit?" signature="allow_ruby_exit?" />
+        <scope ilk="function" line="1845" lineend="1847" name="allow_ruby_exit=" signature="allow_ruby_exit= (mode)" />
+        <scope ilk="function" line="1849" lineend="1851" name="delete" signature="delete" />
+        <scope ilk="function" line="1853" lineend="1855" name="deleted?" signature="deleted?" />
+        <scope ilk="function" line="1857" lineend="1859" name="has_mainwindow?" signature="has_mainwindow?" />
+        <scope ilk="function" line="1861" lineend="1863" name="invalid_namespace?" signature="invalid_namespace?" />
+        <scope ilk="function" line="1865" lineend="1867" name="abort" signature="abort(msg = nil)" />
+        <scope ilk="function" line="1869" lineend="1871" name="exit" signature="exit(st = true)" />
+        <scope ilk="function" line="1873" lineend="1875" name="exit!" signature="exit!(st = false)" />
+        <scope ilk="function" line="1877" lineend="1886" name="restart" signature="restart(app_name = nil, keys = {})" />
+        <scope ilk="function" line="1888" lineend="1890" name="_eval" signature="_eval(str)" />
+        <scope ilk="function" line="1892" lineend="1894" name="_invoke" signature="_invoke(*args)" />
+        <scope ilk="function" line="1896" lineend="1898" name="_eval_without_enc" signature="_eval_without_enc(str)" />
+        <scope ilk="function" line="1900" lineend="1902" name="_invoke_without_enc" signature="_invoke_without_enc(*args)" />
+        <scope ilk="function" line="1904" lineend="1906" name="_eval_with_enc" signature="_eval_with_enc(str)" />
+        <scope ilk="function" line="1908" lineend="1910" name="_invoke_with_enc" signature="_invoke_with_enc(*args)" />
+        <scope ilk="function" line="1912" lineend="1914" name="_toUTF8" signature="_toUTF8(str, encoding=nil)" />
+        <scope ilk="function" line="1916" lineend="1918" name="_fromUTF8" signature="_fromUTF8(str, encoding=nil)" />
+        <scope ilk="function" line="1920" lineend="1922" name="_thread_vwait" signature="_thread_vwait(var)" />
+        <scope ilk="function" line="1924" lineend="1926" name="_thread_tkwait" signature="_thread_tkwait(mode, target)" />
+        <scope ilk="function" line="1928" lineend="1930" name="_return_value" signature="_return_value" />
+        <scope ilk="function" line="1932" lineend="1934" name="_get_variable" signature="_get_variable(var, flag)" />
+        <scope ilk="function" line="1935" lineend="1937" name="_get_variable2" signature="_get_variable2(var, idx, flag)" />
+        <scope ilk="function" line="1938" lineend="1940" name="_set_variable" signature="_set_variable(var, value, flag)" />
+        <scope ilk="function" line="1941" lineend="1943" name="_set_variable2" signature="_set_variable2(var, idx, value, flag)" />
+        <scope ilk="function" line="1944" lineend="1946" name="_unset_variable" signature="_unset_variable(var, flag)" />
+        <scope ilk="function" line="1947" lineend="1949" name="_unset_variable2" signature="_unset_variable2(var, idx, flag)" />
+        <scope ilk="function" line="1951" lineend="1953" name="_get_global_var" signature="_get_global_var(var)" />
+        <scope ilk="function" line="1954" lineend="1956" name="_get_global_var2" signature="_get_global_var2(var, idx)" />
+        <scope ilk="function" line="1957" lineend="1959" name="_set_global_var" signature="_set_global_var(var, value)" />
+        <scope ilk="function" line="1960" lineend="1962" name="_set_global_var2" signature="_set_global_var2(var, idx, value)" />
+        <scope ilk="function" line="1963" lineend="1965" name="_unset_global_var" signature="_unset_global_var(var)" />
+        <scope ilk="function" line="1966" lineend="1968" name="_unset_global_var2" signature="_unset_global_var2(var, idx)" />
+        <scope ilk="function" line="1970" lineend="1972" name="_split_tklist" signature="_split_tklist(str)" />
+        <scope ilk="function" line="1973" lineend="1975" name="_merge_tklist" signature="_merge_tklist(*args)" />
+        <scope ilk="function" line="1976" lineend="1978" name="_conv_listelement" signature="_conv_listelement(arg)" />
+        <scope ilk="function" line="1980" lineend="1982" name="_create_console" signature="_create_console" />
+      </scope>
+      <scope classrefs="Object" doc="wrap methods on TclTkLib : not permit calling TclTkLib&#xA;module methods" ilk="class" line="1987" lineend="2031" name="TclTkLib">
+        <scope ilk="function" line="1988" lineend="1990" name="mainloop" signature="mainloop(check_root = true)" />
+        <scope ilk="function" line="1991" lineend="1993" name="mainloop_watchdog" signature="mainloop_watchdog(check_root = true)" />
+        <scope ilk="function" line="1994" lineend="1996" name="do_one_event" signature="do_one_event(flag = TclTkLib::EventFlag::ALL)" />
+        <scope doc="def mainloop_abort_on_exception&#xA;MultiTkIp.mainloop_abort_on_exception end def&#xA;mainloop_abort_on_exception=(mode)&#xA;MultiTkIp.mainloop_abort_on_exception=(mode)" ilk="function" line="2003" lineend="2005" name="set_eventloop_tick" signature="set_eventloop_tick(tick)" />
+        <scope ilk="function" line="2006" lineend="2008" name="get_eventloop_tick" signature="get_eventloop_tick" />
+        <scope ilk="function" line="2009" lineend="2011" name="set_no_event_wait" signature="set_no_event_wait(tick)" />
+        <scope ilk="function" line="20121501212" lineend="2014" name="get_no_event_wait" signature="get_no_event_wait" />
+        <scope ilk="function" line="2015" lineend="2017" name="set_eventloop_weight" signature="set_eventloop_weight(loop_max, no_event_tick)" />
+        <scope ilk="function" line="2018" lineend="2020" name="get_eventloop_weight" signature="get_eventloop_weight" />
+        <scope ilk="function" line="2021" lineend="2023" name="restart" signature="restart(*args)" />
+        <scope ilk="function" line="2025" lineend="2027" name="_merge_tklist" signature="_merge_tklist(*args)" />
+        <scope ilk="function" line="2028" lineend="2030" name="_conv_listelement" signature="_conv_listelement(arg)" />
+      </scope>
+      <scope classrefs="Object" doc="depend on TclTkIp" ilk="class" line="2035" lineend="2423" name="MultiTkIp">
+        <scope ilk="function" line="2036" lineend="2143" name="mainloop" signature="mainloop(check_root = true, restart_on_dead = true)" />
+        <scope ilk="function" line="2145" lineend="2148" name="make_safe" signature="make_safe" />
+        <scope ilk="function" line="2150" lineend="2153" name="safe?" signature="safe?" />
+        <scope ilk="function" line="2155" lineend="2158" name="safe_base?" signature="safe_base?" />
+        <scope ilk="function" line="2160" lineend="2163" name="allow_ruby_exit?" signature="allow_ruby_exit?" />
+        <scope ilk="function" line="2165" lineend="2168" name="allow_ruby_exit=" signature="allow_ruby_exit= (mode)" />
+        <scope ilk="function" line="2170" lineend="2231" name="delete" signature="delete" />
+        <scope ilk="function" line="2233" lineend="2236" name="deleted?" signature="deleted?" />
+        <scope ilk="function" line="2238" lineend="2241" name="has_mainwindow?" signature="has_mainwindow?" />
+        <scope ilk="function" line="2243" lineend="2246" name="invalid_namespace?" signature="invalid_namespace?" />
+        <scope ilk="function" line="2248" lineend="2261" name="abort" signature="abort(msg = nil)" />
+        <scope ilk="function" line="2263" lineend="2271" name="exit" signature="exit(st = true)" />
+        <scope ilk="function" line="2273" lineend="2281" name="exit!" signature="exit!(st = false)" />
+        <scope ilk="function" line="2283" lineend="2294" name="restart" signature="restart(app_name = nil, keys = {})" />
+        <scope ilk="function" line="2296" lineend="2299" name="__eval" signature="__eval(str)" />
+        <scope ilk="function" line="2301" lineend="2304" name="__invoke" signature="__invoke(*args)" />
+        <scope ilk="function" line="2306" lineend="2309" name="_eval" signature="_eval(str)" />
+        <scope ilk="function" line="2311" lineend="2314" name="_invoke" signature="_invoke(*args)" />
+        <scope ilk="function" line="2316" lineend="2319" name="_eval_without_enc" signature="_eval_without_enc(str)" />
+        <scope ilk="function" line="2321" lineend="2324" name="_invoke_without_enc" signature="_invoke_without_enc(*args)" />
+        <scope ilk="function" line="2326" lineend="2329" name="_eval_with_enc" signature="_eval_with_enc(str)" />
+        <scope ilk="function" line="2331" lineend="2334" name="_invoke_with_enc" signature="_invoke_with_enc(*args)" />
+        <scope ilk="function" line="2336" lineend="2339" name="_toUTF8" signature="_toUTF8(str, encoding=nil)" />
+        <scope ilk="function" line="2341" lineend="2344" name="_fromUTF8" signature="_fromUTF8(str, encoding=nil)" />
+        <scope ilk="function" line="2346" lineend="2349" name="_thread_vwait" signature="_thread_vwait(var)" />
+        <scope ilk="function" line="2351" lineend="2354" name="_thread_tkwait" signature="_thread_tkwait(mode, target)" />
+        <scope ilk="function" line="2356" lineend="2359" name="_return_value" signature="_return_value" />
+        <scope ilk="function" line="2361" lineend="2364" name="_get_variable" signature="_get_variable(var, flag)" />
+        <scope ilk="function" line="2365" lineend="2368" name="_get_variable2" signature="_get_variable2(var, idx, flag)" />
+        <scope ilk="function" line="2369" lineend="2372" name="_set_variable" signature="_set_variable(var, value, flag)" />
+        <scope ilk="function" line="2373" lineend="2376" name="_set_variable2" signature="_set_variable2(var, idx, value, flag)" />
+        <scope ilk="function" line="2377" lineend="2380" name="_unset_variable" signature="_unset_variable(var, flag)" />
+        <scope ilk="function" line="2381" lineend="2384" name="_unset_variable2" signature="_unset_variable2(var, idx, flag)" />
+        <scope ilk="function" line="2386" lineend="2389" name="_get_global_var" signature="_get_global_var(var)" />
+        <scope ilk="function" line="2390" lineend="2393" name="_get_global_var2" signature="_get_global_var2(var, idx)" />
+        <scope ilk="function" line="2394" lineend="2397" name="_set_global_var" signature="_set_global_var(var, value)" />
+        <scope ilk="function" line="2398" lineend="2401" name="_set_global_var2" signature="_set_global_var2(var, idx, value)" />
+        <scope ilk="function" line="2402" lineend="2405" name="_unset_global_var" signature="_unset_global_var(var)" />
+        <scope ilk="function" line="2406" lineend="2409" name="_unset_global_var2" signature="_unset_global_var2(var, idx)" />
+        <scope ilk="function" line="2411" lineend="2414" name="_split_tklist" signature="_split_tklist(str)" />
+        <scope ilk="function" line="2415" lineend="2418" name="_merge_tklist" signature="_merge_tklist(*args)" />
+        <scope ilk="function" line="2419" lineend="2422" name="_conv_listelement" signature="_conv_listelement(arg)" />
+      </scope>
+      <scope classrefs="Object" doc="interp command support" ilk="class" line="2427" lineend="2801" name="MultiTkIp">
+        <scope ilk="function" line="2428" lineend="2456" name="_lst2ary" signature="_lst2ary(str)" />
+        <scope ilk="function" line="2459" lineend="2467" name="_slavearg" signature="_slavearg(slave)" />
+        <scope ilk="function" line="2470" lineend="2473" name="alias_info" signature="alias_info(slave, cmd_name)" />
+        <scope attributes="__classmethod__" ilk="function" line="2474" lineend="2476" name="alias_info" signature="self.alias_info(slave, cmd_name)" />
+        <scope ilk="function" line="2478" lineend="2482" name="alias_delete" signature="alias_delete(slave, cmd_name)" />
+        <scope attributes="__classmethod__" ilk="function" line="2483" lineend="2486" name="alias_delete" signature="self.alias_delete(slave, cmd_name)" />
+        <scope ilk="function" line="2488" lineend="2493" name="def_alias" signature="def_alias(slave, new_cmd, org_cmd, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2494" lineend="2497" name="def_alias" signature="self.def_alias(slave, new_cmd, org_cmd, *args)" />
+        <scope ilk="function" line="2499" lineend="2502" name="aliases" signature="aliases(slave = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2503" lineend="2505" name="aliases" signature="self.aliases(slave = &apos;&apos;)" />
+        <scope ilk="function" line="2507" lineend="2512" name="delete_slaves" signature="delete_slaves(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2513" lineend="2516" name="delete_slaves" signature="self.delete_slaves(*args)" />
+        <scope ilk="function" line="2518" lineend="2522" name="exist?" signature="exist?(slave = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2523" lineend="2525" name="exist?" signature="self.exist?(slave = &apos;&apos;)" />
+        <scope ilk="function" line="2527" lineend="2532" name="delete_cmd" signature="delete_cmd(slave, cmd)" />
+        <scope attributes="__classmethod__" ilk="function" line="2533" lineend="2536" name="delete_cmd" signature="self.delete_cmd(slave, cmd)" />
+        <scope ilk="function" line="2538" lineend="2546" name="expose_cmd" signature="expose_cmd(slave, cmd, aliasname = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="2547" lineend="2550" name="expose_cmd" signature="self.expose_cmd(slave, cmd, aliasname = nil)" />
+        <scope ilk="function" line="2552" lineend="2560" name="hide_cmd" signature="hide_cmd(slave, cmd, aliasname = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="2561" lineend="2564" name="hide_cmd" signature="self.hide_cmd(slave, cmd, aliasname = nil)" />
+        <scope ilk="function" line="2566" lineend="2569" name="hidden_cmds" signature="hidden_cmds(slave = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2570" lineend="2572" name="hidden_cmds" signature="self.hidden_cmds(slave = &apos;&apos;)" />
+        <scope ilk="function" line="2574" lineend="2589" name="invoke_hidden" signature="invoke_hidden(slave, cmd, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2590" lineend="2592" name="invoke_hidden" signature="self.invoke_hidden(slave, cmd, *args)" />
+        <scope ilk="function" line="2594" lineend="2610" name="invoke_hidden_on_global" signature="invoke_hidden_on_global(slave, cmd, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2611" lineend="2613" name="invoke_hidden_on_global" signature="self.invoke_hidden_on_global(slave, cmd, *args)" />
+        <scope ilk="function" line="2615" lineend="2628" name="invoke_hidden_on_namespace" signature="invoke_hidden_on_namespace(slave, ns, cmd, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2629" lineend="2631" name="invoke_hidden_on_namespace" signature="self.invoke_hidden_on_namespace(slave, ns, cmd, *args)" />
+        <scope ilk="function" line="2633" lineend="2637" name="mark_trusted" signature="mark_trusted(slave = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2638" lineend="2641" name="mark_trusted" signature="self.mark_trusted(slave = &apos;&apos;)" />
+        <scope ilk="function" line="2643" lineend="2655" name="set_bgerror_handler" signature="set_bgerror_handler(cmd = Proc.new, slave = nil, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="2656" lineend="2658" name="bgerror" signature="self.bgerror(cmd = Proc.new, slave = nil, &amp;b)" />
+        <scope ilk="function" line="2660" lineend="2663" name="get_bgerror_handler" signature="get_bgerror_handler(slave = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2664" lineend="2666" name="bgerror" signature="self.bgerror(slave = &apos;&apos;)" />
+        <scope ilk="function" line="2668" lineend="2671" name="set_limit" signature="set_limit(limit_type, slave = &apos;&apos;, opts = {})" />
+        <scope attributes="__classmethod__" ilk="function" line="2672" lineend="2674" name="set_limit" signature="self.set_limit(limit_type, slave = &apos;&apos;, opts = {})" />
+        <scope ilk="function" line="2676" lineend="2696" name="get_limit" signature="get_limit(limit_type, slave = &apos;&apos;, slot = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="2697" lineend="2699" name="get_limit" signature="self.get_limit(limit_type, slave = &apos;&apos;, slot = nil)" />
+        <scope ilk="function" line="2701" lineend="2705" name="recursion_limit" signature="recursion_limit(slave = &apos;&apos;, limit = None)" />
+        <scope attributes="__classmethod__" ilk="function" line="2706" lineend="2708" name="recursion_limit" signature="self.recursion_limit(slave = &apos;&apos;, limit = None)" />
+        <scope ilk="function" line="2710" lineend="2713" name="alias_target" signature="alias_target(aliascmd, slave = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2714" lineend="2716" name="alias_target" signature="self.alias_target(aliascmd, slave = &apos;&apos;)" />
+        <scope ilk="function" line="2718" lineend="2722" name="share_stdin" signature="share_stdin(dist, src = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2723" lineend="2726" name="share_stdin" signature="self.share_stdin(dist, src = &apos;&apos;)" />
+        <scope ilk="function" line="2728" lineend="2732" name="share_stdout" signature="share_stdout(dist, src = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2733" lineend="2736" name="share_stdout" signature="self.share_stdout(dist, src = &apos;&apos;)" />
+        <scope ilk="function" line="2738" lineend="2742" name="share_stderr" signature="share_stderr(dist, src = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2743" lineend="2746" name="share_stderr" signature="self.share_stderr(dist, src = &apos;&apos;)" />
+        <scope ilk="function" line="2748" lineend="2752" name="transfer_stdin" signature="transfer_stdin(dist, src = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2753" lineend="2756" name="transfer_stdin" signature="self.transfer_stdin(dist, src = &apos;&apos;)" />
+        <scope ilk="function" line="2758" lineend="2762" name="transfer_stdout" signature="transfer_stdout(dist, src = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2763" lineend="2766" name="transfer_stdout" signature="self.transfer_stdout(dist, src = &apos;&apos;)" />
+        <scope ilk="function" line="2768" lineend="2772" name="transfer_stderr" signature="transfer_stderr(dist, src = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2773" lineend="2776" name="transfer_stderr" signature="self.transfer_stderr(dist, src = &apos;&apos;)" />
+        <scope ilk="function" line="2778" lineend="2784" name="share_stdio" signature="share_stdio(dist, src = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2785" lineend="2788" name="share_stdio" signature="self.share_stdio(dist, src = &apos;&apos;)" />
+        <scope ilk="function" line="2790" lineend="2796" name="transfer_stdio" signature="transfer_stdio(dist, src = &apos;&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2797" lineend="2800" name="transfer_stdio" signature="self.transfer_stdio(dist, src = &apos;&apos;)" />
+      </scope>
+      <scope classrefs="Object" doc="Safe Base :: manipulating safe interpreter" ilk="class" line="2805" lineend="2878" name="MultiTkIp">
+        <scope ilk="function" line="2806" lineend="2817" name="safeip_configure" signature="safeip_configure(slot, value=None)" />
+        <scope ilk="function" line="2819" lineend="2857" name="safeip_configinfo" signature="safeip_configinfo(slot = nil)" />
+        <scope ilk="function" line="2859" lineend="2862" name="safeip_delete" signature="safeip_delete" />
+        <scope ilk="function" line="2864" lineend="2867" name="safeip_add_to_access_path" signature="safeip_add_to_access_path(dir)" />
+        <scope ilk="function" line="2869" lineend="2872" name="safeip_find_in_access_path" signature="safeip_find_in_access_path(dir)" />
+        <scope ilk="function" line="2874" lineend="2877" name="safeip_set_log_cmd" signature="safeip_set_log_cmd(cmd = Proc.new)" />
+      </scope>
+      <scope classrefs="Object" doc="encoding convert" ilk="class" line="2882" lineend="2903" name="MultiTkIp">
+        <scope ilk="function" line="2883" lineend="2886" name="encoding" signature="encoding" />
+        <scope ilk="function" line="2887" lineend="2890" name="encoding=" signature="encoding=(enc)" />
+        <scope ilk="function" line="2892" lineend="2895" name="encoding_convertfrom" signature="encoding_convertfrom(str, enc=None)" />
+        <scope ilk="function" line="2898" lineend="2901" name="encoding_convertto" signature="encoding_convertto(str, enc=None)" />
+      </scope>
+      <scope classrefs="Object" doc="remove methods for security" ilk="class" line="2907" lineend="2911" name="MultiTkIp" />
+      <scope doc="end of MultiTkIp definition defend against modification&#xA;MultiTkIp.freeze TclTkLib.freeze" ilk="namespace" line="2922" lineend="2924" name="TkCore" />
+    </scope>
+    

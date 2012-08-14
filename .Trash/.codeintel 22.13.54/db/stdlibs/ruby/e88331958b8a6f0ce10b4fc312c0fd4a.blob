@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="webrick/ssl">
+      <import line="8" module="webrick" symbol="*" />
+      <import line="9" module="openssl" symbol="*" />
+      <scope doc="ssl.rb -- SSL/TLS enhancement for GenericServer" ilk="namespace" line="11" lineend="126" name="WEBrick">
+        <scope ilk="namespace" line="12" lineend="36" name="Config" />
+        <scope ilk="namespace" line="38" lineend="79" name="Utils">
+          <scope ilk="function" line="39" lineend="77" name="create_self_signed_cert" signature="create_self_signed_cert(bits, cn, comment)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="81" lineend="125" name="GenericServer">
+          <scope ilk="function" line="82" lineend="84" name="ssl_context" signature="ssl_context" />
+          <scope ilk="function" line="86" lineend="100" name="listen" signature="listen(address, port)" />
+          <scope ilk="function" line="102" lineend="124" name="setup_ssl_context" signature="setup_ssl_context(config)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="jcode">
+      <scope classrefs="Object" doc="jcode.rb - ruby code to handle japanese (EUC/SJIS) string" ilk="class" line="8" lineend="219" name="String">
+        <scope ilk="function" line="11" lineend="15" name="_regex_quote" signature="_regex_quote(str)" />
+        <scope ilk="function" line="46" lineend="57" name="mbchar?" signature="mbchar?" />
+        <scope ilk="function" line="59" lineend="70" name="end_regexp" signature="end_regexp" />
+        <scope ilk="function" line="78" lineend="90" name="succ!" signature="succ!" />
+        <scope ilk="function" line="92" lineend="95" name="succ" signature="succ" />
+        <scope ilk="function" line="99" lineend="116" name="_expand_ch" signature="_expand_ch" />
+        <scope ilk="function" line="118" lineend="124" name="expand_ch_hash" signature="expand_ch_hash" />
+        <scope ilk="function" line="133" lineend="145" name="tr!" signature="tr!(from, to)" />
+        <scope ilk="function" line="147" lineend="149" name="tr" signature="tr(from, to)" />
+        <scope ilk="function" line="151" lineend="154" name="delete!" signature="delete!(del)" />
+        <scope ilk="function" line="156" lineend="158" name="delete" signature="delete(del)" />
+        <scope ilk="function" line="160" lineend="169" name="squeeze!" signature="squeeze!(del=nil)" />
+        <scope ilk="function" line="171" lineend="173" name="squeeze" signature="squeeze(del=nil)" />
+        <scope ilk="function" line="175" lineend="186" name="tr_s!" signature="tr_s!(from, to)" />
+        <scope ilk="function" line="188" lineend="190" name="tr_s" signature="tr_s(from, to)" />
+        <scope ilk="function" line="192" lineend="194" name="chop!" signature="chop!" />
+        <scope ilk="function" line="196" lineend="198" name="chop" signature="chop (str = self.dup)" />
+        <scope ilk="function" line="200" lineend="202" name="jlength" signature="jlength" />
+        <scope ilk="function" line="205" lineend="207" name="jcount" signature="jcount(str)" />
+        <scope ilk="function" line="209" lineend="217" name="each_char" signature="each_char" />
+      </scope>
+    </scope>
+    

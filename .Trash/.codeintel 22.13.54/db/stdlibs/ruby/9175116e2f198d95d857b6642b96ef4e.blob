@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="tk/labelframe">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/frame" symbol="*" />
+      <scope classrefs="TkFrame" doc="tk/labelframe.rb : treat labelframe widget" ilk="class" line="7" lineend="24" name="TkLabelFrame">
+        <scope doc="def create_self(keys) if keys and keys != None&#xA;tk_call_without_enc(&apos;labelframe&apos;, @path, *hash_kv(keys,&#xA;true)) else tk_call_without_enc(&apos;labelframe&apos;, @path)" ilk="function" line="20" lineend="22" name="__val2ruby_optkeys" signature="__val2ruby_optkeys" />
+      </scope>
+    </scope>
+    

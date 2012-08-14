@@ -1,0 +1,29 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_options">
+      <scope doc="We handle the parsing of options, and subsequently as a&#xA;singleton object to be queried for option values" ilk="namespace" line="4" lineend="254" name="RI">
+        <import line="6" module="rdoc/ri/ri_display" symbol="*" />
+        <scope classrefs="Object" ilk="class" line="10" lineend="252" name="Options">
+          <import line="12" module="singleton" symbol="*" />
+          <import line="13" module="getoptlong" symbol="*" />
+          <scope ilk="function" line="19" lineend="19" name="use_stdout" />
+          <scope ilk="function" line="19" lineend="19" name="use_stdout=" />
+          <scope ilk="function" line="22" lineend="22" name="list_classes" />
+          <scope ilk="function" line="25" lineend="25" name="list_names" />
+          <scope ilk="function" line="28" lineend="28" name="width" />
+          <scope ilk="function" line="31" lineend="31" name="formatter" />
+          <scope ilk="function" line="34" lineend="34" name="doc_dir" />
+          <scope doc="the directory we search for original documentation" ilk="namespace" line="36" lineend="168" name="OptionList">
+            <scope attributes="__classmethod__" ilk="function" line="75" lineend="82" name="options" signature="OptionList.options" />
+            <scope attributes="__classmethod__" ilk="function" line="85" lineend="90" name="strip_output" signature="OptionList.strip_output(text)" />
+            <scope attributes="__classmethod__" doc="Show an error and exit" ilk="function" line="95" lineend="100" name="error" signature="OptionList.error(msg)" />
+            <scope attributes="__classmethod__" doc="Show usage and exit" ilk="function" line="104" lineend="167" name="usage" signature="OptionList.usage(short_form=false)" />
+          </scope>
+          <scope doc="Show the version and exit" ilk="function" line="171" lineend="174" name="show_version" signature="show_version" />
+          <scope attributes="__ctor__" ilk="function" line="177" lineend="183" name="initialize" signature="initialize" />
+          <scope doc="Parse command line options." ilk="function" line="188" lineend="238" name="parse" signature="parse(args)" />
+          <scope doc="Return the doc_dir as an array, or nil if no overriding doc&#xA;dir was given" ilk="function" line="241" lineend="243" name="paths" signature="paths" />
+          <scope doc="Return an instance of the displayer (the thing that actually&#xA;writes the information)." ilk="function" line="249" lineend="251" name="displayer::RiDisplay." signature="displayer ::RiDisplay." />
+          <import symbol="Singleton" />
+        </scope>
+      </scope>
+    </scope>
+    

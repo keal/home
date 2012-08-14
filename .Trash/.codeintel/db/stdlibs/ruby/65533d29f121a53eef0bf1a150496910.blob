@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encodings/EUC-JP">
+      <scope ilk="namespace" line="1" lineend="35" name="REXML">
+        <scope ilk="namespace" line="2" lineend="34" name="Encoding">
+          <import line="4" module="uconv" symbol="*" />
+          <import line="14" module="nkf" symbol="*" />
+          <scope ilk="function" line="6" lineend="8" name="decode_eucjp" signature="decode_eucjp(str)" />
+          <scope ilk="function" line="10" lineend="12" name="encode_eucjp" signature="encode_eucjp" />
+          <scope ilk="function" line="19" lineend="21" name="decode_eucjp" signature="decode_eucjp(str)" />
+          <scope ilk="function" line="23" lineend="25" name="encode_eucjp" signature="encode_eucjp" />
+          <scope classrefs="Object" ilk="class" line="29" lineend="32" name="obj" />
+        </scope>
+      </scope>
+    </scope>
+    

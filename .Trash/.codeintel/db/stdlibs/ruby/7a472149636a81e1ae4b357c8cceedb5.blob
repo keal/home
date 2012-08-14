@@ -1,0 +1,92 @@
+<scope ilk="blob" lang="Ruby" name="date">
+      <scope classrefs="Object" doc="Class representing a date." ilk="class" name="Date">
+        <import symbol="Comparable" />
+        <scope attributes="__classmethod__" doc="Load from Marshall format." ilk="function" name="_load" signature="(str)" />
+        <scope attributes="__classmethod__" doc="Convert an Astronomical Julian Day Number to an Astronomical&#xA;Modified Julian Day Number." ilk="function" name="ajd_to_amjd" signature="(ajd)" />
+        <scope attributes="__classmethod__" doc="Convert an Astronomical Julian Day Number to a (civil)&#xA;Julian Day Number." ilk="function" name="ajd_to_jd" signature="(ajd, of=0)" />
+        <scope attributes="__classmethod__" doc="Convert an Astronomical Modified Julian Day Number to an&#xA;Astronomical Julian Day Number." ilk="function" name="amjd_to_ajd" signature="(amjd)" />
+        <scope attributes="__classmethod__" doc="Create a new Date object for the Civil Date specified by&#xA;year y, month m, and day-of-month d." ilk="function" name="civil" signature="(y=-4712, m=1, d=1, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Convert a Civil Date to a Julian Day Number. y, m, and d are&#xA;the year, month, and day of the month." ilk="function" name="civil_to_jd" signature="(y, m, d, sg=GREGORIAN)" />
+        <scope attributes="__classmethod__" doc="Create a new Date object for the Commercial Date specified&#xA;by year y, week-of-year w, and day-of-week d." ilk="function" name="commercial" signature="(y=1582, w=41, d=5, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Convert a Commercial Date to a Julian Day Number." ilk="function" name="commercial_to_jd" signature="(y, w, d, ns=GREGORIAN)" />
+        <scope attributes="__classmethod__" doc="Convert a fractional day fr to [hours, minutes, seconds,&#xA;fraction_of_a_second]" ilk="function" name="day_fraction_to_time" signature="(fr)" />
+        <scope attributes="__classmethod__" doc="Is a year a leap year in the Gregorian calendar?" ilk="function" name="gregorian_leap?" signature="(y)" />
+        <scope attributes="__classmethod__" doc="Create a new Date object from a Julian Day Number." ilk="function" name="jd" signature="(jd=0, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Convert a (civil) Julian Day Number to an Astronomical&#xA;Julian Day Number." ilk="function" name="jd_to_ajd" signature="(jd, fr, of=0)" />
+        <scope attributes="__classmethod__" doc="Convert a Julian Day Number to a Civil Date. jd is the&#xA;Julian Day Number." ilk="function" name="jd_to_civil" signature="(jd, sg=GREGORIAN)" />
+        <scope attributes="__classmethod__" doc="Convert a Julian Day Number to a Commercial Date" ilk="function" name="jd_to_commercial" signature="(jd, sg=GREGORIAN)" />
+        <scope attributes="__classmethod__" doc="Convert a Julian Day Number to the number of days since the&#xA;adoption of the Gregorian Calendar (in Italy)." ilk="function" name="jd_to_ld" signature="(jd)" />
+        <scope attributes="__classmethod__" doc="Convert a Julian Day Number to a Modified Julian Day Number." ilk="function" name="jd_to_mjd" signature="(jd)" />
+        <scope attributes="__classmethod__" doc="Convert a Julian Day Number to an Ordinal Date." ilk="function" name="jd_to_ordinal" signature="(jd, sg=GREGORIAN)" />
+        <scope attributes="__classmethod__" doc="Convert a Julian Day Number to the day of the week." ilk="function" name="jd_to_wday" signature="(jd)" />
+        <scope attributes="__classmethod__" doc="Is a year a leap year in the Julian calendar?" ilk="function" name="julian_leap?" signature="(y)" />
+        <scope attributes="__classmethod__" doc="Convert a count of the number of days since the adoption of&#xA;the Gregorian Calendar (in Italy) to a Julian Day Number." ilk="function" name="ld_to_jd" signature="(ld)" />
+        <scope attributes="__classmethod__" doc="Convert a Modified Julian Day Number to a Julian Day Number." ilk="function" name="mjd_to_jd" signature="(mjd)" />
+        <scope attributes="__classmethod__ __ctor__" doc="*NOTE* this is the documentation for the method new0(). If&#xA;you are reading this as the documentation for new(), that is&#xA;because rdoc doesn&apos;t fully support the aliasing of the&#xA;initialize() method." ilk="function" name="new" signature="(ajd=0, of=0, sg=ITALY)" />
+        <scope attributes="__classmethod__ private" ilk="function" name="new_with_hash" signature="(elem, sg)" />
+        <scope attributes="__classmethod__" doc="Does a given Julian Day Number fall inside the new-style&#xA;(Gregorian) calendar?" ilk="function" name="ns?" signature="(jd, sg)" />
+        <scope attributes="__classmethod__" doc="Create a new Date object from an Ordinal Date, specified by&#xA;year y and day-of-year d. d can be negative, in which it&#xA;counts backwards from the end of the year." ilk="function" name="ordinal" signature="(y=-4712, d=1, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Convert an Ordinal Date to a Julian Day Number." ilk="function" name="ordinal_to_jd" signature="(y, d, sg=GREGORIAN)" />
+        <scope attributes="__classmethod__" doc="Does a given Julian Day Number fall inside the old-style&#xA;(Julian) calendar?" ilk="function" name="os?" signature="(jd, sg)" />
+        <scope attributes="__classmethod__" doc="Create a new Date object by parsing from a String, without&#xA;specifying the format." ilk="function" name="parse" signature="(str=&apos;-4712-01-01&apos;, comp=false, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Create a new Date object by parsing from a String according&#xA;to a specified format." ilk="function" name="strptime" signature="(str=&apos;-4712-01-01&apos;, fmt=&apos;%F&apos;, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Convert an h hour, min minutes, s seconds period to a&#xA;fractional day." ilk="function" name="time_to_day_fraction" signature="(h, min, s)" />
+        <scope attributes="__classmethod__" doc="Create a new Date object representing today." ilk="function" name="today" signature="(sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Do year y, month m, and day-of-month d make a valid Civil&#xA;Date? Returns the corresponding Julian Day Number if they&#xA;do, nil if they don&apos;t." ilk="function" name="valid_civil?" signature="(y, m, d, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Do year y, week-of-year w, and day-of-week d make a valid&#xA;Commercial Date? Returns the corresponding Julian Day Number&#xA;if they do, nil if they don&apos;t." ilk="function" name="valid_commercial?" signature="(y, w, d, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Is jd a valid Julian Day Number?" ilk="function" name="valid_jd?" signature="(jd, sg=ITALY)" />
+        <scope attributes="__classmethod__" doc="Do the year y and day-of-year d make a valid Ordinal Date?&#xA;Returns the corresponding Julian Day Number if they do, or&#xA;nil if they don&apos;t." ilk="function" name="valid_ordinal?" signature="(y, d, sg=ITALY)" />
+        <scope doc="Return a new Date object that is n days later than the&#xA;current one." ilk="function" name="+" signature="(n)" />
+        <scope doc="Return a new Date object that is n months earlier than the&#xA;current one." ilk="function" name="&lt;&lt;" signature="(n)" />
+        <scope doc="Compare this date with another date." ilk="function" name="&lt;=&gt;" signature="(other)" />
+        <scope doc="The relationship operator for Date." ilk="function" name="===" signature="(other)" />
+        <scope doc="Return a new Date object that is n months later than the&#xA;current one." ilk="function" name="&gt;&gt;" signature="(n)" />
+        <scope doc="Dump to Marshal format." ilk="function" name="_dump" signature="(limit)" />
+        <scope doc="Get the date as an Astronomical Julian Day Number." ilk="function" name="ajd" signature="()" />
+        <scope doc="Get the date as an Astronomical Modified Julian Day Number." ilk="function" name="amjd" signature="()" />
+        <scope attributes="private" doc="Get the date as a Civil Date, [year, month, day_of_month]" ilk="function" name="civil" signature="()" />
+        <scope attributes="private" doc="Get the date as a Commercial Date, [year, week_of_year,&#xA;day_of_week]" ilk="function" name="commercial" signature="()" />
+        <scope doc="Get the commercial day of the week of this date. Monday is&#xA;commercial day-of-week 1; Sunday is commercial day-of-week&#xA;7." ilk="function" name="cwday" signature="()" />
+        <scope doc="Get the commercial week of the year of this date." ilk="function" name="cweek" signature="()" />
+        <scope doc="Get the commercial year of this date. See *Commercial*&#xA;*Date* in the introduction for how this differs from the&#xA;normal year." ilk="function" name="cwyear" signature="()" />
+        <scope doc="Alias for #mday" ilk="function" name="day" signature="()" />
+        <scope doc="Get any fractional day part of the date." ilk="function" name="day_fraction" signature="()" />
+        <scope doc="Step backward one day at a time until we reach min&#xA;(inclusive), yielding each date as we go." ilk="function" name="downto" signature="(min) {|date| ...}" />
+        <scope doc="Create a copy of this Date object that uses the&#xA;English/Colonial Day of Calendar Reform." ilk="function" name="england" signature="()" />
+        <scope doc="Is this Date equal to other?" ilk="function" name="eql?" signature="(other)" />
+        <scope doc="Create a copy of this Date object that always uses the&#xA;Gregorian Calendar." ilk="function" name="gregorian" signature="()" />
+        <scope doc="Calculate a hash value for this date." ilk="function" name="hash" signature="()" />
+        <scope attributes="private" doc="Get the hour of this date." ilk="function" name="hour" signature="()" />
+        <scope doc="Return internal object state as a programmer-readable&#xA;string." ilk="function" name="inspect" signature="()" />
+        <scope doc="Create a copy of this Date object that uses the&#xA;Italian/Catholic Day of Calendar Reform." ilk="function" name="italy" signature="()" />
+        <scope doc="Get the date as a Julian Day Number." ilk="function" name="jd" signature="()" />
+        <scope doc="Create a copy of this Date object that always uses the&#xA;Julian Calendar." ilk="function" name="julian" signature="()" />
+        <scope doc="Get the date as the number of days since the Day of Calendar&#xA;Reform (in Italy and the Catholic countries)." ilk="function" name="ld" signature="()" />
+        <scope doc="Is this a leap year?" ilk="function" name="leap?" signature="()" />
+        <scope doc="Get the day-of-the-month of this date." ilk="function" name="mday" signature="()" />
+        <scope attributes="private" doc="Get the minute of this date." ilk="function" name="min" signature="()" />
+        <scope doc="Get the date as a Modified Julian Day Number." ilk="function" name="mjd" signature="()" />
+        <scope doc="Get the month of this date." ilk="function" name="mon" signature="()" />
+        <scope doc="Alias for #mon" ilk="function" name="month" signature="()" />
+        <scope attributes="private" ilk="function" name="new_offset" signature="(of=0)" />
+        <scope doc="Create a copy of this Date object using a new Day of&#xA;Calendar Reform." ilk="function" name="new_start" signature="(sg=self.class::ITALY)" />
+        <scope doc="Alias for #succ" ilk="function" name="next" signature="()" />
+        <scope doc="Is the current date new-style (Gregorian Calendar)?" ilk="function" name="ns?" signature="()" />
+        <scope attributes="private" ilk="function" name="offset" signature="()" />
+        <scope attributes="private" doc="Get the date as an Ordinal Date, [year, day_of_year]" ilk="function" name="ordinal" signature="()" />
+        <scope doc="Is the current date old-style (Julian Calendar)?" ilk="function" name="os?" signature="()" />
+        <scope attributes="private" doc="Get the second of this date." ilk="function" name="sec" signature="()" />
+        <scope attributes="private" doc="Get the fraction-of-a-second of this date." ilk="function" name="sec_fraction" signature="()" />
+        <scope doc="When is the Day of Calendar Reform for this Date object?" ilk="function" name="start" signature="()" />
+        <scope doc="Step the current date forward step days at a time (or&#xA;backward, if step is negative) until we reach limit&#xA;(inclusive), yielding the resultant date at each step." ilk="function" name="step" signature="(limit, step) {|date| ...}" />
+        <scope doc="Return a new Date one day after this one." ilk="function" name="succ" signature="()" />
+        <scope attributes="private" doc="Get the time of this date as [hours, minutes, seconds,&#xA;fraction_of_a_second]" ilk="function" name="time" signature="()" />
+        <scope doc="Return the date as a human-readable string." ilk="function" name="to_s" signature="()" />
+        <scope doc="Step forward one day at a time until we reach max&#xA;(inclusive), yielding each date as we go." ilk="function" name="upto" signature="(max) {|date| ...}" />
+        <scope doc="Get the week day of this date. Sunday is day-of-week 0;&#xA;Saturday is day-of-week 6." ilk="function" name="wday" signature="()" />
+        <scope doc="Get the day-of-the-year of this date." ilk="function" name="yday" signature="()" />
+        <scope doc="Get the year of this date." ilk="function" name="year" signature="()" />
+        <scope attributes="private" ilk="function" name="zone" signature="()" />
+      </scope>
+    </scope>
+    

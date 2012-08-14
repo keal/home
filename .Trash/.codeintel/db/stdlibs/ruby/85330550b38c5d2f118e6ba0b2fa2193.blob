@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/datefield">
+      <import line="18" module="tk" symbol="*" />
+      <import line="19" module="tk/entry" symbol="*" />
+      <import line="20" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;datefield&apos;, &apos;0.1&apos;)" ilk="namespace" line="25" lineend="43" name="Tk">
+        <scope ilk="namespace" line="26" lineend="42" name="Tcllib">
+          <scope classrefs="TkEntry" ilk="class" line="27" lineend="40" name="Datefield">
+            <scope attributes="__classmethod__" ilk="function" line="29" lineend="31" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="33" lineend="39" name="package_version" signature="self.package_version" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="45" lineend="57" name="Tk::Tcllib::">
+        <scope ilk="function" line="48" lineend="55" name="create_self" signature="create_self(keys)" />
+      </scope>
+    </scope>
+    

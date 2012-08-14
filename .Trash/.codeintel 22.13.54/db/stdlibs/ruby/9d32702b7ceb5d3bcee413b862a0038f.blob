@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/entry">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/entry" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/entry.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="BWidget">
+          <scope classrefs="TkEntry" ilk="class" line="12" lineend="13" name="Entry" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="43" name="Tk::BWidget::">
+        <scope ilk="function" line="24" lineend="26" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="29" lineend="31" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="34" lineend="36" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="39" lineend="42" name="invoke" signature="invoke" />
+        <import symbol="Scrollable" />
+      </scope>
+    </scope>
+    

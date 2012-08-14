@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/test/TestInline">
+      <import line="1" module="test/unit" symbol="*" />
+      <import line="5" module="rdoc/markup/simple_markup/inline" symbol="*" />
+      <scope classrefs="Test::Unit::" ilk="class" line="7" lineend="154" name="TestInline">
+        <scope ilk="function" line="10" lineend="32" name="setup" signature="setup" />
+        <scope ilk="function" line="34" lineend="39" name="crossref" signature="crossref(text)" />
+        <scope ilk="function" line="41" lineend="59" name="test_special" signature="test_special" />
+        <scope ilk="function" line="61" lineend="98" name="test_basic" signature="test_basic" />
+        <scope ilk="function" line="100" lineend="106" name="test_combined" signature="test_combined" />
+        <scope ilk="function" line="108" lineend="133" name="test_html_like" signature="test_html_like" />
+        <scope ilk="function" line="135" lineend="147" name="test_protect" signature="test_protect" />
+        <scope ilk="function" line="149" lineend="153" name="test_adding" signature="test_adding" />
+      </scope>
+    </scope>
+    

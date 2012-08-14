@@ -1,0 +1,69 @@
+<scope ilk="blob" lang="Ruby" name="irb/context">
+      <import line="12" module="irb/workspace" symbol="*" />
+      <scope doc="irb/context.rb - irb context $Release Version: 0.9.5$&#xA;$Revision: 1.8.2.3 $ $Date: 2005/07/31 15:10:26 $ by Keiju&#xA;ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="14" lineend="255" name="IRB">
+        <scope classrefs="Object" ilk="class" line="15" lineend="254" name="Context">
+          <scope attributes="__ctor__" doc="Arguments: input_method: nil -- stdin or readline String --&#xA;File other -- using this as InputMethod" ilk="function" line="22" lineend="100" name="initialize" signature="initialize(irb, workspace = nil, input_method = nil, output_method = nil)" />
+          <scope ilk="function" line="102" lineend="104" name="main" signature="main" />
+          <scope ilk="function" line="106" lineend="106" name="workspace_home" />
+          <scope ilk="function" line="107" lineend="107" name="workspace" />
+          <scope ilk="function" line="107" lineend="107" name="workspace=" />
+          <scope ilk="function" line="108" lineend="108" name="thread" />
+          <scope ilk="function" line="109" lineend="109" name="io" />
+          <scope ilk="function" line="109" lineend="109" name="io=" />
+          <scope ilk="function" line="111" lineend="111" name="irb" />
+          <scope ilk="function" line="111" lineend="111" name="irb=" />
+          <scope ilk="function" line="112" lineend="112" name="ap_name" />
+          <scope ilk="function" line="112" lineend="112" name="ap_name=" />
+          <scope ilk="function" line="113" lineend="113" name="rc" />
+          <scope ilk="function" line="113" lineend="113" name="rc=" />
+          <scope ilk="function" line="114" lineend="114" name="load_modules" />
+          <scope ilk="function" line="114" lineend="114" name="load_modules=" />
+          <scope ilk="function" line="115" lineend="115" name="irb_name" />
+          <scope ilk="function" line="115" lineend="115" name="irb_name=" />
+          <scope ilk="function" line="116" lineend="116" name="irb_path" />
+          <scope ilk="function" line="116" lineend="116" name="irb_path=" />
+          <scope ilk="function" line="118" lineend="118" name="use_readline" />
+          <scope ilk="function" line="119" lineend="119" name="inspect_mode" />
+          <scope ilk="function" line="121" lineend="121" name="prompt_mode" />
+          <scope ilk="function" line="122" lineend="122" name="prompt_i" />
+          <scope ilk="function" line="122" lineend="122" name="prompt_i=" />
+          <scope ilk="function" line="123" lineend="123" name="prompt_s" />
+          <scope ilk="function" line="123" lineend="123" name="prompt_s=" />
+          <scope ilk="function" line="124" lineend="124" name="prompt_c" />
+          <scope ilk="function" line="124" lineend="124" name="prompt_c=" />
+          <scope ilk="function" line="125" lineend="125" name="prompt_n" />
+          <scope ilk="function" line="125" lineend="125" name="prompt_n=" />
+          <scope ilk="function" line="126" lineend="126" name="auto_indent_mode" />
+          <scope ilk="function" line="126" lineend="126" name="auto_indent_mode=" />
+          <scope ilk="function" line="127" lineend="127" name="return_format" />
+          <scope ilk="function" line="127" lineend="127" name="return_format=" />
+          <scope ilk="function" line="129" lineend="129" name="ignore_sigint" />
+          <scope ilk="function" line="129" lineend="129" name="ignore_sigint=" />
+          <scope ilk="function" line="130" lineend="130" name="ignore_eof" />
+          <scope ilk="function" line="130" lineend="130" name="ignore_eof=" />
+          <scope ilk="function" line="131" lineend="131" name="echo" />
+          <scope ilk="function" line="131" lineend="131" name="echo=" />
+          <scope ilk="function" line="132" lineend="132" name="verbose" />
+          <scope ilk="function" line="132" lineend="132" name="verbose=" />
+          <scope ilk="function" line="133" lineend="133" name="debug_level" />
+          <scope ilk="function" line="135" lineend="135" name="back_trace_limit" />
+          <scope ilk="function" line="135" lineend="135" name="back_trace_limit=" />
+          <scope ilk="function" line="143" lineend="153" name="verbose?" signature="verbose?" />
+          <scope ilk="function" line="155" lineend="158" name="prompting?" signature="prompting?" />
+          <scope ilk="function" line="160" lineend="160" name="last_value" />
+          <scope ilk="function" line="162" lineend="165" name="set_last_value" signature="set_last_value(value)" />
+          <scope ilk="function" line="167" lineend="167" name="irb_name" />
+          <scope ilk="function" line="169" lineend="182" name="prompt_mode=" signature="prompt_mode=(mode)" />
+          <scope ilk="function" line="184" lineend="186" name="inspect?" signature="inspect?" />
+          <scope ilk="function" line="188" lineend="190" name="file_input?" signature="file_input?" />
+          <scope ilk="function" line="192" lineend="200" name="inspect_mode=" signature="inspect_mode=(opt)" />
+          <scope ilk="function" line="202" lineend="205" name="use_readline=" signature="use_readline=(opt)" />
+          <scope ilk="function" line="207" lineend="211" name="debug_level=" signature="debug_level=(value)" />
+          <scope ilk="function" line="213" lineend="215" name="debug?" signature="debug?" />
+          <scope ilk="function" line="217" lineend="222" name="evaluate" signature="evaluate(line, line_no)" />
+          <scope ilk="function" line="225" lineend="227" name="exit" signature="exit(ret = 0)" />
+          <scope ilk="function" line="234" lineend="251" name="inspect" signature="inspect" />
+        </scope>
+      </scope>
+    </scope>
+    

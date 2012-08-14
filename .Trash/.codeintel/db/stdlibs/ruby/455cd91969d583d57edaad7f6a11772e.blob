@@ -1,0 +1,73 @@
+<scope ilk="blob" lang="Ruby" name="logger">
+      <scope classrefs="Object" ilk="class" name="Logger">
+        <scope doc="Logging severity." ilk="namespace" name="Severity" />
+        <scope classrefs="Error" ilk="class" name="ShiftingError" />
+        <scope classrefs="Object" ilk="class" name="Application">
+          <import symbol="Logger::Severity" />
+          <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="(appname = nil)" />
+          <scope ilk="function" name="appname" />
+          <scope doc="Set the logging threshold, just like Logger#level=." ilk="function" name="level=" signature="(level)" />
+          <scope doc="See Logger#add. This application&apos;s appname is used." ilk="function" name="log" signature="(severity, message = nil, &amp;block)" />
+          <scope ilk="function" name="log=" signature="(logdev)" />
+          <scope ilk="function" name="logdev" />
+          <scope attributes="private" ilk="function" name="run" signature="()" />
+          <scope doc="Sets the log device for this application. See the class&#xA;Logger for an explanation of the arguments." ilk="function" name="set_log" signature="(logdev, shift_age = 0, shift_size = 1024000)" />
+          <scope doc="Start the application. Return the status code." ilk="function" name="start" signature="()" />
+        </scope>
+        <scope classrefs="Object" ilk="class" name="Formatter">
+          <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="()" />
+          <scope ilk="function" name="call" signature="(severity, time, progname, msg)" />
+          <scope ilk="function" name="datetime_format" />
+          <scope ilk="function" name="datetime_format=" />
+          <scope attributes="private" ilk="function" name="format_datetime" signature="(time)" />
+          <scope attributes="private" ilk="function" name="msg2str" signature="(msg)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" name="LogDevice">
+          <scope classrefs="Object" ilk="class" name="LogDeviceMutex">
+            <import symbol="MonitorMixin" />
+          </scope>
+          <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="(log = nil, opt = {})" />
+          <scope attributes="private" ilk="function" name="add_log_header" signature="(file)" />
+          <scope attributes="private" ilk="function" name="check_shift_log" signature="()" />
+          <scope ilk="function" name="close" signature="()" />
+          <scope attributes="private" ilk="function" name="create_logfile" signature="(filename)" />
+          <scope ilk="function" name="dev" />
+          <scope attributes="private" ilk="function" name="eod" signature="(t)" />
+          <scope ilk="function" name="filename" />
+          <scope attributes="private" ilk="function" name="open_logfile" signature="(filename)" />
+          <scope attributes="private" ilk="function" name="previous_period_end" signature="(now)" />
+          <scope attributes="private" ilk="function" name="shift_log_age" signature="()" />
+          <scope attributes="private" ilk="function" name="shift_log_period" signature="(now)" />
+          <scope ilk="function" name="write" signature="(message)" />
+        </scope>
+        <scope classrefs="RuntimeError" ilk="class" name="Error" />
+        <import symbol="Severity" />
+        <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="(logdev, shift_age = 0, shift_size = 1048576)" />
+        <scope doc="Dump given message to the log device without any formatting.&#xA;If no log device exists, return nil." ilk="function" name="&lt;&lt;" signature="(msg)" />
+        <scope ilk="function" name="add" signature="(severity, message = nil, progname = nil, &amp;block) {|| ...}" />
+        <scope doc="Close the logging device." ilk="function" name="close" signature="()" />
+        <scope ilk="function" name="datetime_format" signature="()" />
+        <scope doc="Logging date-time format (string passed to strftime)." ilk="function" name="datetime_format=" signature="(datetime_format)" />
+        <scope doc="Log a DEBUG message." ilk="function" name="debug" signature="(progname = nil, &amp;block)" />
+        <scope doc="Returns true iff the current severity level allows for the&#xA;printing of DEBUG messages." ilk="function" name="debug?" signature="()" />
+        <scope doc="Log an ERROR message." ilk="function" name="error" signature="(progname = nil, &amp;block)" />
+        <scope doc="Returns true iff the current severity level allows for the&#xA;printing of ERROR messages." ilk="function" name="error?" signature="()" />
+        <scope doc="Log a FATAL message." ilk="function" name="fatal" signature="(progname = nil, &amp;block)" />
+        <scope doc="Returns true iff the current severity level allows for the&#xA;printing of FATAL messages." ilk="function" name="fatal?" signature="()" />
+        <scope attributes="private" ilk="function" name="format_message" signature="(severity, datetime, progname, msg)" />
+        <scope attributes="private" ilk="function" name="format_severity" signature="(severity)" />
+        <scope doc="Logging formatter. formatter#call is invoked with 4&#xA;arguments; severity, time, progname and msg for each log." ilk="function" name="formatter" />
+        <scope doc="Logging formatter. formatter#call is invoked with 4&#xA;arguments; severity, time, progname and msg for each log." ilk="function" name="formatter=" />
+        <scope doc="Log an INFO message." ilk="function" name="info" signature="(progname = nil, &amp;block)" />
+        <scope doc="Returns true iff the current severity level allows for the&#xA;printing of INFO messages." ilk="function" name="info?" signature="()" />
+        <scope doc="Logging severity threshold (e.g. Logger::INFO)." ilk="function" name="level" />
+        <scope doc="Logging severity threshold (e.g. Logger::INFO)." ilk="function" name="level=" />
+        <scope doc="Alias for #add" ilk="function" name="log" signature="(severity, message = nil, progname = nil, &amp;block)" />
+        <scope doc="Logging program name." ilk="function" name="progname" />
+        <scope doc="Logging program name." ilk="function" name="progname=" />
+        <scope doc="Log an UNKNOWN message. This will be printed no matter what&#xA;the logger level." ilk="function" name="unknown" signature="(progname = nil, &amp;block)" />
+        <scope doc="Log a WARN message." ilk="function" name="warn" signature="(progname = nil, &amp;block)" />
+        <scope doc="Returns true iff the current severity level allows for the&#xA;printing of WARN messages." ilk="function" name="warn?" signature="()" />
+      </scope>
+    </scope>
+    

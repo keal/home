@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="tk/console">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/console.rb : control the console on system without a real&#xA;console" ilk="namespace" line="6" lineend="52" name="TkConsole">
+        <scope attributes="__classmethod__" ilk="function" line="12" lineend="14" name="create" signature="self.create" />
+        <scope attributes="__classmethod__" doc="initialize console" ilk="function" line="17" lineend="19" name="title" signature="self.title(str=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="20" lineend="22" name="hide" signature="self.hide" />
+        <scope attributes="__classmethod__" ilk="function" line="23" lineend="25" name="show" signature="self.show" />
+        <scope attributes="__classmethod__" ilk="function" line="26" lineend="33" name="eval" signature="self.eval(tcl_script)" />
+        <scope attributes="__classmethod__" ilk="function" line="34" lineend="42" name="maininterp_eval" signature="self.maininterp_eval(tcl_script)" />
+        <scope attributes="__classmethod__" ilk="function" line="43" lineend="51" name="maininterp_record" signature="self.maininterp_record(tcl_script)" />
+      </scope>
+    </scope>
+    

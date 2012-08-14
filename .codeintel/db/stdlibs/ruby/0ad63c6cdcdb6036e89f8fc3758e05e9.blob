@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tile/tscale">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tkextlib/tile.rb" symbol="*" />
+      <scope doc="tscale &amp; tprogress widget by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="8" lineend="18" name="Tk">
+        <scope ilk="namespace" line="9" lineend="17" name="Tile">
+          <scope classrefs="TkScale" ilk="class" line="10" lineend="11" name="TScale" />
+          <scope classrefs="TScale" ilk="class" line="14" lineend="15" name="TProgress" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="20" lineend="34" name="Tk::Tile::">
+        <scope attributes="__classmethod__" ilk="function" line="31" lineend="33" name="style" signature="self.style(*args)" />
+        <import symbol="Tk::Tile::" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="36" lineend="50" name="Tk::Tile::">
+        <scope attributes="__classmethod__" ilk="function" line="47" lineend="49" name="style" signature="self.style(*args)" />
+        <import symbol="Tk::Tile::" />
+      </scope>
+    </scope>
+    

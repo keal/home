@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="tk/encodedstr">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="string with Tcl&apos;s encoding" ilk="namespace" line="9" lineend="111" name="Tk">
+        <scope classrefs="String" ilk="class" line="10" lineend="80" name="EncodedString">
+          <scope attributes="__classmethod__" ilk="function" line="13" lineend="16" name="subst_utf_backslash" signature="self.subst_utf_backslash(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="17" lineend="19" name="utf_backslash" signature="self.utf_backslash(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="21" lineend="23" name="subst_tk_backslash" signature="self.subst_tk_backslash(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="25" lineend="33" name="utf_to_backslash_sequence" signature="self.utf_to_backslash_sequence(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="34" lineend="36" name="utf_to_backslash" signature="self.utf_to_backslash(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="38" lineend="58" name="to_backslash_sequence" signature="self.to_backslash_sequence(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="60" lineend="62" name="new_with_utf_backslash" signature="self.new_with_utf_backslash(str, enc = nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="64" lineend="66" name="new_without_utf_backslash" signature="self.new_without_utf_backslash(str, enc = nil)" />
+          <scope attributes="__ctor__" ilk="function" line="68" lineend="77" name="initialize" signature="initialize(str, enc = nil)" />
+          <scope ilk="function" line="79" lineend="79" name="encoding" />
+        </scope>
+        <scope classrefs="EncodedString" doc="def Tk.EncodedString(str, enc = nil)&#xA;Tk::EncodedString.new(str, enc) end" ilk="class" line="87" lineend="89" name="BinaryString" />
+        <scope classrefs="EncodedString" doc="def Tk.BinaryString(str) Tk::BinaryString.new(str) end" ilk="class" line="96" lineend="106" name="UTF8_String">
+          <scope attributes="__classmethod__" ilk="function" line="98" lineend="100" name="new" signature="self.new(str)" />
+          <scope ilk="function" line="102" lineend="104" name="to_backslash_sequence" signature="to_backslash_sequence" />
+        </scope>
+      </scope>
+    </scope>
+    

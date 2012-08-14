@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpservlet/filehandler">
+      <import line="11" module="thread" symbol="*" />
+      <import line="12" module="time" symbol="*" />
+      <import line="14" module="webrick/htmlutils" symbol="*" />
+      <import line="15" module="webrick/httputils" symbol="*" />
+      <import line="16" module="webrick/httpstatus" symbol="*" />
+      <scope doc="filehandler.rb -- FileHandler Module" ilk="namespace" line="18" lineend="398" name="WEBrick">
+        <scope ilk="namespace" line="19" lineend="397" name="HTTPServlet">
+          <scope classrefs="AbstractServlet" ilk="class" line="21" lineend="126" name="DefaultFileHandler">
+            <scope attributes="__ctor__" ilk="function" line="22" lineend="25" name="initialize" signature="initialize(server, local_path)" />
+            <scope ilk="function" line="27" lineend="45" name="do_GET" signature="do_GET(req, res)" />
+            <scope ilk="function" line="47" lineend="70" name="not_modified?" signature="not_modified?(req, res, mtime, etag)" />
+            <scope ilk="function" line="72" lineend="117" name="make_partial_content" signature="make_partial_content(req, res, filename, filesize)" />
+            <scope ilk="function" line="119" lineend="125" name="prepare_range" signature="prepare_range(range, filesize)" />
+          </scope>
+          <scope classrefs="AbstractServlet" ilk="class" line="128" lineend="396" name="FileHandler">
+            <scope attributes="__classmethod__" ilk="function" line="131" lineend="133" name="add_handler" signature="self.add_handler(suffix, handler)" />
+            <scope attributes="__classmethod__" ilk="function" line="135" lineend="137" name="remove_handler" signature="self.remove_handler(suffix)" />
+            <scope attributes="__ctor__" ilk="function" line="139" lineend="147" name="initialize" signature="initialize(server, root, options={}, default=Config::FileHandler)" />
+            <scope ilk="function" line="149" lineend="167" name="service" signature="service(req, res)" />
+            <scope ilk="function" line="169" lineend="173" name="do_GET" signature="do_GET(req, res)" />
+            <scope ilk="function" line="175" lineend="179" name="do_POST" signature="do_POST(req, res)" />
+            <scope ilk="function" line="181" lineend="185" name="do_OPTIONS" signature="do_OPTIONS(req, res)" />
+            <scope doc="ToDo RFC2518: HTTP Extensions for Distributed Authoring --&#xA;WEBDAV" ilk="function" line="201" lineend="212" name="exec_handler" signature="exec_handler(req, res)" />
+            <scope ilk="function" line="214" lineend="221" name="get_handler" signature="get_handler(req)" />
+            <scope ilk="function" line="223" lineend="255" name="set_filename" signature="set_filename(req, res)" />
+            <scope ilk="function" line="257" lineend="264" name="check_filename" signature="check_filename(req, res, name)" />
+            <scope ilk="function" line="266" lineend="272" name="shift_path_info" signature="shift_path_info(req, res, path_info, base=nil)" />
+            <scope ilk="function" line="274" lineend="281" name="search_index_file" signature="search_index_file(req, res)" />
+            <scope ilk="function" line="283" lineend="303" name="search_file" signature="search_file(req, res, basename)" />
+            <scope ilk="function" line="305" lineend="309" name="call_callback" signature="call_callback(callback_name, req, res)" />
+            <scope ilk="function" line="311" lineend="318" name="nondisclosure_name?" signature="nondisclosure_name?(name)" />
+            <scope ilk="function" line="320" lineend="394" name="set_dir_list" signature="set_dir_list(req, res)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

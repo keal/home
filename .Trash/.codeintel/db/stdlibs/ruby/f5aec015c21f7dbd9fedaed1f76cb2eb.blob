@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="rss/content">
+      <import line="1" module="rss/1.0" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="53" name="RSS">
+        <scope ilk="namespace" line="10" lineend="40" name="ContentModel">
+          <scope attributes="__classmethod__" ilk="function" line="16" lineend="24" name="append_features" signature="self.append_features(klass)" />
+          <scope ilk="function" line="26" lineend="38" name="content_validate" signature="content_validate(tags)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="42" lineend="44" name="RDF">
+          <scope classrefs="Object" ilk="class" line="43" lineend="43" name="Item">
+            <import symbol="ContentModel" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

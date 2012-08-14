@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="ftools">
+      <scope classrefs="Object" doc="= ftools.rb: Extra tools for the File class" ilk="class" line="34" lineend="35" name="File" />
+      <scope classrefs="Object" ilk="class" line="37" lineend="262" name="File">
+        <scope doc="If +to+ is a valid directory, +from+ will be appended to&#xA;+to+, adding and escaping backslashes as necessary." ilk="function" line="47" lineend="53" name="catname" signature="catname(from, to)" />
+        <scope doc="Copies a file +from+ to +to+." ilk="function" line="59" lineend="83" name="syscopy" signature="syscopy(from, to)" />
+        <scope doc="Copies a file +from+ to +to+ using #syscopy." ilk="function" line="90" lineend="93" name="copy" signature="copy(from, to, verbose = false)" />
+        <scope doc="Moves a file +from+ to +to+ using #syscopy." ilk="function" line="102" lineend="125" name="move" signature="move(from, to, verbose = false)" />
+        <scope doc="Returns +true+ iff the contents of files +from+ and +to+ are&#xA;identical." ilk="function" line="133" lineend="162" name="compare" signature="compare(from, to, verbose = false)" />
+        <scope doc="Removes a list of files." ilk="function" line="171" lineend="190" name="safe_unlink" signature="safe_unlink(*files)" />
+        <scope doc="Creates a directory and all its parent directories." ilk="function" line="208" lineend="224" name="makedirs" signature="makedirs(*dirs)" />
+        <scope doc="Changes permission bits on +files+ to the bit pattern&#xA;represented by +mode+." ilk="function" line="240" lineend="244" name="chmod" signature="chmod(mode, *files)" />
+        <scope doc="If +src+ is not the same as +dest+, copies it and changes&#xA;the permission mode to +mode+." ilk="function" line="253" lineend="260" name="install" signature="install(from, to, mode = nil, verbose = false)" />
+      </scope>
+    </scope>
+    

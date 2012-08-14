@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/sample/rdoc2latex">
+      <import line="5" module="rdoc/markup/simple_markup" symbol="*" />
+      <import line="6" module="rdoc/markup/simple_markup/to_latex" symbol="*" />
+    </scope>
+    

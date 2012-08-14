@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/xsd2ruby">
+      <import line="9" module="xsd/codegen/gensupport" symbol="*" />
+      <import line="10" module="wsdl/xmlSchema/importer" symbol="*" />
+      <import line="11" module="wsdl/soap/classDefCreator" symbol="*" />
+      <scope doc="XSD4R - XSD to ruby mapping library." ilk="namespace" line="14" name="WSDL" />
+      <scope ilk="namespace" line="15" name="XMLSchema" />
+      <scope classrefs="Object" ilk="class" line="18" lineend="103" name="XSD2Ruby">
+        <scope ilk="function" line="19" lineend="19" name="location" />
+        <scope ilk="function" line="19" lineend="19" name="location=" />
+        <scope ilk="function" line="20" lineend="20" name="opt" />
+        <scope ilk="function" line="21" lineend="21" name="logger" />
+        <scope ilk="function" line="21" lineend="21" name="logger=" />
+        <scope ilk="function" line="22" lineend="22" name="basedir" />
+        <scope ilk="function" line="22" lineend="22" name="basedir=" />
+        <scope ilk="function" line="24" lineend="31" name="run" signature="run" />
+        <scope attributes="__ctor__" ilk="function" line="35" lineend="42" name="initialize" signature="initialize" />
+        <scope ilk="function" line="44" lineend="46" name="create_file" signature="create_file" />
+        <scope ilk="function" line="48" lineend="55" name="create_classdef" signature="create_classdef" />
+        <scope ilk="function" line="57" lineend="64" name="write_file" signature="write_file(filename)" />
+        <scope ilk="function" line="66" lineend="86" name="check_file" signature="check_file(filename)" />
+        <scope ilk="function" line="88" lineend="98" name="create_classname" signature="create_classname(xsd)" />
+        <scope ilk="function" line="100" lineend="102" name="import" signature="import(location)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/tooltip">
+      <import line="10" module="tk" symbol="*" />
+      <import line="11" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;tooltip&apos;, &apos;1.1&apos;)" ilk="namespace" line="16" lineend="31" name="Tk::Tcllib">
+        <scope ilk="namespace" line="17" lineend="30" name="Tooltip">
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="33" lineend="95" name="Tk::Tcllib::">
+        <scope attributes="__classmethod__" ilk="function" line="37" lineend="39" name="database_classname" signature="self.database_classname" />
+        <scope attributes="__classmethod__" ilk="function" line="40" lineend="42" name="database_class" signature="self.database_class" />
+        <scope attributes="__classmethod__" ilk="function" line="44" lineend="46" name="clear" signature="self.clear(glob_path_pat = None)" />
+        <scope attributes="__classmethod__" ilk="function" line="48" lineend="50" name="clear_glob" signature="self.clear_glob(glob_path_pat)" />
+        <scope attributes="__classmethod__" ilk="function" line="52" lineend="54" name="clear_widgets" signature="self.clear_widgets(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="56" lineend="58" name="clear_children" signature="self.clear_children(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="60" lineend="62" name="delay" signature="self.delay(millisecs=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="63" lineend="65" name="delay=" signature="self.delay=(millisecs)" />
+        <scope attributes="__classmethod__" ilk="function" line="67" lineend="70" name="disable" signature="self.disable" />
+        <scope attributes="__classmethod__" ilk="function" line="71" lineend="73" name="off" signature="self.off" />
+        <scope attributes="__classmethod__" ilk="function" line="75" lineend="78" name="enable" signature="self.enable" />
+        <scope attributes="__classmethod__" ilk="function" line="79" lineend="81" name="on" signature="self.on" />
+        <scope attributes="__classmethod__" ilk="function" line="83" lineend="90" name="register" signature="self.register(widget, msg, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="92" lineend="94" name="erase" signature="self.erase(widget)" />
+      </scope>
+    </scope>
+    

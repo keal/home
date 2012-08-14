@@ -1,0 +1,37 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tile">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/tile/setup.rb" symbol="*" />
+      <scope doc="version 0.4 or former" ilk="namespace" line="22" lineend="28" name="Tk">
+        <scope ilk="namespace" line="23" lineend="27" name="Tile" />
+      </scope>
+      <scope doc="version 0.5 -- version 0.6" ilk="namespace" line="31" lineend="37" name="Tk">
+        <scope ilk="namespace" line="32" lineend="36" name="Tile" />
+      </scope>
+      <scope doc="version 0.7 or later" ilk="namespace" line="40" lineend="46" name="Tk">
+        <scope ilk="namespace" line="41" lineend="45" name="Tile" />
+      </scope>
+      <scope doc="autoload" ilk="namespace" line="50" lineend="225" name="Tk">
+        <scope ilk="namespace" line="51" lineend="224" name="Tile">
+          <scope attributes="__classmethod__" ilk="function" line="55" lineend="57" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="59" lineend="65" name="package_version" signature="self.package_version" />
+          <scope attributes="__classmethod__" ilk="function" line="67" lineend="69" name="__Import_Tile_Widgets__!" signature="self.__Import_Tile_Widgets__!" />
+          <scope attributes="__classmethod__" ilk="function" line="71" lineend="80" name="load_images" signature="self.load_images(imgdir, pat=TkComm::None)" />
+          <scope attributes="__classmethod__" ilk="function" line="82" lineend="84" name="style" signature="self.style(*args)" />
+          <scope ilk="namespace" line="86" lineend="93" name="KeyNav">
+            <scope attributes="__classmethod__" ilk="function" line="87" lineend="89" name="enableMnemonics" signature="self.enableMnemonics(w)" />
+            <scope attributes="__classmethod__" ilk="function" line="90" lineend="92" name="defaultButton" signature="self.defaultButton(w)" />
+          </scope>
+          <scope ilk="namespace" line="95" lineend="106" name="Font" />
+          <scope ilk="namespace" line="108" lineend="132" name="ParseStyleLayout">
+            <scope ilk="function" line="109" lineend="130" name="_style_layout" signature="_style_layout(lst)" />
+          </scope>
+          <scope ilk="namespace" line="134" lineend="161" name="TileWidget">
+            <scope ilk="function" line="137" lineend="141" name="__val2ruby_optkeys" signature="__val2ruby_optkeys" />
+            <scope ilk="function" line="144" lineend="152" name="instate" signature="instate(state, script=nil, &amp;b)" />
+            <scope ilk="function" line="154" lineend="160" name="state" signature="state(state=nil)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

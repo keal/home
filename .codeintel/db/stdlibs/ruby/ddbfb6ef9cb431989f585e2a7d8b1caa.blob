@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="sizedqueue">
+      <scope classrefs="Queue" doc="This class represents queues of specified size capacity. The&#xA;push operation may be blocked if the capacity is full." ilk="class" name="SizedQueue">
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a fixed-length queue with a maximum size of max." ilk="function" name="new" signature="(max)" />
+        <scope doc="Alias for #push" ilk="function" name="&lt;&lt;" signature="(obj)" />
+        <scope doc="Alias for #pop" ilk="function" name="deq" signature="(*args)" />
+        <scope doc="Alias for #push" ilk="function" name="enq" signature="(obj)" />
+        <scope doc="Returns the maximum size of the queue." ilk="function" name="max" signature="()" />
+        <scope doc="Sets the maximum size of the queue." ilk="function" name="max=" signature="(max)" />
+        <scope doc="Returns the number of threads waiting on the queue." ilk="function" name="num_waiting" signature="()" />
+        <scope doc="Retrieves data from the queue and runs a waiting thread, if&#xA;any." ilk="function" name="pop" signature="(*args)" />
+        <scope doc="Pushes obj to the queue. If there is no space left in the&#xA;queue, waits until space becomes available." ilk="function" name="push" signature="(obj)" />
+        <scope doc="Alias for #pop" ilk="function" name="shift" signature="(*args)" />
+      </scope>
+    </scope>
+    

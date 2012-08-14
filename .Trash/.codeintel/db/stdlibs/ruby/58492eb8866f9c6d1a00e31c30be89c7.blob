@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/winico">
+      <import line="5" module="tk" symbol="*" />
+      <import line="8" module="tkextlib/setup.rb" symbol="*" />
+      <import line="11" module="tkextlib/tktable/setup.rb" symbol="*" />
+      <import line="14" module="tkextlib/winico/winico" symbol="*" />
+    </scope>
+    

@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="delegate">
+      <scope classrefs="Object" doc="= delegate -- Support for the Delegation Pattern" ilk="class" line="117" lineend="188" name="Delegator">
+        <scope attributes="__ctor__" doc="Pass in the _obj_ to delegate method calls to." ilk="function" line="123" lineend="151" name="initialize" signature="initialize(obj)" />
+        <scope doc="Handles the magic of delegation through \_\_getobj\_\_." ilk="function" line="155" lineend="161" name="method_missing" signature="method_missing(m, *args)" />
+        <scope doc="Checks for a method provided by this the delegate object by&#xA;fowarding the call through \_\_getobj\_\_." ilk="function" line="167" lineend="170" name="respond_to?" signature="respond_to?(m)" />
+        <scope doc="This method must be overridden by subclasses and should&#xA;return the object method calls are being delegated to." ilk="function" line="176" lineend="178" name="__getobj__" signature="__getobj__" />
+        <scope doc="Serialization support for the object returned by&#xA;\_\_getobj\_\_." ilk="function" line="181" lineend="183" name="marshal_dump" signature="marshal_dump" />
+        <scope doc="Reinitializes delegation from a serialized object." ilk="function" line="185" lineend="187" name="marshal_load" signature="marshal_load(obj)" />
+      </scope>
+      <scope classrefs="Delegator" doc="A concrete implementation of Delegator, this class provides&#xA;the means to delegate all supported method calls to the&#xA;object passed into the constructor and even to change the&#xA;object being delegated to at a later time with&#xA;\_\_setobj\_\_ ." ilk="class" line="196" lineend="238" name="SimpleDelegator">
+        <scope attributes="__ctor__" doc="Pass in the _obj_ you would like to delegate method calls&#xA;to." ilk="function" line="199" lineend="202" name="initialize" signature="initialize(obj)" />
+        <scope doc="Returns the current object method calls are being delegated&#xA;to." ilk="function" line="205" lineend="207" name="__getobj__" signature="__getobj__" />
+        <scope doc="Changes the delegate object to _obj_." ilk="function" line="223" lineend="226" name="__setobj__" signature="__setobj__(obj)" />
+        <scope doc="Clone support for the object returned by \_\_getobj\_\_." ilk="function" line="229" lineend="232" name="clone" signature="clone" />
+        <scope doc="Duplication support for the object returned by&#xA;\_\_getobj\_\_." ilk="function" line="234" lineend="237" name="dup" signature="dup(obj)" />
+      </scope>
+      <scope doc=":startdoc:" ilk="function" line="256" lineend="308" name="DelegateClass" signature="DelegateClass(superclass)" />
+      <scope classrefs="Array" doc=":enddoc:" ilk="class" line="313" lineend="317" name="ExtArray">
+        <scope attributes="__ctor__" ilk="function" line="314" lineend="316" name="initialize" signature="initialize()" />
+      </scope>
+      <scope ilk="function" line="325" lineend="327" name="foo.test" signature="foo.test" />
+      <scope ilk="function" line="328" lineend="330" name="foo.error" signature="foo.error" />
+    </scope>
+    

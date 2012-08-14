@@ -1,0 +1,52 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/dragdrop">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/itemconfig" symbol="*" />
+      <import line="8" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/dragdrop.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="214" name="Tk::BLT">
+        <scope ilk="namespace" line="11" lineend="213" name="DragDrop">
+          <scope classrefs="TkWindow" ilk="class" line="16" lineend="29" name="Token">
+            <scope attributes="__ctor__" ilk="function" line="20" lineend="28" name="initialize" signature="initialize(arg)" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="36" lineend="69" name="self">
+            <scope ilk="function" line="37" lineend="39" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+            <scope ilk="function" line="42" lineend="44" name="__item_boolval_optkeys" signature="__item_boolval_optkeys(id)" />
+            <scope ilk="function" line="47" lineend="49" name="__item_listval_optkeys" signature="__item_listval_optkeys(id)" />
+            <scope ilk="function" line="52" lineend="54" name="__item_strval_optkeys" signature="__item_strval_optkeys(id)" />
+            <scope ilk="function" line="60" lineend="62" name="source_configure" signature="source_configure(win, slot, value=None)" />
+            <scope ilk="function" line="63" lineend="65" name="source_configinfo" signature="source_configinfo(win, slot=nil)" />
+            <scope ilk="function" line="66" lineend="68" name="current_source_configinfo" signature="current_source_configinfo(win, slot=nil)" />
+          </scope>
+          <scope classrefs="TkValidateCommand" ilk="class" line="71" lineend="94" name="PackageCommand">
+            <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="72" lineend="89" name="ValidateArgs">
+              <scope attributes="__classmethod__" ilk="function" line="86" lineend="88" name="ret_val" signature="self.ret_val(val)" />
+            </scope>
+            <scope attributes="__classmethod__" ilk="function" line="91" lineend="93" name="_config_keys[" signature="self._config_keys [" />
+          </scope>
+          <scope classrefs="TkValidateCommand" ilk="class" line="96" lineend="120" name="SiteCommand">
+            <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="97" lineend="115" name="ValidateArgs">
+              <scope attributes="__classmethod__" ilk="function" line="112" lineend="114" name="ret_val" signature="self.ret_val(val)" />
+            </scope>
+            <scope attributes="__classmethod__" ilk="function" line="117" lineend="119" name="_config_keys[" signature="self._config_keys [" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="122" lineend="124" name="__validation_class_list" signature="self.__validation_class_list" />
+          <scope classrefs="Object" ilk="class" line="126" lineend="129" name="self" />
+          <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="133" lineend="149" name="DnD_Handle" />
+          <scope attributes="__classmethod__" ilk="function" line="151" lineend="155" name="source_handler" signature="self.source_handler(win, datatype, cmd=Proc.new, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="157" lineend="161" name="target_handler" signature="self.target_handler(win, datatype, cmd=Proc.new, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="165" lineend="167" name="init_source" signature="self.init_source(win)" />
+          <scope attributes="__classmethod__" ilk="function" line="169" lineend="171" name="source" signature="self.source()" />
+          <scope attributes="__classmethod__" ilk="function" line="173" lineend="175" name="source_handler_list" signature="self.source_handler_list(win)" />
+          <scope attributes="__classmethod__" ilk="function" line="176" lineend="178" name="source_handler_info" signature="self.source_handler_info(win, type)" />
+          <scope attributes="__classmethod__" ilk="function" line="180" lineend="182" name="target" signature="self.target" />
+          <scope attributes="__classmethod__" ilk="function" line="183" lineend="185" name="target_handler_list" signature="self.target_handler_list(win)" />
+          <scope attributes="__classmethod__" ilk="function" line="187" lineend="189" name="handle_target" signature="self.handle_target(win, type, val=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="191" lineend="193" name="token" signature="self.token(win)" />
+          <scope attributes="__classmethod__" ilk="function" line="195" lineend="197" name="drag" signature="self.drag(win, x, y)" />
+          <scope attributes="__classmethod__" ilk="function" line="198" lineend="200" name="drop" signature="self.drop(win, x, y)" />
+          <scope attributes="__classmethod__" ilk="function" line="202" lineend="204" name="errors" signature="self.errors(cmd=Proc.new)" />
+          <scope attributes="__classmethod__" ilk="function" line="206" lineend="208" name="active" signature="self.active" />
+          <scope attributes="__classmethod__" ilk="function" line="210" lineend="212" name="location" signature="self.location(x=None, y=None)" />
+        </scope>
+      </scope>
+    </scope>
+    

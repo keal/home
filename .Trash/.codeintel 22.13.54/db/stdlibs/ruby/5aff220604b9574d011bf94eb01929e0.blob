@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="open3">
+      <scope doc="open3.rb: Spawn a program like popen, but with stderr, too." ilk="namespace" line="13" lineend="57" name="Open3">
+        <scope doc="[stdin, stdout, stderr] = popen3(command);" ilk="function" line="15" lineend="55" name="popen3" signature="popen3(*cmd)" />
+      </scope>
+    </scope>
+    

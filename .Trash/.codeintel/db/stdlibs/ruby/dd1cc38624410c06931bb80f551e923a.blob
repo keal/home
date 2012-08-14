@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="tk/checkbutton">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/radiobutton" symbol="*" />
+      <scope classrefs="TkRadioButton" doc="tk/checkbutton.rb : treat checkbutton widget" ilk="class" line="7" lineend="24" name="TkCheckButton">
+        <scope doc="def create_self(keys) if keys and keys != None&#xA;tk_call_without_enc(&apos;checkbutton&apos;, @path, *hash_kv(keys,&#xA;true)) else tk_call_without_enc(&apos;checkbutton&apos;, @path)" ilk="function" line="20" lineend="23" name="toggle" signature="toggle" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="observer">
+      <scope doc="observer.rb implements the _Observer_ object-oriented design&#xA;pattern." ilk="namespace" line="117" lineend="192" name="Observable">
+        <scope doc="Add +observer+ as an observer on this object." ilk="function" line="123" lineend="129" name="add_observer" signature="add_observer(observer)" />
+        <scope doc="Delete +observer+ as an observer on this object." ilk="function" line="135" lineend="137" name="delete_observer" signature="delete_observer(observer)" />
+        <scope doc="Delete all observers associated with this object." ilk="function" line="142" lineend="144" name="delete_observers" signature="delete_observers" />
+        <scope doc="Return the number of observers associated with this object." ilk="function" line="149" lineend="155" name="count_observers" signature="count_observers" />
+        <scope doc="Set the changed state of this object." ilk="function" line="161" lineend="163" name="changed" signature="changed(state=true)" />
+        <scope doc="Query the changed state of this object." ilk="function" line="168" lineend="174" name="changed?" signature="changed?" />
+        <scope doc="If this object&apos;s changed state is +true+, invoke the update&#xA;method in each currently associated observer in turn,&#xA;passing it the given arguments." ilk="function" line="181" lineend="190" name="notify_observers" signature="notify_observers(*arg)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="bigdecimal/newton">
+      <import line="23" module="bigdecimal/ludcmp" symbol="*" />
+      <import line="24" module="bigdecimal/jacobian" symbol="*" />
+      <scope doc="newton.rb" ilk="namespace" line="26" lineend="75" name="Newton">
+        <scope ilk="function" line="30" lineend="37" name="norm" signature="norm(fv,zero=0.0)" />
+        <scope ilk="function" line="39" lineend="74" name="nlsolve" signature="nlsolve(f,x)" />
+      </scope>
+    </scope>
+    

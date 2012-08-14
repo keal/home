@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="openssl/bn">
+      <scope doc="Should we care what if somebody require this file directly?&#xA;require &apos;openssl&apos;" ilk="namespace" line="21" lineend="25" name="OpenSSL">
+        <scope classrefs="Object" ilk="class" line="22" lineend="24" name="BN">
+          <import symbol="Comparable" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" doc="OpenSSL" ilk="class" line="30" lineend="34" name="Integer">
+        <scope ilk="function" line="31" lineend="33" name="to_bn" signature="to_bn" />
+      </scope>
+    </scope>
+    

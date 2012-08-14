@@ -1,0 +1,48 @@
+<scope ilk="blob" lang="Ruby" name="soap/parser">
+      <import line="9" module="xsd/ns" symbol="*" />
+      <import line="10" module="xsd/xmlparser" symbol="*" />
+      <import line="11" module="soap/soap" symbol="*" />
+      <import line="12" module="soap/baseData" symbol="*" />
+      <import line="13" module="soap/encodingstyle/handler" symbol="*" />
+      <scope doc="SOAP4R - SOAP XML Instance Parser library." ilk="namespace" line="16" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="19" lineend="248" name="Parser">
+        <scope classrefs="Error" ilk="class" line="22" lineend="22" name="ParseError" />
+        <scope classrefs="ParseError" ilk="class" line="23" lineend="23" name="FormatDecodeError" />
+        <scope classrefs="ParseError" ilk="class" line="24" lineend="24" name="UnexpectedElementError" />
+        <scope classrefs="Object" ilk="class" line="28" lineend="59" name="ParseFrame">
+          <scope ilk="function" line="29" lineend="29" name="node" />
+          <scope ilk="function" line="30" lineend="30" name="name" />
+          <scope ilk="function" line="31" lineend="31" name="ns" />
+          <scope ilk="function" line="31" lineend="31" name="encodingstyle" />
+          <scope classrefs="Object" ilk="class" line="33" lineend="45" name="NodeContainer">
+            <scope attributes="__ctor__" ilk="function" line="34" lineend="36" name="initialize" signature="initialize(node)" />
+            <scope ilk="function" line="38" lineend="40" name="node" signature="node" />
+            <scope ilk="function" line="42" lineend="44" name="replace_node" signature="replace_node(node)" />
+          </scope>
+          <scope attributes="__ctor__" ilk="function" line="49" lineend="54" name="initialize" signature="initialize(ns, name, node, encodingstyle)" />
+          <scope ilk="function" line="56" lineend="58" name="node=" signature="node=(node)" />
+        </scope>
+        <scope ilk="function" line="63" lineend="63" name="envelopenamespace" />
+        <scope ilk="function" line="63" lineend="63" name="envelopenamespace=" />
+        <scope ilk="function" line="64" lineend="64" name="default_encodingstyle" />
+        <scope ilk="function" line="64" lineend="64" name="default_encodingstyle=" />
+        <scope ilk="function" line="65" lineend="65" name="decode_typemap" />
+        <scope ilk="function" line="65" lineend="65" name="decode_typemap=" />
+        <scope ilk="function" line="66" lineend="66" name="allow_unqualified_element" />
+        <scope ilk="function" line="66" lineend="66" name="allow_unqualified_element=" />
+        <scope attributes="__ctor__" ilk="function" line="68" lineend="78" name="initialize" signature="initialize(opt = {})" />
+        <scope ilk="function" line="80" lineend="82" name="charset" signature="charset" />
+        <scope ilk="function" line="84" lineend="103" name="parse" signature="parse(string_or_readable)" />
+        <scope ilk="function" line="105" lineend="133" name="start_element" signature="start_element(name, attrs)" />
+        <scope ilk="function" line="135" lineend="144" name="characters" signature="characters(text)" />
+        <scope ilk="function" line="146" lineend="153" name="end_element" signature="end_element(name)" />
+        <scope ilk="function" line="157" lineend="164" name="find_encodingstyle" signature="find_encodingstyle(ns, attrs)" />
+        <scope ilk="function" line="166" lineend="183" name="decode_tag" signature="decode_tag(ns, name, attrs, parent, encodingstyle)" />
+        <scope ilk="function" line="185" lineend="194" name="decode_tag_end" signature="decode_tag_end(ns, node, encodingstyle)" />
+        <scope ilk="function" line="196" lineend="204" name="decode_text" signature="decode_text(ns, text, encodingstyle)" />
+        <scope ilk="function" line="206" lineend="235" name="decode_soap_envelope" signature="decode_soap_envelope(ns, ele, attrs, parent)" />
+        <scope ilk="function" line="237" lineend="247" name="find_handler" signature="find_handler(encodingstyle)" />
+        <import symbol="SOAP" />
+      </scope>
+    </scope>
+    

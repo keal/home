@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="soap/header/simplehandler">
+      <import line="9" module="soap/header/handler" symbol="*" />
+      <import line="10" module="soap/baseData" symbol="*" />
+      <scope doc="SOAP4R - SOAP Simple header item handler Copyright (C)&#xA;2003-2005  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="13" name="SOAP" />
+      <scope ilk="namespace" line="14" name="Header" />
+      <scope classrefs="SOAP::Header::" ilk="class" line="17" lineend="40" name="SimpleHandler">
+        <scope attributes="__ctor__" ilk="function" line="18" lineend="20" name="initialize" signature="initialize(elename)" />
+        <scope doc="Should return a Hash, String or nil." ilk="function" line="23" lineend="25" name="on_simple_outbound" signature="on_simple_outbound" />
+        <scope doc="Given header is a Hash, String or nil." ilk="function" line="28" lineend="29" name="on_simple_inbound" signature="on_simple_inbound(header, mustunderstand)" />
+        <scope ilk="function" line="31" lineend="34" name="on_outbound" signature="on_outbound" />
+        <scope ilk="function" line="36" lineend="39" name="on_inbound" signature="on_inbound(header, mustunderstand)" />
+      </scope>
+    </scope>
+    

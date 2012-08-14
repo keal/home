@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="mailread">
+      <scope classrefs="Object" ilk="class" line="1" lineend="48" name="Mail">
+        <scope attributes="__ctor__" ilk="function" line="3" lineend="35" name="initialize" signature="initialize(f)" />
+        <scope ilk="function" line="37" lineend="39" name="header" signature="header" />
+        <scope ilk="function" line="41" lineend="43" name="body" signature="body" />
+        <scope ilk="function" line="45" lineend="47" name="[]" signature="[](field" />
+      </scope>
+    </scope>
+    

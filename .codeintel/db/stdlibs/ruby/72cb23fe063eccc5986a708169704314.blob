@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/complexType">
+      <import line="9" module="wsdl/xmlSchema/complexType" symbol="*" />
+      <import line="10" module="soap/mapping" symbol="*" />
+      <scope doc="WSDL4R - SOAP complexType definition for WSDL." ilk="namespace" line="13" name="WSDL" />
+      <scope ilk="namespace" line="14" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="17" lineend="157" name="ComplexType">
+        <scope ilk="function" line="18" lineend="20" name="compoundtype" signature="compoundtype" />
+        <scope ilk="function" line="22" lineend="47" name="check_type" signature="check_type" />
+        <scope ilk="function" line="49" lineend="72" name="child_type" signature="child_type(name = nil)" />
+        <scope ilk="function" line="74" lineend="96" name="child_defined_complextype" signature="child_defined_complextype(name)" />
+        <scope ilk="function" line="98" lineend="115" name="find_arytype" signature="find_arytype" />
+        <scope ilk="function" line="117" lineend="129" name="find_aryelement" signature="find_aryelement" />
+        <scope ilk="function" line="133" lineend="141" name="element_simpletype" signature="element_simpletype(element)" />
+        <scope ilk="function" line="143" lineend="146" name="check_array_content" signature="check_array_content(content)" />
+        <scope ilk="function" line="148" lineend="156" name="content_arytype" signature="content_arytype" />
+      </scope>
+    </scope>
+    

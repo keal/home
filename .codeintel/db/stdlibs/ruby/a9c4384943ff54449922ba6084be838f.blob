@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="openssl/buffering">
+      <scope ilk="namespace" line="17" lineend="239" name="Buffering">
+        <scope attributes="__ctor__" ilk="function" line="22" lineend="26" name="initialize" signature="initialize(*args)" />
+        <scope doc="for reading." ilk="function" line="33" lineend="41" name="fill_rbuff" signature="fill_rbuff" />
+        <scope ilk="function" line="43" lineend="52" name="consume_rbuff" signature="consume_rbuff(size=nil)" />
+        <scope ilk="function" line="56" lineend="75" name="read" signature="read(size=nil, buf=nil)" />
+        <scope ilk="function" line="77" lineend="100" name="readpartial" signature="readpartial(maxlen, buf=nil)" />
+        <scope ilk="function" line="102" lineend="115" name="gets" signature="gets(eol=$/)" />
+        <scope ilk="function" line="117" lineend="121" name="each" signature="each(eol=$/)" />
+        <scope ilk="function" line="124" lineend="130" name="readlines" signature="readlines(eol=$/)" />
+        <scope ilk="function" line="132" lineend="135" name="readline" signature="readline(eol=$/)" />
+        <scope ilk="function" line="137" lineend="140" name="getc" signature="getc" />
+        <scope ilk="function" line="142" lineend="146" name="each_byte" signature="each_byte" />
+        <scope ilk="function" line="148" lineend="151" name="readchar" signature="readchar" />
+        <scope ilk="function" line="153" lineend="155" name="ungetc" signature="ungetc(c)" />
+        <scope ilk="function" line="157" lineend="160" name="eof?" signature="eof?" />
+        <scope doc="for writing." ilk="function" line="168" lineend="187" name="do_write" signature="do_write(s)" />
+        <scope ilk="function" line="191" lineend="194" name="write" signature="write(s)" />
+        <scope ilk="function" line="196" lineend="199" name="&lt;&lt;" signature="&lt;&lt; (s" />
+        <scope ilk="function" line="201" lineend="214" name="puts" signature="puts(*args)" />
+        <scope ilk="function" line="216" lineend="221" name="print" signature="print(*args)" />
+        <scope ilk="function" line="223" lineend="226" name="printf" signature="printf(s, *args)" />
+        <scope ilk="function" line="228" lineend="233" name="flush" signature="flush" />
+        <scope ilk="function" line="235" lineend="238" name="close" signature="close" />
+      </scope>
+    </scope>
+    

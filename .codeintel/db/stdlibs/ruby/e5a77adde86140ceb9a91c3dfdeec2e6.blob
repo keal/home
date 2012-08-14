@@ -1,0 +1,381 @@
+<scope ilk="blob" lang="Ruby" name="glut">
+      <scope ilk="namespace" name="GLUT">
+        <scope attributes="__classmethod__" ilk="function" name="AddMenuEntry" />
+        <scope attributes="__classmethod__" ilk="function" name="AddSubMenu" />
+        <scope attributes="__classmethod__" ilk="function" name="AttachMenu" />
+        <scope attributes="__classmethod__" ilk="function" name="BitmapCharacter" />
+        <scope attributes="__classmethod__" ilk="function" name="BitmapLength" />
+        <scope attributes="__classmethod__" ilk="function" name="BitmapWidth" />
+        <scope attributes="__classmethod__" ilk="function" name="ButtonBoxFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="ChangeToMenuEntry" />
+        <scope attributes="__classmethod__" ilk="function" name="ChangeToSubMenu" />
+        <scope attributes="__classmethod__" ilk="function" name="CopyColormap" />
+        <scope attributes="__classmethod__" ilk="function" name="CreateMenu" />
+        <scope attributes="__classmethod__" ilk="function" name="CreateSubWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="CreateWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="DestroyMenu" />
+        <scope attributes="__classmethod__" ilk="function" name="DestroyWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="DetachMenu" />
+        <scope attributes="__classmethod__" ilk="function" name="DeviceGet" />
+        <scope attributes="__classmethod__" ilk="function" name="DialsFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="DisplayFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="EntryFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="EstablishOverlay" />
+        <scope attributes="__classmethod__" ilk="function" name="ExtensionSupported" />
+        <scope attributes="__classmethod__" ilk="function" name="FullScreen" />
+        <scope attributes="__classmethod__" ilk="function" name="Get" />
+        <scope attributes="__classmethod__" ilk="function" name="GetColor" />
+        <scope attributes="__classmethod__" ilk="function" name="GetMenu" />
+        <scope attributes="__classmethod__" ilk="function" name="GetModifiers" />
+        <scope attributes="__classmethod__" ilk="function" name="GetWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="HideOverlay" />
+        <scope attributes="__classmethod__" ilk="function" name="HideWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="IconifyWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="IdleFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="Init" />
+        <scope attributes="__classmethod__" ilk="function" name="InitDisplayMode" />
+        <scope attributes="__classmethod__" ilk="function" name="InitDisplayString" />
+        <scope attributes="__classmethod__" ilk="function" name="InitWindowPosition" />
+        <scope attributes="__classmethod__" ilk="function" name="InitWindowSize" />
+        <scope attributes="__classmethod__" ilk="function" name="KeyboardFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="LayerGet" />
+        <scope attributes="__classmethod__" ilk="function" name="MainLoop" />
+        <scope attributes="__classmethod__" ilk="function" name="MotionFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="MouseFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="OverlayDisplayFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="PassiveMotionFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="PopWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="PositionWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="PostOverlayRedisplay" />
+        <scope attributes="__classmethod__" ilk="function" name="PostRedisplay" />
+        <scope attributes="__classmethod__" ilk="function" name="PushWidow" />
+        <scope attributes="__classmethod__" ilk="function" name="RemoveMenuItem" />
+        <scope attributes="__classmethod__" ilk="function" name="RemoveOverlay" />
+        <scope attributes="__classmethod__" ilk="function" name="ReportErrors" />
+        <scope attributes="__classmethod__" ilk="function" name="ReshapeFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="ReshapeWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="SetColor" />
+        <scope attributes="__classmethod__" ilk="function" name="SetCurcor" />
+        <scope attributes="__classmethod__" ilk="function" name="SetIconTitle" />
+        <scope attributes="__classmethod__" ilk="function" name="SetMenu" />
+        <scope attributes="__classmethod__" ilk="function" name="SetWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="SetWindowTitle" />
+        <scope attributes="__classmethod__" ilk="function" name="SetupVideoResizing" />
+        <scope attributes="__classmethod__" ilk="function" name="ShowOverlay" />
+        <scope attributes="__classmethod__" ilk="function" name="ShowWindow" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidCone" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidCube" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidDodecahedron" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidIcosahedron" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidOctahedron" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidSphere" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidTeapot" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidTetrahedron" />
+        <scope attributes="__classmethod__" ilk="function" name="SolidTorus" />
+        <scope attributes="__classmethod__" ilk="function" name="SpaceballButtonFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="SpaceballMotionFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="SpaceballRotateFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="SpecialFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="StopVideoResizing" />
+        <scope attributes="__classmethod__" ilk="function" name="StrokeCharacter" />
+        <scope attributes="__classmethod__" ilk="function" name="StrokeLength" />
+        <scope attributes="__classmethod__" ilk="function" name="StrokeWidth" />
+        <scope attributes="__classmethod__" ilk="function" name="SwapBuffers" />
+        <scope attributes="__classmethod__" ilk="function" name="TabletButtonFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="TabletMotionFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="TimerFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="UseLayer" />
+        <scope attributes="__classmethod__" ilk="function" name="VideoPan" />
+        <scope attributes="__classmethod__" ilk="function" name="VideoResize" />
+        <scope attributes="__classmethod__" ilk="function" name="VideoResizeGet" />
+        <scope attributes="__classmethod__" ilk="function" name="VisibilityFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="WarpPointer" />
+        <scope attributes="__classmethod__" ilk="function" name="WindowStatusFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="WireCone" />
+        <scope attributes="__classmethod__" ilk="function" name="WireCube" />
+        <scope attributes="__classmethod__" ilk="function" name="WireDodecahedron" />
+        <scope attributes="__classmethod__" ilk="function" name="WireIcosahedron" />
+        <scope attributes="__classmethod__" ilk="function" name="WireOctahedron" />
+        <scope attributes="__classmethod__" ilk="function" name="WireSphere" />
+        <scope attributes="__classmethod__" ilk="function" name="WireTeapot" />
+        <scope attributes="__classmethod__" ilk="function" name="WireTetrahedron" />
+        <scope attributes="__classmethod__" ilk="function" name="WireTorus" />
+        <scope ilk="function" name="&lt;" />
+        <scope ilk="function" name="&lt;=" />
+        <scope ilk="function" name="&lt;=&gt;" />
+        <scope ilk="function" name="==" />
+        <scope ilk="function" name="===" />
+        <scope ilk="function" name="&gt;" />
+        <scope ilk="function" name="&gt;=" />
+        <scope ilk="function" name="AddMenuEntry" />
+        <scope ilk="function" name="AddSubMenu" />
+        <scope ilk="function" name="AttachMenu" />
+        <scope ilk="function" name="BitmapCharacter" />
+        <scope ilk="function" name="BitmapLength" />
+        <scope ilk="function" name="BitmapWidth" />
+        <scope ilk="function" name="ButtonBoxFunc" />
+        <scope ilk="function" name="ChangeToMenuEntry" />
+        <scope ilk="function" name="ChangeToSubMenu" />
+        <scope ilk="function" name="CopyColormap" />
+        <scope ilk="function" name="CreateMenu" />
+        <scope ilk="function" name="CreateSubWindow" />
+        <scope ilk="function" name="CreateWindow" />
+        <scope ilk="function" name="DestroyMenu" />
+        <scope ilk="function" name="DestroyWindow" />
+        <scope ilk="function" name="DetachMenu" />
+        <scope ilk="function" name="DeviceGet" />
+        <scope ilk="function" name="DialsFunc" />
+        <scope ilk="function" name="DisplayFunc" />
+        <scope ilk="function" name="EntryFunc" />
+        <scope ilk="function" name="EstablishOverlay" />
+        <scope ilk="function" name="ExtensionSupported" />
+        <scope ilk="function" name="FullScreen" />
+        <scope ilk="function" name="Get" />
+        <scope ilk="function" name="GetColor" />
+        <scope ilk="function" name="GetMenu" />
+        <scope ilk="function" name="GetModifiers" />
+        <scope ilk="function" name="GetWindow" />
+        <scope ilk="function" name="HideOverlay" />
+        <scope ilk="function" name="HideWindow" />
+        <scope ilk="function" name="IconifyWindow" />
+        <scope ilk="function" name="IdleFunc" />
+        <scope ilk="function" name="Init" />
+        <scope ilk="function" name="InitDisplayMode" />
+        <scope ilk="function" name="InitDisplayString" />
+        <scope ilk="function" name="InitWindowPosition" />
+        <scope ilk="function" name="InitWindowSize" />
+        <scope ilk="function" name="KeyboardFunc" />
+        <scope ilk="function" name="LayerGet" />
+        <scope ilk="function" name="MainLoop" />
+        <scope ilk="function" name="MotionFunc" />
+        <scope ilk="function" name="MouseFunc" />
+        <scope ilk="function" name="OverlayDisplayFunc" />
+        <scope ilk="function" name="PassiveMotionFunc" />
+        <scope ilk="function" name="PopWindow" />
+        <scope ilk="function" name="PositionWindow" />
+        <scope ilk="function" name="PostOverlayRedisplay" />
+        <scope ilk="function" name="PostRedisplay" />
+        <scope ilk="function" name="PushWidow" />
+        <scope ilk="function" name="RemoveMenuItem" />
+        <scope ilk="function" name="RemoveOverlay" />
+        <scope ilk="function" name="ReportErrors" />
+        <scope ilk="function" name="ReshapeFunc" />
+        <scope ilk="function" name="ReshapeWindow" />
+        <scope ilk="function" name="SetColor" />
+        <scope ilk="function" name="SetCurcor" />
+        <scope ilk="function" name="SetIconTitle" />
+        <scope ilk="function" name="SetMenu" />
+        <scope ilk="function" name="SetWindow" />
+        <scope ilk="function" name="SetWindowTitle" />
+        <scope ilk="function" name="SetupVideoResizing" />
+        <scope ilk="function" name="ShowOverlay" />
+        <scope ilk="function" name="ShowWindow" />
+        <scope ilk="function" name="SolidCone" />
+        <scope ilk="function" name="SolidCube" />
+        <scope ilk="function" name="SolidDodecahedron" />
+        <scope ilk="function" name="SolidIcosahedron" />
+        <scope ilk="function" name="SolidOctahedron" />
+        <scope ilk="function" name="SolidSphere" />
+        <scope ilk="function" name="SolidTeapot" />
+        <scope ilk="function" name="SolidTetrahedron" />
+        <scope ilk="function" name="SolidTorus" />
+        <scope ilk="function" name="SpaceballButtonFunc" />
+        <scope ilk="function" name="SpaceballMotionFunc" />
+        <scope ilk="function" name="SpaceballRotateFunc" />
+        <scope ilk="function" name="SpecialFunc" />
+        <scope ilk="function" name="StopVideoResizing" />
+        <scope ilk="function" name="StrokeCharacter" />
+        <scope ilk="function" name="StrokeLength" />
+        <scope ilk="function" name="StrokeWidth" />
+        <scope ilk="function" name="SwapBuffers" />
+        <scope ilk="function" name="TabletButtonFunc" />
+        <scope ilk="function" name="TabletMotionFunc" />
+        <scope ilk="function" name="TimerFunc" />
+        <scope ilk="function" name="UseLayer" />
+        <scope ilk="function" name="VideoPan" />
+        <scope ilk="function" name="VideoResize" />
+        <scope ilk="function" name="VideoResizeGet" />
+        <scope ilk="function" name="VisibilityFunc" />
+        <scope ilk="function" name="WarpPointer" />
+        <scope ilk="function" name="WindowStatusFunc" />
+        <scope ilk="function" name="WireCone" />
+        <scope ilk="function" name="WireCube" />
+        <scope ilk="function" name="WireDodecahedron" />
+        <scope ilk="function" name="WireIcosahedron" />
+        <scope ilk="function" name="WireOctahedron" />
+        <scope ilk="function" name="WireSphere" />
+        <scope ilk="function" name="WireTeapot" />
+        <scope ilk="function" name="WireTetrahedron" />
+        <scope ilk="function" name="WireTorus" />
+        <scope ilk="function" name="ancestors" />
+        <scope ilk="function" name="autoload" />
+        <scope ilk="function" name="autoload?" />
+        <scope ilk="function" name="class_eval" />
+        <scope ilk="function" name="class_variables" />
+        <scope ilk="function" name="const_defined?" />
+        <scope ilk="function" name="const_get" />
+        <scope ilk="function" name="const_missing" />
+        <scope ilk="function" name="const_set" />
+        <scope ilk="function" name="constants" />
+        <scope ilk="function" name="freeze" />
+        <scope ilk="function" name="include?" />
+        <scope ilk="function" name="included_modules" />
+        <scope ilk="function" name="instance_method" />
+        <scope ilk="function" name="instance_methods" />
+        <scope ilk="function" name="method_defined?" />
+        <scope ilk="function" name="module_eval" />
+        <scope ilk="function" name="name" />
+        <scope ilk="function" name="private_class_method" />
+        <scope ilk="function" name="private_instance_methods" />
+        <scope ilk="function" name="private_method_defined?" />
+        <scope ilk="function" name="protected_instance_methods" />
+        <scope ilk="function" name="protected_method_defined?" />
+        <scope ilk="function" name="public_class_method" />
+        <scope ilk="function" name="public_instance_methods" />
+        <scope ilk="function" name="public_method_defined?" />
+        <scope ilk="function" name="to_s" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACCUM" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACTIVE_ALT" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACTIVE_CTRL" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACTIVE_SHIFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA" />
+        <variable attributes="__const__" citdl="Fixnum" name="API_VERSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="BLUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_BOTTOM_LEFT_CORNER" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_BOTTOM_RIGHT_CORNER" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_BOTTOM_SIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_CROSSHAIR" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_CYCLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_DESTROY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_FULL_CROSSHAIR" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_HELP" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_INFO" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_INHERIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_LEFT_ARROW" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_LEFT_RIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_LEFT_SIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_NONE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_RIGHT_ARROW" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_RIGHT_SIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_SPRAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_TEXT" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_TOP_LEFT_CORNER" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_TOP_RIGHT_CORNER" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_TOP_SIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_UP_DOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURSOR_WAIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="DISPLAY_MODE_POSSIBLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DOUBLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="ELAPSED_TIME" />
+        <variable attributes="__const__" citdl="Fixnum" name="ENTERED" />
+        <variable attributes="__const__" citdl="Fixnum" name="FULLY_COVERED" />
+        <variable attributes="__const__" citdl="Fixnum" name="FULLY_RETAINED" />
+        <variable attributes="__const__" citdl="Fixnum" name="GREEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="HAS_DIAL_AND_BUTTON_BOX" />
+        <variable attributes="__const__" citdl="Fixnum" name="HAS_KEYBOARD" />
+        <variable attributes="__const__" citdl="Fixnum" name="HAS_MOUSE" />
+        <variable attributes="__const__" citdl="Fixnum" name="HAS_OVERLAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="HAS_SPACEBALL" />
+        <variable attributes="__const__" citdl="Fixnum" name="HAS_TABLET" />
+        <variable attributes="__const__" citdl="Fixnum" name="HIDDEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="INIT_DISPLAY_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="INIT_WINDOW_HEIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="INIT_WINDOW_WIDTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="INIT_WINDOW_X" />
+        <variable attributes="__const__" citdl="Fixnum" name="INIT_WINDOW_Y" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_DOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F1" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F10" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F11" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F12" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F2" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F3" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F4" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F5" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F6" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F7" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F8" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F9" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_HOME" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_INSERT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_LEFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_PAGE_DOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_PAGE_UP" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_RIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_UP" />
+        <variable attributes="__const__" citdl="Fixnum" name="LAYER_IN_USE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LEFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="LEFT_BUTTON" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MENU_IN_USE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MENU_NOT_IN_USE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MENU_NUM_ITEMS" />
+        <variable attributes="__const__" citdl="Fixnum" name="MIDDLE_BUTTON" />
+        <variable attributes="__const__" citdl="Fixnum" name="MULTISAMPLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="NORMAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="NORMAL_DAMAGED" />
+        <variable attributes="__const__" citdl="Fixnum" name="NOT_VISIBLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="NUM_BUTTON_BOX_BUTTONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="NUM_DIALS" />
+        <variable attributes="__const__" citdl="Fixnum" name="NUM_MOUSE_BUTTONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="NUM_SPACEBALL_BUTTONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="NUM_TABLET_BUTTONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="OVERLAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="OVERLAY_DAMAGED" />
+        <variable attributes="__const__" citdl="Fixnum" name="OVERLAY_POSSIBLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PARTIALLY_RETAINED" />
+        <variable attributes="__const__" citdl="Fixnum" name="RED" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGBA" />
+        <variable attributes="__const__" citdl="Fixnum" name="RIGHT_BUTTON" />
+        <variable attributes="__const__" citdl="Fixnum" name="SCREEN_HEIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="SCREEN_HEIGHT_MM" />
+        <variable attributes="__const__" citdl="Fixnum" name="SCREEN_WIDTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="SCREEN_WIDTH_MM" />
+        <variable attributes="__const__" citdl="Fixnum" name="SINGLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL" />
+        <variable attributes="__const__" citdl="Fixnum" name="STEREO" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRANSPARENT_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="UP" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_HEIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_HEIGHT_DELTA" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_IN_USE" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_POSSIBLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_WIDTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_WIDTH_DELTA" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_X" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_X_DELTA" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_Y" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIDEO_RESIZE_Y_DELTA" />
+        <variable attributes="__const__" citdl="Fixnum" name="VISIBLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_ACCUM_ALPHA_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_ACCUM_BLUE_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_ACCUM_GREEN_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_ACCUM_RED_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_ALPHA_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_BLUE_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_BUFFER_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_COLORMAP_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_CURSOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_DEPTH_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_DOUBLEBUFFER" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_GREEN_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_HEIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_NUM_CHILDREN" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_NUM_SAMPLES" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_PARENT" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_RED_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_RGBA" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_STENCIL_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_STEREO" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_WIDTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_X" />
+        <variable attributes="__const__" citdl="Fixnum" name="WINDOW_Y" />
+        <variable attributes="__const__" citdl="Fixnum" name="XLIB_IMPLEMENTATION" />
+      </scope>
+    </scope>
+    

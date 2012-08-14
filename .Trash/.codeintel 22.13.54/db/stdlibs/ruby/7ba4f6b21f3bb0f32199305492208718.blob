@@ -1,0 +1,47 @@
+<scope ilk="blob" lang="Ruby" name="set">
+      <scope classrefs="Object" doc="Set implements a collection of unordered values with no&#xA;duplicates. This is a hybrid of Array&apos;s intuitive inter-&#xA;operation facilities and Hash&apos;s fast lookup." ilk="class" name="Set">
+        <import symbol="Enumerable" />
+        <scope attributes="__classmethod__" doc="Creates a new set containing the given objects." ilk="function" name="[]" signature="(*ary)" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a new set containing the elements of the given&#xA;enumerable object." ilk="function" name="new" signature="(enum = nil) {|o| ...}" />
+        <scope doc="Returns a new array containing elements common to the set&#xA;and the given enumerable object." ilk="function" name="&amp;" signature="(enum)" />
+        <scope doc="Alias for #|" ilk="function" name="+" signature="(enum)" />
+        <scope doc="Alias for #add" ilk="function" name="&lt;&lt;" signature="(o)" />
+        <scope doc="Returns true if two sets are equal. The equality of each&#xA;couple of elements is defined according to Object#eql?." ilk="function" name="==" signature="(set)" />
+        <scope doc="Returns a new array containing elements exclusive between&#xA;the set and the given enumerable object. (set ^ enum) is&#xA;equivalent to ((set | enum) - (set &amp; enum))." ilk="function" name="^" signature="(enum)" />
+        <scope doc="Adds the given object to the set and returns self. Use merge&#xA;to add several elements at once." ilk="function" name="add" signature="(o)" />
+        <scope doc="Adds the given object to the set and returns self. If the&#xA;object is already in the set, returns nil." ilk="function" name="add?" signature="(o)" />
+        <scope doc="Classifies the set by the return value of the given block&#xA;and returns a hash of {value =&gt; set of elements} pairs. The&#xA;block is called once for each element of the set, passing&#xA;the element as parameter." ilk="function" name="classify" signature="( {|o| ...}" />
+        <scope doc="Removes all elements and returns self." ilk="function" name="clear" signature="()" />
+        <scope doc="Do collect() destructively." ilk="function" name="collect!" signature="() {|o| ...}" />
+        <scope doc="Deletes the given object from the set and returns self. Use&#xA;subtract to delete several items at once." ilk="function" name="delete" signature="(o)" />
+        <scope doc="Deletes the given object from the set and returns self. If&#xA;the object is not in the set, returns nil." ilk="function" name="delete?" signature="(o)" />
+        <scope doc="Deletes every element of the set for which block evaluates&#xA;to true, and returns self." ilk="function" name="delete_if" signature="() {|o| ...}" />
+        <scope doc="Alias for #-" ilk="function" name="difference" signature="(enum)" />
+        <scope doc="Divides the set into a set of subsets according to the&#xA;commonality defined by the given block." ilk="function" name="divide" signature="(&amp;func)" />
+        <scope doc="Calls the given block once for each element in the set,&#xA;passing the element as parameter." ilk="function" name="each" signature="() {|o| ...}" />
+        <scope doc="Returns true if the set contains no elements." ilk="function" name="empty?" signature="()" />
+        <scope doc="Returns a new set that is a copy of the set, flattening each&#xA;containing set recursively." ilk="function" name="flatten" signature="()" />
+        <scope doc="Equivalent to Set#flatten, but replaces the receiver with&#xA;the result in place. Returns nil if no modifications were&#xA;made." ilk="function" name="flatten!" signature="()" />
+        <scope ilk="function" name="flatten_merge" signature="(set, seen = Set.new)" />
+        <scope doc="Returns true if the set contains the given object." ilk="function" name="include?" signature="(o)" />
+        <scope doc="Copy internal hash." ilk="function" name="initialize_copy" signature="(orig)" />
+        <scope doc="Returns a string containing a human-readable representation&#xA;of the set." ilk="function" name="inspect" signature="()" />
+        <scope doc="Alias for #&amp;" ilk="function" name="intersection" signature="(enum)" />
+        <scope doc="Alias for #size" ilk="function" name="length" signature="()" />
+        <scope doc="Alias for #collect!" ilk="function" name="map!" signature="()" />
+        <scope doc="Alias for #include?" ilk="function" name="member?" signature="(o)" />
+        <scope doc="Merges the elements of the given enumerable object to the&#xA;set and returns self." ilk="function" name="merge" signature="(enum)" />
+        <scope doc="Returns true if the set is a proper subset of the given set." ilk="function" name="proper_subset?" signature="(set)" />
+        <scope doc="Returns true if the set is a proper superset of the given&#xA;set." ilk="function" name="proper_superset?" signature="(set)" />
+        <scope doc="Equivalent to Set#delete_if, but returns nil if no changes&#xA;were made." ilk="function" name="reject!" signature="() {|o| ...}" />
+        <scope doc="Replaces the contents of the set with the contents of the&#xA;given enumerable object and returns self." ilk="function" name="replace" signature="(enum)" />
+        <scope doc="Returns the number of elements." ilk="function" name="size" signature="()" />
+        <scope doc="Returns true if the set is a subset of the given set." ilk="function" name="subset?" signature="(set)" />
+        <scope doc="Deletes every element that appears in the given enumerable&#xA;object and returns self." ilk="function" name="subtract" signature="(enum)" />
+        <scope doc="Returns true if the set is a superset of the given set." ilk="function" name="superset?" signature="(set)" />
+        <scope doc="Converts the set to an array. The order of elements is&#xA;uncertain." ilk="function" name="to_a" signature="()" />
+        <scope doc="Alias for #|" ilk="function" name="union" signature="(enum)" />
+        <scope doc="Returns a new set built by merging the set and the elements&#xA;of the given enumerable object." ilk="function" name="|" signature="(enum)" />
+      </scope>
+    </scope>
+    

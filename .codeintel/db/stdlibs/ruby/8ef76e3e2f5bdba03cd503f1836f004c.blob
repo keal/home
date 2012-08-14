@@ -1,0 +1,83 @@
+<scope ilk="blob" lang="Ruby" name="soap/rpc/proxy">
+      <import line="9" module="soap/soap" symbol="*" />
+      <import line="10" module="soap/processor" symbol="*" />
+      <import line="11" module="soap/mapping" symbol="*" />
+      <import line="12" module="soap/rpc/rpc" symbol="*" />
+      <import line="13" module="soap/rpc/element" symbol="*" />
+      <import line="14" module="soap/streamHandler" symbol="*" />
+      <import line="15" module="soap/mimemessage" symbol="*" />
+      <scope doc="SOAP4R - RPC Proxy library." ilk="namespace" line="18" name="SOAP" />
+      <scope ilk="namespace" line="19" name="RPC" />
+      <scope classrefs="Object" ilk="class" line="22" lineend="493" name="Proxy">
+        <scope ilk="function" line="27" lineend="27" name="soapaction" />
+        <scope ilk="function" line="27" lineend="27" name="soapaction=" />
+        <scope ilk="function" line="28" lineend="28" name="mandatorycharset" />
+        <scope ilk="function" line="28" lineend="28" name="mandatorycharset=" />
+        <scope ilk="function" line="29" lineend="29" name="allow_unqualified_element" />
+        <scope ilk="function" line="29" lineend="29" name="allow_unqualified_element=" />
+        <scope ilk="function" line="30" lineend="30" name="default_encodingstyle" />
+        <scope ilk="function" line="30" lineend="30" name="default_encodingstyle=" />
+        <scope ilk="function" line="31" lineend="31" name="generate_explicit_type" />
+        <scope ilk="function" line="31" lineend="31" name="generate_explicit_type=" />
+        <scope ilk="function" line="32" lineend="32" name="headerhandler" />
+        <scope ilk="function" line="33" lineend="33" name="streamhandler" />
+        <scope ilk="function" line="35" lineend="35" name="mapping_registry" />
+        <scope ilk="function" line="35" lineend="35" name="mapping_registry=" />
+        <scope ilk="function" line="36" lineend="36" name="literal_mapping_registry" />
+        <scope ilk="function" line="36" lineend="36" name="literal_mapping_registry=" />
+        <scope ilk="function" line="38" lineend="38" name="operation" />
+        <scope attributes="__ctor__" ilk="function" line="40" lineend="54" name="initialize" signature="initialize(endpoint_url, soapaction, options)" />
+        <scope ilk="function" line="56" lineend="58" name="inspect" signature="inspect" />
+        <scope ilk="function" line="60" lineend="62" name="endpoint_url" signature="endpoint_url" />
+        <scope ilk="function" line="64" lineend="67" name="endpoint_url=" signature="endpoint_url=(endpoint_url)" />
+        <scope ilk="function" line="69" lineend="71" name="reset_stream" signature="reset_stream" />
+        <scope ilk="function" line="73" lineend="75" name="set_wiredump_file_base" signature="set_wiredump_file_base(wiredump_file_base)" />
+        <scope ilk="function" line="77" lineend="79" name="test_loopback_response" signature="test_loopback_response" />
+        <scope ilk="function" line="81" lineend="88" name="add_rpc_operation" signature="add_rpc_operation(qname, soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="90" lineend="104" name="add_document_operation" signature="add_document_operation(soapaction, name, param_def, opt = {})" />
+        <scope doc="add_method is for shortcut of typical rpc/encoded method&#xA;definition." ilk="function" line="111" lineend="114" name="invoke" signature="invoke(req_header, req_body, opt = nil)" />
+        <scope ilk="function" line="116" lineend="151" name="call" signature="call(name, *params)" />
+        <scope ilk="function" line="153" lineend="176" name="route" signature="route(req_header, req_body, reqopt, resopt)" />
+        <scope ilk="function" line="178" lineend="182" name="check_fault" signature="check_fault(body)" />
+        <scope ilk="function" line="186" lineend="194" name="set_envelopenamespace" signature="set_envelopenamespace(env, namespace)" />
+        <scope ilk="function" line="196" lineend="207" name="create_request_header" signature="create_request_header" />
+        <scope ilk="function" line="209" lineend="211" name="receive_headers" signature="receive_headers(headers)" />
+        <scope ilk="function" line="213" lineend="216" name="marshal" signature="marshal(env, opt)" />
+        <scope ilk="function" line="218" lineend="243" name="unmarshal" signature="unmarshal(conn_data, opt)" />
+        <scope ilk="function" line="245" lineend="251" name="create_header" signature="create_header(headers)" />
+        <scope ilk="function" line="253" lineend="263" name="create_encoding_opt" signature="create_encoding_opt(hash = nil)" />
+        <scope ilk="function" line="265" lineend="271" name="create_mapping_opt" signature="create_mapping_opt(hash = nil)" />
+        <scope classrefs="Object" ilk="class" line="273" lineend="492" name="Operation">
+          <scope ilk="function" line="274" lineend="274" name="soapaction" />
+          <scope ilk="function" line="275" lineend="275" name="request_style" />
+          <scope ilk="function" line="276" lineend="276" name="response_style" />
+          <scope ilk="function" line="277" lineend="277" name="request_use" />
+          <scope ilk="function" line="278" lineend="278" name="response_use" />
+          <scope ilk="function" line="279" lineend="279" name="elementformdefault" />
+          <scope ilk="function" line="280" lineend="280" name="attributeformdefault" />
+          <scope attributes="__ctor__" ilk="function" line="282" lineend="326" name="initialize" signature="initialize(soapaction, param_def, opt)" />
+          <scope ilk="function" line="328" lineend="330" name="request_default_encodingstyle" signature="request_default_encodingstyle (@request_use" />
+          <scope ilk="function" line="332" lineend="334" name="response_default_encodingstyle" signature="response_default_encodingstyle (@response_use" />
+          <scope ilk="function" line="336" lineend="342" name="request_body" signature="request_body(values, mapping_registry, literal_mapping_registry, opt)" />
+          <scope ilk="function" line="344" lineend="350" name="response_obj" signature="response_obj(body, mapping_registry, literal_mapping_registry, opt)" />
+          <scope ilk="function" line="352" lineend="358" name="raise_fault" signature="raise_fault(e, mapping_registry, literal_mapping_registry)" />
+          <scope ilk="function" line="362" lineend="366" name="check_style" signature="check_style(style)" />
+          <scope ilk="function" line="368" lineend="372" name="check_use" signature="check_use(use)" />
+          <scope ilk="function" line="374" lineend="380" name="request_rpc" signature="request_rpc(values, mapping_registry, literal_mapping_registry, opt)" />
+          <scope ilk="function" line="382" lineend="388" name="request_doc" signature="request_doc(values, mapping_registry, literal_mapping_registry, opt)" />
+          <scope ilk="function" line="390" lineend="397" name="request_rpc_enc" signature="request_rpc_enc(values, mapping_registry, opt)" />
+          <scope ilk="function" line="399" lineend="410" name="request_rpc_lit" signature="request_rpc_lit(values, mapping_registry, opt)" />
+          <scope ilk="function" line="412" lineend="418" name="request_doc_enc" signature="request_doc_enc(values, mapping_registry, opt)" />
+          <scope ilk="function" line="420" lineend="430" name="request_doc_lit" signature="request_doc_lit(values, mapping_registry, opt)" />
+          <scope ilk="function" line="432" lineend="438" name="response_rpc" signature="response_rpc(body, mapping_registry, literal_mapping_registry, opt)" />
+          <scope ilk="function" line="440" lineend="446" name="response_doc" signature="response_doc(body, mapping_registry, literal_mapping_registry, opt)" />
+          <scope ilk="function" line="448" lineend="462" name="response_rpc_enc" signature="response_rpc_enc(body, mapping_registry, opt)" />
+          <scope ilk="function" line="464" lineend="469" name="response_rpc_lit" signature="response_rpc_lit(body, mapping_registry, opt)" />
+          <scope ilk="function" line="471" lineend="475" name="response_doc_enc" signature="response_doc_enc(body, mapping_registry, opt)" />
+          <scope ilk="function" line="477" lineend="481" name="response_doc_lit" signature="response_doc_lit(body, mapping_registry, opt)" />
+          <scope ilk="function" line="483" lineend="491" name="create_request_obj" signature="create_request_obj(names, params)" />
+        </scope>
+        <import symbol="SOAP" />
+      </scope>
+    </scope>
+    

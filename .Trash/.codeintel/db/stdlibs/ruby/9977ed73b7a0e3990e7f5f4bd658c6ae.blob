@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="yaml/ypath">
+      <scope doc="YAML::YPath" ilk="namespace" line="5" lineend="52" name="YAML">
+        <scope classrefs="Object" ilk="class" line="7" lineend="50" name="YPath">
+          <scope ilk="function" line="8" lineend="8" name="segments" />
+          <scope ilk="function" line="8" lineend="8" name="segments=" />
+          <scope ilk="function" line="8" lineend="8" name="predicates" />
+          <scope ilk="function" line="8" lineend="8" name="predicates=" />
+          <scope ilk="function" line="8" lineend="8" name="flags" />
+          <scope ilk="function" line="8" lineend="8" name="flags=" />
+          <scope attributes="__ctor__" ilk="function" line="9" lineend="24" name="initialize" signature="initialize( str )" />
+          <scope attributes="__classmethod__" ilk="function" line="25" lineend="49" name="each_path" signature="YPath.each_path( str )" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/header">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL SOAP body definition." ilk="namespace" line="12" name="WSDL" />
+      <scope ilk="namespace" line="13" name="SOAP" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="82" name="Header">
+        <scope ilk="function" line="17" lineend="17" name="headerfault" />
+        <scope ilk="function" line="19" lineend="19" name="message" />
+        <scope ilk="function" line="20" lineend="20" name="part" />
+        <scope ilk="function" line="21" lineend="21" name="use" />
+        <scope ilk="function" line="22" lineend="22" name="encodingstyle" />
+        <scope ilk="function" line="23" lineend="23" name="namespace" />
+        <scope attributes="__ctor__" doc="required" ilk="function" line="25" lineend="33" name="initialize" signature="initialize" />
+        <scope ilk="function" line="35" lineend="37" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="39" lineend="41" name="find_message" signature="find_message" />
+        <scope ilk="function" line="43" lineend="50" name="find_part" signature="find_part" />
+        <scope ilk="function" line="52" lineend="61" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="63" lineend="81" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="base64">
+      <scope doc="The Base64 module provides for the encoding (#encode64) and&#xA;decoding (#decode64) of binary data using a Base64&#xA;representation." ilk="namespace" name="Base64">
+        <scope ilk="namespace" name="Deprecated" />
+        <scope doc="`Prints&apos; the Base64 encoded version of bin (a String) in&#xA;lines of len (default 60) characters." ilk="function" name="b64encode" signature="(bin, len = 60)" />
+        <scope doc="Returns the Base64-decoded version of str." ilk="function" name="decode64" signature="(str)" />
+        <scope doc="Decodes text formatted using a subset of RFC2047 (the one&#xA;used for mime-encoding mail headers)." ilk="function" name="decode_b" signature="(str)" />
+        <scope doc="Returns the Base64-encoded version of str." ilk="function" name="encode64" signature="(bin)" />
+      </scope>
+    </scope>
+    

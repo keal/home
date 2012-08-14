@@ -1,0 +1,71 @@
+<scope ilk="blob" lang="Ruby" name="rss/trackback">
+      <import line="1" module="rss/1.0" symbol="*" />
+      <import line="2" module="rss/2.0" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="290" name="RSS">
+        <scope ilk="namespace" line="12" lineend="34" name="TrackBackUtils">
+          <scope ilk="function" line="14" lineend="33" name="trackback_validate" signature="trackback_validate(tags)" />
+        </scope>
+        <scope ilk="namespace" line="36" lineend="102" name="BaseTrackBackModel">
+          <scope ilk="function" line="37" lineend="101" name="append_features" signature="append_features(klass)" />
+        </scope>
+        <scope ilk="namespace" line="104" lineend="211" name="TrackBackModel10">
+          <scope classrefs="Element" ilk="class" line="108" lineend="154" name="Ping">
+            <scope classrefs="Object" ilk="class" line="111" lineend="121" name="self">
+              <scope ilk="function" line="113" lineend="115" name="required_prefix" signature="required_prefix" />
+              <scope ilk="function" line="117" lineend="119" name="required_uri" signature="required_uri" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="132" lineend="135" name="initialize" signature="initialize(resource=nil)" />
+            <scope ilk="function" line="137" lineend="139" name="full_name" signature="full_name" />
+            <scope ilk="function" line="141" lineend="145" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="148" lineend="152" name="_attrs" signature="_attrs" />
+            <import symbol="RSS10" />
+          </scope>
+          <scope classrefs="Element" ilk="class" line="156" lineend="210" name="About">
+            <scope classrefs="Object" ilk="class" line="159" lineend="169" name="self">
+              <scope ilk="function" line="161" lineend="163" name="required_prefix" signature="required_prefix" />
+              <scope ilk="function" line="165" lineend="167" name="required_uri" signature="required_uri" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="180" lineend="183" name="initialize" signature="initialize(resource=nil)" />
+            <scope ilk="function" line="185" lineend="187" name="full_name" signature="full_name" />
+            <scope ilk="function" line="189" lineend="193" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="196" lineend="200" name="_attrs" signature="_attrs" />
+            <scope ilk="function" line="202" lineend="204" name="maker_target" signature="maker_target(abouts)" />
+            <scope ilk="function" line="206" lineend="208" name="setup_maker_attributes" signature="setup_maker_attributes(about)" />
+            <import symbol="RSS10" />
+          </scope>
+        </scope>
+        <scope ilk="namespace" line="213" lineend="278" name="TrackBackModel20">
+          <scope classrefs="Element" ilk="class" line="217" lineend="246" name="Ping">
+            <scope classrefs="Object" ilk="class" line="222" lineend="232" name="self">
+              <scope ilk="function" line="224" lineend="226" name="required_prefix" signature="required_prefix" />
+              <scope ilk="function" line="228" lineend="230" name="required_uri" signature="required_uri" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="237" lineend="240" name="initialize" signature="initialize(content=nil)" />
+            <scope ilk="function" line="242" lineend="244" name="full_name" signature="full_name" />
+            <import symbol="RSS09" />
+          </scope>
+          <scope classrefs="Element" ilk="class" line="248" lineend="277" name="About">
+            <scope classrefs="Object" ilk="class" line="253" lineend="263" name="self">
+              <scope ilk="function" line="255" lineend="257" name="required_prefix" signature="required_prefix" />
+              <scope ilk="function" line="259" lineend="261" name="required_uri" signature="required_uri" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="268" lineend="271" name="initialize" signature="initialize(content=nil)" />
+            <scope ilk="function" line="273" lineend="275" name="full_name" signature="full_name" />
+            <import symbol="RSS09" />
+          </scope>
+        </scope>
+        <scope classrefs="Object" ilk="class" line="280" lineend="282" name="RDF">
+          <scope classrefs="Object" ilk="class" line="281" lineend="281" name="Item">
+            <import symbol="TrackBackModel10" />
+          </scope>
+        </scope>
+        <scope classrefs="Object" ilk="class" line="284" lineend="288" name="Rss">
+          <scope classrefs="Object" ilk="class" line="285" lineend="287" name="Channel">
+            <scope classrefs="Object" ilk="class" line="286" lineend="286" name="Item">
+              <import symbol="TrackBackModel20" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

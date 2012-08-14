@@ -1,0 +1,86 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/tree">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/canvas" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/tree.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="17" name="Tk">
+        <scope ilk="namespace" line="11" lineend="16" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="12" lineend="15" name="Tree">
+            <scope classrefs="TkObject" ilk="class" line="13" lineend="14" name="Node" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="19" lineend="260" name="Tk::BWidget::">
+        <scope classrefs="TkEvent::Event" ilk="class" line="27" lineend="33" name="Event_for_Items">
+          <scope attributes="__classmethod__" ilk="function" line="28" lineend="32" name="_get_extra_args_tbl[" signature="self._get_extra_args_tbl [" />
+        </scope>
+        <scope ilk="function" line="35" lineend="37" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="40" lineend="43" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="46" lineend="48" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="51" lineend="58" name="tagid" signature="tagid(tag)" />
+        <scope doc="def imagebind(*args) _bind_for_event_class(Event_for_Items,&#xA;[path, &apos;bindImage&apos;], *args) self end" ilk="function" line="64" lineend="74" name="imagebind" signature="imagebind(context, *args)" />
+        <scope doc="def imagebind_append(*args)&#xA;_bind_append_for_event_class(Event_for_Items, [path,&#xA;&apos;bindImage&apos;], *args) self end" ilk="function" line="80" lineend="90" name="imagebind_append" signature="imagebind_append(context, *args)" />
+        <scope ilk="function" line="92" lineend="95" name="imagebind_remove" signature="imagebind_remove(*args)" />
+        <scope ilk="function" line="97" lineend="99" name="imagebindinfo" signature="imagebindinfo(*args)" />
+        <scope doc="def textbind(*args) _bind_for_event_class(Event_for_Items,&#xA;[path, &apos;bindText&apos;], *args) self end" ilk="function" line="105" lineend="115" name="textbind" signature="textbind(context, *args)" />
+        <scope doc="def textbind_append(*args)&#xA;_bind_append_for_event_class(Event_for_Items, [path,&#xA;&apos;bindText&apos;], *args) self end" ilk="function" line="121" lineend="131" name="textbind_append" signature="textbind_append(context, *args)" />
+        <scope ilk="function" line="133" lineend="136" name="textbind_remove" signature="textbind_remove(*args)" />
+        <scope ilk="function" line="138" lineend="140" name="textbindinfo" signature="textbindinfo(*args)" />
+        <scope ilk="function" line="142" lineend="145" name="close_tree" signature="close_tree(node, recurse=None)" />
+        <scope ilk="function" line="147" lineend="150" name="delete" signature="delete(*args)" />
+        <scope ilk="function" line="152" lineend="155" name="edit" signature="edit(node, text, *args)" />
+        <scope ilk="function" line="157" lineend="159" name="exist?" signature="exist?(node)" />
+        <scope ilk="function" line="161" lineend="163" name="index" signature="index(node)" />
+        <scope ilk="function" line="165" lineend="168" name="insert" signature="insert(idx, parent, node, keys={})" />
+        <scope ilk="function" line="170" lineend="173" name="move" signature="move(parent, node, idx)" />
+        <scope ilk="function" line="175" lineend="177" name="get_node" signature="get_node(node, idx)" />
+        <scope ilk="function" line="179" lineend="183" name="nodes" signature="nodes(node, first=None, last=None)" />
+        <scope ilk="function" line="185" lineend="187" name="open?" signature="open?(node)" />
+        <scope ilk="function" line="189" lineend="192" name="open_tree" signature="open_tree(node, recurse=None)" />
+        <scope ilk="function" line="194" lineend="196" name="parent" signature="parent(node)" />
+        <scope ilk="function" line="198" lineend="201" name="reorder" signature="reorder(node, neworder)" />
+        <scope ilk="function" line="203" lineend="206" name="see" signature="see(node)" />
+        <scope ilk="function" line="208" lineend="212" name="selection_add" signature="selection_add(*args)" />
+        <scope ilk="function" line="214" lineend="217" name="selection_clear" signature="selection_clear" />
+        <scope ilk="function" line="219" lineend="221" name="selection_get" signature="selection_get" />
+        <scope ilk="function" line="223" lineend="226" name="selection_include?" signature="selection_include?(*args)" />
+        <scope ilk="function" line="228" lineend="232" name="selection_range" signature="selection_range(*args)" />
+        <scope ilk="function" line="234" lineend="238" name="selection_remove" signature="selection_remove(*args)" />
+        <scope ilk="function" line="240" lineend="244" name="selection_set" signature="selection_set(*args)" />
+        <scope ilk="function" line="246" lineend="250" name="selection_toggle" signature="selection_toggle(*args)" />
+        <scope ilk="function" line="252" lineend="255" name="toggle" signature="toggle(node)" />
+        <scope ilk="function" line="257" lineend="259" name="visible" signature="visible(node)" />
+        <import symbol="TkItemConfigMethod" />
+        <import symbol="Scrollable" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="262" lineend="433" name="Tk::BWidget::">
+        <scope attributes="__classmethod__" ilk="function" line="270" lineend="274" name="id2obj" signature="self.id2obj(tree, id)" />
+        <scope attributes="__ctor__" ilk="function" line="276" lineend="323" name="initialize" signature="initialize(tree, *args)" />
+        <scope ilk="function" line="325" lineend="327" name="tree" signature="tree" />
+        <scope ilk="function" line="329" lineend="331" name="id" signature="id" />
+        <scope ilk="function" line="333" lineend="335" name="[]" signature="[](key" />
+        <scope ilk="function" line="337" lineend="340" name="[]=" signature="[]=(key" />
+        <scope ilk="function" line="342" lineend="344" name="cget" signature="cget(key)" />
+        <scope ilk="function" line="346" lineend="348" name="configure" signature="configure(key, val=None)" />
+        <scope ilk="function" line="350" lineend="352" name="configinfo" signature="configinfo(key=nil)" />
+        <scope ilk="function" line="354" lineend="356" name="current_configinfo" signature="current_configinfo(key=nil)" />
+        <scope ilk="function" line="358" lineend="361" name="close_tree" signature="close_tree(recurse=None)" />
+        <scope ilk="function" line="363" lineend="366" name="delete" signature="delete" />
+        <scope ilk="function" line="368" lineend="371" name="edit" signature="edit(*args)" />
+        <scope ilk="function" line="373" lineend="375" name="exist?" signature="exist?" />
+        <scope ilk="function" line="377" lineend="379" name="index" signature="index" />
+        <scope ilk="function" line="381" lineend="387" name="move" signature="move(index, parent=nil)" />
+        <scope ilk="function" line="389" lineend="392" name="open_tree" signature="open_tree(recurse=None)" />
+        <scope ilk="function" line="394" lineend="396" name="open?" signature="open?" />
+        <scope ilk="function" line="398" lineend="400" name="parent" signature="parent" />
+        <scope ilk="function" line="402" lineend="404" name="reorder" signature="reorder(neworder)" />
+        <scope ilk="function" line="406" lineend="408" name="see" signature="see" />
+        <scope ilk="function" line="410" lineend="412" name="selection_add" signature="selection_add" />
+        <scope ilk="function" line="414" lineend="416" name="selection_remove" signature="selection_remove" />
+        <scope ilk="function" line="418" lineend="420" name="selection_set" signature="selection_set" />
+        <scope ilk="function" line="422" lineend="424" name="selection_toggle" signature="selection_toggle" />
+        <scope ilk="function" line="426" lineend="428" name="toggle" signature="toggle" />
+        <scope ilk="function" line="430" lineend="432" name="visible" signature="visible" />
+        <import symbol="TkTreatTagFont" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/promptdialog">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/promptdialog.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Promptdialog" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="131" name="Tk::Iwidgets::">
+        <scope doc="index method is not available, because it shows index of the&#xA;entry field" ilk="function" line="22" lineend="25" name="default" signature="default(name)" />
+        <scope ilk="function" line="27" lineend="30" name="hide" signature="hide(name)" />
+        <scope ilk="function" line="32" lineend="39" name="invoke" signature="invoke(name=nil)" />
+        <scope ilk="function" line="41" lineend="44" name="show" signature="show(name)" />
+        <scope doc="based on Tk::Iwidgets::Entryfield" ilk="function" line="48" lineend="51" name="clear" signature="clear" />
+        <scope ilk="function" line="53" lineend="56" name="delete" signature="delete(first, last=None)" />
+        <scope ilk="function" line="58" lineend="60" name="value" signature="value" />
+        <scope ilk="function" line="61" lineend="65" name="value=" signature="value= (val)" />
+        <scope ilk="function" line="69" lineend="73" name="cursor=" signature="cursor=(index)" />
+        <scope ilk="function" line="76" lineend="78" name="index" signature="index(idx)" />
+        <scope ilk="function" line="80" lineend="83" name="insert" signature="insert(pos,text)" />
+        <scope ilk="function" line="85" lineend="88" name="mark" signature="mark(pos)" />
+        <scope ilk="function" line="89" lineend="92" name="dragto" signature="dragto(pos)" />
+        <scope ilk="function" line="93" lineend="96" name="selection_adjust" signature="selection_adjust(index)" />
+        <scope ilk="function" line="97" lineend="100" name="selection_clear" signature="selection_clear" />
+        <scope ilk="function" line="101" lineend="104" name="selection_from" signature="selection_from(index)" />
+        <scope ilk="function" line="105" lineend="107" name="selection_present" signature="selection_present()" />
+        <scope ilk="function" line="108" lineend="111" name="selection_range" signature="selection_range(s, e)" />
+        <scope ilk="function" line="112" lineend="115" name="selection_to" signature="selection_to(index)" />
+        <scope ilk="function" line="117" lineend="124" name="xview" signature="xview(*index)" />
+        <scope ilk="function" line="125" lineend="127" name="xview_moveto" signature="xview_moveto(*index)" />
+        <scope ilk="function" line="128" lineend="130" name="xview_scroll" signature="xview_scroll(*index)" />
+      </scope>
+    </scope>
+    

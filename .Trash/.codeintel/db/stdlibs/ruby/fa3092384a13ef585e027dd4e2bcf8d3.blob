@@ -1,0 +1,68 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/listbox">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/canvas" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/listbox.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="20" name="Tk">
+        <scope ilk="namespace" line="11" lineend="19" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="12" lineend="18" name="ListBox">
+            <scope classrefs="TkObject" doc="is NOT a subclass of a listbox widget class." ilk="class" line="16" lineend="17" name="Item" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="22" lineend="208" name="Tk::BWidget::">
+        <scope classrefs="TkEvent::Event" ilk="class" line="30" lineend="36" name="Event_for_Items">
+          <scope attributes="__classmethod__" ilk="function" line="31" lineend="35" name="_get_extra_args_tbl[" signature="self._get_extra_args_tbl [" />
+        </scope>
+        <scope ilk="function" line="38" lineend="40" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="43" lineend="50" name="tagid" signature="tagid(tag)" />
+        <scope doc="def imagebind(*args) _bind_for_event_class(Event_for_Items,&#xA;[path, &apos;bindImage&apos;], *args) self end" ilk="function" line="56" lineend="66" name="imagebind" signature="imagebind(context, *args)" />
+        <scope doc="def imagebind_append(*args)&#xA;_bind_append_for_event_class(Event_for_Items, [path,&#xA;&apos;bindImage&apos;], *args) self end" ilk="function" line="72" lineend="82" name="imagebind_append" signature="imagebind_append(context, *args)" />
+        <scope ilk="function" line="84" lineend="87" name="imagebind_remove" signature="imagebind_remove(*args)" />
+        <scope ilk="function" line="89" lineend="91" name="imagebindinfo" signature="imagebindinfo(*args)" />
+        <scope doc="def textbind(*args) _bind_for_event_class(Event_for_Items,&#xA;[path, &apos;bindText&apos;], *args) self end" ilk="function" line="97" lineend="107" name="textbind" signature="textbind(context, *args)" />
+        <scope doc="def textbind_append(*args)&#xA;_bind_append_for_event_class(Event_for_Items, [path,&#xA;&apos;bindText&apos;], *args) self end" ilk="function" line="113" lineend="123" name="textbind_append" signature="textbind_append(context, *args)" />
+        <scope ilk="function" line="125" lineend="128" name="textbind_remove" signature="textbind_remove(*args)" />
+        <scope ilk="function" line="130" lineend="132" name="textbindinfo" signature="textbindinfo(*args)" />
+        <scope ilk="function" line="134" lineend="137" name="delete" signature="delete(*args)" />
+        <scope ilk="function" line="139" lineend="142" name="edit" signature="edit(item, text, *args)" />
+        <scope ilk="function" line="144" lineend="146" name="exist?" signature="exist?(item)" />
+        <scope ilk="function" line="148" lineend="150" name="index" signature="index(item)" />
+        <scope ilk="function" line="152" lineend="155" name="insert" signature="insert(idx, item, keys={})" />
+        <scope ilk="function" line="157" lineend="159" name="get_item" signature="get_item(idx)" />
+        <scope ilk="function" line="161" lineend="163" name="items" signature="items(first=None, last=None)" />
+        <scope ilk="function" line="165" lineend="168" name="move" signature="move(item, idx)" />
+        <scope ilk="function" line="170" lineend="173" name="reorder" signature="reorder(neworder)" />
+        <scope ilk="function" line="175" lineend="178" name="see" signature="see(item)" />
+        <scope ilk="function" line="180" lineend="183" name="selection_clear" signature="selection_clear" />
+        <scope ilk="function" line="185" lineend="189" name="selection_set" signature="selection_set(*args)" />
+        <scope ilk="function" line="191" lineend="195" name="selection_add" signature="selection_add(*args)" />
+        <scope ilk="function" line="197" lineend="201" name="selection_remove" signature="selection_remove(*args)" />
+        <scope ilk="function" line="203" lineend="207" name="selection_get" signature="selection_get(*args)" />
+        <import symbol="TkItemConfigMethod" />
+        <import symbol="Scrollable" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="210" lineend="338" name="Tk::BWidget::">
+        <scope attributes="__classmethod__" ilk="function" line="218" lineend="222" name="id2obj" signature="self.id2obj(lbox, id)" />
+        <scope attributes="__ctor__" ilk="function" line="224" lineend="262" name="initialize" signature="initialize(lbox, *args)" />
+        <scope ilk="function" line="264" lineend="266" name="listbox" signature="listbox" />
+        <scope ilk="function" line="268" lineend="270" name="id" signature="id" />
+        <scope ilk="function" line="272" lineend="274" name="[]" signature="[](key" />
+        <scope ilk="function" line="276" lineend="279" name="[]=" signature="[]=(key" />
+        <scope ilk="function" line="281" lineend="283" name="cget" signature="cget(key)" />
+        <scope ilk="function" line="285" lineend="287" name="configure" signature="configure(key, val=None)" />
+        <scope ilk="function" line="289" lineend="291" name="configinfo" signature="configinfo(key=nil)" />
+        <scope ilk="function" line="293" lineend="295" name="current_configinfo" signature="current_configinfo(key=nil)" />
+        <scope ilk="function" line="297" lineend="300" name="delete" signature="delete" />
+        <scope ilk="function" line="302" lineend="305" name="edit" signature="edit(*args)" />
+        <scope ilk="function" line="307" lineend="309" name="exist?" signature="exist?" />
+        <scope ilk="function" line="311" lineend="313" name="index" signature="index" />
+        <scope ilk="function" line="315" lineend="317" name="move" signature="move(index)" />
+        <scope ilk="function" line="319" lineend="321" name="see" signature="see" />
+        <scope ilk="function" line="323" lineend="325" name="selection_add" signature="selection_add" />
+        <scope ilk="function" line="327" lineend="329" name="selection_remove" signature="selection_remove" />
+        <scope ilk="function" line="331" lineend="333" name="selection_set" signature="selection_set" />
+        <scope ilk="function" line="335" lineend="337" name="selection_toggle" signature="selection_toggle" />
+        <import symbol="TkTreatTagFont" />
+      </scope>
+    </scope>
+    

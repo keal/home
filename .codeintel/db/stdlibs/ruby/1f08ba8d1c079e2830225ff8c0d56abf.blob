@@ -1,0 +1,115 @@
+<scope ilk="blob" lang="Ruby" name="prettyprint">
+      <import line="400" module="test/unit" symbol="*" />
+      <scope classrefs="Object" doc="$Id$" ilk="class" line="128" lineend="397" name="PrettyPrint">
+        <scope attributes="__classmethod__" ilk="function" line="129" lineend="134" name="format" signature="PrettyPrint.format(output=&apos;&apos;, maxwidth=79, newline=&quot;\n&quot;, genspace=lambda {|n| &apos; &apos; * n})" />
+        <scope attributes="__classmethod__" ilk="function" line="136" lineend="140" name="singleline_format" signature="PrettyPrint.singleline_format(output=&apos;&apos;, maxwidth=nil, newline=nil, genspace=nil)" />
+        <scope attributes="__ctor__" ilk="function" line="142" lineend="156" name="initialize" signature="initialize(output=&apos;&apos;, maxwidth=79, newline=&quot;\n&quot;, &amp;genspace)" />
+        <scope ilk="function" line="157" lineend="157" name="output" />
+        <scope ilk="function" line="157" lineend="157" name="maxwidth" />
+        <scope ilk="function" line="157" lineend="157" name="newline" />
+        <scope ilk="function" line="157" lineend="157" name="genspace" />
+        <scope ilk="function" line="158" lineend="158" name="indent" />
+        <scope ilk="function" line="158" lineend="158" name="group_queue" />
+        <scope ilk="function" line="160" lineend="162" name="current_group" signature="current_group" />
+        <scope ilk="function" line="164" lineend="167" name="first?" signature="first?" />
+        <scope ilk="function" line="169" lineend="183" name="break_outmost_groups" signature="break_outmost_groups" />
+        <scope ilk="function" line="185" lineend="199" name="text" signature="text(obj, width=obj.length)" />
+        <scope ilk="function" line="201" lineend="203" name="fill_breakable" signature="fill_breakable(sep=&apos; &apos;, width=sep.length)" />
+        <scope ilk="function" line="205" lineend="218" name="breakable" signature="breakable(sep=&apos; &apos;, width=sep.length)" />
+        <scope ilk="function" line="220" lineend="228" name="group" signature="group(indent=0, open_obj=&apos;&apos;, close_obj=&apos;&apos;, open_width=open_obj.length, close_width=close_obj.length)" />
+        <scope ilk="function" line="230" lineend="242" name="group_sub" signature="group_sub" />
+        <scope ilk="function" line="244" lineend="251" name="nest" signature="nest(indent)" />
+        <scope ilk="function" line="253" lineend="259" name="flush" signature="flush" />
+        <scope classrefs="Object" ilk="class" line="261" lineend="277" name="Text">
+          <scope attributes="__ctor__" ilk="function" line="262" lineend="265" name="initialize" signature="initialize" />
+          <scope ilk="function" line="266" lineend="266" name="width" />
+          <scope ilk="function" line="268" lineend="271" name="output" signature="output(out, output_width)" />
+          <scope ilk="function" line="273" lineend="276" name="add" signature="add(obj, width)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="279" lineend="302" name="Breakable">
+          <scope attributes="__ctor__" ilk="function" line="280" lineend="287" name="initialize" signature="initialize(sep, width, q)" />
+          <scope ilk="function" line="288" lineend="288" name="obj" />
+          <scope ilk="function" line="288" lineend="288" name="width" />
+          <scope ilk="function" line="288" lineend="288" name="indent" />
+          <scope ilk="function" line="290" lineend="301" name="output" signature="output(out, output_width)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="304" lineend="328" name="Group">
+          <scope attributes="__ctor__" ilk="function" line="305" lineend="309" name="initialize" signature="initialize(depth)" />
+          <scope ilk="function" line="310" lineend="310" name="depth" />
+          <scope ilk="function" line="310" lineend="310" name="breakables" />
+          <scope ilk="function" line="312" lineend="314" name="break" signature="break" />
+          <scope ilk="function" line="316" lineend="318" name="break?" signature="break?" />
+          <scope ilk="function" line="320" lineend="327" name="first?" signature="first?" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="330" lineend="360" name="GroupQueue">
+          <scope attributes="__ctor__" ilk="function" line="331" lineend="334" name="initialize" signature="initialize(*groups)" />
+          <scope ilk="function" line="336" lineend="340" name="enq" signature="enq(group)" />
+          <scope ilk="function" line="342" lineend="355" name="deq" signature="deq" />
+          <scope ilk="function" line="357" lineend="359" name="delete" signature="delete(group)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="362" lineend="396" name="SingleLine">
+          <scope attributes="__ctor__" ilk="function" line="363" lineend="366" name="initialize" signature="initialize(output, maxwidth=nil, newline=nil)" />
+          <scope ilk="function" line="368" lineend="370" name="text" signature="text(obj, width=nil)" />
+          <scope ilk="function" line="372" lineend="374" name="breakable" signature="breakable(sep=&apos; &apos;, width=nil)" />
+          <scope ilk="function" line="376" lineend="378" name="nest" signature="nest(indent)" />
+          <scope ilk="function" line="380" lineend="386" name="group" signature="group(indent=nil, open_obj=&apos;&apos;, close_obj=&apos;&apos;, open_width=nil, close_width=nil)" />
+          <scope ilk="function" line="388" lineend="389" name="flush" signature="flush" />
+          <scope ilk="function" line="391" lineend="395" name="first?" signature="first?" />
+        </scope>
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="402" lineend="637" name="WadlerExample">
+        <scope ilk="function" line="403" lineend="410" name="setup" signature="setup" />
+        <scope ilk="function" line="412" lineend="428" name="hello" signature="hello(width)" />
+        <scope ilk="function" line="430" lineend="440" name="test_hello_00_06" signature="test_hello_00_06" />
+        <scope ilk="function" line="442" lineend="451" name="test_hello_07_08" signature="test_hello_07_08" />
+        <scope ilk="function" line="453" lineend="461" name="test_hello_09_10" signature="test_hello_09_10" />
+        <scope ilk="function" line="463" lineend="470" name="test_hello_11_12" signature="test_hello_11_12" />
+        <scope ilk="function" line="472" lineend="477" name="test_hello_13" signature="test_hello_13" />
+        <scope ilk="function" line="479" lineend="481" name="tree" signature="tree(width)" />
+        <scope ilk="function" line="483" lineend="494" name="test_tree_00_19" signature="test_tree_00_19" />
+        <scope ilk="function" line="496" lineend="506" name="test_tree_20_22" signature="test_tree_20_22" />
+        <scope ilk="function" line="508" lineend="516" name="test_tree_23_43" signature="test_tree_23_43" />
+        <scope ilk="function" line="518" lineend="522" name="test_tree_44" signature="test_tree_44" />
+        <scope ilk="function" line="524" lineend="526" name="tree_alt" signature="tree_alt(width)" />
+        <scope ilk="function" line="528" lineend="545" name="test_tree_alt_00_18" signature="test_tree_alt_00_18" />
+        <scope ilk="function" line="547" lineend="561" name="test_tree_alt_19_20" signature="test_tree_alt_19_20" />
+        <scope ilk="function" line="563" lineend="573" name="test_tree_alt_20_49" signature="test_tree_alt_20_49" />
+        <scope ilk="function" line="575" lineend="580" name="test_tree_alt_50" signature="test_tree_alt_50" />
+        <scope classrefs="Object" ilk="class" line="582" lineend="636" name="Tree">
+          <scope attributes="__ctor__" ilk="function" line="583" lineend="586" name="initialize" signature="initialize(string, *children)" />
+          <scope ilk="function" line="588" lineend="610" name="show" signature="show(q)" />
+          <scope ilk="function" line="612" lineend="634" name="altshow" signature="altshow(q)" />
+        </scope>
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="639" lineend="782" name="StrictPrettyExample">
+        <scope ilk="function" line="640" lineend="664" name="prog" signature="prog(width)" />
+        <scope ilk="function" line="666" lineend="683" name="test_00_04" signature="test_00_04" />
+        <scope ilk="function" line="685" lineend="700" name="test_05" signature="test_05" />
+        <scope ilk="function" line="702" lineend="715" name="test_06" signature="test_06" />
+        <scope ilk="function" line="717" lineend="729" name="test_07" signature="test_07" />
+        <scope ilk="function" line="731" lineend="741" name="test_08" signature="test_08" />
+        <scope ilk="function" line="743" lineend="752" name="test_09" signature="test_09" />
+        <scope ilk="function" line="754" lineend="762" name="test_10" signature="test_10" />
+        <scope ilk="function" line="764" lineend="773" name="test_11_31" signature="test_11_31" />
+        <scope ilk="function" line="775" lineend="780" name="test_32" signature="test_32" />
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="784" lineend="802" name="TailGroup">
+        <scope ilk="function" line="785" lineend="801" name="test_1" signature="test_1" />
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="804" lineend="821" name="NonString">
+        <scope ilk="function" line="805" lineend="811" name="format" signature="format(width)" />
+        <scope ilk="function" line="813" lineend="815" name="test_6" signature="test_6" />
+        <scope ilk="function" line="817" lineend="819" name="test_7" signature="test_7" />
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="823" lineend="913" name="Fill">
+        <scope ilk="function" line="824" lineend="842" name="format" signature="format(width)" />
+        <scope ilk="function" line="844" lineend="856" name="test_00_06" signature="test_00_06" />
+        <scope ilk="function" line="858" lineend="867" name="test_07_10" signature="test_07_10" />
+        <scope ilk="function" line="869" lineend="877" name="test_11_14" signature="test_11_14" />
+        <scope ilk="function" line="879" lineend="886" name="test_15_18" signature="test_15_18" />
+        <scope ilk="function" line="888" lineend="895" name="test_19_22" signature="test_19_22" />
+        <scope ilk="function" line="897" lineend="904" name="test_23_26" signature="test_23_26" />
+        <scope ilk="function" line="906" lineend="911" name="test_27" signature="test_27" />
+      </scope>
+    </scope>
+    

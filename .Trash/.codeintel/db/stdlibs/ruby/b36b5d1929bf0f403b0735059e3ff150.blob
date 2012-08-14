@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="generator">
+      <scope classrefs="Object" doc="Generator converts an internal iterator (i.e. an Enumerable&#xA;object) to an external iterator." ilk="class" name="Generator">
+        <import symbol="Enumerable" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a new generator either from an Enumerable object or&#xA;from a block." ilk="function" name="new" signature="(enum = nil, &amp;block)" />
+        <scope doc="Returns the element at the current position." ilk="function" name="current" signature="()" />
+        <scope doc="Rewinds the generator and enumerates the elements." ilk="function" name="each" signature="() {|self.next| ...}" />
+        <scope doc="Returns true if the generator has reached the end." ilk="function" name="end?" signature="()" />
+        <scope doc="Returns the current index (position) counting from zero." ilk="function" name="index" signature="()" />
+        <scope doc="Returns the element at the current position and moves&#xA;forward." ilk="function" name="next" signature="()" />
+        <scope doc="Returns true if the generator has not reached the end yet." ilk="function" name="next?" signature="()" />
+        <scope doc="Returns the current index (position) counting from zero." ilk="function" name="pos" signature="()" />
+        <scope doc="Rewinds the generator." ilk="function" name="rewind" signature="()" />
+        <scope doc="Yields an element to the generator." ilk="function" name="yield" signature="(value)" />
+      </scope>
+    </scope>
+    

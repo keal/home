@@ -1,0 +1,30 @@
+<scope ilk="blob" lang="Ruby" name="soap/encodingstyle/literalHandler">
+      <import line="9" module="soap/encodingstyle/handler" symbol="*" />
+      <scope doc="SOAP4R - XML Literal EncodingStyle handler library Copyright&#xA;(C) 2001, 2003-2005  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="12" name="SOAP" />
+      <scope ilk="namespace" line="13" name="EncodingStyle" />
+      <scope classrefs="Handler" ilk="class" line="16" lineend="220" name="LiteralHandler">
+        <scope attributes="__ctor__" ilk="function" line="20" lineend="23" name="initialize" signature="initialize(charset = nil)" />
+        <scope doc="encode interface." ilk="function" line="29" lineend="83" name="encode_data" signature="encode_data(generator, ns, data, parent)" />
+        <scope ilk="function" line="85" lineend="90" name="encode_data_end" signature="encode_data_end(generator, ns, data, parent)" />
+        <scope classrefs="Object" doc="decode interface." ilk="class" line="96" lineend="102" name="SOAPTemporalObject">
+          <scope ilk="function" line="97" lineend="97" name="parent" />
+          <scope ilk="function" line="97" lineend="97" name="parent=" />
+          <scope attributes="__ctor__" ilk="function" line="99" lineend="101" name="initialize" signature="initialize" />
+        </scope>
+        <scope classrefs="SOAPTemporalObject" ilk="class" line="104" lineend="135" name="SOAPUnknown">
+          <scope attributes="__ctor__" ilk="function" line="105" lineend="110" name="initialize" signature="initialize(handler, elename, extraattr)" />
+          <scope ilk="function" line="112" lineend="118" name="as_element" signature="as_element" />
+          <scope ilk="function" line="120" lineend="126" name="as_string" signature="as_string" />
+          <scope ilk="function" line="128" lineend="134" name="as_nil" signature="as_nil" />
+        </scope>
+        <scope ilk="function" line="137" lineend="142" name="decode_tag" signature="decode_tag(ns, elename, attrs, parent)" />
+        <scope ilk="function" line="144" lineend="158" name="decode_tag_end" signature="decode_tag_end(ns, node)" />
+        <scope ilk="function" line="160" lineend="163" name="decode_text" signature="decode_text(ns, text)" />
+        <scope ilk="function" line="165" lineend="172" name="decode_attrs" signature="decode_attrs(ns, attrs)" />
+        <scope ilk="function" line="174" lineend="175" name="decode_prologue" signature="decode_prologue" />
+        <scope ilk="function" line="177" lineend="178" name="decode_epilogue" signature="decode_epilogue" />
+        <scope ilk="function" line="180" lineend="205" name="decode_parent" signature="decode_parent(parent, node)" />
+        <scope ilk="function" line="209" lineend="219" name="decode_textbuf" signature="decode_textbuf(node)" />
+      </scope>
+    </scope>
+    

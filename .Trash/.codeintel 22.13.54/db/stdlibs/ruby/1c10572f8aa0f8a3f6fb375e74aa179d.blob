@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="drb/ssl">
+      <import line="1" module="socket" symbol="*" />
+      <import line="2" module="openssl" symbol="*" />
+      <import line="3" module="drb/drb" symbol="*" />
+      <import line="4" module="singleton" symbol="*" />
+      <scope ilk="namespace" line="6" lineend="190" name="DRb">
+        <scope classrefs="DRbTCPSocket" ilk="class" line="8" lineend="187" name="DRbSSLSocket">
+          <scope classrefs="Object" ilk="class" line="10" lineend="110" name="SSLConfig">
+            <scope attributes="__ctor__" doc="e.g." ilk="function" line="27" lineend="32" name="initialize" signature="initialize(config)" />
+            <scope ilk="function" line="34" lineend="36" name="[]" signature="[](key" />
+            <scope ilk="function" line="38" lineend="43" name="connect" signature="connect(tcp)" />
+            <scope ilk="function" line="45" lineend="50" name="accept" signature="accept(tcp)" />
+            <scope ilk="function" line="52" lineend="95" name="setup_certificate" signature="setup_certificate" />
+            <scope ilk="function" line="97" lineend="109" name="setup_ssl_context" signature="setup_ssl_context" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="112" lineend="122" name="parse_uri" signature="self.parse_uri(uri)" />
+          <scope attributes="__classmethod__" ilk="function" line="124" lineend="133" name="open" signature="self.open(uri, config)" />
+          <scope attributes="__classmethod__" ilk="function" line="135" lineend="151" name="open_server" signature="self.open_server(uri, config)" />
+          <scope attributes="__classmethod__" ilk="function" line="153" lineend="156" name="uri_option" signature="self.uri_option(uri, config)" />
+          <scope attributes="__ctor__" ilk="function" line="158" lineend="161" name="initialize" signature="initialize(uri, soc, config, is_established)" />
+          <scope ilk="function" line="163" name="stream" signature="stream" />
+          <scope ilk="function" line="165" lineend="171" name="close" signature="close" />
+          <scope ilk="function" line="173" lineend="186" name="accept" signature="accept" />
+        </scope>
+      </scope>
+    </scope>
+    

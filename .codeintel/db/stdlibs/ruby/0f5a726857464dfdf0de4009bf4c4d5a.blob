@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="file/constants">
+      <scope ilk="namespace" name="Constants" />
+    </scope>
+    

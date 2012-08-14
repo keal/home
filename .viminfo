@@ -1,0 +1,763 @@
+# この viminfo ファイルは Vim 7.3 によって生成されました.
+# 変更する際には十分注意してください!
+
+# このファイルが書かれた時の 'encoding' の値
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 最後の 検索パターン:
+~MSle0~/\<alias\>
+
+# 最後に置換された文字列:
+$  
+
+# コマンドライン 項目の履歴 (新しいものから古いものへ):
+:wq
+:q!
+:q
+:q1
+:c
+:Unite file
+:Tlist
+:bin
+::::::
+:help fm
+:.,.+4s
+:5
+:BundleInstall
+
+# 検索文字列 項目の履歴 (新しいものから古いものへ):
+? \t
+? \<alias\>
+? \<let\>
+
+# 式 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# レジスタ:
+"0	LINE	0
+	- http://gems.github.com
+	- http://gems.rubyforge.org
+	- http://rubygems.org/
+	:bulk_threshold: 1000
+	:backtrace: false
+	:update_sources: true
+	custom_shebang: $env ruby_bundler_wrapper
+"1	LINE	0
+	p
+"2	LINE	0
+	A
+"3	LINE	0
+	A
+"4	LINE	0
+	D
+"5	LINE	0
+	
+"6	LINE	0
+	
+"7	LINE	0
+	A
+"8	LINE	0
+	D
+"9	LINE	0
+	
+	urce 'https://rubygems.org'
+	
+	gem 'rails',  '3.2.6'
+	
+	group :development do
+	    gem 'sqlite3',  '1.3.5'
+	end
+	
+	
+	# Gems used only for assets and not required
+	# # in production environments by default.
+	# group :assets do
+	#   gem 'sass-rails',    '3.2.4'
+	#     gem 'coffee-rails',  '3.2.2'
+	#
+	#       gem 'uglifier',  '1.2.3'
+	#       end
+	#
+	#       D
+	#       gem 'jquery-rails',  '2.0.0'
+""-	CHAR	0
+	 
+
+# ファイルマーク:
+'0  17  246  ~/Downloads/buymeasoda-soda-theme-31e6224/README.md
+'1  23  0  ~/railsproject/sample/.gitignore
+'2  18  0  ~/railsproject/sample/Gemfile
+'3  1  0  ~/railsproject/sample/Rakefile
+'4  1  0  ~/railsproject/foo/app/views/layouts/application.html.erb
+'5  2  24  ~/.gemrc
+'6  8  12  ~/NERD_tree_2
+'7  161  12  ~/NERD_tree_2
+'8  1  0  ~/.gitignore
+'9  1  0  ~/.rbenv/shims/gem
+
+# ジャンプリスト (新しいものが先):
+-'  17  246  ~/Downloads/buymeasoda-soda-theme-31e6224/README.md
+-'  1  0  ~/Downloads/buymeasoda-soda-theme-31e6224/README.md
+-'  23  0  ~/railsproject/sample/.gitignore
+-'  1  0  ~/railsproject/sample/.gitignore
+-'  18  0  ~/railsproject/sample/Gemfile
+-'  3  0  ~/railsproject/sample/__Tag_List__
+-'  2  0  ~/railsproject/sample/__Tag_List__
+-'  1  0  ~/railsproject/sample/Gemfile
+-'  1  0  ~/railsproject/sample/Rakefile
+-'  6  0  ~/railsproject/sample/__Tag_List__
+-'  5  0  ~/railsproject/sample/__Tag_List__
+-'  1  0  ~/railsproject/foo/app/views/layouts/application.html.erb
+-'  2  24  ~/.gemrc
+-'  8  12  ~/NERD_tree_2
+-'  158  6  ~/NERD_tree_2
+-'  1  12  ~/NERD_tree_2
+-'  5  0  ~/NERD_tree_1
+-'  1  0  ~/NERD_tree_1
+-'  161  12  ~/NERD_tree_2
+-'  311  6  ~/NERD_tree_2
+-'  9  0  ~/NERD_tree_1
+-'  1  0  ~/.gitignore
+-'  1  0  ~/.rbenv/shims/gem
+-'  315  5  ~/NERD_tree_2
+-'  334  2  ~/NERD_tree_2
+-'  15  2  ~/NERD_tree_1
+-'  1  0  ~/.gemrc
+-'  7  0  ~/.zshrc
+-'  3  0  ~/__Tag_List__
+-'  2  0  ~/__Tag_List__
+-'  1  0  ~/.zshrc
+-'  6  0  ~/__Tag_List__
+-'  5  0  ~/__Tag_List__
+-'  1  0  ~/zshrc
+-'  21  0  ~/__Tag_List__
+-'  8  0  ~/__Tag_List__
+-'  147  0  ~/.zshrc
+-'  30  0  ~/.vimrc
+-'  23  0  ~/__Tag_List__
+-'  22  0  ~/__Tag_List__
+-'  31  0  ~/.vimrc
+-'  26  0  ~/__Tag_List__
+-'  25  0  ~/__Tag_List__
+-'  27  0  ~/.vimrc
+-'  29  0  ~/__Tag_List__
+-'  28  0  ~/__Tag_List__
+-'  24  0  ~/.vimrc
+-'  32  0  ~/__Tag_List__
+-'  31  0  ~/__Tag_List__
+-'  1  0  ~/.vimrc
+-'  2  0  ~/yankring_history_v2.txt
+-'  1  0  ~/-MiniBufExplorer-
+-'  2  0  ~/-MiniBufExplorer-
+-'  8  0  ~/yankring_history_v2.txt
+-'  3  72  ~/.bashrc
+-'  38  0  ~/__Tag_List__
+-'  37  0  ~/__Tag_List__
+-'  3  0  ~/dotfiles/README.txt
+-'  1  0  ~/yankring_history_v2.txt
+-'  1  0  ~/*unite* - default@1
+-'  1  0  ~/dotfiles/README.txt
+-'  47  0  ~/__Tag_List__
+-'  46  0  ~/__Tag_List__
+-'  4  80  ~/.bashrc
+-'  53  0  ~/__Tag_List__
+-'  52  0  ~/__Tag_List__
+-'  56  0  ~/__Tag_List__
+-'  55  0  ~/__Tag_List__
+-'  59  0  ~/__Tag_List__
+-'  58  0  ~/__Tag_List__
+-'  1  0  ~/.bashrc
+-'  62  0  ~/__Tag_List__
+-'  61  0  ~/__Tag_List__
+-'  65  0  ~/__Tag_List__
+-'  64  0  ~/__Tag_List__
+-'  15  0  ~/.zshrc
+-'  68  0  ~/__Tag_List__
+-'  67  0  ~/__Tag_List__
+-'  14  32  ~/.zshrc
+-'  71  0  ~/__Tag_List__
+-'  70  0  ~/__Tag_List__
+-'  74  0  ~/__Tag_List__
+-'  73  0  ~/__Tag_List__
+-'  77  0  ~/__Tag_List__
+-'  76  0  ~/__Tag_List__
+-'  17  0  ~/.zshrc
+-'  16  0  ~/.zshrc
+-'  82  0  ~/__Tag_List__
+-'  79  0  ~/__Tag_List__
+-'  1  0  ~/a/dotfiles/.zshrc
+-'  3  0  ~/a/dotfiles/__Tag_List__
+-'  3  0  ~/dotfiles/README.txt
+-'  1  0  ~/dotfiles/README.txt
+-'  41  0  ~/__Tag_List__
+-'  40  0  ~/__Tag_List__
+-'  50  0  ~/__Tag_List__
+-'  49  0  ~/__Tag_List__
+-'  1  0  ~/a/dotfiles/.zshrc
+
+# ファイル内マークの履歴 (新しいものから古いもの):
+
+> ~/Downloads/buymeasoda-soda-theme-31e6224/README.md
+	"	17	246
+
+> ~/railsproject/sample/.gitignore
+	"	23	0
+	^	15	5
+	.	23	0
+	+	16	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	23	6
+	+	15	3
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+
+> ~/railsproject/sample/Gemfile
+	"	18	0
+	^	1	2
+	.	19	0
+	+	1	35
+	+	1	8
+	+	1	8
+	+	1	8
+	+	1	0
+	+	1	35
+	+	1	0
+	+	19	0
+	+	18	0
+	+	17	0
+	+	16	0
+	+	15	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	1	1
+	+	11	0
+	+	17	0
+	+	14	0
+	+	16	0
+	+	19	0
+
+> ~/railsproject/sample/__Tag_List__
+	"	3	0
+	.	4	0
+	+	7	0
+	+	4	0
+
+> ~/railsproject/sample/Rakefile
+	"	1	0
+
+> ~/railsproject/foo/app/views/layouts/application.html.erb
+	"	1	0
+
+> ~/.gemrc
+	"	2	24
+	^	2	25
+	.	2	24
+	+	1	26
+	+	2	24
+
+> ~/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/NERD_tree_2
+	"	8	12
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/.gitignore
+	"	1	0
+
+> ~/.rbenv/shims/gem
+	"	1	0
+
+> ~/.zshrc
+	"	7	0
+	^	7	22
+	.	7	21
+	+	739	1941
+	+	723	1889
+	+	719	1872
+	+	718	1872
+	+	717	1872
+	+	716	1872
+	+	715	1872
+	+	714	1872
+	+	713	1872
+	+	712	1872
+	+	711	1872
+	+	710	1872
+	+	709	1872
+	+	708	1872
+	+	707	1872
+	+	706	1872
+	+	705	1872
+	+	704	1872
+	+	703	1872
+	+	702	1872
+	+	701	1872
+	+	700	1872
+	+	699	1872
+	+	698	1872
+	+	697	1872
+	+	696	1872
+	+	695	1872
+	+	694	1872
+	+	693	1872
+	+	692	1872
+	+	691	1872
+	+	690	1872
+	+	689	1872
+	+	688	1872
+	+	687	1872
+	+	686	1872
+	+	685	1872
+	+	684	1872
+	+	683	1872
+	+	682	1872
+	+	681	1872
+	+	680	1872
+	+	679	1875
+	+	15	2
+	+	14	2
+	+	13	2
+	+	12	2
+	+	11	2
+	+	10	2
+	+	9	2
+	+	8	2
+	+	7	2
+	+	6	2
+	+	5	2
+	+	4	2
+	+	3	2
+	+	2	2
+	+	1	2
+	+	17	0
+	+	8	0
+	+	8	21
+	+	8	0
+	+	8	0
+	+	8	0
+	+	7	7
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	21
+
+> ~/__Tag_List__
+	"	3	0
+	.	4	0
+	+	105	0
+	+	110	0
+	+	102	0
+	+	107	0
+	+	99	0
+	+	105	0
+	+	104	0
+	+	96	0
+	+	101	0
+	+	93	0
+	+	98	0
+	+	90	0
+	+	95	0
+	+	87	0
+	+	92	0
+	+	84	0
+	+	89	0
+	+	79	0
+	+	86	0
+	+	79	0
+	+	83	0
+	+	79	0
+	+	79	0
+	+	81	0
+	+	73	0
+	+	78	0
+	+	70	0
+	+	75	0
+	+	67	0
+	+	72	0
+	+	64	0
+	+	69	0
+	+	61	0
+	+	66	0
+	+	58	0
+	+	63	0
+	+	55	0
+	+	60	0
+	+	57	0
+	+	54	0
+	+	51	0
+	+	48	0
+	+	45	0
+	+	42	0
+	+	39	0
+	+	37	0
+	+	37	0
+	+	37	0
+	+	37	0
+	+	36	0
+	+	33	0
+	+	30	0
+	+	27	0
+	+	24	0
+	+	21	0
+	+	7	0
+	+	4	0
+
+> ~/zshrc
+	"	1	0
+
+> ~/.tmux.conf
+	"	1	0
+	.	1	0
+	+	1	1
+	+	1	0
+
+> ~/.tmux.cong
+	"	1	0
+
+> ~/.zsh.d/zshenv
+	"	28	6
+	.	28	6
+	+	65	8
+	+	65	0
+	+	63	0
+	+	65	0
+	+	65	1
+	+	65	0
+	+	64	7
+	+	64	0
+	+	149	0
+	+	13	4
+	+	13	0
+	+	28	0
+	+	27	16
+	+	28	6
+	+	28	0
+	+	27	0
+	+	27	0
+	+	28	6
+	+	28	34
+	+	28	6
+
+> ~/.zshenv
+	"	1	21
+
+> ~/.bash_profile
+	"	15	0
+	^	17	10
+	.	17	10
+	+	1	15
+	+	14	18
+	+	14	16
+	+	14	16
+	+	15	28
+	+	5	0
+	+	6	0
+	+	18	0
+	+	17	10
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	17	0
+	+	17	11
+	+	17	10
+	+	17	0
+	+	16	0
+	+	16	0
+	+	17	10
+
+> /private/var/folders/fk/5s1t_bs549s9blzgjty_8f540000gn/T/chpass.Ul5I3r
+	"	1	0
+
+> /private/etc/shells
+	"	11	36
+	^	11	37
+	.	11	36
+	+	11	0
+	+	11	0
+	+	11	0
+	+	10	7
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	36
+
+> /private/var/folders/fk/5s1t_bs549s9blzgjty_8f540000gn/T/chpass.YUjhlZ
+	"	1	0
+
+> ~/.zsh_history
+	"	1	0
+
+> ~/.vimrc
+	"	30	0
+	.	30	0
+	+	30	0
+
+> ~/.bashrc
+	"	3	0
+	^	3	2
+	.	3	2
+	+	5	0
+	+	10	80
+	+	9	0
+	+	8	80
+	+	9	0
+	+	7	0
+	+	6	56
+	+	4	80
+	+	3	2
+
+> ~/*unite* - default@1
+	"	7	0
+	^	2	2
+	.	16	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	1	0
+	+	50	0
+	+	50	0
+	+	50	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	32	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	2	0
+	+	3	0
+	+	7	0
+	+	2	0
+	+	8	0
+	+	16	0
+	+	16	0
+	+	16	0
+
+> ~/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/yankring_history_v2.txt
+	"	2	0
+
+> ~/bin
+	"	1	63
+
+> ~/dotfiles/bin/git-バルス
+	"	47	0
+
+> ~/.vim/bundle/vimdoc_ja/doc/options.jax
+	"	3051	20
+
+> ~/dotfiles/README.txt
+	"	3	0
+
+> ~/dotfiles/oneliners.txt
+	"	17	0
+
+> ~/a/dotfiles/.zshrc
+	"	1	0
+
+> ~/a/dotfiles/__Tag_List__
+	"	3	0
+	.	4	0
+	+	8	0
+	+	13	0
+	+	5	0
+	+	10	0
+	+	2	0
+	+	7	0
+	+	1	0
+	+	4	0
+
+> ~/dotfiles/.vimrc.basic
+	"	1	77
+
+> ~/dotfiles/__Tag_List__
+	"	3	0
+	.	4	0
+	+	2	0
+	+	7	0
+	+	1	0
+	+	4	0
+
+> ~/dotfiles/.zshrc
+	"	1	0
+
+> ~/.gitconfig
+	"	147	0
+
+> ~/dotfiles/.vimrc.statusline
+	"	10	0
+	^	10	1
+	.	10	0
+	+	10	0
+	+	10	0
+
+> ~/.vim/bundle/[Vundle] Installer
+	"	85	0
+	.	1	0
+	+	1	0
+
+> ~/.zsh.d/zshrc
+	"	1	0

@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/template">
+      <scope classrefs="Object" doc="Cheap-n-cheerful HTML page template system." ilk="class" line="38" lineend="233" name="TemplatePage">
+        <scope classrefs="Object" doc="A context holds a stack of key/value pairs (like a symbol&#xA;table)." ilk="class" line="46" lineend="80" name="Context">
+          <scope attributes="__ctor__" ilk="function" line="47" lineend="49" name="initialize" signature="initialize" />
+          <scope ilk="function" line="51" lineend="53" name="push" signature="push(hash)" />
+          <scope ilk="function" line="55" lineend="57" name="pop" signature="pop" />
+          <scope doc="Find a scalar value, throwing an exception if not found." ilk="function" line="62" lineend="69" name="find_scalar" signature="find_scalar(key)" />
+          <scope doc="Lookup any key in the stack of hashes" ilk="function" line="73" lineend="79" name="lookup" signature="lookup(key)" />
+        </scope>
+        <scope classrefs="Object" doc="Simple class to read lines out of a string" ilk="class" line="85" lineend="115" name="LineReader">
+          <scope attributes="__ctor__" doc="we&apos;re initialized with an array of lines" ilk="function" line="87" lineend="89" name="initialize" signature="initialize(lines)" />
+          <scope doc="read the next line" ilk="function" line="92" lineend="94" name="read" signature="read" />
+          <scope doc="Return a list of lines up to the line that matches a&#xA;pattern." ilk="function" line="98" lineend="108" name="read_up_to" signature="read_up_to(pattern)" />
+          <scope doc="Return a copy of ourselves that can be modified without&#xA;affecting us" ilk="function" line="112" lineend="114" name="dup" signature="dup" />
+        </scope>
+        <scope attributes="__ctor__" doc="+templates+ is an array of strings containing the templates." ilk="function" line="132" lineend="138" name="initialize" signature="initialize(*templates)" />
+        <scope doc="Render the templates into HTML, storing the result on +op+&#xA;using the method &lt;tt&gt;&lt;&lt;&lt;/tt&gt;." ilk="function" line="144" lineend="147" name="write_html_on" signature="write_html_on(op, value_hash)" />
+        <scope doc="Substitute a set of key/value pairs into the given template." ilk="function" line="161" lineend="196" name="substitute_into" signature="substitute_into(lines, values)" />
+        <scope doc="Given an individual line, we look for %xxx% constructs and&#xA;HREF:ref:name: constructs, substituting for each." ilk="function" line="201" lineend="231" name="expand_line" signature="expand_line(line)" />
+      </scope>
+    </scope>
+    

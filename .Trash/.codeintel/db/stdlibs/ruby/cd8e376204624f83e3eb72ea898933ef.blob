@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpauth/htgroup">
+      <import line="10" module="tempfile" symbol="*" />
+      <scope doc="httpauth/htgroup.rb -- Apache compatible htgroup file" ilk="namespace" line="12" lineend="61" name="WEBrick">
+        <scope ilk="namespace" line="13" lineend="60" name="HTTPAuth">
+          <scope classrefs="Object" ilk="class" line="14" lineend="59" name="Htgroup">
+            <scope attributes="__ctor__" ilk="function" line="15" lineend="21" name="initialize" signature="initialize(path)" />
+            <scope ilk="function" line="23" lineend="35" name="reload" signature="reload" />
+            <scope ilk="function" line="37" lineend="49" name="flush" signature="flush(output=nil)" />
+            <scope ilk="function" line="51" lineend="54" name="members" signature="members(group)" />
+            <scope ilk="function" line="56" lineend="58" name="add" signature="add(group, members)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

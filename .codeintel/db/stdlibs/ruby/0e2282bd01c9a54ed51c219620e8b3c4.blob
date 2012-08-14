@@ -1,0 +1,51 @@
+<scope ilk="blob" lang="Ruby" name="soap/netHttpClient">
+      <import line="9" module="net/http" symbol="*" />
+      <scope doc="SOAP4R - net/http wrapper Copyright (C) 2003  NAKAMURA,&#xA;Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="12" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="15" lineend="187" name="NetHttpClient">
+        <import line="18" module="net/https" symbol="*" />
+        <scope ilk="function" line="24" lineend="24" name="proxy" />
+        <scope ilk="function" line="25" lineend="25" name="no_proxy" />
+        <scope ilk="function" line="25" lineend="25" name="no_proxy=" />
+        <scope ilk="function" line="26" lineend="26" name="debug_dev" />
+        <scope ilk="function" line="26" lineend="26" name="debug_dev=" />
+        <scope ilk="function" line="27" lineend="27" name="ssl_config" />
+        <scope ilk="function" line="27" lineend="27" name="ssl_config=" />
+        <scope ilk="function" line="28" lineend="28" name="protocol_version" />
+        <scope ilk="function" line="28" lineend="28" name="protocol_version=" />
+        <scope ilk="function" line="29" lineend="29" name="connect_timeout" />
+        <scope ilk="function" line="29" lineend="29" name="connect_timeout=" />
+        <scope ilk="function" line="30" lineend="30" name="send_timeout" />
+        <scope ilk="function" line="30" lineend="30" name="send_timeout=" />
+        <scope ilk="function" line="31" lineend="31" name="receive_timeout" />
+        <scope ilk="function" line="31" lineend="31" name="receive_timeout=" />
+        <scope attributes="__ctor__" doc="ignored for now." ilk="function" line="33" lineend="40" name="initialize" signature="initialize(proxy = nil, agent = nil)" />
+        <scope ilk="function" line="42" lineend="44" name="test_loopback_response" signature="test_loopback_response" />
+        <scope ilk="function" line="46" lineend="62" name="proxy=" signature="proxy=(proxy)" />
+        <scope ilk="function" line="64" lineend="68" name="set_basic_auth" signature="set_basic_auth(uri, user_id, passwd)" />
+        <scope ilk="function" line="70" lineend="72" name="set_cookie_store" signature="set_cookie_store(filename)" />
+        <scope ilk="function" line="74" lineend="76" name="save_cookie_store" signature="save_cookie_store(filename)" />
+        <scope ilk="function" line="78" lineend="80" name="reset" signature="reset(url)" />
+        <scope ilk="function" line="82" lineend="84" name="reset_all" signature="reset_all" />
+        <scope ilk="function" line="86" lineend="96" name="post" signature="post(url, req_body, header = {})" />
+        <scope ilk="function" line="98" lineend="108" name="get_content" signature="get_content(url, header = {})" />
+        <scope ilk="function" line="112" lineend="121" name="start" signature="start(url)" />
+        <scope ilk="function" line="123" lineend="148" name="create_connection" signature="create_connection(url)" />
+        <scope ilk="function" line="152" lineend="166" name="no_proxy?" signature="no_proxy?(uri)" />
+        <scope classrefs="Object" ilk="class" line="168" lineend="172" name="SessionManager">
+          <scope ilk="function" line="169" lineend="169" name="connect_timeout" />
+          <scope ilk="function" line="169" lineend="169" name="connect_timeout=" />
+          <scope ilk="function" line="170" lineend="170" name="send_timeout" />
+          <scope ilk="function" line="170" lineend="170" name="send_timeout=" />
+          <scope ilk="function" line="171" lineend="171" name="receive_timeout" />
+          <scope ilk="function" line="171" lineend="171" name="receive_timeout=" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="174" lineend="186" name="Response">
+          <scope ilk="function" line="175" lineend="175" name="content" />
+          <scope ilk="function" line="176" lineend="176" name="status" />
+          <scope ilk="function" line="177" lineend="177" name="reason" />
+          <scope ilk="function" line="178" lineend="178" name="contenttype" />
+          <scope attributes="__ctor__" ilk="function" line="180" lineend="185" name="initialize" signature="initialize(res)" />
+        </scope>
+      </scope>
+    </scope>
+    

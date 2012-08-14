@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tile/style">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tkextlib/tile.rb" symbol="*" />
+      <scope doc="style commands by Hidetoshi NAGAI (nagai@ai.kyutech.ac.jp)" ilk="namespace" line="8" lineend="13" name="Tk">
+        <scope ilk="namespace" line="9" lineend="12" name="Tile">
+          <scope ilk="namespace" line="10" lineend="11" name="Style" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="15" lineend="17" name="Tk::Tile::" />
+      <scope classrefs="Object" ilk="class" line="19" lineend="103" name="Tk::Tile::">
+        <scope ilk="function" line="20" lineend="38" name="configure" signature="configure(style=nil, keys=nil)" />
+        <scope ilk="function" line="41" lineend="53" name="map" signature="map(style=nil, keys=nil)" />
+        <scope ilk="function" line="57" lineend="69" name="layout" signature="layout(style=nil, spec=nil)" />
+        <scope ilk="function" line="71" lineend="73" name="element_create" signature="element_create(name, type, *args)" />
+        <scope ilk="function" line="75" lineend="77" name="element_names" signature="element_names()" />
+        <scope ilk="function" line="79" lineend="81" name="element_options" signature="element_options(elem)" />
+        <scope ilk="function" line="83" lineend="89" name="theme_create" signature="theme_create(name, keys=nil)" />
+        <scope ilk="function" line="91" lineend="94" name="theme_settings" signature="theme_settings(name, cmd=nil, &amp;b)" />
+        <scope ilk="function" line="96" lineend="98" name="theme_names" signature="theme_names()" />
+        <scope ilk="function" line="100" lineend="102" name="theme_use" signature="theme_use(name)" />
+        <import symbol="Tk::Tile::" />
+      </scope>
+    </scope>
+    

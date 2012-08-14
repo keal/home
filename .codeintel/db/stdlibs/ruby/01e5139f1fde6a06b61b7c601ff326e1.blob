@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="mutex_m">
+      <scope doc="mutex_m.rb - $Release Version: 3.0$ $Revision: 1.7 $ $Date:&#xA;1998/02/27 04:28:57 $ Original from mutex.rb" ilk="namespace" line="27" lineend="118" name="Mutex_m">
+        <scope attributes="__classmethod__" ilk="function" line="28" lineend="36" name="define_aliases" signature="Mutex_m.define_aliases(cl)" />
+        <scope attributes="__classmethod__" ilk="function" line="38" lineend="41" name="append_features" signature="Mutex_m.append_features(cl)" />
+        <scope attributes="__classmethod__" ilk="function" line="43" lineend="46" name="extend_object" signature="Mutex_m.extend_object(obj)" />
+        <scope ilk="function" line="48" lineend="57" name="mu_extended" signature="mu_extended">
+          <scope classrefs="Object" ilk="class" line="54" lineend="54" name="self" />
+        </scope>
+        <scope doc="locking" ilk="function" line="60" lineend="67" name="mu_synchronize" signature="mu_synchronize" />
+        <scope ilk="function" line="69" lineend="71" name="mu_locked?" signature="mu_locked?" />
+        <scope ilk="function" line="73" lineend="82" name="mu_try_lock" signature="mu_try_lock" />
+        <scope ilk="function" line="84" lineend="92" name="mu_lock" signature="mu_lock" />
+        <scope ilk="function" line="94" lineend="105" name="mu_unlock" signature="mu_unlock" />
+        <scope ilk="function" line="109" lineend="112" name="mu_initialize" signature="mu_initialize" />
+        <scope attributes="__ctor__" ilk="function" line="114" lineend="117" name="initialize" signature="initialize(*args)" />
+      </scope>
+    </scope>
+    

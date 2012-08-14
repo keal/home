@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="xsd/qname">
+      <scope doc="XSD4R - XML QName definition." ilk="namespace" line="9" name="XSD" />
+      <scope classrefs="Object" ilk="class" line="12" lineend="75" name="QName">
+        <scope ilk="function" line="13" lineend="13" name="namespace" />
+        <scope ilk="function" line="13" lineend="13" name="namespace=" />
+        <scope ilk="function" line="14" lineend="14" name="name" />
+        <scope ilk="function" line="14" lineend="14" name="name=" />
+        <scope ilk="function" line="15" lineend="15" name="source" />
+        <scope ilk="function" line="15" lineend="15" name="source=" />
+        <scope attributes="__ctor__" ilk="function" line="17" lineend="21" name="initialize" signature="initialize(namespace = nil, name = nil)" />
+        <scope ilk="function" line="23" lineend="25" name="dup_name" signature="dup_name(name)" />
+        <scope ilk="function" line="27" lineend="31" name="dump" signature="dump" />
+        <scope ilk="function" line="33" lineend="41" name="match" signature="match(rhs)" />
+        <scope ilk="function" line="43" lineend="45" name="==" signature="==(rhs" />
+        <scope ilk="function" line="47" lineend="49" name="===" signature="===(rhs" />
+        <scope ilk="function" line="51" lineend="53" name="eql?" signature="eql?(rhs)" />
+        <scope ilk="function" line="55" lineend="57" name="hash" signature="hash" />
+        <scope ilk="function" line="59" lineend="61" name="to_s" signature="to_s" />
+        <scope ilk="function" line="63" lineend="66" name="inspect" signature="inspect" />
+        <scope ilk="function" line="69" lineend="72" name="parse" signature="parse(str)" />
+      </scope>
+    </scope>
+    

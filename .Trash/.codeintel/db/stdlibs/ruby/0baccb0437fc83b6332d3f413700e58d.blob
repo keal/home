@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parsers/ultralightparser">
+      <import line="1" module="rexml/parsers/streamparser" symbol="*" />
+      <import line="2" module="rexml/parsers/baseparser" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="56" name="REXML">
+        <scope ilk="namespace" line="5" name="Parsers">
+          <scope classrefs="Object" ilk="class" line="6" name="UltraLightParser">
+            <scope attributes="__ctor__" ilk="function" line="7" lineend="10" name="initialize" signature="initialize" />
+          </scope>
+        </scope>
+        <scope ilk="function" line="12" lineend="14" name="add_listener" signature="add_listener( listener )" />
+        <scope ilk="function" line="16" lineend="19" name="rewind" signature="rewind" />
+        <scope ilk="function" line="21" lineend="41" name="parse" signature="parse" />
+      </scope>
+    </scope>
+    

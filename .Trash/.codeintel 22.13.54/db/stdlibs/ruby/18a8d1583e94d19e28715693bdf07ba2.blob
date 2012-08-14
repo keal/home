@@ -1,0 +1,53 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/options">
+      <import line="4" module="rdoc/ri/ri_paths" symbol="*" />
+      <scope classrefs="Object" doc="We handle the parsing of options, and subsequently as a&#xA;singleton object to be queried for option values" ilk="class" line="6" lineend="575" name="Options">
+        <import line="8" module="singleton" symbol="*" />
+        <import line="9" module="getoptlong" symbol="*" />
+        <scope ilk="function" line="14" lineend="14" name="exclude" />
+        <scope ilk="function" line="14" lineend="14" name="exclude=" />
+        <scope ilk="function" line="17" lineend="17" name="op_dir" />
+        <scope ilk="function" line="17" lineend="17" name="op_dir=" />
+        <scope ilk="function" line="20" lineend="20" name="op_name" />
+        <scope ilk="function" line="24" lineend="24" name="show_all" />
+        <scope ilk="function" line="24" lineend="24" name="show_all=" />
+        <scope ilk="function" line="29" lineend="29" name="main_page" />
+        <scope ilk="function" line="29" lineend="29" name="main_page=" />
+        <scope ilk="function" line="32" lineend="32" name="merge" />
+        <scope ilk="function" line="35" lineend="35" name="quiet" />
+        <scope ilk="function" line="39" lineend="39" name="generator" />
+        <scope ilk="function" line="39" lineend="39" name="generator=" />
+        <scope ilk="function" line="42" lineend="42" name="files" />
+        <scope ilk="function" line="45" lineend="45" name="rdoc_include" />
+        <scope ilk="function" line="51" lineend="51" name="template" />
+        <scope ilk="function" line="54" lineend="54" name="diagram" />
+        <scope ilk="function" line="57" lineend="57" name="fileboxes" />
+        <scope ilk="function" line="60" lineend="60" name="show_hash" />
+        <scope ilk="function" line="63" lineend="63" name="image_format" />
+        <scope ilk="function" line="66" lineend="66" name="charset" />
+        <scope ilk="function" line="69" lineend="69" name="inline_source" />
+        <scope ilk="function" line="72" lineend="72" name="all_one_file" />
+        <scope ilk="function" line="75" lineend="75" name="tab_width" />
+        <scope ilk="function" line="78" lineend="78" name="include_line_numbers" />
+        <scope ilk="function" line="81" lineend="81" name="extra_accessors" />
+        <scope ilk="function" line="82" lineend="82" name="extra_accessor_flags" />
+        <scope ilk="function" line="85" lineend="85" name="css" />
+        <scope ilk="function" line="88" lineend="88" name="webcvs" />
+        <scope ilk="function" line="92" lineend="92" name="promiscuous" />
+        <scope doc="Are we promiscuous about showing module contents across&#xA;multiple files" ilk="namespace" line="94" lineend="335" name="OptionList">
+          <scope attributes="__classmethod__" ilk="function" line="236" lineend="243" name="options" signature="OptionList.options" />
+          <scope attributes="__classmethod__" ilk="function" line="246" lineend="251" name="strip_output" signature="OptionList.strip_output(text)" />
+          <scope attributes="__classmethod__" doc="Show an error and exit" ilk="function" line="256" lineend="261" name="error" signature="OptionList.error(msg)" />
+          <scope attributes="__classmethod__" doc="Show usage and exit" ilk="function" line="265" lineend="311" name="usage" signature="OptionList.usage(generator_names)" />
+          <scope attributes="__classmethod__" ilk="function" line="313" lineend="334" name="help_output" signature="OptionList.help_output" />
+        </scope>
+        <scope doc="Parse command line options." ilk="function" line="340" lineend="501" name="parse" signature="parse(argv, generators)" />
+        <scope ilk="function" line="504" lineend="506" name="title" signature="title" />
+        <scope doc="Set the title, but only if not already set." ilk="function" line="511" lineend="513" name="title=" signature="title=(string)" />
+        <scope doc="Set up an output generator for the format in @generator_name" ilk="function" line="519" lineend="529" name="setup_generator" signature="setup_generator(generators)" />
+        <scope doc="Check that the right version of &apos;dot&apos; is available." ilk="function" line="535" lineend="559" name="check_diagram" signature="check_diagram" />
+        <scope doc="Check that the files on the command line exist" ilk="function" line="563" lineend="568" name="check_files" signature="check_files" />
+        <scope ilk="function" line="570" lineend="573" name="error" signature="error(str)" />
+        <import symbol="Singleton" />
+      </scope>
+    </scope>
+    

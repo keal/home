@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="test">
+      <scope classrefs="Object" ilk="class" name="Test">
+        <scope ilk="namespace" name="Unit">
+          <scope attributes="__classmethod__" ilk="function" name="run=" signature="(flag)" />
+          <scope attributes="__classmethod__" ilk="function" name="run?" signature="()" />
+        </scope>
+      </scope>
+    </scope>
+    

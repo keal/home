@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tk/panedwindow">
+      <import line="4" module="tk" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/panedwindow.rb : treat panedwindow" ilk="class" line="6" lineend="231" name="TkPanedWindow">
+        <scope doc="def create_self(keys) if keys and keys != None&#xA;tk_call_without_enc(&apos;panedwindow&apos;, @path, *hash_kv(keys,&#xA;true)) else tk_call_without_enc(&apos;panedwindow&apos;, @path)" ilk="function" line="19" lineend="35" name="add" signature="add(*args)" />
+        <scope ilk="function" line="37" lineend="42" name="forget" signature="forget(win, *wins)" />
+        <scope ilk="function" line="47" lineend="49" name="identify" signature="identify(x, y)" />
+        <scope ilk="function" line="51" lineend="53" name="proxy_coord" signature="proxy_coord" />
+        <scope ilk="function" line="54" lineend="57" name="proxy_forget" signature="proxy_forget" />
+        <scope ilk="function" line="58" lineend="61" name="proxy_place" signature="proxy_place(x, y)" />
+        <scope ilk="function" line="63" lineend="65" name="sash_coord" signature="sash_coord(index)" />
+        <scope ilk="function" line="66" lineend="69" name="sash_dragto" signature="sash_dragto(index, x, y)" />
+        <scope ilk="function" line="70" lineend="73" name="sash_mark" signature="sash_mark(index, x, y)" />
+        <scope ilk="function" line="74" lineend="77" name="sash_place" signature="sash_place(index, x, y)" />
+        <scope ilk="function" line="79" lineend="83" name="panecget" signature="panecget(win, key)" />
+        <scope ilk="function" line="85" lineend="102" name="paneconfigure" signature="paneconfigure(win, key, value=nil)" />
+        <scope ilk="function" line="105" lineend="202" name="paneconfiginfo" signature="paneconfiginfo(win, key=nil)" />
+        <scope ilk="function" line="205" lineend="224" name="current_paneconfiginfo" signature="current_paneconfiginfo(win, key=nil)" />
+        <scope ilk="function" line="228" lineend="230" name="panes" signature="panes" />
+      </scope>
+    </scope>
+    

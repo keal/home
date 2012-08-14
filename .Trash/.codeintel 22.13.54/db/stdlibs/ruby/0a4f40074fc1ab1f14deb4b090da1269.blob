@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/vu/bargraph">
+      <import line="5" module="tk" symbol="*" />
+      <import line="17" module="tkextlib/vu.rb" symbol="*" />
+      <scope doc="create module/class" ilk="namespace" line="8" lineend="13" name="Tk">
+        <scope ilk="namespace" line="9" lineend="12" name="Vu">
+          <scope classrefs="TkWindow" ilk="class" line="10" lineend="11" name="Bargraph" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" doc="call setup script  --  &lt;libdir&gt;/tkextlib/vu.rb" ilk="class" line="19" lineend="61" name="Tk::Vu::">
+        <scope ilk="function" line="26" lineend="28" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="31" lineend="38" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="41" lineend="43" name="__listval_optkeys" signature="__listval_optkeys" />
+        <scope ilk="function" line="46" lineend="48" name="__font_optkeys" signature="__font_optkeys" />
+        <scope ilk="function" line="53" lineend="56" name="set" signature="set(val = None)" />
+        <scope ilk="function" line="58" lineend="60" name="get" signature="get()" />
+      </scope>
+    </scope>
+    

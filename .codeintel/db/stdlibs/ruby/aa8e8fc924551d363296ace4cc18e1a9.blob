@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/methodDefCreator">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="wsdl/soap/classDefCreatorSupport" symbol="*" />
+      <import line="11" module="soap/rpc/element" symbol="*" />
+      <scope doc="WSDL4R - Creating driver code from WSDL." ilk="namespace" line="14" name="WSDL" />
+      <scope ilk="namespace" line="15" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="18" lineend="224" name="MethodDefCreator">
+        <scope ilk="function" line="21" lineend="21" name="definitions" />
+        <scope attributes="__ctor__" ilk="function" line="23" lineend="29" name="initialize" signature="initialize(definitions)" />
+        <scope ilk="function" line="31" lineend="44" name="dump" signature="dump(porttype)" />
+        <scope ilk="function" line="46" lineend="64" name="collect_rpcparameter" signature="collect_rpcparameter(operation)" />
+        <scope ilk="function" line="66" lineend="77" name="collect_documentparameter" signature="collect_documentparameter(operation)" />
+        <scope ilk="function" line="81" lineend="117" name="dump_method" signature="dump_method(operation, binding)" />
+        <scope ilk="function" line="119" lineend="146" name="rpcdefinedtype" signature="rpcdefinedtype(part)" />
+        <scope ilk="function" line="148" lineend="160" name="documentdefinedtype" signature="documentdefinedtype(part)" />
+        <scope ilk="function" line="162" lineend="174" name="elementqualified" signature="elementqualified(part)" />
+        <scope ilk="function" line="176" lineend="178" name="param_set" signature="param_set(io_type, name, type, ele = nil)" />
+        <scope ilk="function" line="180" lineend="189" name="collect_type" signature="collect_type(type)" />
+        <scope ilk="function" line="191" lineend="200" name="param2str" signature="param2str(params)" />
+        <scope ilk="function" line="202" lineend="208" name="type2str" signature="type2str(type)" />
+        <scope ilk="function" line="210" lineend="217" name="ele2str" signature="ele2str(ele)" />
+        <scope ilk="function" line="219" lineend="223" name="cdr" signature="cdr(ary)" />
+        <import symbol="ClassDefCreatorSupport" />
+      </scope>
+    </scope>
+    

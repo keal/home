@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encodings/ISO-8859-1">
+      <import line="1" module="rexml/encodings/US-ASCII" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="7" name="REXML">
+        <scope ilk="namespace" line="4" lineend="6" name="Encoding" />
+      </scope>
+    </scope>
+    

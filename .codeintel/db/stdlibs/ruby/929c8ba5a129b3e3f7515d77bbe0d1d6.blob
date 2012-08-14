@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="irb/lc/error">
+      <import line="12" module="e2mmap" symbol="*" />
+      <scope doc="irb/lc/error.rb - $Release Version: 0.9.5$ $Revision:&#xA;1.5.2.1 $ $Date: 2005/04/19 19:24:59 $ by Keiju&#xA;ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="14" lineend="29" name="IRB" />
+    </scope>
+    

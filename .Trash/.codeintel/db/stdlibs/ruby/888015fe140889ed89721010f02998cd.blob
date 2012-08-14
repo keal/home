@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="xsd/iconvcharset">
+      <import line="9" module="iconv" symbol="*" />
+      <scope doc="XSD4R - Charset handling with iconv." ilk="namespace" line="12" name="XSD" />
+      <scope classrefs="Object" ilk="class" line="15" lineend="30" name="IconvCharset">
+        <scope attributes="__classmethod__" ilk="function" line="16" lineend="29" name="safe_iconv" signature="self.safe_iconv(to, from, str)" />
+      </scope>
+    </scope>
+    

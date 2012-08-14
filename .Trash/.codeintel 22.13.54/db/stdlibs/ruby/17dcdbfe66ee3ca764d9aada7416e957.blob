@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="rexml/xpath">
+      <import line="1" module="rexml/functions" symbol="*" />
+      <import line="2" module="rexml/xpath_parser" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="66" name="REXML">
+        <scope classrefs="Object" doc="Wrapper class. Use this class to access the XPath functions." ilk="class" line="6" name="XPath">
+          <import symbol="Functions" />
+        </scope>
+        <scope ilk="function" line="22" lineend="66" name="XPath::first" signature="XPath::first">
+          <scope doc="Itterates over nodes that match the given path, calling the&#xA;supplied block with the match." ilk="function" line="45" lineend="54" name="XPath::each" signature="XPath::each" />
+          <scope doc="Returns an array of nodes matching a given XPath." ilk="function" line="57" lineend="64" name="XPath::match" signature="XPath::match" />
+        </scope>
+      </scope>
+    </scope>
+    

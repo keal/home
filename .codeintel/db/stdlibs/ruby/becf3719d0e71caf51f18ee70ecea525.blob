@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/address">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL SOAP address definition." ilk="namespace" line="12" name="WSDL" />
+      <scope ilk="namespace" line="13" name="SOAP" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="36" name="Address">
+        <scope ilk="function" line="17" lineend="17" name="location" />
+        <scope attributes="__ctor__" ilk="function" line="19" lineend="22" name="initialize" signature="initialize" />
+        <scope ilk="function" line="24" lineend="26" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="28" lineend="35" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

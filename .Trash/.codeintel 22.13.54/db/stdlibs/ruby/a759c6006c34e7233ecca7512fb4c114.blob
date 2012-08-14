@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/simple_markup">
+      <import line="119" module="rdoc/markup/simple_markup/fragments" symbol="*" />
+      <import line="120" module="rdoc/markup/simple_markup/lines.rb" symbol="*" />
+      <scope doc="= Introduction" ilk="namespace" line="122" lineend="476" name="SM">
+        <scope classrefs="Object" doc=":nodoc: == Synopsis" ilk="class" line="172" lineend="474" name="SimpleMarkup">
+          <scope attributes="__ctor__" doc="take a block of text and use various heuristics to determine&#xA;it&apos;s structure (paragraphs, lists, and so on)." ilk="function" line="207" lineend="210" name="initialize" signature="initialize" />
+          <scope doc="Add to the sequences used to add formatting to an individual&#xA;word (such as *bold*)." ilk="function" line="217" lineend="219" name="add_word_pair" signature="add_word_pair(start, stop, name)" />
+          <scope doc="Add to the sequences recognized as general markup" ilk="function" line="225" lineend="227" name="add_html" signature="add_html(tag, name)" />
+          <scope doc="Add to other inline sequences." ilk="function" line="239" lineend="241" name="add_special" signature="add_special(pattern, name)" />
+          <scope doc="We take a string, split it into lines, work out the type of&#xA;each line, and from there deduce groups of lines (for&#xA;example all lines in a paragraph)." ilk="function" line="249" lineend="259" name="convert" signature="convert(str, op)" />
+          <scope doc="Look through the text at line indentation." ilk="function" line="272" lineend="363" name="assign_types_to_lines" signature="assign_types_to_lines(margin = 0, level = 0)" />
+          <scope doc="Handle labeled list entries, We have a special case to deal&#xA;with." ilk="function" line="382" lineend="426" name="handled_labeled_list" signature="handled_labeled_list(line, level, margin, offset, prefix)" />
+          <scope doc="Return a block consisting of fragments which are paragraphs,&#xA;list entries or verbatim text." ilk="function" line="435" lineend="461" name="group_lines" signature="group_lines" />
+          <scope doc="for debugging, we allow access to our line contents as text" ilk="function" line="464" lineend="466" name="content" signature="content" />
+          <scope doc="for debugging, return the list of line types" ilk="function" line="470" lineend="472" name="get_line_types" signature="get_line_types" />
+        </scope>
+      </scope>
+    </scope>
+    

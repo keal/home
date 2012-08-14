@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="rexml/cdata">
+      <import line="1" module="rexml/text" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="72" name="REXML">
+        <scope classrefs="Text" ilk="class" line="4" name="CData">
+          <scope attributes="__ctor__" doc="Constructor. CData is data between &lt;![CDATA[ ..." ilk="function" line="15" lineend="17" name="initialize" signature="initialize( first, whitespace=true, parent=nil )" />
+          <scope doc="Make a copy of this object" ilk="function" line="25" lineend="27" name="clone" signature="clone" />
+          <scope doc="Returns the content of this CData object" ilk="function" line="34" lineend="36" name="to_s" signature="to_s" />
+        </scope>
+        <scope ilk="function" line="38" lineend="40" name="value" signature="value" />
+        <scope doc="Generates XML output of this object" ilk="function" line="65" lineend="70" name="write" signature="write( output=$stdout, indent=-1, transitive=false, ie_hack=false )" />
+      </scope>
+    </scope>
+    

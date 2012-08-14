@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="tkscrollbox">
+      <import line="4" module="tk/scrollbox" symbol="*" />
+    </scope>
+    

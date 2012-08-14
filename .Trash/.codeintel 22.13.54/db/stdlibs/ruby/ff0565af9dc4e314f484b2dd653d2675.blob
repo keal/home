@@ -1,0 +1,365 @@
+<scope ilk="blob" lang="Ruby" name="tk">
+      <import line="7" module="tcltklib" symbol="*" />
+      <import line="8" module="tkutil" symbol="*" />
+      <import line="11" module="tk/autoload" symbol="*" />
+      <import line="4574" module="tkextlib/setup.rb" symbol="*" />
+      <scope classrefs="Object" doc="autoload" ilk="class" line="13" lineend="22" name="TclTkIp">
+        <scope doc="backup original (without encoding) _eval and _invoke" ilk="function" line="18" lineend="21" name="_ip_id_" signature="_ip_id_" />
+      </scope>
+      <scope doc="define TkComm module (step 1: basic functions)" ilk="namespace" line="25" lineend="255" name="TkComm">
+        <scope doc="[0]-cmdid, [1]-winid for backward compatibility" ilk="function" line="44" lineend="46" name="Tk_CMDTBL.method_missing" signature="Tk_CMDTBL.method_missing(id, *args)" />
+        <scope ilk="function" line="49" lineend="51" name="Tk_WINDOWS.method_missing" signature="Tk_WINDOWS.method_missing(id, *args)" />
+        <scope doc="*** ATTENTION *** &apos;current_configinfo&apos; method always returns&#xA;a Hash under all cases of above." ilk="function" line="73" lineend="79" name="error_at" signature="error_at" />
+        <scope ilk="function" line="82" lineend="179" name="_genobj_for_tkwidget" signature="_genobj_for_tkwidget(path)" />
+        <scope ilk="function" line="183" lineend="189" name="_at" signature="_at(x,y=nil)" />
+        <scope ilk="function" line="192" lineend="247" name="tk_tcl2ruby" signature="tk_tcl2ruby(val, enc_mode = false, listobj = true)" />
+      </scope>
+      <scope doc="use Tcl function version of split_list" ilk="function" line="262" lineend="269" name="tk_split_escstr" signature="tk_split_escstr(str, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="271" lineend="289" name="tk_split_sublist" signature="tk_split_sublist(str, depth=-1, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="291" lineend="297" name="tk_split_list" signature="tk_split_list(str, depth=0, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="299" lineend="313" name="tk_split_simplelist" signature="tk_split_simplelist(str, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="315" lineend="360" name="array2tk_list" signature="array2tk_list(ary, enc=nil)" />
+      <scope doc="use Ruby script version of split_list (traditional methods)" ilk="function" line="367" lineend="386" name="tk_split_escstr" signature="tk_split_escstr(str, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="388" lineend="406" name="tk_split_sublist" signature="tk_split_sublist(str, depth=-1, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="408" lineend="413" name="tk_split_list" signature="tk_split_list(str, depth=0, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="455" lineend="479" name="tk_split_simplelist" signature="tk_split_simplelist(str, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="481" lineend="494" name="array2tk_list" signature="array2tk_list(ary, enc=nil)" />
+      <scope doc="private_class_method :array2tk_list" ilk="function" line="587" lineend="589" name="list" signature="list(val, depth=0, enc=true)" />
+      <scope ilk="function" line="590" lineend="592" name="simplelist" signature="simplelist(val, src_enc=true, dst_enc=true)" />
+      <scope ilk="function" line="593" lineend="601" name="window" signature="window(val)" />
+      <scope ilk="function" line="602" lineend="608" name="image_obj" signature="image_obj(val)" />
+      <scope ilk="function" line="609" lineend="622" name="procedure" signature="procedure(val)" />
+      <scope ilk="function" line="628" lineend="635" name="subst" signature="subst(str, *opts)" />
+      <scope ilk="function" line="637" lineend="639" name="_toUTF8" signature="_toUTF8(str, encoding = nil)" />
+      <scope ilk="function" line="640" lineend="642" name="_fromUTF8" signature="_fromUTF8(str, encoding = nil)" />
+      <scope ilk="function" line="646" lineend="648" name="_callback_entry_class?" signature="_callback_entry_class?(cls)" />
+      <scope ilk="function" line="652" lineend="654" name="_callback_entry?" signature="_callback_entry?(obj)" />
+      <scope ilk="function" line="781" lineend="784" name="_curr_cmd_id" signature="_curr_cmd_id" />
+      <scope ilk="function" line="785" lineend="790" name="_next_cmd_id" signature="_next_cmd_id" />
+      <scope ilk="function" line="794" lineend="819" name="install_cmd" signature="install_cmd(cmd)" />
+      <scope ilk="function" line="820" lineend="825" name="uninstall_cmd" signature="uninstall_cmd(id)" />
+      <scope doc="private :install_cmd, :uninstall_cmd" ilk="function" line="848" lineend="869" name="install_win" signature="install_win(ppath,name=nil)" />
+      <scope ilk="function" line="871" lineend="874" name="uninstall_win" signature="uninstall_win()" />
+      <scope ilk="function" line="877" lineend="885" name="_epath" signature="_epath(win)" />
+      <scope doc="define TkComm module (step 2: event binding)" ilk="namespace" line="890" lineend="1078" name="TkComm">
+        <scope ilk="function" line="894" lineend="912" name="tk_event_sequence" signature="tk_event_sequence(context)" />
+        <scope ilk="function" line="914" lineend="923" name="_bind_core" signature="_bind_core(mode, what, context, cmd, *args)" />
+        <scope ilk="function" line="925" lineend="927" name="_bind" signature="_bind(what, context, cmd, *args)" />
+        <scope ilk="function" line="929" lineend="931" name="_bind_append" signature="_bind_append(what, context, cmd, *args)" />
+        <scope ilk="function" line="933" lineend="935" name="_bind_remove" signature="_bind_remove(what, context)" />
+        <scope ilk="function" line="937" lineend="966" name="_bindinfo" signature="_bindinfo(what, context=nil)" />
+        <scope ilk="function" line="968" lineend="977" name="_bind_core_for_event_class" signature="_bind_core_for_event_class(klass, mode, what, context, cmd, *args)" />
+        <scope ilk="function" line="979" lineend="981" name="_bind_for_event_class" signature="_bind_for_event_class(klass, what, context, cmd, *args)" />
+        <scope ilk="function" line="983" lineend="985" name="_bind_append_for_event_class" signature="_bind_append_for_event_class(klass, what, context, cmd, *args)" />
+        <scope ilk="function" line="987" lineend="989" name="_bind_remove_for_event_class" signature="_bind_remove_for_event_class(klass, what, context)" />
+        <scope ilk="function" line="991" lineend="993" name="_bindinfo_for_event_class" signature="_bindinfo_for_event_class(klass, what, context=nil)" />
+        <scope doc="def bind(tagOrClass, context, cmd=Proc.new, *args)&#xA;_bind([&quot;bind&quot;, tagOrClass], context, cmd, *args) tagOrClass&#xA;end" ilk="function" line="1005" lineend="1014" name="bind" signature="bind(tagOrClass, context, *args)" />
+        <scope doc="def bind_append(tagOrClass, context, cmd=Proc.new, *args)&#xA;_bind_append([&quot;bind&quot;, tagOrClass], context, cmd, *args)&#xA;tagOrClass end" ilk="function" line="1020" lineend="1029" name="bind_append" signature="bind_append(tagOrClass, context, *args)" />
+        <scope ilk="function" line="1031" lineend="1034" name="bind_remove" signature="bind_remove(tagOrClass, context)" />
+        <scope ilk="function" line="1036" lineend="1038" name="bindinfo" signature="bindinfo(tagOrClass, context=nil)" />
+        <scope doc="def bind_all(context, cmd=Proc.new, *args) _bind([&apos;bind&apos;,&#xA;&apos;all&apos;], context, cmd, *args) TkBindTag::ALL end" ilk="function" line="1044" lineend="1053" name="bind_all" signature="bind_all(context, *args)" />
+        <scope doc="def bind_append_all(context, cmd=Proc.new, *args)&#xA;_bind_append([&apos;bind&apos;, &apos;all&apos;], context, cmd, *args)&#xA;TkBindTag::ALL end" ilk="function" line="1059" lineend="1068" name="bind_append_all" signature="bind_append_all(context, *args)" />
+        <scope ilk="function" line="1070" lineend="1073" name="bind_remove_all" signature="bind_remove_all(context)" />
+        <scope ilk="function" line="1075" lineend="1077" name="bindinfo_all" signature="bindinfo_all(context=nil)" />
+      </scope>
+      <scope ilk="namespace" line="1081" lineend="1779" name="TkCore">
+        <scope doc="name = nil" ilk="function" line="1104" lineend="1106" name="INTERP.__getip" signature="INTERP.__getip" />
+        <scope ilk="function" line="1147" lineend="1149" name="INTERP.cb_entry_class" signature="INTERP.cb_entry_class" />
+        <scope ilk="function" line="1150" lineend="1152" name="INTERP.tk_cmd_tbl" signature="INTERP.tk_cmd_tbl" />
+        <scope ilk="function" line="1153" lineend="1155" name="INTERP.tk_windows" signature="INTERP.tk_windows" />
+        <scope classrefs="Object" ilk="class" line="1157" lineend="1164" name="Tk_OBJECT_TABLE">
+          <scope attributes="__ctor__" ilk="function" line="1158" lineend="1160" name="initialize" signature="initialize(id)" />
+          <scope ilk="function" line="1161" lineend="1163" name="method_missing" signature="method_missing(m, *args, &amp;b)" />
+        </scope>
+        <scope ilk="function" line="1166" lineend="1168" name="INTERP.tk_object_table" signature="INTERP.tk_object_table(id)" />
+        <scope ilk="function" line="1169" lineend="1181" name="INTERP.create_table" signature="INTERP.create_table" />
+        <scope ilk="function" line="1183" lineend="1185" name="INTERP.get_cb_entry" signature="INTERP.get_cb_entry(cmd)" />
+        <scope ilk="function" line="1186" lineend="1188" name="INTERP.cb_eval" signature="INTERP.cb_eval(cmd, *args)" />
+        <scope ilk="function" line="1190" lineend="1193" name="INTERP.init_ip_env" signature="INTERP.init_ip_env(script = Proc.new)" />
+        <scope ilk="function" line="1194" lineend="1197" name="INTERP.add_tk_procs" signature="INTERP.add_tk_procs(name, args = nil, body = nil)" />
+        <scope ilk="function" line="1198" lineend="1202" name="INTERP.init_ip_internal" signature="INTERP.init_ip_internal" />
+        <scope ilk="function" line="1290" lineend="1292" name="callback_break" signature="callback_break" />
+        <scope ilk="function" line="1294" lineend="1296" name="callback_continue" signature="callback_continue" />
+        <scope attributes="__classmethod__" ilk="function" line="1298" lineend="1336" name="callback" signature="TkCore.callback(*arg)" />
+        <scope ilk="function" line="1376" lineend="1378" name="load_cmd_on_ip" signature="load_cmd_on_ip(tk_cmd)" />
+        <scope ilk="function" line="1380" lineend="1402" name="after" signature="after(ms, cmd=Proc.new)" />
+        <scope ilk="function" line="1404" lineend="1414" name="after_idle" signature="after_idle(cmd=Proc.new)" />
+        <scope ilk="function" line="1416" lineend="1418" name="after_cancel" signature="after_cancel(afterId)" />
+        <scope ilk="function" line="1420" lineend="1422" name="windowingsystem" signature="windowingsystem" />
+        <scope ilk="function" line="1424" lineend="1430" name="scaling" signature="scaling(scale=nil)" />
+        <scope ilk="function" line="1431" lineend="1437" name="scaling_displayof" signature="scaling_displayof(win, scale=nil)" />
+        <scope ilk="function" line="1439" lineend="1441" name="inactive" signature="inactive" />
+        <scope ilk="function" line="1442" lineend="1444" name="inactive_displayof" signature="inactive_displayof(win)" />
+        <scope ilk="function" line="1445" lineend="1447" name="reset_inactive" signature="reset_inactive" />
+        <scope ilk="function" line="1448" lineend="1450" name="reset_inactive_displayof" signature="reset_inactive_displayof(win)" />
+        <scope ilk="function" line="1452" lineend="1454" name="appname" signature="appname(name=None)" />
+        <scope ilk="function" line="1456" lineend="1458" name="appsend_deny" signature="appsend_deny" />
+        <scope ilk="function" line="1460" lineend="1475" name="appsend" signature="appsend(interp, async, *args)" />
+        <scope ilk="function" line="1477" lineend="1493" name="rb_appsend" signature="rb_appsend(interp, async, *args)" />
+        <scope ilk="function" line="1495" lineend="1511" name="appsend_displayof" signature="appsend_displayof(interp, win, async, *args)" />
+        <scope ilk="function" line="1513" lineend="1530" name="rb_appsend_displayof" signature="rb_appsend_displayof(interp, win, async, *args)" />
+        <scope ilk="function" line="1532" lineend="1534" name="info" signature="info(*args)" />
+        <scope ilk="function" line="1536" lineend="1538" name="mainloop" signature="mainloop(check_root = true)" />
+        <scope ilk="function" line="1540" lineend="1546" name="mainloop_thread?" signature="mainloop_thread?" />
+        <scope ilk="function" line="1548" lineend="1550" name="mainloop_exist?" signature="mainloop_exist?" />
+        <scope ilk="function" line="1552" lineend="1554" name="is_mainloop?" signature="is_mainloop?" />
+        <scope ilk="function" line="1556" lineend="1559" name="mainloop_watchdog" signature="mainloop_watchdog(check_root = true)" />
+        <scope ilk="function" line="1561" lineend="1563" name="do_one_event" signature="do_one_event(flag = TclTkLib::EventFlag::ALL)" />
+        <scope ilk="function" line="1565" lineend="1567" name="set_eventloop_tick" signature="set_eventloop_tick(timer_tick)" />
+        <scope ilk="function" line="1569" lineend="1571" name="get_eventloop_tick" signature="get_eventloop_tick()" />
+        <scope ilk="function" line="1573" lineend="1575" name="set_no_event_wait" signature="set_no_event_wait(wait)" />
+        <scope ilk="function" line="1577" lineend="1579" name="get_no_event_wait" signature="get_no_event_wait()" />
+        <scope ilk="function" line="1581" lineend="1583" name="set_eventloop_weight" signature="set_eventloop_weight(loop_max, no_event_tick)" />
+        <scope ilk="function" line="1585" lineend="1587" name="get_eventloop_weight" signature="get_eventloop_weight()" />
+        <scope ilk="function" line="1589" lineend="1600" name="restart" signature="restart(app_name = nil, keys = {})" />
+        <scope ilk="function" line="1602" lineend="1615" name="event_generate" signature="event_generate(win, context, keys=nil)" />
+        <scope ilk="function" line="1617" lineend="1619" name="messageBox" signature="messageBox(keys)" />
+        <scope ilk="function" line="1621" lineend="1623" name="getOpenFile" signature="getOpenFile(keys = nil)" />
+        <scope ilk="function" line="1624" lineend="1626" name="getMultipleOpenFile" signature="getMultipleOpenFile(keys = nil)" />
+        <scope ilk="function" line="1628" lineend="1630" name="getSaveFile" signature="getSaveFile(keys = nil)" />
+        <scope ilk="function" line="1631" lineend="1633" name="getMultipleSaveFile" signature="getMultipleSaveFile(keys = nil)" />
+        <scope ilk="function" line="1635" lineend="1637" name="chooseColor" signature="chooseColor(keys = nil)" />
+        <scope ilk="function" line="1639" lineend="1641" name="chooseDirectory" signature="chooseDirectory(keys = nil)" />
+        <scope ilk="function" line="1643" lineend="1656" name="_ip_eval_core" signature="_ip_eval_core(enc_mode, cmd_string)" />
+        <scope ilk="function" line="1659" lineend="1661" name="ip_eval" signature="ip_eval(cmd_string)" />
+        <scope ilk="function" line="1663" lineend="1665" name="ip_eval_without_enc" signature="ip_eval_without_enc(cmd_string)" />
+        <scope ilk="function" line="1667" lineend="1669" name="ip_eval_with_enc" signature="ip_eval_with_enc(cmd_string)" />
+        <scope ilk="function" line="1671" lineend="1684" name="_ip_invoke_core" signature="_ip_invoke_core(enc_mode, *args)" />
+        <scope ilk="function" line="1687" lineend="1689" name="ip_invoke" signature="ip_invoke(*args)" />
+        <scope ilk="function" line="1691" lineend="1693" name="ip_invoke_without_enc" signature="ip_invoke_without_enc(*args)" />
+        <scope ilk="function" line="1695" lineend="1697" name="ip_invoke_with_enc" signature="ip_invoke_with_enc(*args)" />
+        <scope ilk="function" line="1699" lineend="1730" name="_tk_call_core" signature="_tk_call_core(enc_mode, *args)" />
+        <scope ilk="function" line="1733" lineend="1735" name="tk_call" signature="tk_call(*args)" />
+        <scope ilk="function" line="1737" lineend="1739" name="tk_call_without_enc" signature="tk_call_without_enc(*args)" />
+        <scope ilk="function" line="1741" lineend="1743" name="tk_call_with_enc" signature="tk_call_with_enc(*args)" />
+        <scope ilk="function" line="1745" lineend="1753" name="_tk_call_to_list_core" signature="_tk_call_to_list_core(depth, arg_enc, val_enc, *args)" />
+        <scope doc="private :_tk_call_to_list_core" ilk="function" line="1756" lineend="1758" name="tk_call_to_list" signature="tk_call_to_list(*args)" />
+        <scope ilk="function" line="1760" lineend="1762" name="tk_call_to_list_without_enc" signature="tk_call_to_list_without_enc(*args)" />
+        <scope ilk="function" line="1764" lineend="1766" name="tk_call_to_list_with_enc" signature="tk_call_to_list_with_enc(*args)" />
+        <scope ilk="function" line="1768" lineend="1770" name="tk_call_to_simplelist" signature="tk_call_to_simplelist(*args)" />
+        <scope ilk="function" line="1772" lineend="1774" name="tk_call_to_simplelist_without_enc" signature="tk_call_to_simplelist_without_enc(*args)" />
+        <scope ilk="function" line="1776" lineend="1778" name="tk_call_to_simplelist_with_enc" signature="tk_call_to_simplelist_with_enc(*args)" />
+      </scope>
+      <scope ilk="namespace" line="1782" lineend="2160" name="Tk">
+        <scope attributes="__classmethod__" ilk="function" line="1803" lineend="1871" name="const_missing" signature="Tk.const_missing(sym)" />
+        <scope attributes="__classmethod__" ilk="function" line="1873" lineend="1876" name="errorInfo" signature="Tk.errorInfo" />
+        <scope attributes="__classmethod__" ilk="function" line="1878" lineend="1890" name="errorCode" signature="Tk.errorCode" />
+        <scope attributes="__classmethod__" ilk="function" line="1892" lineend="1894" name="has_mainwindow?" signature="Tk.has_mainwindow?" />
+        <scope ilk="function" line="1896" lineend="1898" name="root" signature="root" />
+        <scope attributes="__classmethod__" ilk="function" line="1900" lineend="1907" name="load_tclscript" signature="Tk.load_tclscript(file, enc=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="1909" lineend="1911" name="load_tcllibrary" signature="Tk.load_tcllibrary(file, pkg_name=None, interp=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="1913" lineend="1922" name="unload_tcllibrary" signature="Tk.unload_tcllibrary(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="1924" lineend="1941" name="pkgconfig_list" signature="Tk.pkgconfig_list(mod)" />
+        <scope attributes="__classmethod__" ilk="function" line="1943" lineend="1958" name="pkgconfig_get" signature="Tk.pkgconfig_get(mod, key)" />
+        <scope attributes="__classmethod__" ilk="function" line="1960" lineend="1963" name="tcl_pkgconfig_list" signature="Tk.tcl_pkgconfig_list" />
+        <scope attributes="__classmethod__" ilk="function" line="1965" lineend="1968" name="tcl_pkgconfig_get" signature="Tk.tcl_pkgconfig_get(key)" />
+        <scope attributes="__classmethod__" ilk="function" line="1970" lineend="1973" name="tk_pkgconfig_list" signature="Tk.tk_pkgconfig_list" />
+        <scope attributes="__classmethod__" ilk="function" line="1975" lineend="1978" name="tk_pkgconfig_get" signature="Tk.tk_pkgconfig_get(key)" />
+        <scope attributes="__classmethod__" ilk="function" line="1980" lineend="1987" name="bell" signature="Tk.bell(nice = false)" />
+        <scope attributes="__classmethod__" ilk="function" line="1989" lineend="1996" name="bell_on_display" signature="Tk.bell_on_display(win, nice = false)" />
+        <scope attributes="__classmethod__" ilk="function" line="1998" lineend="2007" name="destroy" signature="Tk.destroy(*wins)" />
+        <scope attributes="__classmethod__" ilk="function" line="2009" lineend="2011" name="exit" signature="Tk.exit" />
+        <scope attributes="__classmethod__" ilk="function" line="2013" lineend="2015" name="pack" signature="Tk.pack(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2016" lineend="2018" name="pack_forget" signature="Tk.pack_forget(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2019" lineend="2021" name="unpack" signature="Tk.unpack(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2023" lineend="2025" name="grid" signature="Tk.grid(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2026" lineend="2028" name="grid_forget" signature="Tk.grid_forget(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2029" lineend="2031" name="ungrid" signature="Tk.ungrid(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2033" lineend="2035" name="place" signature="Tk.place(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2036" lineend="2038" name="place_forget" signature="Tk.place_forget(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2039" lineend="2041" name="unplace" signature="Tk.unplace(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="2043" lineend="2049" name="update" signature="Tk.update(idle=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="2050" lineend="2052" name="update_idletasks" signature="Tk.update_idletasks" />
+        <scope ilk="function" line="2053" lineend="2057" name="update" signature="update(idle=nil)" />
+        <scope attributes="__classmethod__" doc="NOTE:: If no eventloop-thread is running, &quot;thread_update&quot;&#xA;method is same to &quot;update&quot; method." ilk="function" line="2063" lineend="2069" name="thread_update" signature="Tk.thread_update(idle=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="2070" lineend="2072" name="thread_update_idletasks" signature="Tk.thread_update_idletasks" />
+        <scope attributes="__classmethod__" ilk="function" line="2074" lineend="2077" name="lower_window" signature="Tk.lower_window(win, below=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="2078" lineend="2081" name="raise_window" signature="Tk.raise_window(win, above=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="2083" lineend="2089" name="current_grabs" signature="Tk.current_grabs(win = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="2091" lineend="2097" name="focus" signature="Tk.focus(display=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="2099" lineend="2105" name="focus_to" signature="Tk.focus_to(win, force=false)" />
+        <scope attributes="__classmethod__" ilk="function" line="2107" lineend="2109" name="focus_lastfor" signature="Tk.focus_lastfor(win)" />
+        <scope attributes="__classmethod__" ilk="function" line="2111" lineend="2113" name="focus_next" signature="Tk.focus_next(win)" />
+        <scope attributes="__classmethod__" ilk="function" line="2115" lineend="2117" name="focus_prev" signature="Tk.focus_prev(win)" />
+        <scope attributes="__classmethod__" ilk="function" line="2119" lineend="2121" name="strictMotif" signature="Tk.strictMotif(mode=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="2123" lineend="2130" name="show_kinsoku" signature="Tk.show_kinsoku(mode=&apos;both&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2131" lineend="2142" name="add_kinsoku" signature="Tk.add_kinsoku(chars, mode=&apos;both&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2143" lineend="2151" name="delete_kinsoku" signature="Tk.delete_kinsoku(chars, mode=&apos;both&apos;)" />
+        <scope attributes="__classmethod__" ilk="function" line="2153" lineend="2155" name="toUTF8" signature="Tk.toUTF8(str, encoding = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="2157" lineend="2159" name="fromUTF8" signature="Tk.fromUTF8(str, encoding = nil)" />
+      </scope>
+      <scope doc="string with Tcl&apos;s encoding" ilk="namespace" line="2165" lineend="2181" name="Tk">
+        <scope attributes="__classmethod__" ilk="function" line="2166" lineend="2168" name="subst_utf_backslash" signature="Tk.subst_utf_backslash(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="2169" lineend="2171" name="subst_tk_backslash" signature="Tk.subst_tk_backslash(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="2172" lineend="2174" name="utf_to_backslash_sequence" signature="Tk.utf_to_backslash_sequence(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="2175" lineend="2177" name="utf_to_backslash" signature="Tk.utf_to_backslash(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="2178" lineend="2180" name="to_backslash_sequence" signature="Tk.to_backslash_sequence(str)" />
+      </scope>
+      <scope classrefs="Object" doc="convert kanji string to/from utf-8" ilk="class" line="2188" lineend="2310" name="TclTkIp">
+        <scope ilk="function" line="2190" lineend="2190" name="encoding" />
+        <scope ilk="function" line="2190" lineend="2190" name="encoding=" />
+        <scope doc="from tkencoding.rb by ttate@jaist.ac.jp" ilk="function" line="2247" lineend="2249" name="_eval" signature="_eval(cmd)" />
+        <scope ilk="function" line="2251" lineend="2253" name="_invoke" signature="_invoke(*cmds)" />
+      </scope>
+      <scope ilk="namespace" line="2312" lineend="2323" name="TclTkLib">
+        <scope classrefs="Object" ilk="class" line="2313" lineend="2322" name="self">
+          <scope ilk="function" line="2316" lineend="2318" name="encoding=" signature="encoding=(name)" />
+          <scope ilk="function" line="2319" lineend="2321" name="encoding" signature="encoding" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="2325" lineend="2375" name="Tk">
+        <scope ilk="namespace" line="2326" lineend="2372" name="Encoding">
+          <scope ilk="function" line="2331" lineend="2333" name="encoding=" signature="encoding=(name)" />
+          <scope ilk="function" line="2335" lineend="2337" name="encoding" signature="encoding" />
+          <scope ilk="function" line="2339" lineend="2341" name="encoding_names" signature="encoding_names" />
+          <scope ilk="function" line="2343" lineend="2345" name="encoding_system" signature="encoding_system" />
+          <scope ilk="function" line="2347" lineend="2349" name="encoding_system=" signature="encoding_system=(enc)" />
+          <scope ilk="function" line="2351" lineend="2359" name="encoding_convertfrom" signature="encoding_convertfrom(str, enc=nil)" />
+          <scope ilk="function" line="2362" lineend="2370" name="encoding_convertto" signature="encoding_convertto(str, enc=nil)" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" doc="dummy methods" ilk="class" line="2411" lineend="2419" name="TclTkIp">
+        <scope ilk="function" line="2412" lineend="2412" name="encoding" />
+        <scope ilk="function" line="2412" lineend="2412" name="encoding=" />
+      </scope>
+      <scope ilk="namespace" line="2421" lineend="2453" name="Tk">
+        <scope ilk="namespace" line="2422" lineend="2450" name="Encoding">
+          <scope ilk="function" line="2425" lineend="2427" name="encoding=" signature="encoding=(name)" />
+          <scope ilk="function" line="2428" lineend="2430" name="encoding" signature="encoding" />
+          <scope ilk="function" line="2431" lineend="2433" name="encoding_names" signature="encoding_names" />
+          <scope ilk="function" line="2434" lineend="2436" name="encoding_system" signature="encoding_system" />
+          <scope ilk="function" line="2437" lineend="2439" name="encoding_system=" signature="encoding_system=(enc)" />
+          <scope ilk="function" line="2441" lineend="2443" name="encoding_convertfrom" signature="encoding_convertfrom(str, enc=None)" />
+          <scope ilk="function" line="2446" lineend="2448" name="encoding_convertto" signature="encoding_convertto(str, enc=None)" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="2457" lineend="2491" name="TkBindCore">
+        <scope doc="def bind(context, cmd=Proc.new, *args) Tk.bind(self,&#xA;context, cmd, *args) end" ilk="function" line="2461" lineend="2469" name="bind" signature="bind(context, *args)" />
+        <scope doc="def bind_append(context, cmd=Proc.new, *args)&#xA;Tk.bind_append(self, context, cmd, *args) end" ilk="function" line="2474" lineend="2482" name="bind_append" signature="bind_append(context, *args)" />
+        <scope ilk="function" line="2484" lineend="2486" name="bind_remove" signature="bind_remove(context)" />
+        <scope ilk="function" line="2488" lineend="2490" name="bindinfo" signature="bindinfo(context=nil)" />
+      </scope>
+      <scope ilk="namespace" line="2494" lineend="2776" name="TkTreatFont">
+        <scope ilk="function" line="2495" lineend="2497" name="__font_optkeys" signature="__font_optkeys" />
+        <scope ilk="function" line="2500" lineend="2502" name="__pathname" signature="__pathname" />
+        <scope ilk="function" line="2507" lineend="2534" name="font_configinfo" signature="font_configinfo(key = nil)" />
+        <scope ilk="function" line="2537" lineend="2600" name="font_configure" signature="font_configure(slot)" />
+        <scope ilk="function" line="2602" lineend="2651" name="latinfont_configure" signature="latinfont_configure(ltn, keys=nil)" />
+        <scope ilk="function" line="2654" lineend="2703" name="kanjifont_configure" signature="kanjifont_configure(knj, keys=nil)" />
+        <scope ilk="function" line="2705" lineend="2726" name="font_copy" signature="font_copy(win, wintag=nil, winkey=nil, targetkey=nil)" />
+        <scope ilk="function" line="2728" lineend="2750" name="latinfont_copy" signature="latinfont_copy(win, wintag=nil, winkey=nil, targetkey=nil)" />
+        <scope ilk="function" line="2753" lineend="2775" name="kanjifont_copy" signature="kanjifont_copy(win, wintag=nil, winkey=nil, targetkey=nil)" />
+      </scope>
+      <scope ilk="namespace" line="2779" lineend="3819" name="TkConfigMethod">
+        <scope ilk="function" line="2783" lineend="2785" name="__cget_cmd" signature="__cget_cmd" />
+        <scope ilk="function" line="2788" lineend="2790" name="__config_cmd" signature="__config_cmd" />
+        <scope ilk="function" line="2793" lineend="2795" name="__confinfo_cmd" signature="__confinfo_cmd" />
+        <scope ilk="function" line="2798" lineend="2801" name="__configinfo_struct" signature="__configinfo_struct" />
+        <scope ilk="function" line="2804" lineend="2806" name="__numval_optkeys" signature="__numval_optkeys" />
+        <scope ilk="function" line="2809" lineend="2811" name="__numstrval_optkeys" signature="__numstrval_optkeys" />
+        <scope ilk="function" line="2814" lineend="2816" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="2819" lineend="2827" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="2830" lineend="2832" name="__listval_optkeys" signature="__listval_optkeys" />
+        <scope ilk="function" line="2835" lineend="2837" name="__numlistval_optkeys" signature="__numlistval_optkeys" />
+        <scope ilk="function" line="2840" lineend="2842" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="2845" lineend="2849" name="__val2ruby_optkeys" signature="__val2ruby_optkeys" />
+        <scope ilk="function" line="2852" lineend="2857" name="__ruby2val_optkeys" signature="__ruby2val_optkeys" />
+        <scope ilk="function" line="2860" lineend="2864" name="__methodcall_optkeys" signature="__methodcall_optkeys" />
+        <scope ilk="function" line="2867" lineend="2869" name="__keyonly_optkeys" signature="__keyonly_optkeys" />
+        <scope ilk="function" line="2872" lineend="2892" name="__conv_keyonly_opts" signature="__conv_keyonly_opts(keys)" />
+        <scope ilk="function" line="2894" lineend="2896" name="config_hash_kv" signature="config_hash_kv(keys, enc_mode = nil, conf = nil)" />
+        <scope ilk="function" line="2900" lineend="2902" name="[]" signature="[](id" />
+        <scope ilk="function" line="2904" lineend="2907" name="[]=" signature="[]=(id" />
+        <scope ilk="function" line="2909" lineend="2984" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="2986" lineend="3048" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="3050" lineend="3052" name="configure_cmd" signature="configure_cmd(slot, value)" />
+        <scope ilk="function" line="3054" lineend="3785" name="configinfo" signature="configinfo(slot = nil)" />
+        <scope ilk="function" line="3787" lineend="3818" name="current_configinfo" signature="current_configinfo(slot = nil)" />
+      </scope>
+      <scope classrefs="TkKernel" ilk="class" line="3821" lineend="3932" name="TkObject">
+        <scope doc="--&gt; definition is moved to TkUtil module def path @path end" ilk="function" line="3832" lineend="3834" name="epath" signature="epath" />
+        <scope ilk="function" line="3836" lineend="3838" name="to_eval" signature="to_eval" />
+        <scope ilk="function" line="3840" lineend="3842" name="tk_send" signature="tk_send(cmd, *rest)" />
+        <scope ilk="function" line="3843" lineend="3845" name="tk_send_without_enc" signature="tk_send_without_enc(cmd, *rest)" />
+        <scope ilk="function" line="3846" lineend="3848" name="tk_send_with_enc" signature="tk_send_with_enc(cmd, *rest)" />
+        <scope doc="private :tk_send, :tk_send_without_enc, :tk_send_with_enc" ilk="function" line="3851" lineend="3853" name="tk_send_to_list" signature="tk_send_to_list(cmd, *rest)" />
+        <scope ilk="function" line="3854" lineend="3856" name="tk_send_to_list_without_enc" signature="tk_send_to_list_without_enc(cmd, *rest)" />
+        <scope ilk="function" line="3857" lineend="3859" name="tk_send_to_list_with_enc" signature="tk_send_to_list_with_enc(cmd, *rest)" />
+        <scope ilk="function" line="3860" lineend="3862" name="tk_send_to_simplelist" signature="tk_send_to_simplelist(cmd, *rest)" />
+        <scope ilk="function" line="3863" lineend="3865" name="tk_send_to_simplelist_without_enc" signature="tk_send_to_simplelist_without_enc(cmd, *rest)" />
+        <scope ilk="function" line="3866" lineend="3868" name="tk_send_to_simplelist_with_enc" signature="tk_send_to_simplelist_with_enc(cmd, *rest)" />
+        <scope ilk="function" line="3870" lineend="3892" name="method_missing" signature="method_missing(id, *args)" />
+        <scope ilk="function" line="3905" lineend="3919" name="event_generate" signature="event_generate(context, keys=nil)" />
+        <scope ilk="function" line="3921" lineend="3926" name="tk_trace_variable" signature="tk_trace_variable(v)" />
+        <scope ilk="function" line="3929" lineend="3931" name="destroy" signature="destroy" />
+        <import symbol="Tk" />
+        <import symbol="TkConfigMethod" />
+        <import symbol="TkBindCore" />
+      </scope>
+      <scope classrefs="TkObject" ilk="class" line="3935" lineend="4548" name="TkWindow">
+        <scope attributes="__classmethod__" doc="WidgetClassNames[WidgetClassName] = self ==&gt; If self is a&#xA;widget class, entry to the WidgetClassNames table." ilk="function" line="3945" lineend="3947" name="to_eval" signature="self.to_eval" />
+        <scope attributes="__ctor__" ilk="function" line="3949" lineend="4021" name="initialize" signature="initialize(parent=nil, keys=nil)" />
+        <scope ilk="function" line="4023" lineend="4037" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="4040" lineend="4042" name="exist?" signature="exist?" />
+        <scope ilk="function" line="4044" lineend="4046" name="bind_class" signature="bind_class" />
+        <scope ilk="function" line="4048" lineend="4050" name="database_classname" signature="database_classname" />
+        <scope ilk="function" line="4051" lineend="4058" name="database_class" signature="database_class" />
+        <scope attributes="__classmethod__" ilk="function" line="4059" lineend="4061" name="database_classname" signature="self.database_classname" />
+        <scope attributes="__classmethod__" ilk="function" line="4062" lineend="4064" name="database_class" signature="self.database_class" />
+        <scope ilk="function" line="4066" lineend="4074" name="pack" signature="pack(keys = nil)" />
+        <scope ilk="function" line="4076" lineend="4086" name="pack_in" signature="pack_in(target, keys = nil)" />
+        <scope ilk="function" line="4088" lineend="4092" name="pack_forget" signature="pack_forget" />
+        <scope ilk="function" line="4095" lineend="4106" name="pack_config" signature="pack_config(slot, value=None)" />
+        <scope ilk="function" line="4109" lineend="4117" name="pack_info" signature="pack_info()" />
+        <scope ilk="function" line="4119" lineend="4132" name="pack_propagate" signature="pack_propagate(mode=None)" />
+        <scope ilk="function" line="4134" lineend="4137" name="pack_slaves" signature="pack_slaves()" />
+        <scope ilk="function" line="4139" lineend="4147" name="grid" signature="grid(keys = nil)" />
+        <scope ilk="function" line="4149" lineend="4159" name="grid_in" signature="grid_in(target, keys = nil)" />
+        <scope ilk="function" line="4161" lineend="4165" name="grid_forget" signature="grid_forget" />
+        <scope ilk="function" line="4168" lineend="4171" name="grid_bbox" signature="grid_bbox(*args)" />
+        <scope ilk="function" line="4173" lineend="4184" name="grid_config" signature="grid_config(slot, value=None)" />
+        <scope ilk="function" line="4187" lineend="4190" name="grid_columnconfig" signature="grid_columnconfig(index, keys)" />
+        <scope ilk="function" line="4193" lineend="4196" name="grid_rowconfig" signature="grid_rowconfig(index, keys)" />
+        <scope ilk="function" line="4199" lineend="4211" name="grid_columnconfiginfo" signature="grid_columnconfiginfo(index, slot=nil)" />
+        <scope ilk="function" line="4213" lineend="4225" name="grid_rowconfiginfo" signature="grid_rowconfiginfo(index, slot=nil)" />
+        <scope ilk="function" line="4227" lineend="4230" name="grid_info" signature="grid_info()" />
+        <scope ilk="function" line="4232" lineend="4235" name="grid_location" signature="grid_location(x, y)" />
+        <scope ilk="function" line="4237" lineend="4250" name="grid_propagate" signature="grid_propagate(mode=None)" />
+        <scope ilk="function" line="4252" lineend="4256" name="grid_remove" signature="grid_remove()" />
+        <scope ilk="function" line="4258" lineend="4261" name="grid_size" signature="grid_size()" />
+        <scope ilk="function" line="4263" lineend="4266" name="grid_slaves" signature="grid_slaves(args)" />
+        <scope ilk="function" line="4268" lineend="4272" name="place" signature="place(keys)" />
+        <scope ilk="function" line="4274" lineend="4284" name="place_in" signature="place_in(target, keys = nil)" />
+        <scope ilk="function" line="4286" lineend="4290" name="place_forget" signature="place_forget" />
+        <scope ilk="function" line="4293" lineend="4300" name="place_config" signature="place_config(slot, value=None)" />
+        <scope ilk="function" line="4303" lineend="4318" name="place_configinfo" signature="place_configinfo(slot = nil)" />
+        <scope ilk="function" line="4320" lineend="4328" name="place_info" signature="place_info()" />
+        <scope ilk="function" line="4330" lineend="4333" name="place_slaves" signature="place_slaves()" />
+        <scope ilk="function" line="4335" lineend="4342" name="set_focus" signature="set_focus(force=false)" />
+        <scope ilk="function" line="4345" lineend="4370" name="grab" signature="grab(opt = nil)" />
+        <scope ilk="function" line="4372" lineend="4374" name="grab_current" signature="grab_current" />
+        <scope ilk="function" line="4376" lineend="4378" name="grab_release" signature="grab_release" />
+        <scope ilk="function" line="4380" lineend="4382" name="grab_set" signature="grab_set" />
+        <scope ilk="function" line="4384" lineend="4386" name="grab_set_global" signature="grab_set_global" />
+        <scope ilk="function" line="4388" lineend="4390" name="grab_status" signature="grab_status" />
+        <scope ilk="function" line="4392" lineend="4397" name="lower" signature="lower(below=None)" />
+        <scope ilk="function" line="4399" lineend="4404" name="raise" signature="raise(above=None)" />
+        <scope ilk="function" line="4407" lineend="4415" name="command" signature="command(cmd=nil, &amp;b)" />
+        <scope ilk="function" line="4417" lineend="4420" name="colormodel" signature="colormodel(model=None)" />
+        <scope ilk="function" line="4422" lineend="4424" name="caret" signature="caret(keys=nil)" />
+        <scope ilk="function" line="4426" lineend="4453" name="destroy" signature="destroy" />
+        <scope ilk="function" line="4455" lineend="4465" name="wait_visibility" signature="wait_visibility(on_thread = true)" />
+        <scope ilk="function" line="4466" lineend="4468" name="eventloop_wait_visibility" signature="eventloop_wait_visibility" />
+        <scope ilk="function" line="4469" lineend="4471" name="thread_wait_visibility" signature="thread_wait_visibility" />
+        <scope ilk="function" line="4481" lineend="4491" name="wait_destroy" signature="wait_destroy(on_thread = true)" />
+        <scope ilk="function" line="4493" lineend="4495" name="eventloop_wait_destroy" signature="eventloop_wait_destroy" />
+        <scope ilk="function" line="4497" lineend="4499" name="thread_wait_destroy" signature="thread_wait_destroy" />
+        <scope ilk="function" line="4511" lineend="4531" name="bindtags" signature="bindtags(taglist=nil)" />
+        <scope ilk="function" line="4533" lineend="4536" name="bindtags=" signature="bindtags=(taglist)" />
+        <scope ilk="function" line="4538" lineend="4543" name="bindtags_shift" signature="bindtags_shift" />
+        <scope ilk="function" line="4545" lineend="4547" name="bindtags_unshift" signature="bindtags_unshift(tag)" />
+        <import symbol="TkWinfo" />
+      </scope>
+      <scope doc="freeze core modules TclTkLib.freeze TclTkIp.freeze&#xA;TkUtil.freeze TkKernel.freeze" ilk="namespace" line="4561" lineend="4570" name="Tk" />
+    </scope>
+    

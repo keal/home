@@ -1,0 +1,80 @@
+<scope ilk="blob" lang="Ruby" name="csv">
+      <scope classrefs="Object" doc="CSV -- module for generating/parsing CSV data." ilk="class" line="11" lineend="992" name="CSV">
+        <scope classrefs="RuntimeError" ilk="class" line="12" lineend="12" name="IllegalFormatError" />
+        <scope classrefs="String" doc="deprecated" ilk="class" line="15" lineend="23" name="Cell">
+          <scope attributes="__ctor__" ilk="function" line="16" lineend="18" name="initialize" signature="initialize(data = &quot;&quot;, is_null = false)" />
+          <scope ilk="function" line="20" lineend="22" name="data" signature="data" />
+        </scope>
+        <scope classrefs="Array" doc="deprecated" ilk="class" line="26" lineend="27" name="Row" />
+        <scope attributes="__classmethod__" doc="Open a CSV formatted file for reading or writing." ilk="function" line="83" lineend="91" name="open" signature="CSV.open(path, mode, fs = nil, rs = nil, &amp;block)" />
+        <scope attributes="__classmethod__" ilk="function" line="93" lineend="95" name="foreach" signature="CSV.foreach(path, rs = nil, &amp;block)" />
+        <scope attributes="__classmethod__" ilk="function" line="97" lineend="99" name="read" signature="CSV.read(path, length = nil, offset = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="101" lineend="108" name="readlines" signature="CSV.readlines(path, rs = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="110" lineend="112" name="generate" signature="CSV.generate(path, fs = nil, rs = nil, &amp;block)" />
+        <scope attributes="__classmethod__" doc="Parse lines from given string or stream. Return rows as an&#xA;Array of Arrays." ilk="function" line="115" lineend="129" name="parse" signature="CSV.parse(str_or_readable, fs = nil, rs = nil, &amp;block)" />
+        <scope attributes="__classmethod__" doc="Parse a line from given string. Bear in mind it parses ONE&#xA;LINE." ilk="function" line="137" lineend="157" name="parse_line" signature="CSV.parse_line(src, fs = nil, rs = nil)" />
+        <scope attributes="__classmethod__" doc="Create a line from cells. each cell is stringified by to_s." ilk="function" line="160" lineend="183" name="generate_line" signature="CSV.generate_line(row, fs = nil, rs = nil)" />
+        <scope attributes="__classmethod__" doc="Parse a line from string. Consider using CSV.parse_line&#xA;instead." ilk="function" line="214" lineend="241" name="parse_row" signature="CSV.parse_row(src, idx, out_dev, fs = nil, rs = nil)" />
+        <scope attributes="__classmethod__" doc="Convert a line from cells data to string." ilk="function" line="271" lineend="301" name="generate_row" signature="CSV.generate_row(src, cells, out_dev, fs = nil, rs = nil)" />
+        <scope classrefs="Object" doc="Private class methods." ilk="class" line="304" lineend="510" name="self">
+          <scope ilk="function" line="307" lineend="323" name="open_reader" signature="open_reader(path, mode, fs, rs, &amp;block)" />
+          <scope ilk="function" line="325" lineend="341" name="open_writer" signature="open_writer(path, mode, fs, rs, &amp;block)" />
+          <scope ilk="function" line="343" lineend="482" name="parse_body" signature="parse_body(src, idx, fs, rs)" />
+          <scope ilk="function" line="484" lineend="500" name="generate_body" signature="generate_body(cell, out_dev, fs, rs)" />
+          <scope ilk="function" line="502" lineend="509" name="generate_separator" signature="generate_separator(type, out_dev, fs, rs)" />
+        </scope>
+        <scope classrefs="Object" doc="CSV formatted string/stream reader." ilk="class" line="523" lineend="588" name="Reader">
+          <scope attributes="__classmethod__" doc="Parse CSV data and get lines. Given block is called for each&#xA;parsed row." ilk="function" line="528" lineend="539" name="parse" signature="Reader.parse(str_or_readable, fs = &apos;,&apos;, rs = nil, &amp;block)" />
+          <scope attributes="__classmethod__" doc="Returns reader instance." ilk="function" line="542" lineend="551" name="create" signature="Reader.create(str_or_readable, fs = &apos;,&apos;, rs = nil)" />
+          <scope ilk="function" line="553" lineend="563" name="each" signature="each" />
+          <scope ilk="function" line="565" lineend="569" name="shift" signature="shift" />
+          <scope ilk="function" line="571" lineend="573" name="close" signature="close" />
+          <scope attributes="__ctor__" ilk="function" line="577" lineend="579" name="initialize" signature="initialize(dev)" />
+          <scope ilk="function" line="581" lineend="583" name="get_row" signature="get_row(row)" />
+          <scope ilk="function" line="585" lineend="587" name="terminate" signature="terminate" />
+          <import symbol="Enumerable" />
+        </scope>
+        <scope classrefs="Reader" ilk="class" line="591" lineend="612" name="StringReader">
+          <scope attributes="__ctor__" ilk="function" line="592" lineend="600" name="initialize" signature="initialize(string, fs = &apos;,&apos;, rs = nil)" />
+          <scope ilk="function" line="604" lineend="611" name="get_row" signature="get_row(row)" />
+        </scope>
+        <scope classrefs="Reader" ilk="class" line="615" lineend="655" name="IOReader">
+          <scope attributes="__ctor__" ilk="function" line="616" lineend="626" name="initialize" signature="initialize(io, fs = &apos;,&apos;, rs = nil)" />
+          <scope doc="Tell this reader to close the IO when terminated (Triggered&#xA;by invoking CSV::IOReader#close)." ilk="function" line="630" lineend="632" name="close_on_terminate" signature="close_on_terminate" />
+          <scope ilk="function" line="636" lineend="644" name="get_row" signature="get_row(row)" />
+          <scope ilk="function" line="646" lineend="654" name="terminate" signature="terminate" />
+        </scope>
+        <scope classrefs="Object" doc="CSV formatted string/stream writer." ilk="class" line="671" lineend="710" name="Writer">
+          <scope attributes="__classmethod__" doc="Given block is called with the writer instance." ilk="function" line="674" lineend="683" name="generate" signature="Writer.generate(str_or_writable, fs = &apos;,&apos;, rs = nil, &amp;block)" />
+          <scope attributes="__classmethod__" doc="str_or_writable must handle &apos;&lt;&lt;(string)&apos;." ilk="function" line="686" lineend="688" name="create" signature="Writer.create(str_or_writable, fs = &apos;,&apos;, rs = nil)" />
+          <scope doc="dump CSV stream to the device. argument must be an Array of&#xA;String." ilk="function" line="691" lineend="694" name="&lt;&lt;" signature="&lt;&lt;(row" />
+          <scope ilk="function" line="697" lineend="699" name="close" signature="close" />
+          <scope attributes="__ctor__" ilk="function" line="703" lineend="705" name="initialize" signature="initialize(dev)" />
+          <scope ilk="function" line="707" lineend="709" name="terminate" signature="terminate" />
+        </scope>
+        <scope classrefs="Writer" ilk="class" line="713" lineend="734" name="BasicWriter">
+          <scope attributes="__ctor__" ilk="function" line="714" lineend="719" name="initialize" signature="initialize(str_or_writable, fs = &apos;,&apos;, rs = nil)" />
+          <scope doc="Tell this writer to close the IO when terminated (Triggered&#xA;by invoking CSV::BasicWriter#close)." ilk="function" line="723" lineend="725" name="close_on_terminate" signature="close_on_terminate" />
+          <scope ilk="function" line="729" lineend="733" name="terminate" signature="terminate" />
+        </scope>
+        <scope classrefs="Object" doc="Buffered stream." ilk="class" line="795" lineend="960" name="StreamBuf">
+          <scope doc="get a char or a partial string from the stream." ilk="function" line="803" lineend="847" name="[]" signature="[](idx" />
+          <scope doc="drop a string from the stream." ilk="function" line="854" lineend="880" name="drop" signature="drop(n)" />
+          <scope ilk="function" line="882" lineend="884" name="is_eos?" signature="is_eos?" />
+          <scope attributes="__ctor__" doc="WARN: Do not instantiate this class directly." ilk="function" line="888" lineend="895" name="initialize" signature="initialize" />
+          <scope ilk="function" line="899" lineend="901" name="terminate" signature="terminate" />
+          <scope doc="protected method &apos;read&apos; must be defined in derived classes." ilk="function" line="907" lineend="909" name="read" signature="read(size)" />
+          <scope ilk="function" line="913" lineend="915" name="buf_size" signature="buf_size(idx)" />
+          <scope ilk="function" line="917" lineend="939" name="add_buf" signature="add_buf" />
+          <scope ilk="function" line="941" lineend="953" name="rel_buf" signature="rel_buf" />
+          <scope ilk="function" line="955" lineend="957" name="idx_is_eos?" signature="idx_is_eos?(idx)" />
+        </scope>
+        <scope classrefs="StreamBuf" doc="Buffered IO." ilk="class" line="972" lineend="991" name="IOBuf">
+          <scope attributes="__ctor__" ilk="function" line="973" lineend="976" name="initialize" signature="initialize(s)" />
+          <scope ilk="function" line="978" lineend="980" name="close" signature="close" />
+          <scope ilk="function" line="984" lineend="986" name="read" signature="read(size)" />
+          <scope ilk="function" line="988" lineend="990" name="terminate" signature="terminate" />
+        </scope>
+      </scope>
+    </scope>
+    

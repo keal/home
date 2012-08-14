@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/testsuite">
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="5" lineend="74" name="Test">
+        <scope ilk="namespace" line="6" lineend="73" name="Unit">
+          <scope classrefs="Object" doc="A collection of tests which can be #run." ilk="class" line="15" lineend="72" name="TestSuite">
+            <scope ilk="function" line="16" lineend="16" name="name" />
+            <scope ilk="function" line="16" lineend="16" name="tests" />
+            <scope attributes="__ctor__" doc="Creates a new TestSuite with the given name." ilk="function" line="22" lineend="25" name="initialize" signature="initialize(name=&quot;Unnamed TestSuite&quot;)" />
+            <scope doc="Runs the tests and/or suites contained in this TestSuite." ilk="function" line="29" lineend="35" name="run" signature="run(result, &amp;progress_block)" />
+            <scope doc="Adds the test to the suite." ilk="function" line="38" lineend="41" name="&lt;&lt;" signature="&lt;&lt;(test" />
+            <scope ilk="function" line="43" lineend="45" name="delete" signature="delete(test)" />
+            <scope doc="Retuns the rolled up number of tests in this suite; i.e." ilk="function" line="50" lineend="54" name="size" signature="size" />
+            <scope ilk="function" line="56" lineend="58" name="empty?" signature="empty?" />
+            <scope doc="Overridden to return the name given the suite at creation." ilk="function" line="62" lineend="64" name="to_s" signature="to_s" />
+            <scope doc="It&apos;s handy to be able to compare TestSuite instances." ilk="function" line="67" lineend="71" name="==" signature="==(other" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

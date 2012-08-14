@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpauth/authenticator">
+      <scope doc="httpauth/authenticator.rb -- Authenticator mix-in module." ilk="namespace" line="10" lineend="79" name="WEBrick">
+        <scope ilk="namespace" line="11" lineend="78" name="HTTPAuth">
+          <scope ilk="namespace" line="12" lineend="70" name="Authenticator">
+            <scope doc="must override by the derived class" ilk="function" line="23" lineend="38" name="check_init" signature="check_init(config)">
+              <scope classrefs="Object" ilk="class" line="33" name="::" />
+              <scope classrefs="Object" ilk="class" line="34" name="::" />
+              <scope classrefs="Object" ilk="class" line="35" name="::" />
+              <scope classrefs="Object" ilk="class" line="36" name="::" />
+              <scope classrefs="Object" ilk="class" line="37" lineend="38" name="::" />
+            </scope>
+            <scope ilk="function" line="40" lineend="51" name="check_scheme" signature="check_scheme(req)" />
+            <scope ilk="function" line="53" lineend="57" name="log" signature="log(meth, fmt, *args)" />
+            <scope ilk="function" line="59" lineend="63" name="error" signature="error(fmt, *args)" />
+            <scope ilk="function" line="65" lineend="69" name="info" signature="info(fmt, *args)" />
+          </scope>
+          <scope ilk="namespace" line="72" lineend="77" name="ProxyAuthenticator" />
+        </scope>
+      </scope>
+    </scope>
+    

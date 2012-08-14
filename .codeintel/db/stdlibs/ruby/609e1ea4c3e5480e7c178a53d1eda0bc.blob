@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/message">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL message definition." ilk="namespace" line="12" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="15" lineend="51" name="Message">
+        <scope ilk="function" line="16" lineend="16" name="name" />
+        <scope ilk="function" line="17" lineend="17" name="parts" />
+        <scope attributes="__ctor__" doc="required" ilk="function" line="19" lineend="23" name="initialize" signature="initialize" />
+        <scope ilk="function" line="25" lineend="27" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="29" lineend="41" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="43" lineend="50" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

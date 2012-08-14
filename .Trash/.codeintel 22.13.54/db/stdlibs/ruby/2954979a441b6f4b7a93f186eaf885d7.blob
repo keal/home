@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/autoscroll">
+      <import line="27" module="tk" symbol="*" />
+      <import line="28" module="tk/scrollbar" symbol="*" />
+      <import line="29" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="tkextlib/tcllib/autoscroll.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="31" lineend="60" name="Tk">
+        <scope ilk="namespace" line="32" lineend="59" name="Tcllib">
+          <scope ilk="namespace" line="33" lineend="58" name="Autoscroll">
+            <scope attributes="__classmethod__" ilk="function" line="35" lineend="37" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="39" lineend="45" name="package_version" signature="self.package_version" />
+            <scope attributes="__classmethod__" ilk="function" line="47" lineend="49" name="not_available" signature="self.not_available" />
+            <scope attributes="__classmethod__" ilk="function" line="51" lineend="53" name="autoscroll" signature="self.autoscroll(win)" />
+            <scope attributes="__classmethod__" ilk="function" line="55" lineend="57" name="unautoscroll" signature="self.unautoscroll(win)" />
+          </scope>
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="62" lineend="109" name="Tk">
+        <scope ilk="namespace" line="63" lineend="108" name="Scrollable">
+          <scope ilk="function" line="64" lineend="85" name="autoscroll" signature="autoscroll(mode = nil)" />
+          <scope ilk="function" line="86" lineend="107" name="unautoscroll" signature="unautoscroll(mode = nil)" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="111" lineend="125" name="TkScrollbar">
+        <scope ilk="function" line="112" lineend="118" name="autoscroll" signature="autoscroll" />
+        <scope ilk="function" line="119" lineend="124" name="unautoscroll" signature="unautoscroll" />
+      </scope>
+      <scope doc="TkPackage.require(&apos;autoscroll&apos;, &apos;1.0&apos;)&#xA;TkPackage.require(&apos;autoscroll&apos;, &apos;1.1&apos;)" ilk="namespace" line="131" lineend="158" name="Tk">
+        <scope ilk="namespace" line="132" lineend="157" name="Tcllib">
+          <scope classrefs="Object" ilk="class" line="133" lineend="135" name="Autoscroll" />
+          <scope ilk="namespace" line="137" lineend="156" name="Autoscroll">
+            <scope attributes="__classmethod__" ilk="function" line="139" lineend="141" name="autoscroll" signature="self.autoscroll(win)" />
+            <scope attributes="__classmethod__" ilk="function" line="143" lineend="145" name="unautoscroll" signature="self.unautoscroll(win)" />
+            <scope attributes="__classmethod__" ilk="function" line="147" lineend="150" name="wrap" signature="self.wrap" />
+            <scope attributes="__classmethod__" ilk="function" line="152" lineend="155" name="unwrap" signature="self.unwrap" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,111 @@
+<scope ilk="blob" lang="Ruby" name="pp">
+      <import line="46" module="prettyprint" symbol="*" />
+      <import line="461" module="test/unit" symbol="*" />
+      <scope doc="== Pretty-printer for Ruby objects." ilk="namespace" line="48" lineend="57" name="Kernel">
+        <scope ilk="function" line="50" lineend="55" name="pp" signature="pp(*objs)" />
+      </scope>
+      <scope classrefs="PrettyPrint" ilk="class" line="59" lineend="284" name="PP">
+        <scope attributes="__classmethod__" doc="Outputs +obj+ to +out+ in pretty printed format of +width+&#xA;columns in width." ilk="function" line="67" lineend="73" name="pp" signature="PP.pp(obj, out=$&gt;, width=79)" />
+        <scope attributes="__classmethod__" doc="Outputs +obj+ to +out+ like PP.pp but with no indent and&#xA;newline." ilk="function" line="79" lineend="84" name="singleline_pp" signature="PP.singleline_pp(obj, out=$&gt;)" />
+        <scope classrefs="Object" ilk="class" line="87" lineend="91" name="self">
+          <scope ilk="function" line="90" lineend="90" name="sharing_detection" />
+          <scope ilk="function" line="90" lineend="90" name="sharing_detection=" />
+        </scope>
+        <scope ilk="namespace" line="93" lineend="220" name="PPMethods">
+          <scope ilk="function" line="96" lineend="109" name="guard_inspect_key" signature="guard_inspect_key" />
+          <scope doc="Adds +obj+ to the pretty printing buffer using&#xA;Object#pretty_print or Object#pretty_print_cycle." ilk="function" line="116" lineend="130" name="pp" signature="pp(obj)" />
+          <scope doc="A convenience method which is same as follows:" ilk="function" line="135" lineend="137" name="object_group" signature="object_group(obj, &amp;block)" />
+          <scope ilk="function" line="139" lineend="143" name="object_address_group" signature="object_address_group(obj, &amp;block)" />
+          <scope doc="A convenience method which is same as follows:" ilk="function" line="149" lineend="152" name="comma_breakable" signature="comma_breakable" />
+          <scope doc="Adds a separated list." ilk="function" line="178" lineend="189" name="seplist" signature="seplist(list, sep=nil, iter_method=:each)" />
+          <scope ilk="function" line="191" lineend="204" name="pp_object" signature="pp_object(obj)" />
+          <scope ilk="function" line="206" lineend="219" name="pp_hash" signature="pp_hash(obj)" />
+        </scope>
+        <scope classrefs="PrettyPrint::SingleLine" ilk="class" line="224" lineend="226" name="SingleLine">
+          <import symbol="PPMethods" />
+        </scope>
+        <scope ilk="namespace" line="228" lineend="283" name="ObjectMixin">
+          <scope doc="1." ilk="function" line="243" lineend="251" name="pretty_print" signature="pretty_print(q)" />
+          <scope doc="A default pretty printing method for general objects that&#xA;are detected as part of a cycle." ilk="function" line="255" lineend="260" name="pretty_print_cycle" signature="pretty_print_cycle(q)" />
+          <scope doc="Returns a sorted array of instance variable names." ilk="function" line="266" lineend="268" name="pretty_print_instance_variables" signature="pretty_print_instance_variables" />
+          <scope doc="Is #inspect implementation using #pretty_print." ilk="function" line="277" lineend="282" name="pretty_print_inspect" signature="pretty_print_inspect" />
+        </scope>
+        <import symbol="PPMethods" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="286" lineend="298" name="Array">
+        <scope ilk="function" line="287" lineend="293" name="pretty_print" signature="pretty_print(q)" />
+        <scope ilk="function" line="295" lineend="297" name="pretty_print_cycle" signature="pretty_print_cycle(q)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="300" lineend="308" name="Hash">
+        <scope ilk="function" line="301" lineend="303" name="pretty_print" signature="pretty_print(q)" />
+        <scope ilk="function" line="305" lineend="307" name="pretty_print_cycle" signature="pretty_print_cycle(q)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="310" lineend="314" name="ENV">
+        <scope ilk="function" line="311" lineend="313" name="pretty_print" signature="pretty_print(q)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="316" lineend="334" name="Struct">
+        <scope ilk="function" line="317" lineend="329" name="pretty_print" signature="pretty_print(q)" />
+        <scope ilk="function" line="331" lineend="333" name="pretty_print_cycle" signature="pretty_print_cycle(q)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="336" lineend="344" name="Range">
+        <scope ilk="function" line="337" lineend="343" name="pretty_print" signature="pretty_print(q)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="346" lineend="426" name="File">
+        <scope classrefs="Object" ilk="class" line="347" lineend="425" name="Stat">
+          <scope ilk="function" line="348" lineend="424" name="pretty_print" signature="pretty_print(q)">
+            <import line="349" module="etc.so" symbol="*" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="428" lineend="437" name="MatchData">
+        <scope ilk="function" line="429" lineend="436" name="pretty_print" signature="pretty_print(q)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="439" lineend="441" name="Object">
+        <import symbol="PP::ObjectMixin" />
+      </scope>
+      <scope classrefs="Test::Unit::" doc=":enddoc:" ilk="class" line="463" lineend="471" name="PPTest">
+        <scope ilk="function" line="464" lineend="466" name="test_list01215012123_12" signature="test_list0123_12" />
+        <scope ilk="function" line="468" lineend="470" name="test_list01215012123_11" signature="test_list0123_11" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="473" lineend="481" name="HasInspect">
+        <scope attributes="__ctor__" ilk="function" line="474" lineend="476" name="initialize" signature="initialize(a)" />
+        <scope ilk="function" line="478" lineend="480" name="inspect" signature="inspect" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="483" lineend="493" name="HasPrettyPrint">
+        <scope attributes="__ctor__" ilk="function" line="484" lineend="486" name="initialize" signature="initialize(a)" />
+        <scope ilk="function" line="488" lineend="492" name="pretty_print" signature="pretty_print(q)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="495" lineend="509" name="HasBoth">
+        <scope attributes="__ctor__" ilk="function" line="496" lineend="498" name="initialize" signature="initialize(a)" />
+        <scope ilk="function" line="500" lineend="502" name="inspect" signature="inspect" />
+        <scope ilk="function" line="504" lineend="508" name="pretty_print" signature="pretty_print(q)" />
+      </scope>
+      <scope classrefs="HasPrettyPrint" ilk="class" line="511" lineend="513" name="PrettyPrintInspect" />
+      <scope classrefs="Object" ilk="class" line="515" lineend="517" name="PrettyPrintInspectWithoutPrettyPrint" />
+      <scope classrefs="Test::Unit::" ilk="class" line="519" lineend="567" name="PPInspectTest">
+        <scope ilk="function" line="520" lineend="523" name="test_hasinspect" signature="test_hasinspect" />
+        <scope ilk="function" line="525" lineend="528" name="test_hasprettyprint" signature="test_hasprettyprint" />
+        <scope ilk="function" line="530" lineend="533" name="test_hasboth" signature="test_hasboth" />
+        <scope ilk="function" line="535" lineend="540" name="test_pretty_print_inspect" signature="test_pretty_print_inspect" />
+        <scope ilk="function" line="542" lineend="545" name="test_proc" signature="test_proc" />
+        <scope ilk="function" line="547" lineend="558" name="test_to_s_with_iv" signature="test_to_s_with_iv">
+          <scope ilk="function" line="549" name="a.to_s" signature="a.to_s()" />
+        </scope>
+        <scope ilk="function" line="560" lineend="566" name="test_to_s_without_iv" signature="test_to_s_without_iv">
+          <scope ilk="function" line="562" name="a.to_s" signature="a.to_s()" />
+        </scope>
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="569" lineend="619" name="PPCycleTest">
+        <scope ilk="function" line="570" lineend="575" name="test_array" signature="test_array" />
+        <scope ilk="function" line="577" lineend="582" name="test_hash" signature="test_hash" />
+        <scope ilk="function" line="585" lineend="590" name="test_struct" signature="test_struct" />
+        <scope ilk="function" line="592" lineend="596" name="test_object" signature="test_object" />
+        <scope ilk="function" line="598" lineend="601" name="test_anonymous" signature="test_anonymous" />
+        <scope ilk="function" line="603" lineend="608" name="test_withinspect" signature="test_withinspect" />
+        <scope ilk="function" line="610" lineend="618" name="test_share_nil" signature="test_share_nil" />
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="621" lineend="626" name="PPSingleLineTest">
+        <scope ilk="function" line="622" lineend="625" name="test_hash" signature="test_hash" />
+      </scope>
+    </scope>
+    

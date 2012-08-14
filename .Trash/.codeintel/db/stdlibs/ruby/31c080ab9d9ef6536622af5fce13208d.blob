@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/busy">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/itemconfig.rb" symbol="*" />
+      <import line="8" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/busy.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="38" name="Tk::BLT">
+        <scope ilk="namespace" line="11" lineend="37" name="Busy">
+          <scope classrefs="TkWindow" ilk="class" line="19" lineend="32" name="Shield">
+            <scope attributes="__classmethod__" ilk="function" line="20" lineend="27" name="shield_path" signature="self.shield_path(win)" />
+            <scope attributes="__ctor__" ilk="function" line="29" lineend="31" name="initialize" signature="initialize(win)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="34" lineend="36" name="shield_path" signature="self.shield_path(win)" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="40" lineend="82" name="Tk::BLT::">
+        <scope ilk="function" line="41" lineend="43" name="__item_config_cmd" signature="__item_config_cmd(win)" />
+        <scope ilk="function" line="54" lineend="56" name="hold" signature="hold(win, keys={})" />
+        <scope ilk="function" line="58" lineend="60" name="release" signature="release(*wins)" />
+        <scope ilk="function" line="62" lineend="64" name="forget" signature="forget(*wins)" />
+        <scope ilk="function" line="66" lineend="68" name="is_busy" signature="is_busy(pat=None)" />
+        <scope ilk="function" line="70" lineend="72" name="names" signature="names(pat=None)" />
+        <scope ilk="function" line="75" lineend="77" name="check" signature="check(win)" />
+        <scope ilk="function" line="79" lineend="81" name="status" signature="status(win)" />
+      </scope>
+    </scope>
+    

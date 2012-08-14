@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/trofs/trofs">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/trofs/setup.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;trofs&apos;, &apos;0.4&apos;)" ilk="namespace" line="17" lineend="51" name="Tk">
+        <scope ilk="namespace" line="18" lineend="50" name="Trofs">
+          <scope attributes="__classmethod__" ilk="function" line="22" lineend="24" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="26" lineend="32" name="package_version" signature="self.package_version" />
+          <scope attributes="__classmethod__" ilk="function" line="36" lineend="39" name="create_archive" signature="self.create_archive(dir, archive)" />
+          <scope attributes="__classmethod__" ilk="function" line="41" lineend="44" name="mount" signature="self.mount(archive, mountpoint=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="46" lineend="49" name="umount" signature="self.umount(mountpoint)" />
+        </scope>
+      </scope>
+    </scope>
+    

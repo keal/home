@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="xsd/codegen/classdef">
+      <import line="9" module="xsd/codegen/gensupport" symbol="*" />
+      <import line="10" module="xsd/codegen/moduledef" symbol="*" />
+      <import line="11" module="xsd/codegen/methoddef" symbol="*" />
+      <import line="152" module="xsd/codegen/classdef" symbol="*" />
+      <scope doc="XSD4R - Generating class definition code Copyright (C) 2004&#xA;NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="14" name="XSD" />
+      <scope ilk="namespace" line="15" name="CodeGen" />
+      <scope classrefs="ModuleDef" ilk="class" line="18" lineend="144" name="ClassDef">
+        <scope attributes="__ctor__" ilk="function" line="21" lineend="26" name="initialize" signature="initialize(name, baseclass = nil)" />
+        <scope ilk="function" line="28" lineend="34" name="def_classvar" signature="def_classvar(var, value)" />
+        <scope ilk="function" line="36" lineend="41" name="def_attr" signature="def_attr(attrname, writable = true, varname = nil)" />
+        <scope ilk="function" line="43" lineend="81" name="dump" signature="dump" />
+        <scope ilk="function" line="85" lineend="92" name="dump_class_def" signature="dump_class_def" />
+        <scope ilk="function" line="94" lineend="96" name="dump_class_def_end" signature="dump_class_def_end" />
+        <scope ilk="function" line="98" lineend="104" name="dump_classvar" signature="dump_classvar" />
+        <scope ilk="function" line="106" lineend="122" name="dump_attributes" signature="dump_attributes" />
+        <scope ilk="function" line="124" lineend="130" name="dump_accessor" signature="dump_accessor(attrname, writable)" />
+        <scope ilk="function" line="132" lineend="143" name="dump_attribute" signature="dump_attribute(attrname, writable, varname)" />
+        <import symbol="GenSupport" />
+      </scope>
+    </scope>
+    

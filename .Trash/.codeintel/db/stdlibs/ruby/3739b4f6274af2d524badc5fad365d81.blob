@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="rexml/document">
+      <import line="1" module="rexml/element" symbol="*" />
+      <import line="2" module="rexml/xmldecl" symbol="*" />
+      <import line="3" module="rexml/source" symbol="*" />
+      <import line="4" module="rexml/comment" symbol="*" />
+      <import line="5" module="rexml/doctype" symbol="*" />
+      <import line="6" module="rexml/instruction" symbol="*" />
+      <import line="7" module="rexml/rexml" symbol="*" />
+      <import line="8" module="rexml/parseexception" symbol="*" />
+      <import line="9" module="rexml/output" symbol="*" />
+      <import line="10" module="rexml/parsers/baseparser" symbol="*" />
+      <import line="11" module="rexml/parsers/streamparser" symbol="*" />
+      <import line="12" module="rexml/parsers/treeparser" symbol="*" />
+      <scope ilk="namespace" line="14" lineend="193" name="REXML">
+        <scope classrefs="Element" doc="Represents a full XML document, including PIs, a doctype,&#xA;etc." ilk="class" line="20" name="Document">
+          <scope attributes="__ctor__" doc="Constructor @param source if supplied, must be a Document,&#xA;String, or IO." ilk="function" line="37" lineend="47" name="initialize" signature="initialize( source = nil, context = {} )" />
+        </scope>
+        <scope ilk="function" line="49" lineend="51" name="node_type" signature="node_type" />
+        <scope doc="Should be obvious" ilk="function" line="54" lineend="56" name="clone" signature="clone" />
+        <scope doc="According to the XML spec, a root node has no expanded name" ilk="function" line="59" lineend="63" name="expanded_name" signature="expanded_name" />
+        <scope doc="We override this, because XMLDecls and DocTypes must go at&#xA;the start of the document" ilk="function" line="69" lineend="86" name="add" signature="add( child )" />
+        <scope doc="Insert at end of list" ilk="function" line="99" lineend="103" name="add_element" signature="add_element(arg=nil, arg2=nil)" />
+        <scope doc="@return the root Element of the document, or nil if this&#xA;document has no children." ilk="function" line="107" lineend="111" name="root" signature="root" />
+        <scope doc="@return the DocType child of the document, if one exists,&#xA;and nil otherwise." ilk="function" line="115" lineend="117" name="doctype" signature="doctype" />
+        <scope doc="@return the XMLDecl of this document; if no XMLDecl has been&#xA;set, the default declaration is returned." ilk="function" line="121" lineend="125" name="xml_decl" signature="xml_decl" />
+        <scope doc="@return the XMLDecl version of this document as a String." ilk="function" line="129" lineend="131" name="version" signature="version" />
+        <scope doc="@return the XMLDecl encoding of this document as a String." ilk="function" line="135" lineend="137" name="encoding" signature="encoding" />
+        <scope doc="@return the XMLDecl standalone value of this document as a&#xA;String." ilk="function" line="141" lineend="143" name="stand_alone?" signature="stand_alone?" />
+        <scope doc="Write the XML tree out, optionally with indent." ilk="function" line="173" lineend="179" name="write" signature="write( output=$stdout, indent=-1, transitive=false, ie_hack=false )" />
+        <scope ilk="function" line="184" lineend="186" name="Document::parse_stream" signature="Document::parse_stream( source, listener )" />
+        <scope ilk="function" line="189" lineend="191" name="build" signature="build( source )" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,52 @@
+<scope ilk="blob" lang="Ruby" name="scanf">
+      <scope doc="scanf for Ruby" ilk="namespace" line="302" lineend="558" name="Scanf">
+        <scope classrefs="Object" ilk="class" line="304" lineend="486" name="FormatSpecifier">
+          <scope ilk="function" line="306" lineend="306" name="re_string" />
+          <scope ilk="function" line="306" lineend="306" name="matched_string" />
+          <scope ilk="function" line="306" lineend="306" name="conversion" />
+          <scope ilk="function" line="306" lineend="306" name="matched" />
+          <scope ilk="function" line="310" name="skip" signature="skip" />
+          <scope ilk="function" line="312" name="extract_float" signature="extract_float(s)" />
+          <scope ilk="function" line="313" name="extract_decimal" signature="extract_decimal(s)" />
+          <scope ilk="function" line="314" name="extract_hex" signature="extract_hex(s)" />
+          <scope ilk="function" line="315" name="extract_octal" signature="extract_octal(s)" />
+          <scope ilk="function" line="316" name="extract_integer" signature="extract_integer(s)" />
+          <scope ilk="function" line="317" name="extract_plain" signature="extract_plain(s)" />
+          <scope ilk="function" line="319" name="nil_proc" signature="nil_proc(s)" />
+          <scope ilk="function" line="323" lineend="325" name="to_s" signature="to_s" />
+          <scope ilk="function" line="327" lineend="329" name="count_space?" signature="count_space?" />
+          <scope attributes="__ctor__" ilk="function" line="331" lineend="449" name="initialize" signature="initialize(str)" />
+          <scope ilk="function" line="451" lineend="453" name="to_re" signature="to_re" />
+          <scope ilk="function" line="455" lineend="466" name="match" signature="match(str)" />
+          <scope ilk="function" line="468" lineend="470" name="letter" signature="letter" />
+          <scope ilk="function" line="472" lineend="475" name="width" signature="width" />
+          <scope ilk="function" line="477" lineend="484" name="mid_match?" signature="mid_match?" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="488" lineend="557" name="FormatString">
+          <scope ilk="function" line="490" lineend="490" name="string_left" />
+          <scope ilk="function" line="490" lineend="490" name="last_spec_tried" />
+          <scope ilk="function" line="491" lineend="491" name="last_match_tried" />
+          <scope ilk="function" line="491" lineend="491" name="matched_count" />
+          <scope ilk="function" line="491" lineend="491" name="space" />
+          <scope attributes="__ctor__" doc="or miscellaneous characters" ilk="function" line="514" lineend="521" name="initialize" signature="initialize(str)" />
+          <scope ilk="function" line="523" lineend="525" name="to_s" signature="to_s" />
+          <scope ilk="function" line="527" lineend="529" name="prune" signature="prune(n=matched_count)" />
+          <scope ilk="function" line="531" lineend="533" name="spec_count" signature="spec_count" />
+          <scope ilk="function" line="535" lineend="537" name="last_spec" signature="last_spec" />
+          <scope ilk="function" line="539" lineend="556" name="match" signature="match(str)" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="560" lineend="666" name="IO">
+        <scope doc="The trick here is doing a match where you grab one *line* of&#xA;input at a time." ilk="function" line="590" lineend="640" name="scanf" signature="scanf(str,&amp;b)" />
+        <scope ilk="function" line="644" lineend="651" name="soak_up_spaces" signature="soak_up_spaces" />
+        <scope ilk="function" line="653" lineend="665" name="block_scanf" signature="block_scanf(str)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="668" lineend="695" name="String">
+        <scope ilk="function" line="670" lineend="682" name="scanf" signature="scanf(fstr,&amp;b)" />
+        <scope ilk="function" line="684" lineend="694" name="block_scanf" signature="block_scanf(fstr,&amp;b)" />
+      </scope>
+      <scope ilk="namespace" line="697" lineend="702" name="Kernel">
+        <scope ilk="function" line="699" lineend="701" name="scanf" signature="scanf(fs,&amp;b)" />
+      </scope>
+    </scope>
+    

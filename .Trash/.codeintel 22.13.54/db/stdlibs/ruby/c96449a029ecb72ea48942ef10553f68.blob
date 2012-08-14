@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="yaml/baseemitter">
+      <import line="5" module="yaml/constants" symbol="*" />
+      <import line="6" module="yaml/encoding" symbol="*" />
+      <import line="7" module="yaml/error" symbol="*" />
+      <scope doc="BaseEmitter" ilk="namespace" line="9" lineend="247" name="YAML">
+        <scope ilk="namespace" line="11" lineend="230" name="BaseEmitter">
+          <scope ilk="function" line="13" lineend="19" name="options" signature="options( opt = nil )" />
+          <scope ilk="function" line="21" lineend="23" name="options=" signature="options=( opt )" />
+          <scope doc="Emit binary data" ilk="function" line="28" lineend="31" name="binary_base64" signature="binary_base64( value )" />
+          <scope doc="Emit plain, normal flowing text" ilk="function" line="36" lineend="47" name="node_text" signature="node_text( value, block = nil )" />
+          <scope doc="Emit a simple, unqouted string" ilk="function" line="81" lineend="84" name="simple" signature="simple( value )" />
+          <scope doc="Emit double-quoted string" ilk="function" line="89" lineend="91" name="double" signature="double( value )" />
+          <scope doc="Emit single-quoted string" ilk="function" line="96" lineend="98" name="single" signature="single( value )" />
+          <scope doc="Write a text block with the current indent" ilk="function" line="103" lineend="108" name="indent_text" signature="indent_text( text, mod, first_line = true )" />
+          <scope doc="Write a current indent" ilk="function" line="113" name="indent" signature="indent( mod = nil )">
+            <scope doc="Add indent to the buffer" ilk="function" line="127" lineend="129" name="indent!" signature="indent!" />
+            <scope doc="Folding paragraphs within a column" ilk="function" line="134" lineend="137" name="fold" signature="fold( value )" />
+          </scope>
+          <scope ilk="function" line="143" lineend="184" name="map" signature="map( type, &amp;e )" />
+          <scope ilk="function" line="186" lineend="195" name="seq_map_shortcut" signature="seq_map_shortcut" />
+          <scope doc="Quick sequence" ilk="function" line="200" lineend="228" name="seq" signature="seq( type, &amp;e )" />
+        </scope>
+        <scope classrefs="Array" doc="Emitter helper classes" ilk="class" line="235" lineend="239" name="Mapping">
+          <scope ilk="function" line="236" lineend="238" name="add" signature="add( k, v )" />
+        </scope>
+        <scope classrefs="Array" ilk="class" line="241" lineend="245" name="Sequence">
+          <scope ilk="function" line="242" lineend="244" name="add" signature="add( v )" />
+        </scope>
+      </scope>
+    </scope>
+    

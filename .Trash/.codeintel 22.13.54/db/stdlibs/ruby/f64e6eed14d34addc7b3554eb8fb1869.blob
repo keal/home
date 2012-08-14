@@ -1,0 +1,30 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/operation">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL operation definition." ilk="namespace" line="12" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="15" lineend="127" name="Operation">
+        <scope classrefs="Object" ilk="class" line="16" lineend="25" name="NameInfo">
+          <scope ilk="function" line="17" lineend="17" name="op_name" />
+          <scope ilk="function" line="18" lineend="18" name="optype_name" />
+          <scope ilk="function" line="19" lineend="19" name="parts" />
+          <scope attributes="__ctor__" ilk="function" line="20" lineend="24" name="initialize" signature="initialize(op_name, optype_name, parts)" />
+        </scope>
+        <scope ilk="function" line="27" lineend="27" name="name" />
+        <scope ilk="function" line="28" lineend="28" name="parameter_order" />
+        <scope ilk="function" line="29" lineend="29" name="input" />
+        <scope ilk="function" line="30" lineend="30" name="output" />
+        <scope ilk="function" line="31" lineend="31" name="fault" />
+        <scope ilk="function" line="32" lineend="32" name="type" />
+        <scope attributes="__ctor__" doc="required" ilk="function" line="34" lineend="42" name="initialize" signature="initialize" />
+        <scope ilk="function" line="44" lineend="46" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="48" lineend="51" name="input_info" signature="input_info" />
+        <scope ilk="function" line="53" lineend="56" name="output_info" signature="output_info" />
+        <scope ilk="function" line="58" lineend="60" name="inputparts" signature="inputparts" />
+        <scope ilk="function" line="62" lineend="64" name="inputname" signature="inputname" />
+        <scope ilk="function" line="66" lineend="68" name="outputparts" signature="outputparts" />
+        <scope ilk="function" line="70" lineend="73" name="outputname" signature="outputname" />
+        <scope ilk="function" line="75" lineend="95" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="97" lineend="108" name="parse_attr" signature="parse_attr(attr, value)" />
+        <scope ilk="function" line="112" lineend="126" name="sort_parts" signature="sort_parts(parts)" />
+      </scope>
+    </scope>
+    

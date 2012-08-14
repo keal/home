@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="tkdialog">
+      <import line="4" module="tk/dialog" symbol="*" />
+    </scope>
+    

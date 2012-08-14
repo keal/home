@@ -1,0 +1,42 @@
+<scope ilk="blob" lang="Ruby" name="tk/wm">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/wm.rb : methods for wm command" ilk="namespace" line="6" lineend="360" name="Tk">
+        <scope ilk="namespace" line="7" lineend="359" name="Wm">
+          <scope ilk="function" line="14" lineend="22" name="aspect" signature="aspect(*args)" />
+          <scope ilk="function" line="25" lineend="42" name="attributes" signature="attributes(slot=nil,value=None)" />
+          <scope ilk="function" line="45" lineend="53" name="client" signature="client(name=None)" />
+          <scope ilk="function" line="56" lineend="64" name="colormapwindows" signature="colormapwindows(*args)" />
+          <scope ilk="function" line="67" lineend="75" name="wm_command" signature="wm_command(value=nil)" />
+          <scope ilk="function" line="78" lineend="85" name="deiconify" signature="deiconify(ex = true)" />
+          <scope ilk="function" line="87" lineend="94" name="focusmodel" signature="focusmodel(mode = nil)" />
+          <scope ilk="function" line="97" lineend="99" name="frame" signature="frame" />
+          <scope ilk="function" line="101" lineend="108" name="geometry" signature="geometry(geom=nil)" />
+          <scope ilk="function" line="111" lineend="119" name="wm_grid" signature="wm_grid(*args)" />
+          <scope ilk="function" line="122" lineend="129" name="group" signature="group(leader = nil)" />
+          <scope ilk="function" line="132" lineend="139" name="iconbitmap" signature="iconbitmap(bmp=nil)" />
+          <scope ilk="function" line="142" lineend="152" name="iconphoto" signature="iconphoto(*imgs)" />
+          <scope ilk="function" line="155" lineend="159" name="iconphoto_default" signature="iconphoto_default(*imgs)" />
+          <scope ilk="function" line="161" lineend="168" name="iconify" signature="iconify(ex = true)" />
+          <scope ilk="function" line="170" lineend="177" name="iconmask" signature="iconmask(bmp=nil)" />
+          <scope ilk="function" line="180" lineend="187" name="iconname" signature="iconname(name=nil)" />
+          <scope ilk="function" line="190" lineend="198" name="iconposition" signature="iconposition(*args)" />
+          <scope ilk="function" line="201" lineend="209" name="iconwindow" signature="iconwindow(win = nil)" />
+          <scope ilk="function" line="212" lineend="220" name="maxsize" signature="maxsize(*args)" />
+          <scope ilk="function" line="223" lineend="231" name="minsize" signature="minsize(*args)" />
+          <scope ilk="function" line="234" lineend="241" name="overrideredirect" signature="overrideredirect(mode=None)" />
+          <scope ilk="function" line="244" lineend="252" name="positionfrom" signature="positionfrom(who=None)" />
+          <scope ilk="function" line="255" lineend="268" name="protocol" signature="protocol(name=nil, cmd=nil, &amp;b)" />
+          <scope ilk="function" line="270" lineend="284" name="protocols" signature="protocols(kv=nil)" />
+          <scope ilk="function" line="287" lineend="295" name="resizable" signature="resizable(*args)" />
+          <scope ilk="function" line="298" lineend="306" name="sizefrom" signature="sizefrom(who=None)" />
+          <scope ilk="function" line="309" lineend="311" name="stackorder" signature="stackorder" />
+          <scope ilk="function" line="313" lineend="315" name="stackorder_isabove" signature="stackorder_isabove(win)" />
+          <scope ilk="function" line="317" lineend="319" name="stackorder_isbelow" signature="stackorder_isbelow(win)" />
+          <scope ilk="function" line="321" lineend="328" name="state" signature="state(st=nil)" />
+          <scope ilk="function" line="331" lineend="338" name="title" signature="title(str=nil)" />
+          <scope ilk="function" line="341" lineend="348" name="transient" signature="transient(master=nil)" />
+          <scope ilk="function" line="351" lineend="358" name="withdraw" signature="withdraw(ex = true)" />
+        </scope>
+      </scope>
+    </scope>
+    

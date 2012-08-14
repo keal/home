@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="io/nonblock">
+      <import line="1" module="fcntl" symbol="*" />
+      <scope classrefs="Object" ilk="class" line="2" lineend="23" name="IO">
+        <scope ilk="function" line="3" lineend="5" name="nonblock?" signature="nonblock? (fcntl" />
+        <scope ilk="function" line="7" lineend="15" name="nonblock=" signature="nonblock=(nb)" />
+        <scope ilk="function" line="17" lineend="22" name="nonblock" signature="nonblock(nb = true)" />
+      </scope>
+    </scope>
+    

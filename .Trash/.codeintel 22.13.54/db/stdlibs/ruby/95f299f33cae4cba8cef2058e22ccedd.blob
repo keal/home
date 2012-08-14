@@ -1,0 +1,61 @@
+<scope ilk="blob" lang="Ruby" name="rss/maker/trackback">
+      <import line="1" module="rss/trackback" symbol="*" />
+      <import line="2" module="rss/maker/1.0" symbol="*" />
+      <import line="3" module="rss/maker/2.0" symbol="*" />
+      <scope ilk="namespace" line="5" lineend="126" name="RSS">
+        <scope ilk="namespace" line="6" lineend="125" name="Maker">
+          <scope ilk="namespace" line="7" lineend="72" name="TrackBackModel">
+            <scope attributes="__classmethod__" ilk="function" line="8" lineend="36" name="append_features" signature="self.append_features(klass)" />
+            <scope classrefs="Object" ilk="class" line="38" lineend="71" name="TrackBackAboutsBase">
+              <scope ilk="function" line="43" lineend="47" name="new_about" signature="new_about" />
+              <scope ilk="function" line="49" lineend="53" name="to_rss" signature="to_rss(rss, current)" />
+              <scope classrefs="Object" ilk="class" line="55" lineend="70" name="AboutBase">
+                <scope ilk="function" line="58" lineend="58" name="value" />
+                <scope ilk="function" line="58" lineend="58" name="value=" />
+                <scope ilk="function" line="66" lineend="68" name="have_required_values?" signature="have_required_values?" />
+                <import symbol="Base" />
+              </scope>
+              <import symbol="Base" />
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="74" lineend="76" name="ItemsBase">
+            <scope classrefs="Object" ilk="class" line="75" lineend="75" name="ItemBase">
+              <import symbol="TrackBackModel" />
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="78" lineend="93" name="RSS10">
+            <scope classrefs="Object" ilk="class" line="79" lineend="92" name="Items">
+              <scope classrefs="Object" ilk="class" line="80" lineend="91" name="Item">
+                <scope classrefs="TrackBackAboutsBase" ilk="class" line="81" lineend="90" name="TrackBackAbouts">
+                  <scope classrefs="AboutBase" ilk="class" line="82" lineend="89" name="About">
+                    <scope ilk="function" line="83" lineend="88" name="to_rss" signature="to_rss(rss, current)" />
+                  </scope>
+                </scope>
+              </scope>
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="95" lineend="106" name="RSS09">
+            <scope classrefs="Object" ilk="class" line="96" lineend="105" name="Items">
+              <scope classrefs="Object" ilk="class" line="97" lineend="104" name="Item">
+                <scope classrefs="TrackBackAboutsBase" ilk="class" line="98" lineend="103" name="TrackBackAbouts">
+                  <scope ilk="function" line="99" lineend="100" name="to_rss" signature="to_rss(*args)" />
+                  <scope classrefs="AboutBase" ilk="class" line="101" lineend="102" name="About" />
+                </scope>
+              </scope>
+            </scope>
+          </scope>
+          <scope classrefs="Object" ilk="class" line="108" lineend="123" name="RSS20">
+            <scope classrefs="Object" ilk="class" line="109" lineend="122" name="Items">
+              <scope classrefs="Object" ilk="class" line="110" lineend="121" name="Item">
+                <scope classrefs="TrackBackAboutsBase" ilk="class" line="111" lineend="120" name="TrackBackAbouts">
+                  <scope classrefs="AboutBase" ilk="class" line="112" lineend="119" name="About">
+                    <scope ilk="function" line="113" lineend="118" name="to_rss" signature="to_rss(rss, current)" />
+                  </scope>
+                </scope>
+              </scope>
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

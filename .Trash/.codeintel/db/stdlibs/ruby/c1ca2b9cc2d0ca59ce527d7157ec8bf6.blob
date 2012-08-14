@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="win32ole_method">
+      <scope classrefs="Object" doc="WIN32OLE_METHOD objects represent OLE method information." ilk="class" name="WIN32OLE_METHOD">
+        <scope attributes="__classmethod__ __ctor__" doc="Returns a new WIN32OLE_METHOD object which represents the&#xA;information about OLE method. The first argument `ole_type&apos;&#xA;specifies WIN32OLE_TYPE object." ilk="function" name="new" signature="WIN32OLE_METHOD.new(ole_type,  method) -&gt; WIN32OLE_METHOD object" />
+        <scope doc="Returns dispatch ID." ilk="function" name="dispid" signature="WIN32OLE_METHOD#dispid" />
+        <scope doc="Returns true if the method is event." ilk="function" name="event?" signature="WIN32OLE_METHOD#event?" />
+        <scope doc="Returns event interface name if the method is event." ilk="function" name="event_interface" signature="WIN32OLE_METHOD#event_interface" />
+        <scope doc="Returns help context." ilk="function" name="helpcontext" signature="WIN32OLE_METHOD#helpcontext" />
+        <scope doc="Returns help file. If help file is not found, then the&#xA;method returns nil." ilk="function" name="helpfile" signature="WIN32OLE_METHOD#helpfile" />
+        <scope doc="Returns help string of OLE method. If the help string is not&#xA;found, then the method returns nil." ilk="function" name="helpstring" signature="WIN32OLE_METHOD#helpstring" />
+        <scope doc="Returns the method invoke kind." ilk="function" name="invkind" signature="WIN32OLE_MTHOD#invkind" />
+        <scope doc="Returns the method kind string. The string is &quot;UNKNOWN&quot; or&#xA;&quot;PROPERTY&quot; or &quot;PROPERTY&quot; or &quot;PROPERTYGET&quot; or &quot;PROPERTYPUT&quot;&#xA;or &quot;PROPERTYPPUTREF&quot; or &quot;FUNC&quot;." ilk="function" name="invoke_kind" signature="WIN32OLE_METHOD#invoke_kind" />
+        <scope doc="call-seq" ilk="function" name="name" signature="()" />
+        <scope doc="Returns the offset ov VTBL." ilk="function" name="offset_vtbl" signature="WIN32OLE_METHOD#offset_vtbl" />
+        <scope doc="returns array of WIN32OLE_PARAM object corresponding with&#xA;method parameters." ilk="function" name="params" signature="WIN32OLE_METHOD#params" />
+        <scope doc="Returns string of return value type of method." ilk="function" name="return_type" signature="WIN32OLE_METHOD#return_type" />
+        <scope doc="Returns detail information of return value type of method.&#xA;The information is array." ilk="function" name="return_type_detail" signature="WIN32OLE_METHOD#return_type_detail" />
+        <scope doc="Returns number of return value type of method." ilk="function" name="return_vtype" signature="WIN32OLE_METHOD#return_vtype" />
+        <scope doc="Returns the size of optional parameters." ilk="function" name="size_opt_params" signature="WIN32OLE_METHOD#size_opt_params" />
+        <scope doc="Returns the size of arguments of the method." ilk="function" name="size_params" signature="WIN32OLE_METHOD#size_params" />
+        <scope doc="Alias for #name" ilk="function" name="to_s" signature="()" />
+        <scope doc="Returns true if the method is public." ilk="function" name="visible?" signature="WIN32OLE_METHOD#visible?" />
+      </scope>
+    </scope>
+    

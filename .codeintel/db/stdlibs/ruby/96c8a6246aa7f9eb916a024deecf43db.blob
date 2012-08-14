@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/wsdl">
+      <import line="9" module="xsd/qname" symbol="*" />
+      <scope doc="WSDL4R - Base definitions." ilk="namespace" line="12" name="WSDL" />
+      <scope classrefs="StandardError" ilk="class" line="20" lineend="20" name="Error" />
+    </scope>
+    

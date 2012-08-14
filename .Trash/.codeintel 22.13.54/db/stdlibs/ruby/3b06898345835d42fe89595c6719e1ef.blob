@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="cgi-lib">
+      <import line="114" module="delegate" symbol="*" />
+      <scope classrefs="SimpleDelegator" ilk="class" line="116" lineend="272" name="CGI">
+        <scope attributes="__classmethod__" doc="make rfc1123 date string" ilk="function" line="126" lineend="131" name="rfc1123_date" signature="CGI::rfc1123_date(time)" />
+        <scope attributes="__classmethod__" doc="escape url encode" ilk="function" line="134" lineend="136" name="escape" signature="CGI::escape(str)" />
+        <scope attributes="__classmethod__" doc="unescape url encoded" ilk="function" line="139" lineend="141" name="unescape" signature="CGI::unescape(str)" />
+        <scope attributes="__classmethod__" doc="escape HTML" ilk="function" line="144" lineend="146" name="escapeHTML" signature="CGI::escapeHTML(str)" />
+        <scope doc="offline mode. read name=value pairs on standard input." ilk="function" line="149" lineend="160" name="read_from_cmdline" signature="read_from_cmdline">
+          <import line="150" module="shellwords.rb" symbol="*" />
+        </scope>
+        <scope attributes="__ctor__" ilk="function" line="162" lineend="197" name="initialize" signature="initialize(input = $stdin)" />
+        <scope attributes="__classmethod__" doc="make HTML tag string" ilk="function" line="203" lineend="208" name="tag" signature="CGI::tag(element, attributes = {})" />
+        <scope attributes="__classmethod__" doc="make raw cookie string" ilk="function" line="211" lineend="217" name="cookie" signature="CGI::cookie(options)" />
+        <scope attributes="__classmethod__" doc="make HTTP header string" ilk="function" line="220" lineend="240" name="header" signature="CGI::header(*options)" />
+        <scope attributes="__classmethod__" doc="print HTTP header and string to $&gt;" ilk="function" line="243" lineend="245" name="print" signature="CGI::print(*options)" />
+        <scope attributes="__classmethod__" doc="print message to $&gt;" ilk="function" line="248" lineend="261" name="message" signature="CGI::message(message, title = &quot;&quot;, header = [&quot;Content-Type: text/html&quot;])" />
+        <scope attributes="__classmethod__" doc="print error message to $&gt; and exit" ilk="function" line="264" lineend="271" name="error" signature="CGI::error" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,54 @@
+<scope ilk="blob" lang="Ruby" name="soap/rpc/element">
+      <import line="9" module="soap/baseData" symbol="*" />
+      <scope doc="SOAP4R - RPC element definition." ilk="namespace" line="12" name="SOAP" />
+      <scope classrefs="SOAPStruct" ilk="class" line="15" lineend="61" name="SOAPBody">
+        <scope ilk="function" line="18" lineend="20" name="request" signature="request" />
+        <scope ilk="function" line="22" lineend="36" name="response" signature="response" />
+        <scope ilk="function" line="38" lineend="47" name="outparams" signature="outparams" />
+        <scope ilk="function" line="49" lineend="55" name="fault" signature="fault" />
+        <scope ilk="function" line="57" lineend="60" name="fault=" signature="fault=(fault)" />
+      </scope>
+      <scope ilk="namespace" line="64" name="RPC" />
+      <scope classrefs="Error" ilk="class" line="67" lineend="67" name="RPCError" />
+      <scope classrefs="RPCError" ilk="class" line="68" lineend="68" name="MethodDefinitionError" />
+      <scope classrefs="RPCError" ilk="class" line="69" lineend="69" name="ParameterError" />
+      <scope classrefs="SOAPStruct" ilk="class" line="71" lineend="215" name="SOAPMethod">
+        <scope ilk="function" line="77" lineend="77" name="param_def" />
+        <scope ilk="function" line="78" lineend="78" name="inparam" />
+        <scope ilk="function" line="79" lineend="79" name="outparam" />
+        <scope ilk="function" line="80" lineend="80" name="retval_name" />
+        <scope ilk="function" line="81" lineend="81" name="retval_class_name" />
+        <scope attributes="__ctor__" ilk="function" line="83" lineend="101" name="initialize" signature="initialize(qname, param_def = nil)" />
+        <scope ilk="function" line="103" lineend="105" name="have_outparam?" signature="have_outparam?" />
+        <scope ilk="function" line="107" lineend="109" name="input_params" signature="input_params" />
+        <scope ilk="function" line="111" lineend="113" name="output_params" signature="output_params" />
+        <scope ilk="function" line="115" lineend="121" name="set_param" signature="set_param(params)" />
+        <scope ilk="function" line="123" lineend="128" name="set_outparam" signature="set_outparam(params)" />
+        <scope attributes="__classmethod__" ilk="function" line="130" lineend="138" name="param_count" signature="SOAPMethod.param_count(param_def, *type)" />
+        <scope attributes="__classmethod__" ilk="function" line="140" lineend="151" name="derive_rpc_param_def" signature="SOAPMethod.derive_rpc_param_def(obj, name, *param)" />
+        <scope attributes="__classmethod__" ilk="function" line="153" lineend="160" name="create_rpc_param_def" signature="SOAPMethod.create_rpc_param_def(param_names)" />
+        <scope attributes="__classmethod__" ilk="function" line="162" lineend="173" name="create_doc_param_def" signature="SOAPMethod.create_doc_param_def(req_qnames, res_qnames)" />
+        <scope ilk="function" line="177" lineend="183" name="collect_params" signature="collect_params(*type)" />
+        <scope ilk="function" line="185" lineend="214" name="init_param" signature="init_param(param_def)" />
+      </scope>
+      <scope classrefs="SOAPMethod" ilk="class" line="218" lineend="272" name="SOAPMethodRequest">
+        <scope ilk="function" line="219" lineend="219" name="soapaction" />
+        <scope ilk="function" line="219" lineend="219" name="soapaction=" />
+        <scope attributes="__classmethod__" ilk="function" line="221" lineend="235" name="create_request" signature="SOAPMethodRequest.create_request(qname, *params)" />
+        <scope attributes="__ctor__" ilk="function" line="237" lineend="241" name="initialize" signature="initialize(qname, param_def = nil, soapaction = nil)" />
+        <scope ilk="function" line="243" lineend="250" name="each" signature="each" />
+        <scope ilk="function" line="252" lineend="256" name="dup" signature="dup" />
+        <scope ilk="function" line="258" lineend="262" name="create_method_response" signature="create_method_response(response_name = nil)" />
+        <scope ilk="function" line="266" lineend="271" name="check_elename" signature="check_elename(qname)" />
+      </scope>
+      <scope classrefs="SOAPMethod" ilk="class" line="275" lineend="301" name="SOAPMethodResponse">
+        <scope attributes="__ctor__" ilk="function" line="277" lineend="280" name="initialize" signature="initialize(qname, param_def = nil)" />
+        <scope ilk="function" line="282" lineend="287" name="retval=" signature="retval=(retval)" />
+        <scope ilk="function" line="289" lineend="300" name="each" signature="each" />
+      </scope>
+      <scope classrefs="XSD::XSDAnySimpleType" doc="To return(?) void explicitly." ilk="class" line="309" lineend="321" name="SOAPVoid">
+        <scope attributes="__ctor__" ilk="function" line="315" lineend="320" name="initialize" signature="initialize()" />
+        <import symbol="SOAPBasetype" />
+      </scope>
+    </scope>
+    

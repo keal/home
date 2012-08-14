@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tile/dialog">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tkextlib/tile.rb" symbol="*" />
+      <scope doc="ttk::dialog  (tile-0.7+) by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="8" lineend="13" name="Tk">
+        <scope ilk="namespace" line="9" lineend="12" name="Tile">
+          <scope classrefs="TkWindow" ilk="class" line="10" lineend="11" name="Dialog" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="15" lineend="84" name="Tk::Tile::">
+        <scope attributes="__classmethod__" ilk="function" line="18" lineend="22" name="show" signature="self.show(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="23" lineend="25" name="display" signature="self.display(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="27" lineend="30" name="define_dialog_type" signature="self.define_dialog_type(name, keys)" />
+        <scope attributes="__classmethod__" ilk="function" line="32" lineend="34" name="style" signature="self.style(*args)" />
+        <scope attributes="__ctor__" ilk="function" line="38" lineend="41" name="initialize" signature="initialize(keys={})" />
+        <scope ilk="function" line="43" lineend="45" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="48" lineend="50" name="show" signature="show" />
+        <scope ilk="function" line="53" lineend="55" name="client_frame" signature="client_frame" />
+        <scope ilk="function" line="57" lineend="59" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="61" lineend="74" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="76" lineend="83" name="configinfo" signature="configinfo(slot = nil)" />
+      </scope>
+    </scope>
+    

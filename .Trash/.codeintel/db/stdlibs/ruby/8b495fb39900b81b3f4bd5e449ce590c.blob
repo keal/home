@@ -1,0 +1,40 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parsers/pullparser">
+      <import line="1" module="forwardable" symbol="*" />
+      <import line="3" module="rexml/parseexception" symbol="*" />
+      <import line="4" module="rexml/parsers/baseparser" symbol="*" />
+      <import line="5" module="rexml/xmltokens" symbol="*" />
+      <scope ilk="namespace" line="7" lineend="196" name="REXML">
+        <scope ilk="namespace" line="8" lineend="195" name="Parsers">
+          <scope classrefs="Object" doc="= Using the Pull Parser &lt;em&gt;This API is experimental, and&#xA;subject to change.&lt;/em&gt; parser = PullParser.new( &quot;&lt;a&gt;text&lt;b&#xA;att=&apos;val&apos;/&gt;txet&lt;/a&gt;&quot; ) while parser.has_next? res =&#xA;parser.next" ilk="class" line="28" lineend="83" name="PullParser">
+            <scope attributes="__ctor__" ilk="function" line="37" lineend="42" name="initialize" signature="initialize" />
+            <scope ilk="function" line="44" lineend="47" name="add_listener" signature="add_listener( listener )" />
+            <scope ilk="function" line="49" lineend="53" name="each" signature="each" />
+            <scope ilk="function" line="55" lineend="63" name="peek" signature="peek" />
+            <scope ilk="function" line="65" lineend="78" name="pull" signature="pull" />
+            <scope ilk="function" line="80" lineend="82" name="unshift" signature="unshift" />
+            <import symbol="XMLTokens" />
+          </scope>
+          <scope classrefs="Object" doc="A parsing event." ilk="class" line="90" lineend="194" name="PullEvent">
+            <scope attributes="__ctor__" doc="The type of this event." ilk="function" line="94" lineend="96" name="initialize" signature="initialize(arg)" />
+            <scope ilk="function" line="98" lineend="110" name="[]" signature="[]( start" />
+            <scope ilk="function" line="112" lineend="114" name="event_type" signature="event_type" />
+            <scope doc="Content: [ String tag_name, Hash attributes ]" ilk="function" line="117" lineend="119" name="start_element?" signature="start_element?" />
+            <scope doc="Content: [ String tag_name ]" ilk="function" line="122" lineend="124" name="end_element?" signature="end_element?" />
+            <scope doc="Content: [ String raw_text, String unnormalized_text ]" ilk="function" line="127" lineend="129" name="text?" signature="text?" />
+            <scope doc="Content: [ String text ]" ilk="function" line="132" lineend="134" name="instruction?" signature="instruction?" />
+            <scope doc="Content: [ String text ]" ilk="function" line="137" lineend="139" name="comment?" signature="comment?" />
+            <scope doc="Content: [ String name, String pub_sys, String long_name,&#xA;String uri ]" ilk="function" line="142" lineend="144" name="doctype?" signature="doctype?" />
+            <scope doc="Content: [ String text ]" ilk="function" line="147" lineend="149" name="attlistdecl?" signature="attlistdecl?" />
+            <scope doc="Content: [ String text ]" ilk="function" line="152" lineend="154" name="elementdecl?" signature="elementdecl?" />
+            <scope doc="Due to the wonders of DTDs, an entity declaration can be&#xA;just about anything." ilk="function" line="163" lineend="165" name="entitydecl?" signature="entitydecl?" />
+            <scope doc="Content: [ String text ]" ilk="function" line="168" lineend="170" name="notationdecl?" signature="notationdecl?" />
+            <scope doc="Content: [ String text ]" ilk="function" line="173" lineend="175" name="entity?" signature="entity?" />
+            <scope doc="Content: [ String text ]" ilk="function" line="178" lineend="180" name="cdata?" signature="cdata?" />
+            <scope doc="Content: [ String version, String encoding, String&#xA;standalone ]" ilk="function" line="183" lineend="185" name="xmldecl?" signature="xmldecl?" />
+            <scope ilk="function" line="187" lineend="189" name="error?" signature="error?" />
+            <scope ilk="function" line="191" lineend="193" name="inspect" signature="inspect" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

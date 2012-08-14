@@ -1,0 +1,139 @@
+<scope ilk="blob" lang="Ruby" name="tk/text">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tk/itemfont" symbol="*" />
+      <import line="7" module="tk/itemconfig" symbol="*" />
+      <import line="8" module="tk/scrollable" symbol="*" />
+      <import line="9" module="tk/txtwin_abst" symbol="*" />
+      <scope doc="tk/text.rb - Tk text classes $Date: 2005/11/23 12:01:05 $ by&#xA;Yukihiro Matsumoto &lt;matz@caelum.co.jp&gt;" ilk="namespace" line="11" lineend="61" name="TkTextTagConfig">
+        <scope ilk="function" line="15" lineend="17" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="20" lineend="22" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="25" lineend="30" name="__item_pathname" signature="__item_pathname(id)" />
+        <scope ilk="function" line="33" lineend="35" name="tag_cget" signature="tag_cget(tagOrId, option)" />
+        <scope ilk="function" line="36" lineend="38" name="tag_configure" signature="tag_configure(tagOrId, slot, value=None)" />
+        <scope ilk="function" line="39" lineend="41" name="tag_configinfo" signature="tag_configinfo(tagOrId, slot=nil)" />
+        <scope ilk="function" line="42" lineend="44" name="current_tag_configinfo" signature="current_tag_configinfo(tagOrId, slot=nil)" />
+        <scope ilk="function" line="46" lineend="48" name="window_cget" signature="window_cget(tagOrId, option)" />
+        <scope ilk="function" line="49" lineend="51" name="window_configure" signature="window_configure(tagOrId, slot, value=None)" />
+        <scope ilk="function" line="52" lineend="54" name="window_configinfo" signature="window_configinfo(tagOrId, slot=nil)" />
+        <scope ilk="function" line="55" lineend="57" name="current_window_configinfo" signature="current_window_configinfo(tagOrId, slot=nil)" />
+      </scope>
+      <scope classrefs="TkTextWin" ilk="class" line="63" lineend="1528" name="TkText">
+        <scope ilk="namespace" line="71" lineend="221" name="IndexModMethods">
+          <scope ilk="function" line="72" lineend="81" name="+" signature="+(mod" />
+          <scope ilk="function" line="83" lineend="94" name="-" signature="-(mod" />
+          <scope ilk="function" line="96" lineend="103" name="chars" signature="chars(mod)" />
+          <scope ilk="function" line="106" lineend="114" name="display_chars" signature="display_chars(mod)" />
+          <scope ilk="function" line="117" lineend="125" name="any_chars" signature="any_chars(mod)" />
+          <scope ilk="function" line="128" lineend="136" name="indices" signature="indices(mod)" />
+          <scope ilk="function" line="138" lineend="146" name="display_indices" signature="display_indices(mod)" />
+          <scope ilk="function" line="148" lineend="156" name="any_indices" signature="any_indices(mod)" />
+          <scope ilk="function" line="158" lineend="165" name="lines" signature="lines(mod)" />
+          <scope ilk="function" line="168" lineend="176" name="display_lines" signature="display_lines(mod)" />
+          <scope ilk="function" line="179" lineend="187" name="any_lines" signature="any_lines(mod)" />
+          <scope ilk="function" line="190" lineend="192" name="linestart" signature="linestart" />
+          <scope ilk="function" line="193" lineend="195" name="lineend" signature="lineend" />
+          <scope ilk="function" line="197" lineend="200" name="display_linestart" signature="display_linestart" />
+          <scope ilk="function" line="201" lineend="204" name="display_lineend" signature="display_lineend" />
+          <scope ilk="function" line="206" lineend="208" name="wordstart" signature="wordstart" />
+          <scope ilk="function" line="209" lineend="211" name="wordend" signature="wordend" />
+          <scope ilk="function" line="213" lineend="216" name="display_wordstart" signature="display_wordstart" />
+          <scope ilk="function" line="217" lineend="220" name="display_wordend" signature="display_wordend" />
+        </scope>
+        <scope classrefs="String" ilk="class" line="223" lineend="243" name="IndexString">
+          <scope attributes="__classmethod__" ilk="function" line="226" lineend="228" name="at" signature="self.at(x,y)" />
+          <scope attributes="__classmethod__" ilk="function" line="230" lineend="238" name="new" signature="self.new(str)" />
+          <scope ilk="function" line="240" lineend="242" name="id" signature="id" />
+          <import symbol="IndexModMethods" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="251" lineend="256" name="new" signature="self.new(*args, &amp;block)" />
+        <scope ilk="function" line="258" lineend="261" name="init_instance_variable" signature="init_instance_variable" />
+        <scope ilk="function" line="263" lineend="266" name="__destroy_hook__" signature="__destroy_hook__" />
+        <scope ilk="function" line="268" lineend="279" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="282" lineend="284" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope attributes="__classmethod__" ilk="function" line="287" lineend="289" name="at" signature="self.at(x, y)" />
+        <scope ilk="function" line="291" lineend="293" name="at" signature="at(x, y)" />
+        <scope ilk="function" line="295" lineend="298" name="index" signature="index(idx)" />
+        <scope ilk="function" line="300" lineend="303" name="get_displaychars" signature="get_displaychars(*index)" />
+        <scope ilk="function" line="305" lineend="307" name="value" signature="value" />
+        <scope ilk="function" line="309" lineend="313" name="value=" signature="value= (val)" />
+        <scope ilk="function" line="315" lineend="318" name="clear" signature="clear" />
+        <scope ilk="function" line="321" lineend="323" name="_addcmd" signature="_addcmd(cmd)" />
+        <scope ilk="function" line="325" lineend="327" name="_addtag" signature="_addtag(name, obj)" />
+        <scope ilk="function" line="329" lineend="338" name="tagid" signature="tagid(tag)" />
+        <scope ilk="function" line="341" lineend="347" name="tagid2obj" signature="tagid2obj(tagid)" />
+        <scope ilk="function" line="349" lineend="354" name="tag_names" signature="tag_names(index=None)" />
+        <scope ilk="function" line="356" lineend="361" name="mark_names" signature="mark_names" />
+        <scope ilk="function" line="363" lineend="371" name="mark_gravity" signature="mark_gravity(mark, direction=nil)" />
+        <scope ilk="function" line="373" lineend="377" name="mark_set" signature="mark_set(mark, index)" />
+        <scope ilk="function" line="380" lineend="384" name="mark_unset" signature="mark_unset(*marks)" />
+        <scope ilk="function" line="387" lineend="390" name="mark_next" signature="mark_next(index)" />
+        <scope ilk="function" line="393" lineend="396" name="mark_previous" signature="mark_previous(index)" />
+        <scope ilk="function" line="399" lineend="409" name="image_cget" signature="image_cget(index, slot)" />
+        <scope ilk="function" line="411" lineend="423" name="image_configure" signature="image_configure(index, slot, value=None)" />
+        <scope ilk="function" line="425" lineend="512" name="image_configinfo" signature="image_configinfo(index, slot = nil)" />
+        <scope ilk="function" line="514" lineend="533" name="current_image_configinfo" signature="current_image_configinfo(index, slot = nil)" />
+        <scope ilk="function" line="535" lineend="540" name="image_names" signature="image_names" />
+        <scope ilk="function" line="542" lineend="545" name="set_insert" signature="set_insert(index)" />
+        <scope ilk="function" line="547" lineend="550" name="set_current" signature="set_current(index)" />
+        <scope ilk="function" line="552" lineend="569" name="insert" signature="insert(index, chars, *tags)" />
+        <scope ilk="function" line="571" lineend="577" name="destroy" signature="destroy" />
+        <scope ilk="function" line="579" lineend="581" name="backspace" signature="backspace" />
+        <scope ilk="function" line="583" lineend="585" name="bbox" signature="bbox(index)" />
+        <scope ilk="function" line="587" lineend="590" name="compare" signature="compare(idx1, op, idx2)" />
+        <scope ilk="function" line="592" lineend="606" name="count" signature="count(idx1, idx2, *opts)" />
+        <scope ilk="function" line="608" lineend="622" name="count_info" signature="count_info(idx1, idx2, update=true)" />
+        <scope ilk="function" line="624" lineend="627" name="peer_names" signature="peer_names()" />
+        <scope ilk="function" line="629" lineend="632" name="replace" signature="replace(idx1, idx2, *opts)" />
+        <scope ilk="function" line="634" lineend="636" name="debug" signature="debug" />
+        <scope ilk="function" line="637" lineend="641" name="debug=" signature="debug=(boolean)" />
+        <scope ilk="function" line="643" lineend="645" name="dlineinfo" signature="dlineinfo(index)" />
+        <scope ilk="function" line="647" lineend="649" name="modified?" signature="modified?" />
+        <scope ilk="function" line="650" lineend="653" name="modified" signature="modified(mode)" />
+        <scope ilk="function" line="654" lineend="657" name="modified=" signature="modified=(mode)" />
+        <scope ilk="function" line="659" lineend="662" name="edit_redo" signature="edit_redo" />
+        <scope ilk="function" line="663" lineend="666" name="edit_reset" signature="edit_reset" />
+        <scope ilk="function" line="667" lineend="670" name="edit_separator" signature="edit_separator" />
+        <scope ilk="function" line="671" lineend="674" name="edit_undo" signature="edit_undo" />
+        <scope ilk="function" line="676" lineend="679" name="xview_pickplace" signature="xview_pickplace(index)" />
+        <scope ilk="function" line="681" lineend="684" name="yview_pickplace" signature="yview_pickplace(index)" />
+        <scope ilk="function" line="686" lineend="690" name="text_copy" signature="text_copy" />
+        <scope ilk="function" line="692" lineend="696" name="text_cut" signature="text_cut" />
+        <scope ilk="function" line="698" lineend="702" name="text_paste" signature="text_paste" />
+        <scope ilk="function" line="704" lineend="709" name="tag_add" signature="tag_add(tag, index1, index2=None)" />
+        <scope ilk="function" line="713" lineend="726" name="tag_delete" signature="tag_delete(*tags)" />
+        <scope doc="def tag_bind(tag, seq, cmd=Proc.new, *args) _bind([@path,&#xA;&apos;tag&apos;, &apos;bind&apos;, tag], seq, cmd, *args) self end" ilk="function" line="734" lineend="743" name="tag_bind" signature="tag_bind(tag, seq, *args)" />
+        <scope doc="def tag_bind_append(tag, seq, cmd=Proc.new, *args)&#xA;_bind_append([@path, &apos;tag&apos;, &apos;bind&apos;, tag], seq, cmd, *args)&#xA;self end" ilk="function" line="749" lineend="758" name="tag_bind_append" signature="tag_bind_append(tag, seq, *args)" />
+        <scope ilk="function" line="760" lineend="763" name="tag_bind_remove" signature="tag_bind_remove(tag, seq)" />
+        <scope ilk="function" line="765" lineend="767" name="tag_bindinfo" signature="tag_bindinfo(tag, context=nil)" />
+        <scope ilk="function" line="945" lineend="949" name="tag_raise" signature="tag_raise(tag, above=None)" />
+        <scope ilk="function" line="951" lineend="955" name="tag_lower" signature="tag_lower(tag, below=None)" />
+        <scope ilk="function" line="957" lineend="961" name="tag_remove" signature="tag_remove(tag, *indices)" />
+        <scope ilk="function" line="963" lineend="974" name="tag_ranges" signature="tag_ranges(tag)" />
+        <scope ilk="function" line="976" lineend="983" name="tag_nextrange" signature="tag_nextrange(tag, first, last=None)" />
+        <scope ilk="function" line="985" lineend="992" name="tag_prevrange" signature="tag_prevrange(tag, first, last=None)" />
+        <scope ilk="function" line="1178" lineend="1183" name="window_names" signature="window_names" />
+        <scope ilk="function" line="1185" lineend="1203" name="_ktext_length" signature="_ktext_length(txt)" />
+        <scope ilk="function" line="1206" lineend="1237" name="tksearch" signature="tksearch(*args)" />
+        <scope ilk="function" line="1239" lineend="1272" name="tksearch_with_count" signature="tksearch_with_count(*args)" />
+        <scope ilk="function" line="1274" lineend="1329" name="search_with_length" signature="search_with_length(pat,start,stop=None)" />
+        <scope ilk="function" line="1331" lineend="1333" name="search" signature="search(pat,start,stop=None)" />
+        <scope ilk="function" line="1335" lineend="1385" name="rsearch_with_length" signature="rsearch_with_length(pat,start,stop=None)" />
+        <scope ilk="function" line="1387" lineend="1389" name="rsearch" signature="rsearch(pat,start,stop=None)" />
+        <scope ilk="function" line="1391" lineend="1472" name="dump" signature="dump(type_info, *index, &amp;block)" />
+        <scope ilk="function" line="1474" lineend="1490" name="_retrieve_braced_text" signature="_retrieve_braced_text(str, i)" />
+        <scope ilk="function" line="1493" lineend="1507" name="_retrieve_backslashed_text" signature="_retrieve_backslashed_text(str, i)" />
+        <scope ilk="function" line="1510" lineend="1512" name="dump_all" signature="dump_all(*index, &amp;block)" />
+        <scope ilk="function" line="1513" lineend="1515" name="dump_mark" signature="dump_mark(*index, &amp;block)" />
+        <scope ilk="function" line="1516" lineend="1518" name="dump_tag" signature="dump_tag(*index, &amp;block)" />
+        <scope ilk="function" line="1519" lineend="1521" name="dump_text" signature="dump_text(*index, &amp;block)" />
+        <scope ilk="function" line="1522" lineend="1524" name="dump_window" signature="dump_window(*index, &amp;block)" />
+        <scope ilk="function" line="1525" lineend="1527" name="dump_image" signature="dump_image(*index, &amp;block)" />
+        <import symbol="TkTextTagConfig" />
+        <import symbol="Scrollable" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="1532" lineend="1550" name="TkText::Peer&lt;">
+        <scope attributes="__ctor__" doc="Tk8.5 feature" ilk="function" line="1534" lineend="1540" name="initialize" signature="initialize(text, parent=nil, keys={})" />
+        <scope ilk="function" line="1542" lineend="1548" name="create_self" signature="create_self(keys)" />
+      </scope>
+    </scope>
+    

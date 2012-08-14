@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encodings/SHIFT-JIS">
+      <scope ilk="namespace" line="1" lineend="37" name="REXML">
+        <scope ilk="namespace" line="2" lineend="36" name="Encoding">
+          <import line="4" module="uconv" symbol="*" />
+          <import line="14" module="nkf" symbol="*" />
+          <scope ilk="function" line="6" lineend="8" name="decode_sjis" signature="decode_sjis" />
+          <scope ilk="function" line="10" lineend="12" name="encode_sjis" signature="encode_sjis(str)" />
+          <scope ilk="function" line="19" lineend="21" name="decode_sjis" signature="decode_sjis(str)" />
+          <scope ilk="function" line="23" lineend="25" name="encode_sjis" signature="encode_sjis" />
+          <scope classrefs="Object" ilk="class" line="29" lineend="32" name="obj" />
+        </scope>
+      </scope>
+    </scope>
+    

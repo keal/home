@@ -1,0 +1,139 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/generators/html_generator">
+      <import line="37" module="ftools" symbol="*" />
+      <import line="39" module="rdoc/options" symbol="*" />
+      <import line="40" module="rdoc/template" symbol="*" />
+      <import line="41" module="rdoc/markup/simple_markup" symbol="*" />
+      <import line="42" module="rdoc/markup/simple_markup/to_html" symbol="*" />
+      <import line="43" module="cgi" symbol="*" />
+      <scope doc="We&apos;re responsible for generating all the HTML files from the&#xA;object tree defined in code_objects.rb." ilk="namespace" line="45" lineend="1502" name="Generators">
+        <scope classrefs="Object" doc="Build a hash of all items that can be cross-referenced." ilk="class" line="62" lineend="80" name="AllReferences">
+          <scope attributes="__classmethod__" ilk="function" line="65" lineend="67" name="reset" signature="AllReferences::reset" />
+          <scope attributes="__classmethod__" ilk="function" line="69" lineend="71" name="add" signature="AllReferences.add(name, html_class)" />
+          <scope ilk="function" line="73" lineend="75" name="AllReferences" signature="AllReferences." />
+          <scope attributes="__classmethod__" ilk="function" line="77" lineend="79" name="keys" signature="AllReferences.keys" />
+        </scope>
+        <scope classrefs="SM::ToHtml" doc="Subclass of the SM::ToHtml class that supports looking up&#xA;words in the AllReferences list." ilk="class" line="89" lineend="189" name="HyperlinkHtml">
+          <scope attributes="__ctor__" doc="We need to record the html path of our caller so we can&#xA;generate correct relative paths for any hyperlinks that we&#xA;find" ilk="function" line="92" lineend="99" name="initialize" signature="initialize(from_path, context)" />
+          <scope doc="We&apos;re invoked when any text matches the CROSSREF pattern&#xA;(defined in MarkUp)." ilk="function" line="108" lineend="130" name="handle_special_CROSSREF" signature="handle_special_CROSSREF(special)" />
+          <scope doc="Generate a hyperlink for url, labeled with text." ilk="function" line="135" lineend="160" name="gen_url" signature="gen_url(url, text)" />
+          <scope doc="And we&apos;re invoked with a potential external hyperlink&#xA;mailto: just gets inserted." ilk="function" line="169" lineend="172" name="handle_special_HYPERLINK" signature="handle_special_HYPERLINK(special)" />
+          <scope doc="HEre&apos;s a hypedlink where the label is different to the URL&#xA;&lt;label&gt;[url]" ilk="function" line="178" lineend="187" name="handle_special_TIDYLINK" signature="handle_special_TIDYLINK(special)" />
+        </scope>
+        <scope doc="Handle common markup tasks for the various Html classes" ilk="namespace" line="198" lineend="272" name="MarkUp">
+          <scope doc="Convert a string in markup format into HTML." ilk="function" line="204" lineend="245" name="markup" signature="markup(str, remove_para=false)" />
+          <scope doc="Qualify a stylesheet URL; if if +css_name+ does not begin&#xA;with &apos;/&apos; or &apos;http[s]://&apos;, prepend a prefix relative to&#xA;+path+." ilk="function" line="251" lineend="259" name="style_url" signature="style_url(path, css_name=nil)" />
+          <scope doc="Build a webcvs URL with the given &apos;url&apos; argument." ilk="function" line="265" lineend="271" name="cvs_url" signature="cvs_url(url, full_path)" />
+        </scope>
+        <scope classrefs="Object" doc="A Context is built by the parser to represent a container:&#xA;contexts hold classes, modules, methods, require lists and&#xA;include lists." ilk="class" line="281" lineend="573" name="ContextUser">
+          <scope ilk="function" line="285" lineend="285" name="context" />
+          <scope attributes="__ctor__" ilk="function" line="287" lineend="290" name="initialize" signature="initialize(context, options)" />
+          <scope doc="convenience method to build a hyperlink" ilk="function" line="293" lineend="295" name="href" signature="href(link, cls, name)" />
+          <scope doc="return a reference to outselves to be used as an href= the&#xA;form depends on whether we&apos;re all in one file or in multiple&#xA;files" ilk="function" line="301" lineend="307" name="as_href" signature="as_href(from_path)" />
+          <scope doc="Create a list of HtmlMethod objects for each method in the&#xA;corresponding context object." ilk="function" line="314" lineend="320" name="collect_methods" signature="collect_methods" />
+          <scope doc="Build a summary list of all the methods in this context" ilk="function" line="323" lineend="334" name="build_method_summary_list" signature="build_method_summary_list(path_prefix=&quot;&quot;)" />
+          <scope doc="Build a list of aliases for which we couldn&apos;t find a&#xA;corresponding method" ilk="function" line="339" lineend="353" name="build_alias_summary_list" signature="build_alias_summary_list(section)" />
+          <scope doc="Build a list of constants" ilk="function" line="356" lineend="368" name="build_constants_summary_list" signature="build_constants_summary_list(section)" />
+          <scope ilk="function" line="370" lineend="372" name="build_requires_list" signature="build_requires_list(context)" />
+          <scope ilk="function" line="374" lineend="376" name="build_include_list" signature="build_include_list(context)" />
+          <scope doc="Build a list from an array of &lt;i&gt;Htmlxxx&lt;/i&gt; items." ilk="function" line="387" lineend="418" name="potentially_referenced_list" signature="potentially_referenced_list(array)" />
+          <scope doc="Build an array of arrays of method details." ilk="function" line="425" lineend="485" name="build_method_detail_list" signature="build_method_detail_list(section)" />
+          <scope doc="Build the structured list of classes and modules contained&#xA;in this context." ilk="function" line="490" lineend="521" name="build_class_list" signature="build_class_list(level, from, section, infile=nil)" />
+          <scope ilk="function" line="523" lineend="525" name="url" signature="url(target)" />
+          <scope ilk="function" line="527" lineend="533" name="aref_to" signature="aref_to(target)" />
+          <scope ilk="function" line="535" lineend="537" name="document_self" signature="document_self" />
+          <scope ilk="function" line="539" lineend="544" name="diagram_reference" signature="diagram_reference(diagram)" />
+          <scope doc="Find a symbol in ourselves or our parent" ilk="function" line="548" lineend="554" name="find_symbol" signature="find_symbol(symbol, method=nil)" />
+          <scope doc="create table of contents if we contain sections" ilk="function" line="558" lineend="570" name="add_table_of_sections" signature="add_table_of_sections" />
+          <import symbol="MarkUp" />
+        </scope>
+        <scope classrefs="ContextUser" doc="Wrap a ClassModule context" ilk="class" line="579" lineend="753" name="HtmlClass">
+          <scope ilk="function" line="581" lineend="581" name="path" />
+          <scope attributes="__ctor__" ilk="function" line="583" lineend="601" name="initialize" signature="initialize(context, html_file, prefix, options)" />
+          <scope doc="return the relative file name to store this class in, which&#xA;is also its url" ilk="function" line="605" lineend="611" name="http_url" signature="http_url(full_name, prefix)" />
+          <scope ilk="function" line="614" lineend="616" name="name" signature="name" />
+          <scope ilk="function" line="618" lineend="620" name="parent_name" signature="parent_name" />
+          <scope ilk="function" line="622" lineend="624" name="index_name" signature="index_name" />
+          <scope ilk="function" line="626" lineend="632" name="write_on" signature="write_on(f)" />
+          <scope ilk="function" line="634" lineend="677" name="value_hash" signature="value_hash" />
+          <scope ilk="function" line="679" lineend="697" name="build_attribute_list" signature="build_attribute_list(section)" />
+          <scope ilk="function" line="699" lineend="747" name="class_attribute_values" signature="class_attribute_values" />
+          <scope ilk="function" line="749" lineend="751" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+        </scope>
+        <scope classrefs="ContextUser" doc="Handles the mapping of a file&apos;s information to HTML." ilk="class" line="762" lineend="887" name="HtmlFile">
+          <scope ilk="function" line="764" lineend="764" name="path" />
+          <scope ilk="function" line="765" lineend="765" name="name" />
+          <scope attributes="__ctor__" ilk="function" line="767" lineend="783" name="initialize" signature="initialize(context, options, file_dir)" />
+          <scope ilk="function" line="785" lineend="788" name="http_url" signature="http_url(file_dir)" />
+          <scope ilk="function" line="790" lineend="792" name="filename_to_label" signature="filename_to_label" />
+          <scope ilk="function" line="794" lineend="796" name="index_name" signature="index_name" />
+          <scope ilk="function" line="798" lineend="800" name="parent_name" signature="parent_name" />
+          <scope ilk="function" line="802" lineend="855" name="value_hash" signature="value_hash" />
+          <scope ilk="function" line="857" lineend="863" name="write_on" signature="write_on(f)" />
+          <scope ilk="function" line="865" lineend="882" name="file_attribute_values" signature="file_attribute_values" />
+          <scope ilk="function" line="884" lineend="886" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="891" lineend="1119" name="HtmlMethod">
+          <scope ilk="function" line="894" lineend="894" name="context" />
+          <scope ilk="function" line="895" lineend="895" name="src_url" />
+          <scope ilk="function" line="896" lineend="896" name="img_url" />
+          <scope ilk="function" line="897" lineend="897" name="source_code" />
+          <scope attributes="__classmethod__" ilk="function" line="903" lineend="905" name="reset" signature="HtmlMethod::reset" />
+          <scope attributes="__ctor__" ilk="function" line="907" lineend="926" name="initialize" signature="initialize(context, html_class, options)" />
+          <scope doc="return a reference to outselves to be used as an href= the&#xA;form depends on whether we&apos;re all in one file or in multiple&#xA;files" ilk="function" line="932" lineend="938" name="as_href" signature="as_href(from_path)" />
+          <scope ilk="function" line="940" lineend="942" name="name" signature="name" />
+          <scope ilk="function" line="944" lineend="946" name="section" signature="section" />
+          <scope ilk="function" line="948" lineend="950" name="index_name" signature="index_name" />
+          <scope ilk="function" line="952" lineend="958" name="parent_name" signature="parent_name" />
+          <scope ilk="function" line="960" lineend="962" name="aref" signature="aref" />
+          <scope ilk="function" line="964" lineend="970" name="path" signature="path" />
+          <scope ilk="function" line="972" lineend="974" name="description" signature="description" />
+          <scope ilk="function" line="976" lineend="978" name="visibility" signature="visibility" />
+          <scope ilk="function" line="980" lineend="982" name="singleton" signature="singleton" />
+          <scope ilk="function" line="984" lineend="991" name="call_seq" signature="call_seq" />
+          <scope ilk="function" line="993" lineend="1017" name="params" signature="params" />
+          <scope ilk="function" line="1019" lineend="1035" name="create_source_code_file" signature="create_source_code_file(code_body)" />
+          <scope attributes="__classmethod__" ilk="function" line="1037" lineend="1039" name="all_methods" signature="HtmlMethod.all_methods" />
+          <scope ilk="function" line="1041" lineend="1043" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+          <scope doc="Given a sequence of source tokens, mark up the source code&#xA;to make it look purty." ilk="function" line="1050" lineend="1082" name="markup_code" signature="markup_code(tokens)" />
+          <scope doc="we rely on the fact that the first line of a source code&#xA;listing has # File xxxxx, line dddd" ilk="function" line="1088" lineend="1102" name="add_line_numbers" signature="add_line_numbers(src)" />
+          <scope ilk="function" line="1104" lineend="1106" name="document_self" signature="document_self" />
+          <scope ilk="function" line="1108" lineend="1110" name="aliases" signature="aliases" />
+          <scope ilk="function" line="1112" lineend="1118" name="find_symbol" signature="find_symbol(symbol, method=nil)" />
+          <import symbol="MarkUp" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="1123" lineend="1385" name="HTMLGenerator">
+          <scope attributes="__classmethod__" doc="convert a target url to one that is relative to a given path" ilk="function" line="1131" lineend="1147" name="gen_url" signature="HTMLGenerator.gen_url(path, target)" />
+          <scope attributes="__classmethod__" doc="Generators may need to return specific subclasses depending&#xA;on the options they are passed." ilk="function" line="1153" lineend="1162" name="for" signature="HTMLGenerator.for(options)" />
+          <scope classrefs="Object" ilk="class" line="1164" lineend="1166" name="self" />
+          <scope attributes="__ctor__" doc="Set up a new HTML generator." ilk="function" line="1171" lineend="1174" name="initialize" signature="initialize(options)" />
+          <scope doc="Build the initial indices and output objects based on an&#xA;array of TopLevel objects containing the extracted&#xA;information." ilk="function" line="1182" lineend="1191" name="generate" signature="generate(toplevels)" />
+          <scope doc="Load up the HTML template specified in the options." ilk="function" line="1199" lineend="1210" name="load_html_template" signature="load_html_template" />
+          <scope doc="Write out the style sheet used by the main frames" ilk="function" line="1216" lineend="1224" name="write_style_sheet" signature="write_style_sheet" />
+          <scope doc="See the comments at the top for a description of the&#xA;directory structure" ilk="function" line="1230" lineend="1235" name="gen_sub_directories" signature="gen_sub_directories" />
+          <scope doc="Generate:" ilk="function" line="1246" lineend="1255" name="build_indices" signature="build_indices" />
+          <scope ilk="function" line="1257" lineend="1262" name="build_class_list" signature="build_class_list(from, html_file, class_dir)" />
+          <scope doc="Generate all the HTML" ilk="function" line="1267" lineend="1279" name="generate_html" signature="generate_html" />
+          <scope ilk="function" line="1281" lineend="1290" name="gen_into" signature="gen_into(list)" />
+          <scope ilk="function" line="1292" lineend="1296" name="gen_file_index" signature="gen_file_index" />
+          <scope ilk="function" line="1298" lineend="1302" name="gen_class_index" signature="gen_class_index" />
+          <scope ilk="function" line="1304" lineend="1308" name="gen_method_index" signature="gen_method_index" />
+          <scope ilk="function" line="1311" lineend="1331" name="gen_an_index" signature="gen_an_index(collection, title, template, filename)" />
+          <scope doc="The main index page is mostly a template frameset, but&#xA;includes the initial page." ilk="function" line="1338" lineend="1351" name="gen_main_index" signature="gen_main_index" />
+          <scope doc="return the url of the main page" ilk="function" line="1354" lineend="1382" name="main_url" signature="main_url" />
+          <import symbol="MarkUp" />
+        </scope>
+        <scope classrefs="HTMLGenerator" ilk="class" line="1391" lineend="1501" name="HTMLGeneratorInOne">
+          <scope attributes="__ctor__" ilk="function" line="1393" lineend="1395" name="initialize" signature="initialize(*args)" />
+          <scope doc="Build the initial indices and output objects based on an&#xA;array of TopLevel objects containing the extracted&#xA;information." ilk="function" line="1402" lineend="1410" name="generate" signature="generate(info)" />
+          <scope doc="Generate:" ilk="function" line="1422" lineend="1431" name="build_indices" signature="build_indices" />
+          <scope ilk="function" line="1433" lineend="1438" name="build_class_list" signature="build_class_list(from, html_file, class_dir)" />
+          <scope doc="Generate all the HTML." ilk="function" line="1444" lineend="1463" name="generate_xml" signature="generate_xml" />
+          <scope ilk="function" line="1465" lineend="1471" name="gen_into" signature="gen_into(list)" />
+          <scope ilk="function" line="1473" lineend="1475" name="gen_file_index" signature="gen_file_index" />
+          <scope ilk="function" line="1477" lineend="1479" name="gen_class_index" signature="gen_class_index" />
+          <scope ilk="function" line="1481" lineend="1483" name="gen_method_index" signature="gen_method_index" />
+          <scope ilk="function" line="1486" lineend="1499" name="gen_an_index" signature="gen_an_index(collection, title)" />
+        </scope>
+      </scope>
+    </scope>
+    

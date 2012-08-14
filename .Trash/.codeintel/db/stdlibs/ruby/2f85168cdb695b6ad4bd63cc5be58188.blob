@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="win32ole/property">
+      <scope classrefs="Object" doc="OLEProperty helper class of Property with arguments." ilk="class" line="3" lineend="16" name="OLEProperty">
+        <scope attributes="__ctor__" ilk="function" line="4" lineend="9" name="initialize" signature="initialize(obj, dispid, gettypes, settypes)" />
+        <scope ilk="function" line="10" lineend="12" name="[]" signature="[](*args" />
+        <scope ilk="function" line="13" lineend="15" name="[]=" signature="[]=(*args" />
+      </scope>
+    </scope>
+    

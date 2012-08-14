@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/ui/tk/testrunner">
+      <import line="7" module="tk" symbol="*" />
+      <import line="8" module="test/unit/ui/testrunnermediator" symbol="*" />
+      <import line="9" module="test/unit/ui/testrunnerutilities" symbol="*" />
+      <scope doc="Original Author:: Nathaniel Talbott." ilk="namespace" line="11" lineend="254" name="Test">
+        <scope ilk="namespace" line="12" lineend="253" name="Unit">
+          <scope ilk="namespace" line="13" lineend="252" name="UI">
+            <scope ilk="namespace" line="14" lineend="251" name="Tk">
+              <scope classrefs="Object" doc="Runs a Test::Unit::TestSuite in a Tk UI." ilk="class" line="19" lineend="250" name="TestRunner">
+                <scope attributes="__ctor__" doc="Creates a new TestRunner for running the passed suite." ilk="function" line="24" lineend="41" name="initialize" signature="initialize(suite, output_level = NORMAL)" />
+                <scope doc="Begins the test run." ilk="function" line="44" lineend="50" name="start" signature="start" />
+                <scope ilk="function" line="53" lineend="60" name="setup_mediator" signature="setup_mediator" />
+                <scope ilk="function" line="62" lineend="76" name="attach_to_mediator" signature="attach_to_mediator" />
+                <scope ilk="function" line="78" lineend="80" name="run_test" signature="run_test" />
+                <scope ilk="function" line="82" lineend="100" name="start_ui" signature="start_ui" />
+                <scope ilk="function" line="102" lineend="104" name="stop::Tk." signature="stop ::Tk." />
+                <scope ilk="function" line="106" lineend="120" name="reset_ui" signature="reset_ui(count)" />
+                <scope ilk="function" line="122" lineend="129" name="add_fault" signature="add_fault(fault)" />
+                <scope ilk="function" line="131" lineend="133" name="show_fault" signature="show_fault(fault)" />
+                <scope ilk="function" line="135" lineend="137" name="raw_show_fault" signature="raw_show_fault(string)" />
+                <scope ilk="function" line="139" lineend="141" name="clear_fault" signature="clear_fault" />
+                <scope ilk="function" line="143" lineend="149" name="result_changed" signature="result_changed(result)" />
+                <scope ilk="function" line="151" lineend="154" name="started" signature="started(result)" />
+                <scope ilk="function" line="156" lineend="158" name="test_started" signature="test_started(test_name)" />
+                <scope ilk="function" line="160" lineend="162" name="finished" signature="finished(elapsed_time)" />
+                <scope ilk="function" line="164" lineend="166" name="output_status" signature="output_status(string)" />
+                <scope ilk="function" line="168" lineend="242" name="setup_ui" signature="setup_ui" />
+                <scope ilk="function" line="244" lineend="249" name="create_count_label" signature="create_count_label(parent, label)" />
+              </scope>
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

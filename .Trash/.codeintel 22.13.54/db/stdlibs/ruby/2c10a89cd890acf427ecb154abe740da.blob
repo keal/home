@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/util/procwrapper">
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="5" lineend="46" name="Test">
+        <scope ilk="namespace" line="6" lineend="45" name="Unit">
+          <scope ilk="namespace" line="7" lineend="44" name="Util">
+            <scope classrefs="Object" doc="Allows the storage of a Proc passed through &apos;&amp;&apos; in a hash." ilk="class" line="18" lineend="43" name="ProcWrapper">
+              <scope attributes="__ctor__" doc="Creates a new wrapper for a_proc." ilk="function" line="21" lineend="24" name="initialize" signature="initialize(a_proc)" />
+              <scope ilk="function" line="26" lineend="28" name="hash" signature="hash" />
+              <scope ilk="function" line="30" lineend="37" name="==" signature="==(other" />
+              <scope ilk="function" line="40" lineend="42" name="to_proc" signature="to_proc" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/parsers/parse_simple">
+      <import line="6" module="rdoc/code_objects" symbol="*" />
+      <import line="7" module="rdoc/markup/simple_markup/preprocess" symbol="*" />
+      <scope doc="Parse a non-source file." ilk="namespace" line="9" lineend="41" name="RDoc">
+        <scope classrefs="Object" doc="See rdoc/parsers/parse_c.rb" ilk="class" line="12" lineend="40" name="SimpleParser">
+          <scope attributes="__ctor__" doc="prepare to parse a plain file" ilk="function" line="15" lineend="26" name="initialize" signature="initialize(top_level, file_name, body, options, stats)" />
+          <scope doc="Extract the file contents and attach them to the toplevel as&#xA;a comment" ilk="function" line="31" lineend="35" name="scan" signature="scan" />
+          <scope ilk="function" line="37" lineend="39" name="remove_private_comments" signature="remove_private_comments(comment)" />
+        </scope>
+      </scope>
+    </scope>
+    

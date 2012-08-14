@@ -1,0 +1,39 @@
+<scope ilk="blob" lang="Ruby" name="tk/validation">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/validation.rb - validation support module for entry,&#xA;spinbox, and so on" ilk="namespace" line="6" lineend="204" name="Tk">
+        <scope ilk="namespace" line="7" lineend="107" name="ValidateConfigure">
+          <scope attributes="__classmethod__" ilk="function" line="8" lineend="15" name="__def_validcmd" signature="self.__def_validcmd(scope, klass, keys=nil)" />
+          <scope ilk="function" line="17" lineend="29" name="__validcmd_call" signature="__validcmd_call(klass, key, *args, &amp;b)" />
+          <scope ilk="function" line="31" lineend="34" name="__validation_class_list" signature="__validation_class_list" />
+          <scope ilk="function" line="36" lineend="44" name="__get_validate_key2class" signature="__get_validate_key2class" />
+          <scope ilk="function" line="46" lineend="60" name="__conv_vcmd_on_hash_kv" signature="__conv_vcmd_on_hash_kv(keys)" />
+          <scope ilk="function" line="62" lineend="64" name="create_self" signature="create_self(keys)" />
+          <scope ilk="function" line="67" lineend="74" name="configure" signature="configure(slot, value=TkComm::None)" />
+        </scope>
+        <scope ilk="namespace" line="109" lineend="203" name="ItemValidateConfigure">
+          <scope attributes="__classmethod__" ilk="function" line="110" lineend="117" name="__def_validcmd" signature="self.__def_validcmd(scope, klass, keys=nil)" />
+          <scope ilk="function" line="119" lineend="131" name="__item_validcmd_call" signature="__item_validcmd_call(tagOrId, klass, key, *args, &amp;b)" />
+          <scope ilk="function" line="133" lineend="136" name="__item_validation_class_list" signature="__item_validation_class_list(id)" />
+          <scope ilk="function" line="138" lineend="145" name="__get_item_validate_key2class" signature="__get_item_validate_key2class(id)" />
+          <scope ilk="function" line="147" lineend="161" name="__conv_item_vcmd_on_hash_kv" signature="__conv_item_vcmd_on_hash_kv(keys)" />
+          <scope ilk="function" line="163" lineend="170" name="itemconfigure" signature="itemconfigure(tagOrId, slot, value=TkComm::None)" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="206" lineend="320" name="TkValidateCommand">
+        <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="210" lineend="267" name="ValidateArgs">
+          <scope attributes="__classmethod__" doc="NOTE: The order of parameters which passed to callback&#xA;procedure is &lt;extra_arg&gt;, &lt;extra_arg&gt;, ..." ilk="function" line="264" lineend="266" name="ret_val" signature="self.ret_val(val)" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="271" lineend="274" name="_config_keys[" signature="self._config_keys  [" />
+        <scope ilk="function" line="276" lineend="311" name="_initialize_for_cb_class" signature="_initialize_for_cb_class(klass, cmd = Proc.new, *args)" />
+        <scope attributes="__ctor__" ilk="function" line="313" lineend="315" name="initialize" signature="initialize(cmd = Proc.new, *args)" />
+        <scope ilk="function" line="317" lineend="319" name="to_eval" signature="to_eval" />
+        <import symbol="TkComm" />
+      </scope>
+      <scope ilk="namespace" line="322" lineend="376" name="TkValidation">
+        <scope classrefs="TkValidateCommand" ilk="class" line="325" lineend="335" name="ValidateCmd">
+          <scope ilk="namespace" line="326" lineend="334" name="Action" />
+        </scope>
+        <scope ilk="function" line="339" lineend="341" name="__validation_class_list" signature="__validation_class_list" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,50 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/scrolledlistbox">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/listbox" symbol="*" />
+      <import line="8" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/scrolledlistbox.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="12" lineend="13" name="Scrolledlistbox" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="207" name="Tk::Iwidgets::">
+        <scope ilk="function" line="22" lineend="24" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="27" lineend="29" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="32" lineend="34" name="__font_optkeys" signature="__font_optkeys" />
+        <scope attributes="__ctor__" ilk="function" line="39" lineend="42" name="initialize" signature="initialize(*args)" />
+        <scope ilk="function" line="44" lineend="50" name="method_missing" signature="method_missing(id, *args)" />
+        <scope ilk="function" line="54" lineend="57" name="clear" signature="clear" />
+        <scope ilk="function" line="59" lineend="61" name="get_curselection" signature="get_curselection" />
+        <scope ilk="function" line="63" lineend="66" name="justify" signature="justify(dir)" />
+        <scope ilk="function" line="68" lineend="70" name="selected_item_count" signature="selected_item_count" />
+        <scope ilk="function" line="72" lineend="80" name="sort" signature="sort(*params, &amp;b)" />
+        <scope ilk="function" line="81" lineend="84" name="sort_ascending" signature="sort_ascending" />
+        <scope ilk="function" line="85" lineend="88" name="sort_descending" signature="sort_descending" />
+        <scope ilk="function" line="92" lineend="94" name="bbox" signature="bbox(index)" />
+        <scope ilk="function" line="95" lineend="98" name="delete" signature="delete(first, last=None)" />
+        <scope ilk="function" line="99" lineend="101" name="get" signature="get(*index)" />
+        <scope ilk="function" line="102" lineend="105" name="insert" signature="insert(index, *args)" />
+        <scope ilk="function" line="106" lineend="109" name="scan_mark" signature="scan_mark(x, y)" />
+        <scope ilk="function" line="110" lineend="113" name="scan_dragto" signature="scan_dragto(x, y)" />
+        <scope ilk="function" line="114" lineend="117" name="see" signature="see(index)" />
+        <scope ilk="function" line="123" lineend="129" name="tagid" signature="tagid(tag)" />
+        <scope ilk="function" line="134" lineend="137" name="activate" signature="activate(y)" />
+        <scope ilk="function" line="138" lineend="140" name="curselection" signature="curselection" />
+        <scope ilk="function" line="141" lineend="149" name="get" signature="get(first, last=nil)" />
+        <scope ilk="function" line="150" lineend="152" name="nearest" signature="nearest(y)" />
+        <scope ilk="function" line="153" lineend="155" name="size" signature="size" />
+        <scope ilk="function" line="156" lineend="159" name="selection_anchor" signature="selection_anchor(index)" />
+        <scope ilk="function" line="160" lineend="163" name="selection_clear" signature="selection_clear(first, last=None)" />
+        <scope ilk="function" line="164" lineend="166" name="selection_includes" signature="selection_includes(index)" />
+        <scope ilk="function" line="167" lineend="170" name="selection_set" signature="selection_set(first, last=None)" />
+        <scope ilk="function" line="172" lineend="174" name="index" signature="index(idx)" />
+        <scope ilk="function" line="178" lineend="185" name="xview" signature="xview(*index)" />
+        <scope ilk="function" line="186" lineend="188" name="xview_moveto" signature="xview_moveto(*index)" />
+        <scope ilk="function" line="189" lineend="191" name="xview_scroll" signature="xview_scroll(*index)" />
+        <scope ilk="function" line="193" lineend="200" name="yview" signature="yview(*index)" />
+        <scope ilk="function" line="201" lineend="203" name="yview_moveto" signature="yview_moveto(*index)" />
+        <scope ilk="function" line="204" lineend="206" name="yview_scroll" signature="yview_scroll(*index)" />
+        <import symbol="TkListItemConfig" />
+      </scope>
+    </scope>
+    

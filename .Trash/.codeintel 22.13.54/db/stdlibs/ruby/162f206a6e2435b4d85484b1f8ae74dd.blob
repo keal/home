@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="yaml/stringio">
+      <import line="5" module="stringio" symbol="*" />
+      <scope classrefs="Object" doc="StringIO based on code by MoonWolf" ilk="class" line="8" lineend="50" name="StringIO">
+        <scope attributes="__ctor__" ilk="function" line="9" lineend="13" name="initialize" signature="initialize(string=&quot;&quot;)" />
+        <scope ilk="function" line="14" lineend="16" name="pos" signature="pos" />
+        <scope ilk="function" line="17" lineend="19" name="eof" signature="eof" />
+        <scope ilk="function" line="21" lineend="34" name="readline" signature="readline(rs=$/)" />
+        <scope ilk="function" line="35" lineend="37" name="rewind" signature="rewind" />
+        <scope ilk="function" line="38" lineend="49" name="seek" signature="seek(offset,whence)" />
+      </scope>
+      <scope doc="Class method for creating streams" ilk="function" line="55" lineend="60" name="YAML.make_stream" signature="YAML.make_stream( io )" />
+      <scope ilk="function" line="62" lineend="64" name="io.readline" signature="io.readline" />
+      <scope ilk="function" line="65" lineend="69" name="io.check_unicode" signature="io.check_unicode" />
+      <scope ilk="function" line="70" lineend="72" name="io.utf_encoding" signature="io.utf_encoding" />
+      <scope ilk="function" line="75" lineend="77" name="io.utf_encoding" signature="io.utf_encoding" />
+    </scope>
+    

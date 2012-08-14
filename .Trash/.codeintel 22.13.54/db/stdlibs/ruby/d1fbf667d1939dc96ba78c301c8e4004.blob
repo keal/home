@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/ted">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/ted.rb" ilk="namespace" line="12" lineend="62" name="Tk::BLT">
+        <scope ilk="namespace" line="13" lineend="61" name="Ted">
+          <scope classrefs="Object" ilk="class" line="22" lineend="48" name="self">
+            <scope ilk="function" line="23" lineend="25" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+            <scope ilk="function" line="28" lineend="30" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+            <scope ilk="function" line="36" lineend="38" name="cget" signature="cget(master, option)" />
+            <scope ilk="function" line="39" lineend="41" name="configure" signature="configure(master, slot, value=None)" />
+            <scope ilk="function" line="42" lineend="44" name="configinfo" signature="configinfo(master, slot=nil)" />
+            <scope ilk="function" line="45" lineend="47" name="current_configinfo" signature="current_configinfo(master, slot=nil)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="52" lineend="54" name="edit" signature="self.edit(master, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="55" lineend="57" name="rep" signature="self.rep(master, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="58" lineend="60" name="select" signature="self.select(master, *args)" />
+        </scope>
+      </scope>
+    </scope>
+    

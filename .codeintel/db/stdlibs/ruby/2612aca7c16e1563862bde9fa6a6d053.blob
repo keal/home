@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="rational">
+      <scope classrefs="Numeric" doc="Rational implements a rational class for numbers." ilk="class" name="Rational">
+        <scope attributes="__classmethod__ __ctor__" doc="This method is actually private." ilk="function" name="new" signature="(num, den)" />
+        <scope attributes="__classmethod__" doc="Implements the constructor. This method does not reduce to&#xA;lowest terms or check for division by zero." ilk="function" name="new!" signature="(num, den = 1)" />
+        <scope attributes="__classmethod__" doc="Reduces the given numerator and denominator to their lowest&#xA;terms. Use Rational() instead." ilk="function" name="reduce" signature="(num, den = 1)" />
+        <scope doc="Returns the remainder when this value is divided by other." ilk="function" name="%" signature="(other)" />
+        <scope doc="Returns the product of this value and a." ilk="function" name="*" signature="(a)" />
+        <scope doc="Returns this value raised to the given power." ilk="function" name="**" signature="(other)" />
+        <scope doc="Returns the addition of this value and a." ilk="function" name="+" signature="(a)" />
+        <scope doc="Returns the quotient of this value and a." ilk="function" name="/" signature="(a)" />
+        <scope doc="Standard comparison operator." ilk="function" name="&lt;=&gt;" signature="(other)" />
+        <scope doc="Returns true iff this value is numerically equal to other." ilk="function" name="==" signature="(other)" />
+        <scope doc="Returns the absolute value." ilk="function" name="abs" signature="()" />
+        <scope ilk="function" name="coerce" signature="(other)" />
+        <scope ilk="function" name="denominator" />
+        <scope doc="Returns the quotient `and&apos; remainder." ilk="function" name="divmod" signature="(other)" />
+        <scope doc="Returns a hash code for the object." ilk="function" name="hash" signature="()" />
+        <scope doc="Returns a reconstructable string representation:" ilk="function" name="inspect" signature="()" />
+        <scope ilk="function" name="numerator" />
+        <scope doc="Converts the rational to a Float." ilk="function" name="to_f" signature="()" />
+        <scope doc="Converts the rational to an Integer. Not the `nearest&apos;&#xA;integer, the truncated integer." ilk="function" name="to_i" signature="()" />
+        <scope doc="Returns self." ilk="function" name="to_r" signature="()" />
+        <scope doc="Returns a string representation of the rational number." ilk="function" name="to_s" signature="()" />
+      </scope>
+    </scope>
+    

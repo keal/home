@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="net/https">
+      <import line="101" module="net/http" symbol="*" />
+      <import line="102" module="openssl" symbol="*" />
+      <scope ilk="namespace" line="104" lineend="173" name="Net">
+        <scope classrefs="Object" ilk="class" line="106" lineend="171" name="HTTP">
+          <scope ilk="function" line="108" lineend="110" name="use_ssl?" signature="use_ssl?" />
+          <scope doc="Turn on/off SSL." ilk="function" line="119" lineend="127" name="use_ssl=" signature="use_ssl=(flag)" />
+          <scope attributes="__classmethod__" ilk="function" line="129" lineend="141" name="ssl_context_accessor" signature="self.ssl_context_accessor(name)" />
+          <scope ilk="function" line="152" lineend="155" name="ssl_timeout" signature="ssl_timeout" />
+          <scope ilk="function" line="157" lineend="162" name="ssl_timeout=" signature="ssl_timeout=(sec)" />
+          <scope doc="For backward compatibility" ilk="function" line="167" lineend="170" name="peer_cert" signature="peer_cert" />
+        </scope>
+      </scope>
+    </scope>
+    

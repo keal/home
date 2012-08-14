@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/win_printer">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/win_printer.rb" ilk="namespace" line="12" lineend="61" name="Tk::BLT">
+        <scope classrefs="TkObject" ilk="class" line="13" lineend="60" name="Printer">
+          <scope attributes="__classmethod__" ilk="function" line="18" lineend="20" name="enum" signature="self.enum(attribute)" />
+          <scope attributes="__classmethod__" ilk="function" line="22" lineend="24" name="names" signature="self.names(pat=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="26" lineend="28" name="open" signature="self.open(printer)" />
+          <scope attributes="__ctor__" ilk="function" line="32" lineend="34" name="initialize" signature="initialize(printer)" />
+          <scope ilk="function" line="36" lineend="39" name="close" signature="close" />
+          <scope ilk="function" line="40" lineend="43" name="get_attrs" signature="get_attrs(var)" />
+          <scope ilk="function" line="44" lineend="47" name="set_attrs" signature="set_attrs(var)" />
+          <scope ilk="function" line="48" lineend="51" name="snap" signature="snap(win)" />
+          <scope ilk="function" line="52" lineend="55" name="write" signature="write(str)" />
+          <scope ilk="function" line="56" lineend="59" name="write_with_title" signature="write_with_title(title, str)" />
+        </scope>
+      </scope>
+    </scope>
+    

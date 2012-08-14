@@ -1,0 +1,51 @@
+<scope ilk="blob" lang="Ruby" name="stringscanner">
+      <scope classrefs="Object" doc="StringScanner provides for lexical scanning operations on a&#xA;String." ilk="class" name="StringScanner">
+        <scope classrefs="StandardError" ilk="class" name="Error" />
+        <scope attributes="__classmethod__" doc="This method is defined for backward compatibility." ilk="function" name="must_C_version" signature=" StringScanner.must_C_version" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a new StringScanner object to scan over the given&#xA;string. dup argument is obsolete and not used now." ilk="function" name="new" signature=" StringScanner.new(string, dup = false)" />
+        <scope doc="Appends str to the string being scanned. This method does&#xA;not affect scan pointer." ilk="function" name="&lt;&lt;" signature="concat(str)&#xA;&lt;&lt;(str)" />
+        <scope doc="Return the n-th subgroup in the most recent match." ilk="function" name="[]" signature=" [](n)" />
+        <scope doc="Returns true iff the scan pointer is at the beginning of the&#xA;line." ilk="function" name="beginning_of_line?" signature="()" />
+        <scope doc="Returns true iff the scan pointer is at the beginning of the&#xA;line." ilk="function" name="bol?" signature="()" />
+        <scope doc="This returns the value that #scan would return, without&#xA;advancing the scan pointer. The match register is affected,&#xA;though." ilk="function" name="check" signature=" check(pattern)" />
+        <scope doc="This returns the value that #scan_until would return,&#xA;without advancing the scan pointer. The match register is&#xA;affected, though." ilk="function" name="check_until" signature=" check_until(pattern)" />
+        <scope doc="Equivalent to #terminate. This method is obsolete; use&#xA;#terminate instead." ilk="function" name="clear" signature="()" />
+        <scope doc="Appends str to the string being scanned. This method does&#xA;not affect scan pointer." ilk="function" name="concat" signature="concat(str)&#xA;&lt;&lt;(str)" />
+        <scope doc="Equivalent to #eos?. This method is obsolete, use #eos?&#xA;instead." ilk="function" name="empty?" signature="()" />
+        <scope doc="Returns true if the scan pointer is at the end of the&#xA;string." ilk="function" name="eos?" signature="()" />
+        <scope doc="Looks `ahead&apos; to see if the pattern exists `anywhere&apos; in the&#xA;string, without advancing the scan pointer. This predicates&#xA;whether a #scan_until will return a value." ilk="function" name="exist?" signature=" exist?(pattern)" />
+        <scope doc="Scans one byte and returns it. Similar to, but not the same&#xA;as, #getch." ilk="function" name="get_byte" signature="()" />
+        <scope doc="Equivalent to #get_byte. This method is obsolete; use&#xA;#get_byte instead." ilk="function" name="getbyte" signature="()" />
+        <scope doc="Scans one character and returns it." ilk="function" name="getch" signature="()" />
+        <scope doc="Returns a string that represents the StringScanner object,&#xA;showing:" ilk="function" name="inspect" signature="()" />
+        <scope doc="Tests whether the given pattern is matched from the current&#xA;scan pointer. Returns the length of the match, or nil." ilk="function" name="match?" signature=" match?(pattern)" />
+        <scope doc="Returns the last matched string." ilk="function" name="matched" signature="()" />
+        <scope doc="Returns true iff the last match was successful." ilk="function" name="matched?" signature="()" />
+        <scope doc="Returns the size of the most recent match (see #matched), or&#xA;nil if there was no recent match." ilk="function" name="matched_size" signature="()" />
+        <scope doc="Equivalent to #matched_size. This method is obsolete; use&#xA;#matched_size instead." ilk="function" name="matchedsize" signature="()" />
+        <scope doc="Extracts a string corresponding to string[pos,len], without&#xA;advancing the scan pointer." ilk="function" name="peek" signature=" peek(len)" />
+        <scope doc="Equivalent to #peek. This method is obsolete; use #peek&#xA;instead." ilk="function" name="peep" signature="(p1)" />
+        <scope doc="Returns the position of the scan pointer. In the &apos;reset&apos;&#xA;position, this value is zero." ilk="function" name="pointer" signature="()" />
+        <scope doc="Modify the scan pointer." ilk="function" name="pointer=" signature=" pos=(n)" />
+        <scope doc="Returns the position of the scan pointer. In the &apos;reset&apos;&#xA;position, this value is zero." ilk="function" name="pos" signature="()" />
+        <scope doc="Modify the scan pointer." ilk="function" name="pos=" signature=" pos=(n)" />
+        <scope doc="Return the *`post*-match&apos; (in the regular expression sense)&#xA;of the last scan." ilk="function" name="post_match" signature="()" />
+        <scope doc="Return the *`pre*-match&apos; (in the regular expression sense)&#xA;of the last scan." ilk="function" name="pre_match" signature="()" />
+        <scope doc="Reset the scan pointer (index 0) and clear matching data." ilk="function" name="reset" signature="()" />
+        <scope doc="Returns the &quot;rest&quot; of the string (i.e. everything after the&#xA;scan pointer)." ilk="function" name="rest" signature="()" />
+        <scope doc="Returns true iff there is more data in the string. See&#xA;#eos?." ilk="function" name="rest?" signature="()" />
+        <scope doc="s.rest_size is equivalent to s.rest.size." ilk="function" name="rest_size" signature="()" />
+        <scope doc="s.restsize is equivalent to s.rest_size. This method is&#xA;obsolete; use #rest_size instead." ilk="function" name="restsize" signature="()" />
+        <scope doc="Tries to match with pattern at the current position. If&#xA;there&apos;s a match, the scanner advances the &quot;scan pointer&quot; and&#xA;returns the matched string." ilk="function" name="scan" signature=" scan(pattern)" />
+        <scope doc="Tests whether the given pattern is matched from the current&#xA;scan pointer. Returns the matched string if return_string_p&#xA;is true." ilk="function" name="scan_full" signature=" scan_full(pattern, return_string_p, advance_pointer_p)" />
+        <scope doc="Scans the string `until&apos; the pattern is matched. Returns the&#xA;substring up to and including the end of the match,&#xA;advancing the scan pointer to that location." ilk="function" name="scan_until" signature=" scan_until(pattern)" />
+        <scope doc="Scans the string `until&apos; the pattern is matched. Returns the&#xA;matched string if return_string_p is true, otherwise returns&#xA;the number of bytes advanced." ilk="function" name="search_full" signature=" search_full(pattern, return_string_p, advance_pointer_p)" />
+        <scope doc="Attempts to skip over the given pattern beginning with the&#xA;scan pointer. If it matches, the scan pointer is advanced to&#xA;the end of the match, and the length of the match is&#xA;returned." ilk="function" name="skip" signature=" skip(pattern)" />
+        <scope doc="Advances the scan pointer until pattern is matched and&#xA;consumed. Returns the number of bytes advanced, or nil if no&#xA;match was found." ilk="function" name="skip_until" signature=" skip_until(pattern)" />
+        <scope doc="Returns the string being scanned." ilk="function" name="string" signature="()" />
+        <scope doc="Changes the string being scanned to str and resets the&#xA;scanner. Returns str." ilk="function" name="string=" signature=" string=(str)" />
+        <scope doc="Set the scan pointer to the end of the string and clear&#xA;matching data." ilk="function" name="terminate" signature="terminate&#xA;clear" />
+        <scope doc="Set the scan pointer to the previous position. Only one&#xA;previous position is remembered, and it changes with each&#xA;scanning operation." ilk="function" name="unscan" signature="()" />
+      </scope>
+    </scope>
+    

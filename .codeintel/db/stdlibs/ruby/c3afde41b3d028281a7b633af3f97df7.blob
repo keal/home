@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="soap/header/handler">
+      <import line="9" module="soap/element" symbol="*" />
+      <scope doc="SOAP4R - SOAP Header handler item Copyright (C) 2003, 2003&#xA;NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="12" name="SOAP" />
+      <scope ilk="namespace" line="13" name="Header" />
+      <scope classrefs="Object" ilk="class" line="16" lineend="53" name="Handler">
+        <scope ilk="function" line="17" lineend="17" name="elename" />
+        <scope ilk="function" line="18" lineend="18" name="mustunderstand" />
+        <scope ilk="function" line="19" lineend="19" name="encodingstyle" />
+        <scope attributes="__ctor__" ilk="function" line="21" lineend="25" name="initialize" signature="initialize(elename)" />
+        <scope doc="Should return a SOAP/OM, a SOAPHeaderItem or nil." ilk="function" line="28" lineend="30" name="on_outbound" signature="on_outbound" />
+        <scope doc="Given header is a SOAPHeaderItem or nil." ilk="function" line="33" lineend="35" name="on_inbound" signature="on_inbound(header, mustunderstand = false)" />
+        <scope ilk="function" line="37" lineend="48" name="on_outbound_headeritem" signature="on_outbound_headeritem" />
+        <scope ilk="function" line="50" lineend="52" name="on_inbound_headeritem" signature="on_inbound_headeritem(header)" />
+      </scope>
+    </scope>
+    

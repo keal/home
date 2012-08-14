@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="observable">
+      <scope classrefs="Object" doc="Implements the Observable design pattern as a mixin so that&#xA;other objects can be notified of changes in state. See&#xA;observer.rb for details and an example." ilk="class" name="Observable">
+        <scope doc="Add observer as an observer on this object. observer will&#xA;now receive notifications." ilk="function" name="add_observer" signature="(observer)" />
+        <scope doc="Set the changed state of this object. Notifications will be&#xA;sent only if the changed state is true." ilk="function" name="changed" signature="(state=true)" />
+        <scope doc="Query the changed state of this object." ilk="function" name="changed?" signature="()" />
+        <scope doc="Return the number of observers associated with this object." ilk="function" name="count_observers" signature="()" />
+        <scope doc="Delete observer as an observer on this object. It will no&#xA;longer receive notifications." ilk="function" name="delete_observer" signature="(observer)" />
+        <scope doc="Delete all observers associated with this object." ilk="function" name="delete_observers" signature="()" />
+        <scope doc="If this object&apos;s changed state is true, invoke the update&#xA;method in each currently associated observer in turn,&#xA;passing it the given arguments. The changed state is then&#xA;set to false." ilk="function" name="notify_observers" signature="(*arg)" />
+      </scope>
+    </scope>
+    

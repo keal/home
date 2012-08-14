@@ -1,0 +1,73 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/hierarchy">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/text" symbol="*" />
+      <import line="8" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/hierarchy.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="12" lineend="13" name="Hierarchy" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="309" name="Tk::Iwidgets::">
+        <scope classrefs="TkValidateCommand" ilk="class" line="29" lineend="44" name="QueryCommand">
+          <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="30" lineend="38" name="ValidateArgs">
+            <scope attributes="__classmethod__" ilk="function" line="35" lineend="37" name="ret_val" signature="self.ret_val(val)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="40" lineend="43" name="_config_keys[" signature="self._config_keys  [" />
+        </scope>
+        <scope classrefs="TkValidateCommand" ilk="class" line="46" lineend="71" name="IndicatorCommand">
+          <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="47" lineend="65" name="ValidateArgs">
+            <scope attributes="__classmethod__" ilk="function" line="62" lineend="64" name="ret_val" signature="self.ret_val(val)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="67" lineend="70" name="_config_keys[" signature="self._config_keys  [" />
+        </scope>
+        <scope classrefs="TkValidateCommand" ilk="class" line="73" lineend="92" name="IconCommand">
+          <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="74" lineend="86" name="ValidateArgs">
+            <scope attributes="__classmethod__" ilk="function" line="83" lineend="85" name="ret_val" signature="self.ret_val(val)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="88" lineend="91" name="_config_keys[" signature="self._config_keys  [" />
+        </scope>
+        <scope ilk="function" line="94" lineend="96" name="__validation_class_list" signature="__validation_class_list" />
+        <scope ilk="function" line="104" lineend="106" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="109" lineend="111" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="114" lineend="116" name="__font_optkeys" signature="__font_optkeys" />
+        <scope ilk="function" line="119" lineend="122" name="clear" signature="clear" />
+        <scope ilk="function" line="124" lineend="127" name="collapse" signature="collapse(node)" />
+        <scope ilk="function" line="129" lineend="131" name="current" signature="current" />
+        <scope ilk="function" line="133" lineend="146" name="draw" signature="draw(mode=None)" />
+        <scope ilk="function" line="148" lineend="151" name="expand" signature="expand(node)" />
+        <scope ilk="function" line="153" lineend="155" name="expanded?" signature="expanded?(node)" />
+        <scope ilk="function" line="157" lineend="159" name="exp_state" signature="exp_state" />
+        <scope ilk="function" line="163" lineend="166" name="mark_clear" signature="mark_clear" />
+        <scope ilk="function" line="167" lineend="170" name="mark_add" signature="mark_add(*nodes)" />
+        <scope ilk="function" line="171" lineend="174" name="mark_remove" signature="mark_remove(*nodes)" />
+        <scope ilk="function" line="175" lineend="177" name="mark_get" signature="mark_get" />
+        <scope ilk="function" line="179" lineend="182" name="refresh" signature="refresh(node)" />
+        <scope ilk="function" line="184" lineend="187" name="prune" signature="prune(node)" />
+        <scope ilk="function" line="189" lineend="192" name="selection_clear" signature="selection_clear" />
+        <scope ilk="function" line="193" lineend="196" name="selection_add" signature="selection_add(*nodes)" />
+        <scope ilk="function" line="197" lineend="200" name="selection_remove" signature="selection_remove(*nodes)" />
+        <scope ilk="function" line="201" lineend="203" name="selection_get" signature="selection_get" />
+        <scope ilk="function" line="205" lineend="208" name="toggle" signature="toggle(node)" />
+        <scope doc="based on TkText widget" ilk="function" line="212" lineend="214" name="bbox" signature="bbox(index)" />
+        <scope ilk="function" line="216" lineend="219" name="compare" signature="compare(idx1, op, idx2)" />
+        <scope ilk="function" line="221" lineend="223" name="debug" signature="debug" />
+        <scope ilk="function" line="224" lineend="228" name="debug=" signature="debug=(boolean)" />
+        <scope ilk="function" line="230" lineend="233" name="delete" signature="delete(first, last=None)" />
+        <scope ilk="function" line="235" lineend="237" name="dlineinfo" signature="dlineinfo(index)" />
+        <scope ilk="function" line="239" lineend="241" name="get" signature="get(*index)" />
+        <scope ilk="function" line="243" lineend="245" name="index" signature="index(index)" />
+        <scope ilk="function" line="247" lineend="264" name="insert" signature="insert(index, chars, *tags)" />
+        <scope ilk="function" line="266" lineend="269" name="scan_mark" signature="scan_mark(x, y)" />
+        <scope ilk="function" line="270" lineend="273" name="scan_dragto" signature="scan_dragto(x, y)" />
+        <scope ilk="function" line="274" lineend="277" name="see" signature="see(index)" />
+        <scope doc="based on tk/scrollable.rb" ilk="function" line="280" lineend="287" name="xview" signature="xview(*index)" />
+        <scope ilk="function" line="288" lineend="290" name="xview_moveto" signature="xview_moveto(*index)" />
+        <scope ilk="function" line="291" lineend="293" name="xview_scroll" signature="xview_scroll(*index)" />
+        <scope ilk="function" line="295" lineend="302" name="yview" signature="yview(*index)" />
+        <scope ilk="function" line="303" lineend="305" name="yview_moveto" signature="yview_moveto(*index)" />
+        <scope ilk="function" line="306" lineend="308" name="yview_scroll" signature="yview_scroll(*index)" />
+        <import symbol="TkTextTagConfig" />
+        <import symbol="Tk::ValidateConfigure" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,33 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpauth/digestauth">
+      <import line="14" module="webrick/config" symbol="*" />
+      <import line="15" module="webrick/httpstatus" symbol="*" />
+      <import line="16" module="webrick/httpauth/authenticator" symbol="*" />
+      <import line="17" module="digest/md5" symbol="*" />
+      <import line="18" module="digest/sha1" symbol="*" />
+      <scope doc="httpauth/digestauth.rb -- HTTP digest access authentication" ilk="namespace" line="20" lineend="343" name="WEBrick">
+        <scope ilk="namespace" line="21" lineend="342" name="HTTPAuth">
+          <scope classrefs="Object" ilk="class" line="22" lineend="333" name="DigestAuth">
+            <scope ilk="function" line="27" lineend="27" name="algorithm" />
+            <scope ilk="function" line="27" lineend="27" name="qop" />
+            <scope attributes="__classmethod__" ilk="function" line="29" lineend="32" name="make_passwd" signature="self.make_passwd(realm, user, pass)" />
+            <scope attributes="__ctor__" ilk="function" line="34" lineend="63" name="initialize" signature="initialize(config, default=Config::DigestAuth)" />
+            <scope ilk="function" line="65" lineend="73" name="authenticate" signature="authenticate(req, res)" />
+            <scope ilk="function" line="75" lineend="95" name="challenge" signature="challenge(req, res, stale=false)" />
+            <scope ilk="function" line="102" lineend="228" name="_authenticate" signature="_authenticate(req, res)" />
+            <scope ilk="function" line="230" lineend="251" name="split_param_value" signature="split_param_value(string)" />
+            <scope ilk="function" line="253" lineend="258" name="generate_next_nonce" signature="generate_next_nonce(req)" />
+            <scope ilk="function" line="260" lineend="284" name="check_nonce" signature="check_nonce(req, auth_req)" />
+            <scope ilk="function" line="286" lineend="301" name="generate_opaque" signature="generate_opaque(req)" />
+            <scope ilk="function" line="303" lineend="317" name="check_opaque" signature="check_opaque(opaque_struct, req, auth_req)" />
+            <scope ilk="function" line="319" lineend="328" name="check_uri" signature="check_uri(req, auth_req)" />
+            <scope ilk="function" line="330" lineend="332" name="hexdigest" signature="hexdigest(*args)" />
+            <import symbol="Authenticator" />
+          </scope>
+          <scope classrefs="DigestAuth" ilk="class" line="335" lineend="341" name="ProxyDigestAuth">
+            <scope ilk="function" line="338" lineend="340" name="check_uri" signature="check_uri(req, auth_req)" />
+            <import symbol="ProxyAuthenticator" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

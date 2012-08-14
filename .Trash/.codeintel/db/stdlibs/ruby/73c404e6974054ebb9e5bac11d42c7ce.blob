@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="irb/ext/use-loader">
+      <import line="13" module="irb/cmd/load" symbol="*" />
+      <import line="14" module="irb/ext/loader" symbol="*" />
+      <scope classrefs="Object" doc="use-loader.rb - $Release Version: 0.9.5$ $Revision: 1.1.2.1&#xA;$ $Date: 2005/04/19 19:24:58 $ by Keiju ISHITSUKA(keiju&#xA;@ruby-lang.org)" ilk="class" line="16" name="Object" />
+      <scope ilk="namespace" line="21" lineend="63" name="IRB">
+        <scope ilk="namespace" line="22" lineend="29" name="ExtendCommandBundle">
+          <scope ilk="function" line="23" lineend="25" name="irb_load" signature="irb_load(*opts, &amp;b)" />
+          <scope ilk="function" line="26" lineend="28" name="irb_require" signature="irb_require(*opts, &amp;b)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="31" lineend="62" name="Context">
+          <scope ilk="function" line="35" lineend="37" name="use_loader" signature="use_loader" />
+          <scope ilk="function" line="41" lineend="61" name="use_loader=" signature="use_loader=(opt)">
+            <scope classrefs="Object" ilk="class" line="48" lineend="48" name="@workspace" />
+            <scope classrefs="Object" ilk="class" line="53" lineend="53" name="@workspace" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,68 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/tkpiechart">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tk/canvas" symbol="*" />
+      <import line="11" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;tkpiechart&apos;, &apos;6.6&apos;)" ilk="namespace" line="16" lineend="21" name="Tk">
+        <scope ilk="namespace" line="17" lineend="20" name="Tcllib">
+          <scope ilk="namespace" line="18" lineend="19" name="Tkpiechart" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="23" lineend="308" name="Tk::Tcllib::">
+        <scope attributes="__classmethod__" ilk="function" line="25" lineend="27" name="package_name" signature="self.package_name" />
+        <scope attributes="__classmethod__" ilk="function" line="29" lineend="35" name="package_version" signature="self.package_version" />
+        <scope ilk="namespace" line="37" lineend="75" name="ConfigMethod">
+          <scope ilk="function" line="40" lineend="42" name="__pathname" signature="__pathname" />
+          <scope ilk="function" line="45" lineend="47" name="__cget_cmd" signature="__cget_cmd" />
+          <scope ilk="function" line="49" lineend="51" name="__config_cmd" signature="__config_cmd" />
+          <scope ilk="function" line="54" lineend="57" name="__configinfo_struct" signature="__configinfo_struct" />
+          <scope ilk="function" line="60" lineend="62" name="__boolval_optkeys" signature="__boolval_optkeys" />
+          <scope ilk="function" line="65" lineend="68" name="__strval_optkeys" signature="__strval_optkeys" />
+          <scope ilk="function" line="71" lineend="73" name="__listval_optkeys" signature="__listval_optkeys" />
+        </scope>
+        <scope classrefs="TkcItem" ilk="class" line="78" lineend="85" name="PieChartObj">
+          <scope ilk="function" line="81" lineend="83" name="__font_optkeys" signature="__font_optkeys" />
+          <import symbol="ConfigMethod" />
+        </scope>
+        <scope classrefs="TkcItem" ilk="class" line="88" lineend="154" name="Pie">
+          <scope ilk="function" line="91" lineend="107" name="create_self" signature="create_self(x, y, width, height, keys=None)" />
+          <scope ilk="function" line="110" lineend="112" name="tag_key" signature="tag_key" />
+          <scope ilk="function" line="113" lineend="115" name="tag" signature="tag" />
+          <scope ilk="function" line="116" lineend="118" name="canvas" signature="canvas" />
+          <scope ilk="function" line="119" lineend="121" name="_entry_slice" signature="_entry_slice(slice)" />
+          <scope ilk="function" line="122" lineend="124" name="_delete_slice" signature="_delete_slice(slice)" />
+          <scope ilk="function" line="126" lineend="130" name="delete" signature="delete" />
+          <scope ilk="function" line="132" lineend="134" name="new_slice" signature="new_slice(text=None)" />
+          <scope ilk="function" line="136" lineend="146" name="delete_slice" signature="delete_slice(slice)" />
+          <scope ilk="function" line="148" lineend="153" name="selected_slices" signature="selected_slices" />
+          <import symbol="ConfigMethod" />
+        </scope>
+        <scope classrefs="TkcItem" ilk="class" line="157" lineend="218" name="Slice">
+          <scope ilk="function" line="160" lineend="162" name="__config_cmd" signature="__config_cmd" />
+          <scope attributes="__ctor__" doc="------------------------" ilk="function" line="167" lineend="189" name="initialize" signature="initialize(pie, *args)" />
+          <scope ilk="function" line="191" lineend="193" name="tag_key" signature="tag_key" />
+          <scope ilk="function" line="194" lineend="196" name="tag" signature="tag" />
+          <scope ilk="function" line="197" lineend="199" name="pie" signature="pie" />
+          <scope ilk="function" line="201" lineend="206" name="delete" signature="delete" />
+          <scope ilk="function" line="208" lineend="212" name="size" signature="size(share, disp=None)" />
+          <scope ilk="function" line="214" lineend="217" name="label" signature="label(text)" />
+          <import symbol="ConfigMethod" />
+        </scope>
+        <scope classrefs="TkcItem" ilk="class" line="221" lineend="245" name="BoxLabeler">
+          <scope ilk="function" line="224" lineend="226" name="__config_cmd" signature="__config_cmd" />
+          <scope doc="------------------------" ilk="function" line="231" lineend="243" name="create_self" signature="create_self(keys=None)" />
+          <import symbol="ConfigMethod" />
+        </scope>
+        <scope classrefs="TkcItem" ilk="class" line="248" lineend="278" name="PeripheralLabeler">
+          <scope ilk="function" line="251" lineend="253" name="__font_optkeys" signature="__font_optkeys" />
+          <scope ilk="function" line="256" lineend="258" name="__config_cmd" signature="__config_cmd" />
+          <scope doc="------------------------" ilk="function" line="263" lineend="276" name="create_self" signature="create_self(keys=None)" />
+          <import symbol="ConfigMethod" />
+        </scope>
+        <scope classrefs="TkcItem" ilk="class" line="281" lineend="307" name="Label">
+          <scope ilk="function" line="284" lineend="286" name="__config_cmd" signature="__config_cmd" />
+          <scope doc="------------------------" ilk="function" line="291" lineend="305" name="create_self" signature="create_self(x, y, keys=None)" />
+          <import symbol="ConfigMethod" />
+        </scope>
+      </scope>
+    </scope>
+    

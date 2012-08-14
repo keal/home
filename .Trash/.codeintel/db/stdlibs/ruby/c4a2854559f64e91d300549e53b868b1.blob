@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="rexml/instruction">
+      <import line="1" module="rexml/child" symbol="*" />
+      <import line="2" module="rexml/source" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="66" name="REXML">
+        <scope classrefs="Child" doc="Represents an XML Instruction; IE, &lt;? ..." ilk="class" line="7" name="Instruction">
+          <scope ilk="function" line="13" lineend="13" name="target" />
+          <scope ilk="function" line="13" lineend="13" name="target=" />
+          <scope ilk="function" line="13" lineend="13" name="content" />
+          <scope ilk="function" line="13" lineend="13" name="content=" />
+          <scope attributes="__ctor__" doc="Constructs a new Instruction @param target can be one of a&#xA;number of things." ilk="function" line="24" lineend="35" name="initialize" signature="initialize(target, content=nil)" />
+          <scope ilk="function" line="37" lineend="39" name="clone" signature="clone" />
+          <scope ilk="function" line="41" lineend="48" name="write" signature="write" />
+          <scope doc="@return true if other is an Instruction, and the content and&#xA;target of the other matches the target and content of this&#xA;object." ilk="function" line="52" lineend="56" name="==" signature="==( other" />
+        </scope>
+        <scope ilk="function" line="58" lineend="60" name="node_type" signature="node_type" />
+        <scope ilk="function" line="62" lineend="64" name="inspect" signature="inspect" />
+      </scope>
+    </scope>
+    

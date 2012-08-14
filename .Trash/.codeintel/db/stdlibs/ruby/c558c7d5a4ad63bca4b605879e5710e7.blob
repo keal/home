@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="soap/rpc/standaloneServer">
+      <import line="9" module="soap/rpc/httpserver" symbol="*" />
+      <scope doc="SOAP4R - WEBrick Server Copyright (C) 2003 by NAKAMURA,&#xA;Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="12" name="SOAP" />
+      <scope ilk="namespace" line="13" name="RPC" />
+      <scope classrefs="HTTPServer" ilk="class" line="16" lineend="39" name="StandaloneServer">
+        <scope attributes="__ctor__" ilk="function" line="17" lineend="23" name="initialize" signature="initialize(appname, default_namespace, host = &quot;0.0.0.0&quot;, port = 8080)" />
+        <scope ilk="function" line="30" lineend="38" name="create_config" signature="create_config" />
+      </scope>
+    </scope>
+    

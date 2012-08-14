@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="rss">
+      <import line="7" module="rss/1.0" symbol="*" />
+      <import line="8" module="rss/2.0" symbol="*" />
+      <import line="9" module="rss/content" symbol="*" />
+      <import line="10" module="rss/dublincore" symbol="*" />
+      <import line="11" module="rss/image" symbol="*" />
+      <import line="12" module="rss/syndication" symbol="*" />
+      <import line="14" module="rss/trackback" symbol="*" />
+      <import line="16" module="rss/maker" symbol="*" />
+    </scope>
+    

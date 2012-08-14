@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="tk/clock">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/clock.rb : methods for clock command" ilk="namespace" line="6" lineend="71" name="Tk">
+        <scope ilk="namespace" line="7" lineend="70" name="Clock">
+          <scope attributes="__classmethod__" ilk="function" line="11" lineend="13" name="add" signature="self.add(clk, *args)" />
+          <scope attributes="__classmethod__" ilk="function" line="15" lineend="27" name="clicks" signature="self.clicks(ms=nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="29" lineend="35" name="format" signature="self.format(clk, form=nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="37" lineend="43" name="formatGMT" signature="self.formatGMT(clk, form=nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="45" lineend="51" name="scan" signature="self.scan(str, base=nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="53" lineend="59" name="scanGMT" signature="self.scanGMT(str, base=nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="61" lineend="63" name="seconds" signature="self.seconds" />
+          <scope attributes="__classmethod__" ilk="function" line="64" lineend="66" name="milliseconds" signature="self.milliseconds" />
+          <scope attributes="__classmethod__" ilk="function" line="67" lineend="69" name="microseconds" signature="self.microseconds" />
+        </scope>
+      </scope>
+    </scope>
+    

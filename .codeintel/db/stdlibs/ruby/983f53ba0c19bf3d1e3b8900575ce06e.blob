@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="delegator">
+      <scope classrefs="Object" doc="Delegator is an abstract class used to build delegator&#xA;pattern objects from subclasses. Subclasses should redefine&#xA;__getobj__." ilk="class" name="Delegator">
+        <scope attributes="__classmethod__ __ctor__" doc="Pass in the `obj&apos; to delegate method calls to. All methods&#xA;supported by `obj&apos; will be delegated to." ilk="function" name="new" signature="(obj)" />
+        <scope doc="This method must be overridden by subclasses and should&#xA;return the object method calls are being delegated to." ilk="function" name="__getobj__" signature="()" />
+        <scope doc="Serialization support for the object returned by __getobj__." ilk="function" name="marshal_dump" signature="()" />
+        <scope doc="Reinitializes delegation from a serialized object." ilk="function" name="marshal_load" signature="(obj)" />
+        <scope doc="Handles the magic of delegation through __getobj__." ilk="function" name="method_missing" signature="(m, *args)" />
+        <scope doc="Checks for a method provided by this the delegate object by&#xA;fowarding the call through __getobj__." ilk="function" name="respond_to?" signature="(m)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,146 @@
+<scope ilk="blob" lang="Ruby" name="optparse">
+      <scope classrefs="Object" doc="optparse.rb - command-line option analysis with the&#xA;OptionParser class." ilk="class" line="193" lineend="1813" name="OptionParser">
+        <import line="734" module="optparse/version" symbol="*" />
+        <scope doc=":startdoc:" ilk="namespace" line="209" lineend="253" name="Completion">
+          <scope ilk="function" line="210" lineend="248" name="complete" signature="complete(key, icase = false, pat = nil)" />
+          <scope ilk="function" line="250" lineend="252" name="convert" signature="convert(opt = nil, val = nil, *)" />
+        </scope>
+        <scope classrefs="Hash" doc="Map from option/keyword string to object with completion." ilk="class" line="259" lineend="261" name="OptionMap">
+          <import symbol="Completion" />
+        </scope>
+        <scope classrefs="Object" doc="Individual switch class. Not important to the user." ilk="class" line="270" lineend="490" name="Switch">
+          <scope ilk="function" line="271" lineend="271" name="pattern" />
+          <scope ilk="function" line="271" lineend="271" name="conv" />
+          <scope ilk="function" line="271" lineend="271" name="short" />
+          <scope ilk="function" line="271" lineend="271" name="long" />
+          <scope ilk="function" line="271" lineend="271" name="arg" />
+          <scope ilk="function" line="271" lineend="271" name="desc" />
+          <scope ilk="function" line="271" lineend="271" name="block" />
+          <scope attributes="__classmethod__" doc="Guesses argument style from +arg+." ilk="function" line="277" lineend="290" name="guess" signature="self.guess(arg)" />
+          <scope attributes="__classmethod__" ilk="function" line="292" lineend="294" name="incompatible_argument_styles" signature="self.incompatible_argument_styles(arg, t)" />
+          <scope attributes="__classmethod__" ilk="function" line="296" lineend="298" name="pattern" signature="self.pattern" />
+          <scope attributes="__ctor__" ilk="function" line="300" lineend="306" name="initialize" signature="initialize(pattern = nil, conv = nil, short = nil, long = nil, arg = nil, desc = ([] if short or long), block = Proc.new)" />
+          <scope doc="OptionParser::Switch#parse_arg(arg) {non-serious error&#xA;handler}" ilk="function" line="319" lineend="336" name="parse_arg" signature="parse_arg(arg)" />
+          <scope doc="OptionParser::Switch#conv_arg(arg, val) {semi-error handler}" ilk="function" line="355" lineend="366" name="conv_arg" signature="conv_arg(arg, val = nil)" />
+          <scope doc="OptionParser::Switch#summarize(sdone, ldone, width, max,&#xA;indent)" ilk="function" line="388" lineend="417" name="summarize" signature="summarize(sdone = [], ldone = [], width = 1, max = width - 1, indent = &quot;&quot;)" />
+          <scope classrefs="self" doc="Switch that takes no arguments." ilk="class" line="422" lineend="435" name="NoArgument">
+            <scope doc="Raises an exception if any arguments given." ilk="function" line="426" lineend="429" name="parse" signature="parse(arg, argv, &amp;error)" />
+            <scope attributes="__classmethod__" ilk="function" line="430" lineend="431" name="incompatible_argument_styles" signature="self.incompatible_argument_styles(*)" />
+            <scope attributes="__classmethod__" ilk="function" line="432" lineend="434" name="pattern" signature="self.pattern" />
+          </scope>
+          <scope classrefs="self" doc="Switch that takes an argument." ilk="class" line="440" lineend="451" name="RequiredArgument">
+            <scope doc="Raises an exception if argument is not present." ilk="function" line="444" lineend="450" name="parse" signature="parse(arg, argv)" />
+          </scope>
+          <scope classrefs="self" doc="Switch that can omit argument." ilk="class" line="456" lineend="467" name="OptionalArgument">
+            <scope doc="Parses argument if given, or uses default value." ilk="function" line="460" lineend="466" name="parse" signature="parse(arg, argv, &amp;error)" />
+          </scope>
+          <scope classrefs="self" doc="Switch that takes an argument, which does not begin with&#xA;&apos;-&apos;." ilk="class" line="472" lineend="489" name="PlacedArgument">
+            <scope doc="Returns nil if argument is not present or begins with &apos;-&apos;." ilk="function" line="476" lineend="488" name="parse" signature="parse(arg, argv, &amp;error)" />
+          </scope>
+        </scope>
+        <scope classrefs="Object" doc="Simple option list providing mapping from short and/or long&#xA;option string to ((&lt;OptionParser::Switch&gt;)), and mapping&#xA;from acceptable argument to matching pattern and converter&#xA;pair." ilk="class" line="498" lineend="659" name="List">
+          <scope ilk="function" line="500" lineend="500" name="atype" />
+          <scope ilk="function" line="503" lineend="503" name="short" />
+          <scope ilk="function" line="506" lineend="506" name="long" />
+          <scope ilk="function" line="509" lineend="509" name="list" />
+          <scope attributes="__ctor__" doc="Just initializes all instance variables." ilk="function" line="514" lineend="519" name="initialize" signature="initialize" />
+          <scope doc="See OptionParser.accept." ilk="function" line="524" lineend="534" name="accept" signature="accept(t, pat = /.*/nm, &amp;block)" />
+          <scope doc="See OptionParser.reject." ilk="function" line="539" lineend="541" name="reject" signature="reject(t)" />
+          <scope doc="OptionParser::List#update(sw, sopts, lopts, nlopts = nil)" ilk="function" line="558" lineend="565" name="update" signature="update(sw, sopts, lopts, nsw = nil, nlopts = nil)" />
+          <scope doc="OptionParser::List#prepend(switch, short_opts, long_opts,&#xA;nolong_opts)" ilk="function" line="573" lineend="576" name="prepend" signature="prepend(*args)" />
+          <scope doc="OptionParser::List#append(switch, short_opts, long_opts,&#xA;nolong_opts)" ilk="function" line="592" lineend="595" name="append" signature="append(*args)" />
+          <scope doc="OptionParser::List#search(id, key) [{block}]" ilk="function" line="609" lineend="615" name="search" signature="search(id, key)" />
+          <scope doc="OptionParser::List#complete(id, opt, *pat, &amp;block)" ilk="function" line="633" lineend="635" name="complete" signature="complete(id, opt, icase = false, *pat, &amp;block)" />
+          <scope doc="OptionParser::List#summarize(*args) {...}" ilk="function" line="648" lineend="658" name="summarize" signature="summarize(*args, &amp;block)" />
+        </scope>
+        <scope classrefs="Hash" doc="Hash with completion search feature. See Completion module." ilk="class" line="664" lineend="677" name="CompletingHash">
+          <scope doc="OptionParser::CompletingHash#match(key)" ilk="function" line="672" lineend="676" name="match" signature="match(key)" />
+          <import symbol="Completion" />
+        </scope>
+        <scope attributes="__classmethod__" doc="&apos;#&quot;#`#" ilk="function" line="771" lineend="775" name="with" signature="self.with(*args, &amp;block)" />
+        <scope attributes="__classmethod__" ilk="function" line="782" lineend="789" name="inc" signature="self.inc(arg, default = nil)" />
+        <scope ilk="function" line="790" lineend="792" name="inc" signature="inc(*args)" />
+        <scope attributes="__ctor__" doc="&apos;#&quot;#`#" ilk="function" line="807" lineend="816" name="initialize" signature="initialize(banner = nil, width = 32, indent = &apos; &apos; * 4)" />
+        <scope doc=":nodoc:" ilk="function" line="819" lineend="824" name="add_officious" signature="add_officious" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="834" lineend="836" name="terminate" signature="terminate(arg = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="837" lineend="839" name="terminate" signature="self.terminate(arg = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="842" name="top" signature="self.top()" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="856" name="accept" signature="accept(*args, &amp;blk)" />
+        <scope attributes="__classmethod__" ilk="function" line="857" name="accept" signature="self.accept(*args, &amp;blk)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="867" name="reject" signature="reject(*args, &amp;blk)" />
+        <scope attributes="__classmethod__" ilk="function" line="868" name="reject" signature="self.reject(*args, &amp;blk)" />
+        <scope ilk="function" line="893" lineend="893" name="banner=" />
+        <scope ilk="function" line="893" lineend="893" name="program_name=" />
+        <scope ilk="function" line="894" lineend="894" name="summary_width" />
+        <scope ilk="function" line="894" lineend="894" name="summary_width=" />
+        <scope ilk="function" line="894" lineend="894" name="summary_indent" />
+        <scope ilk="function" line="894" lineend="894" name="summary_indent=" />
+        <scope ilk="function" line="895" lineend="895" name="default_argv" />
+        <scope ilk="function" line="895" lineend="895" name="default_argv=" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="897" lineend="899" name="banner" signature="banner" />
+        <scope ilk="function" line="901" lineend="903" name="program_name" signature="program_name" />
+        <scope ilk="function" line="922" lineend="922" name="version=" />
+        <scope ilk="function" line="922" lineend="922" name="release=" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="924" lineend="926" name="version" signature="version" />
+        <scope ilk="function" line="928" lineend="930" name="release" signature="release" />
+        <scope ilk="function" line="932" lineend="938" name="ver" signature="ver" />
+        <scope ilk="function" line="940" lineend="942" name="warn" signature="warn(mesg = $!)" />
+        <scope ilk="function" line="944" lineend="946" name="abort" signature="abort(mesg = $!)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="952" lineend="954" name="top" signature="top" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="960" lineend="962" name="base" signature="base" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="968" lineend="975" name="new" signature="new" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="981" lineend="983" name="remove" signature="remove" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1001" lineend="1004" name="summarize" signature="summarize(to = [], width = @summary_width, max = width - 1, indent = @summary_indent, &amp;blk)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1011" name="help" signature="help" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1018" name="to_a" signature="to_a" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1070" lineend="1080" name="notwice" signature="notwice(obj, prv, msg)" />
+        <scope ilk="function" line="1083" lineend="1196" name="make_switch" signature="make_switch(*opts, &amp;block)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1211" lineend="1214" name="define" signature="define(*opts, &amp;block)" />
+        <scope ilk="function" line="1215" lineend="1218" name="on" signature="on(*opts, &amp;block)" />
+        <scope ilk="function" line="1221" lineend="1224" name="define_head" signature="define_head(*opts, &amp;block)" />
+        <scope ilk="function" line="1225" lineend="1228" name="on_head" signature="on_head(*opts, &amp;block)" />
+        <scope ilk="function" line="1231" lineend="1234" name="define_tail" signature="define_tail(*opts, &amp;block)" />
+        <scope ilk="function" line="1235" lineend="1238" name="on_tail" signature="on_tail(*opts, &amp;block)" />
+        <scope ilk="function" line="1241" lineend="1243" name="separator" signature="separator(string)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1263" lineend="1266" name="order" signature="order(*argv, &amp;block)" />
+        <scope ilk="function" line="1268" lineend="1328" name="order!" signature="order!(argv = default_argv, &amp;nonopt)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1343" lineend="1346" name="permute" signature="permute(*argv)" />
+        <scope ilk="function" line="1348" lineend="1354" name="permute!" signature="permute!(argv = default_argv)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1369" lineend="1372" name="parse" signature="parse(*argv)" />
+        <scope ilk="function" line="1374" lineend="1380" name="parse!" signature="parse!(argv = default_argv)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1394" lineend="1400" name="visit" signature="visit(id, *args, &amp;block)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1415" lineend="1420" name="search" signature="search(id, k)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1439" lineend="1447" name="complete" signature="complete(typ, opt, icase = false, *pat)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1459" lineend="1471" name="load" signature="load(filename = nil)" />
+        <scope doc="&apos;#&quot;#`#" ilk="function" line="1481" lineend="1484" name="environment" signature="environment(env = File.basename($0, &apos;.*&apos;))" />
+        <scope classrefs="RuntimeError" doc="&apos;#&quot;#`#" ilk="class" line="1622" lineend="1661" name="ParseError">
+          <scope attributes="__ctor__" ilk="function" line="1625" lineend="1628" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="1630" lineend="1630" name="args" />
+          <scope ilk="function" line="1631" lineend="1631" name="reason=" />
+          <scope ilk="function" line="1633" lineend="1636" name="recover" signature="recover(argv)" />
+          <scope ilk="function" line="1638" lineend="1645" name="set_option" signature="set_option(opt, eq)" />
+          <scope ilk="function" line="1647" lineend="1649" name="reason" signature="reason" />
+          <scope ilk="function" line="1651" lineend="1653" name="inspect" signature="inspect" />
+          <scope ilk="function" line="1655" lineend="1657" name="message" signature="message" />
+        </scope>
+        <scope classrefs="ParseError" doc="&apos;#&quot;#`#" ilk="class" line="1669" lineend="1671" name="AmbiguousOption" />
+        <scope classrefs="ParseError" doc="&apos;#&quot;#`#" ilk="class" line="1680" lineend="1682" name="NeedlessArgument" />
+        <scope classrefs="ParseError" doc="&apos;#&quot;#`#" ilk="class" line="1691" lineend="1693" name="MissingArgument" />
+        <scope classrefs="ParseError" doc="&apos;#&quot;#`#" ilk="class" line="1701" lineend="1703" name="InvalidOption" />
+        <scope classrefs="ParseError" doc="&apos;#&quot;#`#" ilk="class" line="1711" lineend="1713" name="InvalidArgument" />
+        <scope classrefs="InvalidArgument" doc="&apos;#&quot;#`#" ilk="class" line="1721" lineend="1723" name="AmbiguousArgument" />
+        <scope doc="&apos;#&quot;#`#" ilk="namespace" line="1733" lineend="1800" name="Arguable">
+          <scope doc="&apos;#&quot;#`#" ilk="function" line="1742" lineend="1749" name="options=" signature="options=(opt)">
+            <scope classrefs="Object" ilk="class" line="1744" lineend="1747" name="self" />
+          </scope>
+          <scope doc="&apos;#&quot;#`#" ilk="function" line="1766" lineend="1776" name="options" signature="options" />
+          <scope doc="&apos;#&quot;#`#" ilk="function" line="1785" name="order!" signature="order!(&amp;blk)" />
+          <scope ilk="function" line="1786" name="permute!" signature="permute!()" />
+          <scope ilk="function" line="1787" name="parse!" signature="parse!()" />
+          <scope attributes="__classmethod__" doc="&apos;#&quot;#`#" ilk="function" line="1792" lineend="1795" name="extend_object" signature="self.extend_object(obj)" />
+          <scope attributes="__ctor__" ilk="function" line="1796" lineend="1799" name="initialize" signature="initialize(*args)" />
+        </scope>
+        <scope doc="&apos;#&quot;#`#" ilk="namespace" line="1808" lineend="1812" name="Acceptables" />
+      </scope>
+    </scope>
+    

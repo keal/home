@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/superframe">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;widget::superframe&apos;, &apos;1.0&apos;)" ilk="namespace" line="15" lineend="33" name="Tk::Tcllib">
+        <scope ilk="namespace" line="16" lineend="32" name="Widget">
+          <scope classrefs="TkWindow" ilk="class" line="17" lineend="30" name="SuperFrame">
+            <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="35" lineend="51" name="Tk::Tcllib::">
+        <scope ilk="function" line="38" lineend="45" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="48" lineend="50" name="labelwidget" signature="labelwidget" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="yaml/stream">
+      <scope ilk="namespace" line="1" lineend="40" name="YAML">
+        <scope classrefs="Object" doc="YAML::Stream -- for emitting many documents" ilk="class" line="6" name="Stream">
+          <scope ilk="function" line="8" lineend="8" name="documents" />
+          <scope ilk="function" line="8" lineend="8" name="documents=" />
+          <scope ilk="function" line="8" lineend="8" name="options" />
+          <scope ilk="function" line="8" lineend="8" name="options=" />
+          <scope attributes="__ctor__" ilk="function" line="10" lineend="13" name="initialize" signature="initialize( opts = {} )" />
+        </scope>
+        <scope ilk="function" line="15" lineend="17" name="[]" signature="[]( i" />
+        <scope ilk="function" line="19" lineend="21" name="add" signature="add( doc )" />
+        <scope ilk="function" line="23" lineend="25" name="edit" signature="edit( doc_num, doc )" />
+        <scope ilk="function" line="27" lineend="36" name="emit" signature="emit( io = nil )" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,46 @@
+<scope ilk="blob" lang="Ruby" name="soap/streamHandler">
+      <import line="9" module="soap/soap" symbol="*" />
+      <import line="10" module="soap/httpconfigloader" symbol="*" />
+      <import line="12" module="stringio" symbol="*" />
+      <import line="13" module="zlib" symbol="*" />
+      <scope doc="SOAP4R - Stream handler." ilk="namespace" line="19" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="22" lineend="55" name="StreamHandler">
+        <scope classrefs="Object" ilk="class" line="25" lineend="41" name="ConnectionData">
+          <scope ilk="function" line="26" lineend="26" name="send_string" />
+          <scope ilk="function" line="26" lineend="26" name="send_string=" />
+          <scope ilk="function" line="27" lineend="27" name="send_contenttype" />
+          <scope ilk="function" line="27" lineend="27" name="send_contenttype=" />
+          <scope ilk="function" line="28" lineend="28" name="receive_string" />
+          <scope ilk="function" line="28" lineend="28" name="receive_string=" />
+          <scope ilk="function" line="29" lineend="29" name="receive_contenttype" />
+          <scope ilk="function" line="29" lineend="29" name="receive_contenttype=" />
+          <scope ilk="function" line="30" lineend="30" name="is_fault" />
+          <scope ilk="function" line="30" lineend="30" name="is_fault=" />
+          <scope ilk="function" line="31" lineend="31" name="soapaction" />
+          <scope ilk="function" line="31" lineend="31" name="soapaction=" />
+          <scope attributes="__ctor__" ilk="function" line="33" lineend="40" name="initialize" signature="initialize(send_string = nil)" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="43" lineend="50" name="parse_media_type" signature="self.parse_media_type(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="52" lineend="54" name="create_media_type" signature="self.create_media_type(charset)" />
+      </scope>
+      <scope classrefs="StreamHandler" ilk="class" line="58" lineend="226" name="HTTPStreamHandler">
+        <import line="62" module="http-access2" symbol="*" />
+        <import line="70" module="soap/netHttpClient" symbol="*" />
+        <scope ilk="function" line="78" lineend="78" name="client" />
+        <scope ilk="function" line="79" lineend="79" name="wiredump_file_base" />
+        <scope ilk="function" line="79" lineend="79" name="wiredump_file_base=" />
+        <scope attributes="__ctor__" doc="[times]" ilk="function" line="83" lineend="93" name="initialize" signature="initialize(options)" />
+        <scope ilk="function" line="95" lineend="97" name="test_loopback_response" signature="test_loopback_response" />
+        <scope ilk="function" line="99" lineend="101" name="accept_encoding_gzip=" signature="accept_encoding_gzip=(allow)" />
+        <scope ilk="function" line="103" lineend="105" name="inspect" signature="inspect" />
+        <scope ilk="function" line="107" lineend="110" name="send" signature="send(endpoint_url, conn_data, soapaction = nil, charset = @charset)" />
+        <scope ilk="function" line="112" lineend="119" name="reset" signature="reset(endpoint_url = nil)" />
+        <scope ilk="function" line="123" lineend="143" name="set_options" signature="set_options" />
+        <scope ilk="function" line="145" lineend="149" name="set_cookie_store_file" signature="set_cookie_store_file(value)" />
+        <scope ilk="function" line="151" lineend="209" name="send_post" signature="send_post(endpoint_url, conn_data, charset)" />
+        <scope ilk="function" line="211" lineend="213" name="send_accept_encoding_gzip?" signature="send_accept_encoding_gzip?" />
+        <scope ilk="function" line="215" lineend="225" name="decode_gzip" signature="decode_gzip(instring)" />
+        <import symbol="SOAP" />
+      </scope>
+    </scope>
+    

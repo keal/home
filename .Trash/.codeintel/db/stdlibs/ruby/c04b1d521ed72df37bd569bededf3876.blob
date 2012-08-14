@@ -1,0 +1,30 @@
+<scope ilk="blob" lang="Ruby" name="dl/struct">
+      <import line="3" module="dl" symbol="*" />
+      <import line="4" module="dl/import" symbol="*" />
+      <scope doc="-*- ruby -*-" ilk="namespace" line="6" lineend="149" name="DL">
+        <scope ilk="namespace" line="7" lineend="148" name="Importable">
+          <scope ilk="namespace" line="8" lineend="147" name="Internal">
+            <scope ilk="function" line="9" lineend="12" name="define_struct" signature="define_struct(contents)" />
+            <scope ilk="function" line="15" lineend="18" name="define_union" signature="define_union(contents)" />
+            <scope classrefs="Object" ilk="class" line="21" lineend="62" name="Memory">
+              <scope attributes="__ctor__" ilk="function" line="22" lineend="53" name="initialize" signature="initialize(ptr, names, ty, len, enc, dec)" />
+              <scope ilk="function" line="55" lineend="57" name="to_ptr" signature="to_ptr" />
+              <scope ilk="function" line="59" lineend="61" name="size" signature="size" />
+            </scope>
+            <scope classrefs="Object" ilk="class" line="64" lineend="137" name="Struct">
+              <scope attributes="__ctor__" ilk="function" line="65" lineend="75" name="initialize" signature="initialize(types, contents)" />
+              <scope ilk="function" line="77" lineend="79" name="size" signature="size" />
+              <scope ilk="function" line="81" lineend="83" name="members" signature="members" />
+              <scope doc="ptr must be a PtrData object." ilk="function" line="86" lineend="90" name="new" signature="new(ptr)" />
+              <scope ilk="function" line="92" lineend="98" name="malloc" signature="malloc(size = nil)" />
+              <scope ilk="function" line="100" lineend="115" name="parse" signature="parse(contents)" />
+              <scope ilk="function" line="117" lineend="136" name="parse_elem" signature="parse_elem(elem)" />
+            </scope>
+            <scope classrefs="Struct" doc="class Struct" ilk="class" line="139" lineend="146" name="Union">
+              <scope ilk="function" line="140" lineend="145" name="new" signature="new" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

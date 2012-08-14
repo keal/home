@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="getopts">
+      <scope doc="getopts.rb - $Release Version: $ $Revision: 1.8.2.3 $ $Date:&#xA;2005/05/24 03:01:17 $ by Yasuo OHBA(SHL Japan Inc." ilk="function" line="23" lineend="126" name="getopts" signature="getopts(single_options, *options)" />
+    </scope>
+    

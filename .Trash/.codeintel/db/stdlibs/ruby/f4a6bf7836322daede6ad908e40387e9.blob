@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tk/grid">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/grid.rb : control grid geometry manager" ilk="namespace" line="6" lineend="196" name="TkGrid">
+        <scope ilk="function" line="12" lineend="16" name="anchor" signature="anchor(master, anchor=None)" />
+        <scope ilk="function" line="18" lineend="23" name="bbox" signature="bbox(master, *args)" />
+        <scope ilk="function" line="25" lineend="55" name="configure" signature="configure(win, *args)" />
+        <scope ilk="function" line="58" lineend="63" name="columnconfigure" signature="columnconfigure(master, index, args)" />
+        <scope ilk="function" line="65" lineend="69" name="rowconfigure" signature="rowconfigure(master, index, args)" />
+        <scope ilk="function" line="71" lineend="98" name="columnconfiginfo" signature="columnconfiginfo(master, index, slot=nil)" />
+        <scope ilk="function" line="100" lineend="127" name="rowconfiginfo" signature="rowconfiginfo(master, index, slot=nil)" />
+        <scope ilk="function" line="129" lineend="131" name="add" signature="add(widget, *args)" />
+        <scope ilk="function" line="133" lineend="140" name="forget" signature="forget(*args)" />
+        <scope ilk="function" line="142" lineend="153" name="info" signature="info(slave)" />
+        <scope ilk="function" line="155" lineend="159" name="location" signature="location(master, x, y)" />
+        <scope ilk="function" line="161" lineend="169" name="propagate" signature="propagate(master, mode=None)" />
+        <scope ilk="function" line="171" lineend="178" name="remove" signature="remove(*args)" />
+        <scope ilk="function" line="180" lineend="184" name="size" signature="size(master)" />
+        <scope ilk="function" line="186" lineend="190" name="slaves" signature="slaves(master, args)" />
+      </scope>
+    </scope>
+    

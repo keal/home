@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="ostruct">
+      <scope classrefs="Object" doc="= ostruct.rb: OpenStruct implementation" ilk="class" line="33" lineend="146" name="OpenStruct">
+        <scope attributes="__ctor__" doc="Create a new OpenStruct object." ilk="function" line="46" lineend="54" name="initialize" signature="initialize(hash=nil)" />
+        <scope doc="Duplicate an OpenStruct object members." ilk="function" line="57" lineend="60" name="initialize_copy" signature="initialize_copy(orig)" />
+        <scope ilk="function" line="62" lineend="64" name="marshal_dump" signature="marshal_dump" />
+        <scope ilk="function" line="65" lineend="68" name="marshal_load" signature="marshal_load(x)" />
+        <scope ilk="function" line="70" lineend="77" name="new_ostruct_member" signature="new_ostruct_member(name)">
+          <scope classrefs="Object" ilk="class" line="73" lineend="73" name="self" />
+        </scope>
+        <scope ilk="function" line="79" lineend="97" name="method_missing" signature="method_missing(mid, *args)" />
+        <scope doc="Remove the named field from the object." ilk="function" line="102" lineend="104" name="delete_field" signature="delete_field(name)" />
+        <scope doc=":nodoc:" ilk="function" line="111" lineend="133" name="inspect" signature="inspect" />
+        <scope ilk="function" line="136" lineend="136" name="table" />
+        <scope doc="Compare this object and +other+ for equality." ilk="function" line="142" lineend="145" name="==" signature="==(other" />
+      </scope>
+    </scope>
+    

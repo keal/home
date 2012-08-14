@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tk/scrollable">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/scrollable.rb : module for scrollable widget" ilk="namespace" line="6" lineend="79" name="Tk">
+        <scope ilk="namespace" line="7" lineend="39" name="X_Scrollable">
+          <scope ilk="function" line="8" lineend="12" name="xscrollcommand" signature="xscrollcommand(cmd=Proc.new)" />
+          <scope ilk="function" line="14" lineend="21" name="xview" signature="xview(*index)" />
+          <scope ilk="function" line="22" lineend="24" name="xview_moveto" signature="xview_moveto(*index)" />
+          <scope ilk="function" line="25" lineend="27" name="xview_scroll" signature="xview_scroll(*index)" />
+          <scope ilk="function" line="29" lineend="38" name="xscrollbar" signature="xscrollbar(bar=nil)" />
+        </scope>
+        <scope ilk="namespace" line="41" lineend="73" name="Y_Scrollable">
+          <scope ilk="function" line="42" lineend="46" name="yscrollcommand" signature="yscrollcommand(cmd=Proc.new)" />
+          <scope ilk="function" line="48" lineend="55" name="yview" signature="yview(*index)" />
+          <scope ilk="function" line="56" lineend="58" name="yview_moveto" signature="yview_moveto(*index)" />
+          <scope ilk="function" line="59" lineend="61" name="yview_scroll" signature="yview_scroll(*index)" />
+          <scope ilk="function" line="63" lineend="72" name="yscrollbar" signature="yscrollbar(bar=nil)" />
+        </scope>
+        <scope ilk="namespace" line="75" lineend="78" name="Scrollable" />
+      </scope>
+    </scope>
+    

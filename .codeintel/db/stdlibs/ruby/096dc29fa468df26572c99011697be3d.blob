@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/simple_markup/preprocess">
+      <scope ilk="namespace" line="1" lineend="68" name="SM">
+        <scope classrefs="Object" doc="Handle common directives that can occur in a block of text:" ilk="class" line="9" lineend="67" name="PreProcess">
+          <scope attributes="__ctor__" ilk="function" line="11" lineend="14" name="initialize" signature="initialize(input_file_name, include_path)" />
+          <scope doc="Look for common options in a chunk of text." ilk="function" line="20" lineend="35" name="handle" signature="handle(text)" />
+          <scope doc="Include a file, indenting it correctly" ilk="function" line="43" lineend="51" name="include_file" signature="include_file(name, indent)" />
+          <scope doc="Look for the given file in the directory containing the&#xA;current file, and then in each of the directories specified&#xA;in the RDOC_INCLUDE path" ilk="function" line="57" lineend="65" name="find_include_file" signature="find_include_file(name)" />
+        </scope>
+      </scope>
+    </scope>
+    

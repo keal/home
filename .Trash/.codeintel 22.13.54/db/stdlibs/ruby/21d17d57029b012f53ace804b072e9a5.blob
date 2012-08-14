@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/tablelist_tile">
+      <import line="8" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;tablelist_tile&apos;, &apos;4.2&apos;)" ilk="namespace" line="20" lineend="25" name="Tk">
+        <scope ilk="namespace" line="21" lineend="24" name="Tcllib" />
+      </scope>
+    </scope>
+    

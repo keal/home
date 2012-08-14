@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/collector">
+      <scope ilk="namespace" line="1" lineend="43" name="Test">
+        <scope ilk="namespace" line="2" lineend="42" name="Unit">
+          <scope ilk="namespace" line="3" lineend="41" name="Collector">
+            <scope attributes="__ctor__" ilk="function" line="4" lineend="6" name="initialize" signature="initialize" />
+            <scope ilk="function" line="8" lineend="15" name="filter=" signature="filter=(filters)" />
+            <scope ilk="function" line="17" lineend="21" name="add_suite" signature="add_suite(destination, suite)" />
+            <scope ilk="function" line="23" lineend="36" name="include?" signature="include?(test)" />
+            <scope ilk="function" line="38" lineend="40" name="sort" signature="sort(suites)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

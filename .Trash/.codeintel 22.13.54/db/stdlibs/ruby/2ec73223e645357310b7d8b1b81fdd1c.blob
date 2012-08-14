@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="tk/message">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/label" symbol="*" />
+      <scope classrefs="TkLabel" doc="tk/message.rb : treat message widget" ilk="class" line="7" lineend="19" name="TkMessage" />
+    </scope>
+    

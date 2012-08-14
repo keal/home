@@ -1,0 +1,33 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/parsers/parse_c">
+      <import line="96" module="rdoc/code_objects" symbol="*" />
+      <import line="97" module="rdoc/parsers/parserfactory" symbol="*" />
+      <scope doc="We attempt to parse C extension files." ilk="namespace" line="100" lineend="689" name="RDoc">
+        <scope classrefs="Object" doc="See rdoc/c_parse.rb" ilk="class" line="166" lineend="687" name="C_Parser">
+          <scope attributes="__ctor__" doc="prepare to parse a C file" ilk="function" line="175" lineend="184" name="initialize" signature="initialize(top_level, file_name, body, options, stats)" />
+          <scope doc="Extract the classes/modules and methods from a C file and&#xA;return the corresponding top-level object" ilk="function" line="188" lineend="196" name="scan" signature="scan" />
+          <scope ilk="function" line="202" lineend="207" name="progress" signature="progress(char)" />
+          <scope ilk="function" line="209" lineend="213" name="warn" signature="warn(msg)" />
+          <scope doc="remove lines that are commented out that might otherwise get&#xA;picked up when scanning for classes and methods" ilk="function" line="218" lineend="220" name="remove_commented_out_lines" signature="remove_commented_out_lines" />
+          <scope ilk="function" line="222" lineend="257" name="handle_class_module" signature="handle_class_module(var_name, class_mod, class_name, parent, in_module)" />
+          <scope ilk="function" line="262" lineend="271" name="find_class_comment" signature="find_class_comment(class_name, class_meth)" />
+          <scope ilk="function" line="275" lineend="319" name="do_classes" signature="do_classes" />
+          <scope ilk="function" line="323" lineend="341" name="do_constants" signature="do_constants" />
+          <scope ilk="function" line="345" lineend="408" name="do_methods" signature="do_methods" />
+          <scope ilk="function" line="412" lineend="421" name="do_aliases" signature="do_aliases" />
+          <scope ilk="function" line="425" lineend="442" name="handle_constants" signature="handle_constants(type, var_name, const_name, definition)" />
+          <scope ilk="function" line="446" lineend="455" name="find_const_comment" signature="find_const_comment(type, const_name)" />
+          <scope ilk="function" line="459" lineend="485" name="handle_attr" signature="handle_attr(var_name, attr_name, reader, writer)" />
+          <scope ilk="function" line="489" lineend="498" name="find_attr_comment" signature="find_attr_comment(attr_name)" />
+          <scope ilk="function" line="502" lineend="543" name="handle_method" signature="handle_method(type, var_name, meth_name, meth_body, param_count, source_file = nil)" />
+          <scope doc="Find the C code corresponding to a Ruby method" ilk="function" line="548" lineend="602" name="find_body" signature="find_body(meth_name, meth_obj, body, quiet = false)" />
+          <scope doc="If the comment block contains a section that looks like&#xA;call-seq: Array.new Array.new(10) use it for the parameters" ilk="function" line="612" lineend="623" name="find_modifiers" signature="find_modifiers(comment, meth_obj)" />
+          <scope ilk="function" line="627" lineend="632" name="find_override_comment" signature="find_override_comment(meth_name)" />
+          <scope doc="Look for includes of the form rb_include_module(rb_cArray,&#xA;rb_mEnumerable);" ilk="function" line="638" lineend="645" name="do_includes" signature="do_includes" />
+          <scope doc="Remove the /*&apos;s and leading asterisks from C comments" ilk="function" line="651" lineend="656" name="mangle_comment" signature="mangle_comment(comment)" />
+          <scope ilk="function" line="658" lineend="667" name="find_class" signature="find_class(raw_name, name)" />
+          <scope ilk="function" line="669" lineend="679" name="handle_tab_width" signature="handle_tab_width(body)" />
+          <scope doc="Remove #ifdefs that would otherwise confuse us" ilk="function" line="683" lineend="685" name="handle_ifdefs_in" signature="handle_ifdefs_in(body)" />
+        </scope>
+      </scope>
+    </scope>
+    

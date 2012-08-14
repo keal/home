@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="openssl/x509">
+      <import line="17" module="openssl" symbol="*" />
+      <scope ilk="namespace" line="19" lineend="154" name="OpenSSL">
+        <scope ilk="namespace" line="20" lineend="153" name="X509">
+          <scope classrefs="Object" ilk="class" line="21" lineend="45" name="ExtensionFactory">
+            <scope ilk="function" line="22" lineend="28" name="create_extension" signature="create_extension(*arg)" />
+            <scope ilk="function" line="30" lineend="33" name="create_ext_from_array" signature="create_ext_from_array(ary)" />
+            <scope ilk="function" line="35" lineend="40" name="create_ext_from_string" signature="create_ext_from_string(str)" />
+            <scope ilk="function" line="42" lineend="44" name="create_ext_from_hash" signature="create_ext_from_hash(hash)" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="47" lineend="62" name="Extension">
+            <scope ilk="function" line="48" lineend="53" name="to_s" signature="to_s" />
+            <scope ilk="function" line="55" lineend="57" name="to_h" signature="to_h" />
+            <scope ilk="function" line="59" lineend="61" name="to_a" signature="to_a" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="64" lineend="152" name="Name">
+            <scope ilk="namespace" line="65" lineend="137" name="RFC2253DN">
+              <scope doc="])((?:#{StringChar}|#{Pair})*)|" ilk="function" line="83" lineend="92" name="expand_pair" signature="expand_pair(str)" />
+              <scope ilk="function" line="94" lineend="99" name="expand_hexstring" signature="expand_hexstring(str)" />
+              <scope ilk="function" line="101" lineend="106" name="expand_value" signature="expand_value(str1, str2, str3)" />
+              <scope ilk="function" line="108" lineend="136" name="scan" signature="scan(dn)" />
+            </scope>
+            <scope classrefs="Object" ilk="class" line="139" lineend="151" name="self">
+              <scope ilk="function" line="140" lineend="143" name="parse_rfc2253" signature="parse_rfc2253(str, template=OBJECT_TYPE_TEMPLATE)" />
+              <scope ilk="function" line="145" lineend="148" name="parse_openssl" signature="parse_openssl(str, template=OBJECT_TYPE_TEMPLATE)" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

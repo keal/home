@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tile/tpaned">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tkextlib/tile.rb" symbol="*" />
+      <scope doc="tpaned widget by Hidetoshi NAGAI (nagai@ai.kyutech.ac.jp)" ilk="namespace" line="8" lineend="14" name="Tk">
+        <scope ilk="namespace" line="9" lineend="13" name="Tile">
+          <scope classrefs="TkWindow" ilk="class" line="10" lineend="11" name="TPaned" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="188" name="Tk::Tile::">
+        <scope attributes="__classmethod__" ilk="function" line="27" lineend="29" name="style" signature="self.style(*args)" />
+        <scope ilk="function" line="31" lineend="35" name="add" signature="add(win, keys)" />
+        <scope ilk="function" line="37" lineend="41" name="forget" signature="forget(pane)" />
+        <scope ilk="function" line="43" lineend="47" name="insert" signature="insert(pos, win, keys)" />
+        <scope ilk="function" line="49" lineend="52" name="panecget" signature="panecget(pane, slot)" />
+        <scope ilk="function" line="55" lineend="71" name="paneconfigure" signature="paneconfigure(pane, key, value=nil)" />
+        <scope ilk="function" line="75" lineend="156" name="paneconfiginfo" signature="paneconfiginfo(win)" />
+        <scope ilk="function" line="159" lineend="178" name="current_paneconfiginfo" signature="current_paneconfiginfo(win, key=nil)" />
+        <scope ilk="function" line="181" lineend="183" name="identify" signature="identify(x, y)" />
+        <scope ilk="function" line="185" lineend="187" name="sashpos" signature="sashpos(idx, newpos=None)" />
+        <import symbol="Tk::Tile::" />
+      </scope>
+    </scope>
+    

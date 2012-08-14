@@ -1,0 +1,1210 @@
+<scope ilk="blob" lang="Ruby" name="opengl">
+      <scope ilk="namespace" name="GL">
+        <scope attributes="__classmethod__" ilk="function" name="Accum" />
+        <scope attributes="__classmethod__" ilk="function" name="AlphaFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="ArrayElement" />
+        <scope attributes="__classmethod__" ilk="function" name="Begin" />
+        <scope attributes="__classmethod__" ilk="function" name="BindTexture" />
+        <scope attributes="__classmethod__" ilk="function" name="Bitmap" />
+        <scope attributes="__classmethod__" ilk="function" name="BlendFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="CallList" />
+        <scope attributes="__classmethod__" ilk="function" name="CallLists" />
+        <scope attributes="__classmethod__" ilk="function" name="Clear" />
+        <scope attributes="__classmethod__" ilk="function" name="ClearAccum" />
+        <scope attributes="__classmethod__" ilk="function" name="ClearColor" />
+        <scope attributes="__classmethod__" ilk="function" name="ClearDepth" />
+        <scope attributes="__classmethod__" ilk="function" name="ClearIndex" />
+        <scope attributes="__classmethod__" ilk="function" name="ClearStencil" />
+        <scope attributes="__classmethod__" ilk="function" name="ClipPlane" />
+        <scope attributes="__classmethod__" ilk="function" name="Color" />
+        <scope attributes="__classmethod__" ilk="function" name="Color3d" />
+        <scope attributes="__classmethod__" ilk="function" name="Color3f" />
+        <scope attributes="__classmethod__" ilk="function" name="Color3i" />
+        <scope attributes="__classmethod__" ilk="function" name="Color3s" />
+        <scope attributes="__classmethod__" ilk="function" name="Color3ub" />
+        <scope attributes="__classmethod__" ilk="function" name="Color3ui" />
+        <scope attributes="__classmethod__" ilk="function" name="Color3us" />
+        <scope attributes="__classmethod__" ilk="function" name="Color4b" />
+        <scope attributes="__classmethod__" ilk="function" name="Color4d" />
+        <scope attributes="__classmethod__" ilk="function" name="Color4f" />
+        <scope attributes="__classmethod__" ilk="function" name="Color4i" />
+        <scope attributes="__classmethod__" ilk="function" name="Color4s" />
+        <scope attributes="__classmethod__" ilk="function" name="Color4ub" />
+        <scope attributes="__classmethod__" ilk="function" name="Color4ui" />
+        <scope attributes="__classmethod__" ilk="function" name="Color4us" />
+        <scope attributes="__classmethod__" ilk="function" name="ColorMask" />
+        <scope attributes="__classmethod__" ilk="function" name="ColorMaterial" />
+        <scope attributes="__classmethod__" ilk="function" name="ColorPointer" />
+        <scope attributes="__classmethod__" ilk="function" name="CopyPixels" />
+        <scope attributes="__classmethod__" ilk="function" name="CopyTexImage1D" />
+        <scope attributes="__classmethod__" ilk="function" name="CopyTexImage2D" />
+        <scope attributes="__classmethod__" ilk="function" name="CopyTexSubImage1D" />
+        <scope attributes="__classmethod__" ilk="function" name="CopyTexSubImage2D" />
+        <scope attributes="__classmethod__" ilk="function" name="CullFace" />
+        <scope attributes="__classmethod__" ilk="function" name="DeleteLists" />
+        <scope attributes="__classmethod__" ilk="function" name="DeleteTextures" />
+        <scope attributes="__classmethod__" ilk="function" name="DepthFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="DepthMask" />
+        <scope attributes="__classmethod__" ilk="function" name="DepthRange" />
+        <scope attributes="__classmethod__" ilk="function" name="Disable" />
+        <scope attributes="__classmethod__" ilk="function" name="DisableClientState" />
+        <scope attributes="__classmethod__" ilk="function" name="DrawArrays" />
+        <scope attributes="__classmethod__" ilk="function" name="DrawBuffer" />
+        <scope attributes="__classmethod__" ilk="function" name="DrawElements" />
+        <scope attributes="__classmethod__" ilk="function" name="DrawPixels" />
+        <scope attributes="__classmethod__" ilk="function" name="EdgeFlag" />
+        <scope attributes="__classmethod__" ilk="function" name="EdgeFlagPointer" />
+        <scope attributes="__classmethod__" ilk="function" name="Enable" />
+        <scope attributes="__classmethod__" ilk="function" name="EnableClientState" />
+        <scope attributes="__classmethod__" ilk="function" name="End" />
+        <scope attributes="__classmethod__" ilk="function" name="EndList" />
+        <scope attributes="__classmethod__" ilk="function" name="EvalCoord1d" />
+        <scope attributes="__classmethod__" ilk="function" name="EvalCoord2d" />
+        <scope attributes="__classmethod__" ilk="function" name="EvalMesh1" />
+        <scope attributes="__classmethod__" ilk="function" name="EvalMesh2" />
+        <scope attributes="__classmethod__" ilk="function" name="EvalPoint1" />
+        <scope attributes="__classmethod__" ilk="function" name="EvalPoint2" />
+        <scope attributes="__classmethod__" ilk="function" name="FeedbackBuffer" />
+        <scope attributes="__classmethod__" ilk="function" name="Finish" />
+        <scope attributes="__classmethod__" ilk="function" name="Flush" />
+        <scope attributes="__classmethod__" ilk="function" name="Fog" />
+        <scope attributes="__classmethod__" ilk="function" name="Fogf" />
+        <scope attributes="__classmethod__" ilk="function" name="Fogi" />
+        <scope attributes="__classmethod__" ilk="function" name="FrontFace" />
+        <scope attributes="__classmethod__" ilk="function" name="Frustum" />
+        <scope attributes="__classmethod__" ilk="function" name="GenLists" />
+        <scope attributes="__classmethod__" ilk="function" name="GenTextures" />
+        <scope attributes="__classmethod__" ilk="function" name="GetDoublev" />
+        <scope attributes="__classmethod__" ilk="function" name="GetError" />
+        <scope attributes="__classmethod__" ilk="function" name="GetMaterial" />
+        <scope attributes="__classmethod__" ilk="function" name="GetPolygonStipple" />
+        <scope attributes="__classmethod__" ilk="function" name="GetString" />
+        <scope attributes="__classmethod__" ilk="function" name="Hint" />
+        <scope attributes="__classmethod__" ilk="function" name="Index" />
+        <scope attributes="__classmethod__" ilk="function" name="IndexMask" />
+        <scope attributes="__classmethod__" ilk="function" name="IndexPointer" />
+        <scope attributes="__classmethod__" ilk="function" name="Indexd" />
+        <scope attributes="__classmethod__" ilk="function" name="Indexi" />
+        <scope attributes="__classmethod__" ilk="function" name="InitNames" />
+        <scope attributes="__classmethod__" ilk="function" name="InterleavedArrays" />
+        <scope attributes="__classmethod__" ilk="function" name="IsEnabled" />
+        <scope attributes="__classmethod__" ilk="function" name="IsList" />
+        <scope attributes="__classmethod__" ilk="function" name="IsTexture" />
+        <scope attributes="__classmethod__" ilk="function" name="Light" />
+        <scope attributes="__classmethod__" ilk="function" name="LightModel" />
+        <scope attributes="__classmethod__" ilk="function" name="LightModelf" />
+        <scope attributes="__classmethod__" ilk="function" name="LightModeli" />
+        <scope attributes="__classmethod__" ilk="function" name="Lightf" />
+        <scope attributes="__classmethod__" ilk="function" name="Lightfv" />
+        <scope attributes="__classmethod__" ilk="function" name="Lighti" />
+        <scope attributes="__classmethod__" ilk="function" name="Lightiv" />
+        <scope attributes="__classmethod__" ilk="function" name="LineStipple" />
+        <scope attributes="__classmethod__" ilk="function" name="LineWidth" />
+        <scope attributes="__classmethod__" ilk="function" name="ListBase" />
+        <scope attributes="__classmethod__" ilk="function" name="LoadIdentity" />
+        <scope attributes="__classmethod__" ilk="function" name="LoadMatrix" />
+        <scope attributes="__classmethod__" ilk="function" name="LoadName" />
+        <scope attributes="__classmethod__" ilk="function" name="LogicOp" />
+        <scope attributes="__classmethod__" ilk="function" name="Map1d" />
+        <scope attributes="__classmethod__" ilk="function" name="Map2d" />
+        <scope attributes="__classmethod__" ilk="function" name="MapGrid1d" />
+        <scope attributes="__classmethod__" ilk="function" name="MapGrid2d" />
+        <scope attributes="__classmethod__" ilk="function" name="Material" />
+        <scope attributes="__classmethod__" ilk="function" name="Materialf" />
+        <scope attributes="__classmethod__" ilk="function" name="Materiali" />
+        <scope attributes="__classmethod__" ilk="function" name="MatrixMode" />
+        <scope attributes="__classmethod__" ilk="function" name="MultMatrix" />
+        <scope attributes="__classmethod__" ilk="function" name="NewList" />
+        <scope attributes="__classmethod__" ilk="function" name="Normal" />
+        <scope attributes="__classmethod__" ilk="function" name="Normal3d" />
+        <scope attributes="__classmethod__" ilk="function" name="Normal3i" />
+        <scope attributes="__classmethod__" ilk="function" name="NormalPointer" />
+        <scope attributes="__classmethod__" ilk="function" name="Ortho" />
+        <scope attributes="__classmethod__" ilk="function" name="PassThrough" />
+        <scope attributes="__classmethod__" ilk="function" name="PixelStore" />
+        <scope attributes="__classmethod__" ilk="function" name="PixelStoref" />
+        <scope attributes="__classmethod__" ilk="function" name="PixelStorei" />
+        <scope attributes="__classmethod__" ilk="function" name="PixelTransfer" />
+        <scope attributes="__classmethod__" ilk="function" name="PixelTransferf" />
+        <scope attributes="__classmethod__" ilk="function" name="PixelTransferi" />
+        <scope attributes="__classmethod__" ilk="function" name="PixelZoom" />
+        <scope attributes="__classmethod__" ilk="function" name="PointSize" />
+        <scope attributes="__classmethod__" ilk="function" name="PolygonMode" />
+        <scope attributes="__classmethod__" ilk="function" name="PolygonOffset" />
+        <scope attributes="__classmethod__" ilk="function" name="PolygonStipple" />
+        <scope attributes="__classmethod__" ilk="function" name="PopAttrib" />
+        <scope attributes="__classmethod__" ilk="function" name="PopClientAttrib" />
+        <scope attributes="__classmethod__" ilk="function" name="PopMatrix" />
+        <scope attributes="__classmethod__" ilk="function" name="PopName" />
+        <scope attributes="__classmethod__" ilk="function" name="PushAttrib" />
+        <scope attributes="__classmethod__" ilk="function" name="PushClientAttrib" />
+        <scope attributes="__classmethod__" ilk="function" name="PushMatrix" />
+        <scope attributes="__classmethod__" ilk="function" name="PushName" />
+        <scope attributes="__classmethod__" ilk="function" name="RasterPos" />
+        <scope attributes="__classmethod__" ilk="function" name="RasterPos2d" />
+        <scope attributes="__classmethod__" ilk="function" name="RasterPos2i" />
+        <scope attributes="__classmethod__" ilk="function" name="RasterPos3d" />
+        <scope attributes="__classmethod__" ilk="function" name="RasterPos3i" />
+        <scope attributes="__classmethod__" ilk="function" name="RasterPos4d" />
+        <scope attributes="__classmethod__" ilk="function" name="RasterPos4i" />
+        <scope attributes="__classmethod__" ilk="function" name="ReadBuffer" />
+        <scope attributes="__classmethod__" ilk="function" name="ReadPixels" />
+        <scope attributes="__classmethod__" ilk="function" name="Rect" />
+        <scope attributes="__classmethod__" ilk="function" name="Rectd" />
+        <scope attributes="__classmethod__" ilk="function" name="Recti" />
+        <scope attributes="__classmethod__" ilk="function" name="RenderMode" />
+        <scope attributes="__classmethod__" ilk="function" name="Rotate" />
+        <scope attributes="__classmethod__" ilk="function" name="Rotated" />
+        <scope attributes="__classmethod__" ilk="function" name="Scale" />
+        <scope attributes="__classmethod__" ilk="function" name="Scaled" />
+        <scope attributes="__classmethod__" ilk="function" name="Scissor" />
+        <scope attributes="__classmethod__" ilk="function" name="SelectBuffer" />
+        <scope attributes="__classmethod__" ilk="function" name="ShadeModel" />
+        <scope attributes="__classmethod__" ilk="function" name="StencilFunc" />
+        <scope attributes="__classmethod__" ilk="function" name="StencilMask" />
+        <scope attributes="__classmethod__" ilk="function" name="StencilOp" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord1d" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord1f" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord1i" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord1s" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord2d" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord2f" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord2i" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord2s" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord3d" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord3f" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord3i" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord3s" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord4d" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord4f" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord4i" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoord4s" />
+        <scope attributes="__classmethod__" ilk="function" name="TexCoordPointer" />
+        <scope attributes="__classmethod__" ilk="function" name="TexEnv" />
+        <scope attributes="__classmethod__" ilk="function" name="TexEnvf" />
+        <scope attributes="__classmethod__" ilk="function" name="TexEnvi" />
+        <scope attributes="__classmethod__" ilk="function" name="TexGen" />
+        <scope attributes="__classmethod__" ilk="function" name="TexGend" />
+        <scope attributes="__classmethod__" ilk="function" name="TexGeni" />
+        <scope attributes="__classmethod__" ilk="function" name="TexImage2D" />
+        <scope attributes="__classmethod__" ilk="function" name="TexParameter" />
+        <scope attributes="__classmethod__" ilk="function" name="TexParameterf" />
+        <scope attributes="__classmethod__" ilk="function" name="TexParameteri" />
+        <scope attributes="__classmethod__" ilk="function" name="TexSubImage2D" />
+        <scope attributes="__classmethod__" ilk="function" name="Translate" />
+        <scope attributes="__classmethod__" ilk="function" name="Translated" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex2d" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex2f" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex2i" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex3d" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex3f" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex3i" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex4d" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex4f" />
+        <scope attributes="__classmethod__" ilk="function" name="Vertex4i" />
+        <scope attributes="__classmethod__" ilk="function" name="VertexPointer" />
+        <scope attributes="__classmethod__" ilk="function" name="Viewport" />
+        <scope ilk="function" name="&lt;" />
+        <scope ilk="function" name="&lt;=" />
+        <scope ilk="function" name="&lt;=&gt;" />
+        <scope ilk="function" name="==" />
+        <scope ilk="function" name="===" />
+        <scope ilk="function" name="&gt;" />
+        <scope ilk="function" name="&gt;=" />
+        <scope ilk="function" name="Accum" />
+        <scope ilk="function" name="AlphaFunc" />
+        <scope ilk="function" name="ArrayElement" />
+        <scope ilk="function" name="Begin" />
+        <scope ilk="function" name="BindTexture" />
+        <scope ilk="function" name="Bitmap" />
+        <scope ilk="function" name="BlendFunc" />
+        <scope ilk="function" name="CallList" />
+        <scope ilk="function" name="CallLists" />
+        <scope ilk="function" name="Clear" />
+        <scope ilk="function" name="ClearAccum" />
+        <scope ilk="function" name="ClearColor" />
+        <scope ilk="function" name="ClearDepth" />
+        <scope ilk="function" name="ClearIndex" />
+        <scope ilk="function" name="ClearStencil" />
+        <scope ilk="function" name="ClipPlane" />
+        <scope ilk="function" name="Color" />
+        <scope ilk="function" name="Color3d" />
+        <scope ilk="function" name="Color3f" />
+        <scope ilk="function" name="Color3i" />
+        <scope ilk="function" name="Color3s" />
+        <scope ilk="function" name="Color3ub" />
+        <scope ilk="function" name="Color3ui" />
+        <scope ilk="function" name="Color3us" />
+        <scope ilk="function" name="Color4b" />
+        <scope ilk="function" name="Color4d" />
+        <scope ilk="function" name="Color4f" />
+        <scope ilk="function" name="Color4i" />
+        <scope ilk="function" name="Color4s" />
+        <scope ilk="function" name="Color4ub" />
+        <scope ilk="function" name="Color4ui" />
+        <scope ilk="function" name="Color4us" />
+        <scope ilk="function" name="ColorMask" />
+        <scope ilk="function" name="ColorMaterial" />
+        <scope ilk="function" name="ColorPointer" />
+        <scope ilk="function" name="CopyPixels" />
+        <scope ilk="function" name="CopyTexImage1D" />
+        <scope ilk="function" name="CopyTexImage2D" />
+        <scope ilk="function" name="CopyTexSubImage1D" />
+        <scope ilk="function" name="CopyTexSubImage2D" />
+        <scope ilk="function" name="CullFace" />
+        <scope ilk="function" name="DeleteLists" />
+        <scope ilk="function" name="DeleteTextures" />
+        <scope ilk="function" name="DepthFunc" />
+        <scope ilk="function" name="DepthMask" />
+        <scope ilk="function" name="DepthRange" />
+        <scope ilk="function" name="Disable" />
+        <scope ilk="function" name="DisableClientState" />
+        <scope ilk="function" name="DrawArrays" />
+        <scope ilk="function" name="DrawBuffer" />
+        <scope ilk="function" name="DrawElements" />
+        <scope ilk="function" name="DrawPixels" />
+        <scope ilk="function" name="EdgeFlag" />
+        <scope ilk="function" name="EdgeFlagPointer" />
+        <scope ilk="function" name="Enable" />
+        <scope ilk="function" name="EnableClientState" />
+        <scope ilk="function" name="End" />
+        <scope ilk="function" name="EndList" />
+        <scope ilk="function" name="EvalCoord1d" />
+        <scope ilk="function" name="EvalCoord2d" />
+        <scope ilk="function" name="EvalMesh1" />
+        <scope ilk="function" name="EvalMesh2" />
+        <scope ilk="function" name="EvalPoint1" />
+        <scope ilk="function" name="EvalPoint2" />
+        <scope ilk="function" name="FeedbackBuffer" />
+        <scope ilk="function" name="Finish" />
+        <scope ilk="function" name="Flush" />
+        <scope ilk="function" name="Fog" />
+        <scope ilk="function" name="Fogf" />
+        <scope ilk="function" name="Fogi" />
+        <scope ilk="function" name="FrontFace" />
+        <scope ilk="function" name="Frustum" />
+        <scope ilk="function" name="GenLists" />
+        <scope ilk="function" name="GenTextures" />
+        <scope ilk="function" name="GetDoublev" />
+        <scope ilk="function" name="GetError" />
+        <scope ilk="function" name="GetMaterial" />
+        <scope ilk="function" name="GetPolygonStipple" />
+        <scope ilk="function" name="GetString" />
+        <scope ilk="function" name="Hint" />
+        <scope ilk="function" name="Index" />
+        <scope ilk="function" name="IndexMask" />
+        <scope ilk="function" name="IndexPointer" />
+        <scope ilk="function" name="Indexd" />
+        <scope ilk="function" name="Indexi" />
+        <scope ilk="function" name="InitNames" />
+        <scope ilk="function" name="InterleavedArrays" />
+        <scope ilk="function" name="IsEnabled" />
+        <scope ilk="function" name="IsList" />
+        <scope ilk="function" name="IsTexture" />
+        <scope ilk="function" name="Light" />
+        <scope ilk="function" name="LightModel" />
+        <scope ilk="function" name="LightModelf" />
+        <scope ilk="function" name="LightModeli" />
+        <scope ilk="function" name="Lightf" />
+        <scope ilk="function" name="Lightfv" />
+        <scope ilk="function" name="Lighti" />
+        <scope ilk="function" name="Lightiv" />
+        <scope ilk="function" name="LineStipple" />
+        <scope ilk="function" name="LineWidth" />
+        <scope ilk="function" name="ListBase" />
+        <scope ilk="function" name="LoadIdentity" />
+        <scope ilk="function" name="LoadMatrix" />
+        <scope ilk="function" name="LoadName" />
+        <scope ilk="function" name="LogicOp" />
+        <scope ilk="function" name="Map1d" />
+        <scope ilk="function" name="Map2d" />
+        <scope ilk="function" name="MapGrid1d" />
+        <scope ilk="function" name="MapGrid2d" />
+        <scope ilk="function" name="Material" />
+        <scope ilk="function" name="Materialf" />
+        <scope ilk="function" name="Materiali" />
+        <scope ilk="function" name="MatrixMode" />
+        <scope ilk="function" name="MultMatrix" />
+        <scope ilk="function" name="NewList" />
+        <scope ilk="function" name="Normal" />
+        <scope ilk="function" name="Normal3d" />
+        <scope ilk="function" name="Normal3i" />
+        <scope ilk="function" name="NormalPointer" />
+        <scope ilk="function" name="Ortho" />
+        <scope ilk="function" name="PassThrough" />
+        <scope ilk="function" name="PixelStore" />
+        <scope ilk="function" name="PixelStoref" />
+        <scope ilk="function" name="PixelStorei" />
+        <scope ilk="function" name="PixelTransfer" />
+        <scope ilk="function" name="PixelTransferf" />
+        <scope ilk="function" name="PixelTransferi" />
+        <scope ilk="function" name="PixelZoom" />
+        <scope ilk="function" name="PointSize" />
+        <scope ilk="function" name="PolygonMode" />
+        <scope ilk="function" name="PolygonOffset" />
+        <scope ilk="function" name="PolygonStipple" />
+        <scope ilk="function" name="PopAttrib" />
+        <scope ilk="function" name="PopClientAttrib" />
+        <scope ilk="function" name="PopMatrix" />
+        <scope ilk="function" name="PopName" />
+        <scope ilk="function" name="PushAttrib" />
+        <scope ilk="function" name="PushClientAttrib" />
+        <scope ilk="function" name="PushMatrix" />
+        <scope ilk="function" name="PushName" />
+        <scope ilk="function" name="RasterPos" />
+        <scope ilk="function" name="RasterPos2d" />
+        <scope ilk="function" name="RasterPos2i" />
+        <scope ilk="function" name="RasterPos3d" />
+        <scope ilk="function" name="RasterPos3i" />
+        <scope ilk="function" name="RasterPos4d" />
+        <scope ilk="function" name="RasterPos4i" />
+        <scope ilk="function" name="ReadBuffer" />
+        <scope ilk="function" name="ReadPixels" />
+        <scope ilk="function" name="Rect" />
+        <scope ilk="function" name="Rectd" />
+        <scope ilk="function" name="Recti" />
+        <scope ilk="function" name="RenderMode" />
+        <scope ilk="function" name="Rotate" />
+        <scope ilk="function" name="Rotated" />
+        <scope ilk="function" name="Scale" />
+        <scope ilk="function" name="Scaled" />
+        <scope ilk="function" name="Scissor" />
+        <scope ilk="function" name="SelectBuffer" />
+        <scope ilk="function" name="ShadeModel" />
+        <scope ilk="function" name="StencilFunc" />
+        <scope ilk="function" name="StencilMask" />
+        <scope ilk="function" name="StencilOp" />
+        <scope ilk="function" name="TexCoord" />
+        <scope ilk="function" name="TexCoord1d" />
+        <scope ilk="function" name="TexCoord1f" />
+        <scope ilk="function" name="TexCoord1i" />
+        <scope ilk="function" name="TexCoord1s" />
+        <scope ilk="function" name="TexCoord2d" />
+        <scope ilk="function" name="TexCoord2f" />
+        <scope ilk="function" name="TexCoord2i" />
+        <scope ilk="function" name="TexCoord2s" />
+        <scope ilk="function" name="TexCoord3d" />
+        <scope ilk="function" name="TexCoord3f" />
+        <scope ilk="function" name="TexCoord3i" />
+        <scope ilk="function" name="TexCoord3s" />
+        <scope ilk="function" name="TexCoord4d" />
+        <scope ilk="function" name="TexCoord4f" />
+        <scope ilk="function" name="TexCoord4i" />
+        <scope ilk="function" name="TexCoord4s" />
+        <scope ilk="function" name="TexCoordPointer" />
+        <scope ilk="function" name="TexEnv" />
+        <scope ilk="function" name="TexEnvf" />
+        <scope ilk="function" name="TexEnvi" />
+        <scope ilk="function" name="TexGen" />
+        <scope ilk="function" name="TexGend" />
+        <scope ilk="function" name="TexGeni" />
+        <scope ilk="function" name="TexImage2D" />
+        <scope ilk="function" name="TexParameter" />
+        <scope ilk="function" name="TexParameterf" />
+        <scope ilk="function" name="TexParameteri" />
+        <scope ilk="function" name="TexSubImage2D" />
+        <scope ilk="function" name="Translate" />
+        <scope ilk="function" name="Translated" />
+        <scope ilk="function" name="Vertex" />
+        <scope ilk="function" name="Vertex2d" />
+        <scope ilk="function" name="Vertex2f" />
+        <scope ilk="function" name="Vertex2i" />
+        <scope ilk="function" name="Vertex3d" />
+        <scope ilk="function" name="Vertex3f" />
+        <scope ilk="function" name="Vertex3i" />
+        <scope ilk="function" name="Vertex4d" />
+        <scope ilk="function" name="Vertex4f" />
+        <scope ilk="function" name="Vertex4i" />
+        <scope ilk="function" name="VertexPointer" />
+        <scope ilk="function" name="Viewport" />
+        <scope ilk="function" name="ancestors" />
+        <scope ilk="function" name="autoload" />
+        <scope ilk="function" name="autoload?" />
+        <scope ilk="function" name="class_eval" />
+        <scope ilk="function" name="class_variables" />
+        <scope ilk="function" name="const_defined?" />
+        <scope ilk="function" name="const_get" />
+        <scope ilk="function" name="const_missing" />
+        <scope ilk="function" name="const_set" />
+        <scope ilk="function" name="constants" />
+        <scope ilk="function" name="freeze" />
+        <scope ilk="function" name="include?" />
+        <scope ilk="function" name="included_modules" />
+        <scope ilk="function" name="instance_method" />
+        <scope ilk="function" name="instance_methods" />
+        <scope ilk="function" name="method_defined?" />
+        <scope ilk="function" name="module_eval" />
+        <scope ilk="function" name="name" />
+        <scope ilk="function" name="private_class_method" />
+        <scope ilk="function" name="private_instance_methods" />
+        <scope ilk="function" name="private_method_defined?" />
+        <scope ilk="function" name="protected_instance_methods" />
+        <scope ilk="function" name="protected_method_defined?" />
+        <scope ilk="function" name="public_class_method" />
+        <scope ilk="function" name="public_instance_methods" />
+        <scope ilk="function" name="public_method_defined?" />
+        <scope ilk="function" name="to_s" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACCUM" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACCUM_ALPHA_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACCUM_BLUE_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACCUM_BUFFER_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACCUM_CLEAR_VALUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACCUM_GREEN_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="ACCUM_RED_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="ADD" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALL_ATTRIB_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALL_CLIENT_ATTRIB_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA12" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA16" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA4" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA8" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA_BIAS" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA_SCALE" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA_TEST" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA_TEST_FUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALPHA_TEST_REF" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALWAYS" />
+        <variable attributes="__const__" citdl="Fixnum" name="AMBIENT" />
+        <variable attributes="__const__" citdl="Fixnum" name="AMBIENT_AND_DIFFUSE" />
+        <variable attributes="__const__" citdl="Fixnum" name="AND" />
+        <variable attributes="__const__" citdl="Fixnum" name="AND_INVERTED" />
+        <variable attributes="__const__" citdl="Fixnum" name="AND_REVERSE" />
+        <variable attributes="__const__" citdl="Fixnum" name="ATTRIB_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="AUTO_NORMAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="AUX0" />
+        <variable attributes="__const__" citdl="Fixnum" name="AUX1" />
+        <variable attributes="__const__" citdl="Fixnum" name="AUX2" />
+        <variable attributes="__const__" citdl="Fixnum" name="AUX3" />
+        <variable attributes="__const__" citdl="Fixnum" name="AUX_BUFFERS" />
+        <variable attributes="__const__" citdl="Fixnum" name="BACK" />
+        <variable attributes="__const__" citdl="Fixnum" name="BACK_LEFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="BACK_RIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="BITMAP" />
+        <variable attributes="__const__" citdl="Fixnum" name="BITMAP_TOKEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="BLEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BLEND_DST" />
+        <variable attributes="__const__" citdl="Fixnum" name="BLEND_SRC" />
+        <variable attributes="__const__" citdl="Fixnum" name="BLUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="BLUE_BIAS" />
+        <variable attributes="__const__" citdl="Fixnum" name="BLUE_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="BLUE_SCALE" />
+        <variable attributes="__const__" citdl="Fixnum" name="BYTE" />
+        <variable attributes="__const__" citdl="Fixnum" name="C3F_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="C4F_N3F_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="C4UB_V2F" />
+        <variable attributes="__const__" citdl="Fixnum" name="C4UB_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="CCW" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLAMP" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLEAR" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIENT_ATTRIB_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIENT_PIXEL_STORE_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIENT_VERTEX_ARRAY_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIP_PLANE0" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIP_PLANE1" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIP_PLANE2" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIP_PLANE3" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIP_PLANE4" />
+        <variable attributes="__const__" citdl="Fixnum" name="CLIP_PLANE5" />
+        <variable attributes="__const__" citdl="Fixnum" name="COEFF" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_ARRAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_ARRAY_POINTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_ARRAY_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_ARRAY_STRIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_ARRAY_TYPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_BUFFER_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_CLEAR_VALUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_INDEXES" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_LOGIC_OP" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_MATERIAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_MATERIAL_FACE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_MATERIAL_PARAMETER" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_WRITEMASK" />
+        <variable attributes="__const__" citdl="Fixnum" name="COMPILE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COMPILE_AND_EXECUTE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CONSTANT_ATTENUATION" />
+        <variable attributes="__const__" citdl="Fixnum" name="COPY" />
+        <variable attributes="__const__" citdl="Fixnum" name="COPY_INVERTED" />
+        <variable attributes="__const__" citdl="Fixnum" name="COPY_PIXEL_TOKEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="CULL_FACE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CULL_FACE_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_NORMAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_RASTER_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_RASTER_DISTANCE" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_RASTER_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_RASTER_POSITION" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_RASTER_POSITION_VALID" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_RASTER_TEXTURE_COORDS" />
+        <variable attributes="__const__" citdl="Fixnum" name="CURRENT_TEXTURE_COORDS" />
+        <variable attributes="__const__" citdl="Fixnum" name="CW" />
+        <variable attributes="__const__" citdl="Fixnum" name="DECAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="DECR" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_BIAS" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_BUFFER_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_CLEAR_VALUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_COMPONENT" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_FUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_RANGE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_SCALE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_TEST" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEPTH_WRITEMASK" />
+        <variable attributes="__const__" citdl="Fixnum" name="DIFFUSE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DITHER" />
+        <variable attributes="__const__" citdl="Fixnum" name="DOMAIN" />
+        <variable attributes="__const__" citdl="Fixnum" name="DONT_CARE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DOUBLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DOUBLEBUFFER" />
+        <variable attributes="__const__" citdl="Fixnum" name="DRAW_BUFFER" />
+        <variable attributes="__const__" citdl="Fixnum" name="DRAW_PIXEL_TOKEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="DST_ALPHA" />
+        <variable attributes="__const__" citdl="Fixnum" name="DST_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="EDGE_FLAG" />
+        <variable attributes="__const__" citdl="Fixnum" name="EDGE_FLAG_ARRAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="EDGE_FLAG_ARRAY_POINTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="EDGE_FLAG_ARRAY_STRIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="EMISSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="ENABLE_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EQUAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="EQUIV" />
+        <variable attributes="__const__" citdl="Fixnum" name="EVAL_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXP" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXP2" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXTENSIONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="EYE_LINEAR" />
+        <variable attributes="__const__" citdl="Fixnum" name="EYE_PLANE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FALSE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FASTEST" />
+        <variable attributes="__const__" citdl="Fixnum" name="FEEDBACK" />
+        <variable attributes="__const__" citdl="Fixnum" name="FEEDBACK_BUFFER_POINTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="FEEDBACK_BUFFER_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FEEDBACK_BUFFER_TYPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FILL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FLAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="FLOAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG_DENSITY" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG_HINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FOG_START" />
+        <variable attributes="__const__" citdl="Fixnum" name="FRONT" />
+        <variable attributes="__const__" citdl="Fixnum" name="FRONT_AND_BACK" />
+        <variable attributes="__const__" citdl="Fixnum" name="FRONT_FACE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FRONT_LEFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="FRONT_RIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="GEQUAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="GL_2D" />
+        <variable attributes="__const__" citdl="Fixnum" name="GL_2_BYTES" />
+        <variable attributes="__const__" citdl="Fixnum" name="GL_3D" />
+        <variable attributes="__const__" citdl="Fixnum" name="GL_3D_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="GL_3D_COLOR_TEXTURE" />
+        <variable attributes="__const__" citdl="Fixnum" name="GL_3_BYTES" />
+        <variable attributes="__const__" citdl="Fixnum" name="GL_4D_COLOR_TEXTURE" />
+        <variable attributes="__const__" citdl="Fixnum" name="GL_4_BYTES" />
+        <variable attributes="__const__" citdl="Fixnum" name="GREATER" />
+        <variable attributes="__const__" citdl="Fixnum" name="GREEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="GREEN_BIAS" />
+        <variable attributes="__const__" citdl="Fixnum" name="GREEN_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="GREEN_SCALE" />
+        <variable attributes="__const__" citdl="Fixnum" name="HINT_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="INCR" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_ARRAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_ARRAY_POINTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_ARRAY_STRIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_ARRAY_TYPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_CLEAR_VALUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_LOGIC_OP" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_OFFSET" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_SHIFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="INDEX_WRITEMASK" />
+        <variable attributes="__const__" citdl="Fixnum" name="INT" />
+        <variable attributes="__const__" citdl="Fixnum" name="INTENSITY" />
+        <variable attributes="__const__" citdl="Fixnum" name="INTENSITY12" />
+        <variable attributes="__const__" citdl="Fixnum" name="INTENSITY16" />
+        <variable attributes="__const__" citdl="Fixnum" name="INTENSITY4" />
+        <variable attributes="__const__" citdl="Fixnum" name="INTENSITY8" />
+        <variable attributes="__const__" citdl="Fixnum" name="INVALID_ENUM" />
+        <variable attributes="__const__" citdl="Fixnum" name="INVALID_OPERATION" />
+        <variable attributes="__const__" citdl="Fixnum" name="INVALID_VALUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="INVERT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEEP" />
+        <variable attributes="__const__" citdl="Fixnum" name="LEFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="LEQUAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="LESS" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT0" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT1" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT2" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT3" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT4" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT5" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT6" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT7" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHTING" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHTING_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT_MODEL_AMBIENT" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT_MODEL_LOCAL_VIEWER" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIGHT_MODEL_TWO_SIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINEAR" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINEAR_ATTENUATION" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINEAR_MIPMAP_LINEAR" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINEAR_MIPMAP_NEAREST" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINES" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_LOOP" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_RESET_TOKEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_SMOOTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_SMOOTH_HINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_STIPPLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_STIPPLE_PATTERN" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_STIPPLE_REPEAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_STRIP" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_TOKEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_WIDTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_WIDTH_GRANULARITY" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE_WIDTH_RANGE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIST_BASE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIST_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIST_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LIST_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOAD" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOGIC_OP" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOGIC_OP_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE12" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE12_ALPHA12" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE12_ALPHA4" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE16" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE16_ALPHA16" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE4" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE4_ALPHA4" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE6_ALPHA2" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE8" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE8_ALPHA8" />
+        <variable attributes="__const__" citdl="Fixnum" name="LUMINANCE_ALPHA" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_COLOR_4" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_GRID_DOMAIN" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_GRID_SEGMENTS" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_NORMAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_TEXTURE_COORD_1" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_TEXTURE_COORD_2" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_TEXTURE_COORD_3" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_TEXTURE_COORD_4" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_VERTEX_3" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_VERTEX_4" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_COLOR_4" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_GRID_DOMAIN" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_GRID_SEGMENTS" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_NORMAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_TEXTURE_COORD_1" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_TEXTURE_COORD_2" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_TEXTURE_COORD_3" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_TEXTURE_COORD_4" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_VERTEX_3" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP2_VERTEX_4" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP_STENCIL" />
+        <variable attributes="__const__" citdl="Fixnum" name="MATRIX_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_ATTRIB_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_CLIP_PLANES" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_EVAL_ORDER" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_LIGHTS" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_LIST_NESTING" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_MODELVIEW_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_NAME_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_PIXEL_MAP_TABLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_PROJECTION_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_TEXTURE_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_TEXTURE_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_VIEWPORT_DIMS" />
+        <variable attributes="__const__" citdl="Fixnum" name="MODELVIEW" />
+        <variable attributes="__const__" citdl="Fixnum" name="MODELVIEW_MATRIX" />
+        <variable attributes="__const__" citdl="Fixnum" name="MODELVIEW_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="MODULATE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MULT" />
+        <variable attributes="__const__" citdl="Fixnum" name="N3F_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="NAME_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="NAND" />
+        <variable attributes="__const__" citdl="Fixnum" name="NEAREST" />
+        <variable attributes="__const__" citdl="Fixnum" name="NEAREST_MIPMAP_LINEAR" />
+        <variable attributes="__const__" citdl="Fixnum" name="NEAREST_MIPMAP_NEAREST" />
+        <variable attributes="__const__" citdl="Fixnum" name="NEVER" />
+        <variable attributes="__const__" citdl="Fixnum" name="NICEST" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONE" />
+        <variable attributes="__const__" citdl="Fixnum" name="NOOP" />
+        <variable attributes="__const__" citdl="Fixnum" name="NOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="NORMALIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="NORMAL_ARRAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="NORMAL_ARRAY_POINTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="NORMAL_ARRAY_STRIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="NORMAL_ARRAY_TYPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="NOTEQUAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="OBJECT_LINEAR" />
+        <variable attributes="__const__" citdl="Fixnum" name="OBJECT_PLANE" />
+        <variable attributes="__const__" citdl="Fixnum" name="ONE" />
+        <variable attributes="__const__" citdl="Fixnum" name="ONE_MINUS_DST_ALPHA" />
+        <variable attributes="__const__" citdl="Fixnum" name="ONE_MINUS_DST_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="ONE_MINUS_SRC_ALPHA" />
+        <variable attributes="__const__" citdl="Fixnum" name="ONE_MINUS_SRC_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="OR" />
+        <variable attributes="__const__" citdl="Fixnum" name="ORDER" />
+        <variable attributes="__const__" citdl="Fixnum" name="OR_INVERTED" />
+        <variable attributes="__const__" citdl="Fixnum" name="OR_REVERSE" />
+        <variable attributes="__const__" citdl="Fixnum" name="OUT_OF_MEMORY" />
+        <variable attributes="__const__" citdl="Fixnum" name="PACK_ALIGNMENT" />
+        <variable attributes="__const__" citdl="Fixnum" name="PACK_LSB_FIRST" />
+        <variable attributes="__const__" citdl="Fixnum" name="PACK_ROW_LENGTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="PACK_SKIP_PIXELS" />
+        <variable attributes="__const__" citdl="Fixnum" name="PACK_SKIP_ROWS" />
+        <variable attributes="__const__" citdl="Fixnum" name="PACK_SWAP_BYTES" />
+        <variable attributes="__const__" citdl="Fixnum" name="PASS_THROUGH_TOKEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="PERSPECTIVE_CORRECTION_HINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_A_TO_A" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_A_TO_A_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_B_TO_B" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_B_TO_B_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_G_TO_G" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_G_TO_G_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_A" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_A_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_B" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_B_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_G" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_G_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_I" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_I_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_R" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_I_TO_R_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_R_TO_R" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_R_TO_R_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_S_TO_S" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MAP_S_TO_S_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="PIXEL_MODE_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINTS" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT_SIZE_GRANULARITY" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT_SIZE_RANGE" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT_SMOOTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT_SMOOTH_HINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT_TOKEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_OFFSET_FACTOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_OFFSET_FILL" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_OFFSET_LINE" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_OFFSET_POINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_OFFSET_UNITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_SMOOTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_SMOOTH_HINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_STIPPLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_STIPPLE_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="POLYGON_TOKEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="POSITION" />
+        <variable attributes="__const__" citdl="Fixnum" name="PROJECTION" />
+        <variable attributes="__const__" citdl="Fixnum" name="PROJECTION_MATRIX" />
+        <variable attributes="__const__" citdl="Fixnum" name="PROJECTION_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="PROXY_TEXTURE_1D" />
+        <variable attributes="__const__" citdl="Fixnum" name="PROXY_TEXTURE_2D" />
+        <variable attributes="__const__" citdl="Fixnum" name="Q" />
+        <variable attributes="__const__" citdl="Fixnum" name="QUADRATIC_ATTENUATION" />
+        <variable attributes="__const__" citdl="Fixnum" name="QUADS" />
+        <variable attributes="__const__" citdl="Fixnum" name="QUAD_STRIP" />
+        <variable attributes="__const__" citdl="Fixnum" name="R" />
+        <variable attributes="__const__" citdl="Fixnum" name="R3_G3_B2" />
+        <variable attributes="__const__" citdl="Fixnum" name="READ_BUFFER" />
+        <variable attributes="__const__" citdl="Fixnum" name="RED" />
+        <variable attributes="__const__" citdl="Fixnum" name="RED_BIAS" />
+        <variable attributes="__const__" citdl="Fixnum" name="RED_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="RED_SCALE" />
+        <variable attributes="__const__" citdl="Fixnum" name="RENDER" />
+        <variable attributes="__const__" citdl="Fixnum" name="RENDERER" />
+        <variable attributes="__const__" citdl="Fixnum" name="RENDER_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="REPEAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="REPLACE" />
+        <variable attributes="__const__" citdl="Fixnum" name="RETURN" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB10" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB10_A2" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB12" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB16" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB4" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB5" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB5_A1" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGB8" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGBA" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGBA12" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGBA16" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGBA2" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGBA4" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGBA8" />
+        <variable attributes="__const__" citdl="Fixnum" name="RGBA_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="RIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="S" />
+        <variable attributes="__const__" citdl="Fixnum" name="SCISSOR_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="SCISSOR_BOX" />
+        <variable attributes="__const__" citdl="Fixnum" name="SCISSOR_TEST" />
+        <variable attributes="__const__" citdl="Fixnum" name="SELECT" />
+        <variable attributes="__const__" citdl="Fixnum" name="SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="SHADE_MODEL" />
+        <variable attributes="__const__" citdl="Fixnum" name="SHININESS" />
+        <variable attributes="__const__" citdl="Fixnum" name="SHORT" />
+        <variable attributes="__const__" citdl="Fixnum" name="SMOOTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="SPECULAR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SPHERE_MAP" />
+        <variable attributes="__const__" citdl="Fixnum" name="SPOT_CUTOFF" />
+        <variable attributes="__const__" citdl="Fixnum" name="SPOT_DIRECTION" />
+        <variable attributes="__const__" citdl="Fixnum" name="SPOT_EXPONENT" />
+        <variable attributes="__const__" citdl="Fixnum" name="SRC_ALPHA" />
+        <variable attributes="__const__" citdl="Fixnum" name="SRC_ALPHA_SATURATE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SRC_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="STACK_OVERFLOW" />
+        <variable attributes="__const__" citdl="Fixnum" name="STACK_UNDERFLOW" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_BUFFER_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_CLEAR_VALUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_FAIL" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_FUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_INDEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_PASS_DEPTH_FAIL" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_PASS_DEPTH_PASS" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_REF" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_TEST" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_VALUE_MASK" />
+        <variable attributes="__const__" citdl="Fixnum" name="STENCIL_WRITEMASK" />
+        <variable attributes="__const__" citdl="Fixnum" name="STEREO" />
+        <variable attributes="__const__" citdl="Fixnum" name="SUBPIXEL_BITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="T" />
+        <variable attributes="__const__" citdl="Fixnum" name="T2F_C3F_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="T2F_C4F_N3F_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="T2F_C4UB_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="T2F_N3F_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="T2F_V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="T4F_C4F_N3F_V4F" />
+        <variable attributes="__const__" citdl="Fixnum" name="T4F_V4F" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_1D" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_2D" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_ALPHA_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_BINDING_1D" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_BINDING_2D" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_BLUE_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_BORDER" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_BORDER_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_COMPONENTS" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_COORD_ARRAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_COORD_ARRAY_POINTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_COORD_ARRAY_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_COORD_ARRAY_STRIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_COORD_ARRAY_TYPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_ENV" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_ENV_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_ENV_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_GEN_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_GEN_Q" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_GEN_R" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_GEN_S" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_GEN_T" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_GREEN_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_HEIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_INTENSITY_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_INTERNAL_FORMAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_LUMINANCE_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_MAG_FILTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_MATRIX" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_MIN_FILTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_PRIORITY" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_RED_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_RESIDENT" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_STACK_DEPTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_WIDTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_WRAP_S" />
+        <variable attributes="__const__" citdl="Fixnum" name="TEXTURE_WRAP_T" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRANSFORM_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRIANGLES" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRIANGLE_FAN" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRIANGLE_STRIP" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNPACK_ALIGNMENT" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNPACK_LSB_FIRST" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNPACK_ROW_LENGTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNPACK_SKIP_PIXELS" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNPACK_SKIP_ROWS" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNPACK_SWAP_BYTES" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNSIGNED_BYTE" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNSIGNED_INT" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNSIGNED_SHORT" />
+        <variable attributes="__const__" citdl="Fixnum" name="V2F" />
+        <variable attributes="__const__" citdl="Fixnum" name="V3F" />
+        <variable attributes="__const__" citdl="Fixnum" name="VENDOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="VERSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="VERTEX_ARRAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="VERTEX_ARRAY_POINTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="VERTEX_ARRAY_SIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="VERTEX_ARRAY_STRIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="VERTEX_ARRAY_TYPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIEWPORT" />
+        <variable attributes="__const__" citdl="Fixnum" name="VIEWPORT_BIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="XOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="ZERO" />
+        <variable attributes="__const__" citdl="Fixnum" name="ZOOM_X" />
+        <variable attributes="__const__" citdl="Fixnum" name="ZOOM_Y" />
+      </scope>
+      <scope ilk="namespace" name="GLU">
+        <scope attributes="__classmethod__" ilk="function" name="BeginCurve" />
+        <scope attributes="__classmethod__" ilk="function" name="BeginPolygon" />
+        <scope attributes="__classmethod__" ilk="function" name="BeginSurface" />
+        <scope attributes="__classmethod__" ilk="function" name="BeginTrim" />
+        <scope attributes="__classmethod__" ilk="function" name="Build2DMipmaps" />
+        <scope attributes="__classmethod__" ilk="function" name="Cylinder" />
+        <scope attributes="__classmethod__" ilk="function" name="DeleteNurbsRenderer" />
+        <scope attributes="__classmethod__" ilk="function" name="DeleteQuadric" />
+        <scope attributes="__classmethod__" ilk="function" name="DeleteTess" />
+        <scope attributes="__classmethod__" ilk="function" name="Disk" />
+        <scope attributes="__classmethod__" ilk="function" name="EndCurve" />
+        <scope attributes="__classmethod__" ilk="function" name="EndPolygon" />
+        <scope attributes="__classmethod__" ilk="function" name="EndSurface" />
+        <scope attributes="__classmethod__" ilk="function" name="EndTrim" />
+        <scope attributes="__classmethod__" ilk="function" name="ErrorString" />
+        <scope attributes="__classmethod__" ilk="function" name="GetNurbsProperty" />
+        <scope attributes="__classmethod__" ilk="function" name="GetString" />
+        <scope attributes="__classmethod__" ilk="function" name="GetTessProperty" />
+        <scope attributes="__classmethod__" ilk="function" name="LookAt" />
+        <scope attributes="__classmethod__" ilk="function" name="NewNurbsRenderer" />
+        <scope attributes="__classmethod__" ilk="function" name="NewQuadric" />
+        <scope attributes="__classmethod__" ilk="function" name="NewTess" />
+        <scope attributes="__classmethod__" ilk="function" name="NextContour" />
+        <scope attributes="__classmethod__" ilk="function" name="NurbsCurve" />
+        <scope attributes="__classmethod__" ilk="function" name="NurbsProperty" />
+        <scope attributes="__classmethod__" ilk="function" name="NurbsSurface" />
+        <scope attributes="__classmethod__" ilk="function" name="Ortho2D" />
+        <scope attributes="__classmethod__" ilk="function" name="PartialDisk" />
+        <scope attributes="__classmethod__" ilk="function" name="Perspective" />
+        <scope attributes="__classmethod__" ilk="function" name="PickMatrix" />
+        <scope attributes="__classmethod__" ilk="function" name="Project" />
+        <scope attributes="__classmethod__" ilk="function" name="PwlCurve" />
+        <scope attributes="__classmethod__" ilk="function" name="QuadricDrawStyle" />
+        <scope attributes="__classmethod__" ilk="function" name="QuadricNormals" />
+        <scope attributes="__classmethod__" ilk="function" name="QuadricOrientation" />
+        <scope attributes="__classmethod__" ilk="function" name="QuadricTexture" />
+        <scope attributes="__classmethod__" ilk="function" name="ScaleImage" />
+        <scope attributes="__classmethod__" ilk="function" name="Sphere" />
+        <scope attributes="__classmethod__" ilk="function" name="TessBeginContour" />
+        <scope attributes="__classmethod__" ilk="function" name="TessBeginPolygon" />
+        <scope attributes="__classmethod__" ilk="function" name="TessCallback" />
+        <scope attributes="__classmethod__" ilk="function" name="TessEndContour" />
+        <scope attributes="__classmethod__" ilk="function" name="TessEndPolygon" />
+        <scope attributes="__classmethod__" ilk="function" name="TessNormal" />
+        <scope attributes="__classmethod__" ilk="function" name="TessProperty" />
+        <scope attributes="__classmethod__" ilk="function" name="TessVertex" />
+        <scope attributes="__classmethod__" ilk="function" name="UnProject" />
+        <scope ilk="function" name="&lt;" />
+        <scope ilk="function" name="&lt;=" />
+        <scope ilk="function" name="&lt;=&gt;" />
+        <scope ilk="function" name="==" />
+        <scope ilk="function" name="===" />
+        <scope ilk="function" name="&gt;" />
+        <scope ilk="function" name="&gt;=" />
+        <scope ilk="function" name="BeginCurve" />
+        <scope ilk="function" name="BeginPolygon" />
+        <scope ilk="function" name="BeginSurface" />
+        <scope ilk="function" name="BeginTrim" />
+        <scope ilk="function" name="Build2DMipmaps" />
+        <scope ilk="function" name="Cylinder" />
+        <scope ilk="function" name="DeleteNurbsRenderer" />
+        <scope ilk="function" name="DeleteQuadric" />
+        <scope ilk="function" name="DeleteTess" />
+        <scope ilk="function" name="Disk" />
+        <scope ilk="function" name="EndCurve" />
+        <scope ilk="function" name="EndPolygon" />
+        <scope ilk="function" name="EndSurface" />
+        <scope ilk="function" name="EndTrim" />
+        <scope ilk="function" name="ErrorString" />
+        <scope ilk="function" name="GetNurbsProperty" />
+        <scope ilk="function" name="GetString" />
+        <scope ilk="function" name="GetTessProperty" />
+        <scope ilk="function" name="LookAt" />
+        <scope ilk="function" name="NewNurbsRenderer" />
+        <scope ilk="function" name="NewQuadric" />
+        <scope ilk="function" name="NewTess" />
+        <scope ilk="function" name="NextContour" />
+        <scope ilk="function" name="NurbsCurve" />
+        <scope ilk="function" name="NurbsProperty" />
+        <scope ilk="function" name="NurbsSurface" />
+        <scope ilk="function" name="Ortho2D" />
+        <scope ilk="function" name="PartialDisk" />
+        <scope ilk="function" name="Perspective" />
+        <scope ilk="function" name="PickMatrix" />
+        <scope ilk="function" name="Project" />
+        <scope ilk="function" name="PwlCurve" />
+        <scope ilk="function" name="QuadricDrawStyle" />
+        <scope ilk="function" name="QuadricNormals" />
+        <scope ilk="function" name="QuadricOrientation" />
+        <scope ilk="function" name="QuadricTexture" />
+        <scope ilk="function" name="ScaleImage" />
+        <scope ilk="function" name="Sphere" />
+        <scope ilk="function" name="TessBeginContour" />
+        <scope ilk="function" name="TessBeginPolygon" />
+        <scope ilk="function" name="TessCallback" />
+        <scope ilk="function" name="TessEndContour" />
+        <scope ilk="function" name="TessEndPolygon" />
+        <scope ilk="function" name="TessNormal" />
+        <scope ilk="function" name="TessProperty" />
+        <scope ilk="function" name="TessVertex" />
+        <scope ilk="function" name="UnProject" />
+        <scope ilk="function" name="ancestors" />
+        <scope ilk="function" name="autoload" />
+        <scope ilk="function" name="autoload?" />
+        <scope ilk="function" name="class_eval" />
+        <scope ilk="function" name="class_variables" />
+        <scope ilk="function" name="const_defined?" />
+        <scope ilk="function" name="const_get" />
+        <scope ilk="function" name="const_missing" />
+        <scope ilk="function" name="const_set" />
+        <scope ilk="function" name="constants" />
+        <scope ilk="function" name="freeze" />
+        <scope ilk="function" name="include?" />
+        <scope ilk="function" name="included_modules" />
+        <scope ilk="function" name="instance_method" />
+        <scope ilk="function" name="instance_methods" />
+        <scope ilk="function" name="method_defined?" />
+        <scope ilk="function" name="module_eval" />
+        <scope ilk="function" name="name" />
+        <scope ilk="function" name="private_class_method" />
+        <scope ilk="function" name="private_instance_methods" />
+        <scope ilk="function" name="private_method_defined?" />
+        <scope ilk="function" name="protected_instance_methods" />
+        <scope ilk="function" name="protected_method_defined?" />
+        <scope ilk="function" name="public_class_method" />
+        <scope ilk="function" name="public_instance_methods" />
+        <scope ilk="function" name="public_method_defined?" />
+        <scope ilk="function" name="to_s" />
+        <variable attributes="__const__" citdl="Fixnum" name="AUTO_LOAD_MATRIX" />
+        <variable attributes="__const__" citdl="Fixnum" name="CCW" />
+        <variable attributes="__const__" citdl="Fixnum" name="CULLING" />
+        <variable attributes="__const__" citdl="Fixnum" name="CW" />
+        <variable attributes="__const__" citdl="Fixnum" name="DISPLAY_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="DOMAIN_DISTANCE" />
+        <variable attributes="__const__" citdl="Fixnum" name="EDGE_FLAG" />
+        <variable attributes="__const__" citdl="Fixnum" name="ERROR" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXTENSIONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXTERIOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="FILL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FLAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="INCOMPATIBLE_GL_VERSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="INSIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="INTERIOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="INVALID_ENUM" />
+        <variable attributes="__const__" citdl="Fixnum" name="INVALID_VALUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="LINE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_TRIM_2" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAP1_TRIM_3" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONE" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR1" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR10" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR11" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR12" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR13" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR14" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR15" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR16" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR17" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR18" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR19" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR2" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR20" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR21" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR22" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR23" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR24" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR25" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR26" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR27" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR28" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR29" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR3" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR30" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR31" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR32" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR33" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR34" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR35" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR36" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR37" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR4" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR5" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR6" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR7" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR8" />
+        <variable attributes="__const__" citdl="Fixnum" name="NURBS_ERROR9" />
+        <variable attributes="__const__" citdl="Fixnum" name="OUTLINE_PATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="OUTLINE_POLYGON" />
+        <variable attributes="__const__" citdl="Fixnum" name="OUTSIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="OUT_OF_MEMORY" />
+        <variable attributes="__const__" citdl="Fixnum" name="PARAMETRIC_ERROR" />
+        <variable attributes="__const__" citdl="Fixnum" name="PATH_LENGTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="POINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="SAMPLING_METHOD" />
+        <variable attributes="__const__" citdl="Fixnum" name="SAMPLING_TOLERANCE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SILHOUETTE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SMOOTH" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_BEGIN" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_BEGIN_DATA" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_BOUNDARY_ONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_COMBINE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_COMBINE_DATA" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_EDGE_FLAG" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_EDGE_FLAG_DATA" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_END_DATA" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR1" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR2" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR3" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR4" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR5" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR6" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR7" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR8" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_ERROR_DATA" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_TOLERANCE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_VERTEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_VERTEX_DATA" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_WINDING_ABS_GEQ_TWO" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_WINDING_NEGATIVE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_WINDING_NONZERO" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_WINDING_ODD" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_WINDING_POSITIVE" />
+        <variable attributes="__const__" citdl="Fixnum" name="TESS_WINDING_RULE" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNKNOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="U_STEP" />
+        <variable attributes="__const__" citdl="Fixnum" name="VERSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="VERTEX" />
+        <variable attributes="__const__" citdl="Fixnum" name="V_STEP" />
+      </scope>
+      <scope classrefs="Object" ilk="class" name="Nurbs" />
+      <scope classrefs="Object" ilk="class" name="Quadric" />
+      <scope classrefs="Object" ilk="class" name="Tess" />
+    </scope>
+    

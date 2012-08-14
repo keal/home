@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/import">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="wsdl/importer" symbol="*" />
+      <scope doc="WSDL4R - WSDL import definition." ilk="namespace" line="13" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="77" name="Import">
+        <scope ilk="function" line="17" lineend="17" name="namespace" />
+        <scope ilk="function" line="18" lineend="18" name="location" />
+        <scope ilk="function" line="19" lineend="19" name="content" />
+        <scope attributes="__ctor__" ilk="function" line="21" lineend="27" name="initialize" signature="initialize" />
+        <scope ilk="function" line="29" lineend="37" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="39" lineend="70" name="parse_attr" signature="parse_attr(attr, value)" />
+        <scope ilk="function" line="74" lineend="76" name="import" signature="import(location)" />
+      </scope>
+    </scope>
+    

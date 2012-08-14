@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="cgi/session">
+      <import line="26" module="cgi" symbol="*" />
+      <import line="27" module="tmpdir" symbol="*" />
+      <scope classrefs="Object" doc="cgi/session.rb - session support for cgi scripts" ilk="class" line="29" lineend="488" name="CGI">
+        <scope classrefs="Object" doc="Class representing an HTTP session." ilk="class" line="156" lineend="487" name="Session">
+          <scope classrefs="RuntimeError" ilk="class" line="158" lineend="159" name="NoSession" />
+          <scope ilk="function" line="162" lineend="162" name="session_id" />
+          <scope ilk="function" line="162" lineend="162" name="new_session" />
+          <scope attributes="__classmethod__" doc="The id of this session." ilk="function" line="164" lineend="168" name="callback" signature="Session::callback(dbman)" />
+          <scope doc="Create a new session id." ilk="function" line="176" lineend="187" name="create_new_id" signature="create_new_id">
+            <import line="177" module="digest/md5" symbol="*" />
+          </scope>
+          <scope attributes="__ctor__" doc="Create a new CGI::Session object for +request+." ilk="function" line="246" lineend="300" name="initialize" signature="initialize(request, option={})" />
+          <scope doc="Retrieve the session data for key +key+." ilk="function" line="303" lineend="308" name="[]" signature="[](key" />
+          <scope doc="Set the session date for key +key+." ilk="function" line="311" lineend="319" name="[]=" signature="[]=(key" />
+          <scope doc="Store session data on the server." ilk="function" line="323" lineend="325" name="update" signature="update" />
+          <scope doc="Store session data on the server and close the session&#xA;storage." ilk="function" line="329" lineend="332" name="close" signature="close" />
+          <scope doc="Delete the session from storage. Also closes the storage." ilk="function" line="338" lineend="341" name="delete" signature="delete" />
+          <scope classrefs="Object" doc="File-based session storage class." ilk="class" line="349" lineend="436" name="FileStore">
+            <scope attributes="__ctor__" doc="Create a new FileStore instance." ilk="function" line="375" lineend="389" name="initialize" signature="initialize(session, option={})">
+              <import line="380" module="digest/md5" symbol="*" />
+            </scope>
+            <scope doc="Restore session state from the session&apos;s FileStore file." ilk="function" line="394" lineend="410" name="restore" signature="restore" />
+            <scope doc="Save session state to the session&apos;s FileStore file." ilk="function" line="413" lineend="424" name="update" signature="update" />
+            <scope doc="Update and close the session&apos;s FileStore file." ilk="function" line="427" lineend="429" name="close" signature="close" />
+            <scope doc="Close and delete the session&apos;s FileStore file." ilk="function" line="432" lineend="435" name="delete" signature="delete" />
+          </scope>
+          <scope classrefs="Object" doc="In-memory session storage class." ilk="class" line="443" lineend="486" name="MemoryStore">
+            <scope attributes="__ctor__" doc=":nodoc: Create a new MemoryStore instance." ilk="function" line="451" lineend="459" name="initialize" signature="initialize(session, option=nil)" />
+            <scope doc="Restore session state." ilk="function" line="464" lineend="466" name="restore" signature="restore" />
+            <scope doc="Update session state." ilk="function" line="471" lineend="473" name="update" signature="update" />
+            <scope doc="Close session storage." ilk="function" line="478" lineend="480" name="close" signature="close" />
+            <scope doc="Delete the session state." ilk="function" line="483" lineend="485" name="delete" signature="delete" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

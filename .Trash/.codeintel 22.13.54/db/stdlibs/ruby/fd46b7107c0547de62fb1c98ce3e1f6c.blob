@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="tkpalette">
+      <import line="4" module="tk/palette" symbol="*" />
+    </scope>
+    

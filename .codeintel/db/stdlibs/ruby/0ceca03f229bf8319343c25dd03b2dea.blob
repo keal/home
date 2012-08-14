@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="tk/scale">
+      <import line="4" module="tk" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/scale.rb : treat scale widget" ilk="class" line="6" lineend="86" name="TkScale">
+        <scope ilk="function" line="11" lineend="24" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="27" lineend="29" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="32" lineend="40" name="_wrap_command_arg" signature="_wrap_command_arg(cmd)" />
+        <scope ilk="function" line="43" lineend="45" name="configure_cmd" signature="configure_cmd(slot, value)" />
+        <scope ilk="function" line="47" lineend="56" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="58" lineend="60" name="command" signature="command(cmd=Proc.new)" />
+        <scope ilk="function" line="62" lineend="64" name="get" signature="get(x=None, y=None)" />
+        <scope ilk="function" line="66" lineend="68" name="coords" signature="coords(val=None)" />
+        <scope ilk="function" line="70" lineend="72" name="identify" signature="identify(x, y)" />
+        <scope ilk="function" line="74" lineend="76" name="set" signature="set(val)" />
+        <scope ilk="function" line="78" lineend="80" name="value" signature="value" />
+        <scope ilk="function" line="82" lineend="85" name="value=" signature="value= (val)" />
+      </scope>
+    </scope>
+    

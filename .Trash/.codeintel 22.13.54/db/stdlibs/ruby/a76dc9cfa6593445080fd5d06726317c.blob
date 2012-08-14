@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="tk/autoload">
+      <scope doc="autoload" ilk="function" line="8" name="TkGrid" signature="TkGrid(*args)" />
+      <scope ilk="function" line="11" name="TkPack" signature="TkPack(*args)" />
+      <scope ilk="function" line="14" name="TkPlace" signature="TkPlace(*args)" />
+      <scope doc="sub-module of Tk" ilk="namespace" line="177" lineend="196" name="Tk">
+        <scope attributes="__classmethod__" ilk="function" line="189" name="EncodedString" signature="Tk.EncodedString(str, enc = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="192" name="BinaryString" signature="Tk.BinaryString(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="195" name="UTF8_String" signature="Tk.UTF8_String(str)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,64 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/assertions">
+      <import line="5" module="test/unit/assertionfailederror" symbol="*" />
+      <import line="6" module="test/unit/util/backtracefilter" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="8" lineend="472" name="Test">
+        <scope ilk="namespace" line="9" lineend="471" name="Unit">
+          <scope doc="Contains all of the standard Test::Unit assertions." ilk="namespace" line="22" lineend="470" name="Assertions">
+            <scope doc="The assertion upon which all other assertions are based." ilk="function" line="27" lineend="33" name="assert_block" signature="assert_block(message=&quot;assert_block failed.&quot;)" />
+            <scope doc="Passes if boolean is true." ilk="function" line="37" lineend="42" name="assert" signature="assert(boolean, message=nil)" />
+            <scope doc="Passes if expected == actual." ilk="function" line="49" lineend="55" name="assert_equal" signature="assert_equal(expected, actual, message=nil)" />
+            <scope ilk="function" line="58" lineend="64" name="_check_exception_class" signature="_check_exception_class(args)" />
+            <scope ilk="function" line="67" lineend="70" name="_expected_exception?" signature="_expected_exception?(actual_exception, exceptions, modules)" />
+            <scope doc="Passes if block raises one of the given exceptions." ilk="function" line="74" lineend="97" name="assert_raise" signature="assert_raise(*args)" />
+            <scope doc="Alias of assert_raise. Will be deprecated in 1.9, and&#xA;removed in 2.0." ilk="function" line="101" lineend="103" name="assert_raises" signature="assert_raises(*args, &amp;block)" />
+            <scope doc="Passes if object.class == klass." ilk="function" line="107" lineend="117" name="assert_instance_of" signature="assert_instance_of(klass, object, message=&quot;&quot;)" />
+            <scope doc="Passes if object.nil?." ilk="function" line="121" lineend="123" name="assert_nil" signature="assert_nil(object, message=&quot;&quot;)" />
+            <scope doc="Passes if object.kind_of?(klass)." ilk="function" line="127" lineend="133" name="assert_kind_of" signature="assert_kind_of(klass, object, message=&quot;&quot;)" />
+            <scope doc="Passes if object.respond_to?(method) is true." ilk="function" line="137" lineend="151" name="assert_respond_to" signature="assert_respond_to(object, method, message=&quot;&quot;)" />
+            <scope doc="Passes if string =~ pattern." ilk="function" line="155" lineend="166" name="assert_match" signature="assert_match(pattern, string, message=&quot;&quot;)" />
+            <scope doc="Passes if actual.equal?(expected) (i.e." ilk="function" line="171" lineend="179" name="assert_same" signature="assert_same(expected, actual, message=&quot;&quot;)" />
+            <scope doc="Compares the two objects based on the passed operator." ilk="function" line="185" lineend="196" name="assert_operator" signature="assert_operator(object1, operator, object2, message=&quot;&quot;)" />
+            <scope doc="Passes if block does not raise an exception." ilk="function" line="200" lineend="220" name="assert_nothing_raised" signature="assert_nothing_raised(*args)" />
+            <scope doc="Always fails." ilk="function" line="224" lineend="226" name="flunk" signature="flunk(message=&quot;Flunked&quot;)" />
+            <scope doc="Passes if !actual.equal?(expected)." ilk="function" line="230" lineend="238" name="assert_not_same" signature="assert_not_same(expected, actual, message=&quot;&quot;)" />
+            <scope doc="Passes if expected != actual." ilk="function" line="242" lineend="245" name="assert_not_equal" signature="assert_not_equal(expected, actual, message=&quot;&quot;)" />
+            <scope doc="Passes if !object.nil?." ilk="function" line="249" lineend="252" name="assert_not_nil" signature="assert_not_nil(object, message=&quot;&quot;)" />
+            <scope doc="Passes if string !~ regularExpression." ilk="function" line="256" lineend="262" name="assert_no_match" signature="assert_no_match(regexp, string, message=&quot;&quot;)" />
+            <scope doc="` Passes if block throws symbol." ilk="function" line="269" lineend="289" name="assert_throws" signature="assert_throws(expected_symbol, message=&quot;&quot;, &amp;proc)" />
+            <scope doc="Passes if block does not throw anything." ilk="function" line="293" lineend="307" name="assert_nothing_thrown" signature="assert_nothing_thrown(message=&quot;&quot;, &amp;proc)" />
+            <scope doc="Passes if expected_float and actual_float are equal within&#xA;delta tolerance." ilk="function" line="312" lineend="325" name="assert_in_delta" signature="assert_in_delta(expected_float, actual_float, delta, message=&quot;&quot;)" />
+            <scope doc="Passes if the method sent returns a true value." ilk="function" line="329" lineend="339" name="assert_send" signature="assert_send(send_array, message=&quot;&quot;)" />
+            <scope ilk="function" line="342" lineend="345" name="build_message" signature="build_message(head, template=nil, *arguments)" />
+            <scope ilk="function" line="348" lineend="361" name="_wrap_assertion" signature="_wrap_assertion" />
+            <scope doc="Called whenever an assertion is made." ilk="function" line="365" lineend="366" name="add_assertion" signature="add_assertion" />
+            <scope attributes="__classmethod__" doc="Select whether or not to use the prettyprinter." ilk="function" line="372" lineend="374" name="use_pp=" signature="self.use_pp=(value)" />
+            <scope classrefs="Object" ilk="class" line="376" lineend="469" name="AssertionMessage">
+              <scope classrefs="Object" ilk="class" line="378" lineend="380" name="self">
+                <scope ilk="function" line="379" lineend="379" name="use_pp" />
+                <scope ilk="function" line="379" lineend="379" name="use_pp=" />
+              </scope>
+              <scope classrefs="Object" ilk="class" line="382" lineend="390" name="Literal">
+                <scope attributes="__ctor__" ilk="function" line="383" lineend="385" name="initialize" signature="initialize(value)" />
+                <scope ilk="function" line="387" lineend="389" name="inspect" signature="inspect" />
+              </scope>
+              <scope classrefs="Object" ilk="class" line="392" lineend="410" name="Template">
+                <scope attributes="__classmethod__" ilk="function" line="393" lineend="396" name="create" signature="self.create(string)" />
+                <scope ilk="function" line="398" lineend="398" name="count" />
+                <scope attributes="__ctor__" ilk="function" line="400" lineend="403" name="initialize" signature="initialize(parts)" />
+                <scope ilk="function" line="405" lineend="409" name="result" signature="result(parameters)" />
+              </scope>
+              <scope attributes="__classmethod__" ilk="function" line="412" lineend="414" name="literal" signature="self.literal(value)" />
+              <scope attributes="__ctor__" ilk="function" line="418" lineend="422" name="initialize" signature="initialize(head, template_string, parameters)" />
+              <scope ilk="function" line="424" lineend="447" name="convert" signature="convert(object)">
+                <import line="437" module="pp" symbol="*" />
+              </scope>
+              <scope ilk="function" line="449" lineend="451" name="template" signature="template" />
+              <scope ilk="function" line="453" lineend="455" name="add_period" signature="add_period(string)" />
+              <scope ilk="function" line="457" lineend="468" name="to_s" signature="to_s" />
+              <import symbol="Util::BacktraceFilter" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

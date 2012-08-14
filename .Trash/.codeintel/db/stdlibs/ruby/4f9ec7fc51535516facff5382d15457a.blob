@@ -1,0 +1,58 @@
+<scope ilk="blob" lang="Ruby" name="soap/element">
+      <import line="9" module="xsd/qname" symbol="*" />
+      <import line="10" module="soap/baseData" symbol="*" />
+      <scope doc="SOAP4R - SOAP elements library Copyright (C) 2000, 2001,&#xA;2003-2005  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="13" name="SOAP" />
+      <scope ilk="namespace" line="19" lineend="19" name="SOAPEnvelopeElement" />
+      <scope classrefs="SOAPStruct" ilk="class" line="21" lineend="92" name="SOAPFault">
+        <scope ilk="function" line="27" lineend="29" name="faultcode" signature="faultcode" />
+        <scope ilk="function" line="31" lineend="33" name="faultstring" signature="faultstring" />
+        <scope ilk="function" line="35" lineend="37" name="faultactor" signature="faultactor" />
+        <scope ilk="function" line="39" lineend="41" name="detail" signature="detail" />
+        <scope ilk="function" line="43" lineend="45" name="faultcode=" signature="faultcode=(rhs)" />
+        <scope ilk="function" line="47" lineend="49" name="faultstring=" signature="faultstring=(rhs)" />
+        <scope ilk="function" line="51" lineend="53" name="faultactor=" signature="faultactor=(rhs)" />
+        <scope ilk="function" line="55" lineend="57" name="detail=" signature="detail=(rhs)" />
+        <scope attributes="__ctor__" ilk="function" line="59" lineend="78" name="initialize" signature="initialize(faultcode = nil, faultstring = nil, faultactor = nil, detail = nil)" />
+        <scope ilk="function" line="80" lineend="91" name="encode" signature="encode(generator, ns, attrs = {})" />
+        <import symbol="SOAPEnvelopeElement" />
+        <import symbol="SOAPCompoundtype" />
+      </scope>
+      <scope classrefs="SOAPStruct" ilk="class" line="95" lineend="142" name="SOAPBody">
+        <scope attributes="__ctor__" ilk="function" line="98" lineend="112" name="initialize" signature="initialize(data = nil, is_fault = false)" />
+        <scope ilk="function" line="114" lineend="125" name="encode" signature="encode(generator, ns, attrs = {})" />
+        <scope ilk="function" line="127" lineend="141" name="root_node" signature="root_node" />
+        <import symbol="SOAPEnvelopeElement" />
+      </scope>
+      <scope classrefs="XSD::NSDBase" ilk="class" line="145" lineend="176" name="SOAPHeaderItem">
+        <scope ilk="function" line="151" lineend="151" name="element" />
+        <scope ilk="function" line="151" lineend="151" name="element=" />
+        <scope ilk="function" line="152" lineend="152" name="mustunderstand" />
+        <scope ilk="function" line="152" lineend="152" name="mustunderstand=" />
+        <scope ilk="function" line="153" lineend="153" name="encodingstyle" />
+        <scope ilk="function" line="153" lineend="153" name="encodingstyle=" />
+        <scope attributes="__ctor__" ilk="function" line="155" lineend="162" name="initialize" signature="initialize(element, mustunderstand = true, encodingstyle = nil)" />
+        <scope ilk="function" line="164" lineend="175" name="encode" signature="encode(generator, ns, attrs = {})" />
+        <import symbol="SOAPEnvelopeElement" />
+        <import symbol="SOAPCompoundtype" />
+      </scope>
+      <scope classrefs="SOAPStruct" ilk="class" line="179" lineend="208" name="SOAPHeader">
+        <scope attributes="__ctor__" ilk="function" line="182" lineend="186" name="initialize" signature="initialize" />
+        <scope ilk="function" line="188" lineend="195" name="encode" signature="encode(generator, ns, attrs = {})" />
+        <scope ilk="function" line="197" lineend="202" name="add" signature="add(name, value)" />
+        <scope ilk="function" line="204" lineend="206" name="length" signature="length" />
+        <import symbol="SOAPEnvelopeElement" />
+      </scope>
+      <scope classrefs="XSD::NSDBase" ilk="class" line="211" lineend="255" name="SOAPEnvelope">
+        <scope ilk="function" line="215" lineend="215" name="header" />
+        <scope ilk="function" line="216" lineend="216" name="body" />
+        <scope ilk="function" line="217" lineend="217" name="external_content" />
+        <scope attributes="__ctor__" ilk="function" line="219" lineend="229" name="initialize" signature="initialize(header = nil, body = nil)" />
+        <scope ilk="function" line="231" lineend="234" name="header=" signature="header=(header)" />
+        <scope ilk="function" line="236" lineend="239" name="body=" signature="body=(body)" />
+        <scope ilk="function" line="241" lineend="250" name="encode" signature="encode(generator, ns, attrs = {})" />
+        <scope ilk="function" line="252" lineend="254" name="to_ary" signature="to_ary" />
+        <import symbol="SOAPEnvelopeElement" />
+        <import symbol="SOAPCompoundtype" />
+      </scope>
+    </scope>
+    

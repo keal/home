@@ -1,0 +1,70 @@
+<scope ilk="blob" lang="Ruby" name="yaml/rubytypes">
+      <import line="2" module="date" symbol="*" />
+      <scope classrefs="Object" doc="-*- mode: ruby; ruby-indent-level: 4; tab-width: 4 -*- vim:&#xA;sw=4 ts=4" ilk="class" line="4" lineend="8" name="Class">
+        <scope ilk="function" line="5" lineend="7" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="10" lineend="23" name="Object">
+        <scope ilk="function" line="12" name="to_yaml_style" signature="to_yaml_style" />
+        <scope ilk="function" line="13" name="to_yaml_properties" signature="to_yaml_properties" />
+        <scope ilk="function" line="14" lineend="21" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="25" lineend="46" name="Hash">
+        <scope ilk="function" line="28" lineend="36" name="yaml_initialize" signature="yaml_initialize( tag, val )" />
+        <scope ilk="function" line="37" lineend="44" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="48" lineend="100" name="Struct">
+        <scope attributes="__classmethod__" ilk="function" line="50" name="yaml_tag_class_name" signature="self.yaml_tag_class_name" />
+        <scope attributes="__classmethod__" ilk="function" line="51" name="yaml_tag_read_class" signature="self.yaml_tag_read_class( name )" />
+        <scope attributes="__classmethod__" ilk="function" line="52" lineend="84" name="yaml_new" signature="self.yaml_new( klass, tag, val )" />
+        <scope ilk="function" line="85" lineend="98" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="102" lineend="115" name="Array">
+        <scope ilk="function" line="105" name="yaml_initialize" signature="yaml_initialize( tag, val )" />
+        <scope ilk="function" line="106" lineend="113" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="117" lineend="136" name="Exception">
+        <scope attributes="__classmethod__" ilk="function" line="119" lineend="125" name="yaml_new" signature="Exception.yaml_new( klass, tag, val )" />
+        <scope ilk="function" line="126" lineend="134" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="138" lineend="179" name="String">
+        <scope ilk="function" line="142" lineend="144" name="is_complex_yaml?" signature="is_complex_yaml?" />
+        <scope ilk="function" line="145" lineend="147" name="is_binary_data?" signature="is_binary_data? ( self" />
+        <scope attributes="__classmethod__" ilk="function" line="148" lineend="162" name="yaml_new" signature="String.yaml_new( klass, tag, val )" />
+        <scope ilk="function" line="163" lineend="177" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="181" lineend="197" name="Symbol">
+        <scope attributes="__classmethod__" ilk="function" line="184" lineend="191" name="yaml_new" signature="Symbol.yaml_new( klass, tag, val )" />
+        <scope ilk="function" line="192" lineend="195" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="199" lineend="251" name="Range">
+        <scope attributes="__classmethod__" ilk="function" line="201" lineend="228" name="yaml_new" signature="Range.yaml_new( klass, tag, val )" />
+        <scope ilk="function" line="229" lineend="249" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="253" lineend="298" name="Regexp">
+        <scope attributes="__classmethod__" ilk="function" line="255" lineend="277" name="yaml_new" signature="Regexp.yaml_new( klass, tag, val )" />
+        <scope ilk="function" line="278" lineend="296" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="300" lineend="345" name="Time">
+        <scope attributes="__classmethod__" ilk="function" line="303" lineend="311" name="yaml_new" signature="Time.yaml_new( klass, tag, val )" />
+        <scope ilk="function" line="312" lineend="343" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="347" lineend="354" name="Date">
+        <scope ilk="function" line="349" lineend="352" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="356" lineend="363" name="Integer">
+        <scope ilk="function" line="358" lineend="361" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="365" lineend="380" name="Float">
+        <scope ilk="function" line="367" lineend="378" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="382" lineend="389" name="TrueClass">
+        <scope ilk="function" line="384" lineend="387" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="391" lineend="398" name="FalseClass">
+        <scope ilk="function" line="393" lineend="396" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="400" lineend="407" name="NilClass">
+        <scope ilk="function" line="402" lineend="405" name="to_yaml" signature="to_yaml( opts = {} )" />
+      </scope>
+    </scope>
+    

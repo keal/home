@@ -1,0 +1,98 @@
+<scope ilk="blob" lang="Ruby" name="pathname">
+      <scope classrefs="Object" ilk="class" name="Pathname">
+        <scope attributes="__classmethod__" doc="See Dir.getwd. Returns the current working directory as a&#xA;Pathname." ilk="function" name="getwd" signature="()" />
+        <scope attributes="__classmethod__" doc="See Dir.glob. Returns or yields Pathname objects." ilk="function" name="glob" signature="(*args) {|p| ...}" />
+        <scope attributes="__classmethod__ __ctor__" doc="Create a Pathname object from the given String (or String-&#xA;like object). If path contains a NUL character (\0), an&#xA;ArgumentError is raised." ilk="function" name="new" signature="(path)" />
+        <scope doc="Pathname#+ appends a pathname fragment to this one to&#xA;produce a new Pathname object." ilk="function" name="+" signature="(other)" />
+        <scope doc="Provides for comparing pathnames, case-sensitively." ilk="function" name="&lt;=&gt;" signature="(other)" />
+        <scope doc="Compare this pathname with other. The comparison is string-&#xA;based." ilk="function" name="==" signature="(other)" />
+        <scope doc="Alias for #==" ilk="function" name="===" signature="(other)" />
+        <scope doc="Predicate method for testing whether a path is absolute. It&#xA;returns true if the pathname begins with a slash." ilk="function" name="absolute?" signature="()" />
+        <scope doc="See File.atime. Returns last access time." ilk="function" name="atime" signature="()" />
+        <scope doc="See File.basename. Returns the last component of the path." ilk="function" name="basename" signature="(*args)" />
+        <scope doc="See FileTest.blockdev?." ilk="function" name="blockdev?" signature="()" />
+        <scope doc="See FileTest.chardev?." ilk="function" name="chardev?" signature="()" />
+        <scope doc="Pathname#chdir is *obsoleted* at 1.8.1." ilk="function" name="chdir" signature="(&amp;block)" />
+        <scope doc="Returns the children of the directory (files and&#xA;subdirectories, not recursive) as an array of Pathname&#xA;objects. By default, the returned pathnames will have enough&#xA;information to access the files." ilk="function" name="children" signature="(with_directory=true)" />
+        <scope doc="See File.chmod. Changes permissions." ilk="function" name="chmod" signature="(mode)" />
+        <scope doc="See File.chown. Change owner and group of file." ilk="function" name="chown" signature="(owner, group)" />
+        <scope doc="Pathname#chroot is *obsoleted* at 1.8.1." ilk="function" name="chroot" signature="()" />
+        <scope doc="Returns clean pathname of self with consecutive slashes and&#xA;useless dots removed. The filesystem is not accessed." ilk="function" name="cleanpath" signature="(consider_symlink=false)" />
+        <scope attributes="private" doc="Clean the path simply by resolving and removing excess &quot;.&quot;&#xA;and &quot;..&quot; entries. Nothing more, nothing less." ilk="function" name="cleanpath_aggressive" signature="()" />
+        <scope attributes="private" ilk="function" name="cleanpath_conservative" signature="()" />
+        <scope doc="See File.ctime. Returns last (directory entry, not file)&#xA;change time." ilk="function" name="ctime" signature="()" />
+        <scope doc="Alias for #unlink" ilk="function" name="delete" signature="()" />
+        <scope doc="Pathname#dir_foreach is *obsoleted* at 1.8.1." ilk="function" name="dir_foreach" signature="(*args, &amp;block)" />
+        <scope doc="See FileTest.directory?." ilk="function" name="directory?" signature="()" />
+        <scope doc="See File.dirname. Returns all but the last component of the&#xA;path." ilk="function" name="dirname" signature="()" />
+        <scope doc="Iterates over the entries (files and subdirectories) in the&#xA;directory. It yields a Pathname object for each entry." ilk="function" name="each_entry" signature="() {|p| ...}" />
+        <scope doc="Iterates over each component of the path." ilk="function" name="each_filename" signature="( {|s| ...}" />
+        <scope doc="#each_line iterates over the line in the file. It yields a&#xA;String object for each line." ilk="function" name="each_line" signature="(*args) {|line| ...}" />
+        <scope doc="Return the entries (files and subdirectories) in the&#xA;directory, each as a Pathname object." ilk="function" name="entries" signature="()" />
+        <scope doc="Alias for #==" ilk="function" name="eql?" signature="(other)" />
+        <scope doc="See FileTest.executable?." ilk="function" name="executable?" signature="()" />
+        <scope doc="See FileTest.executable_real?." ilk="function" name="executable_real?" signature="()" />
+        <scope doc="See FileTest.exist?." ilk="function" name="exist?" signature="()" />
+        <scope doc="See File.expand_path." ilk="function" name="expand_path" signature="(*args)" />
+        <scope doc="See File.extname. Returns the file&apos;s extension." ilk="function" name="extname" signature="()" />
+        <scope doc="See FileTest.file?." ilk="function" name="file?" signature="()" />
+        <scope doc="Pathname#find is an iterator to traverse a directory tree in&#xA;a depth first manner. It yields a Pathname for each file&#xA;under &quot;this&quot; directory." ilk="function" name="find" signature="() {|p| ...}" />
+        <scope doc="See File.fnmatch. Return true if the receiver matches the&#xA;given pattern." ilk="function" name="fnmatch" signature="(pattern, *args)" />
+        <scope doc="See File.fnmatch? (same as #fnmatch)." ilk="function" name="fnmatch?" signature="(pattern, *args)" />
+        <scope doc="This method is *obsoleted* at 1.8.1. Use #each_line or&#xA;#each_entry." ilk="function" name="foreach" signature="(*args, &amp;block)" />
+        <scope doc="Pathname#foreachline is *obsoleted* at 1.8.1. Use&#xA;#each_line." ilk="function" name="foreachline" signature="(*args, &amp;block)" />
+        <scope ilk="function" name="freeze" signature="()" />
+        <scope doc="See File.ftype. Returns &quot;type&quot; of file (&quot;file&quot;, &quot;directory&quot;,&#xA;etc)." ilk="function" name="ftype" signature="()" />
+        <scope doc="See FileTest.grpowned?." ilk="function" name="grpowned?" signature="()" />
+        <scope doc="Pathname#join joins pathnames." ilk="function" name="join" signature="(*args)" />
+        <scope doc="See File.lchmod." ilk="function" name="lchmod" signature="(mode)" />
+        <scope doc="See File.lchown." ilk="function" name="lchown" signature="(owner, group)" />
+        <scope doc="Pathname#link is confusing and *obsoleted* because the&#xA;receiver/argument order is inverted to corresponding system&#xA;call." ilk="function" name="link" signature="(old)" />
+        <scope doc="See File.lstat." ilk="function" name="lstat" signature="()" />
+        <scope doc="See File.link. Creates a hard link." ilk="function" name="make_link" signature="(old)" />
+        <scope doc="See File.symlink. Creates a symbolic link." ilk="function" name="make_symlink" signature="(old)" />
+        <scope doc="See Dir.mkdir. Create the referenced directory." ilk="function" name="mkdir" signature="(*args)" />
+        <scope doc="See FileUtils.mkpath. Creates a full path, including any&#xA;intermediate directories that don&apos;t yet exist." ilk="function" name="mkpath" signature="()" />
+        <scope doc="#mountpoint? returns true if self points to a mountpoint." ilk="function" name="mountpoint?" signature="()" />
+        <scope doc="See File.mtime. Returns last modification time." ilk="function" name="mtime" signature="()" />
+        <scope doc="See File.open. Opens the file for reading or writing." ilk="function" name="open" signature="(*args) {|file| ...}" />
+        <scope doc="See Dir.open." ilk="function" name="opendir" signature="() {|dir| ...}" />
+        <scope doc="See FileTest.owned?." ilk="function" name="owned?" signature="()" />
+        <scope doc="#parent returns the parent directory." ilk="function" name="parent" signature="()" />
+        <scope doc="See FileTest.pipe?." ilk="function" name="pipe?" signature="()" />
+        <scope doc="See IO.read. Returns all the bytes from the file, or the&#xA;first N if specified." ilk="function" name="read" signature="(*args)" />
+        <scope doc="See FileTest.readable?." ilk="function" name="readable?" signature="()" />
+        <scope doc="See FileTest.readable_real?." ilk="function" name="readable_real?" signature="()" />
+        <scope doc="See IO.readlines. Returns all the lines from the file." ilk="function" name="readlines" signature="(*args)" />
+        <scope doc="See File.readlink. Read symbolic link." ilk="function" name="readlink" signature="()" />
+        <scope doc="Returns a real (absolute) pathname of self in the actual&#xA;filesystem. The real pathname doesn&apos;t contain symlinks or&#xA;useless dots." ilk="function" name="realpath" signature="(*args)" />
+        <scope doc="The opposite of #absolute?" ilk="function" name="relative?" signature="()" />
+        <scope doc="#relative_path_from returns a relative path from the&#xA;argument to the receiver. If self is absolute, the argument&#xA;must be absolute too." ilk="function" name="relative_path_from" signature="(base_directory)" />
+        <scope doc="See File.rename. Rename the file." ilk="function" name="rename" signature="(to)" />
+        <scope doc="See Dir.rmdir. Remove the referenced directory." ilk="function" name="rmdir" signature="()" />
+        <scope doc="See FileUtils.rm_r. Deletes a directory and all beneath it." ilk="function" name="rmtree" signature="()" />
+        <scope doc="#root? is a predicate for root directories. I.e." ilk="function" name="root?" signature="()" />
+        <scope doc="See FileTest.setgid?." ilk="function" name="setgid?" signature="()" />
+        <scope doc="See FileTest.setuid?." ilk="function" name="setuid?" signature="()" />
+        <scope doc="See FileTest.size." ilk="function" name="size" signature="()" />
+        <scope doc="See FileTest.size?." ilk="function" name="size?" signature="()" />
+        <scope doc="See FileTest.socket?." ilk="function" name="socket?" signature="()" />
+        <scope doc="See File.split. Returns the #dirname and the #basename in an&#xA;Array." ilk="function" name="split" signature="()" />
+        <scope doc="See File.stat. Returns a File::Stat object." ilk="function" name="stat" signature="()" />
+        <scope doc="See FileTest.sticky?." ilk="function" name="sticky?" signature="()" />
+        <scope doc="Pathname#symlink is confusing and *obsoleted* because the&#xA;receiver/argument order is inverted to corresponding system&#xA;call." ilk="function" name="symlink" signature="(old)" />
+        <scope doc="See FileTest.symlink?." ilk="function" name="symlink?" signature="()" />
+        <scope doc="See IO.sysopen." ilk="function" name="sysopen" signature="(*args)" />
+        <scope ilk="function" name="taint" signature="()" />
+        <scope doc="Return the path as a String." ilk="function" name="to_s" signature="()" />
+        <scope doc="Alias for #to_s" ilk="function" name="to_str" signature="()" />
+        <scope doc="See File.truncate. Truncate the file to length bytes." ilk="function" name="truncate" signature="(length)" />
+        <scope doc="Removes a file or directory, using File.unlink or Dir.unlink&#xA;as necessary." ilk="function" name="unlink" signature="()" />
+        <scope ilk="function" name="untaint" signature="()" />
+        <scope doc="See File.utime. Update the access and modification times." ilk="function" name="utime" signature="(atime, mtime)" />
+        <scope doc="See FileTest.writable?." ilk="function" name="writable?" signature="()" />
+        <scope doc="See FileTest.writable_real?." ilk="function" name="writable_real?" signature="()" />
+        <scope doc="See FileTest.zero?." ilk="function" name="zero?" signature="()" />
+      </scope>
+    </scope>
+    

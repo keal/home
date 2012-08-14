@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tktrans">
+      <import line="5" module="tk" symbol="*" />
+      <import line="8" module="tkextlib/setup.rb" symbol="*" />
+      <import line="11" module="tkextlib/tktrans/setup.rb" symbol="*" />
+      <import line="14" module="tkextlib/tktrans/tktrans" symbol="*" />
+    </scope>
+    

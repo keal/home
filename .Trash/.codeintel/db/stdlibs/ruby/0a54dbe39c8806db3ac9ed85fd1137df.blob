@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="md5">
+      <import line="6" module="digest/md5" symbol="*" />
+      <scope classrefs="Object" doc="just for compatibility; requiring &quot;md5&quot; is obsoleted" ilk="class" line="10" lineend="14" name="MD5">
+        <scope attributes="__classmethod__" ilk="function" line="11" lineend="13" name="md5" signature="self.md5(*args)" />
+      </scope>
+    </scope>
+    

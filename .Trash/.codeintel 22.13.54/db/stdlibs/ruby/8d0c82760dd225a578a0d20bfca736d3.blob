@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpstatus">
+      <scope doc="httpstatus.rb -- HTTPStatus Class" ilk="namespace" line="11" lineend="126" name="WEBrick">
+        <scope ilk="namespace" line="13" lineend="125" name="HTTPStatus">
+          <scope classrefs="StandardError" ilk="class" line="15" lineend="15" name="Status" />
+          <scope classrefs="Status" ilk="class" line="16" lineend="16" name="Info" />
+          <scope classrefs="Status" ilk="class" line="17" lineend="17" name="Success" />
+          <scope classrefs="Status" ilk="class" line="18" lineend="18" name="Redirect" />
+          <scope classrefs="Status" ilk="class" line="19" lineend="19" name="Error" />
+          <scope classrefs="Error" ilk="class" line="20" lineend="20" name="ClientError" />
+          <scope classrefs="Error" ilk="class" line="21" lineend="21" name="ServerError" />
+          <scope classrefs="StandardError" ilk="class" line="23" lineend="23" name="EOFError" />
+          <scope ilk="function" line="96" lineend="98" name="reason_phrase" signature="reason_phrase(code)" />
+          <scope ilk="function" line="99" lineend="101" name="info?" signature="info?(code)" />
+          <scope ilk="function" line="102" lineend="104" name="success?" signature="success?(code)" />
+          <scope ilk="function" line="105" lineend="107" name="redirect?" signature="redirect?(code)" />
+          <scope ilk="function" line="108" lineend="110" name="error?" signature="error?(code)" />
+          <scope ilk="function" line="111" lineend="113" name="client_error?" signature="client_error?(code)" />
+          <scope ilk="function" line="114" lineend="116" name="server_error?" signature="server_error?(code)" />
+          <scope ilk="function" line="118" lineend="120" name="self" signature="self." />
+        </scope>
+      </scope>
+    </scope>
+    

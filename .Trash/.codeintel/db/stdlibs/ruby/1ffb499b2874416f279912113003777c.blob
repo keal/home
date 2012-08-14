@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="tk/bgerror">
+      <import line="5" module="tk" symbol="*" />
+      <scope doc="tkbgerror -- bgerror ( tkerror ) module 1998/07/16 by&#xA;Hidetoshi Nagai &lt;nagai@ai.kyutech.ac.jp&gt;" ilk="namespace" line="7" lineend="29" name="TkBgError">
+        <scope ilk="function" line="12" lineend="14" name="bgerror" signature="bgerror(message)" />
+        <scope ilk="function" line="19" lineend="21" name="set_handler" signature="set_handler(hdlr = Proc.new)" />
+        <scope ilk="function" line="22" lineend="27" name="set_default" signature="set_default" />
+      </scope>
+    </scope>
+    

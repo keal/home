@@ -1,0 +1,149 @@
+<scope ilk="blob" lang="Ruby" name="zlib">
+      <scope doc="The Zlib module contains several classes for compressing and&#xA;decompressing streams, and for working with &quot;gzip&quot; files." ilk="namespace" name="Zlib">
+        <scope classrefs="Zlib::ZStream" doc="Zlib:Inflate is the class for decompressing compressed data.&#xA;Unlike Zlib::Deflate, an instance of this class is not able&#xA;to duplicate (clone, dup) itself." ilk="class" name="Inflate">
+          <scope attributes="__classmethod__" doc="Decompresses string. Raises a Zlib::NeedDict exception if a&#xA;preset dictionary is needed for decompression." ilk="function" name="inflate" signature=" Zlib::Inflate.inflate(string)" />
+          <scope attributes="__classmethod__ __ctor__" doc="Creates a new inflate stream for decompression. See zlib.h&#xA;for details of the argument." ilk="function" name="new" signature=" Zlib::Inflate.new(window_bits)" />
+          <scope doc="Same as IO." ilk="function" name="&lt;&lt;" signature="(p1)" />
+          <scope doc="Inputs string into the inflate stream and returns the output&#xA;from the stream. Calling this method, both the input and the&#xA;output buffer of the stream are flushed." ilk="function" name="inflate" signature=" inflate(string)" />
+          <scope doc="Sets the preset dictionary and returns string. This method&#xA;is available just only after a Zlib::NeedDict exception was&#xA;raised." ilk="function" name="set_dictionary" signature="(p1)" />
+          <scope doc="Inputs string into the end of input buffer and skips data&#xA;until a full flush point can be found. If the point is found&#xA;in the buffer, this method flushes the buffer and returns&#xA;false." ilk="function" name="sync" signature=" sync(string)" />
+          <scope doc="Quoted verbatim from original documentation:" ilk="function" name="sync_point?" signature="()" />
+        </scope>
+        <scope classrefs="Zlib::ZStream" doc="Zlib::Deflate is the class for compressing data. See&#xA;Zlib::Stream for more information." ilk="class" name="Deflate">
+          <scope attributes="__classmethod__" doc="Compresses the given string. Valid values of level are&#xA;Zlib::NO_COMPRESSION, Zlib::BEST_SPEED,&#xA;Zlib::BEST_COMPRESSION, Zlib::DEFAULT_COMPRESSION, and an&#xA;integer from 0 to 9." ilk="function" name="deflate" signature=" Zlib::Deflate.deflate(string[, level])" />
+          <scope attributes="__classmethod__ __ctor__" doc="Creates a new deflate stream for compression. See zlib.h for&#xA;details of each argument." ilk="function" name="new" signature=" Zlib::Deflate.new(level=nil, windowBits=nil, memlevel=nil, strategy=nil)" />
+          <scope doc="Same as IO." ilk="function" name="&lt;&lt;" signature="(p1)" />
+          <scope doc="Inputs string into the deflate stream and returns the output&#xA;from the stream. On calling this method, both the input and&#xA;the output buffers of the stream are flushed." ilk="function" name="deflate" signature=" deflate(string[, flush])" />
+          <scope doc="This method is equivalent to deflate(&apos;&apos;, flush). If flush is&#xA;omitted, Zlib::SYNC_FLUSH is used as flush." ilk="function" name="flush" signature=" flush(flush)" />
+          <scope doc="Duplicates the deflate stream." ilk="function" name="initialize_copy" signature="()" />
+          <scope doc="Changes the parameters of the deflate stream. See zlib.h for&#xA;details." ilk="function" name="params" signature=" params(level, strategy)" />
+          <scope doc="Sets the preset dictionary and returns string. This method&#xA;is available just only after Zlib::Deflate.new or&#xA;Zlib::ZStream#reset method was called." ilk="function" name="set_dictionary" signature=" set_dictionary(string)" />
+        </scope>
+        <scope classrefs="Zlib::Error" ilk="class" name="StreamError" />
+        <scope classrefs="Zlib::Error" ilk="class" name="StreamEnd" />
+        <scope classrefs="Zlib::Error" ilk="class" name="DataError" />
+        <scope classrefs="StandardError" doc="The superclass for all exceptions raised by Ruby/zlib." ilk="class" name="Error" />
+        <scope classrefs="Zlib::Error" ilk="class" name="MemError" />
+        <scope classrefs="Zlib::Error" ilk="class" name="VersionError" />
+        <scope classrefs="Zlib::GzipFile" doc="Zlib::GzipReader is the class for reading a gzipped file.&#xA;GzipReader should be used an IO, or -IO-lie, object." ilk="class" name="GzipReader">
+          <import symbol="Enumerable" />
+          <scope attributes="__classmethod__ __ctor__" doc="Creates a GzipReader object associated with io. The&#xA;GzipReader object reads gzipped data from io, and&#xA;parses/decompresses them." ilk="function" name="new" signature=" Zlib::GzipReader.new(io)" />
+          <scope attributes="__classmethod__" doc="Opens a file specified by filename as a gzipped file, and&#xA;returns a GzipReader object associated with that file.&#xA;Further details of this method are in Zlib::GzipReader.new&#xA;and ZLib::GzipReader.wrap." ilk="function" name="open" signature=" Zlib::GzipReader.open(filename) {|gz| ... }" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="each" signature="(...)" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="each_byte" signature="()" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="each_line" signature="(...)" />
+          <scope ilk="function" name="eof" signature="()" />
+          <scope ilk="function" name="eof?" signature="()" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="getc" signature="()" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="gets" signature="(...)" />
+          <scope ilk="function" name="lineno" signature="()" />
+          <scope ilk="function" name="lineno=" signature="(p1)" />
+          <scope ilk="function" name="pos" signature="()" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="read" signature="(...)" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="readchar" signature="()" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="readline" signature="(...)" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="readlines" signature="(...)" />
+          <scope doc="Resets the position of the file pointer to the point created&#xA;the GzipReader object. The associated IO object needs to&#xA;respond to the seek method." ilk="function" name="rewind" signature="()" />
+          <scope ilk="function" name="tell" signature="()" />
+          <scope doc="See Zlib::GzipReader documentation for a description." ilk="function" name="ungetc" signature="(p1)" />
+          <scope doc="Returns the rest of the data which had read for parsing gzip&#xA;format, or nil if the whole gzip file is not parsed yet." ilk="function" name="unused" signature="()" />
+        </scope>
+        <scope classrefs="Object" doc="Zlib::ZStream is the abstract class for the stream which&#xA;handles the compressed data. The operations are defined in&#xA;the subclasses: Zlib::Deflate for compression, and&#xA;Zlib::Inflate for decompression." ilk="class" name="ZStream">
+          <scope doc="Returns the adler-32 checksum." ilk="function" name="adler" signature="()" />
+          <scope doc="Returns bytes of data in the input buffer. Normally, returns&#xA;0." ilk="function" name="avail_in" signature="()" />
+          <scope doc="Returns number of bytes of free spaces in output buffer.&#xA;Because the free space is allocated automatically, this&#xA;method returns 0 normally." ilk="function" name="avail_out" signature="()" />
+          <scope doc="Allocates size bytes of free space in the output buffer. If&#xA;there are more than size bytes already in the buffer, the&#xA;buffer is truncated." ilk="function" name="avail_out=" signature="(p1)" />
+          <scope doc="Closes the stream. All operations on the closed stream will&#xA;raise an exception." ilk="function" name="close" signature="()" />
+          <scope doc="Returns true if the stream is closed." ilk="function" name="closed?" signature="()" />
+          <scope doc="Guesses the type of the data which have been inputed into&#xA;the stream. The returned value is either Zlib::BINARY,&#xA;Zlib::ASCII, or Zlib::UNKNOWN." ilk="function" name="data_type" signature="()" />
+          <scope doc="Closes the stream. All operations on the closed stream will&#xA;raise an exception." ilk="function" name="end" signature="()" />
+          <scope doc="Returns true if the stream is closed." ilk="function" name="ended?" signature="()" />
+          <scope doc="Finishes the stream and flushes output buffer. See&#xA;Zlib::Deflate#finish and Zlib::Inflate#finish for details of&#xA;this behavior." ilk="function" name="finish" signature="()" />
+          <scope doc="Returns true if the stream is finished." ilk="function" name="finished?" signature="()" />
+          <scope doc="Flushes input buffer and returns all data in that buffer." ilk="function" name="flush_next_in" signature="()" />
+          <scope doc="Flushes output buffer and returns all data in that buffer." ilk="function" name="flush_next_out" signature="()" />
+          <scope doc="Resets and initializes the stream. All data in both input&#xA;and output buffer are discarded." ilk="function" name="reset" signature="()" />
+          <scope doc="Returns true if the stream is finished." ilk="function" name="stream_end?" signature="()" />
+          <scope doc="Returns the total bytes of the input data to the stream." ilk="function" name="total_in" signature="()" />
+          <scope doc="Returns the total bytes of the output data from the stream." ilk="function" name="total_out" signature="()" />
+        </scope>
+        <scope classrefs="Zlib::Error" ilk="class" name="BufError" />
+        <scope classrefs="Zlib::GzipFile" doc="Zlib::GzipWriter is a class for writing gzipped files.&#xA;GzipWriter should be used with an instance of IO, or IO-&#xA;like, object." ilk="class" name="GzipWriter">
+          <scope attributes="__classmethod__ __ctor__" doc="Creates a GzipWriter object associated with io. level and&#xA;strategy should be the same as the arguments of&#xA;Zlib::Deflate.new." ilk="function" name="new" signature=" Zlib::GzipWriter.new(io, level, strategy)" />
+          <scope attributes="__classmethod__" doc="Opens a file specified by filename for writing gzip&#xA;compressed data, and returns a GzipWriter object associated&#xA;with that file. Further details of this method are found in&#xA;Zlib::GzipWriter.new and Zlib::GzipWriter#wrap." ilk="function" name="open" signature=" Zlib::GzipWriter.open(filename, level=nil, strategy=nil) { |gz| ... }" />
+          <scope doc="Document-method: &lt;&lt; Same as IO." ilk="function" name="&lt;&lt;" signature="(p1)" />
+          <scope ilk="function" name="comment=" signature="(p1)" />
+          <scope doc="Flushes all the internal buffers of the GzipWriter object.&#xA;The meaning of flush is same as in Zlib::Deflate#deflate." ilk="function" name="flush" signature=" flush(flush=nil)" />
+          <scope ilk="function" name="mtime=" signature="(p1)" />
+          <scope ilk="function" name="orig_name=" signature="(p1)" />
+          <scope ilk="function" name="pos" signature="()" />
+          <scope doc="Document-method: print Same as IO." ilk="function" name="print" signature="(...)" />
+          <scope doc="Document-method: printf Same as IO." ilk="function" name="printf" signature="(...)" />
+          <scope doc="Same as IO." ilk="function" name="putc" signature="(p1)" />
+          <scope doc="Document-method: puts Same as IO." ilk="function" name="puts" signature="(...)" />
+          <scope ilk="function" name="tell" signature="()" />
+          <scope doc="Same as IO." ilk="function" name="write" signature="(p1)" />
+        </scope>
+        <scope classrefs="Object" doc="Zlib::GzipFile is an abstract class for handling a gzip&#xA;formatted compressed file. The operations are defined in the&#xA;subclasses, Zlib::GzipReader for reading, and&#xA;Zlib::GzipWriter for writing." ilk="class" name="GzipFile">
+          <scope classrefs="Zlib::GzipFile::Error" doc="Raised when the data length recorded in the gzip file footer&#xA;is not equivalent to the length of the actual uncompressed&#xA;data." ilk="class" name="LengthError" />
+          <scope classrefs="Zlib::Error" doc="Base class of errors that occur when processing GZIP files." ilk="class" name="Error" />
+          <scope classrefs="Zlib::GzipFile::Error" doc="Raised when the CRC checksum recorded in gzip file footer is&#xA;not equivalent to the CRC checksum of the actual&#xA;uncompressed data." ilk="class" name="CRCError" />
+          <scope classrefs="Zlib::GzipFile::Error" doc="Raised when gzip file footer is not found." ilk="class" name="NoFooter" />
+          <scope attributes="__classmethod__" doc="See Zlib::GzipReader#wrap and Zlib::GzipWriter#wrap." ilk="function" name="wrap" signature="(...)" />
+          <scope doc="Closes the GzipFile object. This method calls close method&#xA;of the associated IO object." ilk="function" name="close" signature="()" />
+          <scope doc="Same as IO." ilk="function" name="closed?" signature="()" />
+          <scope doc="Returns comments recorded in the gzip file header, or nil if&#xA;the comments is not present." ilk="function" name="comment" signature="()" />
+          <scope doc="Returns CRC value of the uncompressed data." ilk="function" name="crc" signature="()" />
+          <scope doc="Closes the GzipFile object. Unlike Zlib::GzipFile#close,&#xA;this method never calls the close method of the associated&#xA;IO object." ilk="function" name="finish" signature="()" />
+          <scope doc="Returns compression level." ilk="function" name="level" signature="()" />
+          <scope doc="Returns last modification time recorded in the gzip file&#xA;header." ilk="function" name="mtime" signature="()" />
+          <scope doc="Returns original filename recorded in the gzip file header,&#xA;or nil if original filename is not present." ilk="function" name="orig_name" signature="()" />
+          <scope doc="Returns OS code number recorded in the gzip file header." ilk="function" name="os_code" signature="()" />
+          <scope doc="Same as IO." ilk="function" name="sync" signature="()" />
+          <scope doc="Same as IO. If flag is true, the associated IO object must&#xA;respond to the flush method." ilk="function" name="sync=" signature=" sync = flag" />
+          <scope doc="Same as IO." ilk="function" name="to_io" signature="()" />
+        </scope>
+        <scope classrefs="Zlib::Error" ilk="class" name="NeedDict" />
+        <scope doc="Calculates Alder-32 checksum for string, and returns updated&#xA;value of adler. If string is omitted, it returns the&#xA;Adler-32 initial value." ilk="function" name="adler32" signature=" Zlib.adler32(string, adler)" />
+        <scope doc="Calculates CRC checksum for string, and returns updated&#xA;value of crc. If string is omitted, it returns the CRC&#xA;initial value." ilk="function" name="crc32" signature=" Zlib.crc32(string, adler)" />
+        <scope doc="Returns the table for calculating CRC checksum as an array." ilk="function" name="crc_table" signature="()" />
+        <scope doc="Returns the string which represents the version of zlib&#xA;library." ilk="function" name="zlib_version" signature="()" />
+        <variable attributes="__const__" citdl="Fixnum" name="ASCII" />
+        <variable attributes="__const__" citdl="Fixnum" name="BEST_COMPRESSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="BEST_SPEED" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEFAULT_COMPRESSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEFAULT_STRATEGY" />
+        <variable attributes="__const__" citdl="Fixnum" name="DEF_MEM_LEVEL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FILTERED" />
+        <variable attributes="__const__" citdl="Fixnum" name="FINISH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FULL_FLUSH" />
+        <variable attributes="__const__" citdl="Fixnum" name="HUFFMAN_ONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_MEM_LEVEL" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_WBITS" />
+        <variable attributes="__const__" citdl="Fixnum" name="NO_COMPRESSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="NO_FLUSH" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_AMIGA" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_ATARI" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_CODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_CPM" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_MACOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_MSDOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_OS2" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_QDOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_RISCOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_TOPS20" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_UNIX" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_UNKNOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_VMCMS" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_VMS" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_WIN32" />
+        <variable attributes="__const__" citdl="Fixnum" name="OS_ZSYSTEM" />
+        <variable attributes="__const__" citdl="Fixnum" name="SYNC_FLUSH" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNKNOWN" />
+        <variable attributes="__const__" citdl="String" name="VERSION" />
+        <variable attributes="__const__" citdl="String" name="ZLIB_VERSION" />
+      </scope>
+    </scope>
+
+    

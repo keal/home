@@ -1,0 +1,44 @@
+<scope ilk="blob" lang="Ruby" name="rexml/xpath_parser">
+      <import line="1" module="rexml/namespace" symbol="*" />
+      <import line="2" module="rexml/xmltokens" symbol="*" />
+      <import line="3" module="rexml/attribute" symbol="*" />
+      <import line="4" module="rexml/syncenumerator" symbol="*" />
+      <import line="5" module="rexml/parsers/xpathparser" symbol="*" />
+      <scope classrefs="Object" ilk="class" line="7" lineend="11" name="Object">
+        <scope ilk="function" line="8" lineend="10" name="dclone" signature="dclone" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="12" lineend="16" name="Symbol">
+        <scope ilk="function" line="13" lineend="15" name="dclone" signature="dclone" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="24" name="Array">
+        <scope ilk="function" line="18" lineend="23" name="dclone" signature="dclone" />
+      </scope>
+      <scope ilk="namespace" line="26" lineend="741" name="REXML">
+        <scope classrefs="Object" doc="You don&apos;t want to use this class. Really." ilk="class" line="31" lineend="740" name="XPathParser">
+          <scope attributes="__ctor__" ilk="function" line="35" lineend="39" name="initialize" signature="initialize( )" />
+          <scope ilk="function" line="41" lineend="44" name="namespaces=" signature="namespaces=( namespaces={} )" />
+          <scope ilk="function" line="46" lineend="49" name="variables=" signature="variables=( vars={} )" />
+          <scope ilk="function" line="51" lineend="57" name="parse" signature="parse" />
+          <scope ilk="function" line="59" lineend="65" name="get_first" signature="get_first" />
+          <scope ilk="function" line="67" lineend="70" name="predicate" signature="predicate" />
+          <scope ilk="function" line="72" lineend="74" name="[]=" signature="[]=( variable_name" />
+          <scope doc="Performs a depth-first (document order) XPath search, and&#xA;returns the first match." ilk="function" line="81" lineend="119" name="first" signature="first( path_stack, node )" />
+          <scope ilk="function" line="122" lineend="128" name="match" signature="match( path_stack, nodeset )" />
+          <scope doc="Expr takes a stack of path elements and a set of nodes&#xA;(either a Parent or an Array and returns an Array of&#xA;matching nodes" ilk="function" line="137" lineend="460" name="expr" signature="expr( path_stack, nodeset, context=nil )" />
+          <scope doc="FIXME The next two methods are BAD MOJO! This is my achilles&#xA;heel." ilk="function" line="471" lineend="480" name="descendant_or_self" signature="descendant_or_self( path_stack, nodeset )" />
+          <scope ilk="function" line="482" lineend="493" name="d_o_s" signature="d_o_s( p, ns, r )" />
+          <scope doc="Reorders an array of nodes so that they are in document&#xA;order It tries to do this efficiently." ilk="function" line="504" lineend="517" name="document_order" signature="document_order( array_of_nodes )" />
+          <scope ilk="function" line="520" lineend="525" name="recurse" signature="recurse( nodeset, &amp;block )" />
+          <scope doc="Builds a nodeset of all of the preceding nodes of the&#xA;supplied node, in reverse document order preceding::&#xA;includes every element in the document that precedes this&#xA;node, except for ancestors" ilk="function" line="533" lineend="555" name="preceding" signature="preceding( node )" />
+          <scope ilk="function" line="557" lineend="573" name="preceding_node_of" signature="preceding_node_of( node )" />
+          <scope ilk="function" line="575" lineend="586" name="following" signature="following( node )" />
+          <scope ilk="function" line="588" lineend="596" name="following_node_of" signature="following_node_of( node )" />
+          <scope ilk="function" line="598" lineend="609" name="next_sibling_node" signature="next_sibling_node(node)" />
+          <scope ilk="function" line="611" lineend="622" name="norm" signature="norm" />
+          <scope ilk="function" line="624" lineend="715" name="equality_relational_compare" signature="equality_relational_compare( set1, op, set2 )" />
+          <scope ilk="function" line="717" lineend="739" name="compare" signature="compare" />
+          <import symbol="XMLTokens" />
+        </scope>
+      </scope>
+    </scope>
+    

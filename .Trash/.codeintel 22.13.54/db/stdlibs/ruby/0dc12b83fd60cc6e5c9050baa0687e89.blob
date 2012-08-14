@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="irb/frame">
+      <import line="13" module="e2mmap" symbol="*" />
+      <scope doc="frame.rb - $Release Version: 0.9$ $Revision: 1.4 $ $Date:&#xA;2002/07/09 11:17:16 $ by Keiju ISHITSUKA(Nihon Rational&#xA;Software Co.,Ltd)" ilk="namespace" line="15" lineend="67" name="IRB">
+        <scope classrefs="Object" ilk="class" line="16" lineend="66" name="Frame">
+          <scope attributes="__ctor__" ilk="function" line="24" lineend="26" name="initialize" signature="initialize" />
+          <scope ilk="function" line="28" lineend="35" name="trace_func" signature="trace_func(event, file, line, id, binding)" />
+          <scope ilk="function" line="37" lineend="41" name="top" signature="top(n = 0)" />
+          <scope ilk="function" line="43" lineend="47" name="bottom" signature="bottom(n = 0)" />
+          <scope attributes="__classmethod__" doc="singleton functions" ilk="function" line="50" lineend="52" name="bottom" signature="Frame.bottom(n = 0)" />
+          <scope attributes="__classmethod__" ilk="function" line="54" lineend="56" name="top" signature="Frame.top(n = 0)" />
+          <scope attributes="__classmethod__" ilk="function" line="58" lineend="60" name="sender" signature="Frame.sender" />
+        </scope>
+      </scope>
+    </scope>
+    

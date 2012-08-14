@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/types">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL types definition." ilk="namespace" line="12" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="15" lineend="40" name="Types">
+        <scope ilk="function" line="16" lineend="16" name="schemas" />
+        <scope attributes="__ctor__" ilk="function" line="18" lineend="21" name="initialize" signature="initialize" />
+        <scope ilk="function" line="23" lineend="35" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="37" lineend="39" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

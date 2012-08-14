@@ -1,0 +1,78 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_descriptions">
+      <import line="1" module="yaml" symbol="*" />
+      <import line="2" module="rdoc/markup/simple_markup/fragments" symbol="*" />
+      <scope doc="Descriptions are created by RDoc (in ri_generator) and&#xA;written out in serialized form into the documentation tree." ilk="namespace" line="8" lineend="152" name="RI">
+        <scope classrefs="Object" ilk="class" line="9" lineend="25" name="NamedThing">
+          <scope ilk="function" line="10" lineend="10" name="name" />
+          <scope attributes="__ctor__" ilk="function" line="11" lineend="13" name="initialize" signature="initialize(name)" />
+          <scope ilk="function" line="14" lineend="16" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+          <scope ilk="function" line="18" lineend="20" name="hash" signature="hash" />
+          <scope ilk="function" line="22" lineend="24" name="eql?" signature="eql?(other)" />
+        </scope>
+        <scope classrefs="NamedThing" doc="Alias          = Struct.new(:old_name, :new_name)" ilk="class" line="29" lineend="30" name="AliasName" />
+        <scope classrefs="NamedThing" ilk="class" line="32" lineend="39" name="Attribute">
+          <scope ilk="function" line="33" lineend="33" name="rw" />
+          <scope ilk="function" line="33" lineend="33" name="comment" />
+          <scope attributes="__ctor__" ilk="function" line="34" lineend="38" name="initialize" signature="initialize(name, rw, comment)" />
+        </scope>
+        <scope classrefs="NamedThing" ilk="class" line="41" lineend="48" name="Constant">
+          <scope ilk="function" line="42" lineend="42" name="value" />
+          <scope ilk="function" line="42" lineend="42" name="comment" />
+          <scope attributes="__ctor__" ilk="function" line="43" lineend="47" name="initialize" signature="initialize(name, value, comment)" />
+        </scope>
+        <scope classrefs="NamedThing" ilk="class" line="50" lineend="51" name="IncludedModule" />
+        <scope classrefs="NamedThing" ilk="class" line="54" lineend="58" name="MethodSummary">
+          <scope attributes="__ctor__" ilk="function" line="55" lineend="57" name="initialize" signature="initialize(name=&quot;&quot;)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="62" lineend="78" name="Description">
+          <scope ilk="function" line="63" lineend="63" name="name" />
+          <scope ilk="function" line="63" lineend="63" name="name=" />
+          <scope ilk="function" line="64" lineend="64" name="full_name" />
+          <scope ilk="function" line="64" lineend="64" name="full_name=" />
+          <scope ilk="function" line="65" lineend="65" name="comment" />
+          <scope ilk="function" line="65" lineend="65" name="comment=" />
+          <scope ilk="function" line="67" lineend="69" name="serialize" signature="serialize" />
+          <scope attributes="__classmethod__" ilk="function" line="71" lineend="73" name="deserialize" signature="Description.deserialize(from)" />
+          <scope ilk="function" line="75" lineend="77" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+        </scope>
+        <scope classrefs="Description" ilk="class" line="80" lineend="121" name="ModuleDescription">
+          <scope ilk="function" line="82" lineend="82" name="class_methods" />
+          <scope ilk="function" line="82" lineend="82" name="class_methods=" />
+          <scope ilk="function" line="83" lineend="83" name="instance_methods" />
+          <scope ilk="function" line="83" lineend="83" name="instance_methods=" />
+          <scope ilk="function" line="84" lineend="84" name="attributes" />
+          <scope ilk="function" line="84" lineend="84" name="attributes=" />
+          <scope ilk="function" line="85" lineend="85" name="constants" />
+          <scope ilk="function" line="85" lineend="85" name="constants=" />
+          <scope ilk="function" line="86" lineend="86" name="includes" />
+          <scope ilk="function" line="86" lineend="86" name="includes=" />
+          <scope doc="merge in another class desscription into this one" ilk="function" line="89" lineend="101" name="merge_in" signature="merge_in(old)" />
+          <scope ilk="function" line="103" lineend="105" name="display_name" signature="display_name" />
+          <scope doc="the &apos;ClassDescription&apos; subclass overrides this to format up&#xA;the name of a parent" ilk="function" line="109" lineend="111" name="superclass_string" signature="superclass_string" />
+          <scope ilk="function" line="115" lineend="120" name="merge" signature="merge(into, from)" />
+        </scope>
+        <scope classrefs="ModuleDescription" ilk="class" line="123" lineend="137" name="ClassDescription">
+          <scope ilk="function" line="124" lineend="124" name="superclass" />
+          <scope ilk="function" line="124" lineend="124" name="superclass=" />
+          <scope ilk="function" line="126" lineend="128" name="display_name" signature="display_name" />
+          <scope ilk="function" line="130" lineend="136" name="superclass_string" signature="superclass_string" />
+        </scope>
+        <scope classrefs="Description" ilk="class" line="140" lineend="150" name="MethodDescription">
+          <scope ilk="function" line="142" lineend="142" name="is_class_method" />
+          <scope ilk="function" line="142" lineend="142" name="is_class_method=" />
+          <scope ilk="function" line="143" lineend="143" name="visibility" />
+          <scope ilk="function" line="143" lineend="143" name="visibility=" />
+          <scope ilk="function" line="144" lineend="144" name="block_params" />
+          <scope ilk="function" line="144" lineend="144" name="block_params=" />
+          <scope ilk="function" line="145" lineend="145" name="is_singleton" />
+          <scope ilk="function" line="145" lineend="145" name="is_singleton=" />
+          <scope ilk="function" line="146" lineend="146" name="aliases" />
+          <scope ilk="function" line="146" lineend="146" name="aliases=" />
+          <scope ilk="function" line="147" lineend="147" name="is_alias_for" />
+          <scope ilk="function" line="147" lineend="147" name="is_alias_for=" />
+          <scope ilk="function" line="148" lineend="148" name="params" />
+          <scope ilk="function" line="148" lineend="148" name="params=" />
+        </scope>
+      </scope>
+    </scope>
+    

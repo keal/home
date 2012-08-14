@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="xsd/mapping">
+      <import line="9" module="soap/parser" symbol="*" />
+      <import line="10" module="soap/encodingstyle/literalHandler" symbol="*" />
+      <import line="11" module="soap/generator" symbol="*" />
+      <import line="12" module="soap/mapping" symbol="*" />
+      <import line="13" module="soap/mapping/wsdlliteralregistry" symbol="*" />
+      <scope doc="XSD4R - XML Mapping for Ruby Copyright (C) 2005  NAKAMURA,&#xA;Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="16" name="XSD" />
+      <scope ilk="namespace" line="19" lineend="39" name="Mapping">
+        <scope attributes="__classmethod__" ilk="function" line="23" lineend="32" name="obj2xml" signature="self.obj2xml(obj, elename = nil, io = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="34" lineend="38" name="xml2obj" signature="self.xml2obj(stream)" />
+      </scope>
+    </scope>
+    

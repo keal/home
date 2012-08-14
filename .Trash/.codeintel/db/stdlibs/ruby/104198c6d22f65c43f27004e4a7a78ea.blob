@@ -1,0 +1,63 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httprequest">
+      <import line="11" module="timeout" symbol="*" />
+      <import line="12" module="uri" symbol="*" />
+      <import line="14" module="webrick/httpversion" symbol="*" />
+      <import line="15" module="webrick/httpstatus" symbol="*" />
+      <import line="16" module="webrick/httputils" symbol="*" />
+      <import line="17" module="webrick/cookie" symbol="*" />
+      <scope doc="httprequest.rb -- HTTPRequest Class" ilk="namespace" line="19" lineend="364" name="WEBrick">
+        <scope classrefs="Object" ilk="class" line="21" lineend="363" name="HTTPRequest">
+          <scope ilk="function" line="26" lineend="26" name="request_line" />
+          <scope ilk="function" line="27" lineend="27" name="request_method" />
+          <scope ilk="function" line="27" lineend="27" name="unparsed_uri" />
+          <scope ilk="function" line="27" lineend="27" name="http_version" />
+          <scope ilk="function" line="30" lineend="30" name="request_uri" />
+          <scope ilk="function" line="30" lineend="30" name="host" />
+          <scope ilk="function" line="30" lineend="30" name="port" />
+          <scope ilk="function" line="30" lineend="30" name="path" />
+          <scope ilk="function" line="31" lineend="31" name="script_name" />
+          <scope ilk="function" line="31" lineend="31" name="script_name=" />
+          <scope ilk="function" line="31" lineend="31" name="path_info" />
+          <scope ilk="function" line="31" lineend="31" name="path_info=" />
+          <scope ilk="function" line="31" lineend="31" name="query_string" />
+          <scope ilk="function" line="31" lineend="31" name="query_string=" />
+          <scope ilk="function" line="34" lineend="34" name="raw_header" />
+          <scope ilk="function" line="34" lineend="34" name="header" />
+          <scope ilk="function" line="34" lineend="34" name="cookies" />
+          <scope ilk="function" line="35" lineend="35" name="accept" />
+          <scope ilk="function" line="35" lineend="35" name="accept_charset" />
+          <scope ilk="function" line="36" lineend="36" name="accept_encoding" />
+          <scope ilk="function" line="36" lineend="36" name="accept_language" />
+          <scope ilk="function" line="39" lineend="39" name="user" />
+          <scope ilk="function" line="39" lineend="39" name="user=" />
+          <scope ilk="function" line="40" lineend="40" name="addr" />
+          <scope ilk="function" line="40" lineend="40" name="peeraddr" />
+          <scope ilk="function" line="41" lineend="41" name="attributes" />
+          <scope ilk="function" line="42" lineend="42" name="keep_alive" />
+          <scope ilk="function" line="43" lineend="43" name="request_time" />
+          <scope attributes="__ctor__" doc="Misc" ilk="function" line="45" lineend="75" name="initialize" signature="initialize(config)" />
+          <scope ilk="function" line="77" lineend="122" name="parse" signature="parse(socket=nil)" />
+          <scope ilk="function" line="124" lineend="128" name="body" signature="body(&amp;block)" />
+          <scope ilk="function" line="130" lineend="135" name="query" signature="query" />
+          <scope ilk="function" line="137" lineend="139" name="content_length" signature="content_length" />
+          <scope ilk="function" line="141" lineend="143" name="content_type" signature="content_type" />
+          <scope ilk="function" line="145" lineend="150" name="[]" signature="[](header_name" />
+          <scope ilk="function" line="152" lineend="157" name="each" signature="each" />
+          <scope ilk="function" line="159" lineend="161" name="keep_alive?" signature="keep_alive?" />
+          <scope ilk="function" line="163" lineend="169" name="to_s" signature="to_s" />
+          <scope ilk="function" line="171" lineend="181" name="fixup" signature="fixup()" />
+          <scope ilk="function" line="183" lineend="220" name="meta_vars" signature="meta_vars" />
+          <scope ilk="function" line="224" lineend="236" name="read_request_line" signature="read_request_line(socket)" />
+          <scope ilk="function" line="238" lineend="250" name="read_header" signature="read_header(socket)" />
+          <scope ilk="function" line="252" lineend="269" name="parse_uri" signature="parse_uri(str, scheme=&quot;http&quot;)" />
+          <scope ilk="function" line="271" lineend="293" name="read_body" signature="read_body(socket, block)" />
+          <scope ilk="function" line="295" lineend="304" name="read_chunk_size" signature="read_chunk_size(socket)" />
+          <scope ilk="function" line="306" lineend="325" name="read_chunked" signature="read_chunked(socket, block)" />
+          <scope ilk="function" line="327" lineend="337" name="_read_data" signature="_read_data(io, method, arg)" />
+          <scope ilk="function" line="339" lineend="341" name="read_line" signature="read_line(io)" />
+          <scope ilk="function" line="343" lineend="345" name="read_data" signature="read_data(io, size)" />
+          <scope ilk="function" line="347" lineend="362" name="parse_query" signature="parse_query()" />
+        </scope>
+      </scope>
+    </scope>
+    

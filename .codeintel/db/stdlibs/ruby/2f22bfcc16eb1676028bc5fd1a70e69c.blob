@@ -1,0 +1,165 @@
+<scope ilk="blob" lang="Ruby" name="uri">
+      <scope ilk="namespace" name="URI">
+        <scope classrefs="Generic" doc="RFC1738 section 3.2." ilk="class" name="FTP">
+          <scope attributes="__classmethod__" ilk="function" name="build" signature="(args)" />
+          <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="(*arg)" />
+          <scope attributes="__classmethod__" ilk="function" name="new2" signature="(user, password, host, port, path, typecode = nil, arg_check = true)" />
+          <scope attributes="private" ilk="function" name="check_typecode" signature="(v)" />
+          <scope ilk="function" name="set_typecode" signature="(v)" />
+          <scope ilk="function" name="to_s" signature="()" />
+          <scope ilk="function" name="typecode" />
+          <scope ilk="function" name="typecode=" signature="(typecode)" />
+        </scope>
+        <scope classrefs="Error" doc="URI is valid, bad usage is not." ilk="class" name="BadURIError" />
+        <scope classrefs="Generic" doc="RFC1738 section 3.3." ilk="class" name="HTTP">
+          <scope attributes="__classmethod__" ilk="function" name="build" signature="(args)" />
+          <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="(*arg)" />
+          <scope ilk="function" name="request_uri" signature="()" />
+        </scope>
+        <scope ilk="namespace" name="Escape">
+          <import symbol="REGEXP" />
+          <scope doc="Alias for #unescape" ilk="function" name="decode" signature="(str)" />
+          <scope doc="Alias for #escape" ilk="function" name="encode" signature="(str, unsafe = UNSAFE)" />
+          <scope ilk="function" name="escape" signature="(str, unsafe = UNSAFE)" />
+          <scope ilk="function" name="unescape" signature="(str)" />
+        </scope>
+        <scope ilk="namespace" name="REGEXP">
+          <scope doc="Patterns used to parse URI&apos;s" ilk="namespace" name="PATTERN" />
+        </scope>
+        <scope classrefs="Object" doc="Base class for all URI classes." ilk="class" name="Generic">
+          <import symbol="REGEXP" />
+          <import symbol="URI" />
+          <scope attributes="__classmethod__" ilk="function" name="build" signature="(args)" />
+          <scope attributes="__classmethod__" ilk="function" name="build2" signature="(args)" />
+          <scope attributes="__classmethod__" doc="Components of the URI in the order." ilk="function" name="component" signature="()" />
+          <scope attributes="__classmethod__" doc="Returns default port" ilk="function" name="default_port" signature="()" />
+          <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="(scheme, userinfo, host, port, registry, path, opaque, query, fragment, arg_check = false)" />
+          <scope attributes="__classmethod__" doc="DOC: FIXME!" ilk="function" name="use_registry" signature="()" />
+          <scope doc="Alias for #merge" ilk="function" name="+" signature="(oth)" />
+          <scope doc="Compares to URI&apos;s" ilk="function" name="==" signature="(oth)" />
+          <scope doc="Alias for #absolute?" ilk="function" name="absolute" signature="()" />
+          <scope doc="Checks if URI is an absolute one" ilk="function" name="absolute?" signature="()" />
+          <scope attributes="private" ilk="function" name="check_fragment" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_host" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_opaque" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_password" signature="(v, user = @user)" />
+          <scope attributes="private" ilk="function" name="check_path" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_port" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_query" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_registry" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_scheme" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_user" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_userinfo" signature="(user, password = nil)" />
+          <scope ilk="function" name="coerce" signature="(oth)" />
+          <scope ilk="function" name="component" signature="()" />
+          <scope ilk="function" name="component_ary" signature="()" />
+          <scope ilk="function" name="default_port" signature="()" />
+          <scope ilk="function" name="eql?" signature="(oth)" />
+          <scope attributes="private" ilk="function" name="escape_userpass" signature="(v)" />
+          <scope ilk="function" name="fragment" />
+          <scope ilk="function" name="fragment=" signature="(v)" />
+          <scope ilk="function" name="hash" signature="()" />
+          <scope doc="Checks if URI has a path" ilk="function" name="hierarchical?" signature="()" />
+          <scope ilk="function" name="host" />
+          <scope ilk="function" name="host=" signature="(v)" />
+          <scope ilk="function" name="inspect" signature="()" />
+          <scope ilk="function" name="merge" signature="(oth)" />
+          <scope ilk="function" name="merge!" signature="(oth)" />
+          <scope attributes="private" doc="return base and rel. you can modify `base&apos;, but can not&#xA;`rel&apos;." ilk="function" name="merge0" signature="(oth)" />
+          <scope attributes="private" ilk="function" name="merge_path" signature="(base, rel)" />
+          <scope doc="Returns normalized URI" ilk="function" name="normalize" signature="()" />
+          <scope doc="Destructive version of #normalize" ilk="function" name="normalize!" signature="()" />
+          <scope ilk="function" name="opaque" />
+          <scope ilk="function" name="opaque=" signature="(v)" />
+          <scope ilk="function" name="password" signature="()" />
+          <scope ilk="function" name="password=" signature="(password)" />
+          <scope ilk="function" name="path" />
+          <scope ilk="function" name="path=" signature="(v)" />
+          <scope attributes="private" ilk="function" name="path_query" signature="()" />
+          <scope ilk="function" name="port" />
+          <scope ilk="function" name="port=" signature="(v)" />
+          <scope ilk="function" name="query" />
+          <scope ilk="function" name="query=" signature="(v)" />
+          <scope ilk="function" name="registry" />
+          <scope ilk="function" name="registry=" signature="(v)" />
+          <scope doc="Checks if URI is relative" ilk="function" name="relative?" signature="()" />
+          <scope attributes="private" doc="replace self by other URI object" ilk="function" name="replace!" signature="(oth)" />
+          <scope ilk="function" name="route_from" signature="(oth)" />
+          <scope attributes="private" ilk="function" name="route_from0" signature="(oth)" />
+          <scope attributes="private" ilk="function" name="route_from_path" signature="(src, dst)" />
+          <scope ilk="function" name="route_to" signature="(oth)" />
+          <scope ilk="function" name="scheme" />
+          <scope ilk="function" name="scheme=" signature="(v)" />
+          <scope ilk="function" name="select" signature="(*components)" />
+          <scope ilk="function" name="set_fragment" signature="(v)" />
+          <scope ilk="function" name="set_host" signature="(v)" />
+          <scope ilk="function" name="set_opaque" signature="(v)" />
+          <scope ilk="function" name="set_password" signature="(v)" />
+          <scope ilk="function" name="set_path" signature="(v)" />
+          <scope ilk="function" name="set_port" signature="(v)" />
+          <scope ilk="function" name="set_query" signature="(v)" />
+          <scope ilk="function" name="set_registry" signature="(v)" />
+          <scope ilk="function" name="set_scheme" signature="(v)" />
+          <scope ilk="function" name="set_user" signature="(v)" />
+          <scope ilk="function" name="set_userinfo" signature="(user, password = nil)" />
+          <scope attributes="private" ilk="function" name="split_path" signature="(path)" />
+          <scope attributes="private" ilk="function" name="split_userinfo" signature="(ui)" />
+          <scope doc="Constructs String from URI" ilk="function" name="to_s" signature="()" />
+          <scope ilk="function" name="user" signature="()" />
+          <scope ilk="function" name="user=" signature="(user)" />
+          <scope ilk="function" name="userinfo" signature="()" />
+          <scope doc="Sets userinfo, argument is string like &apos;name:pass&apos;" ilk="function" name="userinfo=" signature="(userinfo)" />
+        </scope>
+        <scope classrefs="Error" doc="Not a URI." ilk="class" name="InvalidURIError" />
+        <scope classrefs="HTTP" ilk="class" name="HTTPS" />
+        <scope ilk="namespace" name="Util" />
+        <scope classrefs="StandardError" doc="Base class for all URI exceptions." ilk="class" name="Error" />
+        <scope classrefs="Generic" doc="RFC2368, The mailto URL scheme" ilk="class" name="MailTo">
+          <import symbol="REGEXP" />
+          <scope attributes="__classmethod__" ilk="function" name="build" signature="(args)" />
+          <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="(*arg)" />
+          <scope attributes="private" ilk="function" name="check_headers" signature="(v)" />
+          <scope attributes="private" ilk="function" name="check_to" signature="(v)" />
+          <scope ilk="function" name="headers" />
+          <scope ilk="function" name="headers=" signature="(v)" />
+          <scope ilk="function" name="set_headers" signature="(v)" />
+          <scope ilk="function" name="set_to" signature="(v)" />
+          <scope ilk="function" name="to" />
+          <scope ilk="function" name="to=" signature="(v)" />
+          <scope ilk="function" name="to_mailtext" signature="()" />
+          <scope doc="Alias for #to_mailtext" ilk="function" name="to_rfc822text" signature="()" />
+          <scope ilk="function" name="to_s" signature="()" />
+        </scope>
+        <scope classrefs="Error" doc="Not a URI component." ilk="class" name="InvalidComponentError" />
+        <scope classrefs="Generic" doc="LDAP URI SCHEMA (described in RFC2255) ldap://&lt;host&gt;/&lt;dn&gt;[?&lt;&#xA;attrs&gt;[?&lt;scope&gt;[?&lt;filter&gt;[?&lt;extensions&gt;]]]]" ilk="class" name="LDAP">
+          <scope attributes="__classmethod__" ilk="function" name="build" signature="(args)" />
+          <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" signature="(*arg)" />
+          <scope ilk="function" name="attributes" signature="()" />
+          <scope ilk="function" name="attributes=" signature="(val)" />
+          <scope attributes="private" ilk="function" name="build_path_query" signature="()" />
+          <scope ilk="function" name="dn" signature="()" />
+          <scope ilk="function" name="dn=" signature="(val)" />
+          <scope ilk="function" name="extensions" signature="()" />
+          <scope ilk="function" name="extensions=" signature="(val)" />
+          <scope ilk="function" name="filter" signature="()" />
+          <scope ilk="function" name="filter=" signature="(val)" />
+          <scope ilk="function" name="hierarchical?" signature="()" />
+          <scope attributes="private" ilk="function" name="parse_dn" signature="()" />
+          <scope attributes="private" ilk="function" name="parse_query" signature="()" />
+          <scope ilk="function" name="scope" signature="()" />
+          <scope ilk="function" name="scope=" signature="(val)" />
+          <scope ilk="function" name="set_attributes" signature="(val)" />
+          <scope ilk="function" name="set_dn" signature="(val)" />
+          <scope ilk="function" name="set_extensions" signature="(val)" />
+          <scope ilk="function" name="set_filter" signature="(val)" />
+          <scope ilk="function" name="set_scope" signature="(val)" />
+        </scope>
+        <import symbol="REGEXP" />
+        <scope attributes="__classmethod__" ilk="function" name="extract" signature="(str, schemes = nil, &amp;block) {|$&amp;| ...}" />
+        <scope attributes="__classmethod__" ilk="function" name="join" signature="(*str)" />
+        <scope attributes="__classmethod__" ilk="function" name="parse" signature="(uri)" />
+        <scope attributes="__classmethod__" ilk="function" name="regexp" signature="(schemes = nil)" />
+        <scope attributes="__classmethod__" ilk="function" name="split" signature="(uri)" />
+      </scope>
+    </scope>
+    

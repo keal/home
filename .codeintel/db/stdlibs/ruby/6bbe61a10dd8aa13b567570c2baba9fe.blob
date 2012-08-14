@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="xsd/xmlparser/xmlscanner">
+      <import line="9" module="xsd/xmlparser" symbol="*" />
+      <import line="10" module="xmlscan/scanner" symbol="*" />
+      <scope doc="XSD4R - XMLScan XML parser library." ilk="namespace" line="13" name="XSD" />
+      <scope ilk="namespace" line="14" name="XMLParser" />
+      <scope classrefs="XSD::XMLParser::" ilk="class" line="17" lineend="143" name="XMLScanner">
+        <scope ilk="function" line="20" lineend="26" name="do_parse" signature="do_parse(string_or_readable)" />
+        <scope ilk="function" line="28" lineend="31" name="scanner_kcode=" signature="scanner_kcode=(charset)" />
+        <scope ilk="function" line="41" lineend="43" name="parse_error" signature="parse_error(msg)" />
+        <scope ilk="function" line="45" lineend="47" name="wellformed_error" signature="wellformed_error(msg)" />
+        <scope ilk="function" line="49" lineend="51" name="valid_error" signature="valid_error(msg)" />
+        <scope ilk="function" line="53" lineend="55" name="warning" signature="warning(msg)" />
+        <scope doc="def on_xmldecl; end" ilk="function" line="59" lineend="61" name="on_xmldecl_version" signature="on_xmldecl_version(str)" />
+        <scope ilk="function" line="63" lineend="65" name="on_xmldecl_encoding" signature="on_xmldecl_encoding(str)" />
+        <scope doc="def on_xmldecl_standalone(str); end def&#xA;on_xmldecl_other(name, value); end def on_xmldecl_end; end&#xA;def on_doctype(root, pubid, sysid); end def&#xA;on_prolog_space(str); end" ilk="function" line="81" lineend="83" name="on_chardata" signature="on_chardata(str)" />
+        <scope doc="def on_cdata(str); end" ilk="function" line="87" lineend="89" name="on_etag" signature="on_etag(name)" />
+        <scope ilk="function" line="91" lineend="93" name="on_entityref" signature="on_entityref(ref)" />
+        <scope ilk="function" line="95" lineend="97" name="on_charref" signature="on_charref(code)" />
+        <scope ilk="function" line="99" lineend="101" name="on_charref_hex" signature="on_charref_hex(code)" />
+        <scope doc="def on_start_document; end def on_end_document; end" ilk="function" line="107" lineend="109" name="on_stag" signature="on_stag(name)" />
+        <scope ilk="function" line="111" lineend="113" name="on_attribute" signature="on_attribute(name)" />
+        <scope ilk="function" line="115" lineend="117" name="on_attr_value" signature="on_attr_value(str)" />
+        <scope ilk="function" line="119" lineend="121" name="on_attr_entityref" signature="on_attr_entityref(ref)" />
+        <scope ilk="function" line="123" lineend="125" name="on_attr_charref" signature="on_attr_charref(code)" />
+        <scope ilk="function" line="127" lineend="129" name="on_attr_charref_hex" signature="on_attr_charref_hex(code)" />
+        <scope doc="def on_attribute_end(name); end" ilk="function" line="133" lineend="136" name="on_stag_end_empty" signature="on_stag_end_empty(name)" />
+        <scope ilk="function" line="138" lineend="140" name="on_stag_end" signature="on_stag_end(name)" />
+        <import symbol="XMLScan::Visitor" />
+      </scope>
+    </scope>
+    

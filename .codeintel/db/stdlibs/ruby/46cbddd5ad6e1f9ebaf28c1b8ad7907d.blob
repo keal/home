@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="rss/xmlparser">
+      <import line="2" module="xml/parser" symbol="*" />
+      <import line="4" module="xmlparser" symbol="*" />
+      <import line="8" module="xml/encoding-ja" symbol="*" />
+      <import line="10" module="xmlencoding-ja" symbol="*" />
+      <scope ilk="namespace" line="12" lineend="16" name="XMLEncoding_ja">
+        <scope classrefs="Object" ilk="class" line="13" lineend="15" name="SJISHandler">
+          <import symbol="Kconv" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="20" lineend="26" name="XML">
+        <scope classrefs="Object" ilk="class" line="21" lineend="25" name="Parser" />
+      </scope>
+      <scope ilk="namespace" line="28" lineend="91" name="RSS">
+        <scope classrefs="::XML::Parser" ilk="class" line="30" lineend="58" name="REXMLLikeXMLParser">
+          <scope ilk="function" line="34" lineend="36" name="listener=" signature="listener=(listener)" />
+          <scope ilk="function" line="38" lineend="40" name="startElement" signature="startElement(name, attrs)" />
+          <scope ilk="function" line="42" lineend="44" name="endElement" signature="endElement(name)" />
+          <scope ilk="function" line="46" lineend="48" name="character" signature="character(data)" />
+          <scope ilk="function" line="50" lineend="52" name="xmlDecl" signature="xmlDecl(version, encoding, standalone)" />
+          <scope ilk="function" line="54" lineend="56" name="processingInstruction" signature="processingInstruction(target, content)" />
+          <import symbol="::XML::Encoding_ja" />
+        </scope>
+        <scope classrefs="BaseParser" ilk="class" line="60" lineend="77" name="XMLParserParser">
+          <scope ilk="function" line="63" lineend="65" name="listener" signature="listener" />
+          <scope ilk="function" line="67" lineend="75" name="_parse" signature="_parse" />
+        </scope>
+        <scope classrefs="BaseListener" ilk="class" line="79" lineend="89" name="XMLParserListener">
+          <scope ilk="function" line="83" lineend="87" name="xmldecl" signature="xmldecl(version, encoding, standalone)" />
+          <import symbol="ListenerMixin" />
+        </scope>
+      </scope>
+    </scope>
+    

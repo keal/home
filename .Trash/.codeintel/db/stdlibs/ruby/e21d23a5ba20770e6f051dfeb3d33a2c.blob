@@ -1,0 +1,40 @@
+<scope ilk="blob" lang="Ruby" name="tk/dialog">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/variable.rb" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/dialog.rb : create dialog boxes" ilk="class" line="7" lineend="258" name="TkDialogObj">
+        <scope attributes="__classmethod__" ilk="function" line="12" lineend="16" name="show" signature="self.show(*args)" />
+        <scope ilk="function" line="18" lineend="55" name="_set_button_config" signature="_set_button_config(configs)" />
+        <scope doc="initialize tk_dialog" ilk="function" line="59" lineend="162" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="165" lineend="194" name="show" signature="show" />
+        <scope ilk="function" line="196" lineend="199" name="value" signature="value" />
+        <scope ilk="function" line="201" lineend="203" name="name" signature="name (@val" />
+        <scope doc="# following methods should be overridden for each dialog  #&#xA;#" ilk="function" line="212" lineend="215" name="title" signature="title" />
+        <scope ilk="function" line="216" lineend="219" name="message" signature="message" />
+        <scope ilk="function" line="220" lineend="223" name="message_config" signature="message_config" />
+        <scope ilk="function" line="224" lineend="227" name="msgframe_config" signature="msgframe_config" />
+        <scope ilk="function" line="228" lineend="232" name="bitmap" signature="bitmap" />
+        <scope ilk="function" line="233" lineend="236" name="bitmap_config" signature="bitmap_config" />
+        <scope ilk="function" line="237" lineend="241" name="default_button" signature="default_button" />
+        <scope ilk="function" line="242" lineend="245" name="buttons" signature="buttons" />
+        <scope ilk="function" line="246" lineend="249" name="button_configs" signature="button_configs(num)" />
+        <scope ilk="function" line="250" lineend="253" name="btnframe_config" signature="btnframe_config" />
+        <scope ilk="function" line="254" lineend="257" name="prev_command" signature="prev_command" />
+      </scope>
+      <scope classrefs="TkDialogObj" doc="TkDialog : with showing at initialize" ilk="class" line="264" lineend="273" name="TkDialog">
+        <scope attributes="__classmethod__" ilk="function" line="265" lineend="267" name="show" signature="self.show(*args)" />
+        <scope attributes="__ctor__" ilk="function" line="269" lineend="272" name="initialize" signature="initialize(*args)" />
+      </scope>
+      <scope classrefs="TkDialogObj" doc="dialog for warning" ilk="class" line="279" lineend="315" name="TkWarningObj">
+        <scope attributes="__ctor__" ilk="function" line="280" lineend="290" name="initialize" signature="initialize(parent = nil, mes = nil)" />
+        <scope ilk="function" line="292" lineend="298" name="show" signature="show(mes = nil)" />
+        <scope ilk="function" line="303" lineend="305" name="title" signature="title" />
+        <scope ilk="function" line="306" lineend="308" name="bitmap" signature="bitmap" />
+        <scope ilk="function" line="309" lineend="311" name="default_button" signature="default_button" />
+        <scope ilk="function" line="312" lineend="314" name="buttons" signature="buttons" />
+      </scope>
+      <scope classrefs="TkWarningObj" ilk="class" line="318" lineend="326" name="TkWarning">
+        <scope attributes="__classmethod__" ilk="function" line="319" lineend="321" name="show" signature="self.show(*args)" />
+        <scope attributes="__ctor__" ilk="function" line="322" lineend="325" name="initialize" signature="initialize(*args)" />
+      </scope>
+    </scope>
+    

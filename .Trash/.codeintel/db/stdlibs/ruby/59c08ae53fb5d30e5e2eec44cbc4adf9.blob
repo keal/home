@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="tkwinpkg">
+      <import line="4" module="tk/winpkg" symbol="*" />
+    </scope>
+    

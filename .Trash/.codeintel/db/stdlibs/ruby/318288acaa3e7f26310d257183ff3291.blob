@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="xmlrpc/base64">
+      <scope ilk="namespace" line="40" name="XMLRPC" />
+      <scope classrefs="Object" ilk="class" line="42" lineend="72" name="Base64">
+        <scope attributes="__ctor__" ilk="function" line="44" lineend="53" name="initialize" signature="initialize(str, state = :dec)" />
+        <scope ilk="function" line="55" lineend="57" name="decoded" signature="decoded" />
+        <scope ilk="function" line="59" lineend="61" name="encoded" signature="encoded" />
+        <scope attributes="__classmethod__" ilk="function" line="64" lineend="66" name="decode" signature="Base64.decode(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="68" lineend="70" name="encode" signature="Base64.encode(str)" />
+      </scope>
+    </scope>
+    

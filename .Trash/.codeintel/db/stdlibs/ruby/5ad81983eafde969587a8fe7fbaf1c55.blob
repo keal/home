@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="net/telnet">
+      <import line="12" module="socket" symbol="*" />
+      <import line="13" module="delegate" symbol="*" />
+      <import line="14" module="timeout" symbol="*" />
+      <import line="15" module="English" symbol="*" />
+      <scope doc="= net/telnet.rb - Simple Telnet Client Library" ilk="namespace" line="17" lineend="741" name="Net">
+        <scope classrefs="SimpleDelegator" doc="== Net::Telnet" ilk="class" line="96" lineend="740" name="Telnet">
+          <scope attributes="__ctor__" doc=":startdoc:" ilk="function" line="275" lineend="372" name="initialize" signature="initialize(options)">
+            <scope doc=":yield: mesg" ilk="function" line="310" lineend="330" name="@dumplog" signature="@dumplog." />
+          </scope>
+          <scope ilk="function" line="377" lineend="377" name="sock" />
+          <scope doc="Set telnet command interpretation on (+mode+ == true) or off&#xA;(+mode+ == false), or return the current value (+mode+ not&#xA;provided)." ilk="function" line="384" lineend="393" name="telnetmode" signature="telnetmode(mode = nil)" />
+          <scope doc="Turn telnet command interpretation on (true) or off (false)." ilk="function" line="398" lineend="404" name="telnetmode=" signature="telnetmode=(mode)" />
+          <scope doc="Turn newline conversion on (+mode+ == false) or off (+mode+&#xA;== true), or return the current value (+mode+ is not&#xA;specified)." ilk="function" line="408" lineend="417" name="binmode" signature="binmode(mode = nil)" />
+          <scope doc="Turn newline conversion on (false) or off (true)." ilk="function" line="420" lineend="426" name="binmode=" signature="binmode=(mode)" />
+          <scope doc="Preprocess received data from the host." ilk="function" line="434" lineend="489" name="preprocess" signature="preprocess(string)" />
+          <scope doc="preprocess Read data from the host until a certain sequence&#xA;is matched." ilk="function" line="524" lineend="590" name="waitfor" signature="waitfor(options)" />
+          <scope doc="Write +string+ to the host." ilk="function" line="596" lineend="603" name="write" signature="write(string)" />
+          <scope doc="Sends a string to the host." ilk="function" line="611" lineend="628" name="print" signature="print(string)" />
+          <scope doc="Sends a string to the host." ilk="function" line="633" lineend="635" name="puts" signature="puts(string)" />
+          <scope doc="Send a command to the host." ilk="function" line="664" lineend="682" name="cmd" signature="cmd(options)" />
+          <scope doc="Login to the host with a given username and password." ilk="function" line="706" lineend="738" name="login" signature="login(options, password = nil)" />
+        </scope>
+      </scope>
+    </scope>
+    

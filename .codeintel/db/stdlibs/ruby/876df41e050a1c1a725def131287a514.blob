@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="irb/ext/save-history">
+      <import line="14" module="readline" symbol="*" />
+      <scope doc="!/usr/local/bin/ruby" ilk="namespace" line="16" lineend="84" name="IRB">
+        <scope ilk="namespace" line="17" lineend="19" name="HistorySavingAbility" />
+        <scope classrefs="Object" ilk="class" line="21" lineend="48" name="Context">
+          <scope ilk="function" line="22" lineend="26" name="init_save_history" signature="init_save_history">
+            <scope classrefs="Object" ilk="class" line="23" lineend="23" name="@io" />
+          </scope>
+          <scope ilk="function" line="28" lineend="30" name="save_history" signature="save_history" />
+          <scope ilk="function" line="32" lineend="39" name="save_history=" signature="save_history=(val)" />
+          <scope ilk="function" line="41" lineend="43" name="history_file" signature="history_file" />
+          <scope ilk="function" line="45" lineend="47" name="history_file=" signature="history_file=(hist)" />
+        </scope>
+        <scope ilk="namespace" line="50" lineend="83" name="HistorySavingAbility">
+          <scope attributes="__classmethod__" ilk="function" line="53" lineend="66" name="create_finalizer" signature="HistorySavingAbility.create_finalizer" />
+          <scope attributes="__classmethod__" ilk="function" line="68" lineend="72" name="extended" signature="HistorySavingAbility.extended(obj)" />
+          <scope ilk="function" line="74" lineend="82" name="load_history" signature="load_history" />
+        </scope>
+      </scope>
+    </scope>
+    

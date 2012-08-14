@@ -1,0 +1,82 @@
+<scope ilk="blob" lang="Ruby" name="net/ftp">
+      <import line="17" module="socket" symbol="*" />
+      <import line="18" module="monitor" symbol="*" />
+      <scope doc="= net/ftp.rb - FTP Client Library" ilk="namespace" line="20" lineend="917" name="Net">
+        <scope classrefs="StandardError" doc=":stopdoc:" ilk="class" line="23" lineend="23" name="FTPError" />
+        <scope classrefs="FTPError" ilk="class" line="24" lineend="24" name="FTPReplyError" />
+        <scope classrefs="FTPError" ilk="class" line="25" lineend="25" name="FTPTempError" />
+        <scope classrefs="FTPError" ilk="class" line="26" lineend="26" name="FTPPermError" />
+        <scope classrefs="FTPError" ilk="class" line="27" lineend="27" name="FTPProtoError" />
+        <scope classrefs="Object" doc=":startdoc:" ilk="class" line="72" lineend="915" name="FTP">
+          <scope ilk="function" line="82" lineend="82" name="binary" />
+          <scope ilk="function" line="82" lineend="82" name="binary=" />
+          <scope ilk="function" line="85" lineend="85" name="passive" />
+          <scope ilk="function" line="85" lineend="85" name="passive=" />
+          <scope ilk="function" line="89" lineend="89" name="debug_mode" />
+          <scope ilk="function" line="89" lineend="89" name="debug_mode=" />
+          <scope ilk="function" line="93" lineend="93" name="resume" />
+          <scope ilk="function" line="93" lineend="93" name="resume=" />
+          <scope ilk="function" line="96" lineend="96" name="welcome" />
+          <scope ilk="function" line="99" lineend="99" name="last_response_code" />
+          <scope ilk="function" line="103" lineend="103" name="last_response" />
+          <scope attributes="__classmethod__" doc="A synonym for &lt;tt&gt;FTP.new&lt;/tt&gt;, but with a mandatory host&#xA;parameter." ilk="function" line="111" lineend="122" name="open" signature="FTP.open(host, user = nil, passwd = nil, acct = nil)" />
+          <scope attributes="__ctor__" doc="Creates and returns a new +FTP+ object." ilk="function" line="129" lineend="141" name="initialize" signature="initialize(host = nil, user = nil, passwd = nil, acct = nil)" />
+          <scope doc="Obsolete" ilk="function" line="144" lineend="147" name="return_code" signature="return_code" />
+          <scope doc="Obsolete" ilk="function" line="150" lineend="152" name="return_code=" signature="return_code=(s)" />
+          <scope ilk="function" line="154" lineend="161" name="open_socket" signature="open_socket(host, port)" />
+          <scope doc="Establishes an FTP connection to host, optionally overriding&#xA;the default port." ilk="function" line="170" lineend="178" name="connect" signature="connect(host, port = FTP_PORT)" />
+          <scope doc="WRITEME or make private" ilk="function" line="183" lineend="190" name="set_socket" signature="set_socket(sock, get_greeting = true)" />
+          <scope ilk="function" line="192" lineend="198" name="sanitize" signature="sanitize(s)" />
+          <scope ilk="function" line="201" lineend="207" name="putline" signature="putline(line)" />
+          <scope ilk="function" line="210" lineend="217" name="getline" signature="getline" />
+          <scope ilk="function" line="220" lineend="231" name="getmultiline" signature="getmultiline" />
+          <scope ilk="function" line="234" lineend="247" name="getresp" signature="getresp" />
+          <scope ilk="function" line="250" lineend="255" name="voidresp" signature="voidresp" />
+          <scope doc="Sends a command and returns the response." ilk="function" line="261" lineend="266" name="sendcmd" signature="sendcmd(cmd)" />
+          <scope doc="Sends a command and expect a response beginning with &apos;2&apos;." ilk="function" line="271" lineend="276" name="voidcmd" signature="voidcmd(cmd)" />
+          <scope ilk="function" line="278" lineend="291" name="sendport" signature="sendport(host, port)" />
+          <scope ilk="function" line="294" lineend="300" name="makeport" signature="makeport" />
+          <scope ilk="function" line="303" lineend="311" name="makepasv" signature="makepasv" />
+          <scope ilk="function" line="314" lineend="344" name="transfercmd" signature="transfercmd(cmd, rest_offset = nil)" />
+          <scope ilk="function" line="347" lineend="360" name="getaddress" signature="getaddress" />
+          <scope doc="Logs in to the remote host." ilk="function" line="371" lineend="390" name="login" signature="login(user = &quot;anonymous&quot;, passwd = nil, acct = nil)" />
+          <scope doc="Puts the connection into binary (image) mode, issues the&#xA;given command, and fetches the data returned, passing it to&#xA;the associated block in chunks of +blocksize+ characters." ilk="function" line="398" lineend="410" name="retrbinary" signature="retrbinary(cmd, blocksize, rest_offset = nil)" />
+          <scope doc="Puts the connection into ASCII (text) mode, issues the given&#xA;command, and passes the resulting data, one line at a time,&#xA;to the associated block." ilk="function" line="418" lineend="435" name="retrlines" signature="retrlines(cmd)" />
+          <scope doc="Puts the connection into binary (image) mode, issues the&#xA;given server-side command (such as &quot;STOR myfile&quot;), and sends&#xA;the contents of the file named +file+ to the server." ilk="function" line="443" lineend="459" name="storbinary" signature="storbinary(cmd, file, blocksize, rest_offset = nil, &amp;block)" />
+          <scope doc="Puts the connection into ASCII (text) mode, issues the given&#xA;server-side command (such as &quot;STOR myfile&quot;), and sends the&#xA;contents of the file named +file+ to the server, one line at&#xA;a time." ilk="function" line="467" lineend="483" name="storlines" signature="storlines(cmd, file, &amp;block)" />
+          <scope doc="Retrieves +remotefile+ in binary mode, storing the result in&#xA;+localfile+." ilk="function" line="490" lineend="508" name="getbinaryfile" signature="getbinaryfile(remotefile, localfile = File.basename(remotefile), blocksize = DEFAULT_BLOCKSIZE, &amp;block)" />
+          <scope doc="Retrieves +remotefile+ in ASCII (text) mode, storing the&#xA;result in +localfile+." ilk="function" line="515" lineend="525" name="gettextfile" signature="gettextfile(remotefile, localfile = File.basename(remotefile), &amp;block)" />
+          <scope doc="Retrieves +remotefile+ in whatever mode the session is set&#xA;(text or binary)." ilk="function" line="531" lineend="538" name="get" signature="get(remotefile, localfile = File.basename(remotefile), blocksize = DEFAULT_BLOCKSIZE, &amp;block)" />
+          <scope doc="Transfers +localfile+ to the server in binary mode, storing&#xA;the result in +remotefile+." ilk="function" line="545" lineend="563" name="putbinaryfile" signature="putbinaryfile(localfile, remotefile = File.basename(localfile), blocksize = DEFAULT_BLOCKSIZE, &amp;block)" />
+          <scope doc="Transfers +localfile+ to the server in ASCII (text) mode,&#xA;storing the result in +remotefile+." ilk="function" line="570" lineend="577" name="puttextfile" signature="puttextfile(localfile, remotefile = File.basename(localfile), &amp;block)" />
+          <scope doc="Transfers +localfile+ to the server in whatever mode the&#xA;session is set (text or binary)." ilk="function" line="583" lineend="590" name="put" signature="put(localfile, remotefile = File.basename(localfile), blocksize = DEFAULT_BLOCKSIZE, &amp;block)" />
+          <scope doc="Sends the ACCT command. TODO: more info." ilk="function" line="595" lineend="598" name="acct" signature="acct(account)" />
+          <scope doc="Returns an array of filenames in the remote directory." ilk="function" line="603" lineend="613" name="nlst" signature="nlst(dir = nil)" />
+          <scope doc="Returns an array of file information in the directory (the&#xA;output is like `ls -l`)." ilk="function" line="619" lineend="633" name="list" signature="list(*args, &amp;block)" />
+          <scope doc="Renames a file on the server." ilk="function" line="640" lineend="646" name="rename" signature="rename(fromname, toname)" />
+          <scope doc="Deletes a file on the server." ilk="function" line="651" lineend="660" name="delete" signature="delete(filename)" />
+          <scope doc="Changes the (remote) directory." ilk="function" line="665" lineend="678" name="chdir" signature="chdir(dirname)" />
+          <scope doc="Returns the size of the given (remote) filename." ilk="function" line="683" lineend="690" name="size" signature="size(filename)" />
+          <scope doc=":nodoc:" ilk="function" line="698" lineend="702" name="mtime" signature="mtime(filename, local = false)" />
+          <scope doc="Creates a remote directory." ilk="function" line="707" lineend="710" name="mkdir" signature="mkdir(dirname)" />
+          <scope doc="Removes a remote directory." ilk="function" line="715" lineend="717" name="rmdir" signature="rmdir(dirname)" />
+          <scope doc="Returns the current remote directory." ilk="function" line="722" lineend="725" name="pwd" signature="pwd" />
+          <scope doc="Returns system information." ilk="function" line="731" lineend="737" name="system" signature="system" />
+          <scope doc="Aborts the previous command (ABOR command)." ilk="function" line="742" lineend="751" name="abort" signature="abort" />
+          <scope doc="Returns the status (STAT command)." ilk="function" line="756" lineend="761" name="status" signature="status" />
+          <scope doc="Issues the MDTM command. TODO: more info." ilk="function" line="766" lineend="771" name="mdtm" signature="mdtm(filename)" />
+          <scope doc="Issues the HELP command." ilk="function" line="776" lineend="782" name="help" signature="help(arg = nil)" />
+          <scope doc="Exits the FTP session." ilk="function" line="787" lineend="789" name="quit" signature="quit" />
+          <scope doc="Issues a NOOP command." ilk="function" line="794" lineend="796" name="noop" signature="noop" />
+          <scope doc="Issues a SITE command." ilk="function" line="801" lineend="804" name="site" signature="site(arg)" />
+          <scope doc="Closes the connection." ilk="function" line="810" lineend="812" name="close" signature="close" />
+          <scope doc="Returns +true+ iff the connection is closed." ilk="function" line="817" lineend="819" name="closed?" signature="closed?" />
+          <scope ilk="function" line="821" lineend="837" name="parse227" signature="parse227(resp)" />
+          <scope ilk="function" line="840" lineend="869" name="parse228" signature="parse228(resp)" />
+          <scope ilk="function" line="872" lineend="888" name="parse229" signature="parse229(resp)" />
+          <scope ilk="function" line="891" lineend="913" name="parse257" signature="parse257(resp)" />
+          <import symbol="MonitorMixin" />
+        </scope>
+      </scope>
+    </scope>
+    

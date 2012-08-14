@@ -1,0 +1,353 @@
+<scope ilk="blob" lang="Ruby" name="curses">
+      <scope ilk="namespace" name="Curses">
+        <scope attributes="__classmethod__" ilk="function" name="addch" />
+        <scope attributes="__classmethod__" ilk="function" name="addstr" />
+        <scope attributes="__classmethod__" ilk="function" name="attroff" />
+        <scope attributes="__classmethod__" ilk="function" name="attron" />
+        <scope attributes="__classmethod__" ilk="function" name="attrset" />
+        <scope attributes="__classmethod__" ilk="function" name="beep" />
+        <scope attributes="__classmethod__" ilk="function" name="bkgd" />
+        <scope attributes="__classmethod__" ilk="function" name="bkgdset" />
+        <scope attributes="__classmethod__" ilk="function" name="can_change_color?" />
+        <scope attributes="__classmethod__" ilk="function" name="cbreak" />
+        <scope attributes="__classmethod__" ilk="function" name="clear" />
+        <scope attributes="__classmethod__" ilk="function" name="close_screen" />
+        <scope attributes="__classmethod__" ilk="function" name="closed?" />
+        <scope attributes="__classmethod__" ilk="function" name="clrtoeol" />
+        <scope attributes="__classmethod__" ilk="function" name="color_content" />
+        <scope attributes="__classmethod__" ilk="function" name="color_pair" />
+        <scope attributes="__classmethod__" ilk="function" name="cols" />
+        <scope attributes="__classmethod__" ilk="function" name="curs_set" />
+        <scope attributes="__classmethod__" ilk="function" name="def_prog_mode" />
+        <scope attributes="__classmethod__" ilk="function" name="delch" />
+        <scope attributes="__classmethod__" ilk="function" name="deleteln" />
+        <scope attributes="__classmethod__" ilk="function" name="doupdate" />
+        <scope attributes="__classmethod__" ilk="function" name="echo" />
+        <scope attributes="__classmethod__" ilk="function" name="flash" />
+        <scope attributes="__classmethod__" ilk="function" name="getch" />
+        <scope attributes="__classmethod__" ilk="function" name="getstr" />
+        <scope attributes="__classmethod__" ilk="function" name="has_colors?" />
+        <scope attributes="__classmethod__" ilk="function" name="inch" />
+        <scope attributes="__classmethod__" ilk="function" name="init_color" />
+        <scope attributes="__classmethod__" ilk="function" name="init_pair" />
+        <scope attributes="__classmethod__" ilk="function" name="init_screen" />
+        <scope attributes="__classmethod__" ilk="function" name="insch" />
+        <scope attributes="__classmethod__" ilk="function" name="insertln" />
+        <scope attributes="__classmethod__" ilk="function" name="keyname" />
+        <scope attributes="__classmethod__" ilk="function" name="lines" />
+        <scope attributes="__classmethod__" ilk="function" name="nl" />
+        <scope attributes="__classmethod__" ilk="function" name="nocbreak" />
+        <scope attributes="__classmethod__" ilk="function" name="noecho" />
+        <scope attributes="__classmethod__" ilk="function" name="nonl" />
+        <scope attributes="__classmethod__" ilk="function" name="noraw" />
+        <scope attributes="__classmethod__" ilk="function" name="pair_content" />
+        <scope attributes="__classmethod__" ilk="function" name="pair_number" />
+        <scope attributes="__classmethod__" ilk="function" name="raw" />
+        <scope attributes="__classmethod__" ilk="function" name="refresh" />
+        <scope attributes="__classmethod__" ilk="function" name="reset_prog_mode" />
+        <scope attributes="__classmethod__" ilk="function" name="resize" />
+        <scope attributes="__classmethod__" ilk="function" name="resizeterm" />
+        <scope attributes="__classmethod__" ilk="function" name="scrl" />
+        <scope attributes="__classmethod__" ilk="function" name="setpos" />
+        <scope attributes="__classmethod__" ilk="function" name="setscrreg" />
+        <scope attributes="__classmethod__" ilk="function" name="standend" />
+        <scope attributes="__classmethod__" ilk="function" name="standout" />
+        <scope attributes="__classmethod__" ilk="function" name="start_color" />
+        <scope attributes="__classmethod__" ilk="function" name="stdscr" />
+        <scope attributes="__classmethod__" ilk="function" name="timeout=" />
+        <scope attributes="__classmethod__" ilk="function" name="ungetch" />
+        <scope ilk="function" name="&lt;" />
+        <scope ilk="function" name="&lt;=" />
+        <scope ilk="function" name="&lt;=&gt;" />
+        <scope ilk="function" name="==" />
+        <scope ilk="function" name="===" />
+        <scope ilk="function" name="&gt;" />
+        <scope ilk="function" name="&gt;=" />
+        <scope ilk="function" name="addch" />
+        <scope ilk="function" name="addstr" />
+        <scope ilk="function" name="ancestors" />
+        <scope ilk="function" name="attroff" />
+        <scope ilk="function" name="attron" />
+        <scope ilk="function" name="attrset" />
+        <scope ilk="function" name="autoload" />
+        <scope ilk="function" name="autoload?" />
+        <scope ilk="function" name="beep" />
+        <scope ilk="function" name="bkgd" />
+        <scope ilk="function" name="bkgdset" />
+        <scope ilk="function" name="can_change_color?" />
+        <scope ilk="function" name="cbreak" />
+        <scope ilk="function" name="class_eval" />
+        <scope ilk="function" name="class_variables" />
+        <scope ilk="function" name="clear" />
+        <scope ilk="function" name="close_screen" />
+        <scope ilk="function" name="closed?" />
+        <scope ilk="function" name="clrtoeol" />
+        <scope ilk="function" name="color_content" />
+        <scope ilk="function" name="color_pair" />
+        <scope ilk="function" name="cols" />
+        <scope ilk="function" name="const_defined?" />
+        <scope ilk="function" name="const_get" />
+        <scope ilk="function" name="const_missing" />
+        <scope ilk="function" name="const_set" />
+        <scope ilk="function" name="constants" />
+        <scope ilk="function" name="curs_set" />
+        <scope ilk="function" name="def_prog_mode" />
+        <scope ilk="function" name="delch" />
+        <scope ilk="function" name="deleteln" />
+        <scope ilk="function" name="doupdate" />
+        <scope ilk="function" name="echo" />
+        <scope ilk="function" name="flash" />
+        <scope ilk="function" name="freeze" />
+        <scope ilk="function" name="getch" />
+        <scope ilk="function" name="getstr" />
+        <scope ilk="function" name="has_colors?" />
+        <scope ilk="function" name="inch" />
+        <scope ilk="function" name="include?" />
+        <scope ilk="function" name="included_modules" />
+        <scope ilk="function" name="init_color" />
+        <scope ilk="function" name="init_pair" />
+        <scope ilk="function" name="init_screen" />
+        <scope ilk="function" name="insch" />
+        <scope ilk="function" name="insertln" />
+        <scope ilk="function" name="instance_method" />
+        <scope ilk="function" name="instance_methods" />
+        <scope ilk="function" name="keyname" />
+        <scope ilk="function" name="lines" />
+        <scope ilk="function" name="method_defined?" />
+        <scope ilk="function" name="module_eval" />
+        <scope ilk="function" name="name" />
+        <scope ilk="function" name="nl" />
+        <scope ilk="function" name="nocbreak" />
+        <scope ilk="function" name="noecho" />
+        <scope ilk="function" name="nonl" />
+        <scope ilk="function" name="noraw" />
+        <scope ilk="function" name="pair_content" />
+        <scope ilk="function" name="pair_number" />
+        <scope ilk="function" name="private_class_method" />
+        <scope ilk="function" name="private_instance_methods" />
+        <scope ilk="function" name="private_method_defined?" />
+        <scope ilk="function" name="protected_instance_methods" />
+        <scope ilk="function" name="protected_method_defined?" />
+        <scope ilk="function" name="public_class_method" />
+        <scope ilk="function" name="public_instance_methods" />
+        <scope ilk="function" name="public_method_defined?" />
+        <scope ilk="function" name="raw" />
+        <scope ilk="function" name="refresh" />
+        <scope ilk="function" name="reset_prog_mode" />
+        <scope ilk="function" name="resize" />
+        <scope ilk="function" name="resizeterm" />
+        <scope ilk="function" name="scrl" />
+        <scope ilk="function" name="setpos" />
+        <scope ilk="function" name="setscrreg" />
+        <scope ilk="function" name="standend" />
+        <scope ilk="function" name="standout" />
+        <scope ilk="function" name="start_color" />
+        <scope ilk="function" name="stdscr" />
+        <scope ilk="function" name="timeout=" />
+        <scope ilk="function" name="to_s" />
+        <scope ilk="function" name="ungetch" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_ALTCHARSET" />
+        <variable attributes="__const__" citdl="Bignum" name="A_ATTRIBUTES" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_BLINK" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_BOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_CHARTEXT" />
+        <variable attributes="__const__" citdl="Bignum" name="A_COLOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_DIM" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_INVIS" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_NORMAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_PROTECT" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_REVERSE" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_STANDOUT" />
+        <variable attributes="__const__" citdl="Fixnum" name="A_UNDERLINE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_BLACK" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_BLUE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_CYAN" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_GREEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_MAGENTA" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_RED" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_WHITE" />
+        <variable attributes="__const__" citdl="Fixnum" name="COLOR_YELLOW" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_A1" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_A3" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_B2" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_BACKSPACE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_BEG" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_BREAK" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_BTAB" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_C1" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_C3" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CANCEL" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CATAB" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CLEAR" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CLOSE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_COMMAND" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_COPY" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CREATE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTAB" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_A" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_B" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_C" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_D" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_E" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_F" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_G" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_H" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_I" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_J" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_K" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_L" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_M" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_N" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_O" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_P" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_Q" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_R" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_S" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_T" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_U" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_V" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_W" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_X" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_Y" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_CTRL_Z" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_DC" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_DL" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_DOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_EIC" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_ENTER" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_EOL" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_EOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_EXIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F0" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F1" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F10" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F11" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F12" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F13" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F14" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F15" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F16" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F17" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F18" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F19" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F2" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F20" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F21" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F22" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F23" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F24" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F25" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F26" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F27" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F28" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F29" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F3" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F30" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F31" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F32" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F33" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F34" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F35" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F36" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F37" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F38" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F39" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F4" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F40" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F41" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F42" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F43" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F44" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F45" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F46" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F47" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F48" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F49" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F5" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F50" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F51" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F52" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F53" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F54" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F55" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F56" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F57" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F58" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F59" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F6" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F60" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F61" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F62" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F63" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F7" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F8" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_F9" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_FIND" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_HELP" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_HOME" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_IC" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_IL" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_LEFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_LL" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_MARK" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_MAX" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_MESSAGE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_MIN" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_MOVE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_NEXT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_NPAGE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_OPEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_OPTIONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_PPAGE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_PREVIOUS" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_PRINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_REDO" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_REFERENCE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_REFRESH" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_REPLACE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_RESET" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_RESIZE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_RESTART" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_RESUME" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_RIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SAVE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SBEG" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SCANCEL" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SCOMMAND" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SCOPY" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SCREATE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SDC" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SDL" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SELECT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SEOL" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SEXIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SF" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SFIND" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SHELP" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SHOME" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SIC" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SLEFT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SMESSAGE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SMOVE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SNEXT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SOPTIONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SPREVIOUS" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SPRINT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SR" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SREDO" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SREPLACE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SRESET" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SRIGHT" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SRSUME" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SSAVE" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SSUSPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_STAB" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SUNDO" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_SUSPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_UNDO" />
+        <variable attributes="__const__" citdl="Fixnum" name="KEY_UP" />
+      </scope>
+    </scope>
+    

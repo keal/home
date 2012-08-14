@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/variable" symbol="*" />
+      <import line="10" module="tkextlib/setup.rb" symbol="*" />
+      <import line="13" module="tkextlib/blt/setup.rb" symbol="*" />
+      <scope doc="load all image format handlers TkPackage.require(&apos;BLT&apos;,&#xA;&apos;2.4&apos;)" ilk="namespace" line="19" lineend="187" name="Tk">
+        <scope ilk="namespace" line="20" lineend="186" name="BLT">
+          <scope attributes="__classmethod__" ilk="function" line="43" lineend="45" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="47" lineend="53" name="package_version" signature="self.package_version" />
+          <scope attributes="__classmethod__" ilk="function" line="57" lineend="59" name="beep" signature="self.beep(percent = 50)" />
+          <scope attributes="__classmethod__" ilk="function" line="61" lineend="76" name="bgexec" signature="self.bgexec(*args)" />
+          <scope attributes="__classmethod__" ilk="function" line="78" lineend="93" name="detach_bgexec" signature="self.detach_bgexec(*args)" />
+          <scope attributes="__classmethod__" ilk="function" line="95" lineend="101" name="bltdebug" signature="self.bltdebug(lvl = nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="103" lineend="105" name="crc32_file" signature="self.crc32_file(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="106" lineend="108" name="crc32_data" signature="self.crc32_data(dat)" />
+          <scope attributes="__classmethod__" ilk="function" line="112" lineend="114" name="active_legend" signature="self.active_legend(graph)" />
+          <scope attributes="__classmethod__" ilk="function" line="115" lineend="117" name="crosshairs" signature="self.crosshairs(graph)" />
+          <scope attributes="__classmethod__" ilk="function" line="118" lineend="120" name="zoom_stack" signature="self.zoom_stack(graph)" />
+          <scope attributes="__classmethod__" ilk="function" line="121" lineend="123" name="print_key" signature="self.print_key(graph)" />
+          <scope attributes="__classmethod__" ilk="function" line="124" lineend="126" name="closest_point" signature="self.closest_point(graph)" />
+          <scope ilk="namespace" line="128" lineend="149" name="GraphCommand">
+            <scope ilk="function" line="129" lineend="132" name="active_legend" signature="active_legend" />
+            <scope ilk="function" line="133" lineend="136" name="crosshairs" signature="crosshairs" />
+            <scope ilk="function" line="137" lineend="140" name="zoom_stack" signature="zoom_stack" />
+            <scope ilk="function" line="141" lineend="144" name="print_key" signature="print_key" />
+            <scope ilk="function" line="145" lineend="148" name="closest_point" signature="closest_point" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

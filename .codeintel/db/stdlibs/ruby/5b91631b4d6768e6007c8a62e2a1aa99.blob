@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="webrick/cgi">
+      <import line="10" module="webrick/httprequest" symbol="*" />
+      <import line="11" module="webrick/httpresponse" symbol="*" />
+      <import line="12" module="webrick/config" symbol="*" />
+      <import line="13" module="stringio" symbol="*" />
+      <scope doc="cgi.rb -- Yet another CGI library" ilk="namespace" line="15" lineend="257" name="WEBrick">
+        <scope classrefs="Object" ilk="class" line="16" lineend="256" name="CGI">
+          <scope ilk="function" line="19" lineend="19" name="config" />
+          <scope ilk="function" line="19" lineend="19" name="logger" />
+          <scope attributes="__ctor__" ilk="function" line="21" lineend="42" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="44" lineend="46" name="[]" signature="[](key" />
+          <scope ilk="function" line="48" lineend="109" name="start" signature="start(env=ENV, stdin=$stdin, stdout=$stdout)">
+            <scope ilk="function" line="53" lineend="59" name="res.setup_header" signature="res.setup_header" />
+            <scope ilk="function" line="60" lineend="62" name="res.status_line" signature="res.status_line" />
+          </scope>
+          <scope ilk="function" line="111" lineend="119" name="service" signature="service(req, res)" />
+          <scope classrefs="Object" ilk="class" line="121" lineend="255" name="Socket">
+            <scope attributes="__ctor__" ilk="function" line="126" lineend="149" name="initialize" signature="initialize(config, env, stdin, stdout)" />
+            <scope ilk="function" line="151" lineend="166" name="request_line" signature="request_line" />
+            <scope ilk="function" line="168" lineend="176" name="setup_header" signature="setup_header" />
+            <scope ilk="function" line="178" lineend="184" name="add_header" signature="add_header(envname, hdrname)" />
+            <scope ilk="function" line="186" lineend="188" name="input" signature="input" />
+            <scope ilk="function" line="192" lineend="194" name="peeraddr" signature="peeraddr" />
+            <scope ilk="function" line="196" lineend="198" name="addr" signature="addr" />
+            <scope ilk="function" line="200" lineend="202" name="gets" signature="gets(eol=LF)" />
+            <scope ilk="function" line="204" lineend="206" name="read" signature="read(size=nil)" />
+            <scope ilk="function" line="208" lineend="210" name="each" signature="each" />
+            <scope ilk="function" line="212" lineend="214" name="&lt;&lt;" signature="&lt;&lt;(data" />
+            <scope ilk="function" line="216" lineend="221" name="cert" signature="cert" />
+            <scope ilk="function" line="223" lineend="228" name="peer_cert" signature="peer_cert" />
+            <scope ilk="function" line="230" lineend="243" name="peer_cert_chain" signature="peer_cert_chain" />
+            <scope ilk="function" line="245" lineend="254" name="cipher" signature="cipher" />
+            <import symbol="Enumerable" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="tk/place">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/place.rb : control place geometry manager" ilk="namespace" line="6" lineend="112" name="TkPlace">
+        <scope ilk="function" line="12" lineend="29" name="configure" signature="configure(win, slot, value=None)" />
+        <scope ilk="function" line="32" lineend="60" name="configinfo" signature="configinfo(win, slot = nil)" />
+        <scope ilk="function" line="62" lineend="83" name="current_configinfo" signature="current_configinfo(win, slot = nil)" />
+        <scope ilk="function" line="85" lineend="89" name="forget" signature="forget(win)" />
+        <scope ilk="function" line="91" lineend="102" name="info" signature="info(win)" />
+        <scope ilk="function" line="104" lineend="108" name="slaves" signature="slaves(master)" />
+      </scope>
+    </scope>
+    

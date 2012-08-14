@@ -1,0 +1,29 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_display">
+      <import line="1" module="rdoc/ri/ri_util" symbol="*" />
+      <import line="2" module="rdoc/ri/ri_formatter" symbol="*" />
+      <import line="3" module="rdoc/ri/ri_options" symbol="*" />
+      <scope doc="This is a kind of &apos;flag&apos; module." ilk="namespace" line="19" lineend="29" name="RiDisplay">
+        <scope attributes="__classmethod__" ilk="function" line="22" lineend="24" name="append_features" signature="RiDisplay.append_features(display_class)" />
+        <scope attributes="__classmethod__" ilk="function" line="26" lineend="28" name="new" signature="RiDisplay.new(*args)" />
+      </scope>
+      <scope classrefs="Object" doc="A paging display module." ilk="class" line="37" lineend="273" name="DefaultDisplay">
+        <scope attributes="__ctor__" ilk="function" line="41" lineend="44" name="initialize" signature="initialize(options)" />
+        <scope ilk="function" line="49" lineend="53" name="display_usage" signature="display_usage" />
+        <scope ilk="function" line="58" lineend="72" name="display_method_info" signature="display_method_info(method)" />
+        <scope ilk="function" line="76" lineend="140" name="display_class_info" signature="display_class_info(klass, ri_reader)" />
+        <scope doc="Display a list of method names" ilk="function" line="146" lineend="152" name="display_method_list" signature="display_method_list(methods)" />
+        <scope ilk="function" line="156" lineend="162" name="display_class_list" signature="display_class_list(namespaces)" />
+        <scope ilk="function" line="166" lineend="176" name="list_known_classes" signature="list_known_classes(classes)" />
+        <scope ilk="function" line="180" lineend="188" name="list_known_names" signature="list_known_names(names)" />
+        <scope ilk="function" line="196" lineend="204" name="page" signature="page" />
+        <scope ilk="function" line="208" lineend="215" name="setup_pager" signature="setup_pager">
+          <import line="210" module="tempfile" symbol="*" />
+        </scope>
+        <scope ilk="function" line="219" lineend="236" name="page_output" signature="page_output" />
+        <scope ilk="function" line="240" lineend="255" name="display_params" signature="display_params(method)" />
+        <scope ilk="function" line="258" lineend="261" name="warn_no_database" signature="warn_no_database" />
+        <scope ilk="function" line="264" lineend="270" name="display_flow" signature="display_flow(flow)" />
+        <import symbol="RiDisplay" />
+      </scope>
+    </scope>
+    

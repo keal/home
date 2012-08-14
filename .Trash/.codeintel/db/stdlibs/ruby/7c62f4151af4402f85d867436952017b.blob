@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="yaml/syck">
+      <import line="5" module="syck" symbol="*" />
+      <import line="6" module="yaml/basenode" symbol="*" />
+      <scope doc="YAML::Syck module .." ilk="namespace" line="8" lineend="19" name="YAML">
+        <scope ilk="namespace" line="9" lineend="18" name="Syck">
+          <scope classrefs="Object" doc="Mixin BaseNode functionality" ilk="class" line="14" lineend="16" name="Node">
+            <import symbol="YAML::BaseNode" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

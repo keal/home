@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/service">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="xsd/namedelements" symbol="*" />
+      <scope doc="WSDL4R - WSDL service definition." ilk="namespace" line="13" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="58" name="Service">
+        <scope ilk="function" line="17" lineend="17" name="name" />
+        <scope ilk="function" line="18" lineend="18" name="ports" />
+        <scope ilk="function" line="19" lineend="19" name="soap_address" />
+        <scope attributes="__ctor__" doc="required" ilk="function" line="21" lineend="26" name="initialize" signature="initialize" />
+        <scope ilk="function" line="28" lineend="30" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="32" lineend="48" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="50" lineend="57" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

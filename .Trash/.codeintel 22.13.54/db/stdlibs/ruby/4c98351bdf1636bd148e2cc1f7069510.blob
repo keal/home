@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/scrolledhtml">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/scrolledhtml.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Scrolledhtml" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="58" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="26" lineend="28" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="31" lineend="33" name="__font_optkeys" signature="__font_optkeys" />
+        <scope ilk="function" line="36" lineend="39" name="import" signature="import(href)" />
+        <scope ilk="function" line="41" lineend="44" name="import_link" signature="import_link(href)" />
+        <scope ilk="function" line="46" lineend="48" name="pwd" signature="pwd" />
+        <scope ilk="function" line="50" lineend="53" name="render" signature="render(htmltext, workdir=None)" />
+        <scope ilk="function" line="55" lineend="57" name="title" signature="title" />
+      </scope>
+    </scope>
+    

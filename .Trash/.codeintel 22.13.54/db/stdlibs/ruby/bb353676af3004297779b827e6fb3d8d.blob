@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/generators/ri_generator">
+      <import line="37" module="ftools" symbol="*" />
+      <import line="39" module="rdoc/options" symbol="*" />
+      <import line="40" module="rdoc/template" symbol="*" />
+      <import line="41" module="rdoc/markup/simple_markup" symbol="*" />
+      <import line="42" module="rdoc/markup/simple_markup/to_flow" symbol="*" />
+      <import line="43" module="cgi" symbol="*" />
+      <import line="45" module="rdoc/ri/ri_cache" symbol="*" />
+      <import line="46" module="rdoc/ri/ri_reader" symbol="*" />
+      <import line="47" module="rdoc/ri/ri_writer" symbol="*" />
+      <import line="48" module="rdoc/ri/ri_descriptions" symbol="*" />
+      <scope doc="We&apos;re responsible for generating all the HTML files from the&#xA;object tree defined in code_objects.rb." ilk="namespace" line="50" lineend="268" name="Generators">
+        <scope classrefs="Object" ilk="class" line="53" lineend="267" name="RIGenerator">
+          <scope attributes="__classmethod__" doc="Generators may need to return specific subclasses depending&#xA;on the options they are passed." ilk="function" line="59" lineend="61" name="for" signature="RIGenerator.for(options)" />
+          <scope classrefs="Object" ilk="class" line="63" lineend="65" name="self" />
+          <scope attributes="__ctor__" doc="Set up a new HTML generator." ilk="function" line="70" lineend="75" name="initialize" signature="initialize(options)" />
+          <scope doc="Build the initial indices and output objects based on an&#xA;array of TopLevel objects containing the extracted&#xA;information." ilk="function" line="83" lineend="87" name="generate" signature="generate(toplevels)" />
+          <scope ilk="function" line="89" lineend="96" name="process_class" signature="process_class(from_class)" />
+          <scope ilk="function" line="98" lineend="139" name="generate_class_info" signature="generate_class_info(cls)" />
+          <scope ilk="function" line="142" lineend="164" name="generate_method_info" signature="generate_method_info(cls_desc, method)" />
+          <scope doc="return a list of class and instance methods that we&apos;ll be&#xA;documenting" ilk="function" line="171" lineend="189" name="method_list" signature="method_list(cls)" />
+          <scope ilk="function" line="191" lineend="211" name="params_of" signature="params_of(method)" />
+          <scope ilk="function" line="213" lineend="225" name="markup" signature="markup(comment)" />
+          <scope doc="By default we replace existing classes with the same name." ilk="function" line="234" lineend="266" name="update_or_replace" signature="update_or_replace(cls_desc)" />
+        </scope>
+      </scope>
+    </scope>
+    

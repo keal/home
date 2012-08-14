@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/scopedobject">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/buttonbox.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="TkObject" ilk="class" line="11" lineend="12" name="Scopedobject" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="24" name="Tk::Iwidgets::">
+        <scope attributes="__ctor__" ilk="function" line="21" lineend="23" name="initialize" signature="initialize(obj_name, keys={})" />
+      </scope>
+    </scope>
+    

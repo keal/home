@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="enumerable/enumerator">
+      <scope classrefs="Object" doc="A class which provides a method `each&apos; to be used as an&#xA;Enumerable object." ilk="class" name="Enumerator">
+        <import symbol="Enumerable" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a new Enumerable::Enumerator object, which is to be&#xA;used as an Enumerable object using the given object&apos;s given&#xA;method with the given arguments." ilk="function" name="new" signature="Enumerable::Enumerator.new(obj, method = :each, *args)" />
+        <scope doc="Iterates the given block using the object and the method&#xA;specified in the first place." ilk="function" name="each" signature="enum.each {...}" />
+      </scope>
+    </scope>
+    

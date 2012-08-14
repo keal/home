@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/stripchart">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <import line="8" module="tkextlib/blt/component.rb" symbol="*" />
+      <scope doc="tkextlib/blt/stripchart.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="74" name="Tk::BLT">
+        <scope classrefs="TkWindow" ilk="class" line="11" lineend="73" name="Stripchart">
+          <scope ilk="function" line="19" lineend="21" name="__boolval_optkeys" signature="__boolval_optkeys" />
+          <scope ilk="function" line="24" lineend="27" name="__strval_optkeys" signature="__strval_optkeys" />
+          <scope ilk="function" line="47" lineend="49" name="extents" signature="extents(item)" />
+          <scope ilk="function" line="51" lineend="53" name="invtransform" signature="invtransform(x, y)" />
+          <scope ilk="function" line="55" lineend="57" name="inside" signature="inside(x, y)" />
+          <scope ilk="function" line="59" lineend="63" name="metafile" signature="metafile(file=None)" />
+          <scope ilk="function" line="65" lineend="68" name="snap" signature="snap(output, keys={})" />
+          <scope ilk="function" line="70" lineend="72" name="transform" signature="transform(x, y)" />
+          <import symbol="PlotComponent" />
+          <import symbol="GraphCommand" />
+        </scope>
+      </scope>
+    </scope>
+    

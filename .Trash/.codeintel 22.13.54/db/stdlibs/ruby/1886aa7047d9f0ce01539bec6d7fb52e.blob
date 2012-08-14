@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="webrick/htmlutils">
+      <scope doc="htmlutils.rb -- HTMLUtils Module" ilk="namespace" line="11" lineend="25" name="WEBrick">
+        <scope ilk="namespace" line="12" lineend="24" name="HTMLUtils">
+          <scope ilk="function" line="14" lineend="21" name="escape" signature="escape(string)" />
+        </scope>
+      </scope>
+    </scope>
+    

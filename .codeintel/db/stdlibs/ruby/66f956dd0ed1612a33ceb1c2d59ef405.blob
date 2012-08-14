@@ -1,0 +1,75 @@
+<scope ilk="blob" lang="Ruby" name="bigdecimal">
+      <scope classrefs="Numeric" ilk="class" name="BigDecimal">
+        <import symbol="Comparable" />
+        <scope attributes="__classmethod__" ilk="function" name="_load" />
+        <scope attributes="__classmethod__" ilk="function" name="double_fig" />
+        <scope attributes="__classmethod__" ilk="function" name="induced_from" />
+        <scope attributes="__classmethod__" ilk="function" name="limit" />
+        <scope attributes="__classmethod__" ilk="function" name="mode" />
+        <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" />
+        <scope attributes="__classmethod__" ilk="function" name="ver" />
+        <scope ilk="function" name="!=" />
+        <scope ilk="function" name="%" />
+        <scope ilk="function" name="*" />
+        <scope ilk="function" name="**" />
+        <scope ilk="function" name="+" />
+        <scope ilk="function" name="+@" />
+        <scope ilk="function" name="-" />
+        <scope ilk="function" name="-@" />
+        <scope ilk="function" name="/" />
+        <scope ilk="function" name="_dump" />
+        <scope ilk="function" name="abs" />
+        <scope ilk="function" name="add" />
+        <scope ilk="function" name="ceil" />
+        <scope ilk="function" name="coerce" />
+        <scope ilk="function" name="div" />
+        <scope ilk="function" name="divmod" />
+        <scope ilk="function" name="exponent" />
+        <scope ilk="function" name="finite?" />
+        <scope ilk="function" name="fix" />
+        <scope ilk="function" name="floor" />
+        <scope ilk="function" name="frac" />
+        <scope ilk="function" name="infinite?" />
+        <scope ilk="function" name="modulo" />
+        <scope ilk="function" name="mult" />
+        <scope ilk="function" name="nan?" />
+        <scope ilk="function" name="nonzero?" />
+        <scope ilk="function" name="power" />
+        <scope ilk="function" name="precs" />
+        <scope ilk="function" name="quo" />
+        <scope ilk="function" name="remainder" />
+        <scope ilk="function" name="round" />
+        <scope ilk="function" name="sign" />
+        <scope ilk="function" name="split" />
+        <scope ilk="function" name="sqrt" />
+        <scope ilk="function" name="sub" />
+        <scope ilk="function" name="to_f" />
+        <scope ilk="function" name="to_i" />
+        <scope ilk="function" name="to_int" />
+        <scope ilk="function" name="truncate" />
+        <scope ilk="function" name="zero?" />
+        <variable attributes="__const__" citdl="Fixnum" name="BASE" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCEPTION_ALL" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCEPTION_INFINITY" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCEPTION_NaN" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCEPTION_OVERFLOW" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCEPTION_UNDERFLOW" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCEPTION_ZERODIVIDE" />
+        <variable attributes="__const__" citdl="Fixnum" name="ROUND_CEILING" />
+        <variable attributes="__const__" citdl="Fixnum" name="ROUND_DOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="ROUND_FLOOR" />
+        <variable attributes="__const__" citdl="Fixnum" name="ROUND_HALF_DOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="ROUND_HALF_EVEN" />
+        <variable attributes="__const__" citdl="Fixnum" name="ROUND_HALF_UP" />
+        <variable attributes="__const__" citdl="Fixnum" name="ROUND_MODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="ROUND_UP" />
+        <variable attributes="__const__" citdl="Fixnum" name="SIGN_NEGATIVE_FINITE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SIGN_NEGATIVE_INFINITE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SIGN_NEGATIVE_ZERO" />
+        <variable attributes="__const__" citdl="Fixnum" name="SIGN_NaN" />
+        <variable attributes="__const__" citdl="Fixnum" name="SIGN_POSITIVE_FINITE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SIGN_POSITIVE_INFINITE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SIGN_POSITIVE_ZERO" />
+      </scope>
+    </scope>
+    

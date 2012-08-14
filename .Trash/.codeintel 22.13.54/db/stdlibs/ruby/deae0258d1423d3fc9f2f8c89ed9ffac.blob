@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="fatal">
+      <scope classrefs="Exception" ilk="class" name="fatal" />
+    </scope>
+    

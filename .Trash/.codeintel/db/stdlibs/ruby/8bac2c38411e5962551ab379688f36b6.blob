@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="rss/maker">
+      <import line="1" module="rss/rss" symbol="*" />
+      <import line="30" module="rss/maker/1.0" symbol="*" />
+      <import line="31" module="rss/maker/2.0" symbol="*" />
+      <import line="32" module="rss/maker/content" symbol="*" />
+      <import line="33" module="rss/maker/dublincore" symbol="*" />
+      <import line="34" module="rss/maker/syndication" symbol="*" />
+      <import line="35" module="rss/maker/trackback" symbol="*" />
+      <import line="36" module="rss/maker/image" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="28" name="RSS">
+        <scope ilk="namespace" line="5" lineend="26" name="Maker">
+          <scope classrefs="Object" ilk="class" line="9" lineend="25" name="self">
+            <scope ilk="function" line="10" lineend="12" name="make" signature="make(version, &amp;block)" />
+            <scope ilk="function" line="14" lineend="16" name="maker" signature="maker(version)" />
+            <scope ilk="function" line="18" lineend="20" name="add_maker" signature="add_maker(version, maker)" />
+            <scope ilk="function" line="22" lineend="24" name="filename_to_version" signature="filename_to_version(filename)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

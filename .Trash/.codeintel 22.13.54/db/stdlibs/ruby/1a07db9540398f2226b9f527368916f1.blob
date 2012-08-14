@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="tk/txtwin_abst">
+      <import line="4" module="tk" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/txtwin_abst.rb : TkTextWin abstruct class" ilk="class" line="6" lineend="39" name="TkTextWin">
+        <scope doc="def create_self fail RuntimeError, &quot;TkTextWin is an abstract&#xA;class&quot; end private :create_self" ilk="function" line="13" lineend="15" name="bbox" signature="bbox(index)" />
+        <scope ilk="function" line="16" lineend="19" name="delete" signature="delete(first, last=None)" />
+        <scope ilk="function" line="20" lineend="22" name="get" signature="get(*index)" />
+        <scope ilk="function" line="23" lineend="26" name="insert" signature="insert(index, *args)" />
+        <scope ilk="function" line="27" lineend="30" name="scan_mark" signature="scan_mark(x, y)" />
+        <scope ilk="function" line="31" lineend="34" name="scan_dragto" signature="scan_dragto(x, y)" />
+        <scope ilk="function" line="35" lineend="38" name="see" signature="see(index)" />
+      </scope>
+    </scope>
+    

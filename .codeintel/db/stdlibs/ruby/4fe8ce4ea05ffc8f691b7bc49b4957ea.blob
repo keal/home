@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/servantSkeltonCreator">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="wsdl/soap/classDefCreatorSupport" symbol="*" />
+      <import line="11" module="xsd/codegen" symbol="*" />
+      <scope doc="WSDL4R - Creating servant skelton code from WSDL." ilk="namespace" line="14" name="WSDL" />
+      <scope ilk="namespace" line="15" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="18" lineend="63" name="ServantSkeltonCreator">
+        <scope ilk="function" line="22" lineend="22" name="definitions" />
+        <scope attributes="__ctor__" ilk="function" line="24" lineend="26" name="initialize" signature="initialize(definitions)" />
+        <scope ilk="function" line="28" lineend="39" name="dump" signature="dump(porttype = nil)" />
+        <scope ilk="function" line="43" lineend="62" name="dump_porttype" signature="dump_porttype(name)" />
+        <import symbol="ClassDefCreatorSupport" />
+        <import symbol="XSD::CodeGen::" />
+      </scope>
+    </scope>
+    

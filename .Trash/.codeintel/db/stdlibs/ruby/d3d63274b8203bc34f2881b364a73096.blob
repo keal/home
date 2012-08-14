@@ -1,0 +1,126 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/plotchart">
+      <import line="60" module="tk" symbol="*" />
+      <import line="61" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;Plotchart&apos;, &apos;0.9&apos;)&#xA;TkPackage.require(&apos;Plotchart&apos;, &apos;1.1&apos;)" ilk="namespace" line="67" lineend="84" name="Tk">
+        <scope ilk="namespace" line="68" lineend="83" name="Tcllib">
+          <scope ilk="namespace" line="69" lineend="82" name="Plotchart">
+            <scope attributes="__classmethod__" ilk="function" line="71" lineend="73" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="75" lineend="81" name="package_version" signature="self.package_version" />
+          </scope>
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="86" lineend="865" name="Tk::Tcllib::">
+        <scope attributes="__classmethod__" ilk="function" line="89" lineend="91" name="view_port" signature="self.view_port(w, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="93" lineend="96" name="world_coordinates" signature="self.world_coordinates(w, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="98" lineend="102" name="world_3D_coordinates" signature="self.world_3D_coordinates(w, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="104" lineend="106" name="coords_to_pixel" signature="self.coords_to_pixel(w, x, y)" />
+        <scope attributes="__classmethod__" ilk="function" line="108" lineend="110" name="coords_3D_to_pixel" signature="self.coords_3D_to_pixel(w, x, y, z)" />
+        <scope attributes="__classmethod__" ilk="function" line="112" lineend="114" name="polar_coordinates" signature="self.polar_coordinates(w, radmax)" />
+        <scope attributes="__classmethod__" ilk="function" line="116" lineend="118" name="polar_to_pixel" signature="self.polar_to_pixel(w, rad, phi)" />
+        <scope attributes="__classmethod__" ilk="function" line="120" lineend="122" name="pixel_to_coords" signature="self.pixel_to_coords(w, x, y)" />
+        <scope attributes="__classmethod__" ilk="function" line="124" lineend="126" name="determine_scale" signature="self.determine_scale(w, xmax, ymax)" />
+        <scope attributes="__classmethod__" ilk="function" line="128" lineend="130" name="set_zoom_pan" signature="self.set_zoom_pan(w)" />
+        <scope ilk="namespace" line="133" lineend="225" name="ChartMethod">
+          <scope ilk="function" line="136" lineend="139" name="title" signature="title(str)" />
+          <scope ilk="function" line="141" lineend="144" name="save_plot" signature="save_plot(filename)" />
+          <scope ilk="function" line="146" lineend="149" name="xtext" signature="xtext(str)" />
+          <scope ilk="function" line="151" lineend="154" name="ytext" signature="ytext(str)" />
+          <scope ilk="function" line="156" lineend="164" name="xconfig" signature="xconfig(key, value=None)" />
+          <scope ilk="function" line="166" lineend="174" name="yconfig" signature="yconfig(key, value=None)" />
+          <scope ilk="function" line="177" lineend="180" name="view_port" signature="view_port(*args)" />
+          <scope ilk="function" line="182" lineend="186" name="world_coordinates" signature="world_coordinates(*args)" />
+          <scope ilk="function" line="188" lineend="193" name="world_3D_coordinates" signature="world_3D_coordinates(*args)" />
+          <scope ilk="function" line="195" lineend="197" name="coords_to_pixel" signature="coords_to_pixel(x, y)" />
+          <scope ilk="function" line="199" lineend="201" name="coords_3D_to_pixel" signature="coords_3D_to_pixel(x, y, z)" />
+          <scope ilk="function" line="203" lineend="206" name="polar_coordinates" signature="polar_coordinates(radmax)" />
+          <scope ilk="function" line="208" lineend="210" name="polar_to_pixel" signature="polar_to_pixel(rad, phi)" />
+          <scope ilk="function" line="212" lineend="214" name="pixel_to_coords" signature="pixel_to_coords(x, y)" />
+          <scope ilk="function" line="216" lineend="219" name="determine_scale" signature="determine_scale(xmax, ymax)" />
+          <scope ilk="function" line="221" lineend="224" name="set_zoom_pan" signature="set_zoom_pan()" />
+        </scope>
+        <scope classrefs="TkCanvas" ilk="class" line="228" lineend="329" name="XYPlot">
+          <scope attributes="__ctor__" ilk="function" line="236" lineend="258" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="260" lineend="264" name="_create_chart" signature="_create_chart" />
+          <scope ilk="function" line="267" lineend="269" name="__destroy_hook__" signature="__destroy_hook__" />
+          <scope ilk="function" line="271" lineend="274" name="plot" signature="plot(series, x, y)" />
+          <scope ilk="function" line="276" lineend="284" name="contourlines" signature="contourlines(xcrd, ycrd, vals, clss=None)" />
+          <scope ilk="function" line="286" lineend="294" name="contourfill" signature="contourfill(xcrd, ycrd, vals, klasses=None)" />
+          <scope ilk="function" line="296" lineend="304" name="contourbox" signature="contourbox(xcrd, ycrd, vals, klasses=None)" />
+          <scope ilk="function" line="306" lineend="311" name="color_map" signature="color_map(colors)" />
+          <scope ilk="function" line="313" lineend="319" name="grid_cells" signature="grid_cells(xcrd, ycrd)" />
+          <scope ilk="function" line="321" lineend="328" name="dataconfig" signature="dataconfig(series, key, value=None)" />
+          <import symbol="ChartMethod" />
+        </scope>
+        <scope classrefs="XYPlot" ilk="class" line="332" lineend="337" name="Stripchart" />
+        <scope classrefs="TkCanvas" ilk="class" line="340" lineend="394" name="PolarPlot">
+          <scope attributes="__ctor__" ilk="function" line="348" lineend="367" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="369" lineend="373" name="_create_chart" signature="_create_chart" />
+          <scope ilk="function" line="376" lineend="378" name="__destroy_hook__" signature="__destroy_hook__" />
+          <scope ilk="function" line="380" lineend="384" name="plot" signature="plot(series, radius, angle)" />
+          <scope ilk="function" line="386" lineend="393" name="dataconfig" signature="dataconfig(series, key, value=None)" />
+          <import symbol="ChartMethod" />
+        </scope>
+        <scope classrefs="TkCanvas" ilk="class" line="398" lineend="474" name="IsometricPlot">
+          <scope attributes="__ctor__" ilk="function" line="406" lineend="441" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="443" lineend="448" name="_create_chart" signature="_create_chart" />
+          <scope ilk="function" line="451" lineend="453" name="plot" signature="plot(type, *args)" />
+          <scope ilk="function" line="455" lineend="458" name="plot_rectangle" signature="plot_rectangle(*args)" />
+          <scope ilk="function" line="460" lineend="463" name="plot_filled_rectangle" signature="plot_filled_rectangle(*args)" />
+          <scope ilk="function" line="465" lineend="468" name="plot_circle" signature="plot_circle(*args)" />
+          <scope ilk="function" line="470" lineend="473" name="plot_filled_circle" signature="plot_filled_circle(*args)" />
+          <import symbol="ChartMethod" />
+        </scope>
+        <scope classrefs="TkCanvas" ilk="class" line="478" lineend="557" name="Plot3D">
+          <scope attributes="__ctor__" ilk="function" line="486" lineend="511" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="513" lineend="519" name="_create_chart" signature="_create_chart" />
+          <scope ilk="function" line="522" lineend="526" name="plot_function" signature="plot_function(cmd=Proc.new)" />
+          <scope ilk="function" line="528" lineend="533" name="plot_funcont" signature="plot_funcont(conts, cmd=Proc.new)" />
+          <scope ilk="function" line="535" lineend="538" name="grid_size" signature="grid_size(nxcells, nycells)" />
+          <scope ilk="function" line="540" lineend="547" name="plot_data" signature="plot_data(dat)" />
+          <scope ilk="function" line="549" lineend="553" name="colour" signature="colour(fill, border)" />
+          <import symbol="ChartMethod" />
+        </scope>
+        <scope classrefs="TkCanvas" ilk="class" line="560" lineend="588" name="Piechart">
+          <scope attributes="__ctor__" ilk="function" line="568" lineend="576" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="578" lineend="581" name="_create_chart" signature="_create_chart" />
+          <scope ilk="function" line="584" lineend="587" name="plot" signature="plot(*dat)" />
+          <import symbol="ChartMethod" />
+        </scope>
+        <scope classrefs="TkCanvas" ilk="class" line="591" lineend="664" name="Barchart">
+          <scope attributes="__ctor__" ilk="function" line="599" lineend="637" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="639" lineend="644" name="_create_chart" signature="_create_chart" />
+          <scope ilk="function" line="647" lineend="649" name="__destroy_hook__" signature="__destroy_hook__" />
+          <scope ilk="function" line="651" lineend="654" name="plot" signature="plot(series, dat, col=None)" />
+          <scope ilk="function" line="656" lineend="660" name="colours" signature="colours(*cols)" />
+          <import symbol="ChartMethod" />
+        </scope>
+        <scope classrefs="Barchart" ilk="class" line="667" lineend="672" name="HorizontalBarchart" />
+        <scope classrefs="TkCanvas" ilk="class" line="675" lineend="733" name="Timechart">
+          <scope attributes="__ctor__" ilk="function" line="683" lineend="710" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="712" lineend="716" name="_create_chart" signature="_create_chart" />
+          <scope ilk="function" line="719" lineend="722" name="period" signature="period(txt, time_begin, time_end, col=None)" />
+          <scope ilk="function" line="724" lineend="727" name="milestone" signature="milestone(txt, time, col=None)" />
+          <scope ilk="function" line="729" lineend="732" name="vertline" signature="vertline(txt, time)" />
+          <import symbol="ChartMethod" />
+        </scope>
+        <scope classrefs="TkCanvas" ilk="class" line="736" lineend="832" name="Gnattchart">
+          <scope attributes="__ctor__" ilk="function" line="744" lineend="783" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="785" lineend="789" name="_create_chart" signature="_create_chart" />
+          <scope ilk="function" line="792" lineend="797" name="task" signature="task(txt, time_begin, time_end, completed=0.0)" />
+          <scope ilk="function" line="799" lineend="802" name="milestone" signature="milestone(txt, time, col=None)" />
+          <scope ilk="function" line="804" lineend="807" name="vertline" signature="vertline(txt, time)" />
+          <scope ilk="function" line="809" lineend="815" name="connect" signature="connect(from_task, to_task)" />
+          <scope ilk="function" line="817" lineend="821" name="summary" signature="summary(txt, tasks)" />
+          <scope ilk="function" line="823" lineend="826" name="color_of_part" signature="color_of_part(keyword, newcolor)" />
+          <scope ilk="function" line="828" lineend="831" name="font_of_part" signature="font_of_part(keyword, newfont)" />
+          <import symbol="ChartMethod" />
+        </scope>
+        <scope classrefs="TkObject" ilk="class" line="835" lineend="864" name="PlotSeries">
+          <scope attributes="__classmethod__" ilk="function" line="840" lineend="844" name="id2obj" signature="self.id2obj(chart, id)" />
+          <scope attributes="__ctor__" ilk="function" line="846" lineend="855" name="initialize" signature="initialize(chart, keys=nil)" />
+          <scope ilk="function" line="857" lineend="859" name="plot" signature="plot(*args)" />
+          <scope ilk="function" line="861" lineend="863" name="dataconfig" signature="dataconfig(key, value=None)" />
+        </scope>
+      </scope>
+    </scope>
+    

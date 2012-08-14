@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="irb/init">
+      <scope doc="irb/init.rb - irb initialize module $Release Version: 0.9.5$&#xA;$Revision: 1.6.2.5 $ $Date: 2005/09/01 18:30:46 $ by Keiju&#xA;ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="13" lineend="259" name="IRB">
+        <scope attributes="__classmethod__" doc="initialize config" ilk="function" line="16" lineend="26" name="setup" signature="IRB.setup(ap_path)" />
+        <scope attributes="__classmethod__" doc="@CONF default setting" ilk="function" line="29" lineend="118" name="init_config" signature="IRB.init_config(ap_path)" />
+        <scope attributes="__classmethod__" ilk="function" line="120" lineend="122" name="init_error" signature="IRB.init_error" />
+        <scope attributes="__classmethod__" doc="option analyzing" ilk="function" line="127" lineend="201" name="parse_opts" signature="IRB.parse_opts">
+          <import line="184" module="irb/help" symbol="*" />
+        </scope>
+        <scope attributes="__classmethod__" doc="running config" ilk="function" line="204" lineend="217" name="run_config" signature="IRB.run_config" />
+        <scope attributes="__classmethod__" ilk="function" line="220" lineend="231" name="rc_file" signature="IRB.rc_file(ext = IRBRC_EXT)" />
+        <scope attributes="__classmethod__" doc="enumerate possible rc-file base name generators" ilk="function" line="234" lineend="246" name="rc_file_generators" signature="IRB.rc_file_generators" />
+        <scope attributes="__classmethod__" doc="loading modules" ilk="function" line="249" lineend="257" name="load_modules" signature="IRB.load_modules" />
+      </scope>
+    </scope>
+    

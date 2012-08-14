@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="syncenumerator">
+      <scope classrefs="Object" doc="SyncEnumerator creates an Enumerable object from multiple&#xA;Enumerable objects and enumerates them synchronously." ilk="class" name="SyncEnumerator">
+        <import symbol="Enumerable" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a new SyncEnumerator which enumerates rows of given&#xA;Enumerable objects." ilk="function" name="new" signature="(*enums)" />
+        <scope doc="Enumerates rows of the Enumerable objects." ilk="function" name="each" signature="() {|ret| ...}" />
+        <scope doc="Returns true if the given nth Enumerable object has reached&#xA;the end. If no argument is given, returns true if any of the&#xA;Enumerable objects has reached the end." ilk="function" name="end?" signature="(i = nil)" />
+        <scope doc="Returns the number of enumerated Enumerable objects, i.e.&#xA;the size of each row." ilk="function" name="length" signature="()" />
+        <scope doc="Returns the number of enumerated Enumerable objects, i.e.&#xA;the size of each row." ilk="function" name="size" signature="()" />
+      </scope>
+    </scope>
+    

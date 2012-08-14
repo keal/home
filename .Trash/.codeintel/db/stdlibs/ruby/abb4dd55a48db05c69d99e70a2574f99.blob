@@ -1,0 +1,47 @@
+<scope ilk="blob" lang="Ruby" name="file/stat">
+      <scope classrefs="Object" doc="Objects of class File::Stat encapsulate common status&#xA;information for File objects. The information is recorded at&#xA;the moment the File::Stat object is created; changes made to&#xA;the file after that point will not be reflected." ilk="class" name="Stat">
+        <import symbol="Comparable" />
+        <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" />
+        <scope doc="Compares File::Stat objects by comparing their respective&#xA;modification times." ilk="function" name="&lt;=&gt;" signature="stat &lt;=&gt; other_stat    =&gt; -1, 0, 1" />
+        <scope doc="Returns the last access time for this file as an object of&#xA;class Time." ilk="function" name="atime" signature="stat.atime   =&gt; time" />
+        <scope doc="Returns the native file system&apos;s block size. Will return nil&#xA;on platforms that don&apos;t support this information." ilk="function" name="blksize" signature="stat.blksize   =&gt; integer or nil" />
+        <scope doc="Returns true if the file is a block device, false if it&#xA;isn&apos;t or if the operating system doesn&apos;t support this&#xA;feature." ilk="function" name="blockdev?" signature="stat.blockdev?   =&gt; true or false" />
+        <scope doc="Returns the number of native file system blocks allocated&#xA;for this file, or nil if the operating system doesn&apos;t&#xA;support this feature." ilk="function" name="blocks" signature="stat.blocks    =&gt; integer or nil" />
+        <scope doc="Returns true if the file is a character device, false if it&#xA;isn&apos;t or if the operating system doesn&apos;t support this&#xA;feature." ilk="function" name="chardev?" signature="stat.chardev?    =&gt; true or false" />
+        <scope doc="Returns the change time for `stat&apos; (that is, the time&#xA;directory information about the file was changed, not the&#xA;file itself)." ilk="function" name="ctime" signature="stat.ctime -&gt; aTime" />
+        <scope doc="Returns an integer representing the device on which `stat&apos;&#xA;resides." ilk="function" name="dev" signature="stat.dev    =&gt; fixnum" />
+        <scope doc="Returns the major part of File_Stat#dev or nil." ilk="function" name="dev_major" signature="stat.dev_major   =&gt; fixnum" />
+        <scope doc="Returns the minor part of File_Stat#dev or nil." ilk="function" name="dev_minor" signature="stat.dev_minor   =&gt; fixnum" />
+        <scope doc="Returns true if `stat&apos; is a directory, false otherwise." ilk="function" name="directory?" signature="stat.directory?   =&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; is executable or if the operating&#xA;system doesn&apos;t distinguish executable files from&#xA;nonexecutable files. The tests are made using the effective&#xA;owner of the process." ilk="function" name="executable?" signature="stat.executable?    =&gt; true or false" />
+        <scope doc="Same as executable?, but tests using the real owner of the&#xA;process." ilk="function" name="executable_real?" signature="stat.executable_real?    =&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; is a regular file (not a device file,&#xA;pipe, socket, etc.)." ilk="function" name="file?" signature="stat.file?    =&gt; true or false" />
+        <scope doc="Identifies the type of `stat&apos;. The return string is one of:&#xA;``file&apos;&apos;, ``directory&apos;&apos;, ``characterSpecial&apos;&apos;,&#xA;``blockSpecial&apos;&apos;, ``fifo&apos;&apos;, ``link&apos;&apos;, ``socket&apos;&apos;, or&#xA;``unknown&apos;&apos;." ilk="function" name="ftype" signature="stat.ftype   =&gt; string" />
+        <scope doc="Returns the numeric group id of the owner of `stat&apos;." ilk="function" name="gid" signature="stat.gid   =&gt; fixnum" />
+        <scope doc="Returns true if the effective group id of the process is the&#xA;same as the group id of `stat&apos;. On Windows NT, returns&#xA;false." ilk="function" name="grpowned?" signature="stat.grpowned?   =&gt; true or false" />
+        <scope doc="Returns the inode number for `stat&apos;." ilk="function" name="ino" signature="stat.ino   =&gt; fixnum" />
+        <scope doc="Produce a nicely formatted description of `stat&apos;." ilk="function" name="inspect" signature="stat.inspect  =&gt;  string" />
+        <scope doc="Returns an integer representing the permission bits of&#xA;`stat&apos;. The meaning of the bits is platform dependent; on&#xA;Unix systems, see stat(2)." ilk="function" name="mode" signature="stat.mode   =&gt; fixnum" />
+        <scope doc="Returns the modification time of `stat&apos;." ilk="function" name="mtime" signature="stat.mtime -&gt; aTime" />
+        <scope doc="Returns the number of hard links to `stat&apos;." ilk="function" name="nlink" signature="stat.nlink   =&gt; fixnum" />
+        <scope doc="Returns true if the effective user id of the process is the&#xA;same as the owner of `stat&apos;." ilk="function" name="owned?" signature="stat.owned?    =&gt; true or false" />
+        <scope doc="Returns true if the operating system supports pipes and&#xA;`stat&apos; is a pipe; false otherwise." ilk="function" name="pipe?" signature="stat.pipe?    =&gt; true or false" />
+        <scope doc="Returns an integer representing the device type on which&#xA;`stat&apos; resides. Returns nil if the operating system doesn&apos;t&#xA;support this feature." ilk="function" name="rdev" signature="stat.rdev   =&gt;  fixnum or nil" />
+        <scope doc="Returns the major part of File_Stat#rdev or nil." ilk="function" name="rdev_major" signature="stat.rdev_major   =&gt; fixnum" />
+        <scope doc="Returns the minor part of File_Stat#rdev or nil." ilk="function" name="rdev_minor" signature="stat.rdev_minor   =&gt; fixnum" />
+        <scope doc="Returns true if `stat&apos; is readable by the effective user id&#xA;of this process." ilk="function" name="readable?" signature="stat.readable?    =&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; is readable by the real user id of&#xA;this process." ilk="function" name="readable_real?" signature="stat.readable_real? -&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; has the set-group-id permission bit&#xA;set, false if it doesn&apos;t or if the operating system doesn&apos;t&#xA;support this feature." ilk="function" name="setgid?" signature="stat.setgid?   =&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; has the set-user-id permission bit&#xA;set, false if it doesn&apos;t or if the operating system doesn&apos;t&#xA;support this feature." ilk="function" name="setuid?" signature="stat.setuid?    =&gt; true or false" />
+        <scope doc="Returns the size of `stat&apos; in bytes." ilk="function" name="size" signature="stat.size    =&gt; fixnum" />
+        <scope doc="Returns the size of `stat&apos; in bytes." ilk="function" name="size?" signature="state.size    =&gt; integer" />
+        <scope doc="Returns true if `stat&apos; is a socket, false if it isn&apos;t or if&#xA;the operating system doesn&apos;t support this feature." ilk="function" name="socket?" signature="stat.socket?    =&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; has its sticky bit set, false if it&#xA;doesn&apos;t or if the operating system doesn&apos;t support this&#xA;feature." ilk="function" name="sticky?" signature="stat.sticky?    =&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; is a symbolic link, false if it isn&apos;t&#xA;or if the operating system doesn&apos;t support this feature. As&#xA;File::stat automatically follows symbolic links, symlink?&#xA;will always be false for an object returned by File::stat." ilk="function" name="symlink?" signature="stat.symlink?    =&gt; true or false" />
+        <scope doc="Returns the numeric user id of the owner of `stat&apos;." ilk="function" name="uid" signature="stat.uid    =&gt; fixnum" />
+        <scope doc="Returns true if `stat&apos; is writable by the effective user id&#xA;of this process." ilk="function" name="writable?" signature="stat.writable? -&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; is writable by the real user id of&#xA;this process." ilk="function" name="writable_real?" signature="stat.writable_real? -&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; is a zero-length file; false&#xA;otherwise." ilk="function" name="zero?" signature="stat.zero?    =&gt; true or false" />
+      </scope>
+    </scope>
+    

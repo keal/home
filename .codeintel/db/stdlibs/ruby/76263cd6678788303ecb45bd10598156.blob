@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="parsearg">
+      <import line="17" module="getopts" symbol="*" />
+      <scope doc="parsearg.rb - parse arguments $Release Version: $ $Revision:&#xA;1.2.2.1 $ $Date: 2005/03/07 00:20:15 $ by Yasuo OHBA(SHL&#xA;Japan Inc." ilk="function" line="19" lineend="24" name="printUsageAndExit" signature="printUsageAndExit()" />
+      <scope ilk="function" line="26" lineend="33" name="setParenthesis" signature="setParenthesis(ex, opt, c)" />
+      <scope ilk="function" line="35" lineend="42" name="setOrAnd" signature="setOrAnd(ex, opt, c)" />
+      <scope ilk="function" line="44" lineend="58" name="setExpression" signature="setExpression(ex, opt, op)" />
+      <scope ilk="function" line="60" lineend="85" name="parseArgs" signature="parseArgs(argc, nopt, single_opts, *opts)" />
+    </scope>
+    

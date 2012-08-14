@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/vu">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/vu/setup.rb" symbol="*" />
+      <scope doc="autoload" ilk="namespace" line="19" lineend="48" name="Tk">
+        <scope ilk="namespace" line="20" lineend="47" name="Vu">
+          <scope attributes="__classmethod__" ilk="function" line="24" lineend="26" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="28" lineend="34" name="package_version" signature="self.package_version" />
+        </scope>
+      </scope>
+    </scope>
+    

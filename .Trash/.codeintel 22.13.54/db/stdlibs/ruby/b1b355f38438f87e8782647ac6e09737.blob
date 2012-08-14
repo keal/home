@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="rubyunit">
+      <import line="5" module="runit/testcase" symbol="*" />
+      <import line="6" module="test/unit" symbol="*" />
+    </scope>
+    

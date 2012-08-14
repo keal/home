@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/testresult">
+      <import line="5" module="test/unit/util/observable" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="7" lineend="79" name="Test">
+        <scope ilk="namespace" line="8" lineend="78" name="Unit">
+          <scope classrefs="Object" doc="Collects Test::Unit::Failure and Test::Unit::Error so that&#xA;they can be displayed to the user." ilk="class" line="14" lineend="77" name="TestResult">
+            <scope ilk="function" line="20" lineend="20" name="run_count" />
+            <scope ilk="function" line="20" lineend="20" name="assertion_count" />
+            <scope attributes="__ctor__" doc="Constructs a new, empty TestResult." ilk="function" line="23" lineend="26" name="initialize" signature="initialize" />
+            <scope doc="Records a test run." ilk="function" line="29" lineend="32" name="add_run" signature="add_run" />
+            <scope doc="Records a Test::Unit::Failure." ilk="function" line="35" lineend="39" name="add_failure" signature="add_failure(failure)" />
+            <scope doc="Records a Test::Unit::Error." ilk="function" line="42" lineend="46" name="add_error" signature="add_error(error)" />
+            <scope doc="Records an individual assertion." ilk="function" line="49" lineend="52" name="add_assertion" signature="add_assertion" />
+            <scope doc="Returns a string contain the recorded runs, assertions,&#xA;failures and errors in this TestResult." ilk="function" line="56" lineend="58" name="to_s" signature="to_s" />
+            <scope doc="Returns whether or not this TestResult represents successful&#xA;completion." ilk="function" line="62" lineend="64" name="passed?" signature="passed?" />
+            <scope doc="Returns the number of failures this TestResult has recorded." ilk="function" line="68" lineend="70" name="failure_count" signature="failure_count" />
+            <scope doc="Returns the number of errors this TestResult has recorded." ilk="function" line="74" lineend="76" name="error_count" signature="error_count" />
+            <import symbol="Util::Observable" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

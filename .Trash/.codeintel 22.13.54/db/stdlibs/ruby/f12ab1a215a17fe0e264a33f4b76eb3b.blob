@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/shell">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/shell.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Itk::" ilk="class" line="11" lineend="12" name="Shell" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="38" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="activate" signature="activate" />
+        <scope ilk="function" line="25" lineend="28" name="center" signature="center(win=None)" />
+        <scope ilk="function" line="30" lineend="32" name="child_site" signature="child_site" />
+        <scope ilk="function" line="34" lineend="37" name="deactivate" signature="deactivate(val=None)" />
+      </scope>
+    </scope>
+    

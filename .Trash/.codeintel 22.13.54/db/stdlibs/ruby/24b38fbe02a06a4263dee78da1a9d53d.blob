@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="find">
+      <scope doc="The Find module supports the top-down traversal of a set of&#xA;file paths." ilk="namespace" name="Find">
+        <scope doc="Calls the associated block with the name of every file and&#xA;directory listed as arguments, then recursively on their&#xA;subdirectories, and so on." ilk="function" name="find" signature="(*paths) {|path| ...}" />
+        <scope doc="Skips the current file or directory, restarting the loop&#xA;with the next entry. If the current file is a directory,&#xA;that directory will not be recursively entered." ilk="function" name="prune" signature="()" />
+      </scope>
+    </scope>
+    

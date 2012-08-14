@@ -1,0 +1,47 @@
+<scope ilk="blob" lang="Ruby" name="shell">
+      <import line="13" module="e2mmap" symbol="*" />
+      <import line="14" module="thread" symbol="*" />
+      <import line="16" module="shell/error" symbol="*" />
+      <import line="17" module="shell/command-processor" symbol="*" />
+      <import line="18" module="shell/process-controller" symbol="*" />
+      <scope classrefs="Object" doc="shell.rb - $Release Version: 0.6.0 $ $Revision: 1.8 $ $Date:&#xA;2001/03/19 09:01:11 $ by Keiju ISHITSUKA(Nippon Rational&#xA;Inc.)" ilk="class" line="20" lineend="269" name="Shell">
+        <scope classrefs="Object" doc="@cascade = true debug: true -&gt; normal debug debug: 1    -&gt;&#xA;eval definition debug debug: 2    -&gt; detail inspect debug" ilk="class" line="33" lineend="77" name="Shell">
+          <scope ilk="function" line="34" lineend="34" name="cascade" />
+          <scope ilk="function" line="35" lineend="35" name="debug" />
+          <scope ilk="function" line="36" lineend="36" name="verbose" />
+          <scope doc="alias cascade? cascade" ilk="function" line="43" lineend="46" name="debug=" signature="debug=(val)" />
+          <scope ilk="function" line="48" lineend="52" name="cd" signature="cd(path)" />
+          <scope ilk="function" line="54" lineend="60" name="default_system_path" signature="default_system_path" />
+          <scope ilk="function" line="62" lineend="64" name="default_system_path=" signature="default_system_path=(path)" />
+          <scope ilk="function" line="66" lineend="72" name="default_record_separator" signature="default_record_separator" />
+          <scope ilk="function" line="74" lineend="76" name="default_record_separator=" signature="default_record_separator=(rs)" />
+        </scope>
+        <scope attributes="__ctor__" ilk="function" line="79" lineend="92" name="initialize" signature="initialize" />
+        <scope ilk="function" line="94" lineend="94" name="system_path" />
+        <scope ilk="function" line="96" lineend="99" name="system_path=" signature="system_path=(path)" />
+        <scope ilk="function" line="101" lineend="101" name="umask" />
+        <scope ilk="function" line="102" lineend="102" name="record_separator" />
+        <scope ilk="function" line="104" lineend="104" name="verbose" />
+        <scope ilk="function" line="105" lineend="105" name="debug" />
+        <scope ilk="function" line="107" lineend="110" name="debug=" signature="debug=(val)" />
+        <scope ilk="function" line="115" lineend="115" name="command_processor" />
+        <scope ilk="function" line="116" lineend="116" name="process_controller" />
+        <scope ilk="function" line="118" lineend="120" name="expand_path" signature="expand_path(path)" />
+        <scope ilk="function" line="134" lineend="134" name="cwd" />
+        <scope ilk="function" line="139" lineend="139" name="dir_stack" />
+        <scope doc="If called as iterator, it restores the current directory&#xA;when the block ends." ilk="function" line="144" lineend="160" name="chdir" signature="chdir(path = nil)" />
+        <scope ilk="function" line="163" lineend="186" name="pushdir" signature="pushdir(path = nil)" />
+        <scope ilk="function" line="189" lineend="197" name="popdir" signature="popdir" />
+        <scope doc="process management" ilk="function" line="204" lineend="206" name="jobs" signature="jobs" />
+        <scope ilk="function" line="208" lineend="210" name="kill" signature="kill(sig, command)" />
+        <scope attributes="__classmethod__" doc="command definitions" ilk="function" line="215" lineend="217" name="def_system_command" signature="Shell.def_system_command(command, path = command)" />
+        <scope attributes="__classmethod__" ilk="function" line="219" lineend="221" name="undef_system_command" signature="Shell.undef_system_command(command)" />
+        <scope attributes="__classmethod__" ilk="function" line="223" lineend="225" name="alias_command" signature="Shell.alias_command(ali, command, *opts, &amp;block)" />
+        <scope attributes="__classmethod__" ilk="function" line="227" lineend="229" name="unalias_command" signature="Shell.unalias_command(ali)" />
+        <scope attributes="__classmethod__" ilk="function" line="231" lineend="233" name="install_system_commands" signature="Shell.install_system_commands(pre = &quot;sys_&quot;)" />
+        <scope ilk="function" line="236" lineend="242" name="inspect" signature="inspect" />
+        <scope attributes="__classmethod__" ilk="function" line="244" lineend="265" name="notify" signature="self.notify(*opts, &amp;block)" />
+        <import symbol="Error" />
+      </scope>
+    </scope>
+    

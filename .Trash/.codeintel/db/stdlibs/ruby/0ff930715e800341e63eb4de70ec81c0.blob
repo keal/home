@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpversion">
+      <scope doc="HTTPVersion.rb -- presentation of HTTP version" ilk="namespace" line="10" lineend="49" name="WEBrick">
+        <scope classrefs="Object" ilk="class" line="11" lineend="48" name="HTTPVersion">
+          <scope ilk="function" line="14" lineend="14" name="major" />
+          <scope ilk="function" line="14" lineend="14" name="major=" />
+          <scope ilk="function" line="14" lineend="14" name="minor" />
+          <scope ilk="function" line="14" lineend="14" name="minor=" />
+          <scope attributes="__classmethod__" ilk="function" line="16" lineend="18" name="convert" signature="self.convert(version)" />
+          <scope attributes="__ctor__" ilk="function" line="20" lineend="33" name="initialize" signature="initialize(version)" />
+          <scope ilk="function" line="35" lineend="43" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+          <scope ilk="function" line="45" lineend="47" name="to_s" signature="to_s" />
+          <import symbol="Comparable" />
+        </scope>
+      </scope>
+    </scope>
+    

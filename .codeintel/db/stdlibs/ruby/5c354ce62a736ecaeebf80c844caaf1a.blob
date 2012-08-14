@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="yaml/constants">
+      <scope doc="Constants used throughout the library" ilk="namespace" line="4" lineend="45" name="YAML" />
+    </scope>
+    

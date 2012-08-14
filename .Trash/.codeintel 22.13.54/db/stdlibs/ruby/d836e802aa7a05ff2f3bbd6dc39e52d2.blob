@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/collector/dir">
+      <import line="1" module="test/unit/testsuite" symbol="*" />
+      <import line="2" module="test/unit/collector" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="92" name="Test">
+        <scope ilk="namespace" line="5" lineend="91" name="Unit">
+          <scope ilk="namespace" line="6" lineend="90" name="Collector">
+            <scope classrefs="Object" ilk="class" line="7" lineend="89" name="Dir">
+              <scope ilk="function" line="10" lineend="10" name="pattern" />
+              <scope ilk="function" line="10" lineend="10" name="exclude" />
+              <scope attributes="__ctor__" ilk="function" line="12" lineend="20" name="initialize" signature="initialize(dir=::Dir, file=::File, object_space=::ObjectSpace, req=nil)" />
+              <scope ilk="function" line="22" lineend="37" name="collect" signature="collect(*from)" />
+              <scope ilk="function" line="39" lineend="46" name="find_test_cases" signature="find_test_cases(ignore=[])" />
+              <scope ilk="function" line="48" lineend="75" name="recursive_collect" signature="recursive_collect(name, already_gathered)" />
+              <scope ilk="function" line="77" lineend="88" name="collect_file" signature="collect_file(name, suites, already_gathered)" />
+              <import symbol="Collector" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

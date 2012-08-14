@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="gserver">
+      <import line="11" module="socket" symbol="*" />
+      <import line="12" module="thread" symbol="*" />
+      <scope classrefs="Object" doc="+GServer+ implements a generic server, featuring thread pool&#xA;management, simple logging, and multi-server management." ilk="class" line="82" lineend="249" name="GServer">
+        <scope ilk="function" line="86" lineend="87" name="serve" signature="serve(io)" />
+        <scope attributes="__classmethod__" doc="Hash of opened ports, i.e." ilk="function" line="92" lineend="96" name="stop" signature="GServer.stop(port, host = DEFAULT_HOST)" />
+        <scope attributes="__classmethod__" ilk="function" line="98" lineend="101" name="in_service?" signature="GServer.in_service?(port, host = DEFAULT_HOST)" />
+        <scope ilk="function" line="103" lineend="109" name="stop" signature="stop" />
+        <scope ilk="function" line="111" lineend="113" name="stopped?" signature="stopped?" />
+        <scope ilk="function" line="115" lineend="117" name="shutdown" signature="shutdown" />
+        <scope ilk="function" line="119" lineend="121" name="connections" signature="connections" />
+        <scope ilk="function" line="123" lineend="125" name="join" signature="join" />
+        <scope ilk="function" line="127" lineend="127" name="port" />
+        <scope ilk="function" line="127" lineend="127" name="host" />
+        <scope ilk="function" line="127" lineend="127" name="maxConnections" />
+        <scope ilk="function" line="128" lineend="128" name="stdlog" />
+        <scope ilk="function" line="128" lineend="128" name="stdlog=" />
+        <scope ilk="function" line="128" lineend="128" name="audit" />
+        <scope ilk="function" line="128" lineend="128" name="audit=" />
+        <scope ilk="function" line="128" lineend="128" name="debug" />
+        <scope ilk="function" line="128" lineend="128" name="debug=" />
+        <scope ilk="function" line="130" lineend="135" name="connecting" signature="connecting(client)" />
+        <scope ilk="function" line="137" lineend="140" name="disconnecting" signature="disconnecting(clientPort)" />
+        <scope ilk="function" line="144" lineend="146" name="starting" signature="starting()" />
+        <scope ilk="function" line="148" lineend="150" name="stopping" signature="stopping()" />
+        <scope ilk="function" line="154" lineend="156" name="error" signature="error(detail)" />
+        <scope ilk="function" line="158" lineend="163" name="log" signature="log(msg)" />
+        <scope attributes="__ctor__" ilk="function" line="167" lineend="179" name="initialize" signature="initialize(port, host = DEFAULT_HOST, maxConnections = 4, stdlog = $stderr, audit = false, debug = false)" />
+        <scope ilk="function" line="181" lineend="247" name="start" signature="start(maxConnections = -1)" />
+      </scope>
+    </scope>
+    

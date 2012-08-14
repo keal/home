@@ -1,0 +1,54 @@
+<scope ilk="blob" lang="Ruby" name="matrix">
+      <scope classrefs="Object" doc="The Matrix class represents a mathematical matrix, and&#xA;provides methods for creating special-case matrices (zero,&#xA;identity, diagonal, singular, vector), operating on them&#xA;arithmetically and algebraically, and determining their&#xA;mathematical properties (trace, rank, inverse, determinant)." ilk="class" name="Matrix">
+        <scope classrefs="Numeric" doc="Private CLASS" ilk="class" name="Scalar" />
+        <import symbol="ExceptionForMatrix" />
+        <scope attributes="__classmethod__" doc="Creates a matrix where each argument is a row." ilk="function" name="[]" signature="(*rows)" />
+        <scope attributes="__classmethod__" doc="Creates a single-column matrix where the values of that&#xA;column are as given in column." ilk="function" name="column_vector" signature="(column)" />
+        <scope attributes="__classmethod__" doc="Creates a matrix using columns as an array of column&#xA;vectors." ilk="function" name="columns" signature="(columns)" />
+        <scope attributes="__classmethod__" doc="Creates a matrix where the diagonal elements are composed of&#xA;values." ilk="function" name="diagonal" signature="(*values)" />
+        <scope attributes="__classmethod__" doc="Creates an n by n identity matrix." ilk="function" name="identity" signature="(n)" />
+        <scope attributes="__classmethod__ __ctor__" doc="This method is used by the other methods that create&#xA;matrices, and is of no use to general users." ilk="function" name="new" signature="(init_method, *argv)" />
+        <scope attributes="__classmethod__" doc="Creates a single-row matrix where the values of that row are&#xA;as given in row." ilk="function" name="row_vector" signature="(row)" />
+        <scope attributes="__classmethod__" doc="Creates a matrix where rows is an array of arrays, each of&#xA;which is a row to the matrix. If the optional argument copy&#xA;is false, use the given arrays as the internal structure of&#xA;the matrix without copying." ilk="function" name="rows" signature="(rows, copy = true)" />
+        <scope attributes="__classmethod__" doc="Creates an n by n diagonal matrix where each diagonal&#xA;element is value." ilk="function" name="scalar" signature="(n, value)" />
+        <scope attributes="__classmethod__" doc="Creates an n by n zero matrix." ilk="function" name="zero" signature="(n)" />
+        <scope doc="Matrix multiplication." ilk="function" name="*" signature="(m)" />
+        <scope doc="Matrix exponentiation. Defined for integer powers only." ilk="function" name="**" signature="(other)" />
+        <scope doc="Matrix addition." ilk="function" name="+" signature="(m)" />
+        <scope doc="Matrix division (multiplication by the inverse)." ilk="function" name="/" signature="(other)" />
+        <scope doc="Returns true if and only if the two matrices contain equal&#xA;elements." ilk="function" name="==" signature="(other)" />
+        <scope doc="Returns element (i,j) of the matrix. That is: row i, column&#xA;j." ilk="function" name="[]" signature="(i, j)" />
+        <scope doc="Returns a clone of the matrix, so that the contents of each&#xA;do not reference identical objects." ilk="function" name="clone" signature="()" />
+        <scope doc="FIXME: describe #coerce." ilk="function" name="coerce" signature="(other)" />
+        <scope doc="Returns a matrix that is the result of iteration of the&#xA;given block over all elements of the matrix." ilk="function" name="collect" signature="( {|e| ...}" />
+        <scope doc="Returns column vector number j of the matrix as a Vector&#xA;(starting at 0 like an array). When a block is given, the&#xA;elements of that vector are iterated." ilk="function" name="column" signature="(j) {|e| ...}" />
+        <scope doc="Returns the number of columns. Note that it is possible to&#xA;construct a matrix with uneven columns (e.g." ilk="function" name="column_size" signature="()" />
+        <scope doc="Returns an array of the column vectors of the matrix. See&#xA;Vector." ilk="function" name="column_vectors" signature="()" />
+        <scope doc="Not really intended for general consumption." ilk="function" name="compare_by_row_vectors" signature="(rows)" />
+        <scope doc="Alias for #determinant" ilk="function" name="det" signature="()" />
+        <scope doc="Returns the determinant of the matrix. If the matrix is not&#xA;square, the result is 0." ilk="function" name="determinant" signature="()" />
+        <scope doc="Alias for #==" ilk="function" name="eql?" signature="(other)" />
+        <scope doc="Returns a hash-code for the matrix." ilk="function" name="hash" signature="()" />
+        <scope attributes="private" ilk="function" name="init_rows" signature="(rows, copy)" />
+        <scope doc="Overrides Object#inspect" ilk="function" name="inspect" signature="()" />
+        <scope doc="Alias for #inverse" ilk="function" name="inv" signature="()" />
+        <scope doc="Returns the inverse of the matrix." ilk="function" name="inverse" signature="()" />
+        <scope doc="Not for public consumption?" ilk="function" name="inverse_from" signature="(src)" />
+        <scope doc="Alias for #collect" ilk="function" name="map" signature="(" />
+        <scope doc="Returns a section of the matrix." ilk="function" name="minor" signature="(*param)" />
+        <scope doc="Returns the rank of the matrix. Beware that using Float&#xA;values, with their usual lack of precision, can affect the&#xA;value returned by this method." ilk="function" name="rank" signature="()" />
+        <scope doc="Returns true if this is a regular matrix." ilk="function" name="regular?" signature="()" />
+        <scope doc="Returns row vector number i of the matrix as a Vector&#xA;(starting at 0 like an array). When a block is given, the&#xA;elements of that vector are iterated." ilk="function" name="row" signature="(i) {|e| ...}" />
+        <scope doc="Returns the number of rows." ilk="function" name="row_size" signature="()" />
+        <scope doc="Returns an array of the row vectors of the matrix. See&#xA;Vector." ilk="function" name="row_vectors" signature="()" />
+        <scope doc="Returns true is this is a singular (i.e. non-regular)&#xA;matrix." ilk="function" name="singular?" signature="()" />
+        <scope doc="Returns true is this is a square matrix. See note in&#xA;column_size about this being unreliable, though." ilk="function" name="square?" signature="()" />
+        <scope doc="Alias for #transpose" ilk="function" name="t" signature="()" />
+        <scope doc="Returns an array of arrays that describe the rows of the&#xA;matrix." ilk="function" name="to_a" signature="()" />
+        <scope doc="Overrides Object#to_s" ilk="function" name="to_s" signature="()" />
+        <scope doc="Alias for #trace" ilk="function" name="tr" signature="()" />
+        <scope doc="Returns the trace (sum of diagonal elements) of the matrix." ilk="function" name="trace" signature="()" />
+        <scope doc="Returns the transpose of the matrix." ilk="function" name="transpose" signature="()" />
+      </scope>
+    </scope>
+    

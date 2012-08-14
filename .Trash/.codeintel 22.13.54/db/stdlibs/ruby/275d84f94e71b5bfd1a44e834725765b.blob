@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/bitmap">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tk/image" symbol="*" />
+      <import line="7" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/bitmap.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="BWidget">
+          <scope classrefs="TkPhotoImage" ilk="class" line="11" lineend="12" name="Bitmap" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="21" name="Tk::BWidget::">
+        <scope attributes="__ctor__" ilk="function" line="17" lineend="20" name="initialize" signature="initialize(name)" />
+      </scope>
+    </scope>
+    

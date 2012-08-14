@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/labeledwidget">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/labeledwidget.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Itk::" ilk="class" line="11" lineend="12" name="Labeledwidget" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="45" name="Tk::Iwidgets::">
+        <scope ilk="function" line="23" lineend="25" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="28" lineend="30" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="33" lineend="35" name="__font_optkeys" signature="__font_optkeys" />
+        <scope attributes="__classmethod__" ilk="function" line="38" lineend="40" name="alignlabels" signature="self.alignlabels(*wins)" />
+        <scope ilk="function" line="42" lineend="44" name="child_site" signature="child_site" />
+      </scope>
+    </scope>
+    

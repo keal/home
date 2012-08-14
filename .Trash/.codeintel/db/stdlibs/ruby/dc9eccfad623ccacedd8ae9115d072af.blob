@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/simpleContent">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="xsd/namedelements" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema simpleContent definition for WSDL." ilk="namespace" line="13" name="WSDL" />
+      <scope ilk="namespace" line="14" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="17" lineend="61" name="SimpleContent">
+        <scope ilk="function" line="18" lineend="18" name="restriction" />
+        <scope ilk="function" line="19" lineend="19" name="extension" />
+        <scope ilk="function" line="21" lineend="23" name="check_lexical_format" signature="check_lexical_format(value)" />
+        <scope attributes="__ctor__" ilk="function" line="25" lineend="29" name="initialize" signature="initialize" />
+        <scope ilk="function" line="31" lineend="33" name="base" signature="base" />
+        <scope ilk="function" line="35" lineend="37" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="39" lineend="48" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="52" lineend="54" name="content" signature="content" />
+        <scope ilk="function" line="56" lineend="60" name="check" signature="check(value)" />
+      </scope>
+    </scope>
+    

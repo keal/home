@@ -1,0 +1,135 @@
+<scope ilk="blob" lang="Ruby" name="xmlrpc/parser">
+      <import line="10" module="date" symbol="*" />
+      <import line="11" module="xmlrpc/base64" symbol="*" />
+      <import line="12" module="xmlrpc/datetime" symbol="*" />
+      <scope doc="add some methods to NQXML::Node" ilk="namespace" line="16" lineend="50" name="NQXML">
+        <scope classrefs="Object" ilk="class" line="17" lineend="49" name="Node">
+          <scope ilk="function" line="19" lineend="21" name="removeChild" signature="removeChild(node)" />
+          <scope ilk="function" line="22" lineend="24" name="childNodes" signature="childNodes" />
+          <scope ilk="function" line="25" lineend="27" name="hasChildNodes" signature="hasChildNodes" />
+          <scope ilk="function" line="28" lineend="30" name="[]" signature="[] (index" />
+          <scope ilk="function" line="32" lineend="39" name="nodeType" signature="nodeType" />
+          <scope ilk="function" line="41" lineend="44" name="nodeValue" signature="nodeValue" />
+          <scope ilk="function" line="45" lineend="48" name="nodeName" signature="nodeName" />
+        </scope>
+      </scope>
+      <scope doc="module NQXML" ilk="namespace" line="52" lineend="812" name="XMLRPC">
+        <scope classrefs="StandardError" ilk="class" line="54" lineend="68" name="FaultException">
+          <scope ilk="function" line="55" lineend="55" name="faultCode" />
+          <scope ilk="function" line="55" lineend="55" name="faultString" />
+          <scope attributes="__ctor__" ilk="function" line="59" lineend="62" name="initialize" signature="initialize(faultCode, faultString)" />
+          <scope doc="returns a hash" ilk="function" line="65" lineend="67" name="to_h" signature="to_h" />
+        </scope>
+        <scope ilk="namespace" line="70" lineend="156" name="Convert">
+          <scope attributes="__classmethod__" ilk="function" line="71" lineend="73" name="int" signature="self.int(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="75" lineend="82" name="boolean" signature="self.boolean(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="84" lineend="86" name="double" signature="self.double(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="88" lineend="116" name="dateTime" signature="self.dateTime(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="118" lineend="120" name="base64" signature="self.base64(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="122" lineend="143" name="struct" signature="self.struct(hash)" />
+          <scope attributes="__classmethod__" ilk="function" line="145" lineend="154" name="fault" signature="self.fault(hash)" />
+        </scope>
+        <scope doc="module Convert" ilk="namespace" line="158" lineend="809" name="XMLParser">
+          <scope classrefs="Object" ilk="class" line="160" lineend="455" name="AbstractTreeParser">
+            <scope ilk="function" line="162" lineend="164" name="parseMethodResponse" signature="parseMethodResponse(str)" />
+            <scope ilk="function" line="166" lineend="168" name="parseMethodCall" signature="parseMethodCall(str)" />
+            <scope doc="remove all whitespaces but in the tags i4, int, boolean...." ilk="function" line="176" lineend="201" name="removeWhitespacesAndComments" signature="removeWhitespacesAndComments(node)" />
+            <scope ilk="function" line="204" lineend="219" name="nodeMustBe" signature="nodeMustBe(node, name)" />
+            <scope doc="returns, when successfully the only child-node" ilk="function" line="224" lineend="231" name="hasOnlyOneChild" signature="hasOnlyOneChild(node, name=nil)" />
+            <scope ilk="function" line="234" lineend="238" name="assert" signature="assert(b)" />
+            <scope doc="the node `node` has empty string or string" ilk="function" line="241" lineend="251" name="text_zero_one" signature="text_zero_one(node)" />
+            <scope ilk="function" line="254" lineend="261" name="integer" signature="integer(node)" />
+            <scope ilk="function" line="263" lineend="268" name="boolean" signature="boolean(node)" />
+            <scope ilk="function" line="270" lineend="274" name="v_nil" signature="v_nil(node)" />
+            <scope ilk="function" line="276" lineend="279" name="string" signature="string(node)" />
+            <scope ilk="function" line="281" lineend="288" name="double" signature="double(node)" />
+            <scope ilk="function" line="290" lineend="295" name="dateTime" signature="dateTime(node)" />
+            <scope ilk="function" line="297" lineend="302" name="base64" signature="base64(node)" />
+            <scope ilk="function" line="304" lineend="309" name="member" signature="member(node)" />
+            <scope ilk="function" line="311" lineend="315" name="name" signature="name(node)" />
+            <scope ilk="function" line="317" lineend="321" name="array" signature="array(node)" />
+            <scope ilk="function" line="323" lineend="329" name="data" signature="data(node)" />
+            <scope ilk="function" line="331" lineend="335" name="param" signature="param(node)" />
+            <scope ilk="function" line="337" lineend="351" name="methodResponse" signature="methodResponse(node)" />
+            <scope ilk="function" line="353" lineend="357" name="methodName" signature="methodName(node)" />
+            <scope ilk="function" line="359" lineend="370" name="params" signature="params(node, call=true)" />
+            <scope ilk="function" line="372" lineend="377" name="fault" signature="fault(node)" />
+            <scope doc="_nodeType is defined in the subclass" ilk="function" line="382" lineend="388" name="text" signature="text(node)" />
+            <scope ilk="function" line="390" lineend="400" name="struct" signature="struct(node)" />
+            <scope ilk="function" line="403" lineend="440" name="value" signature="value(node)" />
+            <scope ilk="function" line="442" lineend="453" name="methodCall" signature="methodCall(node)" />
+          </scope>
+          <scope classrefs="Object" doc="module TreeParserMixin" ilk="class" line="457" lineend="479" name="AbstractStreamParser">
+            <scope ilk="function" line="458" lineend="471" name="parseMethodResponse" signature="parseMethodResponse(str)" />
+            <scope ilk="function" line="473" lineend="478" name="parseMethodCall" signature="parseMethodCall(str)" />
+          </scope>
+          <scope ilk="namespace" line="481" lineend="577" name="StreamParserMixin">
+            <scope attributes="__ctor__" ilk="function" line="486" lineend="502" name="initialize" signature="initialize(*a)" />
+            <scope ilk="function" line="504" lineend="522" name="startElement" signature="startElement(name, attrs=[])" />
+            <scope ilk="function" line="524" lineend="567" name="endElement" signature="endElement(name)" />
+            <scope ilk="function" line="569" lineend="575" name="character" signature="character(data)" />
+          </scope>
+          <scope classrefs="AbstractStreamParser" doc="module StreamParserMixin -----------------------------------&#xA;----------------------------------------" ilk="class" line="580" lineend="587" name="XMLStreamParser">
+            <scope attributes="__ctor__" ilk="function" line="581" lineend="586" name="initialize" signature="initialize">
+              <import line="582" module="xmlparser" symbol="*" />
+            </scope>
+          </scope>
+          <scope classrefs="AbstractStreamParser" doc="class XMLStreamParser --------------------------------------&#xA;-------------------------------------" ilk="class" line="589" lineend="616" name="NQXMLStreamParser">
+            <scope attributes="__ctor__" ilk="function" line="590" lineend="593" name="initialize" signature="initialize">
+              <import line="591" module="nqxml/streamingparser" symbol="*" />
+            </scope>
+            <scope classrefs="Object" ilk="class" line="595" lineend="614" name="XMLRPCParser">
+              <scope ilk="function" line="598" lineend="613" name="parse" signature="parse(str)" />
+              <import symbol="StreamParserMixin" />
+            </scope>
+          </scope>
+          <scope classrefs="AbstractTreeParser" doc="class NQXMLStreamParser ------------------------------------&#xA;---------------------------------------" ilk="class" line="618" lineend="668" name="XMLTreeParser">
+            <scope attributes="__ctor__" ilk="function" line="620" lineend="633" name="initialize" signature="initialize">
+              <import line="621" module="xmltreebuilder" symbol="*" />
+            </scope>
+            <scope ilk="function" line="637" lineend="644" name="_nodeType" signature="_nodeType(node)" />
+            <scope ilk="function" line="647" lineend="652" name="methodResponse_document" signature="methodResponse_document(node)" />
+            <scope ilk="function" line="654" lineend="659" name="methodCall_document" signature="methodCall_document(node)" />
+            <scope ilk="function" line="661" lineend="666" name="createCleanedTree" signature="createCleanedTree(str)" />
+          </scope>
+          <scope classrefs="AbstractTreeParser" doc="class XMLParser --------------------------------------------&#xA;-------------------------------" ilk="class" line="670" lineend="696" name="NQXMLTreeParser">
+            <scope attributes="__ctor__" ilk="function" line="672" lineend="674" name="initialize" signature="initialize">
+              <import line="673" module="nqxml/treeparser" symbol="*" />
+            </scope>
+            <scope ilk="function" line="678" lineend="680" name="_nodeType" signature="_nodeType(node)" />
+            <scope ilk="function" line="682" lineend="684" name="methodResponse_document" signature="methodResponse_document(node)" />
+            <scope ilk="function" line="686" lineend="688" name="methodCall_document" signature="methodCall_document(node)" />
+            <scope ilk="function" line="690" lineend="694" name="createCleanedTree" signature="createCleanedTree(str)" />
+          </scope>
+          <scope classrefs="AbstractStreamParser" doc="class NQXMLTreeParser --------------------------------------&#xA;-------------------------------------" ilk="class" line="698" lineend="721" name="REXMLStreamParser">
+            <scope attributes="__ctor__" ilk="function" line="699" lineend="702" name="initialize" signature="initialize">
+              <import line="700" module="rexml/document" symbol="*" />
+            </scope>
+            <scope classrefs="Object" ilk="class" line="704" lineend="719" name="StreamListener">
+              <scope ilk="function" line="712" lineend="714" name="method_missing" signature="method_missing(*a)" />
+              <scope ilk="function" line="716" lineend="718" name="parse" signature="parse(str)" />
+              <import symbol="StreamParserMixin" />
+            </scope>
+          </scope>
+          <scope classrefs="AbstractStreamParser" doc="------------------------------------------------------------&#xA;---------------" ilk="class" line="723" lineend="790" name="XMLScanStreamParser">
+            <scope attributes="__ctor__" ilk="function" line="724" lineend="727" name="initialize" signature="initialize">
+              <import line="725" module="xmlscan/parser" symbol="*" />
+            </scope>
+            <scope classrefs="Object" ilk="class" line="729" lineend="789" name="XMLScanParser">
+              <scope ilk="function" line="740" lineend="743" name="parse" signature="parse(str)" />
+              <scope ilk="function" line="748" name="on_stag_end" signature="on_stag_end(name)" />
+              <scope ilk="function" line="750" lineend="753" name="on_stag_end_empty" signature="on_stag_end_empty(name)" />
+              <scope ilk="function" line="755" lineend="757" name="on_chardata" signature="on_chardata(str)" />
+              <scope ilk="function" line="759" lineend="761" name="on_cdata" signature="on_cdata(str)" />
+              <scope ilk="function" line="763" lineend="770" name="on_entityref" signature="on_entityref(ent)" />
+              <scope ilk="function" line="772" lineend="774" name="on_charref" signature="on_charref(code)" />
+              <scope ilk="function" line="776" lineend="778" name="on_charref_hex" signature="on_charref_hex(code)" />
+              <scope ilk="function" line="780" lineend="781" name="method_missing" signature="method_missing(*a)" />
+              <import symbol="StreamParserMixin" />
+            </scope>
+          </scope>
+          <scope attributes="__classmethod__" doc="yields an instance of each installed parser" ilk="function" line="800" lineend="807" name="each_installed_parser" signature="self.each_installed_parser" />
+        </scope>
+      </scope>
+    </scope>
+    

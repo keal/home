@@ -1,0 +1,43 @@
+<scope ilk="blob" lang="Ruby" name="soap/mapping/mapping">
+      <import line="9" module="xsd/codegen/gensupport" symbol="*" />
+      <scope doc="SOAP4R - Ruby type mapping utility." ilk="namespace" line="12" name="SOAP" />
+      <scope ilk="namespace" line="15" lineend="378" name="Mapping">
+        <scope doc="TraverseSupport breaks following thread variables." ilk="namespace" line="25" lineend="36" name="TraverseSupport">
+          <scope ilk="function" line="26" lineend="29" name="mark_marshalled_obj" signature="mark_marshalled_obj(obj, soap_obj)" />
+          <scope ilk="function" line="31" lineend="35" name="mark_unmarshalled_obj" signature="mark_unmarshalled_obj(node, obj)" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="40" lineend="50" name="obj2soap" signature="self.obj2soap(obj, registry = nil, type = nil, opt = EMPTY_OPT)" />
+        <scope attributes="__classmethod__" ilk="function" line="52" lineend="62" name="soap2obj" signature="self.soap2obj(node, registry = nil, klass = nil, opt = EMPTY_OPT)" />
+        <scope attributes="__classmethod__" ilk="function" line="64" lineend="77" name="ary2soap" signature="self.ary2soap(ary, type_ns = XSD::Namespace, typename = XSD::AnyTypeLiteral, registry = nil, opt = EMPTY_OPT)" />
+        <scope attributes="__classmethod__" ilk="function" line="79" lineend="90" name="ary2md" signature="self.ary2md(ary, rank, type_ns = XSD::Namespace, typename = XSD::AnyTypeLiteral, registry = nil, opt = EMPTY_OPT)" />
+        <scope attributes="__classmethod__" ilk="function" line="92" lineend="120" name="fault2exception" signature="self.fault2exception(fault, registry = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="122" lineend="131" name="_obj2soap" signature="self._obj2soap(obj, registry, type = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="133" lineend="147" name="_soap2obj" signature="self._soap2obj(node, registry, klass = nil)" />
+        <scope attributes="__classmethod__" doc="ruby/1.7 or later." ilk="function" line="151" lineend="153" name="create_empty_object" signature="self.create_empty_object(klass)" />
+        <scope attributes="__classmethod__" ilk="function" line="161" lineend="179" name="create_empty_object" signature="self.create_empty_object(klass)" />
+        <scope attributes="__classmethod__" doc="Allow only (Letter | &apos;_&apos;) (Letter | Digit | &apos;-&apos; | &apos;_&apos;)*&#xA;here." ilk="function" line="188" lineend="192" name="name2elename" signature="self.name2elename(name)" />
+        <scope attributes="__classmethod__" ilk="function" line="194" lineend="198" name="elename2name" signature="self.elename2name(name)" />
+        <scope attributes="__classmethod__" ilk="function" line="200" lineend="218" name="const_from_name" signature="self.const_from_name(name, lenient = false)" />
+        <scope attributes="__classmethod__" ilk="function" line="220" lineend="227" name="class_from_name" signature="self.class_from_name(name, lenient = false)" />
+        <scope attributes="__classmethod__" ilk="function" line="229" lineend="236" name="module_from_name" signature="self.module_from_name(name, lenient = false)" />
+        <scope attributes="__classmethod__" ilk="function" line="238" lineend="242" name="class2qname" signature="self.class2qname(klass)" />
+        <scope attributes="__classmethod__" ilk="function" line="244" lineend="249" name="class2element" signature="self.class2element(klass)" />
+        <scope attributes="__classmethod__" ilk="function" line="251" lineend="265" name="obj2element" signature="self.obj2element(obj)" />
+        <scope attributes="__classmethod__" ilk="function" line="267" lineend="272" name="define_singleton_method" signature="self.define_singleton_method(obj, name, &amp;block)">
+          <scope classrefs="Object" ilk="class" line="268" lineend="268" name="obj" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="274" lineend="286" name="get_attribute" signature="self.get_attribute(obj, attr_name)" />
+        <scope attributes="__classmethod__" ilk="function" line="288" lineend="311" name="set_attributes" signature="self.set_attributes(obj, values)" />
+        <scope attributes="__classmethod__" ilk="function" line="313" lineend="316" name="define_attr_accessor" signature="self.define_attr_accessor(obj, name, getterproc, setterproc = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="318" lineend="320" name="schema_type_definition" signature="self.schema_type_definition(klass)" />
+        <scope attributes="__classmethod__" ilk="function" line="322" lineend="324" name="schema_ns_definition" signature="self.schema_ns_definition(klass)" />
+        <scope attributes="__classmethod__" ilk="function" line="326" lineend="340" name="schema_element_definition" signature="self.schema_element_definition(klass)" />
+        <scope attributes="__classmethod__" ilk="function" line="342" lineend="344" name="schema_attribute_definition" signature="self.schema_attribute_definition(klass)" />
+        <scope classrefs="Object" ilk="class" line="346" lineend="377" name="Mapping">
+          <scope ilk="function" line="349" lineend="352" name="class_schema_variable" signature="class_schema_variable(sym, klass)" />
+          <scope ilk="function" line="354" lineend="366" name="protect_threadvars" signature="protect_threadvars(*symbols)" />
+          <scope ilk="function" line="368" lineend="376" name="add_md_ary" signature="add_md_ary(md_ary, ary, indices, registry)" />
+        </scope>
+      </scope>
+    </scope>
+    

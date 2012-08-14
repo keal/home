@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="fcntl">
+      <scope ilk="namespace" name="Fcntl">
+        <variable attributes="__const__" citdl="Fixnum" name="F_SETFL" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_ACCMODE" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="O_WRONLY" />
+      </scope>
+    </scope>
+    

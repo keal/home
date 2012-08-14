@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="irb/help">
+      <scope doc="irb/help.rb - print usase module $Release Version: 0.9.5$&#xA;$Revision: 1.2.2.1 $ $Date: 2005/04/19 19:24:57 $ by Keiju&#xA;ISHITSUKA(keiju@ishitsuka.com)" ilk="namespace" line="13" lineend="32" name="IRB">
+        <scope attributes="__classmethod__" ilk="function" line="14" lineend="31" name="print_usage" signature="IRB.print_usage" />
+      </scope>
+    </scope>
+    

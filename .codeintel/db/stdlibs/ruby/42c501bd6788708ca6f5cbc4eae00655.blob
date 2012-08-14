@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/operation">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL SOAP operation definition." ilk="namespace" line="12" name="WSDL" />
+      <scope ilk="namespace" line="13" name="SOAP" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="118" name="Operation">
+        <scope classrefs="Object" ilk="class" line="17" lineend="35" name="OperationInfo">
+          <scope ilk="function" line="18" lineend="18" name="style" />
+          <scope ilk="function" line="19" lineend="19" name="op_name" />
+          <scope ilk="function" line="20" lineend="20" name="optype_name" />
+          <scope ilk="function" line="21" lineend="21" name="headerparts" />
+          <scope ilk="function" line="22" lineend="22" name="bodyparts" />
+          <scope ilk="function" line="23" lineend="23" name="faultpart" />
+          <scope ilk="function" line="24" lineend="24" name="soapaction" />
+          <scope attributes="__ctor__" ilk="function" line="26" lineend="34" name="initialize" signature="initialize(style, op_name, optype_name, headerparts, bodyparts, faultpart, soapaction)" />
+        </scope>
+        <scope ilk="function" line="37" lineend="37" name="soapaction" />
+        <scope ilk="function" line="38" lineend="38" name="style" />
+        <scope attributes="__ctor__" ilk="function" line="40" lineend="44" name="initialize" signature="initialize" />
+        <scope ilk="function" line="46" lineend="48" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="50" lineend="64" name="parse_attr" signature="parse_attr(attr, value)" />
+        <scope ilk="function" line="66" lineend="69" name="input_info" signature="input_info" />
+        <scope ilk="function" line="71" lineend="74" name="output_info" signature="output_info" />
+        <scope ilk="function" line="76" lineend="82" name="operation_style" signature="operation_style" />
+        <scope ilk="function" line="86" lineend="88" name="parent_binding" signature="parent_binding" />
+        <scope ilk="function" line="90" lineend="117" name="param_info" signature="param_info(name_info, param)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,263 @@
+<scope ilk="blob" lang="Ruby" name="net/http">
+      <import line="28" module="net/protocol" symbol="*" />
+      <import line="29" module="uri" symbol="*" />
+      <scope doc="= net/http.rb" ilk="namespace" line="31" lineend="2243" name="Net">
+        <scope classrefs="StandardError" doc=":nodoc: :stopdoc:" ilk="class" line="34" lineend="34" name="HTTPBadResponse" />
+        <scope classrefs="StandardError" ilk="class" line="35" lineend="35" name="HTTPHeaderSyntaxError" />
+        <scope classrefs="Protocol" doc=":startdoc: == What Is This Library?" ilk="class" line="278" lineend="1116" name="HTTP">
+          <scope attributes="__classmethod__" doc=":startdoc: Turns on net/http 1.2 (ruby 1.8) features." ilk="function" line="294" lineend="296" name="version_1_2" signature="HTTP.version_1_2" />
+          <scope attributes="__classmethod__" doc="Turns on net/http 1.1 (ruby 1.6) features." ilk="function" line="300" lineend="302" name="version_1_1" signature="HTTP.version_1_1" />
+          <scope attributes="__classmethod__" doc="true if net/http is in version 1.2 mode." ilk="function" line="306" lineend="308" name="version_1_2?" signature="HTTP.version_1_2?" />
+          <scope attributes="__classmethod__" doc="true if net/http is in version 1.1 compatible mode." ilk="function" line="312" lineend="314" name="version_1_1?" signature="HTTP.version_1_1?" />
+          <scope classrefs="Object" ilk="class" line="316" lineend="319" name="HTTP" />
+          <scope attributes="__classmethod__" doc="short cut methods" ilk="function" line="336" lineend="343" name="get_print" signature="HTTP.get_print(uri_or_host, path = nil, port = nil)" />
+          <scope attributes="__classmethod__" doc="Send a GET request to the target and return the response as&#xA;a string." ilk="function" line="355" lineend="357" name="get" signature="HTTP.get(uri_or_host, path = nil, port = nil)" />
+          <scope attributes="__classmethod__" doc="Send a GET request to the target and return the response as&#xA;a Net::HTTPResponse object." ilk="function" line="371" lineend="383" name="get_response" signature="HTTP.get_response(uri_or_host, path = nil, port = nil, &amp;block)" />
+          <scope attributes="__classmethod__" doc="Posts HTML form data to the +URL+." ilk="function" line="400" lineend="407" name="post_form" signature="HTTP.post_form(url, params)" />
+          <scope attributes="__classmethod__" doc="HTTP session management" ilk="function" line="414" lineend="416" name="default_port" signature="HTTP.default_port" />
+          <scope attributes="__classmethod__" doc="The default port to use for HTTP requests; defaults to 80." ilk="function" line="419" lineend="421" name="http_default_port" signature="HTTP.http_default_port" />
+          <scope attributes="__classmethod__" doc="The default port to use for HTTPS requests; defaults to 443." ilk="function" line="424" lineend="426" name="https_default_port" signature="HTTP.https_default_port" />
+          <scope attributes="__classmethod__" ilk="function" line="428" lineend="430" name="socket_type" signature="HTTP.socket_type" />
+          <scope attributes="__classmethod__" doc="creates a new Net::HTTP object and opens its TCP connection&#xA;and HTTP session." ilk="function" line="439" lineend="441" name="start" signature="HTTP.start(address, port = nil, p_addr = nil, p_port = nil, p_user = nil, p_pass = nil, &amp;block)" />
+          <scope classrefs="Object" ilk="class" line="443" lineend="445" name="HTTP" />
+          <scope attributes="__classmethod__" doc="Creates a new Net::HTTP object." ilk="function" line="450" lineend="456" name="new" signature="HTTP.new(address, port = nil, p_addr = nil, p_port = nil, p_user = nil, p_pass = nil)" />
+          <scope attributes="__ctor__" doc="Creates a new Net::HTTP object for the specified +address+." ilk="function" line="460" lineend="473" name="initialize" signature="initialize(address, port = nil)" />
+          <scope ilk="function" line="475" lineend="477" name="inspect" signature="inspect" />
+          <scope doc="*WARNING* This method causes serious security hole." ilk="function" line="488" lineend="491" name="set_debug_output" signature="set_debug_output(output)" />
+          <scope ilk="function" line="494" lineend="494" name="address" />
+          <scope ilk="function" line="497" lineend="497" name="port" />
+          <scope ilk="function" line="502" lineend="502" name="open_timeout" />
+          <scope ilk="function" line="502" lineend="502" name="open_timeout=" />
+          <scope ilk="function" line="507" lineend="507" name="read_timeout" />
+          <scope doc="Setter for the read_timeout attribute." ilk="function" line="510" lineend="513" name="read_timeout=" signature="read_timeout=(sec)" />
+          <scope doc="returns true if the HTTP session is started." ilk="function" line="516" lineend="518" name="started?" signature="started?" />
+          <scope ilk="function" line="522" lineend="522" name="close_on_empty_response" />
+          <scope ilk="function" line="522" lineend="522" name="close_on_empty_response=" />
+          <scope doc="returns true if use SSL/TLS with HTTP." ilk="function" line="525" lineend="527" name="use_ssl?" signature="use_ssl?" />
+          <scope doc="Opens TCP connection and HTTP session." ilk="function" line="538" lineend="550" name="start" signature="start" />
+          <scope ilk="function" line="552" lineend="555" name="do_start" signature="do_start" />
+          <scope ilk="function" line="558" lineend="589" name="connect" signature="connect" />
+          <scope ilk="function" line="592" lineend="593" name="on_connect" signature="on_connect" />
+          <scope doc="Finishes HTTP session and closes TCP connection." ilk="function" line="598" lineend="601" name="finish" signature="finish" />
+          <scope ilk="function" line="603" lineend="607" name="do_finish" signature="do_finish" />
+          <scope attributes="__classmethod__" doc="Creates an HTTP proxy class." ilk="function" line="638" lineend="652" name="Proxy" signature="HTTP.Proxy(p_addr, p_port = nil, p_user = nil, p_pass = nil)" />
+          <scope classrefs="Object" ilk="class" line="654" lineend="664" name="HTTP">
+            <scope doc="returns true if self is a class which was created by&#xA;HTTP::Proxy." ilk="function" line="656" lineend="658" name="proxy_class?" signature="proxy_class?" />
+            <scope ilk="function" line="660" lineend="660" name="proxy_address" />
+            <scope ilk="function" line="661" lineend="661" name="proxy_port" />
+            <scope ilk="function" line="662" lineend="662" name="proxy_user" />
+            <scope ilk="function" line="663" lineend="663" name="proxy_pass" />
+          </scope>
+          <scope doc="True if self is a HTTP proxy class." ilk="function" line="667" lineend="669" name="proxy?" signature="proxy?" />
+          <scope doc="Address of proxy host. If self does not use a proxy, nil." ilk="function" line="672" lineend="674" name="proxy_address" signature="proxy_address" />
+          <scope doc="Port number of proxy host. If self does not use a proxy,&#xA;nil." ilk="function" line="677" lineend="679" name="proxy_port" signature="proxy_port" />
+          <scope doc="User name for accessing proxy. If self does not use a proxy,&#xA;nil." ilk="function" line="682" lineend="684" name="proxy_user" signature="proxy_user" />
+          <scope doc="User password for accessing proxy. If self does not use a&#xA;proxy, nil." ilk="function" line="687" lineend="689" name="proxy_pass" signature="proxy_pass" />
+          <scope doc="without proxy" ilk="function" line="698" lineend="700" name="conn_address" signature="conn_address" />
+          <scope ilk="function" line="702" lineend="704" name="conn_port" signature="conn_port" />
+          <scope ilk="function" line="706" lineend="708" name="edit_path" signature="edit_path(path)" />
+          <scope ilk="namespace" line="710" lineend="724" name="ProxyDelta">
+            <scope doc=":nodoc: internal use only" ilk="function" line="713" lineend="715" name="conn_address" signature="conn_address" />
+            <scope ilk="function" line="717" lineend="719" name="conn_port" signature="conn_port" />
+            <scope ilk="function" line="721" lineend="723" name="edit_path" signature="edit_path(path)" />
+          </scope>
+          <scope doc="Gets data from +path+ on the connected-to host." ilk="function" line="767" lineend="779" name="get" signature="get(path, initheader = nil, dest = nil, &amp;block)" />
+          <scope doc="Gets only the header from +path+ on the connected-to host." ilk="function" line="797" lineend="801" name="head" signature="head(path, initheader = nil)" />
+          <scope doc="Posts +data+ (must be a String) to +path+." ilk="function" line="836" lineend="848" name="post" signature="post(path, data, initheader = nil, dest = nil, &amp;block)" />
+          <scope ilk="function" line="850" lineend="854" name="put" signature="put(path, data, initheader = nil)" />
+          <scope doc="Sends a PROPPATCH request to the +path+ and gets a response,&#xA;as an HTTPResponse object." ilk="function" line="858" lineend="860" name="proppatch" signature="proppatch(path, body, initheader = nil)" />
+          <scope doc="Sends a LOCK request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="864" lineend="866" name="lock" signature="lock(path, body, initheader = nil)" />
+          <scope doc="Sends a UNLOCK request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="870" lineend="872" name="unlock" signature="unlock(path, body, initheader = nil)" />
+          <scope doc="Sends a OPTIONS request to the +path+ and gets a response,&#xA;as an HTTPResponse object." ilk="function" line="876" lineend="878" name="options" signature="options(path, initheader = nil)" />
+          <scope doc="Sends a PROPFIND request to the +path+ and gets a response,&#xA;as an HTTPResponse object." ilk="function" line="882" lineend="884" name="propfind" signature="propfind(path, body = nil, initheader = {&apos;Depth&apos; =&gt; &apos;0&apos;})" />
+          <scope doc="Sends a DELETE request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="888" lineend="890" name="delete" signature="delete(path, initheader = {&apos;Depth&apos; =&gt; &apos;Infinity&apos;})" />
+          <scope doc="Sends a MOVE request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="894" lineend="896" name="move" signature="move(path, initheader = nil)" />
+          <scope doc="Sends a COPY request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="900" lineend="902" name="copy" signature="copy(path, initheader = nil)" />
+          <scope doc="Sends a MKCOL request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="906" lineend="908" name="mkcol" signature="mkcol(path, body = nil, initheader = nil)" />
+          <scope doc="Sends a TRACE request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="912" lineend="914" name="trace" signature="trace(path, initheader = nil)" />
+          <scope doc="Sends a GET request to the +path+ and gets a response, as an&#xA;HTTPResponse object." ilk="function" line="941" lineend="943" name="request_get" signature="request_get(path, initheader = nil, &amp;block)" />
+          <scope doc="Sends a HEAD request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="955" lineend="957" name="request_head" signature="request_head(path, initheader = nil, &amp;block)" />
+          <scope doc="Sends a POST request to the +path+ and gets a response, as&#xA;an HTTPResponse object." ilk="function" line="985" lineend="987" name="request_post" signature="request_post(path, data, initheader = nil, &amp;block)" />
+          <scope ilk="function" line="989" lineend="991" name="request_put" signature="request_put(path, data, initheader = nil, &amp;block)" />
+          <scope doc=":nodoc: obsolete Sends an HTTP request to the HTTP server." ilk="function" line="1009" lineend="10121501212" name="send_request" signature="send_request(name, path, data = nil, header = nil)" />
+          <scope doc="Sends an HTTPRequest object REQUEST to the HTTP server." ilk="function" line="1027" lineend="1052" name="request" signature="request(req, body = nil, &amp;block)" />
+          <scope ilk="function" line="1056" lineend="1067" name="begin_transport" signature="begin_transport(req)" />
+          <scope ilk="function" line="1069" lineend="1084" name="end_transport" signature="end_transport(req, res)" />
+          <scope ilk="function" line="1086" lineend="1094" name="keep_alive?" signature="keep_alive?(req, res)" />
+          <scope doc="utils" ilk="function" line="1102" lineend="1108" name="addr_port" signature="addr_port" />
+          <scope ilk="function" line="1110" lineend="1114" name="D" signature="D(msg)" />
+        </scope>
+        <scope doc="Header module." ilk="namespace" line="1129" lineend="1422" name="HTTPHeader">
+          <scope ilk="function" line="1131" lineend="1138" name="initialize_http_header" signature="initialize_http_header(initheader)" />
+          <scope ilk="function" line="1140" lineend="1142" name="size" signature="size" />
+          <scope doc=":nodoc: obsolete Returns the header field corresponding to&#xA;the case-insensitive key." ilk="function" line="1148" lineend="1151" name="[]" signature="[](key" />
+          <scope doc="Sets the header field corresponding to the case-insensitive&#xA;key." ilk="function" line="1154" lineend="1160" name="[]=" signature="[]=(key" />
+          <scope doc="[Ruby 1.8.3] Adds header field instead of replace." ilk="function" line="1177" lineend="1183" name="add_field" signature="add_field(key, val)" />
+          <scope doc="[Ruby 1.8.3] Returns an array of header field strings&#xA;corresponding to the case-insensitive +key+." ilk="function" line="1196" lineend="1199" name="get_fields" signature="get_fields(key)" />
+          <scope doc="Returns the header field corresponding to the case-&#xA;insensitive key." ilk="function" line="1204" lineend="1207" name="fetch" signature="fetch(key, *args, &amp;block)" />
+          <scope doc="Iterates for each header names and values." ilk="function" line="1210" lineend="1214" name="each_header" signature="each_header" />
+          <scope doc="Iterates for each header names." ilk="function" line="1219" lineend="1221" name="each_name" signature="each_name(&amp;block)" />
+          <scope doc="Iterates for each capitalized header names." ilk="function" line="1226" lineend="1230" name="each_capitalized_name" signature="each_capitalized_name(&amp;block)" />
+          <scope doc="Iterates for each header values." ilk="function" line="1233" lineend="1237" name="each_value" signature="each_value" />
+          <scope doc="Removes a header field." ilk="function" line="1240" lineend="1242" name="delete" signature="delete(key)" />
+          <scope doc="true if +key+ header exists." ilk="function" line="1245" lineend="1247" name="key?" signature="key?(key)" />
+          <scope doc="Returns a Hash consist of header names and values." ilk="function" line="1250" lineend="1252" name="to_hash" signature="to_hash" />
+          <scope doc="As for #each_header, except the keys are provided in&#xA;capitalized form." ilk="function" line="1255" lineend="1259" name="each_capitalized" signature="each_capitalized" />
+          <scope ilk="function" line="1263" lineend="1265" name="capitalize" signature="capitalize(name)" />
+          <scope doc="Returns an Array of Range objects which represents Range:&#xA;header field, or +nil+ if there is no such header." ilk="function" line="1270" lineend="1284" name="range" signature="range" />
+          <scope doc="Set Range: header from Range (arg r) or beginning index and&#xA;length from it (arg idx&amp;len)." ilk="function" line="1292" lineend="1319" name="set_range" signature="set_range(r, e = nil)" />
+          <scope doc="Returns an Integer object which represents the Content-&#xA;Length: header field or +nil+ if that field is not provided." ilk="function" line="1325" lineend="1330" name="content_length" signature="content_length" />
+          <scope ilk="function" line="1332" lineend="1338" name="content_length=" signature="content_length=(len)" />
+          <scope doc="Returns &quot;true&quot; if the &quot;transfer-encoding&quot; header is present&#xA;and set to &quot;chunked&quot;." ilk="function" line="1344" lineend="1348" name="chunked?" signature="chunked?" />
+          <scope doc="Returns a Range object which represents Content-Range:&#xA;header field." ilk="function" line="1353" lineend="1358" name="content_range" signature="content_range" />
+          <scope doc="The length of the range represented in Content-Range:&#xA;header." ilk="function" line="1361" lineend="1364" name="range_length" signature="range_length" />
+          <scope ilk="function" line="1366" lineend="1368" name="content_type" signature="content_type" />
+          <scope ilk="function" line="1370" lineend="1373" name="main_type" signature="main_type" />
+          <scope ilk="function" line="1375" lineend="1378" name="sub_type" signature="sub_type" />
+          <scope ilk="function" line="1380" lineend="1387" name="type_params" signature="type_params" />
+          <scope ilk="function" line="1389" lineend="1391" name="set_content_type" signature="set_content_type(type, params = {})" />
+          <scope ilk="function" line="1395" lineend="1398" name="set_form_data" signature="set_form_data(params, sep = &apos;&amp;&apos;)" />
+          <scope ilk="function" line="1402" lineend="1404" name="urlencode" signature="urlencode(str)" />
+          <scope doc="Set the Authorization: header for &quot;Basic&quot; authorization." ilk="function" line="1408" lineend="1410" name="basic_auth" signature="basic_auth(account, password)" />
+          <scope doc="Set Proxy-Authorization: header for &quot;Basic&quot; authorization." ilk="function" line="1413" lineend="1415" name="proxy_basic_auth" signature="proxy_basic_auth(account, password)" />
+          <scope ilk="function" line="1417" lineend="1419" name="basic_encode" signature="basic_encode(account, password)" />
+        </scope>
+        <scope classrefs="Object" doc="Parent of HTTPRequest class." ilk="class" line="1431" lineend="1543" name="HTTPGenericRequest">
+          <scope attributes="__ctor__" ilk="function" line="1435" lineend="1445" name="initialize" signature="initialize(m, reqbody, resbody, path, initheader = nil)" />
+          <scope ilk="function" line="1447" lineend="1447" name="method" />
+          <scope ilk="function" line="1448" lineend="1448" name="path" />
+          <scope ilk="function" line="1450" lineend="1452" name="inspect" signature="inspect" />
+          <scope ilk="function" line="1454" lineend="1456" name="request_body_permitted?" signature="request_body_permitted?" />
+          <scope ilk="function" line="1458" lineend="1460" name="response_body_permitted?" signature="response_body_permitted?" />
+          <scope ilk="function" line="1462" lineend="1465" name="body_exist?" signature="body_exist?" />
+          <scope ilk="function" line="1467" lineend="1467" name="body" />
+          <scope ilk="function" line="1469" lineend="1473" name="body=" signature="body=(str)" />
+          <scope ilk="function" line="1475" lineend="1475" name="body_stream" />
+          <scope ilk="function" line="1477" lineend="1481" name="body_stream=" signature="body_stream=(input)" />
+          <scope ilk="function" line="1483" lineend="1486" name="set_body_internal" signature="set_body_internal(str)" />
+          <scope doc="write" ilk="function" line="1492" lineend="1500" name="exec" signature="exec(sock, ver, path)" />
+          <scope ilk="function" line="1504" lineend="1513" name="send_request_with_body" signature="send_request_with_body(sock, ver, path, body)" />
+          <scope ilk="function" line="1515" lineend="1532" name="send_request_with_body_stream" signature="send_request_with_body_stream(sock, ver, path, f)" />
+          <scope ilk="function" line="1534" lineend="1541" name="write_header" signature="write_header(sock, ver, path)" />
+          <import symbol="HTTPHeader" />
+        </scope>
+        <scope classrefs="HTTPGenericRequest" doc="HTTP request class. This class wraps request header and&#xA;entity path." ilk="class" line="1550" lineend="1559" name="HTTPRequest">
+          <scope attributes="__ctor__" doc="Creates HTTP request object." ilk="function" line="1553" lineend="1558" name="initialize" signature="initialize(path, initheader = nil)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="1562" lineend="1654" name="HTTP">
+          <scope classrefs="HTTPRequest" doc="reopen" ilk="class" line="1567" lineend="1571" name="Get" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1573" lineend="1577" name="Head" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1579" lineend="1583" name="Post" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1585" lineend="1589" name="Put" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1591" lineend="1595" name="Delete" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1597" lineend="1601" name="Options" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1603" lineend="1607" name="Trace" />
+          <scope classrefs="HTTPRequest" doc="WebDAV methods --- RFC2518" ilk="class" line="1613" lineend="1617" name="Propfind" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1619" lineend="1623" name="Proppatch" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1625" lineend="1629" name="Mkcol" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1631" lineend="1635" name="Copy" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1637" lineend="1641" name="Move" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1643" lineend="1647" name="Lock" />
+          <scope classrefs="HTTPRequest" ilk="class" line="1649" lineend="1653" name="Unlock" />
+        </scope>
+        <scope doc="Response" ilk="namespace" line="1663" lineend="1670" name="HTTPExceptions">
+          <scope attributes="__ctor__" ilk="function" line="1664" lineend="1667" name="initialize" signature="initialize(msg, res)" />
+        </scope>
+        <scope classrefs="ProtocolError" ilk="class" line="1671" lineend="1673" name="HTTPError">
+          <import symbol="HTTPExceptions" />
+        </scope>
+        <scope classrefs="ProtoRetriableError" ilk="class" line="1674" lineend="1676" name="HTTPRetriableError">
+          <import symbol="HTTPExceptions" />
+        </scope>
+        <scope classrefs="ProtoServerError" ilk="class" line="1677" lineend="1680" name="HTTPServerException">
+          <import symbol="HTTPExceptions" />
+        </scope>
+        <scope classrefs="ProtoFatalError" ilk="class" line="1681" lineend="1683" name="HTTPFatalError">
+          <import symbol="HTTPExceptions" />
+        </scope>
+        <scope classrefs="Object" doc="HTTP response class. This class wraps response header and&#xA;entity." ilk="class" line="1748" lineend="1757" name="HTTPResponse">
+          <scope attributes="__classmethod__" doc="true if the response has body." ilk="function" line="1750" lineend="1752" name="body_permitted?" signature="HTTPResponse.body_permitted?" />
+          <scope attributes="__classmethod__" ilk="function" line="1754" lineend="1756" name="exception_type" signature="HTTPResponse.exception_type" />
+        </scope>
+        <scope classrefs="HTTPResponse" doc="reopened after :stopdoc:" ilk="class" line="1761" lineend="1764" name="HTTPUnknownResponse" />
+        <scope classrefs="HTTPResponse" ilk="class" line="1765" lineend="1768" name="HTTPInformation" />
+        <scope classrefs="HTTPResponse" ilk="class" line="1769" lineend="1772" name="HTTPSuccess" />
+        <scope classrefs="HTTPResponse" ilk="class" line="1773" lineend="1776" name="HTTPRedirection" />
+        <scope classrefs="HTTPResponse" ilk="class" line="1777" lineend="1780" name="HTTPClientError" />
+        <scope classrefs="HTTPResponse" ilk="class" line="1781" lineend="1784" name="HTTPServerError" />
+        <scope classrefs="HTTPInformation" ilk="class" line="1786" lineend="1788" name="HTTPContinue" />
+        <scope classrefs="HTTPInformation" ilk="class" line="1789" lineend="1791" name="HTTPSwitchProtocol" />
+        <scope classrefs="HTTPSuccess" ilk="class" line="1793" lineend="1795" name="HTTPOK" />
+        <scope classrefs="HTTPSuccess" ilk="class" line="1796" lineend="1798" name="HTTPCreated" />
+        <scope classrefs="HTTPSuccess" ilk="class" line="1799" lineend="1801" name="HTTPAccepted" />
+        <scope classrefs="HTTPSuccess" ilk="class" line="1802" lineend="1804" name="HTTPNonAuthoritativeInformation" />
+        <scope classrefs="HTTPSuccess" ilk="class" line="1805" lineend="1807" name="HTTPNoContent" />
+        <scope classrefs="HTTPSuccess" ilk="class" line="1808" lineend="1810" name="HTTPResetContent" />
+        <scope classrefs="HTTPSuccess" ilk="class" line="1811" lineend="1813" name="HTTPPartialContent" />
+        <scope classrefs="HTTPRedirection" ilk="class" line="1815" lineend="1817" name="HTTPMultipleChoice" />
+        <scope classrefs="HTTPRedirection" ilk="class" line="1818" lineend="1820" name="HTTPMovedPermanently" />
+        <scope classrefs="HTTPRedirection" ilk="class" line="1821" lineend="1823" name="HTTPFound" />
+        <scope classrefs="HTTPRedirection" ilk="class" line="1825" lineend="1827" name="HTTPSeeOther" />
+        <scope classrefs="HTTPRedirection" ilk="class" line="1828" lineend="1830" name="HTTPNotModified" />
+        <scope classrefs="HTTPRedirection" ilk="class" line="1831" lineend="1833" name="HTTPUseProxy" />
+        <scope classrefs="HTTPRedirection" doc="306 unused" ilk="class" line="1835" lineend="1837" name="HTTPTemporaryRedirect" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1839" lineend="1841" name="HTTPBadRequest" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1842" lineend="1844" name="HTTPUnauthorized" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1845" lineend="1847" name="HTTPPaymentRequired" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1848" lineend="1850" name="HTTPForbidden" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1851" lineend="1853" name="HTTPNotFound" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1854" lineend="1856" name="HTTPMethodNotAllowed" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1857" lineend="1859" name="HTTPNotAcceptable" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1860" lineend="1862" name="HTTPProxyAuthenticationRequired" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1863" lineend="1865" name="HTTPRequestTimeOut" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1866" lineend="1868" name="HTTPConflict" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1869" lineend="1871" name="HTTPGone" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1872" lineend="1874" name="HTTPLengthRequired" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1875" lineend="1877" name="HTTPPreconditionFailed" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1878" lineend="1880" name="HTTPRequestEntityTooLarge" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1881" lineend="1883" name="HTTPRequestURITooLong" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1885" lineend="1887" name="HTTPUnsupportedMediaType" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1888" lineend="1890" name="HTTPRequestedRangeNotSatisfiable" />
+        <scope classrefs="HTTPClientError" ilk="class" line="1891" lineend="1893" name="HTTPExpectationFailed" />
+        <scope classrefs="HTTPServerError" ilk="class" line="1895" lineend="1897" name="HTTPInternalServerError" />
+        <scope classrefs="HTTPServerError" ilk="class" line="1898" lineend="1900" name="HTTPNotImplemented" />
+        <scope classrefs="HTTPServerError" ilk="class" line="1901" lineend="1903" name="HTTPBadGateway" />
+        <scope classrefs="HTTPServerError" ilk="class" line="1904" lineend="1906" name="HTTPServiceUnavailable" />
+        <scope classrefs="HTTPServerError" ilk="class" line="1907" lineend="1909" name="HTTPGatewayTimeOut" />
+        <scope classrefs="HTTPServerError" ilk="class" line="1910" lineend="1912" name="HTTPVersionNotSupported" />
+        <scope classrefs="Object" doc=":startdoc:" ilk="class" line="1917" lineend="2220" name="HTTPResponse">
+          <scope classrefs="Object" doc="reopen" ilk="class" line="1973" lineend="2007" name="HTTPResponse">
+            <scope ilk="function" line="1974" lineend="1981" name="read_new" signature="read_new(sock)" />
+            <scope ilk="function" line="1985" lineend="1990" name="read_status_line" signature="read_status_line(sock)" />
+            <scope ilk="function" line="1992" lineend="1996" name="response_class" signature="response_class(code)" />
+            <scope ilk="function" line="1998" lineend="2006" name="each_response_header" signature="each_response_header(sock)" />
+          </scope>
+          <scope attributes="__ctor__" doc="next is to fix bug in RDoc, where the private inside class&#xA;&lt;&lt; self spills out." ilk="function" line="2015" lineend="2022" name="initialize" signature="initialize(httpv, code, msg)" />
+          <scope ilk="function" line="2025" lineend="2025" name="http_version" />
+          <scope ilk="function" line="2030" lineend="2030" name="code" />
+          <scope ilk="function" line="2033" lineend="2033" name="message" />
+          <scope doc=":nodoc: obsolete" ilk="function" line="2036" lineend="2038" name="inspect" signature="inspect" />
+          <scope doc="For backward compatibility." ilk="function" line="2045" lineend="2052" name="to_ary" signature="to_ary">
+            <scope classrefs="Object" ilk="class" line="2048" lineend="2050" name="res" />
+          </scope>
+          <scope doc="response &lt;-&gt; exception relationship" ilk="function" line="2058" lineend="2060" name="code_type" signature="code_type" />
+          <scope ilk="function" line="2062" lineend="2064" name="error!" signature="error!" />
+          <scope ilk="function" line="2066" lineend="2068" name="error_type" signature="error_type" />
+          <scope doc="Raises HTTP error if the response is not 2xx." ilk="function" line="2071" lineend="2073" name="value" signature="value" />
+          <scope doc="header (for backward compatibility only; DO NOT USE)" ilk="function" line="2079" lineend="2082" name="response" signature="response" />
+          <scope ilk="function" line="2084" lineend="2087" name="header" signature="header" />
+          <scope ilk="function" line="2089" lineend="2092" name="read_header" signature="read_header" />
+          <scope doc="body" ilk="function" line="2098" lineend="2107" name="reading_body" signature="reading_body(sock, reqmethodallowbody)" />
+          <scope doc="Gets entity body. If the block given, yields it to +block+." ilk="function" line="2131" lineend="2147" name="read_body" signature="read_body(dest = nil, &amp;block)" />
+          <scope doc="Returns the entity body." ilk="function" line="2163" lineend="2165" name="body" signature="body" />
+          <scope doc=":nodoc: obsolete" ilk="function" line="2171" lineend="2187" name="read_body_0" signature="read_body_0(dest)" />
+          <scope ilk="function" line="2189" lineend="2204" name="read_chunked" signature="read_chunked(dest)" />
+          <scope ilk="function" line="2206" lineend="2208" name="stream_check" signature="stream_check" />
+          <scope ilk="function" line="2210" lineend="2218" name="procdest" signature="procdest(dest, block)" />
+          <import symbol="HTTPHeader" />
+        </scope>
+        <scope classrefs="Object" doc=":enddoc: -- for backward compatibility" ilk="class" line="2227" lineend="2229" name="HTTP" />
+        <scope ilk="namespace" line="2230" lineend="2232" name="NetPrivate" />
+      </scope>
+    </scope>
+    

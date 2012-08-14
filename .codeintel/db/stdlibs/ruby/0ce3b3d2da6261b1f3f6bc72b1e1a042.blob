@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parsers/baseparser">
+      <import line="1" module="rexml/parseexception" symbol="*" />
+      <import line="2" module="rexml/source" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="436" name="REXML">
+        <scope ilk="namespace" line="5" lineend="435" name="Parsers">
+          <scope classrefs="Object" doc="= Using the Pull Parser &lt;em&gt;This API is experimental, and&#xA;subject to change.&lt;/em&gt; parser = PullParser.new( &quot;&lt;a&gt;text&lt;b&#xA;att=&apos;val&apos;/&gt;txet&lt;/a&gt;&quot; ) while parser.has_next? res =&#xA;parser.next" ilk="class" line="25" lineend="434" name="BaseParser">
+            <scope attributes="__ctor__" doc="Entity constants" ilk="function" line="99" lineend="101" name="initialize" signature="initialize( source )" />
+            <scope ilk="function" line="103" lineend="118" name="add_listener" signature="add_listener( listener )" />
+            <scope ilk="function" line="120" lineend="120" name="source" />
+            <scope ilk="function" line="122" lineend="129" name="stream=" signature="stream=( source )" />
+            <scope ilk="function" line="131" lineend="138" name="position" signature="position" />
+            <scope doc="Returns true if there are no more events" ilk="function" line="141" lineend="145" name="empty?" signature="empty?" />
+            <scope doc="Returns true if there are more events." ilk="function" line="148" lineend="150" name="has_next?" signature="has_next?" />
+            <scope doc="Push an event back on the head of the stream." ilk="function" line="154" lineend="156" name="unshift" signature="unshift" />
+            <scope doc="Peek at the +depth+ event in the stack." ilk="function" line="164" lineend="176" name="peek" signature="peek" />
+            <scope doc="Returns the next event. This is a +PullEvent+ object." ilk="function" line="179" lineend="374" name="pull" signature="pull" />
+            <scope ilk="function" line="376" lineend="384" name="entity" signature="entity( reference, entities )" />
+            <scope doc="Escapes all possible entities" ilk="function" line="387" lineend="400" name="normalize" signature="normalize( input, entities=nil, entity_filter=nil )" />
+            <scope doc="Unescapes all possible entities" ilk="function" line="403" lineend="433" name="unnormalize" signature="unnormalize( string, entities=nil, filter=nil )" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

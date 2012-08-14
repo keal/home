@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="racc/parser">
+      <scope doc="parser.rb" ilk="namespace" line="20" lineend="22" name="Racc">
+        <scope classrefs="StandardError" ilk="class" line="21" lineend="21" name="ParseError" />
+      </scope>
+      <scope ilk="namespace" line="28" lineend="456" name="Racc">
+        <scope classrefs="Object" ilk="class" line="34" lineend="454" name="Parser">
+          <import line="42" module="racc/cparse" symbol="*" />
+          <scope attributes="__classmethod__" doc="Racc_Runtime_Core_Version_C  = (defined in extension)" ilk="function" line="65" lineend="67" name="racc_runtime_type" signature="Parser.racc_runtime_type" />
+          <scope ilk="function" line="71" lineend="81" name="_racc_setup" signature="_racc_setup" />
+          <scope ilk="function" line="83" lineend="95" name="_racc_init_sysvars" signature="_racc_init_sysvars" />
+          <scope doc="do_parse" ilk="function" line="101" lineend="103" name="do_parse" signature="do_parse" />
+          <scope ilk="function" line="105" lineend="107" name="next_token" signature="next_token" />
+          <scope ilk="function" line="109" lineend="148" name="_racc_do_parse_rb" signature="_racc_do_parse_rb( arg, in_debug )" />
+          <scope doc="yyparse" ilk="function" line="154" lineend="156" name="yyparse" signature="yyparse( recv, mid )" />
+          <scope ilk="function" line="158" lineend="219" name="_racc_yyparse_rb" signature="_racc_yyparse_rb( recv, mid, arg, c_debug )" />
+          <scope doc="common" ilk="function" line="225" lineend="320" name="_racc_evalact" signature="_racc_evalact( act, arg )" />
+          <scope ilk="function" line="322" lineend="361" name="_racc_do_reduce" signature="_racc_do_reduce( arg, act )" />
+          <scope ilk="function" line="363" lineend="366" name="on_error" signature="on_error( t, val, vstack )" />
+          <scope ilk="function" line="368" lineend="370" name="yyerror" signature="yyerror" />
+          <scope ilk="function" line="372" lineend="374" name="yyaccept" signature="yyaccept" />
+          <scope ilk="function" line="376" lineend="378" name="yyerrok" signature="yyerrok" />
+          <scope doc="for debugging output" ilk="function" line="384" lineend="389" name="racc_read_token" signature="racc_read_token( t, tok, val )" />
+          <scope ilk="function" line="391" lineend="395" name="racc_shift" signature="racc_shift( tok, tstack, vstack )" />
+          <scope ilk="function" line="397" lineend="409" name="racc_reduce" signature="racc_reduce( toks, sim, tstack, vstack )" />
+          <scope ilk="function" line="411" lineend="414" name="racc_accept" signature="racc_accept" />
+          <scope ilk="function" line="416" lineend="421" name="racc_e_pop" signature="racc_e_pop( state, tstack, vstack )" />
+          <scope ilk="function" line="423" lineend="427" name="racc_next_state" signature="racc_next_state( curstate, state )" />
+          <scope ilk="function" line="429" lineend="436" name="racc_print_stacks" signature="racc_print_stacks( t, v )" />
+          <scope ilk="function" line="438" lineend="443" name="racc_print_states" signature="racc_print_states( s )" />
+          <scope ilk="function" line="445" lineend="448" name="racc_token2str" signature="racc_token2str( tok )" />
+          <scope ilk="function" line="450" lineend="452" name="token_to_str" signature="token_to_str( t )" />
+        </scope>
+      </scope>
+    </scope>
+    

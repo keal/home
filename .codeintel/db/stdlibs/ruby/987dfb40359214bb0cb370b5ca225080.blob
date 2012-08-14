@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpproxy">
+      <import line="12" module="webrick/httpserver" symbol="*" />
+      <import line="13" module="net/http" symbol="*" />
+      <scope doc="httpproxy.rb -- HTTPProxy Class" ilk="namespace" line="17" lineend="254" name="WEBrick">
+        <scope classrefs="Object" ilk="class" line="19" lineend="24" name="NullReader">
+          <scope ilk="function" line="20" lineend="22" name="read" signature="read(*args)" />
+        </scope>
+        <scope classrefs="HTTPServer" ilk="class" line="26" lineend="253" name="HTTPProxyServer">
+          <scope attributes="__ctor__" ilk="function" line="27" lineend="31" name="initialize" signature="initialize(config)" />
+          <scope ilk="function" line="33" lineend="41" name="service" signature="service(req, res)" />
+          <scope ilk="function" line="43" lineend="48" name="proxy_auth" signature="proxy_auth(req, res)" />
+          <scope doc="Some header fields shuold not be transfered." ilk="function" line="54" name="split_field" signature="split_field(f)" />
+          <scope ilk="function" line="56" lineend="68" name="choose_header" signature="choose_header(src, dst)" />
+          <scope doc="Net::HTTP is stupid about the multiple header fields." ilk="function" line="72" lineend="86" name="set_cookie" signature="set_cookie(src, dst)" />
+          <scope ilk="function" line="88" lineend="96" name="set_via" signature="set_via(h)" />
+          <scope ilk="function" line="98" lineend="100" name="proxy_uri" signature="proxy_uri(req, res)" />
+          <scope ilk="function" line="102" lineend="167" name="proxy_service" signature="proxy_service(req, res)" />
+          <scope ilk="function" line="169" lineend="248" name="proxy_connect" signature="proxy_connect(req, res)" />
+          <scope ilk="function" line="250" lineend="252" name="do_OPTIONS" signature="do_OPTIONS(req, res)" />
+        </scope>
+      </scope>
+    </scope>
+    

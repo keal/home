@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="tk/clipboard">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/clipboard.rb : methods to treat clipboard" ilk="namespace" line="6" lineend="75" name="TkClipboard">
+        <scope attributes="__classmethod__" ilk="function" line="12" lineend="18" name="clear" signature="self.clear(win=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="clear_on_display" signature="self.clear_on_display(win)" />
+        <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="get" signature="self.get(type=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="30" lineend="36" name="get_on_display" signature="self.get_on_display(win, type=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="38" lineend="41" name="set" signature="self.set(data, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="42" lineend="45" name="set_on_display" signature="self.set_on_display(win, data, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="47" lineend="52" name="append" signature="self.append(data, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="53" lineend="58" name="append_on_display" signature="self.append_on_display(win, data, keys=nil)" />
+        <scope ilk="function" line="60" lineend="63" name="clear" signature="clear" />
+        <scope ilk="function" line="64" lineend="66" name="get" signature="get(type=nil)" />
+        <scope ilk="function" line="67" lineend="70" name="set" signature="set(data, keys=nil)" />
+        <scope ilk="function" line="71" lineend="74" name="append" signature="append(data, keys=nil)" />
+      </scope>
+    </scope>
+    

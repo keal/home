@@ -1,0 +1,33 @@
+<scope ilk="blob" lang="Ruby" name="tk/textmark">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/text" symbol="*" />
+      <scope classrefs="TkObject" doc="tk/textmark.rb - methods for treating text marks" ilk="class" line="7" lineend="123" name="TkTextMark">
+        <scope attributes="__classmethod__" ilk="function" line="15" lineend="19" name="id2obj" signature="TkTextMark.id2obj(text, id)" />
+        <scope attributes="__ctor__" ilk="function" line="21" lineend="36" name="initialize" signature="initialize(parent, index)" />
+        <scope ilk="function" line="38" lineend="40" name="id" signature="id" />
+        <scope ilk="function" line="42" lineend="49" name="exist?" signature="exist?" />
+        <scope ilk="function" line="78" lineend="80" name="pos" signature="pos" />
+        <scope ilk="function" line="82" lineend="84" name="pos=" signature="pos=(where)" />
+        <scope ilk="function" line="86" lineend="90" name="set" signature="set(where)" />
+        <scope ilk="function" line="92" lineend="95" name="unset" signature="unset" />
+        <scope ilk="function" line="98" lineend="100" name="gravity" signature="gravity" />
+        <scope ilk="function" line="102" lineend="106" name="gravity=" signature="gravity=(direction)" />
+        <scope ilk="function" line="108" lineend="114" name="next" signature="next(index = nil)" />
+        <scope ilk="function" line="116" lineend="122" name="previous" signature="previous(index = nil)" />
+        <import symbol="TkText::IndexModMethods" />
+      </scope>
+      <scope classrefs="TkTextMark" ilk="class" line="125" lineend="148" name="TkTextNamedMark">
+        <scope attributes="__classmethod__" ilk="function" line="126" lineend="132" name="new" signature="self.new(parent, name, *args)" />
+        <scope attributes="__ctor__" ilk="function" line="134" lineend="147" name="initialize" signature="initialize(parent, name, index=nil)" />
+      </scope>
+      <scope classrefs="TkTextNamedMark" ilk="class" line="150" lineend="154" name="TkTextMarkInsert">
+        <scope attributes="__classmethod__" ilk="function" line="151" lineend="153" name="new" signature="self.new(parent,*args)" />
+      </scope>
+      <scope classrefs="TkTextNamedMark" ilk="class" line="156" lineend="160" name="TkTextMarkCurrent">
+        <scope attributes="__classmethod__" ilk="function" line="157" lineend="159" name="new" signature="self.new(parent,*args)" />
+      </scope>
+      <scope classrefs="TkTextNamedMark" ilk="class" line="162" lineend="166" name="TkTextMarkAnchor">
+        <scope attributes="__classmethod__" ilk="function" line="163" lineend="165" name="new" signature="self.new(parent,*args)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/info">
+      <scope doc="WSDL4R - WSDL information base." ilk="namespace" line="9" name="WSDL" />
+      <scope classrefs="Object" ilk="class" line="12" lineend="36" name="Info">
+        <scope ilk="function" line="13" lineend="13" name="root" />
+        <scope ilk="function" line="13" lineend="13" name="root=" />
+        <scope ilk="function" line="14" lineend="14" name="parent" />
+        <scope ilk="function" line="14" lineend="14" name="parent=" />
+        <scope ilk="function" line="15" lineend="15" name="id" />
+        <scope ilk="function" line="15" lineend="15" name="id=" />
+        <scope attributes="__ctor__" ilk="function" line="17" lineend="21" name="initialize" signature="initialize" />
+        <scope ilk="function" line="23" lineend="29" name="inspect" signature="inspect" />
+        <scope ilk="function" line="31" name="parse_element" signature="parse_element(element)" />
+        <scope doc="abstract" ilk="function" line="33" name="parse_attr" signature="parse_attr(attr, value)" />
+        <scope doc="abstract" ilk="function" line="35" name="parse_epilogue" signature="parse_epilogue" />
+      </scope>
+    </scope>
+    

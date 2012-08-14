@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/feedback">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/feedback.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Feedback" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="35" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="26" lineend="29" name="reset" signature="reset" />
+        <scope ilk="function" line="31" lineend="34" name="step" signature="step(inc=1)" />
+      </scope>
+    </scope>
+    

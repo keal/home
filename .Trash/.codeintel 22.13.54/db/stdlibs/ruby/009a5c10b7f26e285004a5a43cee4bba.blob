@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/classDefCreator">
+      <import line="9" module="wsdl/data" symbol="*" />
+      <import line="10" module="wsdl/soap/classDefCreatorSupport" symbol="*" />
+      <import line="11" module="xsd/codegen" symbol="*" />
+      <scope doc="WSDL4R - Creating class definition from WSDL Copyright (C)&#xA;2002, 2003, 2004  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="14" name="WSDL" />
+      <scope ilk="namespace" line="15" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="18" lineend="310" name="ClassDefCreator">
+        <scope attributes="__ctor__" ilk="function" line="21" lineend="29" name="initialize" signature="initialize(definitions)" />
+        <scope ilk="function" line="31" lineend="53" name="dump" signature="dump(type = nil)" />
+        <scope ilk="function" line="57" lineend="68" name="dump_element" signature="dump_element" />
+        <scope ilk="function" line="70" lineend="74" name="dump_simpletype" signature="dump_simpletype" />
+        <scope ilk="function" line="76" lineend="93" name="dump_complextype" signature="dump_complextype" />
+        <scope ilk="function" line="95" lineend="111" name="dump_simpletypedef" signature="dump_simpletypedef(qname, simpletype)" />
+        <scope ilk="function" line="113" lineend="119" name="dump_simpleclassdef" signature="dump_simpleclassdef(type_or_element)" />
+        <scope ilk="function" line="121" lineend="192" name="dump_classdef" signature="dump_classdef(qname, typedef, qualified = false)" />
+        <scope ilk="function" line="194" lineend="202" name="element_basetype" signature="element_basetype(ele)" />
+        <scope ilk="function" line="204" lineend="212" name="attribute_basetype" signature="attribute_basetype(attr)" />
+        <scope ilk="function" line="214" lineend="221" name="basetype_class" signature="basetype_class(type)" />
+        <scope ilk="function" line="223" lineend="250" name="define_attribute" signature="define_attribute(c, attributes)" />
+        <scope ilk="function" line="252" lineend="256" name="name_element" signature="name_element(element)" />
+        <scope ilk="function" line="258" lineend="262" name="name_attribute" signature="name_attribute(attribute)" />
+        <scope ilk="function" line="266" lineend="309" name="dump_arraydef" signature="dump_arraydef(complextype)" />
+        <import symbol="ClassDefCreatorSupport" />
+      </scope>
+    </scope>
+    

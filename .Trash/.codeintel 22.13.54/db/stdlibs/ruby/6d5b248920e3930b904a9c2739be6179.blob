@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="getoptlong">
+      <scope classrefs="Object" doc="-*- Ruby -*- Copyright (C) 1998, 1999, 2000  Motoyuki&#xA;Kasahara" ilk="class" line="16" lineend="468" name="GetoptLong">
+        <scope classrefs="StandardError" doc="Error types." ilk="class" line="36" lineend="36" name="Error" />
+        <scope classrefs="Error" ilk="class" line="37" lineend="37" name="AmbigousOption" />
+        <scope classrefs="Error" ilk="class" line="38" lineend="38" name="NeedlessArgument" />
+        <scope classrefs="Error" ilk="class" line="39" lineend="39" name="MissingArgument" />
+        <scope classrefs="Error" ilk="class" line="40" lineend="40" name="InvalidOption" />
+        <scope attributes="__ctor__" doc="Initializer." ilk="function" line="45" lineend="103" name="initialize" signature="initialize(*arguments)" />
+        <scope doc="Set ordering." ilk="function" line="108" lineend="129" name="ordering=" signature="ordering=(ordering)" />
+        <scope ilk="function" line="134" lineend="134" name="ordering" />
+        <scope doc="Set options" ilk="function" line="139" lineend="208" name="set_options" signature="set_options(*arguments)" />
+        <scope ilk="function" line="213" lineend="213" name="quiet=" />
+        <scope ilk="function" line="218" lineend="218" name="quiet" />
+        <scope doc="Terminate option processing." ilk="function" line="228" lineend="243" name="terminate" signature="terminate" />
+        <scope doc="Examine whether option processing is terminated or not." ilk="function" line="248" lineend="250" name="terminated?" signature="terminated?" />
+        <scope doc="Set an error (protected)." ilk="function" line="255" lineend="266" name="set_error" signature="set_error(type, message)" />
+        <scope ilk="function" line="272" lineend="272" name="error" />
+        <scope doc="Return an error message." ilk="function" line="282" lineend="284" name="error_message" signature="error_message" />
+        <scope doc="Get next option name and its argument as an array." ilk="function" line="289" lineend="446" name="get" signature="get" />
+        <scope doc="Iterator version of `get&apos;." ilk="function" line="456" lineend="462" name="each" signature="each" />
+      </scope>
+    </scope>
+    

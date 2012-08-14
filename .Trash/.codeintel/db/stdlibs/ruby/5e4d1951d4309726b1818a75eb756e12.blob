@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="strscan">
+      <scope classrefs="StandardError" ilk="class" name="ScanError" />
+    </scope>
+    

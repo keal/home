@@ -1,0 +1,36 @@
+<scope ilk="blob" lang="Ruby" name="soap/soap">
+      <import line="9" module="xsd/qname" symbol="*" />
+      <import line="10" module="xsd/charset" symbol="*" />
+      <scope doc="soap/soap.rb: SOAP4R - Base definitions." ilk="namespace" line="13" name="SOAP" />
+      <scope classrefs="StandardError" ilk="class" line="67" lineend="67" name="Error" />
+      <scope classrefs="Error" ilk="class" line="69" lineend="69" name="StreamError" />
+      <scope classrefs="StreamError" ilk="class" line="70" lineend="70" name="HTTPStreamError" />
+      <scope classrefs="HTTPStreamError" ilk="class" line="71" lineend="71" name="PostUnavailableError" />
+      <scope classrefs="HTTPStreamError" ilk="class" line="72" lineend="72" name="MPostUnavailableError" />
+      <scope classrefs="Error" ilk="class" line="74" lineend="74" name="ArrayIndexOutOfBoundsError" />
+      <scope classrefs="Error" ilk="class" line="75" lineend="75" name="ArrayStoreError" />
+      <scope classrefs="Error" ilk="class" line="77" lineend="77" name="RPCRoutingError" />
+      <scope classrefs="Error" ilk="class" line="78" lineend="78" name="EmptyResponseError" />
+      <scope classrefs="Error" ilk="class" line="79" lineend="79" name="ResponseFormatError" />
+      <scope classrefs="Error" ilk="class" line="81" lineend="81" name="UnhandledMustUnderstandHeaderError" />
+      <scope classrefs="Error" ilk="class" line="83" lineend="104" name="FaultError">
+        <scope ilk="function" line="84" lineend="84" name="faultcode" />
+        <scope ilk="function" line="85" lineend="85" name="faultstring" />
+        <scope ilk="function" line="86" lineend="86" name="faultactor" />
+        <scope ilk="function" line="87" lineend="87" name="detail" />
+        <scope ilk="function" line="87" lineend="87" name="detail=" />
+        <scope attributes="__ctor__" ilk="function" line="89" lineend="95" name="initialize" signature="initialize(fault)" />
+        <scope ilk="function" line="97" lineend="103" name="to_s" signature="to_s" />
+      </scope>
+      <scope ilk="namespace" line="107" lineend="115" name="Env">
+        <scope attributes="__classmethod__" ilk="function" line="108" lineend="110" name="getenv" signature="self.getenv(name)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="122" lineend="130" name="Object">
+        <scope ilk="function" line="123" lineend="125" name="instance_variable_get" signature="instance_variable_get(ivarname)" />
+        <scope ilk="function" line="127" lineend="129" name="instance_variable_set" signature="instance_variable_set(ivarname, value)" />
+      </scope>
+      <scope ilk="namespace" line="135" lineend="139" name="Kernel">
+        <scope ilk="function" line="136" lineend="138" name="warn" signature="warn(msg)" />
+      </scope>
+    </scope>
+    

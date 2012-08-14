@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="net/ftptls">
+      <import line="26" module="socket" symbol="*" />
+      <import line="27" module="openssl" symbol="*" />
+      <import line="28" module="net/ftp" symbol="*" />
+      <scope ilk="namespace" line="30" lineend="43" name="Net">
+        <scope classrefs="FTP" ilk="class" line="31" lineend="42" name="FTPTLS">
+          <scope ilk="function" line="32" lineend="41" name="login" signature="login(user = &quot;anonymous&quot;, passwd = nil, acct = nil)" />
+        </scope>
+      </scope>
+    </scope>
+    

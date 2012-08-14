@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/documentation">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL SOAP documentation element." ilk="namespace" line="12" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="15" lineend="29" name="Documentation">
+        <scope attributes="__ctor__" ilk="function" line="16" lineend="18" name="initialize" signature="initialize" />
+        <scope ilk="function" line="20" lineend="23" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="25" lineend="28" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/include">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="wsdl/xmlSchema/importer" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema include definition." ilk="namespace" line="13" name="WSDL" />
+      <scope ilk="namespace" line="14" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="17" lineend="50" name="Include">
+        <scope ilk="function" line="18" lineend="18" name="schemalocation" />
+        <scope ilk="function" line="19" lineend="19" name="content" />
+        <scope attributes="__ctor__" ilk="function" line="21" lineend="25" name="initialize" signature="initialize" />
+        <scope ilk="function" line="27" lineend="29" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="31" lineend="43" name="parse_attr" signature="parse_attr(attr, value)" />
+        <scope ilk="function" line="47" lineend="49" name="import" signature="import(location)" />
+      </scope>
+    </scope>
+    

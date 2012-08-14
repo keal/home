@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="rexml/attlistdecl">
+      <import line="2" module="rexml/child" symbol="*" />
+      <import line="3" module="rexml/source" symbol="*" />
+      <scope doc="vim:ts=2 sw=2 noexpandtab:" ilk="namespace" line="5" lineend="62" name="REXML">
+        <scope classrefs="Child" doc="This class needs: * Documentation * Work!  Not all types of&#xA;attlists are intelligently parsed, so we just spew back out&#xA;what we get in." ilk="class" line="17" lineend="61" name="AttlistDecl">
+          <scope ilk="function" line="21" lineend="21" name="element_name" />
+          <scope attributes="__ctor__" doc="Create an AttlistDecl, pulling the information from a&#xA;Source." ilk="function" line="28" lineend="33" name="initialize" signature="initialize(source)" />
+          <scope doc="Access the attlist attribute/value pairs." ilk="function" line="37" lineend="39" name="[]" signature="[](key" />
+          <scope doc="Whether an attlist declaration includes the given attribute&#xA;definition if attlist_decl.include? &quot;xmlns:foobar&quot;" ilk="function" line="43" lineend="45" name="include?" signature="include?(key)" />
+          <scope doc="Itterate over the key/value pairs: attlist_decl.each {&#xA;|attribute_name, attribute_value| ..." ilk="function" line="49" lineend="51" name="each" signature="each(&amp;block)" />
+          <scope doc="Write out exactly what we got in." ilk="function" line="54" lineend="56" name="write" signature="write" />
+          <scope ilk="function" line="58" lineend="60" name="node_type" signature="node_type" />
+          <import symbol="Enumerable" />
+        </scope>
+      </scope>
+    </scope>
+    

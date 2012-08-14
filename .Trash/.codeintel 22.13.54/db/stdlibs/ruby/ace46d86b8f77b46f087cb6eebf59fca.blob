@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="kconv">
+      <scope ilk="namespace" name="Kconv">
+        <scope doc="Guess input encoding by NKF.guess2" ilk="function" name="guess" signature="Kconv.guess(str)   -&gt; integer" />
+        <scope doc="Guess input encoding by NKF.guess1" ilk="function" name="guess_old" signature="Kconv.guess_old(str)   -&gt; integer" />
+        <scope doc="Returns whether input encoding is EUC-JP or not." ilk="function" name="iseuc" signature="Kconv.iseuc(str)   -&gt; obj or nil" />
+        <scope doc="Returns whether input encoding is Shift_JIS or not." ilk="function" name="issjis" signature="Kconv.issjis(str)   -&gt; obj or nil" />
+        <scope doc="Returns whether input encoding is UTF-8 or not." ilk="function" name="isutf8" signature="Kconv.isutf8(str)   -&gt; obj or nil" />
+        <scope doc="Convert str to out_code. out_code and in_code are given as&#xA;constants of Kconv." ilk="function" name="kconv" signature="Kconv.kconv(str, out_code, in_code = Kconv::AUTO)" />
+        <scope doc="Convert str to EUC-JP" ilk="function" name="toeuc" signature="Kconv.toeuc(str)   -&gt; string" />
+        <scope doc="Convert str to ISO-2022-JP" ilk="function" name="tojis" signature="Kconv.tojis(str)   -&gt; string" />
+        <scope doc="Convert str to Shift_JIS" ilk="function" name="tosjis" signature="Kconv.tosjis(str)   -&gt; string" />
+        <scope doc="Convert str to UTF-16" ilk="function" name="toutf16" signature="Kconv.toutf16(str)   -&gt; string" />
+        <scope doc="Convert str to UTF-8" ilk="function" name="toutf8" signature="Kconv.toutf8(str)   -&gt; string" />
+      </scope>
+    </scope>
+    

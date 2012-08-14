@@ -1,0 +1,305 @@
+<scope ilk="blob" lang="Ruby" name="swin">
+      <scope classrefs="Object" ilk="class" name="LWFactory">
+        <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" />
+        <scope ilk="function" name="application" />
+        <scope ilk="function" name="canvasfromfile" />
+        <scope ilk="function" name="cursorfromfile" />
+        <scope ilk="function" name="iconfromfile" />
+        <scope ilk="function" name="newcanvas" />
+        <scope ilk="function" name="newcursor" />
+        <scope ilk="function" name="newdialog" />
+        <scope ilk="function" name="newfont" />
+        <scope ilk="function" name="newimagelist" />
+        <scope ilk="function" name="newmenu" />
+        <scope ilk="function" name="newpopup" />
+        <scope ilk="function" name="newwindow" />
+        <scope ilk="function" name="openprinter" />
+        <scope ilk="function" name="registerWinClass" />
+      </scope>
+      <scope classrefs="Object" ilk="class" name="SWIN">
+        <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" />
+        <scope ilk="function" name="addEvent" />
+        <scope ilk="function" name="alive?" />
+        <scope ilk="function" name="application" />
+        <scope ilk="function" name="bitblt" />
+        <scope ilk="function" name="caption" />
+        <scope ilk="function" name="caption=" />
+        <scope ilk="function" name="capturedEvents" />
+        <scope ilk="function" name="classname" />
+        <scope ilk="function" name="classname=" />
+        <scope ilk="function" name="clearEventFilter" />
+        <scope ilk="function" name="clientrect" />
+        <scope ilk="function" name="close" />
+        <scope ilk="function" name="create" />
+        <scope ilk="function" name="delEvent" />
+        <scope ilk="function" name="delete" />
+        <scope ilk="function" name="devicecap" />
+        <scope ilk="function" name="disable" />
+        <scope ilk="function" name="dndSourceStart" />
+        <scope ilk="function" name="dndTargetStart" />
+        <scope ilk="function" name="dndTargetStop" />
+        <scope ilk="function" name="dopaint" />
+        <scope ilk="function" name="dpi" />
+        <scope ilk="function" name="drawBitmap" />
+        <scope ilk="function" name="drawBkColor" />
+        <scope ilk="function" name="drawBkColor=" />
+        <scope ilk="function" name="drawChord" />
+        <scope ilk="function" name="drawLine" />
+        <scope ilk="function" name="drawText" />
+        <scope ilk="function" name="eachFilter" />
+        <scope ilk="function" name="enable" />
+        <scope ilk="function" name="enabled" />
+        <scope ilk="function" name="enabled=" />
+        <scope ilk="function" name="enabled?" />
+        <scope ilk="function" name="etc" />
+        <scope ilk="function" name="etc=" />
+        <scope ilk="function" name="exstyle" />
+        <scope ilk="function" name="exstyle=" />
+        <scope ilk="function" name="fillArc" />
+        <scope ilk="function" name="fillEllipse" />
+        <scope ilk="function" name="fillRect" />
+        <scope ilk="function" name="fillRoundRect" />
+        <scope ilk="function" name="floodfill" />
+        <scope ilk="function" name="focus" />
+        <scope ilk="function" name="focused?" />
+        <scope ilk="function" name="getPixel" />
+        <scope ilk="function" name="get_oleinterface" />
+        <scope ilk="function" name="grLineTo" />
+        <scope ilk="function" name="grMoveTo" />
+        <scope ilk="function" name="h" />
+        <scope ilk="function" name="hParent" />
+        <scope ilk="function" name="hWnd" />
+        <scope ilk="function" name="handle" />
+        <scope ilk="function" name="hdc" />
+        <scope ilk="function" name="hookedwndproc?" />
+        <scope ilk="function" name="hookwndproc" />
+        <scope ilk="function" name="messageBox" />
+        <scope ilk="function" name="move" />
+        <scope ilk="function" name="msghandler" />
+        <scope ilk="function" name="opaque=" />
+        <scope ilk="function" name="opaque?" />
+        <scope ilk="function" name="physicalsize" />
+        <scope ilk="function" name="popupMenu" />
+        <scope ilk="function" name="postMessage" />
+        <scope ilk="function" name="properties" />
+        <scope ilk="function" name="psrect" />
+        <scope ilk="function" name="refresh" />
+        <scope ilk="function" name="releaseCapture" />
+        <scope ilk="function" name="sendMessage" />
+        <scope ilk="function" name="setBrush" />
+        <scope ilk="function" name="setCapture" />
+        <scope ilk="function" name="setFont" />
+        <scope ilk="function" name="setMenu" />
+        <scope ilk="function" name="setPen" />
+        <scope ilk="function" name="setPixel" />
+        <scope ilk="function" name="show" />
+        <scope ilk="function" name="size" />
+        <scope ilk="function" name="stretch" />
+        <scope ilk="function" name="stretchBitmap" />
+        <scope ilk="function" name="stretchmode" />
+        <scope ilk="function" name="stretchmode=" />
+        <scope ilk="function" name="style" />
+        <scope ilk="function" name="style=" />
+        <scope ilk="function" name="textColor" />
+        <scope ilk="function" name="textColor=" />
+        <scope ilk="function" name="textExtent" />
+        <scope ilk="function" name="top" />
+        <scope ilk="function" name="unhookwndproc" />
+        <scope ilk="function" name="visible=" />
+        <scope ilk="function" name="visible?" />
+        <scope ilk="function" name="w" />
+        <scope ilk="function" name="windowrect" />
+        <scope ilk="function" name="x" />
+        <scope ilk="function" name="y" />
+      </scope>
+      <scope ilk="namespace" name="SWin">
+        <scope ilk="function" name="&lt;" />
+        <scope ilk="function" name="&lt;=" />
+        <scope ilk="function" name="&lt;=&gt;" />
+        <scope ilk="function" name="==" />
+        <scope ilk="function" name="===" />
+        <scope ilk="function" name="&gt;" />
+        <scope ilk="function" name="&gt;=" />
+        <scope ilk="function" name="ancestors" />
+        <scope ilk="function" name="autoload" />
+        <scope ilk="function" name="autoload?" />
+        <scope ilk="function" name="class_eval" />
+        <scope ilk="function" name="class_variables" />
+        <scope ilk="function" name="const_defined?" />
+        <scope ilk="function" name="const_get" />
+        <scope ilk="function" name="const_missing" />
+        <scope ilk="function" name="const_set" />
+        <scope ilk="function" name="constants" />
+        <scope ilk="function" name="freeze" />
+        <scope ilk="function" name="include?" />
+        <scope ilk="function" name="included_modules" />
+        <scope ilk="function" name="instance_method" />
+        <scope ilk="function" name="instance_methods" />
+        <scope ilk="function" name="method_defined?" />
+        <scope ilk="function" name="module_eval" />
+        <scope ilk="function" name="name" />
+        <scope ilk="function" name="private_class_method" />
+        <scope ilk="function" name="private_instance_methods" />
+        <scope ilk="function" name="private_method_defined?" />
+        <scope ilk="function" name="protected_instance_methods" />
+        <scope ilk="function" name="protected_method_defined?" />
+        <scope ilk="function" name="public_class_method" />
+        <scope ilk="function" name="public_instance_methods" />
+        <scope ilk="function" name="public_method_defined?" />
+        <scope ilk="function" name="to_s" />
+        <variable attributes="__const__" citdl="String" name="VERSION" />
+      </scope>
+      <scope ilk="namespace" name="SWinApplication">
+        <scope attributes="__classmethod__" ilk="function" name="acceptable_win32ole" />
+        <scope attributes="__classmethod__" ilk="function" name="arg2cstructStr" />
+        <scope attributes="__classmethod__" ilk="function" name="captionheight" />
+        <scope attributes="__classmethod__" ilk="function" name="changebkbrush" />
+        <scope attributes="__classmethod__" ilk="function" name="cstruct2array" />
+        <scope attributes="__classmethod__" ilk="function" name="cursorsizes" />
+        <scope attributes="__classmethod__" ilk="function" name="dlgborders" />
+        <scope attributes="__classmethod__" ilk="function" name="doevents" />
+        <scope attributes="__classmethod__" ilk="function" name="eachMsghandled" />
+        <scope attributes="__classmethod__" ilk="function" name="getCursor" />
+        <scope attributes="__classmethod__" ilk="function" name="getDesktop" />
+        <scope attributes="__classmethod__" ilk="function" name="hInstance" />
+        <scope attributes="__classmethod__" ilk="function" name="iconsizes" />
+        <scope attributes="__classmethod__" ilk="function" name="iunknown_to_win32ole" />
+        <scope attributes="__classmethod__" ilk="function" name="lasterror" />
+        <scope attributes="__classmethod__" ilk="function" name="loadpicture" />
+        <scope attributes="__classmethod__" ilk="function" name="messageBox" />
+        <scope attributes="__classmethod__" ilk="function" name="messageloop" />
+        <scope attributes="__classmethod__" ilk="function" name="pointer2string" />
+        <scope attributes="__classmethod__" ilk="function" name="pokeMemory" />
+        <scope attributes="__classmethod__" ilk="function" name="removeAccel" />
+        <scope attributes="__classmethod__" ilk="function" name="resizeborders" />
+        <scope attributes="__classmethod__" ilk="function" name="setAccel" />
+        <scope attributes="__classmethod__" ilk="function" name="setCursor" />
+        <scope attributes="__classmethod__" ilk="function" name="set_lasterror" />
+        <scope attributes="__classmethod__" ilk="function" name="showCursor" />
+        <scope attributes="__classmethod__" ilk="function" name="swinmodule" />
+        <scope attributes="__classmethod__" ilk="function" name="thread_critical" />
+        <scope attributes="__classmethod__" ilk="function" name="thread_critical=" />
+        <scope attributes="__classmethod__" ilk="function" name="unpack" />
+        <scope attributes="__classmethod__" ilk="function" name="waitmessage" />
+        <scope attributes="__classmethod__" ilk="function" name="winborders" />
+        <scope attributes="__classmethod__" ilk="function" name="windowcount" />
+        <scope attributes="__classmethod__" ilk="function" name="winminimums" />
+        <scope attributes="__classmethod__" ilk="function" name="winpath" />
+        <scope ilk="function" name="&lt;" />
+        <scope ilk="function" name="&lt;=" />
+        <scope ilk="function" name="&lt;=&gt;" />
+        <scope ilk="function" name="==" />
+        <scope ilk="function" name="===" />
+        <scope ilk="function" name="&gt;" />
+        <scope ilk="function" name="&gt;=" />
+        <scope ilk="function" name="acceptable_win32ole" />
+        <scope ilk="function" name="ancestors" />
+        <scope ilk="function" name="arg2cstructStr" />
+        <scope ilk="function" name="autoload" />
+        <scope ilk="function" name="autoload?" />
+        <scope ilk="function" name="captionheight" />
+        <scope ilk="function" name="changebkbrush" />
+        <scope ilk="function" name="class_eval" />
+        <scope ilk="function" name="class_variables" />
+        <scope ilk="function" name="const_defined?" />
+        <scope ilk="function" name="const_get" />
+        <scope ilk="function" name="const_missing" />
+        <scope ilk="function" name="const_set" />
+        <scope ilk="function" name="constants" />
+        <scope ilk="function" name="cstruct2array" />
+        <scope ilk="function" name="cursorsizes" />
+        <scope ilk="function" name="dlgborders" />
+        <scope ilk="function" name="doevents" />
+        <scope ilk="function" name="eachMsghandled" />
+        <scope ilk="function" name="freeze" />
+        <scope ilk="function" name="getCursor" />
+        <scope ilk="function" name="getDesktop" />
+        <scope ilk="function" name="hInstance" />
+        <scope ilk="function" name="iconsizes" />
+        <scope ilk="function" name="include?" />
+        <scope ilk="function" name="included_modules" />
+        <scope ilk="function" name="instance_method" />
+        <scope ilk="function" name="instance_methods" />
+        <scope ilk="function" name="iunknown_to_win32ole" />
+        <scope ilk="function" name="lasterror" />
+        <scope ilk="function" name="loadpicture" />
+        <scope ilk="function" name="messageBox" />
+        <scope ilk="function" name="messageloop" />
+        <scope ilk="function" name="method_defined?" />
+        <scope ilk="function" name="module_eval" />
+        <scope ilk="function" name="name" />
+        <scope ilk="function" name="pointer2string" />
+        <scope ilk="function" name="pokeMemory" />
+        <scope ilk="function" name="private_class_method" />
+        <scope ilk="function" name="private_instance_methods" />
+        <scope ilk="function" name="private_method_defined?" />
+        <scope ilk="function" name="protected_instance_methods" />
+        <scope ilk="function" name="protected_method_defined?" />
+        <scope ilk="function" name="public_class_method" />
+        <scope ilk="function" name="public_instance_methods" />
+        <scope ilk="function" name="public_method_defined?" />
+        <scope ilk="function" name="removeAccel" />
+        <scope ilk="function" name="resizeborders" />
+        <scope ilk="function" name="setAccel" />
+        <scope ilk="function" name="setCursor" />
+        <scope ilk="function" name="set_lasterror" />
+        <scope ilk="function" name="showCursor" />
+        <scope ilk="function" name="swinmodule" />
+        <scope ilk="function" name="thread_critical" />
+        <scope ilk="function" name="thread_critical=" />
+        <scope ilk="function" name="to_s" />
+        <scope ilk="function" name="unpack" />
+        <scope ilk="function" name="waitmessage" />
+        <scope ilk="function" name="winborders" />
+        <scope ilk="function" name="windowcount" />
+        <scope ilk="function" name="winminimums" />
+        <scope ilk="function" name="winpath" />
+      </scope>
+      <scope classrefs="Object" ilk="class" name="SWinBitmap">
+        <scope attributes="__classmethod__" ilk="function" name="_load" />
+        <scope attributes="__classmethod__" ilk="function" name="createBitmap" />
+        <scope attributes="__classmethod__" ilk="function" name="loadFile" />
+        <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" />
+        <scope attributes="__classmethod__" ilk="function" name="newBitmap" />
+        <scope ilk="function" name="[]" />
+        <scope ilk="function" name="[]=" />
+        <scope ilk="function" name="_dump" />
+        <scope ilk="function" name="bitcount" />
+        <scope ilk="function" name="bmpStr" />
+        <scope ilk="function" name="height" />
+        <scope ilk="function" name="infoStr" />
+        <scope ilk="function" name="infoandbmp" />
+        <scope ilk="function" name="saveFile" />
+        <scope ilk="function" name="to_fullcolor" />
+        <scope ilk="function" name="width" />
+      </scope>
+      <scope classrefs="Object" ilk="class" name="SWinMSG">
+        <scope ilk="function" name="hWnd" />
+        <scope ilk="function" name="lParam" />
+        <scope ilk="function" name="lParam=" />
+        <scope ilk="function" name="msg" />
+        <scope ilk="function" name="msg=" />
+        <scope ilk="function" name="retval" />
+        <scope ilk="function" name="retval=" />
+        <scope ilk="function" name="wParam" />
+        <scope ilk="function" name="wParam=" />
+      </scope>
+      <scope classrefs="Object" ilk="class" name="SWinMenu">
+        <scope attributes="__classmethod__ __ctor__" ilk="function" name="new" />
+        <scope ilk="function" name="append" />
+        <scope ilk="function" name="application" />
+        <scope ilk="function" name="count" />
+        <scope ilk="function" name="delete" />
+        <scope ilk="function" name="each_item" />
+        <scope ilk="function" name="getState" />
+        <scope ilk="function" name="handle" />
+        <scope ilk="function" name="hmenu" />
+        <scope ilk="function" name="insert" />
+        <scope ilk="function" name="modify" />
+        <scope ilk="function" name="setChecked" />
+        <scope ilk="function" name="setState" />
+      </scope>
+      <scope classrefs="Interrupt" ilk="class" name="SWinMsgloopInterrupt" />
+      <scope classrefs="SWin::ResourceNotExistError" ilk="class" name="WindowNotExistError" />
+    </scope>
+    

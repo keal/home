@@ -1,0 +1,37 @@
+<scope ilk="blob" lang="Ruby" name="rinda/ring">
+      <import line="4" module="drb/drb" symbol="*" />
+      <import line="5" module="rinda/rinda" symbol="*" />
+      <import line="6" module="thread" symbol="*" />
+      <import line="253" module="rinda/tuplespace" symbol="*" />
+      <scope doc="Note: Rinda::Ring API is unstable." ilk="namespace" line="8" lineend="247" name="Rinda">
+        <scope classrefs="Object" doc="A RingServer allows a Rinda::TupleSpace to be located via&#xA;UDP broadcasts." ilk="class" line="25" lineend="88" name="RingServer">
+          <scope attributes="__ctor__" doc="Advertises +ts+ on the UDP broadcast address at +port+." ilk="function" line="32" lineend="38" name="initialize" signature="initialize(ts, port=Ring_PORT)" />
+          <scope doc="Creates a thread that picks up UDP packets and passes them&#xA;to do_write for decoding." ilk="function" line="44" lineend="51" name="write_service" signature="write_service" />
+          <scope doc="Extracts the response URI from +msg+ and adds it to&#xA;TupleSpace where it will be picked up by +reply_service+ for&#xA;notification." ilk="function" line="57" lineend="65" name="do_write" signature="do_write(msg)" />
+          <scope doc="Creates a thread that notifies waiting clients from the&#xA;TupleSpace." ilk="function" line="70" lineend="76" name="reply_service" signature="reply_service" />
+          <scope doc="Pulls lookup tuples out of the TupleSpace and sends their&#xA;DRb object the address of the local TupleSpace." ilk="function" line="82" lineend="86" name="do_reply" signature="do_reply" />
+          <import symbol="DRbUndumped" />
+        </scope>
+        <scope classrefs="Object" doc="RingFinger is used by RingServer clients to discover the&#xA;RingServer&apos;s TupleSpace." ilk="class" line="96" lineend="216" name="RingFinger">
+          <scope attributes="__classmethod__" doc="Creates a singleton RingFinger and looks for a RingServer." ilk="function" line="106" lineend="112" name="finger" signature="self.finger" />
+          <scope attributes="__classmethod__" doc="Returns the first advertised TupleSpace." ilk="function" line="117" lineend="119" name="primary" signature="self.primary" />
+          <scope attributes="__classmethod__" doc="Contains all discoverd TupleSpaces except for the primary." ilk="function" line="124" lineend="126" name="to_a" signature="self.to_a" />
+          <scope ilk="function" line="131" lineend="131" name="broadcast_list" />
+          <scope ilk="function" line="131" lineend="131" name="broadcast_list=" />
+          <scope ilk="function" line="136" lineend="136" name="port" />
+          <scope ilk="function" line="136" lineend="136" name="port=" />
+          <scope ilk="function" line="141" lineend="141" name="primary" />
+          <scope ilk="function" line="141" lineend="141" name="primary=" />
+          <scope attributes="__ctor__" doc="Creates a new RingFinger that will look for RingServers at&#xA;+port+ on the addresses in +broadcast_list+." ilk="function" line="147" lineend="152" name="initialize" signature="initialize(broadcast_list=@@broadcast_list, port=Ring_PORT)" />
+          <scope doc="Contains all discovered TupleSpaces except for the primary." ilk="function" line="157" lineend="159" name="to_a" signature="to_a" />
+          <scope doc="Iterates over all discovered TupleSpaces starting with the&#xA;primary." ilk="function" line="164" lineend="169" name="each" signature="each" />
+          <scope doc="Looks up RingServers waiting +timeout+ seconds." ilk="function" line="176" lineend="192" name="lookup_ring" signature="lookup_ring(timeout=5, &amp;block)" />
+          <scope doc="Returns the first found remote TupleSpace." ilk="function" line="198" lineend="214" name="lookup_ring_any" signature="lookup_ring_any(timeout=5)" />
+        </scope>
+        <scope classrefs="Object" doc="RingProvider uses a RingServer advertised TupleSpace as a&#xA;name service." ilk="class" line="226" lineend="245" name="RingProvider">
+          <scope attributes="__ctor__" doc="Creates a RingProvider that will provide a +klass+ service&#xA;running on +front+, with a +description+." ilk="function" line="232" lineend="235" name="initialize" signature="initialize(klass, front, desc, renewer = nil)" />
+          <scope doc="Advertises this service on the primary remote TupleSpace." ilk="function" line="240" lineend="243" name="provide" signature="provide" />
+        </scope>
+      </scope>
+    </scope>
+    

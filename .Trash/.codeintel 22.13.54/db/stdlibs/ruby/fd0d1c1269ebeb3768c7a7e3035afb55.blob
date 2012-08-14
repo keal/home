@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="tkentry">
+      <import line="4" module="tk/entry" symbol="*" />
+    </scope>
+    

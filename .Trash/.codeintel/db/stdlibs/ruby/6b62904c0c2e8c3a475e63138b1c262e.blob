@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="drb/extserv">
+      <import line="6" module="drb/drb" symbol="*" />
+      <scope ilk="namespace" line="8" lineend="36" name="DRb">
+        <scope classrefs="Object" ilk="class" line="9" lineend="35" name="ExtServ">
+          <scope attributes="__ctor__" ilk="function" line="12" lineend="17" name="initialize" signature="initialize(there, name, server=nil)" />
+          <scope ilk="function" line="18" lineend="18" name="server" />
+          <scope ilk="function" line="20" lineend="22" name="front" signature="front" />
+          <scope ilk="function" line="24" lineend="30" name="stop_service" signature="stop_service" />
+          <scope ilk="function" line="32" lineend="34" name="alive?" signature="alive?" />
+          <import symbol="DRbUndumped" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="39" lineend="53" name="Foo">
+        <scope attributes="__ctor__" ilk="function" line="42" lineend="44" name="initialize" signature="initialize(str)" />
+        <scope ilk="function" line="46" lineend="48" name="hello" signature="hello(it)" />
+        <scope ilk="function" line="50" lineend="52" name="to_s" signature="to_s" />
+        <import symbol="DRbUndumped" />
+      </scope>
+    </scope>
+    

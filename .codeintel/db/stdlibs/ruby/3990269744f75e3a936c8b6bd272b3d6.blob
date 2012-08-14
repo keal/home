@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="yaml/dbm">
+      <import line="1" module="yaml" symbol="*" />
+      <import line="2" module="dbm" symbol="*" />
+      <scope doc="YAML + DBM = YDBM - Same interface as DBM class" ilk="namespace" line="7" name="YAML" />
+      <scope classrefs="::DBM" ilk="class" line="9" lineend="109" name="DBM">
+        <scope ilk="function" line="11" lineend="13" name="[]" signature="[]( key" />
+        <scope ilk="function" line="14" lineend="16" name="[]=" signature="[]=( key" />
+        <scope ilk="function" line="17" lineend="28" name="fetch" signature="fetch( keystr, ifnone = nil )" />
+        <scope ilk="function" line="29" lineend="31" name="index" signature="index( keystr )" />
+        <scope ilk="function" line="32" lineend="34" name="values_at" signature="values_at( *keys )" />
+        <scope ilk="function" line="35" lineend="41" name="delete" signature="delete( key )" />
+        <scope ilk="function" line="42" lineend="47" name="delete_if" signature="delete_if" />
+        <scope ilk="function" line="48" lineend="51" name="reject" signature="reject" />
+        <scope ilk="function" line="52" lineend="55" name="each_pair" signature="each_pair" />
+        <scope ilk="function" line="56" lineend="59" name="each_value" signature="each_value" />
+        <scope ilk="function" line="60" lineend="62" name="values" signature="values" />
+        <scope ilk="function" line="63" lineend="66" name="has_value?" signature="has_value?( val )" />
+        <scope ilk="function" line="67" lineend="71" name="invert" signature="invert" />
+        <scope ilk="function" line="72" lineend="75" name="replace" signature="replace( hsh )" />
+        <scope ilk="function" line="76" lineend="80" name="shift" signature="shift" />
+        <scope ilk="function" line="81" lineend="87" name="select" signature="select( *keys )" />
+        <scope ilk="function" line="88" lineend="91" name="store" signature="store( key, val )" />
+        <scope ilk="function" line="92" lineend="97" name="update" signature="update( hsh )" />
+        <scope ilk="function" line="98" lineend="102" name="to_a" signature="to_a" />
+        <scope ilk="function" line="103" lineend="107" name="to_hash" signature="to_hash" />
+      </scope>
+    </scope>
+    

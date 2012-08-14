@@ -1,0 +1,231 @@
+<scope ilk="blob" lang="Ruby" name="soap/baseData">
+      <import line="9" module="xsd/datatypes" symbol="*" />
+      <import line="10" module="soap/soap" symbol="*" />
+      <import line="939" module="soap/mapping/typeMap" symbol="*" />
+      <scope doc="soap/baseData.rb: SOAP4R - Base type library Copyright (C)&#xA;2000, 2001, 2003-2005  NAKAMURA, Hiroshi &lt;nahi@ruby-&#xA;lang.org&gt;." ilk="namespace" line="13" name="SOAP" />
+      <scope ilk="namespace" line="19" lineend="29" name="SOAPModuleUtils">
+        <scope ilk="function" line="24" lineend="28" name="decode" signature="decode(elename)" />
+      </scope>
+      <scope doc="for SOAP type(base and compound)" ilk="namespace" line="35" lineend="74" name="SOAPType">
+        <scope attributes="__ctor__" ilk="function" line="46" lineend="57" name="initialize" signature="initialize(*arg)" />
+        <scope ilk="function" line="59" lineend="65" name="inspect" signature="inspect" />
+        <scope ilk="function" line="67" lineend="73" name="rootnode" signature="rootnode" />
+      </scope>
+      <scope doc="for SOAP base type" ilk="namespace" line="80" lineend="87" name="SOAPBasetype">
+        <scope attributes="__ctor__" ilk="function" line="84" lineend="86" name="initialize" signature="initialize(*arg)" />
+      </scope>
+      <scope doc="for SOAP compound type" ilk="namespace" line="93" lineend="100" name="SOAPCompoundtype">
+        <scope attributes="__ctor__" ilk="function" line="97" lineend="99" name="initialize" signature="initialize(*arg)" />
+      </scope>
+      <scope classrefs="XSD::NSDBase" doc="Convenience datatypes." ilk="class" line="106" lineend="172" name="SOAPReference">
+        <scope ilk="function" line="112" lineend="112" name="refid" />
+        <scope ilk="function" line="112" lineend="112" name="refid=" />
+        <scope attributes="__ctor__" doc="Override the definition in SOAPBasetype." ilk="function" line="115" lineend="121" name="initialize" signature="initialize(obj = nil)" />
+        <scope ilk="function" line="123" lineend="125" name="__getobj__" signature="__getobj__" />
+        <scope ilk="function" line="127" lineend="134" name="__setobj__" signature="__setobj__(obj)" />
+        <scope doc="Why don&apos;t I use delegate.rb? -&gt; delegate requires target&#xA;object type at initialize time." ilk="function" line="144" lineend="150" name="method_missing" signature="method_missing(msg_id, *params)" />
+        <scope ilk="function" line="152" lineend="154" name="refidstr" signature="refidstr" />
+        <scope attributes="__classmethod__" ilk="function" line="156" lineend="158" name="create_refid" signature="self.create_refid(obj)" />
+        <scope attributes="__classmethod__" ilk="function" line="160" lineend="171" name="decode" signature="self.decode(elename, refidstr)" />
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::NSDBase" ilk="class" line="175" lineend="197" name="SOAPExternalReference">
+        <scope attributes="__ctor__" ilk="function" line="179" lineend="182" name="initialize" signature="initialize" />
+        <scope ilk="function" line="184" lineend="186" name="referred" signature="referred" />
+        <scope ilk="function" line="188" lineend="190" name="refidstr" signature="refidstr" />
+        <scope ilk="function" line="194" lineend="196" name="external_contentid" signature="external_contentid" />
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDNil" ilk="class" line="200" lineend="203" name="SOAPNil">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDString" doc="SOAPRawString is for sending raw string." ilk="class" line="208" lineend="211" name="SOAPRawString">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDAnySimpleType" doc="Basic datatypes." ilk="class" line="217" lineend="220" name="SOAPAnySimpleType">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDString" ilk="class" line="222" lineend="225" name="SOAPString">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDBoolean" ilk="class" line="227" lineend="230" name="SOAPBoolean">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDDecimal" ilk="class" line="232" lineend="235" name="SOAPDecimal">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDFloat" ilk="class" line="237" lineend="240" name="SOAPFloat">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDDouble" ilk="class" line="242" lineend="245" name="SOAPDouble">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDDuration" ilk="class" line="247" lineend="250" name="SOAPDuration">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDDateTime" ilk="class" line="252" lineend="255" name="SOAPDateTime">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDTime" ilk="class" line="257" lineend="260" name="SOAPTime">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDDate" ilk="class" line="262" lineend="265" name="SOAPDate">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDGYearMonth" ilk="class" line="267" lineend="270" name="SOAPGYearMonth">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDGYear" ilk="class" line="272" lineend="275" name="SOAPGYear">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDGMonthDay" ilk="class" line="277" lineend="280" name="SOAPGMonthDay">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDGDay" ilk="class" line="282" lineend="285" name="SOAPGDay">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDGMonth" ilk="class" line="287" lineend="290" name="SOAPGMonth">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDHexBinary" ilk="class" line="292" lineend="295" name="SOAPHexBinary">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDBase64Binary" ilk="class" line="297" lineend="312" name="SOAPBase64">
+        <scope attributes="__ctor__" doc="Override the definition in SOAPBasetype." ilk="function" line="304" lineend="307" name="initialize" signature="initialize(value = nil)" />
+        <scope ilk="function" line="309" lineend="311" name="as_xsd" signature="as_xsd" />
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDAnyURI" ilk="class" line="314" lineend="317" name="SOAPAnyURI">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDQName" ilk="class" line="319" lineend="322" name="SOAPQName">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDInteger" ilk="class" line="325" lineend="328" name="SOAPInteger">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDNonPositiveInteger" ilk="class" line="330" lineend="333" name="SOAPNonPositiveInteger">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDNegativeInteger" ilk="class" line="335" lineend="338" name="SOAPNegativeInteger">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDLong" ilk="class" line="340" lineend="343" name="SOAPLong">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDInt" ilk="class" line="345" lineend="348" name="SOAPInt">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDShort" ilk="class" line="350" lineend="353" name="SOAPShort">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDByte" ilk="class" line="355" lineend="358" name="SOAPByte">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDNonNegativeInteger" ilk="class" line="360" lineend="363" name="SOAPNonNegativeInteger">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDUnsignedLong" ilk="class" line="365" lineend="368" name="SOAPUnsignedLong">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDUnsignedInt" ilk="class" line="370" lineend="373" name="SOAPUnsignedInt">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDUnsignedShort" ilk="class" line="375" lineend="378" name="SOAPUnsignedShort">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDUnsignedByte" ilk="class" line="380" lineend="383" name="SOAPUnsignedByte">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::XSDPositiveInteger" ilk="class" line="385" lineend="388" name="SOAPPositiveInteger">
+        <import symbol="SOAPBasetype" />
+      </scope>
+      <scope classrefs="XSD::NSDBase" doc="Compound datatypes." ilk="class" line="394" lineend="502" name="SOAPStruct">
+        <scope attributes="__ctor__" ilk="function" line="400" lineend="405" name="initialize" signature="initialize(type = nil)" />
+        <scope ilk="function" line="407" lineend="413" name="to_s" signature="to_s()" />
+        <scope ilk="function" line="415" lineend="417" name="add" signature="add(name, value)" />
+        <scope ilk="function" line="419" lineend="434" name="[]" signature="[](idx" />
+        <scope ilk="function" line="436" lineend="443" name="[]=" signature="[]=(idx" />
+        <scope ilk="function" line="445" lineend="447" name="key?" signature="key?(name)" />
+        <scope ilk="function" line="449" lineend="451" name="members" signature="members" />
+        <scope ilk="function" line="453" lineend="470" name="to_obj" signature="to_obj" />
+        <scope ilk="function" line="472" lineend="478" name="each" signature="each" />
+        <scope ilk="function" line="480" lineend="484" name="replace" signature="replace" />
+        <scope attributes="__classmethod__" ilk="function" line="486" lineend="490" name="decode" signature="self.decode(elename, type)" />
+        <scope ilk="function" line="494" lineend="501" name="add_member" signature="add_member(name, value = nil)" />
+        <import symbol="SOAPCompoundtype" />
+        <import symbol="Enumerable" />
+      </scope>
+      <scope classrefs="Object" doc="SOAPElement is not typed so it is not derived from NSDBase." ilk="class" line="506" lineend="691" name="SOAPElement">
+        <scope ilk="function" line="509" lineend="509" name="encodingstyle" />
+        <scope ilk="function" line="509" lineend="509" name="encodingstyle=" />
+        <scope ilk="function" line="511" lineend="511" name="elename" />
+        <scope ilk="function" line="511" lineend="511" name="elename=" />
+        <scope ilk="function" line="512" lineend="512" name="id" />
+        <scope ilk="function" line="512" lineend="512" name="id=" />
+        <scope ilk="function" line="513" lineend="513" name="precedents" />
+        <scope ilk="function" line="514" lineend="514" name="root" />
+        <scope ilk="function" line="514" lineend="514" name="root=" />
+        <scope ilk="function" line="515" lineend="515" name="parent" />
+        <scope ilk="function" line="515" lineend="515" name="parent=" />
+        <scope ilk="function" line="516" lineend="516" name="position" />
+        <scope ilk="function" line="516" lineend="516" name="position=" />
+        <scope ilk="function" line="517" lineend="517" name="extraattr" />
+        <scope ilk="function" line="517" lineend="517" name="extraattr=" />
+        <scope ilk="function" line="519" lineend="519" name="qualified" />
+        <scope ilk="function" line="519" lineend="519" name="qualified=" />
+        <scope attributes="__ctor__" ilk="function" line="521" lineend="539" name="initialize" signature="initialize(elename, text = nil)" />
+        <scope ilk="function" line="541" lineend="543" name="inspect" signature="inspect" />
+        <scope ilk="function" line="546" lineend="546" name="text" />
+        <scope ilk="function" line="546" lineend="546" name="text=" />
+        <scope doc="Element interfaces." ilk="function" line="550" lineend="552" name="add" signature="add(value)" />
+        <scope ilk="function" line="554" lineend="560" name="[]" signature="[](idx" />
+        <scope ilk="function" line="562" lineend="569" name="[]=" signature="[]=(idx" />
+        <scope ilk="function" line="571" lineend="573" name="key?" signature="key?(name)" />
+        <scope ilk="function" line="575" lineend="577" name="members" signature="members" />
+        <scope ilk="function" line="579" lineend="600" name="to_obj" signature="to_obj" />
+        <scope ilk="function" line="602" lineend="608" name="each" signature="each" />
+        <scope attributes="__classmethod__" ilk="function" line="610" lineend="613" name="decode" signature="self.decode(elename)" />
+        <scope attributes="__classmethod__" ilk="function" line="615" lineend="638" name="from_obj" signature="self.from_obj(obj, namespace = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="640" lineend="648" name="to_elename" signature="self.to_elename(obj, namespace = nil)" />
+        <scope ilk="function" line="652" lineend="658" name="add_member" signature="add_member(name, value)" />
+        <scope ilk="function" line="661" lineend="672" name="add_accessor" signature="add_accessor(name)" />
+        <scope ilk="function" line="674" lineend="685" name="add_accessor" signature="add_accessor(name)" />
+        <scope ilk="function" line="688" lineend="690" name="safe_accessor_name" signature="safe_accessor_name(name)" />
+        <import symbol="Enumerable" />
+      </scope>
+      <scope classrefs="XSD::NSDBase" ilk="class" line="694" lineend="936" name="SOAPArray">
+        <scope ilk="function" line="700" lineend="700" name="sparse" />
+        <scope ilk="function" line="700" lineend="700" name="sparse=" />
+        <scope ilk="function" line="702" lineend="702" name="offset" />
+        <scope ilk="function" line="702" lineend="702" name="rank" />
+        <scope ilk="function" line="703" lineend="703" name="size" />
+        <scope ilk="function" line="703" lineend="703" name="size=" />
+        <scope ilk="function" line="703" lineend="703" name="size_fixed" />
+        <scope ilk="function" line="703" lineend="703" name="size_fixed=" />
+        <scope ilk="function" line="704" lineend="704" name="arytype" />
+        <scope attributes="__ctor__" ilk="function" line="706" lineend="717" name="initialize" signature="initialize(type = nil, rank = 1, arytype = nil)" />
+        <scope ilk="function" line="719" lineend="722" name="offset=" signature="offset=(var)" />
+        <scope ilk="function" line="724" lineend="726" name="add" signature="add(value)" />
+        <scope ilk="function" line="728" lineend="734" name="[]" signature="[](*idxary" />
+        <scope ilk="function" line="736" lineend="768" name="[]=" signature="[]=(*idxary" />
+        <scope ilk="function" line="770" lineend="774" name="each" signature="each" />
+        <scope ilk="function" line="776" lineend="778" name="to_a" signature="to_a" />
+        <scope ilk="function" line="780" lineend="784" name="replace" signature="replace" />
+        <scope ilk="function" line="786" lineend="796" name="deep_map" signature="deep_map(ary, &amp;block)" />
+        <scope ilk="function" line="798" lineend="805" name="include?" signature="include?(var)" />
+        <scope ilk="function" line="807" lineend="815" name="traverse" signature="traverse" />
+        <scope ilk="function" line="817" lineend="836" name="soap2array" signature="soap2array(ary)" />
+        <scope ilk="function" line="838" lineend="840" name="position" signature="position" />
+        <scope ilk="function" line="846" lineend="859" name="retrieve" signature="retrieve(idxary)" />
+        <scope ilk="function" line="861" lineend="874" name="traverse_data" signature="traverse_data(data, rank = 1)" />
+        <scope ilk="function" line="876" lineend="878" name="ranksize" signature="ranksize(rank)" />
+        <scope ilk="function" line="880" lineend="896" name="offsetnext" signature="offsetnext" />
+        <scope attributes="__classmethod__" doc="Module function" ilk="function" line="902" lineend="922" name="decode" signature="self.decode(elename, type, arytype)" />
+        <scope attributes="__classmethod__" ilk="function" line="926" lineend="928" name="create_arytype" signature="self.create_arytype(typename, rank)" />
+        <scope attributes="__classmethod__" ilk="function" line="932" lineend="935" name="parse_type" signature="self.parse_type(string)" />
+        <import symbol="SOAPCompoundtype" />
+        <import symbol="Enumerable" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,30 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/selectfont">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="8" module="tkextlib/bwidget/messagedlg" symbol="*" />
+      <scope doc="tkextlib/bwidget/selectfont.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="19" name="Tk">
+        <scope ilk="namespace" line="11" lineend="18" name="BWidget">
+          <scope classrefs="Tk::BWidget::" ilk="class" line="12" lineend="17" name="SelectFont">
+            <scope classrefs="Tk::BWidget::" ilk="class" line="13" lineend="14" name="Dialog" />
+            <scope classrefs="TkWindow" ilk="class" line="15" lineend="16" name="Toolbar" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="21" lineend="45" name="Tk::BWidget::">
+        <scope ilk="function" line="28" lineend="30" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="33" lineend="35" name="__font_optkeys" signature="__font_optkeys" />
+        <scope ilk="function" line="38" lineend="40" name="create" signature="create" />
+        <scope attributes="__classmethod__" ilk="function" line="42" lineend="44" name="load_font" signature="self.load_font" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="47" lineend="72" name="Tk::BWidget::">
+        <scope ilk="function" line="48" lineend="50" name="__font_optkeys" signature="__font_optkeys" />
+        <scope ilk="function" line="52" lineend="55" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="57" lineend="66" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="68" lineend="71" name="create" signature="create" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="74" lineend="85" name="Tk::BWidget::">
+        <scope ilk="function" line="75" lineend="77" name="__font_optkeys" signature="__font_optkeys" />
+        <scope ilk="function" line="79" lineend="84" name="create_self" signature="create_self(keys)" />
+      </scope>
+    </scope>
+    

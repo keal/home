@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/classDefCreatorSupport">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="soap/mapping" symbol="*" />
+      <import line="11" module="soap/mapping/typeMap" symbol="*" />
+      <import line="12" module="xsd/codegen/gensupport" symbol="*" />
+      <scope doc="WSDL4R - Creating class code support from WSDL." ilk="namespace" line="15" name="WSDL" />
+      <scope ilk="namespace" line="16" name="SOAP" />
+      <scope ilk="namespace" line="19" lineend="122" name="ClassDefCreatorSupport">
+        <scope ilk="function" line="22" lineend="28" name="create_class_name" signature="create_class_name(qname)" />
+        <scope ilk="function" line="30" lineend="32" name="basetype_mapped_class" signature="basetype_mapped_class(name)" />
+        <scope ilk="function" line="34" lineend="60" name="dump_method_signature" signature="dump_method_signature(operation)" />
+        <scope ilk="function" line="62" lineend="64" name="dq" signature="dq(ele)" />
+        <scope ilk="function" line="66" lineend="68" name="ndq" signature="ndq(ele)" />
+        <scope ilk="function" line="70" lineend="72" name="sym" signature="sym(ele)" />
+        <scope ilk="function" line="74" lineend="76" name="dqname" signature="dqname(qname)" />
+        <scope ilk="function" line="80" lineend="99" name="dump_inout_type" signature="dump_inout_type(param)" />
+        <scope ilk="function" line="101" lineend="113" name="dump_inputparam" signature="dump_inputparam(input)" />
+        <scope ilk="function" line="115" lineend="121" name="add_at" signature="add_at(base, str, pos)" />
+      </scope>
+    </scope>
+    

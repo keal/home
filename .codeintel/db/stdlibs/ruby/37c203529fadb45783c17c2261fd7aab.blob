@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="dl/win32">
+      <import line="3" module="dl" symbol="*" />
+      <scope classrefs="Object" doc="-*- ruby -*-" ilk="class" line="5" lineend="25" name="Win32API">
+        <scope attributes="__ctor__" ilk="function" line="8" lineend="12" name="initialize" signature="initialize(dllname, func, import, export = &quot;0&quot;)" />
+        <scope ilk="function" line="14" lineend="22" name="call" signature="call(*args)" />
+      </scope>
+    </scope>
+    

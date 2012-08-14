@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="rss/maker/syndication">
+      <import line="1" module="rss/syndication" symbol="*" />
+      <import line="2" module="rss/maker/1.0" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="27" name="RSS">
+        <scope ilk="namespace" line="5" lineend="26" name="Maker">
+          <scope ilk="namespace" line="6" lineend="23" name="SyndicationModel">
+            <scope attributes="__classmethod__" ilk="function" line="7" lineend="22" name="append_features" signature="self.append_features(klass)" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="25" lineend="25" name="ChannelBase">
+            <import symbol="SyndicationModel" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

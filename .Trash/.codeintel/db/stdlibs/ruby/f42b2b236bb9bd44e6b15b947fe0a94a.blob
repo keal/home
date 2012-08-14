@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="cgi/session/pstore">
+      <import line="12" module="cgi/session" symbol="*" />
+      <import line="13" module="pstore" symbol="*" />
+      <scope classrefs="Object" doc="cgi/session/pstore.rb - persistent storage of marshalled&#xA;session data" ilk="class" line="15" lineend="108" name="CGI">
+        <scope classrefs="Object" ilk="class" line="16" lineend="107" name="Session">
+          <scope ilk="function" line="17" lineend="26" name="[]=" signature="[]=(key" />
+          <scope classrefs="Object" doc="PStore-based session storage class." ilk="class" line="33" lineend="106" name="PStore">
+            <scope attributes="__ctor__" doc="Create a new CGI::Session::PStore instance" ilk="function" line="56" lineend="74" name="initialize" signature="initialize">
+              <import line="60" module="digest/md5" symbol="*" />
+            </scope>
+            <scope doc="Restore session state from the session&apos;s PStore file." ilk="function" line="79" lineend="86" name="restore" signature="restore" />
+            <scope doc="Save session state to the session&apos;s PStore file." ilk="function" line="89" lineend="93" name="update" signature="update" />
+            <scope doc="Update and close the session&apos;s PStore file." ilk="function" line="96" lineend="98" name="close" signature="close" />
+            <scope doc="Close and delete the session&apos;s PStore file." ilk="function" line="101" lineend="104" name="delete" signature="delete" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

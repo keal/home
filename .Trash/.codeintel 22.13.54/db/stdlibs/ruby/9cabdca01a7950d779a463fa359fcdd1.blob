@@ -1,0 +1,98 @@
+<scope ilk="blob" lang="Ruby" name="remote-tk">
+      <import line="38" module="multi-tk" symbol="*" />
+      <scope classrefs="Object" doc="remote-tk.rb - supports to control remote Tk interpreters by&#xA;Hidetoshi NAGAI &lt;nagai@ai.kyutech.ac.jp&gt;" ilk="class" line="9" lineend="9" name="MultiTkIp" />
+      <scope classrefs="MultiTkIp" ilk="class" line="10" lineend="10" name="RemoteTkIp" />
+      <scope classrefs="Object" ilk="class" line="12" lineend="28" name="MultiTkIp">
+        <scope attributes="__classmethod__" ilk="function" line="15" name="_IP_TABLE" signature="self._IP_TABLE" />
+        <scope attributes="__classmethod__" ilk="function" line="16" name="_TK_TABLE_LIST" signature="self._TK_TABLE_LIST" />
+        <scope attributes="__classmethod__" ilk="function" line="19" lineend="27" name="_DEFAULT_MASTER" signature="self._DEFAULT_MASTER" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="29" lineend="32" name="RemoteTkIp" />
+      <scope classrefs="Object" ilk="class" line="33" lineend="36" name="MultiTkIp" />
+      <scope classrefs="Object" ilk="class" line="40" lineend="46" name="RemoteTkIp" />
+      <scope classrefs="Object" ilk="class" line="51" lineend="60" name="RemoteTkIp">
+        <scope ilk="function" line="55" lineend="59" name="new" signature="new(*args, &amp;b)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="62" lineend="490" name="RemoteTkIp">
+        <scope attributes="__ctor__" ilk="function" line="63" lineend="133" name="initialize" signature="initialize(remote_ip, displayof=nil, timeout=5)">
+          <scope classrefs="Object" ilk="class" line="128" lineend="130" name="self" />
+        </scope>
+        <scope ilk="function" line="135" lineend="138" name="manipulable?" signature="manipulable?" />
+        <scope attributes="__classmethod__" ilk="function" line="139" lineend="141" name="manipulable?" signature="self.manipulable?" />
+        <scope ilk="function" line="143" lineend="145" name="_is_master_of?" signature="_is_master_of?(tcltkip_obj)" />
+        <scope ilk="function" line="148" lineend="150" name="_ip_id_" signature="_ip_id_" />
+        <scope ilk="function" line="152" lineend="169" name="_available_check" signature="_available_check(timeout = 5)" />
+        <scope ilk="function" line="172" lineend="191" name="_create_connection" signature="_create_connection" />
+        <scope ilk="function" line="194" lineend="220" name="_appsend" signature="_appsend(enc_mode, async, *cmds)" />
+        <scope ilk="function" line="223" lineend="228" name="ready?" signature="ready?(timeout=5)" />
+        <scope ilk="function" line="230" lineend="234" name="is_rubytk?" signature="is_rubytk?" />
+        <scope ilk="function" line="236" lineend="248" name="appsend" signature="appsend(async, *args)" />
+        <scope ilk="function" line="250" lineend="262" name="rb_appsend" signature="rb_appsend(async, *args)" />
+        <scope ilk="function" line="264" lineend="271" name="create_slave" signature="create_slave(name, safe=false)" />
+        <scope ilk="function" line="273" lineend="275" name="make_safe" signature="make_safe" />
+        <scope ilk="function" line="277" lineend="279" name="safe?" signature="safe?" />
+        <scope ilk="function" line="281" lineend="283" name="safe_base?" signature="safe_base?" />
+        <scope ilk="function" line="285" lineend="287" name="allow_ruby_exit?" signature="allow_ruby_exit?" />
+        <scope ilk="function" line="289" lineend="291" name="allow_ruby_exit=" signature="allow_ruby_exit= (mode)" />
+        <scope ilk="function" line="293" lineend="295" name="delete" signature="delete" />
+        <scope ilk="function" line="297" lineend="312" name="deleted?" signature="deleted?" />
+        <scope ilk="function" line="314" lineend="327" name="has_mainwindow?" signature="has_mainwindow?" />
+        <scope ilk="function" line="329" lineend="331" name="invalid_namespace?" signature="invalid_namespace?" />
+        <scope ilk="function" line="333" lineend="335" name="restart" signature="restart" />
+        <scope ilk="function" line="337" lineend="339" name="__eval" signature="__eval(str)" />
+        <scope ilk="function" line="340" lineend="342" name="_eval" signature="_eval(str)" />
+        <scope ilk="function" line="343" lineend="345" name="_eval_without_enc" signature="_eval_without_enc(str)" />
+        <scope ilk="function" line="346" lineend="348" name="_eval_with_enc" signature="_eval_with_enc(str)" />
+        <scope ilk="function" line="350" lineend="352" name="_invoke" signature="_invoke(*args)" />
+        <scope ilk="function" line="354" lineend="356" name="__invoke" signature="__invoke(*args)" />
+        <scope ilk="function" line="357" lineend="359" name="_invoke" signature="_invoke(*args)" />
+        <scope ilk="function" line="360" lineend="362" name="_invoke_without_enc" signature="_invoke_without_enc(*args)" />
+        <scope ilk="function" line="363" lineend="365" name="_invoke_with_enc" signature="_invoke_with_enc(*args)" />
+        <scope ilk="function" line="367" lineend="370" name="_toUTF8" signature="_toUTF8(str, encoding=nil)" />
+        <scope ilk="function" line="372" lineend="375" name="_fromUTF8" signature="_fromUTF8(str, encoding=nil)" />
+        <scope ilk="function" line="377" lineend="379" name="_thread_vwait" signature="_thread_vwait(var_name)" />
+        <scope ilk="function" line="381" lineend="383" name="_thread_tkwait" signature="_thread_tkwait(mode, target)" />
+        <scope ilk="function" line="385" lineend="388" name="_return_value" signature="_return_value" />
+        <scope ilk="function" line="390" lineend="393" name="_get_variable" signature="_get_variable(var_name, flag)" />
+        <scope ilk="function" line="394" lineend="397" name="_get_variable2" signature="_get_variable2(var_name, index_name, flag)" />
+        <scope ilk="function" line="399" lineend="402" name="_set_variable" signature="_set_variable(var_name, value, flag)" />
+        <scope ilk="function" line="403" lineend="406" name="_set_variable2" signature="_set_variable2(var_name, index_name, value, flag)" />
+        <scope ilk="function" line="408" lineend="411" name="_unset_variable" signature="_unset_variable(var_name, flag)" />
+        <scope ilk="function" line="412" lineend="415" name="_unset_variable2" signature="_unset_variable2(var_name, index_name, flag)" />
+        <scope ilk="function" line="417" lineend="419" name="_get_global_var" signature="_get_global_var(var_name)" />
+        <scope ilk="function" line="420" lineend="422" name="_get_global_var2" signature="_get_global_var2(var_name, index_name)" />
+        <scope ilk="function" line="424" lineend="426" name="_set_global_var" signature="_set_global_var(var_name, value)" />
+        <scope ilk="function" line="427" lineend="429" name="_set_global_var2" signature="_set_global_var2(var_name, index_name, value)" />
+        <scope ilk="function" line="431" lineend="433" name="_unset_global_var" signature="_unset_global_var(var_name)" />
+        <scope ilk="function" line="434" lineend="436" name="_unset_global_var2" signature="_unset_global_var2(var_name, index_name)" />
+        <scope ilk="function" line="438" lineend="441" name="_split_tklist" signature="_split_tklist(str)" />
+        <scope ilk="function" line="443" lineend="446" name="_merge_tklist" signature="_merge_tklist(*args)" />
+        <scope ilk="function" line="448" lineend="451" name="_conv_listelement" signature="_conv_listelement(str)" />
+        <scope ilk="function" line="453" lineend="455" name="_create_console" signature="_create_console" />
+        <scope ilk="function" line="457" lineend="459" name="mainloop" signature="mainloop" />
+        <scope ilk="function" line="460" lineend="462" name="mainloop_watchdog" signature="mainloop_watchdog" />
+        <scope ilk="function" line="463" lineend="465" name="do_one_evant" signature="do_one_evant(flag = nil)" />
+        <scope ilk="function" line="466" lineend="468" name="mainloop_abort_on_exception" signature="mainloop_abort_on_exception" />
+        <scope ilk="function" line="469" lineend="471" name="mainloop_abort_on_exception=" signature="mainloop_abort_on_exception=(mode)" />
+        <scope ilk="function" line="472" lineend="474" name="set_eventloop_tick" signature="set_eventloop_tick(*args)" />
+        <scope ilk="function" line="475" lineend="477" name="get_eventloop_tick" signature="get_eventloop_tick" />
+        <scope ilk="function" line="478" lineend="480" name="set_no_event_wait" signature="set_no_event_wait(*args)" />
+        <scope ilk="function" line="481" lineend="483" name="get_no_event_wait" signature="get_no_event_wait" />
+        <scope ilk="function" line="484" lineend="486" name="set_eventloop_weight" signature="set_eventloop_weight(*args)" />
+        <scope ilk="function" line="487" lineend="489" name="get_eventloop_weight" signature="get_eventloop_weight" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="492" lineend="526" name="RemoteTkIp">
+        <scope ilk="function" line="493" lineend="495" name="mainloop" signature="mainloop(*args)" />
+        <scope ilk="function" line="496" lineend="498" name="mainloop_watchdog" signature="mainloop_watchdog(*args)" />
+        <scope ilk="function" line="499" lineend="501" name="do_one_evant" signature="do_one_evant(flag = nil)" />
+        <scope ilk="function" line="502" lineend="504" name="mainloop_abort_on_exception" signature="mainloop_abort_on_exception" />
+        <scope ilk="function" line="505" lineend="507" name="mainloop_abort_on_exception=" signature="mainloop_abort_on_exception=(mode)" />
+        <scope ilk="function" line="508" lineend="510" name="set_eventloop_tick" signature="set_eventloop_tick(*args)" />
+        <scope ilk="function" line="511" lineend="513" name="get_eventloop_tick" signature="get_eventloop_tick" />
+        <scope ilk="function" line="514" lineend="516" name="set_no_event_wait" signature="set_no_event_wait(*args)" />
+        <scope ilk="function" line="517" lineend="519" name="get_no_event_wait" signature="get_no_event_wait" />
+        <scope ilk="function" line="520" lineend="522" name="set_eventloop_weight" signature="set_eventloop_weight(*args)" />
+        <scope ilk="function" line="523" lineend="525" name="get_eventloop_weight" signature="get_eventloop_weight" />
+      </scope>
+    </scope>
+    

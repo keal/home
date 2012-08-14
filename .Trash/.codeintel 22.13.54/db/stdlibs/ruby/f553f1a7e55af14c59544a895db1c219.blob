@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="finalize">
+      <scope doc="finalizer.rb - $Release Version: 0.3$ $Revision: 1.4 $&#xA;$Date: 1998/02/27 05:34:33 $ by Keiju ISHITSUKA" ilk="namespace" line="44" lineend="186" name="Finalizer">
+        <scope classrefs="Object" ilk="class" line="47" lineend="182" name="self">
+          <scope doc="@dependency: {id =&gt; [[dependant, method, *opt], ...], ...}&#xA;add dependency R_method(obj, dependant)" ilk="function" line="51" lineend="60" name="add_dependency" signature="add_dependency(obj, dependant, method = :finalize, *opt)" />
+          <scope doc="delete dependency R_method(obj, dependant)" ilk="function" line="64" lineend="74" name="delete_dependency" signature="delete_dependency(id, dependant, method = :finalize)" />
+          <scope doc="delete dependency R_*(obj, dependant)" ilk="function" line="78" lineend="88" name="delete_all_dependency" signature="delete_all_dependency(id, dependant)" />
+          <scope doc="delete dependency R_method(*, dependant)" ilk="function" line="91" lineend="96" name="delete_by_dependant" signature="delete_by_dependant(dependant, method = :finalize)" />
+          <scope doc="delete dependency R_*(*, dependant)" ilk="function" line="99" lineend="103" name="delete_all_by_dependant" signature="delete_all_by_dependant(dependant)" />
+          <scope doc="finalize the depandant connected by dependency R_method(obj,&#xA;dependtant)" ilk="function" line="106" lineend="117" name="finalize_dependency" signature="finalize_dependency(id, dependant, method = :finalize)" />
+          <scope doc="finalize all dependants connected by dependency R_*(obj,&#xA;dependtant)" ilk="function" line="121" lineend="131" name="finalize_all_dependency" signature="finalize_all_dependency(id, dependant)" />
+          <scope doc="finalize the dependant connected by dependency R_method(*,&#xA;dependtant)" ilk="function" line="134" lineend="139" name="finalize_by_dependant" signature="finalize_by_dependant(dependant, method = :finalize)" />
+          <scope doc="finalize all dependants connected by dependency R_*(*,&#xA;dependtant)" ilk="function" line="142" lineend="146" name="finalize_all_by_dependant" signature="finalize_all_by_dependant(dependant)" />
+          <scope doc="finalize all dependants registered to the Finalizer." ilk="function" line="149" lineend="156" name="finalize_all" signature="finalize_all" />
+          <scope doc="method to call finalize_* safely." ilk="function" line="159" lineend="169" name="safe" signature="safe" />
+          <scope doc="registering function to ObjectSpace#add_finalizer" ilk="function" line="174" lineend="180" name="final_of" signature="final_of(id)" />
+        </scope>
+      </scope>
+    </scope>
+    

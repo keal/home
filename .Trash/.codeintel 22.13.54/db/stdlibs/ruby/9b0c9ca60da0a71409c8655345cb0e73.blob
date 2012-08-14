@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/swaplist">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;swaplist&apos;, &apos;0.1&apos;)" ilk="namespace" line="15" lineend="30" name="Tk::Tcllib">
+        <scope classrefs="TkWindow" ilk="class" line="16" lineend="29" name="Swaplist_Dialog">
+          <scope attributes="__classmethod__" ilk="function" line="18" lineend="20" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="22" lineend="28" name="package_version" signature="self.package_version" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="33" lineend="147" name="Tk::Tcllib::">
+        <scope attributes="__classmethod__" ilk="function" line="38" lineend="42" name="show" signature="self.show(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="43" lineend="45" name="display" signature="self.display(*args)" />
+        <scope attributes="__ctor__" ilk="function" line="47" lineend="68" name="initialize" signature="initialize(*args)" />
+        <scope ilk="function" line="70" lineend="72" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="75" lineend="81" name="show" signature="show" />
+        <scope ilk="function" line="84" lineend="86" name="status" signature="status" />
+        <scope ilk="function" line="88" lineend="90" name="value" signature="value" />
+        <scope ilk="function" line="93" lineend="102" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="104" lineend="129" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="131" lineend="146" name="configinfo" signature="configinfo(slot = nil)" />
+      </scope>
+    </scope>
+    

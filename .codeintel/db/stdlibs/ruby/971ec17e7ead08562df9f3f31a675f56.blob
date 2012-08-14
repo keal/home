@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/widget">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/widget.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="BWidget">
+          <scope ilk="namespace" line="11" lineend="12" name="Widget" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="16" lineend="113" name="Tk::BWidget::">
+        <scope attributes="__classmethod__" ilk="function" line="20" lineend="22" name="__pathname" signature="self.__pathname" />
+        <scope attributes="__classmethod__" ilk="function" line="24" lineend="26" name="__cget_cmd[" signature="self.__cget_cmd [" />
+        <scope attributes="__classmethod__" ilk="function" line="28" lineend="30" name="__config_cmd[" signature="self.__config_cmd [" />
+        <scope attributes="__classmethod__" ilk="function" line="32" lineend="34" name="cget" signature="self.cget(slot)" />
+        <scope attributes="__classmethod__" ilk="function" line="36" lineend="38" name="add_map" signature="self.add_map(klass, subclass, subpath, opts)" />
+        <scope attributes="__classmethod__" ilk="function" line="40" lineend="42" name="bwinclude" signature="self.bwinclude(klass, subclass, subpath, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="44" lineend="48" name="create" signature="self.create(klass, path, rename=None, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="50" lineend="52" name="declare" signature="self.declare(klass, optlist)" />
+        <scope attributes="__classmethod__" ilk="function" line="54" lineend="56" name="define" signature="self.define(klass, filename, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="58" lineend="60" name="destroy" signature="self.destroy(win)" />
+        <scope attributes="__classmethod__" ilk="function" line="62" lineend="64" name="focus_next" signature="self.focus_next(win)" />
+        <scope attributes="__classmethod__" ilk="function" line="66" lineend="68" name="focus_ok" signature="self.focus_ok(win)" />
+        <scope attributes="__classmethod__" ilk="function" line="70" lineend="72" name="focus_prev" signature="self.focus_prev(win)" />
+        <scope attributes="__classmethod__" ilk="function" line="74" lineend="76" name="generate_doc" signature="self.generate_doc(dir, widgetlist)" />
+        <scope attributes="__classmethod__" ilk="function" line="78" lineend="80" name="generate_widget_doc" signature="self.generate_widget_doc(klass, iscmd, file)" />
+        <scope attributes="__classmethod__" ilk="function" line="82" lineend="84" name="get_option" signature="self.get_option(win, option)" />
+        <scope attributes="__classmethod__" ilk="function" line="86" lineend="88" name="get_variable" signature="self.get_variable(win, varname, my_varname=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="90" lineend="92" name="has_changed" signature="self.has_changed(win, option, pvalue)" />
+        <scope attributes="__classmethod__" ilk="function" line="94" lineend="96" name="init" signature="self.init(klass, win, options)" />
+        <scope attributes="__classmethod__" ilk="function" line="98" lineend="100" name="set_option" signature="self.set_option(win, option, value)" />
+        <scope attributes="__classmethod__" ilk="function" line="102" lineend="104" name="sub_cget" signature="self.sub_cget(win, subwidget)" />
+        <scope attributes="__classmethod__" ilk="function" line="106" lineend="108" name="sync_options" signature="self.sync_options(klass, subclass, subpath, options)" />
+        <scope attributes="__classmethod__" ilk="function" line="110" lineend="112" name="tkinclude" signature="self.tkinclude(klass, tkwidget, subpath, *args)" />
+      </scope>
+    </scope>
+    

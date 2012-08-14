@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="yaml/store">
+      <import line="4" module="yaml" symbol="*" />
+      <import line="5" module="pstore" symbol="*" />
+      <scope classrefs="Object" doc="YAML::Store" ilk="class" line="7" lineend="29" name="YAML::Store&lt;">
+        <scope attributes="__ctor__" ilk="function" line="8" lineend="16" name="initialize" signature="initialize( *o )" />
+        <scope ilk="function" line="18" lineend="20" name="dump" signature="dump(table)" />
+        <scope ilk="function" line="22" lineend="24" name="load" signature="load(content)" />
+        <scope ilk="function" line="26" lineend="28" name="load_file" signature="load_file(file)" />
+      </scope>
+    </scope>
+    

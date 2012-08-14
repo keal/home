@@ -1,0 +1,29 @@
+<scope ilk="blob" lang="Ruby" name="tk/listbox">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/itemconfig" symbol="*" />
+      <import line="6" module="tk/scrollable" symbol="*" />
+      <import line="7" module="tk/txtwin_abst" symbol="*" />
+      <scope doc="tk/listbox.rb : treat listbox widget" ilk="namespace" line="9" lineend="16" name="TkListItemConfig">
+        <scope ilk="function" line="12" lineend="14" name="__item_listval_optkeys" signature="__item_listval_optkeys(id)" />
+      </scope>
+      <scope classrefs="TkTextWin" ilk="class" line="18" lineend="279" name="TkListbox">
+        <scope doc="def create_self(keys) if keys and keys != None&#xA;tk_call_without_enc(&apos;listbox&apos;, @path, *hash_kv(keys, true))&#xA;else tk_call_without_enc(&apos;listbox&apos;, @path)" ilk="function" line="35" lineend="37" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope ilk="function" line="40" lineend="43" name="tagid" signature="tagid(id)" />
+        <scope ilk="function" line="45" lineend="48" name="activate" signature="activate(y)" />
+        <scope ilk="function" line="49" lineend="51" name="curselection" signature="curselection" />
+        <scope ilk="function" line="52" lineend="59" name="get" signature="get(first, last=nil)" />
+        <scope ilk="function" line="60" lineend="62" name="nearest" signature="nearest(y)" />
+        <scope ilk="function" line="63" lineend="65" name="size" signature="size" />
+        <scope ilk="function" line="66" lineend="69" name="selection_anchor" signature="selection_anchor(index)" />
+        <scope ilk="function" line="70" lineend="73" name="selection_clear" signature="selection_clear(first, last=None)" />
+        <scope ilk="function" line="74" lineend="76" name="selection_includes" signature="selection_includes(index)" />
+        <scope ilk="function" line="77" lineend="80" name="selection_set" signature="selection_set(first, last=None)" />
+        <scope ilk="function" line="82" lineend="84" name="index" signature="index(idx)" />
+        <scope ilk="function" line="86" lineend="88" name="value" signature="value" />
+        <scope ilk="function" line="90" lineend="98" name="value=" signature="value= (vals)" />
+        <scope ilk="function" line="100" lineend="103" name="clear" signature="clear" />
+        <import symbol="TkListItemConfig" />
+        <import symbol="Scrollable" />
+      </scope>
+    </scope>
+    

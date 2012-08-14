@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="soap/mapping">
+      <import line="9" module="soap/mapping/mapping" symbol="*" />
+      <import line="10" module="soap/mapping/registry" symbol="*" />
+    </scope>
+    

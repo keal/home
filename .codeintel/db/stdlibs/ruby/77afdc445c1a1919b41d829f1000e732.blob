@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="xsd/xmlparser/xmlparser">
+      <import line="9" module="xsd/xmlparser" symbol="*" />
+      <import line="10" module="xml/parser" symbol="*" />
+      <scope doc="XSD4R - XMLParser XML parser library." ilk="namespace" line="13" name="XSD" />
+      <scope ilk="namespace" line="14" name="XMLParser" />
+      <scope classrefs="XSD::XMLParser::" ilk="class" line="17" lineend="46" name="XMLParser">
+        <scope classrefs="XML::Parser" ilk="class" line="18" lineend="25" name="Listener">
+          <import line="20" module="xml/encoding-ja" symbol="*" />
+          <import symbol="XML::Encoding_ja" />
+        </scope>
+        <scope ilk="function" line="27" lineend="43" name="do_parse" signature="do_parse(string_or_readable)" />
+      </scope>
+    </scope>
+    

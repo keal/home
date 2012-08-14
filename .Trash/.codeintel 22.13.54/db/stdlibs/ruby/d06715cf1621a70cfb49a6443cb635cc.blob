@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="yaml/loader">
+      <scope doc="YAML::Loader class .." ilk="namespace" line="5" lineend="14" name="YAML">
+        <scope classrefs="Object" ilk="class" line="6" lineend="13" name="Loader" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,73 @@
+<scope ilk="blob" lang="Ruby" name="fileutils">
+      <scope ilk="namespace" name="FileUtils">
+        <scope doc="This module has all methods of FileUtils module, but never&#xA;changes files/directories, with printing message before&#xA;acting. This equates to passing the :noop and :verbose flag&#xA;to methods in FileUtils." ilk="namespace" name="DryRun">
+          <import symbol="FileUtils" />
+        </scope>
+        <scope ilk="namespace" name="StreamUtils_">
+          <scope attributes="private" ilk="function" name="fu_blksize" signature="(st)" />
+          <scope attributes="private" ilk="function" name="fu_default_blksize" signature="()" />
+          <scope attributes="private" ilk="function" name="fu_stream_blksize" signature="(*streams)" />
+          <scope attributes="private" ilk="function" name="fu_windows?" signature="()" />
+        </scope>
+        <scope doc="This module has all methods of FileUtils module, but never&#xA;changes files/directories. This equates to passing the :noop&#xA;flag to methods in FileUtils." ilk="namespace" name="NoWrite">
+          <import symbol="FileUtils" />
+        </scope>
+        <scope doc="This module has all methods of FileUtils module, but it&#xA;outputs messages before acting. This equates to passing the&#xA;:verbose flag to methods in FileUtils." ilk="namespace" name="Verbose">
+          <import symbol="FileUtils" />
+        </scope>
+        <scope classrefs="Object" ilk="class" name="Entry_" />
+        <import symbol="StreamUtils_" />
+        <scope attributes="__classmethod__ private" doc="Returns an Array of method names which have the option opt." ilk="function" name="collect_method" signature="(opt)" />
+        <scope attributes="__classmethod__ private" doc="Returns an Array of method names which have any options." ilk="function" name="commands" signature="()" />
+        <scope attributes="__classmethod__ private" doc="Returns true if the method mid have an option opt." ilk="function" name="have_option?" signature="(mid, opt)" />
+        <scope attributes="__classmethod__ private" doc="Returns an Array of option names." ilk="function" name="options" signature="()" />
+        <scope attributes="__classmethod__ private" doc="Returns an Array of option names of the method mid." ilk="function" name="options_of" signature="(mid)" />
+        <scope doc="Options: verbose" ilk="function" name="cd" signature="(dir, options = {}) {|dir| ...}" />
+        <scope doc="Alias for #cd" ilk="function" name="chdir" signature="(dir, options = {})" />
+        <scope doc="Options: noop verbose" ilk="function" name="chmod" signature="(mode, list, options = {})" />
+        <scope doc="Options: noop verbose force" ilk="function" name="chmod_R" signature="(mode, list, options = {})" />
+        <scope doc="Options: noop verbose" ilk="function" name="chown" signature="(user, group, list, options = {})" />
+        <scope doc="Options: noop verbose force" ilk="function" name="chown_R" signature="(user, group, list, options = {})" />
+        <scope doc="Alias for #compare_file" ilk="function" name="cmp" signature="(a, b)" />
+        <scope doc="Returns true if the contents of a file A and a file B are&#xA;identical." ilk="function" name="compare_file" signature="(a, b)" />
+        <scope doc="Returns true if the contents of a stream a and b are&#xA;identical." ilk="function" name="compare_stream" signature="(a, b)" />
+        <scope doc="Alias for #cp" ilk="function" name="copy" signature="(src, dest, options = {})" />
+        <scope doc="Copies a file system entry src to dest. If src is a&#xA;directory, this method copies its contents recursively." ilk="function" name="copy_entry" signature="(src, dest, preserve = false, dereference_root = false)" />
+        <scope doc="Copies file contents of src to dest. Both of src and dest&#xA;must be a path name." ilk="function" name="copy_file" signature="(src, dest, preserve = false, dereference = true)" />
+        <scope doc="Copies stream src to dest. src must respond to #read(n) and&#xA;dest must respond to #write(str)." ilk="function" name="copy_stream" signature="(src, dest)" />
+        <scope doc="Options: preserve noop verbose" ilk="function" name="cp" signature="(src, dest, options = {})" />
+        <scope doc="Options: preserve noop verbose dereference_root" ilk="function" name="cp_r" signature="(src, dest, options = {})" />
+        <scope ilk="function" name="fu_have_symlink?" signature="(" />
+        <scope ilk="function" name="fu_world_writable?" signature="(st)" />
+        <scope doc="Alias for #pwd" ilk="function" name="getwd" signature="()" />
+        <scope doc="Alias for #compare_file" ilk="function" name="identical?" signature="(a, b)" />
+        <scope doc="Options: mode noop verbose" ilk="function" name="install" signature="(src, dest, options = {})" />
+        <scope doc="Alias for #ln" ilk="function" name="link" signature="(src, dest, options = {})" />
+        <scope doc="Options: force noop verbose" ilk="function" name="ln" signature="(src, dest, options = {})" />
+        <scope doc="Options: force noop verbose" ilk="function" name="ln_s" signature="(src, dest, options = {})" />
+        <scope doc="Options: noop verbose" ilk="function" name="ln_sf" signature="(src, dest, options = {})" />
+        <scope doc="Alias for #mkdir_p" ilk="function" name="makedirs" signature="(list, options = {})" />
+        <scope doc="Options: mode noop verbose" ilk="function" name="mkdir" signature="(list, options = {})" />
+        <scope doc="Options: mode noop verbose" ilk="function" name="mkdir_p" signature="(list, options = {})" />
+        <scope doc="Alias for #mkdir_p" ilk="function" name="mkpath" signature="(list, options = {})" />
+        <scope doc="Alias for #mv" ilk="function" name="move" signature="(src, dest, options = {})" />
+        <scope doc="Options: force noop verbose" ilk="function" name="mv" signature="(src, dest, options = {})" />
+        <scope doc="Options: (none)" ilk="function" name="pwd" signature="()" />
+        <scope doc="Alias for #rm" ilk="function" name="remove" signature="(list, options = {})" />
+        <scope doc="Removes a directory dir and its contents recursively. This&#xA;method ignores StandardError if force is true." ilk="function" name="remove_dir" signature="(path, force = false)" />
+        <scope doc="This method removes a file system entry path. path might be&#xA;a regular file, a directory, or something." ilk="function" name="remove_entry" signature="(path, force = false)" />
+        <scope doc="This method removes a file system entry path. path shall be&#xA;a regular file, a directory, or something." ilk="function" name="remove_entry_secure" signature="(path, force = false)" />
+        <scope doc="Removes a file path. This method ignores StandardError if&#xA;force is true." ilk="function" name="remove_file" signature="(path, force = false)" />
+        <scope doc="Options: force noop verbose" ilk="function" name="rm" signature="(list, options = {})" />
+        <scope doc="Options: noop verbose" ilk="function" name="rm_f" signature="(list, options = {})" />
+        <scope doc="Options: force noop verbose secure" ilk="function" name="rm_r" signature="(list, options = {})" />
+        <scope doc="Options: noop verbose secure" ilk="function" name="rm_rf" signature="(list, options = {})" />
+        <scope doc="Options: noop, verbose" ilk="function" name="rmdir" signature="(list, options = {})" />
+        <scope doc="Alias for #rm_rf" ilk="function" name="rmtree" signature="(list, options = {})" />
+        <scope doc="Alias for #rm_f" ilk="function" name="safe_unlink" signature="(list, options = {})" />
+        <scope doc="Alias for #ln_s" ilk="function" name="symlink" signature="(src, dest, options = {})" />
+        <scope doc="Options: noop verbose" ilk="function" name="touch" signature="(list, options = {})" />
+        <scope doc="Options: (none)" ilk="function" name="uptodate?" signature="(new, old_list, options = nil)" />
+      </scope>
+    </scope>
+    

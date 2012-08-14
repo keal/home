@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="process/uid">
+      <scope doc="The Process::UID module contains a collection of module&#xA;functions which can be used to portably get, set, and switch&#xA;the current process&apos;s real, effective, and saved user IDs." ilk="namespace" name="UID">
+        <scope doc="Change the current process&apos;s real and effective user ID to&#xA;that specified by `integer&apos;. Returns the new user ID." ilk="function" name="change_privilege" signature="Process::UID.change_privilege(integer)   =&gt; fixnum" />
+        <scope doc="Returns the effective user ID for this process." ilk="function" name="eid" signature="Process.euid           =&gt; fixnum&#xA;Process::UID.eid       =&gt; fixnum&#xA;Process::Sys.geteuid   =&gt; fixnum" />
+        <scope doc="Alias for #grant_privilege" ilk="function" name="eid=" signature="(p1)" />
+        <scope doc="Set the effective user ID, and if possible, the saved user&#xA;ID of the process to the given `integer&apos;. Returns the new&#xA;effective user ID." ilk="function" name="grant_privilege" signature="Process::UID.grant_privilege(integer)   =&gt; fixnum&#xA;Process::UID.eid= integer               =&gt; fixnum" />
+        <scope doc="Exchange real and effective user IDs and return the new&#xA;effective user ID. Not available on all platforms." ilk="function" name="re_exchange" signature="Process::UID.re_exchange   =&gt; fixnum" />
+        <scope doc="Returns true if the real and effective user IDs of a process&#xA;may be exchanged on the current platform." ilk="function" name="re_exchangeable?" signature="Process::UID.re_exchangeable?   =&gt; true or false" />
+        <scope doc="Returns the (real) user ID of this process." ilk="function" name="rid" signature="Process.uid           =&gt; fixnum&#xA;Process::UID.rid      =&gt; fixnum&#xA;Process::Sys.getuid   =&gt; fixnum" />
+        <scope doc="Returns true if the current platform has saved user ID&#xA;functionality." ilk="function" name="sid_available?" signature="Process::UID.sid_available?   =&gt; true or false" />
+        <scope doc="Switch the effective and real user IDs of the current&#xA;process. If a `block&apos; is given, the user IDs will be&#xA;switched back after the block is executed." ilk="function" name="switch" signature="Process::UID.switch              =&gt; fixnum&#xA;Process::UID.switch {|| block}   =&gt; object" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="yaml/basenode">
+      <import line="4" module="yaml/ypath" symbol="*" />
+      <scope doc="YAML::BaseNode class" ilk="namespace" line="6" lineend="215" name="YAML">
+        <scope doc="YAML Generic Model container" ilk="namespace" line="11" lineend="213" name="BaseNode">
+          <scope doc="Search for YPath entry and return qualified nodes." ilk="function" line="17" lineend="30" name="select" signature="select( ypath_str )" />
+          <scope doc="Search for YPath entry and return transformed nodes." ilk="function" line="36" lineend="49" name="select!" signature="select!( ypath_str )" />
+          <scope doc="Search for YPath entry and return a list of qualified paths." ilk="function" line="55" lineend="67" name="search" signature="search( ypath_str )" />
+          <scope ilk="function" line="69" lineend="75" name="at" signature="at( seg )" />
+          <scope doc="YPath search returning a complete depth array" ilk="function" line="80" lineend="88" name="match_path" signature="match_path( ypath_str )" />
+          <scope doc="Search a node for a single YPath segment" ilk="function" line="93" lineend="179" name="match_segment" signature="match_segment( ypath, depth )" />
+          <scope doc="We want the node to act like as Hash if it is." ilk="function" line="185" lineend="192" name="[]" signature="[]( *key" />
+          <scope ilk="function" line="194" lineend="200" name="children" signature="children" />
+          <scope ilk="function" line="202" lineend="208" name="children_with_index" signature="children_with_index" />
+          <scope ilk="function" line="210" lineend="212" name="emit" signature="emit" />
+        </scope>
+      </scope>
+    </scope>
+    

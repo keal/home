@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/spline">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/spline.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="23" name="Tk::BLT">
+        <scope ilk="namespace" line="10" lineend="22" name="Spline">
+          <scope attributes="__classmethod__" ilk="function" line="15" lineend="17" name="natural" signature="self.natural(x, y, sx, sy)" />
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="quadratic" signature="self.quadratic(x, y, sx, sy)" />
+        </scope>
+      </scope>
+    </scope>
+    

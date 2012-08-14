@@ -1,0 +1,1 @@
+[{'word': 'source', 'menu': '[B] .zshenv', 'kind': '', 'abbr': 'source'}, {'word': '.zsh.d', 'menu': '[B] .zshenv', 'kind': '', 'abbr': '.zsh.d'}, {'word': 'zshenv', 'menu': '[B] .zshenv', 'kind': '', 'abbr': 'zshenv'}]

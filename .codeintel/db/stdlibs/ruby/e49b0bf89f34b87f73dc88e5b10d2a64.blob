@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="tk/image">
+      <import line="5" module="tk" symbol="*" />
+      <scope classrefs="TkObject" doc="tk/image.rb : treat Tk image objects" ilk="class" line="7" lineend="96" name="TkImage">
+        <scope attributes="__classmethod__" ilk="function" line="17" lineend="47" name="new" signature="self.new(keys=nil)" />
+        <scope attributes="__ctor__" ilk="function" line="49" lineend="67" name="initialize" signature="initialize(keys=nil)" />
+        <scope ilk="function" line="69" lineend="73" name="delete" signature="delete" />
+        <scope ilk="function" line="74" lineend="76" name="height" signature="height" />
+        <scope ilk="function" line="77" lineend="79" name="inuse" signature="inuse" />
+        <scope ilk="function" line="80" lineend="82" name="itemtype" signature="itemtype" />
+        <scope ilk="function" line="83" lineend="85" name="width" signature="width" />
+        <scope attributes="__classmethod__" ilk="function" line="87" lineend="91" name="names" signature="TkImage.names" />
+        <scope attributes="__classmethod__" ilk="function" line="93" lineend="95" name="types" signature="TkImage.types" />
+        <import symbol="Tk" />
+      </scope>
+      <scope classrefs="TkImage" ilk="class" line="98" lineend="108" name="TkBitmapImage">
+        <scope ilk="function" line="99" lineend="101" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope attributes="__ctor__" ilk="function" line="104" lineend="107" name="initialize" signature="initialize(*args)" />
+      </scope>
+      <scope classrefs="TkImage" ilk="class" line="110" lineend="237" name="TkPhotoImage">
+        <scope ilk="function" line="113" lineend="125" name="_photo_hash_kv" signature="_photo_hash_kv(keys)" />
+        <scope attributes="__ctor__" ilk="function" line="128" lineend="131" name="initialize" signature="initialize(*args)" />
+        <scope ilk="function" line="133" lineend="136" name="blank" signature="blank" />
+        <scope ilk="function" line="138" lineend="145" name="cget" signature="cget(option)" />
+        <scope ilk="function" line="147" lineend="164" name="copy" signature="copy(src, *opts)" />
+        <scope ilk="function" line="166" lineend="169" name="data" signature="data(keys={})" />
+        <scope ilk="function" line="171" lineend="173" name="get" signature="get(x, y)" />
+        <scope ilk="function" line="175" lineend="185" name="put" signature="put(data, *opts)" />
+        <scope ilk="function" line="187" lineend="204" name="read" signature="read(file, *opts)" />
+        <scope ilk="function" line="206" lineend="209" name="redither" signature="redither" />
+        <scope ilk="function" line="211" lineend="213" name="get_transparency" signature="get_transparency(x, y)" />
+        <scope ilk="function" line="214" lineend="217" name="set_transparency" signature="set_transparency(x, y, st)" />
+        <scope ilk="function" line="219" lineend="236" name="write" signature="write(file, *opts)" />
+      </scope>
+    </scope>
+    

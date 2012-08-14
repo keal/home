@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/testcase">
+      <import line="5" module="test/unit/assertions" symbol="*" />
+      <import line="6" module="test/unit/failure" symbol="*" />
+      <import line="7" module="test/unit/error" symbol="*" />
+      <import line="8" module="test/unit/testsuite" symbol="*" />
+      <import line="9" module="test/unit/assertionfailederror" symbol="*" />
+      <import line="10" module="test/unit/util/backtracefilter" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="12" lineend="150" name="Test">
+        <scope ilk="namespace" line="13" lineend="149" name="Unit">
+          <scope classrefs="Object" doc="Ties everything together." ilk="class" line="20" lineend="148" name="TestCase">
+            <scope ilk="function" line="24" lineend="24" name="method_name" />
+            <scope attributes="__ctor__" doc="Creates a new instance of the fixture for running the test&#xA;represented by test_method_name." ilk="function" line="31" lineend="39" name="initialize" signature="initialize(test_method_name)" />
+            <scope attributes="__classmethod__" doc="Rolls up all of the test* methods in the fixture into one&#xA;suite, creating a new instance of the fixture for each&#xA;method." ilk="function" line="44" lineend="60" name="suite" signature="self.suite" />
+            <scope doc="Runs the individual test method represented by this instance&#xA;of the fixture, collecting statistics, failures and errors&#xA;in result." ilk="function" line="65" lineend="86" name="run" signature="run(result)" />
+            <scope doc="Called before every test method runs." ilk="function" line="90" lineend="91" name="setup" signature="setup" />
+            <scope doc="Called after every test method runs." ilk="function" line="95" lineend="96" name="teardown" signature="teardown" />
+            <scope ilk="function" line="98" lineend="100" name="default_test" signature="default_test" />
+            <scope doc="Returns whether this individual test passed or not." ilk="function" line="105" lineend="107" name="passed?" signature="passed?" />
+            <scope ilk="function" line="110" lineend="112" name="size" signature="size" />
+            <scope ilk="function" line="114" lineend="116" name="add_assertion" signature="add_assertion" />
+            <scope ilk="function" line="119" lineend="122" name="add_failure" signature="add_failure(message, all_locations=caller())" />
+            <scope ilk="function" line="125" lineend="128" name="add_error" signature="add_error(exception)" />
+            <scope doc="Returns a human-readable name for the specific test that&#xA;this instance of TestCase represents." ilk="function" line="133" lineend="135" name="name" signature="name" />
+            <scope doc="Overridden to return #name." ilk="function" line="138" lineend="140" name="to_s" signature="to_s" />
+            <scope doc="It&apos;s handy to be able to compare TestCase instances." ilk="function" line="143" lineend="147" name="==" signature="==(other" />
+            <import symbol="Assertions" />
+            <import symbol="Util::BacktraceFilter" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

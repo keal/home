@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="rexml/xmltokens">
+      <scope ilk="namespace" line="1" lineend="18" name="REXML">
+        <scope doc="Defines a number of tokens used for parsing XML." ilk="namespace" line="4" lineend="17" name="XMLTokens" />
+      </scope>
+    </scope>
+    

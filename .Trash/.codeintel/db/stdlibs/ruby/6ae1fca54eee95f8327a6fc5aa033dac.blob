@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="timeout">
+      <scope ilk="namespace" name="Timeout">
+        <scope classrefs="Interrupt" doc="Raised by Timeout#timeout when the block times out." ilk="class" name="Error" />
+        <scope doc="Executes the method&apos;s block. If the block execution&#xA;terminates before sec seconds has passed, it returns true." ilk="function" name="timeout" signature="(sec, exception=Error) {|if sec == nil or sec.zero?| ...}" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="irb/workspace">
+      <scope doc="irb/workspace-binding.rb - $Release Version: 0.9.5$&#xA;$Revision: 1.5.2.2 $ $Date: 2005/04/19 19:24:57 $ by Keiju&#xA;ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="12" lineend="107" name="IRB">
+        <scope classrefs="Object" ilk="class" line="13" lineend="106" name="WorkSpace">
+          <scope attributes="__ctor__" doc="create new workspace." ilk="function" line="16" lineend="75" name="initialize" signature="initialize(*main)">
+            <import line="29" module="tempfile" symbol="*" />
+            <import line="40" module="thread" symbol="*" />
+          </scope>
+          <scope ilk="function" line="77" lineend="77" name="binding" />
+          <scope ilk="function" line="78" lineend="78" name="main" />
+          <scope ilk="function" line="80" lineend="82" name="evaluate" signature="evaluate(context, statements, file = __FILE__, line = __LINE__)" />
+          <scope doc="error message manipulator" ilk="function" line="85" lineend="102" name="filter_backtrace" signature="filter_backtrace(bt)" />
+          <scope ilk="function" line="104" lineend="105" name="IRB.delete_caller" signature="IRB.delete_caller" />
+        </scope>
+      </scope>
+    </scope>
+    

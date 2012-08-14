@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/container">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/container.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="28" name="Tk::BLT">
+        <scope classrefs="TkWindow" ilk="class" line="10" lineend="14" name="Container" />
+        <scope ilk="function" line="16" lineend="18" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="21" lineend="23" name="find_command" signature="find_command(pat)" />
+        <scope ilk="function" line="25" lineend="27" name="find_name" signature="find_name(pat)" />
+      </scope>
+    </scope>
+    

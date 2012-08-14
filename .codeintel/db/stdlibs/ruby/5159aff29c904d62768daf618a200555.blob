@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="rexml/xmldecl">
+      <import line="1" module="rexml/encoding" symbol="*" />
+      <import line="2" module="rexml/source" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="114" name="REXML">
+        <scope classrefs="Child" doc="NEEDS DOCUMENTATION" ilk="class" line="6" lineend="48" name="XMLDecl">
+          <scope ilk="function" line="15" lineend="15" name="version" />
+          <scope ilk="function" line="15" lineend="15" name="version=" />
+          <scope ilk="function" line="15" lineend="15" name="standalone" />
+          <scope ilk="function" line="15" lineend="15" name="standalone=" />
+          <scope ilk="function" line="16" lineend="16" name="writeencoding" />
+          <scope attributes="__ctor__" ilk="function" line="18" lineend="34" name="initialize" signature="initialize(version=DEFAULT_VERSION, encoding=nil, standalone=nil)" />
+          <scope ilk="function" line="36" lineend="38" name="clone" signature="clone" />
+          <scope ilk="function" line="40" lineend="48" name="write" signature="write" />
+          <import symbol="Encoding" />
+        </scope>
+        <scope ilk="function" line="52" lineend="57" name="==" signature="==( other" />
+        <scope ilk="function" line="59" lineend="63" name="xmldecl" signature="xmldecl" />
+        <scope ilk="function" line="65" lineend="67" name="node_type" signature="node_type" />
+        <scope ilk="function" line="72" lineend="81" name="encoding=" signature="encoding=( enc )" />
+        <scope doc="Only use this if you do not want the XML declaration to be&#xA;written; this object is ignored by the XML writer." ilk="function" line="88" lineend="92" name="XMLDecl.default" signature="XMLDecl.default" />
+        <scope ilk="function" line="94" lineend="96" name="nowrite" signature="nowrite" />
+        <scope ilk="function" line="98" lineend="100" name="dowrite" signature="dowrite" />
+        <scope ilk="function" line="102" lineend="104" name="inspect" signature="inspect" />
+        <scope ilk="function" line="107" lineend="112" name="content" signature="content(enc)" />
+      </scope>
+    </scope>
+    

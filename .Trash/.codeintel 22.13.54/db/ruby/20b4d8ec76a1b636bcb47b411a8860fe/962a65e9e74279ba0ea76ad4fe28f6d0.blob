@@ -1,0 +1,1 @@
+<scope ilk="blob" lang="Ruby" name="boot" src="/Users/tanakatakaaki/railsproject/sample/config/boot.rb"><import line="1" module="rubygems" symbol="*" /><import line="6" module="bundler/setup" symbol="*" /></scope>

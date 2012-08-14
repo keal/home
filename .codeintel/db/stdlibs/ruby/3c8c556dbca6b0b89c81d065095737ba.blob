@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="tempfile">
+      <scope classrefs="DelegateClass(File)" doc="A class for managing temporary files. This library is&#xA;written to be thread safe." ilk="class" name="Tempfile">
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a temporary file of mode 0600 in the temporary&#xA;directory whose name is basename.pid.n and opens with mode&#xA;&quot;w+&quot;. A Tempfile object works just like a File object." ilk="function" name="new" signature="(basename, tmpdir=Dir::tmpdir)" />
+        <scope attributes="__classmethod__" doc="If no block is given, this is a synonym for new()." ilk="function" name="open" signature="(*args) {|tempfile| ...}" />
+        <scope doc="Closes the file. If the optional flag is true, unlinks the&#xA;file after closing." ilk="function" name="close" signature="(unlink_now=false)" />
+        <scope doc="Closes and unlinks the file." ilk="function" name="close!" signature="()" />
+        <scope doc="Alias for #unlink" ilk="function" name="delete" signature="()" />
+        <scope doc="Alias for #size" ilk="function" name="length" signature="()" />
+        <scope attributes="private" ilk="function" name="make_tmpname" signature="(basename, n)" />
+        <scope doc="Opens or reopens the file with mode &quot;r+&quot;." ilk="function" name="open" signature="()" />
+        <scope doc="Returns the full path name of the temporary file." ilk="function" name="path" signature="()" />
+        <scope doc="Returns the size of the temporary file. As a side effect,&#xA;the IO buffer is flushed before determining the size." ilk="function" name="size" signature="()" />
+        <scope doc="Unlinks the file. On UNIX-like systems, it is often a good&#xA;idea to unlink a temporary file immediately after creating&#xA;and opening it, because it leaves other programs zero chance&#xA;to access the file." ilk="function" name="unlink" signature="()" />
+      </scope>
+    </scope>
+    

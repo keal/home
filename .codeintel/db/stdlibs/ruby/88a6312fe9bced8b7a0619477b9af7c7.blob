@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/pagesmanager">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/frame" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/pagesmanager.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="12" lineend="13" name="PagesManager" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="61" name="Tk::BWidget::">
+        <scope ilk="function" line="22" lineend="25" name="tagid" signature="tagid(id)" />
+        <scope ilk="function" line="27" lineend="31" name="add" signature="add(page, &amp;b)" />
+        <scope ilk="function" line="33" lineend="36" name="compute_size" signature="compute_size" />
+        <scope ilk="function" line="38" lineend="41" name="delete" signature="delete(page)" />
+        <scope ilk="function" line="43" lineend="47" name="get_frame" signature="get_frame(page, &amp;b)" />
+        <scope ilk="function" line="49" lineend="51" name="get_page" signature="get_page(page)" />
+        <scope ilk="function" line="53" lineend="55" name="pages" signature="pages(first=None, last=None)" />
+        <scope ilk="function" line="57" lineend="60" name="raise" signature="raise(page=None)" />
+      </scope>
+    </scope>
+    

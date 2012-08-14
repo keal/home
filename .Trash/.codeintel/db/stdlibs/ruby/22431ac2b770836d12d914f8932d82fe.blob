@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encoding">
+      <scope doc="-*- mode: ruby; ruby-indent-level: 2; indent-tabs-mode: t;&#xA;tab-width: 2 -*- vim: sw=2 ts=2" ilk="namespace" line="2" lineend="64" name="REXML">
+        <scope ilk="namespace" line="3" lineend="63" name="Encoding">
+          <scope attributes="__classmethod__" ilk="function" line="5" lineend="7" name="register" signature="self.register(enc, &amp;block)" />
+          <scope attributes="__classmethod__" ilk="function" line="8" lineend="10" name="apply" signature="self.apply(obj, enc)" />
+          <scope attributes="__classmethod__" ilk="function" line="11" lineend="13" name="encoding_method" signature="self.encoding_method(enc)" />
+          <scope doc="ID ---&gt; Encoding name" ilk="function" line="23" lineend="53" name="encoding=" signature="encoding=( enc )">
+            <import line="31" module="rexml/encodings/ICONV.rb" symbol="*" />
+            <import line="47" module="rexml/encodings/UTF-8.rb" symbol="*" />
+          </scope>
+          <scope ilk="function" line="55" lineend="62" name="check_encoding" signature="check_encoding" />
+        </scope>
+      </scope>
+    </scope>
+    

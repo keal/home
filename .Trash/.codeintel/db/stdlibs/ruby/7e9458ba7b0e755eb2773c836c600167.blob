@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/dropsite">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/dropsite.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="BWidget">
+          <scope ilk="namespace" line="11" lineend="12" name="DropSite" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="16" lineend="39" name="Tk::BWidget::">
+        <scope attributes="__classmethod__" ilk="function" line="20" lineend="22" name="include" signature="self.include(klass, type)" />
+        <scope attributes="__classmethod__" ilk="function" line="24" lineend="26" name="register" signature="self.register(path, keys={})" />
+        <scope attributes="__classmethod__" ilk="function" line="28" lineend="30" name="set_cursor" signature="self.set_cursor(cursor)" />
+        <scope attributes="__classmethod__" ilk="function" line="32" lineend="34" name="set_drop" signature="self.set_drop(path, subpath, dropover, drop, force=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="36" lineend="38" name="set_operation" signature="self.set_operation(op)" />
+      </scope>
+    </scope>
+    

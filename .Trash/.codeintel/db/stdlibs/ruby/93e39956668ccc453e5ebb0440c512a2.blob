@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parent">
+      <import line="1" module="rexml/child" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="166" name="REXML">
+        <scope classrefs="Child" doc="A parent has children, and has methods for accessing them." ilk="class" line="7" lineend="165" name="Parent">
+          <scope attributes="__ctor__" doc="Constructor @param parent if supplied, will be set as the&#xA;parent of this object" ilk="function" line="12" lineend="15" name="initialize" signature="initialize" />
+          <scope ilk="function" line="17" lineend="23" name="add" signature="add( object )" />
+          <scope ilk="function" line="28" lineend="31" name="unshift" signature="unshift( object )" />
+          <scope ilk="function" line="33" lineend="37" name="delete" signature="delete( object )" />
+          <scope ilk="function" line="39" lineend="41" name="each" signature="each(&amp;block)" />
+          <scope ilk="function" line="43" lineend="45" name="delete_if" signature="delete_if( &amp;block )" />
+          <scope ilk="function" line="47" lineend="49" name="delete_at" signature="delete_at( index )" />
+          <scope ilk="function" line="51" lineend="53" name="each_index" signature="each_index( &amp;block )" />
+          <scope doc="Fetches a child at a given index @param index the Integer&#xA;index of the child to fetch" ilk="function" line="57" lineend="59" name="[]" signature="[]( index" />
+          <scope doc="Set an index entry." ilk="function" line="70" lineend="73" name="[]=" signature="[]=( *args" />
+          <scope doc="Inserts an child before another child @param child1 this is&#xA;either an xpath or an Element." ilk="function" line="82" lineend="93" name="insert_before" signature="insert_before( child1, child2 )" />
+          <scope doc="Inserts an child after another child @param child1 this is&#xA;either an xpath or an Element." ilk="function" line="102" lineend="113" name="insert_after" signature="insert_after( child1, child2 )" />
+          <scope ilk="function" line="115" lineend="117" name="to_a" signature="to_a" />
+          <scope doc="Fetches the index of a given child @param child the child to&#xA;get the index of @return the index of the child, or nil if&#xA;the object is not a child of this parent." ilk="function" line="123" lineend="127" name="index" signature="index( child )" />
+          <scope doc="@return the number of children of this parent" ilk="function" line="130" lineend="132" name="size" signature="size" />
+          <scope doc="Replaces one child with another, making sure the nodelist is&#xA;correct @param to_replace the child to replace (must be a&#xA;Child) @param replacement the child to insert into the&#xA;nodelist (must be a Child)" ilk="function" line="140" lineend="144" name="replace_child" signature="replace_child( to_replace, replacement )" />
+          <scope doc="Deeply clones this object." ilk="function" line="148" lineend="158" name="deep_clone" signature="deep_clone" />
+          <scope ilk="function" line="162" lineend="164" name="parent?" signature="parent?" />
+          <import symbol="Enumerable" />
+        </scope>
+      </scope>
+    </scope>
+    

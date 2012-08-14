@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/rdoc">
+      <import line="8" module="rdoc/parsers/parse_rb.rb" symbol="*" />
+      <import line="9" module="rdoc/parsers/parse_c.rb" symbol="*" />
+      <import line="10" module="rdoc/parsers/parse_f95.rb" symbol="*" />
+      <import line="12" module="rdoc/parsers/parse_simple.rb" symbol="*" />
+      <import line="13" module="rdoc/options" symbol="*" />
+      <import line="15" module="rdoc/diagram" symbol="*" />
+      <import line="17" module="find" symbol="*" />
+      <import line="18" module="ftools" symbol="*" />
+      <scope doc="We put rdoc stuff in the RDoc module to avoid namespace&#xA;clutter." ilk="namespace" line="25" lineend="275" name="RDoc">
+        <scope classrefs="Object" doc="Simple stats collector" ilk="class" line="32" lineend="45" name="Stats">
+          <scope ilk="function" line="33" lineend="33" name="num_files" />
+          <scope ilk="function" line="33" lineend="33" name="num_files=" />
+          <scope ilk="function" line="33" lineend="33" name="num_classes" />
+          <scope ilk="function" line="33" lineend="33" name="num_classes=" />
+          <scope ilk="function" line="33" lineend="33" name="num_modules" />
+          <scope ilk="function" line="33" lineend="33" name="num_modules=" />
+          <scope ilk="function" line="33" lineend="33" name="num_methods" />
+          <scope ilk="function" line="33" lineend="33" name="num_methods=" />
+          <scope attributes="__ctor__" ilk="function" line="34" lineend="37" name="initialize" signature="initialize" />
+          <scope ilk="function" line="38" lineend="44" name="print" signature="print" />
+        </scope>
+        <scope classrefs="Exception" doc="Exception thrown by any rdoc error." ilk="class" line="51" lineend="52" name="RDocError" />
+        <scope classrefs="Object" doc="Encapsulate the production of rdoc documentation." ilk="class" line="65" lineend="274" name="RDoc">
+          <scope doc="Report an error message and exit" ilk="function" line="97" lineend="99" name="error" signature="error(msg)" />
+          <scope doc="Create an output dir if it doesn&apos;t exist." ilk="function" line="107" lineend="124" name="setup_output_dir" signature="setup_output_dir(op_dir)" />
+          <scope doc="The .document file contains a list of file and directory&#xA;name patterns, representing candidates for documentation." ilk="function" line="130" lineend="141" name="parse_dot_doc_file" signature="parse_dot_doc_file(in_dir, filename, options)" />
+          <scope doc="Given a list of files and directories, create a list of all&#xA;the Ruby files they contain." ilk="function" line="156" lineend="177" name="normalized_file_list" signature="normalized_file_list(options, relative_files, force_doc = false, exclude_pattern=nil)" />
+          <scope doc="Return a list of the files to be processed in a directory." ilk="function" line="184" lineend="186" name="list_files_in_directory" signature="list_files_in_directory(dir, options)" />
+          <scope doc="Parse each file on the command line, recursively entering&#xA;directories" ilk="function" line="192" lineend="213" name="parse_files" signature="parse_files(options)" />
+          <scope doc="Format up one or more files according to the given&#xA;arguments." ilk="function" line="231" lineend="273" name="document" signature="document(argv)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="optparse/version">
+      <scope classrefs="Object" doc="OptionParser internal utility" ilk="class" line="3" lineend="70" name="OptionParser">
+        <scope ilk="function" line="4" lineend="47" name="show_version" signature="show_version(*pkg)" />
+        <scope ilk="function" line="49" lineend="57" name="each_const" signature="each_const(path, klass = ::Object)" />
+        <scope ilk="function" line="59" lineend="69" name="search_const" signature="search_const(klass, name)" />
+      </scope>
+    </scope>
+    

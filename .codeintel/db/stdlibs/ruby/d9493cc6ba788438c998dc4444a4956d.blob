@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="win32ole_variable">
+      <scope classrefs="Object" doc="WIN32OLE_VARIABLE objects represent OLE variable&#xA;information." ilk="class" name="WIN32OLE_VARIABLE">
+        <scope doc="Returns the name of variable." ilk="function" name="name" signature="WIN32OLE_VARIABLE#name" />
+        <scope doc="Returns OLE type string." ilk="function" name="ole_type" signature="WIN32OLE_VARIABLE#ole_type" />
+        <scope doc="Returns detail information of type. The information is array&#xA;of type." ilk="function" name="ole_type_detail" signature="WIN32OLE_VARIABLE#ole_type_detail" />
+        <scope doc="Alias for #name" ilk="function" name="to_s" signature="()" />
+        <scope doc="Returns value if value is exists. If the value does not&#xA;exist, this method returns nil." ilk="function" name="value" signature="WIN32OLE_VARIABLE#value" />
+        <scope doc="Returns variable kind string." ilk="function" name="variable_kind" signature="WIN32OLE_VARIABLE#variable_kind" />
+        <scope doc="Returns the number which represents variable kind." ilk="function" name="varkind" signature="WIN32OLE_VARIABLE#varkind" />
+        <scope doc="Returns true if the variable is public." ilk="function" name="visible?" signature="WIN32OLE_VARIABLE#visible?" />
+      </scope>
+    </scope>
+    

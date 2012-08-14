@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tkimg">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/tkimg/setup.rb" symbol="*" />
+      <scope doc="load all image format handlers TkPackage.require(&apos;Img&apos;,&#xA;&apos;1.3&apos;)" ilk="namespace" line="18" lineend="33" name="Tk">
+        <scope ilk="namespace" line="19" lineend="32" name="Img">
+          <scope attributes="__classmethod__" ilk="function" line="21" lineend="23" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="25" lineend="31" name="package_version" signature="self.package_version" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="rss/rexmlparser">
+      <import line="1" module="rexml/document" symbol="*" />
+      <import line="2" module="rexml/streamlistener" symbol="*" />
+      <scope ilk="namespace" line="9" lineend="47" name="RSS">
+        <scope classrefs="BaseParser" ilk="class" line="11" lineend="31" name="REXMLParser">
+          <scope ilk="function" line="15" lineend="17" name="listener" signature="listener" />
+          <scope ilk="function" line="19" lineend="29" name="_parse" signature="_parse" />
+        </scope>
+        <scope classrefs="BaseListener" ilk="class" line="33" lineend="45" name="REXMLListener">
+          <scope ilk="function" line="38" lineend="42" name="xmldecl" signature="xmldecl(version, encoding, standalone)" />
+          <import symbol="REXML::StreamListener" />
+          <import symbol="ListenerMixin" />
+        </scope>
+      </scope>
+    </scope>
+    

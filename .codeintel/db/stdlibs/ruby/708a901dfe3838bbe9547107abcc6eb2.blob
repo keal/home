@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="singletonclassmethods">
+      <scope classrefs="Object" ilk="class" name="SingletonClassMethods">
+        <scope attributes="private" doc="waiting-loop hook" ilk="function" name="_instantiate?" signature="()" />
+        <scope attributes="private" ilk="function" name="_load" signature="(str)" />
+        <scope doc="properly clone the Singleton pattern - did you know that&#xA;duping doesn&apos;t copy class methods?" ilk="function" name="clone" signature="()" />
+        <scope attributes="private" doc="ensure that the Singleton pattern is properly inherited" ilk="function" name="inherited" signature="(sub_klass)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_util">
+      <scope classrefs="Exception" ilk="class" line="3" lineend="3" name="RiError" />
+      <scope classrefs="Object" doc="Break argument into its constituent class or module names,&#xA;an optional method type, and a method name" ilk="class" line="8" lineend="75" name="NameDescriptor">
+        <scope ilk="function" line="10" lineend="10" name="class_names" />
+        <scope ilk="function" line="11" lineend="11" name="method_name" />
+        <scope ilk="function" line="14" lineend="14" name="is_class_method" />
+        <scope attributes="__ctor__" doc="arg may be 1." ilk="function" line="28" lineend="67" name="initialize" signature="initialize(arg)" />
+        <scope doc="Return the full class name (with &apos;::&apos; between the&#xA;components) or &quot;&quot; if there&apos;s no class name" ilk="function" line="72" lineend="74" name="full_class_name" signature="full_class_name" />
+      </scope>
+    </scope>
+    

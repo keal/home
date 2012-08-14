@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="runit/testresult">
+      <import line="5" module="test/unit/testresult" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="7" lineend="44" name="RUNIT">
+        <scope classrefs="Test::Unit::" ilk="class" line="8" lineend="43" name="TestResult">
+          <scope ilk="function" line="9" lineend="9" name="errors" />
+          <scope ilk="function" line="9" lineend="9" name="failures" />
+          <scope ilk="function" line="10" lineend="12" name="succeed?" signature="succeed?" />
+          <scope ilk="function" line="13" lineend="15" name="failure_size" signature="failure_size" />
+          <scope ilk="function" line="16" lineend="18" name="run_asserts" signature="run_asserts" />
+          <scope ilk="function" line="19" lineend="21" name="error_size" signature="error_size" />
+          <scope ilk="function" line="22" lineend="24" name="run_tests" signature="run_tests" />
+          <scope ilk="function" line="25" lineend="33" name="add_failure" signature="add_failure(failure)">
+            <scope ilk="function" line="26" lineend="28" name="failure.at" signature="failure.at" />
+            <scope ilk="function" line="29" lineend="31" name="failure.err" signature="failure.err" />
+          </scope>
+          <scope ilk="function" line="34" lineend="42" name="add_error" signature="add_error(error)">
+            <scope ilk="function" line="35" lineend="37" name="error.at" signature="error.at" />
+            <scope ilk="function" line="38" lineend="40" name="error.err" signature="error.err" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

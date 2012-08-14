@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="forwardable">
+      <scope doc="The Forwardable module provides delegation of specified&#xA;methods to a designated object, using the methods&#xA;#def_delegator and #def_delegators." ilk="namespace" name="Forwardable">
+        <scope doc="force Forwardable to show up in stack backtraces of&#xA;delegated methods" ilk="function" name="debug" />
+        <scope doc="force Forwardable to show up in stack backtraces of&#xA;delegated methods" ilk="function" name="debug=" />
+        <scope doc="Alias for #def_instance_delegator" ilk="function" name="def_delegator" signature="(accessor, method, ali = method)" />
+        <scope doc="Alias for #def_instance_delegators" ilk="function" name="def_delegators" signature="(accessor, *methods)" />
+        <scope doc="Defines a method `method&apos; which delegates to `obj&apos; (i.e. it&#xA;calls the method of the same name in `obj&apos;)." ilk="function" name="def_instance_delegator" signature="(accessor, method, ali = method)" />
+        <scope doc="Shortcut for defining multiple delegator methods, but with&#xA;no provision for using a different name." ilk="function" name="def_instance_delegators" signature="(accessor, *methods)" />
+      </scope>
+    </scope>
+    

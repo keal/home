@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="xmlrpc/datetime">
+      <import line="66" module="date" symbol="*" />
+      <scope ilk="namespace" line="68" name="XMLRPC" />
+      <scope classrefs="Object" ilk="class" line="70" lineend="133" name="DateTime">
+        <scope ilk="function" line="72" lineend="72" name="year" />
+        <scope ilk="function" line="72" lineend="72" name="month" />
+        <scope ilk="function" line="72" lineend="72" name="day" />
+        <scope ilk="function" line="72" lineend="72" name="hour" />
+        <scope ilk="function" line="72" lineend="72" name="min" />
+        <scope ilk="function" line="72" lineend="72" name="sec" />
+        <scope ilk="function" line="74" lineend="77" name="year=" signature="year= (value)" />
+        <scope ilk="function" line="79" lineend="82" name="month=" signature="month= (value)" />
+        <scope ilk="function" line="84" lineend="87" name="day=" signature="day= (value)" />
+        <scope ilk="function" line="89" lineend="92" name="hour=" signature="hour= (value)" />
+        <scope ilk="function" line="94" lineend="97" name="min=" signature="min= (value)" />
+        <scope ilk="function" line="99" lineend="102" name="sec=" signature="sec= (value)" />
+        <scope attributes="__ctor__" ilk="function" line="108" lineend="111" name="initialize" signature="initialize(year, month, day, hour, min, sec)" />
+        <scope ilk="function" line="113" lineend="119" name="to_time" signature="to_time" />
+        <scope ilk="function" line="121" lineend="123" name="to_date" signature="to_date" />
+        <scope ilk="function" line="125" lineend="127" name="to_a" signature="to_a" />
+        <scope ilk="function" line="129" lineend="131" name="==" signature="==(o" />
+      </scope>
+    </scope>
+    

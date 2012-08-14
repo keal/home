@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="irb/input-method">
+      <scope doc="irb/input-method.rb - input methods used irb $Release&#xA;Version: 0.9.5$ $Revision: 1.4.2.2 $ $Date: 2005/05/25&#xA;13:53:41 $ by Keiju ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="12" lineend="120" name="IRB">
+        <import line="85" module="readline" symbol="*" />
+        <scope classrefs="Object" doc="InputMethod StdioInputMethod FileInputMethod&#xA;(ReadlineInputMethod)" ilk="class" line="20" lineend="38" name="InputMethod">
+          <scope attributes="__ctor__" ilk="function" line="23" lineend="25" name="initialize" signature="initialize(file = STDIN_FILE_NAME)" />
+          <scope ilk="function" line="26" lineend="26" name="file_name" />
+          <scope ilk="function" line="28" lineend="28" name="prompt" />
+          <scope ilk="function" line="28" lineend="28" name="prompt=" />
+          <scope ilk="function" line="30" lineend="32" name="gets" signature="gets" />
+          <scope ilk="function" line="35" lineend="37" name="readable_atfer_eof?" signature="readable_atfer_eof?" />
+        </scope>
+        <scope classrefs="InputMethod" ilk="class" line="40" lineend="63" name="StdioInputMethod">
+          <scope attributes="__ctor__" ilk="function" line="41" lineend="45" name="initialize" signature="initialize" />
+          <scope ilk="function" line="47" lineend="50" name="gets" signature="gets" />
+          <scope ilk="function" line="52" lineend="54" name="eof?" signature="eof?" />
+          <scope ilk="function" line="56" lineend="58" name="readable_atfer_eof?" signature="readable_atfer_eof?" />
+          <scope ilk="function" line="60" lineend="62" name="line" signature="line(line_no)" />
+        </scope>
+        <scope classrefs="InputMethod" ilk="class" line="65" lineend="82" name="FileInputMethod">
+          <scope attributes="__ctor__" ilk="function" line="66" lineend="69" name="initialize" signature="initialize(file)" />
+          <scope ilk="function" line="70" lineend="70" name="file_name" />
+          <scope ilk="function" line="72" lineend="74" name="eof?" signature="eof?" />
+          <scope ilk="function" line="76" lineend="81" name="gets" signature="gets" />
+        </scope>
+        <scope classrefs="InputMethod" ilk="class" line="86" lineend="117" name="ReadlineInputMethod">
+          <scope attributes="__ctor__" ilk="function" line="88" lineend="94" name="initialize" signature="initialize" />
+          <scope ilk="function" line="96" lineend="104" name="gets" signature="gets" />
+          <scope ilk="function" line="106" lineend="108" name="eof?" signature="eof?" />
+          <scope ilk="function" line="110" lineend="112" name="readable_atfer_eof?" signature="readable_atfer_eof?" />
+          <scope ilk="function" line="114" lineend="116" name="line" signature="line(line_no)" />
+          <import symbol="Readline" />
+        </scope>
+      </scope>
+    </scope>
+    

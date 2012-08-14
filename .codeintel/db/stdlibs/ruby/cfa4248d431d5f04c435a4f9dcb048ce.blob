@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encodings/UTF-16">
+      <scope ilk="namespace" line="1" lineend="34" name="REXML">
+        <scope ilk="namespace" line="2" lineend="33" name="Encoding">
+          <scope ilk="function" line="3" lineend="16" name="encode_utf16" signature="encode_utf16" />
+          <scope ilk="function" line="18" lineend="25" name="decode_utf16" signature="decode_utf16(str)" />
+          <scope classrefs="Object" ilk="class" line="28" lineend="31" name="obj" />
+        </scope>
+      </scope>
+    </scope>
+    

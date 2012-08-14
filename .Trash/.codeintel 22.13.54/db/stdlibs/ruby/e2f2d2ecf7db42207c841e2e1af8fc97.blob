@@ -1,0 +1,422 @@
+<scope ilk="blob" lang="Ruby" name="socket">
+      <scope classrefs="IO" ilk="class" name="BasicSocket">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope attributes="__classmethod__" ilk="function" name="do_not_reverse_lookup" />
+        <scope attributes="__classmethod__" ilk="function" name="do_not_reverse_lookup=" />
+        <scope attributes="__classmethod__" ilk="function" name="for_fd" />
+        <scope ilk="function" name="close_read" />
+        <scope ilk="function" name="close_write" />
+        <scope ilk="function" name="getpeername" />
+        <scope ilk="function" name="getsockname" />
+        <scope ilk="function" name="getsockopt" />
+        <scope ilk="function" name="recv" />
+        <scope ilk="function" name="setsockopt" />
+        <scope ilk="function" name="shutdown" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="BasicSocket" ilk="class" name="IPSocket">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope attributes="__classmethod__" ilk="function" name="getaddress" />
+        <scope ilk="function" name="addr" />
+        <scope ilk="function" name="peeraddr" />
+        <scope ilk="function" name="recvfrom" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="BasicSocket" ilk="class" name="IPsocket">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope attributes="__classmethod__" ilk="function" name="getaddress" />
+        <scope ilk="function" name="addr" />
+        <scope ilk="function" name="peeraddr" />
+        <scope ilk="function" name="recvfrom" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="BasicSocket" ilk="class" name="Socket">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope attributes="__classmethod__" ilk="function" name="getaddrinfo" />
+        <scope attributes="__classmethod__" ilk="function" name="gethostbyaddr" />
+        <scope attributes="__classmethod__" ilk="function" name="gethostbyname" />
+        <scope attributes="__classmethod__" ilk="function" name="gethostname" />
+        <scope attributes="__classmethod__" ilk="function" name="getnameinfo" />
+        <scope attributes="__classmethod__" ilk="function" name="getservbyname" />
+        <scope attributes="__classmethod__" ilk="function" name="pack_sockaddr_in" />
+        <scope attributes="__classmethod__" ilk="function" name="pair" />
+        <scope attributes="__classmethod__" ilk="function" name="sockaddr_in" />
+        <scope attributes="__classmethod__" ilk="function" name="socketpair" />
+        <scope attributes="__classmethod__" ilk="function" name="unpack_sockaddr_in" />
+        <scope ilk="function" name="accept" />
+        <scope ilk="function" name="bind" />
+        <scope ilk="function" name="connect" />
+        <scope ilk="function" name="listen" />
+        <scope ilk="function" name="recvfrom" />
+        <scope ilk="function" name="sysaccept" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_APPLETALK" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_CCITT" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_CHAOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_DATAKIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_DLI" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_ECMA" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_HYLINK" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_IMPLINK" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_INET" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_IPX" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_ISO" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_LAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_MAX" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_NETBIOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_NS" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_OSI" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_PUP" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_SNA" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_UNIX" />
+        <variable attributes="__const__" citdl="Fixnum" name="AF_UNSPEC" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_ADDRCONFIG" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_ALL" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_CANONNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_DEFAULT" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_MASK" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_NUMERICHOST" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_PASSIVE" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_V4MAPPED" />
+        <variable attributes="__const__" citdl="Fixnum" name="AI_V4MAPPED_CFG" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_ADDRFAMILY" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_AGAIN" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_BADFLAGS" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_BADHINTS" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_FAIL" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_FAMILY" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_MAX" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_MEMORY" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_NODATA" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_NONAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_PROTOCOL" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_SERVICE" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_SOCKTYPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="EAI_SYSTEM" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="INADDR_ALLHOSTS_GROUP" />
+        <variable attributes="__const__" citdl="Fixnum" name="INADDR_ANY" />
+        <variable attributes="__const__" citdl="Fixnum" name="INADDR_BROADCAST" />
+        <variable attributes="__const__" citdl="Fixnum" name="INADDR_LOOPBACK" />
+        <variable attributes="__const__" citdl="Fixnum" name="INADDR_MAX_LOCAL_GROUP" />
+        <variable attributes="__const__" citdl="Fixnum" name="INADDR_NONE" />
+        <variable attributes="__const__" citdl="Fixnum" name="INADDR_UNSPEC_GROUP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPORT_RESERVED" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPORT_USERRESERVED" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_GGP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_ICMP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_IDP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_IGMP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_IP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_MAX" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_ND" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_PUP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_RAW" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_TCP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IPPROTO_UDP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_ADD_MEMBERSHIP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_DEFAULT_MULTICAST_LOOP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_DEFAULT_MULTICAST_TTL" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_DROP_MEMBERSHIP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_MAX_MEMBERSHIPS" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_MULTICAST_IF" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_MULTICAST_LOOP" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_MULTICAST_TTL" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_OPTIONS" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_TOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="IP_TTL" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="MSG_DONTROUTE" />
+        <variable attributes="__const__" citdl="Fixnum" name="MSG_OOB" />
+        <variable attributes="__const__" citdl="Fixnum" name="MSG_PEEK" />
+        <variable attributes="__const__" citdl="Fixnum" name="NI_DGRAM" />
+        <variable attributes="__const__" citdl="Fixnum" name="NI_MAXHOST" />
+        <variable attributes="__const__" citdl="Fixnum" name="NI_MAXSERV" />
+        <variable attributes="__const__" citdl="Fixnum" name="NI_NAMEREQD" />
+        <variable attributes="__const__" citdl="Fixnum" name="NI_NOFQDN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NI_NUMERICHOST" />
+        <variable attributes="__const__" citdl="Fixnum" name="NI_NUMERICSERV" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_APPLETALK" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_CCITT" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_CHAOS" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_DATAKIT" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_DLI" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_ECMA" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_HYLINK" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_IMPLINK" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_INET" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_IPX" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_ISO" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_LAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_MAX" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_NS" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_OSI" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_PUP" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_SNA" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_UNIX" />
+        <variable attributes="__const__" citdl="Fixnum" name="PF_UNSPEC" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="SHUT_RD" />
+        <variable attributes="__const__" citdl="Fixnum" name="SHUT_RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SHUT_WR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SOCK_DGRAM" />
+        <variable attributes="__const__" citdl="Fixnum" name="SOCK_RAW" />
+        <variable attributes="__const__" citdl="Fixnum" name="SOCK_RDM" />
+        <variable attributes="__const__" citdl="Fixnum" name="SOCK_SEQPACKET" />
+        <variable attributes="__const__" citdl="Fixnum" name="SOCK_STREAM" />
+        <variable attributes="__const__" citdl="Fixnum" name="SOL_SOCKET" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_ACCEPTCONN" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_BROADCAST" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_DEBUG" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_DONTROUTE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_ERROR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_KEEPALIVE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_LINGER" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_OOBINLINE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_RCVBUF" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_RCVLOWAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_RCVTIMEO" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_REUSEADDR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_SNDBUF" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_SNDLOWAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_SNDTIMEO" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_TYPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="SO_USELOOPBACK" />
+        <variable attributes="__const__" citdl="Fixnum" name="TCP_NODELAY" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="StandardError" ilk="class" name="SocketError" />
+      <scope classrefs="TCPSocket" ilk="class" name="TCPServer">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope ilk="function" name="accept" />
+        <scope ilk="function" name="listen" />
+        <scope ilk="function" name="sysaccept" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="IPSocket" ilk="class" name="TCPSocket">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope attributes="__classmethod__" ilk="function" name="gethostbyname" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="TCPSocket" ilk="class" name="TCPserver">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope ilk="function" name="accept" />
+        <scope ilk="function" name="listen" />
+        <scope ilk="function" name="sysaccept" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="IPSocket" ilk="class" name="TCPsocket">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope attributes="__classmethod__" ilk="function" name="gethostbyname" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="IPSocket" ilk="class" name="UDPSocket">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope ilk="function" name="bind" />
+        <scope ilk="function" name="connect" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+      <scope classrefs="IPSocket" ilk="class" name="UDPsocket">
+        <import symbol="Enumerable" />
+        <import symbol="File::Constants" />
+        <scope ilk="function" name="bind" />
+        <scope ilk="function" name="connect" />
+        <variable attributes="__const__" citdl="Fixnum" name="APPEND" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="CREAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="EXCL" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_CASEFOLD" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_DOTMATCH" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_NOESCAPE" />
+        <variable attributes="__const__" citdl="Fixnum" name="FNM_PATHNAME" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_EX" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_NB" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_SH" />
+        <variable attributes="__const__" citdl="Fixnum" name="LOCK_UN" />
+        <variable attributes="__const__" citdl="Fixnum" name="NONBLOCK" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDONLY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RDWR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_CUR" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_END" />
+        <variable attributes="__const__" citdl="Fixnum" name="SEEK_SET" />
+        <variable attributes="__const__" citdl="Fixnum" name="TRUNC" />
+        <variable attributes="__const__" citdl="Fixnum" name="WRONLY" />
+      </scope>
+    </scope>
+    

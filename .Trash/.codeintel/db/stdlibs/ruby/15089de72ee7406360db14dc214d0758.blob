@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/enumeration">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema enumeration definition for WSDL." ilk="namespace" line="12" name="WSDL" />
+      <scope ilk="namespace" line="13" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="32" name="Enumeration">
+        <scope attributes="__ctor__" ilk="function" line="17" lineend="19" name="initialize" signature="initialize" />
+        <scope ilk="function" line="21" lineend="23" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="25" lineend="31" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

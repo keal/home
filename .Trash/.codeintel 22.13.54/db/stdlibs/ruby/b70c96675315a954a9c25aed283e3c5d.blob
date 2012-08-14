@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parsers/treeparser">
+      <import line="1" module="rexml/validation/validationexception" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="94" name="REXML">
+        <scope ilk="namespace" line="4" lineend="93" name="Parsers">
+          <scope classrefs="Object" ilk="class" line="5" lineend="92" name="TreeParser">
+            <scope attributes="__ctor__" ilk="function" line="6" lineend="9" name="initialize" signature="initialize( source, build_context = Document.new )" />
+            <scope ilk="function" line="11" lineend="13" name="add_listener" signature="add_listener( listener )" />
+            <scope ilk="function" line="15" lineend="91" name="parse" signature="parse" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

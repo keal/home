@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/generators/template/html/kilmer">
+      <scope ilk="namespace" line="1" name="RDoc" />
+      <scope ilk="namespace" line="2" name="Page" />
+      <scope ilk="function" line="429" lineend="432" name="write_extra_pages" signature="write_extra_pages" />
+    </scope>
+    

@@ -1,0 +1,80 @@
+<scope ilk="blob" lang="Ruby" name="net/pop">
+      <import line="23" module="net/protocol" symbol="*" />
+      <import line="24" module="digest/md5" symbol="*" />
+      <scope doc="= net/pop.rb" ilk="namespace" line="26" lineend="878" name="Net">
+        <scope classrefs="ProtocolError" doc="Non-authentication POP3 protocol error (reply code &quot;-ERR&quot;,&#xA;except authentication)." ilk="class" line="30" lineend="30" name="POPError" />
+        <scope classrefs="ProtoAuthError" doc="POP3 authentication error." ilk="class" line="33" lineend="33" name="POPAuthenticationError" />
+        <scope classrefs="POPError" doc="Unexpected response from the server." ilk="class" line="36" lineend="36" name="POPBadResponse" />
+        <scope classrefs="Protocol" doc="= Net::POP3" ilk="class" line="191" lineend="574" name="POP3">
+          <scope attributes="__classmethod__" doc="Class Parameters" ilk="function" line="200" lineend="202" name="default_port" signature="POP3.default_port" />
+          <scope attributes="__classmethod__" ilk="function" line="204" lineend="206" name="socket_type" signature="POP3.socket_type" />
+          <scope attributes="__classmethod__" doc="Utilities" ilk="function" line="223" lineend="225" name="APOP" signature="POP3.APOP( isapop )" />
+          <scope attributes="__classmethod__" doc="Starts a POP3 session and iterates over each POPMail object,&#xA;yielding it to the +block+." ilk="function" line="247" lineend="253" name="foreach" signature="POP3.foreach( address, port = nil, account = nil, password = nil, isapop = false, &amp;block )" />
+          <scope attributes="__classmethod__" doc="Starts a POP3 session and deletes all messages on the&#xA;server." ilk="function" line="268" lineend="274" name="delete_all" signature="POP3.delete_all( address, port = nil, account = nil, password = nil, isapop = false, &amp;block )" />
+          <scope attributes="__classmethod__" doc="Opens a POP3 session, attempts authentication, and quits." ilk="function" line="290" lineend="294" name="auth_only" signature="POP3.auth_only( address, port = nil, account = nil, password = nil, isapop = false )" />
+          <scope doc="Starts a pop3 session, attempts authentication, and quits." ilk="function" line="299" lineend="304" name="auth_only" signature="auth_only( account, password )" />
+          <scope attributes="__classmethod__" doc="Session management" ilk="function" line="326" lineend="330" name="start" signature="POP3.start( address, port = nil, account = nil, password = nil, isapop = false, &amp;block )" />
+          <scope attributes="__ctor__" doc="Creates a new POP3 object." ilk="function" line="342" lineend="357" name="initialize" signature="initialize( addr, port = nil, isapop = false )" />
+          <scope doc="Does this instance use APOP authentication?" ilk="function" line="360" lineend="362" name="apop?" signature="apop?" />
+          <scope doc="Provide human-readable stringification of class state." ilk="function" line="365" lineend="367" name="inspect" signature="inspect" />
+          <scope doc="*WARNING*: This method causes a serious security hole." ilk="function" line="382" lineend="384" name="set_debug_output" signature="set_debug_output( arg )" />
+          <scope ilk="function" line="387" lineend="387" name="address" />
+          <scope ilk="function" line="390" lineend="390" name="port" />
+          <scope ilk="function" line="395" lineend="395" name="open_timeout" />
+          <scope ilk="function" line="395" lineend="395" name="open_timeout=" />
+          <scope ilk="function" line="400" lineend="400" name="read_timeout" />
+          <scope doc="Set the read timeout." ilk="function" line="403" lineend="406" name="read_timeout=" signature="read_timeout=( sec )" />
+          <scope doc="+true+ if the POP3 session has started." ilk="function" line="409" lineend="411" name="started?" signature="started?" />
+          <scope doc=":nodoc: obsolete Starts a POP3 session." ilk="function" line="421" lineend="435" name="start" signature="start( account, password )" />
+          <scope ilk="function" line="437" lineend="450" name="do_start" signature="do_start( account, password )" />
+          <scope ilk="function" line="453" lineend="454" name="on_connect" signature="on_connect" />
+          <scope doc="Finishes a POP3 session and closes TCP connection." ilk="function" line="458" lineend="461" name="finish" signature="finish" />
+          <scope ilk="function" line="463" lineend="471" name="do_finish" signature="do_finish" />
+          <scope ilk="function" line="474" lineend="478" name="command" signature="command" />
+          <scope doc="POP protocol wrapper" ilk="function" line="486" lineend="490" name="n_mails" signature="n_mails" />
+          <scope doc="Returns the total size in bytes of all the messages on the&#xA;POP server." ilk="function" line="493" lineend="497" name="n_bytes" signature="n_bytes" />
+          <scope doc="Returns an array of Net::POPMail objects, representing all&#xA;the messages on the server." ilk="function" line="505" lineend="517" name="mails" signature="mails" />
+          <scope doc="Yields each message to the passed-in block in turn." ilk="function" line="527" lineend="529" name="each_mail" signature="each_mail( &amp;block )" />
+          <scope doc="Deletes all messages on the server." ilk="function" line="549" lineend="554" name="delete_all" signature="delete_all" />
+          <scope doc="Resets the session. This clears all &quot;deleted&quot; marks from&#xA;messages." ilk="function" line="559" lineend="566" name="reset" signature="reset" />
+          <scope ilk="function" line="568" lineend="572" name="set_all_uids" signature="set_all_uids" />
+        </scope>
+        <scope classrefs="POP3" doc="This class is equivalent to POP3, except that it uses APOP&#xA;authentication." ilk="class" line="584" lineend="589" name="APOP">
+          <scope doc="Always returns true." ilk="function" line="586" lineend="588" name="apop?" signature="apop?" />
+        </scope>
+        <scope classrefs="Object" doc="This class represents a message which exists on the POP&#xA;server." ilk="class" line="599" lineend="744" name="POPMail">
+          <scope attributes="__ctor__" ilk="function" line="601" lineend="608" name="initialize" signature="initialize( num, len, pop, cmd )" />
+          <scope ilk="function" line="611" lineend="611" name="number" />
+          <scope ilk="function" line="614" lineend="614" name="length" />
+          <scope doc="Provide human-readable stringification of class state." ilk="function" line="618" lineend="620" name="inspect" signature="inspect" />
+          <scope doc="This method fetches the message." ilk="function" line="660" lineend="670" name="pop" signature="pop( dest = &apos;&apos;, &amp;block )" />
+          <scope doc=":nodoc: obsolete Fetches the message header and +lines+&#xA;lines of body." ilk="function" line="680" lineend="685" name="top" signature="top( lines, dest = &apos;&apos; )" />
+          <scope doc="Fetches the message header." ilk="function" line="692" lineend="694" name="header" signature="header( dest = &apos;&apos; )" />
+          <scope doc="Marks a message for deletion on the server." ilk="function" line="716" lineend="719" name="delete" signature="delete" />
+          <scope doc=":nodoc: obsolete True if the mail has been deleted." ilk="function" line="724" lineend="726" name="deleted?" signature="deleted?" />
+          <scope doc="Returns the unique-id of the message." ilk="function" line="732" lineend="736" name="unique_id" signature="unique_id" />
+          <scope ilk="function" line="740" lineend="742" name="uid=" signature="uid=( uid )" />
+        </scope>
+        <scope classrefs="Object" doc="class POPMail" ilk="class" line="747" lineend="876" name="POP3Command">
+          <scope attributes="__ctor__" doc=":nodoc: internal use only" ilk="function" line="749" lineend="754" name="initialize" signature="initialize( sock )" />
+          <scope ilk="function" line="756" lineend="758" name="inspect" signature="inspect" />
+          <scope ilk="function" line="760" lineend="765" name="auth" signature="auth( account, password )" />
+          <scope ilk="function" line="767" lineend="775" name="apop" signature="apop( account, password )" />
+          <scope ilk="function" line="777" lineend="788" name="list" signature="list" />
+          <scope ilk="function" line="790" lineend="795" name="stat" signature="stat" />
+          <scope ilk="function" line="797" lineend="799" name="rset" signature="rset" />
+          <scope ilk="function" line="801" lineend="806" name="top" signature="top( num, lines = 0, &amp;block )" />
+          <scope ilk="function" line="808" lineend="813" name="retr" signature="retr( num, &amp;block )" />
+          <scope ilk="function" line="815" lineend="817" name="dele" signature="dele( num )" />
+          <scope ilk="function" line="819" lineend="834" name="uidl" signature="uidl( num = nil )" />
+          <scope ilk="function" line="836" lineend="838" name="quit" signature="quit" />
+          <scope ilk="function" line="842" lineend="845" name="getok" signature="getok( fmt, *fargs )" />
+          <scope ilk="function" line="847" lineend="850" name="get_response" signature="get_response( fmt, *fargs )" />
+          <scope ilk="function" line="852" lineend="854" name="recv_response" signature="recv_response" />
+          <scope ilk="function" line="856" lineend="859" name="check_response" signature="check_response( res )" />
+          <scope ilk="function" line="861" lineend="864" name="check_response_auth" signature="check_response_auth( res )" />
+          <scope ilk="function" line="866" lineend="874" name="critical" signature="critical" />
+        </scope>
+      </scope>
+    </scope>
+    

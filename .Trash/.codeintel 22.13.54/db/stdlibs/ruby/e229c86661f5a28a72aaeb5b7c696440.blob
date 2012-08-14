@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpauth/htdigest">
+      <import line="10" module="webrick/httpauth/userdb" symbol="*" />
+      <import line="11" module="webrick/httpauth/digestauth" symbol="*" />
+      <import line="12" module="tempfile" symbol="*" />
+      <scope doc="httpauth/htdigest.rb -- Apache compatible htdigest file" ilk="namespace" line="14" lineend="91" name="WEBrick">
+        <scope ilk="namespace" line="15" lineend="90" name="HTTPAuth">
+          <scope classrefs="Object" ilk="class" line="16" lineend="89" name="Htdigest">
+            <scope attributes="__ctor__" ilk="function" line="19" lineend="27" name="initialize" signature="initialize(path)" />
+            <scope ilk="function" line="29" lineend="45" name="reload" signature="reload" />
+            <scope ilk="function" line="47" lineend="57" name="flush" signature="flush(output=nil)" />
+            <scope ilk="function" line="59" lineend="64" name="get_passwd" signature="get_passwd(realm, user, reload_db)" />
+            <scope ilk="function" line="66" lineend="73" name="set_passwd" signature="set_passwd(realm, user, pass)" />
+            <scope ilk="function" line="75" lineend="79" name="delete_passwd" signature="delete_passwd(realm, user)" />
+            <scope ilk="function" line="81" lineend="88" name="each" signature="each" />
+            <import symbol="UserDB" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

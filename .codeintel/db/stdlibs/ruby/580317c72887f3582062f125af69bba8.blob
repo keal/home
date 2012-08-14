@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/ICONS/icons">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/ICONS/setup.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;icons&apos;, &apos;1.0&apos;)" ilk="namespace" line="17" lineend="129" name="Tk">
+        <scope classrefs="TkImage" ilk="class" line="18" lineend="128" name="ICONS">
+          <scope attributes="__classmethod__" ilk="function" line="22" lineend="24" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="26" lineend="32" name="package_version" signature="self.package_version" />
+          <scope attributes="__classmethod__" ilk="function" line="34" lineend="45" name="create" signature="self.create(*args)" />
+          <scope attributes="__classmethod__" ilk="function" line="47" lineend="64" name="delete" signature="self.delete(*icons)" />
+          <scope attributes="__classmethod__" ilk="function" line="66" lineend="74" name="query" signature="self.query(*args)" />
+          <scope classrefs="Object" ilk="class" line="78" lineend="94" name="self">
+            <scope ilk="function" line="81" lineend="93" name="new" signature="new(name, keys=nil)" />
+          </scope>
+          <scope attributes="__ctor__" ilk="function" line="98" lineend="111" name="initialize" signature="initialize(name, keys=nil)" />
+          <scope ilk="function" line="113" lineend="115" name="name" signature="name" />
+          <scope ilk="function" line="117" lineend="121" name="delete" signature="delete" />
+          <scope ilk="function" line="123" lineend="127" name="query" signature="query(keys={})" />
+        </scope>
+      </scope>
+    </scope>
+    

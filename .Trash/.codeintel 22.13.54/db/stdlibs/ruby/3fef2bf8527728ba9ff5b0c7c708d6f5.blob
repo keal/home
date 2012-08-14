@@ -1,0 +1,37 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/autorunner">
+      <import line="1" module="test/unit" symbol="*" />
+      <import line="2" module="test/unit/ui/testrunnerutilities" symbol="*" />
+      <import line="3" module="optparse" symbol="*" />
+      <scope ilk="namespace" line="5" lineend="204" name="Test">
+        <scope ilk="namespace" line="6" lineend="203" name="Unit">
+          <scope classrefs="Object" ilk="class" line="7" lineend="202" name="AutoRunner">
+            <import line="30" module="test/unit/ui/gtk/testrunner" symbol="*" />
+            <import line="34" module="test/unit/ui/gtk2/testrunner" symbol="*" />
+            <import line="38" module="test/unit/ui/fox/testrunner" symbol="*" />
+            <import line="42" module="test/unit/ui/tk/testrunner" symbol="*" />
+            <import line="62" module="test/unit/collector/dir" symbol="*" />
+            <scope attributes="__classmethod__" ilk="function" line="8" lineend="14" name="run" signature="self.run(force_standalone=false, default_dir=nil, argv=ARGV, &amp;block)" />
+            <scope attributes="__classmethod__" ilk="function" line="16" lineend="22" name="standalone?" signature="self.standalone?" />
+            <scope ilk="function" line="71" lineend="71" name="suite" />
+            <scope ilk="function" line="72" lineend="72" name="output_level" />
+            <scope ilk="function" line="72" lineend="72" name="output_level=" />
+            <scope ilk="function" line="72" lineend="72" name="filters" />
+            <scope ilk="function" line="72" lineend="72" name="filters=" />
+            <scope ilk="function" line="72" lineend="72" name="to_run" />
+            <scope ilk="function" line="72" lineend="72" name="to_run=" />
+            <scope ilk="function" line="72" lineend="72" name="pattern" />
+            <scope ilk="function" line="72" lineend="72" name="pattern=" />
+            <scope ilk="function" line="72" lineend="72" name="exclude" />
+            <scope ilk="function" line="72" lineend="72" name="exclude=" />
+            <scope ilk="function" line="73" lineend="73" name="runner=" />
+            <scope ilk="function" line="73" lineend="73" name="collector=" />
+            <scope attributes="__ctor__" ilk="function" line="75" lineend="84" name="initialize" signature="initialize(standalone)" />
+            <scope ilk="function" line="86" lineend="98" name="process_args" signature="process_args(args = ARGV)" />
+            <scope ilk="function" line="100" lineend="189" name="options" signature="options" />
+            <scope ilk="function" line="191" lineend="195" name="keyword_display" signature="keyword_display(array)" />
+            <scope ilk="function" line="197" lineend="201" name="run" signature="run" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

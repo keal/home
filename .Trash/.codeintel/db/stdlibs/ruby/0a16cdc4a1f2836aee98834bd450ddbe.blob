@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="webrick/server">
+      <import line="11" module="thread" symbol="*" />
+      <import line="12" module="socket" symbol="*" />
+      <import line="13" module="timeout" symbol="*" />
+      <import line="14" module="webrick/config" symbol="*" />
+      <import line="15" module="webrick/log" symbol="*" />
+      <scope doc="server.rb -- GenericServer Class" ilk="namespace" line="17" lineend="200" name="WEBrick">
+        <scope classrefs="StandardError" ilk="class" line="19" lineend="19" name="ServerError" />
+        <scope classrefs="Object" ilk="class" line="21" lineend="25" name="SimpleServer">
+          <scope attributes="__classmethod__" ilk="function" line="22" lineend="24" name="start" signature="SimpleServer.start" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="27" lineend="39" name="Daemon">
+          <scope attributes="__classmethod__" ilk="function" line="28" lineend="38" name="start" signature="Daemon.start" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="41" lineend="199" name="GenericServer">
+          <scope ilk="function" line="42" lineend="42" name="status" />
+          <scope ilk="function" line="42" lineend="42" name="config" />
+          <scope ilk="function" line="42" lineend="42" name="logger" />
+          <scope ilk="function" line="42" lineend="42" name="tokens" />
+          <scope ilk="function" line="42" lineend="42" name="listeners" />
+          <scope attributes="__ctor__" ilk="function" line="44" lineend="68" name="initialize" signature="initialize(config={}, default=Config::General)" />
+          <scope ilk="function" line="70" lineend="72" name="[]" signature="[](key" />
+          <scope ilk="function" line="74" lineend="76" name="listen" signature="listen(address, port)" />
+          <scope ilk="function" line="78" lineend="118" name="start" signature="start(&amp;block)" />
+          <scope ilk="function" line="120" lineend="124" name="stop" signature="stop" />
+          <scope ilk="function" line="126" lineend="136" name="shutdown" signature="shutdown" />
+          <scope ilk="function" line="138" lineend="140" name="run" signature="run(sock)" />
+          <scope ilk="function" line="144" lineend="159" name="accept_client" signature="accept_client(svr)" />
+          <scope ilk="function" line="161" lineend="192" name="start_thread" signature="start_thread(sock, &amp;block)" />
+          <scope ilk="function" line="194" lineend="198" name="call_callback" signature="call_callback(callback_name, *args)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_paths">
+      <scope ilk="namespace" line="1" lineend="57" name="RI">
+        <scope doc="Encapsulate all the strangeness to do with finding out where&#xA;to find RDoc files" ilk="namespace" line="22" lineend="56" name="Paths">
+          <import line="25" module="rbconfig" symbol="*" />
+          <import line="52" module="rubygems" symbol="*" />
+        </scope>
+      </scope>
+    </scope>
+    

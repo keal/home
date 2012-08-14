@@ -1,0 +1,74 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/tabset">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/tabset.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="401" name="Tk::BLT">
+        <scope classrefs="TkWindow" ilk="class" line="10" lineend="400" name="Tabset">
+          <scope classrefs="TkObject" ilk="class" line="11" lineend="167" name="Tab">
+            <scope attributes="__classmethod__" ilk="function" line="19" lineend="23" name="id2obj" signature="self.id2obj(tabset, id)" />
+            <scope attributes="__classmethod__" ilk="function" line="25" lineend="41" name="new" signature="self.new(parent, pos=nil, name=nil, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="43" lineend="73" name="initialize" signature="initialize(parent, pos, name, keys)" />
+            <scope doc="def bind(context, cmd=Proc.new, *args) @t.tab_bind(@id,&#xA;context, cmd, *args) self end" ilk="function" line="79" lineend="88" name="bind" signature="bind(context, *args)" />
+            <scope doc="def bind_append(context, cmd=Proc.new, *args)&#xA;@t.tab_bind_append(@id, context, cmd, *args) self end" ilk="function" line="93" lineend="102" name="bind_append" signature="bind_append(context, *args)" />
+            <scope ilk="function" line="103" lineend="106" name="bind_remove" signature="bind_remove(context)" />
+            <scope ilk="function" line="107" lineend="109" name="bindinfo" signature="bindinfo(context=nil)" />
+            <scope ilk="function" line="111" lineend="113" name="cget" signature="cget(*args)" />
+            <scope ilk="function" line="114" lineend="116" name="configure" signature="configure(*args)" />
+            <scope ilk="function" line="117" lineend="119" name="configinfo" signature="configinfo(*args)" />
+            <scope ilk="function" line="120" lineend="122" name="current_configinfo" signature="current_configinfo(*args)" />
+            <scope ilk="function" line="124" lineend="128" name="delete" signature="delete()" />
+            <scope ilk="function" line="130" lineend="132" name="get_name" signature="get_name()" />
+            <scope ilk="function" line="134" lineend="136" name="focus" signature="focus()" />
+            <scope ilk="function" line="138" lineend="140" name="index" signature="index()" />
+            <scope ilk="function" line="142" lineend="144" name="invoke" signature="invoke()" />
+            <scope ilk="function" line="146" lineend="148" name="move_before" signature="move_before(idx)" />
+            <scope ilk="function" line="149" lineend="151" name="move_after" signature="move_after(idx)" />
+            <scope ilk="function" line="153" lineend="155" name="perforation_highlight" signature="perforation_highlight(mode)" />
+            <scope ilk="function" line="156" lineend="158" name="perforation_invoke" signature="perforation_invoke()" />
+            <scope ilk="function" line="160" lineend="162" name="see" signature="see()" />
+            <scope ilk="function" line="164" lineend="166" name="tearoff" signature="tearoff(name=None)" />
+            <import symbol="TkTreatItemFont" />
+          </scope>
+          <scope classrefs="Tab" ilk="class" line="171" lineend="175" name="NamedTab">
+            <scope attributes="__classmethod__" ilk="function" line="172" lineend="174" name="new" signature="self.new(parent, name)" />
+          </scope>
+          <scope ilk="function" line="186" lineend="188" name="__destroy_hook__" signature="__destroy_hook__" />
+          <scope ilk="function" line="192" lineend="194" name="__boolval_optkeys" signature="__boolval_optkeys" />
+          <scope ilk="function" line="197" lineend="199" name="__strval_optkeys" signature="__strval_optkeys" />
+          <scope ilk="function" line="202" lineend="204" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+          <scope ilk="function" line="207" lineend="209" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+          <scope ilk="function" line="212" lineend="218" name="__item_pathname" signature="__item_pathname(tagOrId)" />
+          <scope ilk="function" line="226" lineend="228" name="__item_strval_optkeys" signature="__item_strval_optkeys(id)" />
+          <scope ilk="function" line="231" lineend="237" name="tagid" signature="tagid(tab)" />
+          <scope ilk="function" line="239" lineend="245" name="tagindex" signature="tagindex(tab)" />
+          <scope ilk="function" line="249" lineend="252" name="activate" signature="activate(index)" />
+          <scope doc="def tabbind(tag, context, cmd=Proc.new, *args) _bind([path,&#xA;&quot;bind&quot;, tagid(tag)], context, cmd, *args) self end" ilk="function" line="259" lineend="268" name="tabbind" signature="tabbind(tag, context, *args)" />
+          <scope doc="def tabbind_append(tag, context, cmd=Proc.new, *args)&#xA;_bind_append([path, &quot;bind&quot;, tagid(tag)], context, cmd,&#xA;*args) self end" ilk="function" line="273" lineend="282" name="tabbind_append" signature="tabbind_append(tag, context, *args)" />
+          <scope ilk="function" line="283" lineend="286" name="tabbind_remove" signature="tabbind_remove(tag, context)" />
+          <scope ilk="function" line="287" lineend="289" name="tabbindinfo" signature="tabbindinfo(tag, context=nil)" />
+          <scope ilk="function" line="291" lineend="301" name="delete" signature="delete(first, last=None)" />
+          <scope ilk="function" line="303" lineend="306" name="focus" signature="focus(index)" />
+          <scope ilk="function" line="308" lineend="310" name="get_tab" signature="get_tab(index)" />
+          <scope ilk="function" line="312" lineend="314" name="index" signature="index(str)" />
+          <scope ilk="function" line="315" lineend="317" name="index_name" signature="index_name(tab)" />
+          <scope ilk="function" line="319" lineend="321" name="insert" signature="insert(pos, tab, keys={})" />
+          <scope ilk="function" line="323" lineend="325" name="invoke" signature="invoke(index)" />
+          <scope ilk="function" line="327" lineend="330" name="move_before" signature="move_before(index, base_idx)" />
+          <scope ilk="function" line="331" lineend="334" name="move_after" signature="move_after(index, base_idx)" />
+          <scope ilk="function" line="336" lineend="338" name="nearest" signature="nearest(x, y)" />
+          <scope ilk="function" line="340" lineend="343" name="perforation_highlight" signature="perforation_highlight(index, mode)" />
+          <scope ilk="function" line="344" lineend="346" name="perforation_invoke" signature="perforation_invoke(index)" />
+          <scope ilk="function" line="348" lineend="351" name="scan_mark" signature="scan_mark(x, y)" />
+          <scope ilk="function" line="352" lineend="355" name="scan_dragto" signature="scan_dragto(x, y)" />
+          <scope ilk="function" line="357" lineend="360" name="see" signature="see(index)" />
+          <scope ilk="function" line="362" lineend="364" name="size" signature="size()" />
+          <scope ilk="function" line="366" lineend="369" name="select" signature="select(index)" />
+          <scope ilk="function" line="371" lineend="375" name="tab_names" signature="tab_names(pat=None)" />
+          <scope ilk="function" line="377" lineend="379" name="tab_tearoff" signature="tab_tearoff(index, name=None)" />
+          <scope ilk="function" line="381" lineend="384" name="xscrollcommand" signature="xscrollcommand(cmd=Proc.new)" />
+          <scope ilk="function" line="387" lineend="394" name="xview" signature="xview(*index)" />
+          <import symbol="X_Scrollable" />
+          <import symbol="TkItemConfigMethod" />
+        </scope>
+      </scope>
+    </scope>
+    

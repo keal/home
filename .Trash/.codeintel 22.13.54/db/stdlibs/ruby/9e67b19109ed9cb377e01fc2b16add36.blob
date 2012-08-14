@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="xsd/xmlparser/rexmlparser">
+      <import line="9" module="xsd/xmlparser" symbol="*" />
+      <import line="10" module="rexml/streamlistener" symbol="*" />
+      <import line="11" module="rexml/document" symbol="*" />
+      <scope doc="XSD4R - REXMLParser XML parser library." ilk="namespace" line="14" name="XSD" />
+      <scope ilk="namespace" line="15" name="XMLParser" />
+      <scope classrefs="XSD::XMLParser::" ilk="class" line="18" lineend="50" name="REXMLParser">
+        <scope ilk="function" line="21" lineend="28" name="do_parse" signature="do_parse(string_or_readable)" />
+        <scope ilk="function" line="30" lineend="31" name="epilogue" signature="epilogue" />
+        <scope ilk="function" line="33" lineend="35" name="tag_start" signature="tag_start(name, attrs)" />
+        <scope ilk="function" line="37" lineend="39" name="tag_end" signature="tag_end(name)" />
+        <scope ilk="function" line="41" lineend="43" name="text" signature="text(text)" />
+        <scope ilk="function" line="45" lineend="47" name="xmldecl" signature="xmldecl(version, encoding, standalone)" />
+        <import symbol="REXML::StreamListener" />
+      </scope>
+    </scope>
+    

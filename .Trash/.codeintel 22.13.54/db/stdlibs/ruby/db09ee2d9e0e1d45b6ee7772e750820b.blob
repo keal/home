@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="soap/mapping/typeMap">
+      <scope doc="SOAP4R - Base type mapping definition Copyright (C) 2000,&#xA;2001, 2002, 2003  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="9" lineend="50" name="SOAP" />
+    </scope>
+    

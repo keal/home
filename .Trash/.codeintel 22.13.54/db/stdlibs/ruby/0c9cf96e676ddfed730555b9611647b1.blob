@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="rexml/child">
+      <import line="1" module="rexml/node" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="96" name="REXML">
+        <scope classrefs="Object" doc="A Child object is something contained by a parent, and this&#xA;class contains methods to support that." ilk="class" line="8" lineend="95" name="Child">
+          <scope ilk="function" line="10" lineend="10" name="parent" />
+          <scope attributes="__ctor__" doc="The Parent of this object Constructor." ilk="function" line="17" lineend="22" name="initialize" signature="initialize( parent = nil )" />
+          <scope doc="Replaces this object with another object." ilk="function" line="28" lineend="31" name="replace_with" signature="replace_with( child )" />
+          <scope doc="Removes this child from the parent." ilk="function" line="36" lineend="41" name="remove" signature="remove" />
+          <scope doc="Sets the parent of this child to the supplied argument." ilk="function" line="51" lineend="55" name="parent=" signature="parent=( other )" />
+          <scope doc="Sets the next sibling of this child." ilk="function" line="67" lineend="69" name="next_sibling=" signature="next_sibling=( other )" />
+          <scope doc="Sets the previous sibling of this child." ilk="function" line="78" lineend="80" name="previous_sibling=" signature="previous_sibling=(other)" />
+          <scope doc="Returns:: the document this child belongs to, or nil if this&#xA;child belongs to no document" ilk="function" line="84" lineend="87" name="document" signature="document" />
+          <scope doc="This doesn&apos;t yet handle encodings" ilk="function" line="90" lineend="94" name="bytes" signature="bytes" />
+          <import symbol="Node" />
+        </scope>
+      </scope>
+    </scope>
+    

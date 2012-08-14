@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tclx/tclx">
+      <import line="5" module="tk" symbol="*" />
+      <import line="8" module="tkextlib/setup.rb" symbol="*" />
+      <import line="11" module="tkextlib/tclx/setup.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;Tclx&apos;, &apos;8.0&apos;)" ilk="namespace" line="16" lineend="74" name="Tk">
+        <scope ilk="namespace" line="17" lineend="73" name="TclX">
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+          <scope attributes="__classmethod__" ilk="function" line="31" lineend="33" name="infox" signature="self.infox(*args)" />
+          <scope attributes="__classmethod__" ilk="function" line="35" lineend="38" name="signal" signature="self.signal(*args)" />
+          <scope attributes="__classmethod__" ilk="function" line="40" lineend="43" name="signal_restart" signature="self.signal_restart(*args)" />
+          <scope classrefs="Object" ilk="class" line="47" lineend="72" name="XPG3_MsgCat">
+            <scope classrefs="Object" ilk="class" line="48" lineend="50" name="self" />
+            <scope attributes="__ctor__" ilk="function" line="52" lineend="58" name="initialize" signature="initialize(catname, fail_mode=false)" />
+            <scope ilk="function" line="60" lineend="67" name="close" signature="close(fail_mode=false)" />
+            <scope ilk="function" line="69" lineend="71" name="get" signature="get(setnum, msgnum, defaultstr)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,37 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/entryfield">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/entryfield.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Entryfield" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="166" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="__font_optkeys" signature="__font_optkeys" />
+        <scope classrefs="TkValidateCommand" ilk="class" line="30" lineend="51" name="EntryfieldValidate">
+          <scope classrefs="TkUtil::CallbackSubst" doc="class CalCmdArgs &lt; TkUtil::CallbackSubst" ilk="class" line="32" lineend="46" name="ValidateArgs" />
+          <scope attributes="__classmethod__" ilk="function" line="48" lineend="50" name="_config_keys[" signature="self._config_keys [" />
+        </scope>
+        <scope ilk="function" line="53" lineend="55" name="__validation_class_list" signature="__validation_class_list" />
+        <scope ilk="function" line="82" lineend="85" name="clear" signature="clear" />
+        <scope ilk="function" line="87" lineend="90" name="delete" signature="delete(first, last=None)" />
+        <scope ilk="function" line="92" lineend="94" name="value" signature="value" />
+        <scope ilk="function" line="95" lineend="99" name="value=" signature="value= (val)" />
+        <scope ilk="function" line="103" lineend="107" name="cursor=" signature="cursor=(index)" />
+        <scope ilk="function" line="110" lineend="112" name="index" signature="index(index)" />
+        <scope ilk="function" line="114" lineend="117" name="insert" signature="insert(pos,text)" />
+        <scope ilk="function" line="119" lineend="122" name="mark" signature="mark(pos)" />
+        <scope ilk="function" line="123" lineend="126" name="dragto" signature="dragto(pos)" />
+        <scope ilk="function" line="127" lineend="130" name="selection_adjust" signature="selection_adjust(index)" />
+        <scope ilk="function" line="131" lineend="134" name="selection_clear" signature="selection_clear" />
+        <scope ilk="function" line="135" lineend="138" name="selection_from" signature="selection_from(index)" />
+        <scope ilk="function" line="139" lineend="141" name="selection_present" signature="selection_present()" />
+        <scope ilk="function" line="142" lineend="145" name="selection_range" signature="selection_range(s, e)" />
+        <scope ilk="function" line="146" lineend="149" name="selection_to" signature="selection_to(index)" />
+        <scope doc="based on tk/scrollable.rb" ilk="function" line="152" lineend="159" name="xview" signature="xview(*index)" />
+        <scope ilk="function" line="160" lineend="162" name="xview_moveto" signature="xview_moveto(*index)" />
+        <scope ilk="function" line="163" lineend="165" name="xview_scroll" signature="xview_scroll(*index)" />
+        <import symbol="Tk::ValidateConfigure" />
+      </scope>
+    </scope>
+    

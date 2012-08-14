@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/vu/spinbox">
+      <import line="8" module="tk" symbol="*" />
+      <import line="13" module="tkextlib/vu.rb" symbol="*" />
+      <scope doc="call setup script  --  &lt;libdir&gt;/tkextlib/vu.rb" ilk="namespace" line="18" lineend="22" name="Tk">
+        <scope ilk="namespace" line="19" lineend="21" name="Vu" />
+      </scope>
+    </scope>
+    

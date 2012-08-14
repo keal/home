@@ -1,0 +1,39 @@
+<scope ilk="blob" lang="Ruby" name="soap/generator">
+      <import line="9" module="xsd/ns" symbol="*" />
+      <import line="10" module="soap/soap" symbol="*" />
+      <import line="11" module="soap/baseData" symbol="*" />
+      <import line="12" module="soap/encodingstyle/handler" symbol="*" />
+      <scope doc="SOAP4R - SOAP XML Instance Generator library." ilk="namespace" line="15" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="21" lineend="265" name="SOAPGenerator">
+        <scope classrefs="Error" ilk="class" line="24" lineend="24" name="FormatEncodeError" />
+        <scope ilk="function" line="28" lineend="28" name="charset" />
+        <scope ilk="function" line="28" lineend="28" name="charset=" />
+        <scope ilk="function" line="29" lineend="29" name="default_encodingstyle" />
+        <scope ilk="function" line="29" lineend="29" name="default_encodingstyle=" />
+        <scope ilk="function" line="30" lineend="30" name="generate_explicit_type" />
+        <scope ilk="function" line="30" lineend="30" name="generate_explicit_type=" />
+        <scope ilk="function" line="31" lineend="31" name="use_numeric_character_reference" />
+        <scope ilk="function" line="31" lineend="31" name="use_numeric_character_reference=" />
+        <scope attributes="__ctor__" ilk="function" line="33" lineend="45" name="initialize" signature="initialize(opt = {})" />
+        <scope ilk="function" line="47" lineend="66" name="generate" signature="generate(obj, io = nil)" />
+        <scope ilk="function" line="68" lineend="95" name="encode_data" signature="encode_data(ns, obj, parent)" />
+        <scope ilk="function" line="97" lineend="102" name="add_reftarget" signature="add_reftarget(name, node)" />
+        <scope ilk="function" line="104" lineend="108" name="encode_child" signature="encode_child(ns, child, parent)" />
+        <scope ilk="function" line="110" lineend="135" name="encode_element" signature="encode_element(ns, obj, parent)" />
+        <scope ilk="function" line="137" lineend="148" name="encode_name" signature="encode_name(ns, data, attrs)" />
+        <scope ilk="function" line="150" lineend="156" name="encode_name_end" signature="encode_name_end(ns, data)" />
+        <scope ilk="function" line="158" lineend="171" name="encode_tag" signature="encode_tag(elename, attrs = nil)" />
+        <scope ilk="function" line="173" lineend="179" name="encode_tag_end" signature="encode_tag_end(elename, cr = nil)" />
+        <scope ilk="function" line="181" lineend="183" name="encode_rawstring" signature="encode_rawstring(str)" />
+        <scope ilk="function" line="194" lineend="207" name="encode_string" signature="encode_string(str)" />
+        <scope ilk="function" line="209" lineend="211" name="element_local?" signature="element_local?(element)" />
+        <scope ilk="function" line="213" lineend="223" name="element_qualified?" signature="element_qualified?(element)" />
+        <scope attributes="__classmethod__" ilk="function" line="225" lineend="238" name="assign_ns" signature="self.assign_ns(attrs, ns, namespace, tag = nil)" />
+        <scope ilk="function" line="242" lineend="243" name="prologue" signature="prologue" />
+        <scope ilk="function" line="245" lineend="246" name="epilogue" signature="epilogue" />
+        <scope ilk="function" line="248" lineend="256" name="find_handler" signature="find_handler(encodingstyle)" />
+        <scope ilk="function" line="258" lineend="264" name="xmldecl" signature="xmldecl" />
+        <import symbol="SOAP" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/port">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <scope doc="WSDL4R - WSDL port definition." ilk="namespace" line="12" name="WSDL" />
+      <scope classrefs="Info" ilk="class" line="15" lineend="81" name="Port">
+        <scope ilk="function" line="16" lineend="16" name="name" />
+        <scope ilk="function" line="17" lineend="17" name="binding" />
+        <scope ilk="function" line="18" lineend="18" name="soap_address" />
+        <scope attributes="__ctor__" doc="required" ilk="function" line="20" lineend="25" name="initialize" signature="initialize" />
+        <scope ilk="function" line="27" lineend="29" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="31" lineend="33" name="porttype" signature="porttype" />
+        <scope ilk="function" line="35" lineend="37" name="find_binding" signature="find_binding" />
+        <scope ilk="function" line="39" lineend="46" name="inputoperation_map" signature="inputoperation_map" />
+        <scope ilk="function" line="48" lineend="55" name="outputoperation_map" signature="outputoperation_map" />
+        <scope ilk="function" line="57" lineend="69" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="71" lineend="80" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

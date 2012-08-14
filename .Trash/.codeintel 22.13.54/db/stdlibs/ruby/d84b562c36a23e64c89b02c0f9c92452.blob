@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="tk/virtevent">
+      <import line="5" module="tk" symbol="*" />
+      <scope classrefs="TkObject" doc="tk/virtevent.rb : treats virtual events 1998/07/16 by&#xA;Hidetoshi Nagai &lt;nagai@ai.kyutech.ac.jp&gt;" ilk="class" line="7" lineend="104" name="TkVirtualEvent">
+        <scope classrefs="self" ilk="class" line="17" lineend="36" name="PreDefVirtEvent">
+          <scope attributes="__classmethod__" ilk="function" line="18" lineend="29" name="new" signature="self.new(event, *sequences)" />
+          <scope attributes="__ctor__" ilk="function" line="31" lineend="35" name="initialize" signature="initialize(event, *sequences)" />
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="38" lineend="49" name="getobj" signature="TkVirtualEvent.getobj(event)" />
+        <scope attributes="__classmethod__" ilk="function" line="51" lineend="55" name="info" signature="TkVirtualEvent.info" />
+        <scope attributes="__ctor__" ilk="function" line="57" lineend="62" name="initialize" signature="initialize(*sequences)" />
+        <scope ilk="function" line="64" lineend="73" name="add" signature="add(*sequences)" />
+        <scope ilk="function" line="75" lineend="87" name="delete" signature="delete(*sequences)" />
+        <scope ilk="function" line="89" lineend="103" name="info" signature="info" />
+      </scope>
+    </scope>
+    

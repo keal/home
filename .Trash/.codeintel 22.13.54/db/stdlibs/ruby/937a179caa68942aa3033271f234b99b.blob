@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="vector">
+      <scope classrefs="Object" doc="The Vector class represents a mathematical vector, which is&#xA;useful in its own right, and also constitutes a row or&#xA;column of a Matrix." ilk="class" name="Vector">
+        <import symbol="ExceptionForMatrix" />
+        <scope attributes="__classmethod__" doc="Creates a Vector from a list of elements." ilk="function" name="[]" signature="(*array)" />
+        <scope attributes="__classmethod__" doc="Creates a vector from an Array. The optional second argument&#xA;specifies whether the array itself or a copy is used&#xA;internally." ilk="function" name="elements" signature="(array, copy = true)" />
+        <scope attributes="__classmethod__ __ctor__" doc="For internal use." ilk="function" name="new" signature="(method, array, copy)" />
+        <scope doc="Multiplies the vector by x, where x is a number or another&#xA;vector." ilk="function" name="*" signature="(x)" />
+        <scope doc="Vector addition." ilk="function" name="+" signature="(v)" />
+        <scope doc="Returns true iff the two vectors have the same elements in&#xA;the same order." ilk="function" name="==" signature="(other)" />
+        <scope doc="Returns element number i (starting at zero) of the vector." ilk="function" name="[]" signature="(i)" />
+        <scope doc="Return a copy of the vector." ilk="function" name="clone" signature="()" />
+        <scope doc="FIXME: describe Vector#coerce." ilk="function" name="coerce" signature="(other)" />
+        <scope doc="Like Array#collect." ilk="function" name="collect" signature="( {|e| ...}" />
+        <scope doc="Collects (as in Enumerable#collect) over the elements of&#xA;this vector and v in conjunction." ilk="function" name="collect2" signature="(v) {|e1, e2| ...}" />
+        <scope doc="For internal use." ilk="function" name="compare_by" signature="(elements)" />
+        <scope doc="Creates a single-row matrix from this vector." ilk="function" name="covector" signature="()" />
+        <scope doc="Iterate over the elements of this vector and v in&#xA;conjunction." ilk="function" name="each2" signature="(v) {|e1, e2| ...}" />
+        <scope doc="Alias for #==" ilk="function" name="eqn?" signature="(other)" />
+        <scope doc="Return a hash-code for the vector." ilk="function" name="hash" signature="()" />
+        <scope doc="For internal use." ilk="function" name="init_elements" signature="(array, copy)" />
+        <scope doc="Returns the inner product of this vector with the other." ilk="function" name="inner_product" signature="(v)" />
+        <scope doc="Overrides Object#inspect" ilk="function" name="inspect" signature="()" />
+        <scope doc="Alias for #collect" ilk="function" name="map" signature="(" />
+        <scope doc="Like Vector#collect2, but returns a Vector instead of an&#xA;Array." ilk="function" name="map2" signature="(v) {|e1, e2| ...}" />
+        <scope doc="Returns the modulus (Pythagorean distance) of the vector." ilk="function" name="r" signature="()" />
+        <scope doc="Returns the number of elements in the vector." ilk="function" name="size" signature="()" />
+        <scope doc="Returns the elements of the vector in an array." ilk="function" name="to_a" signature="()" />
+        <scope doc="Overrides Object#to_s" ilk="function" name="to_s" signature="()" />
+      </scope>
+    </scope>
+    

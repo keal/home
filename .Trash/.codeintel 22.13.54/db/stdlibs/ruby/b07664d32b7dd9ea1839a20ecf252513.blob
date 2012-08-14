@@ -1,0 +1,156 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/tree">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/tree.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="923" name="Tk::BLT">
+        <scope classrefs="TkObject" ilk="class" line="10" lineend="922" name="Tree">
+          <scope classrefs="TkObject" ilk="class" line="15" lineend="922" name="Node">
+            <scope attributes="__classmethod__" ilk="function" line="19" lineend="31" name="id2obj" signature="self.id2obj(tree, id)" />
+            <scope attributes="__classmethod__" ilk="function" line="33" lineend="44" name="new" signature="self.new(tree, parent, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="46" lineend="62" name="initialize" signature="initialize(tree, parent, keys={})" />
+            <scope ilk="function" line="64" lineend="66" name="id" signature="id" />
+            <scope ilk="function" line="68" lineend="71" name="apply" signature="apply(keys={})" />
+            <scope ilk="function" line="73" lineend="75" name="children" signature="children()" />
+            <scope ilk="function" line="77" lineend="79" name="copy" signature="copy(parent, keys={})" />
+            <scope ilk="function" line="80" lineend="82" name="copy_to" signature="copy_to(dest_tree, parent, keys={})" />
+            <scope ilk="function" line="84" lineend="86" name="degree" signature="degree()" />
+            <scope ilk="function" line="88" lineend="91" name="delete" signature="delete()" />
+            <scope ilk="function" line="93" lineend="95" name="depth" signature="depth()" />
+            <scope ilk="function" line="97" lineend="99" name="dump" signature="dump()" />
+            <scope ilk="function" line="101" lineend="104" name="dump_to_file" signature="dump_to_file(file)" />
+            <scope ilk="function" line="106" lineend="108" name="exist?" signature="exist?(keys={})" />
+            <scope ilk="function" line="110" lineend="112" name="find" signature="find(keys={})" />
+            <scope ilk="function" line="114" lineend="116" name="find_child" signature="find_child(label)" />
+            <scope ilk="function" line="118" lineend="120" name="first_child" signature="first_child()" />
+            <scope ilk="function" line="122" lineend="124" name="get" signature="get()" />
+            <scope ilk="function" line="125" lineend="127" name="get_value" signature="get_value(key, default_val=None)" />
+            <scope ilk="function" line="129" lineend="131" name="index" signature="index()" />
+            <scope ilk="function" line="133" lineend="135" name="leaf?" signature="leaf?()" />
+            <scope ilk="function" line="136" lineend="138" name="link?" signature="link?()" />
+            <scope ilk="function" line="139" lineend="141" name="root?" signature="root?()" />
+            <scope ilk="function" line="143" lineend="145" name="keys" signature="keys()" />
+            <scope ilk="function" line="147" lineend="149" name="label" signature="label(text = nil)" />
+            <scope ilk="function" line="150" lineend="152" name="label=" signature="label=(text)" />
+            <scope ilk="function" line="154" lineend="156" name="last_child" signature="last_child()" />
+            <scope ilk="function" line="158" lineend="161" name="move" signature="move(dest, keys={})" />
+            <scope ilk="function" line="163" lineend="165" name="next" signature="next()" />
+            <scope ilk="function" line="167" lineend="169" name="next_sibling" signature="next_sibling()" />
+            <scope ilk="function" line="171" lineend="173" name="parent" signature="parent()" />
+            <scope ilk="function" line="175" lineend="177" name="fullpath" signature="fullpath()" />
+            <scope ilk="function" line="179" lineend="181" name="position" signature="position()" />
+            <scope ilk="function" line="183" lineend="185" name="previous" signature="previous()" />
+            <scope ilk="function" line="187" lineend="189" name="prev_sibling" signature="prev_sibling()" />
+            <scope ilk="function" line="191" lineend="194" name="restore" signature="restore(str, keys={})" />
+            <scope ilk="function" line="195" lineend="198" name="restore_overwrite" signature="restore_overwrite(str, keys={})" />
+            <scope ilk="function" line="200" lineend="203" name="restore_from_file" signature="restore_from_file(file, keys={})" />
+            <scope ilk="function" line="204" lineend="207" name="restore_overwrite_from_file" signature="restore_overwrite_from_file(file, keys={})" />
+            <scope ilk="function" line="209" lineend="212" name="root" signature="root()" />
+            <scope ilk="function" line="214" lineend="217" name="set" signature="set(data)" />
+            <scope ilk="function" line="219" lineend="221" name="size" signature="size()" />
+            <scope ilk="function" line="223" lineend="226" name="sort" signature="sort(keys={})" />
+            <scope ilk="function" line="228" lineend="230" name="type" signature="type(key)" />
+            <scope ilk="function" line="232" lineend="235" name="unset" signature="unset(*keys)" />
+            <scope ilk="function" line="237" lineend="239" name="values" signature="values(key=None)" />
+            <scope classrefs="TkObject" ilk="class" line="244" lineend="309" name="Tag">
+              <scope attributes="__classmethod__" ilk="function" line="249" lineend="257" name="id2obj" signature="self.id2obj(tree, id)" />
+              <scope attributes="__ctor__" ilk="function" line="259" lineend="272" name="initialize" signature="initialize(tree, tag_str = nil)" />
+              <scope ilk="function" line="274" lineend="276" name="id" signature="id" />
+              <scope ilk="function" line="278" lineend="281" name="add" signature="add(*nodes)" />
+              <scope ilk="function" line="283" lineend="286" name="delete" signature="delete(*nodes)" />
+              <scope ilk="function" line="288" lineend="292" name="forget" signature="forget()" />
+              <scope ilk="function" line="294" lineend="298" name="nodes" signature="nodes()" />
+              <scope ilk="function" line="300" lineend="303" name="set" signature="set(node)" />
+              <scope ilk="function" line="305" lineend="308" name="unset" signature="unset(node)" />
+            </scope>
+            <scope classrefs="TkObject" ilk="class" line="313" lineend="392" name="Notify">
+              <scope attributes="__classmethod__" ilk="function" line="317" lineend="329" name="id2obj" signature="self.id2obj(tree, id)" />
+              <scope attributes="__classmethod__" ilk="function" line="331" lineend="342" name="new" signature="self.new(tree, *args, &amp;b)" />
+              <scope attributes="__ctor__" ilk="function" line="344" lineend="373" name="initialize" signature="initialize(create, tree, *args, &amp;b)" />
+              <scope ilk="function" line="375" lineend="377" name="id" signature="id" />
+              <scope ilk="function" line="379" lineend="383" name="delete" signature="delete()" />
+              <scope ilk="function" line="385" lineend="391" name="info" signature="info()" />
+            </scope>
+            <scope classrefs="TkObject" ilk="class" line="396" lineend="473" name="Trace">
+              <scope attributes="__classmethod__" ilk="function" line="400" lineend="412" name="id2obj" signature="self.id2obj(tree, id)" />
+              <scope attributes="__classmethod__" ilk="function" line="414" lineend="425" name="new" signature="self.new(tree, *args, &amp;b)" />
+              <scope attributes="__ctor__" ilk="function" line="427" lineend="454" name="initialize" signature="initialize(create, tree, node, key, opts, cmd=nil, &amp;b)" />
+              <scope ilk="function" line="456" lineend="458" name="id" signature="id" />
+              <scope ilk="function" line="460" lineend="464" name="delete" signature="delete()" />
+              <scope ilk="function" line="466" lineend="472" name="info" signature="info()" />
+            </scope>
+            <scope ilk="function" line="480" lineend="498" name="__keyonly_optkeys" signature="__keyonly_optkeys" />
+            <scope attributes="__classmethod__" ilk="function" line="500" lineend="502" name="id2obj" signature="self.id2obj(id)" />
+            <scope attributes="__classmethod__" ilk="function" line="504" lineend="508" name="names" signature="self.names(pat = None)" />
+            <scope attributes="__classmethod__" ilk="function" line="510" lineend="513" name="destroy" signature="self.destroy(*names)" />
+            <scope attributes="__classmethod__" ilk="function" line="515" lineend="518" name="new" signature="self.new(name = nil)" />
+            <scope ilk="function" line="520" lineend="530" name="initialzie" signature="initialzie(name = nil)" />
+            <scope ilk="function" line="532" lineend="537" name="__destroy_hook__" signature="__destroy_hook__" />
+            <scope ilk="function" line="539" lineend="548" name="tagid" signature="tagid(tag)" />
+            <scope ilk="function" line="550" lineend="553" name="destroy" signature="destroy()" />
+            <scope ilk="function" line="555" lineend="558" name="ancestor" signature="ancestor(node1, node2)" />
+            <scope ilk="function" line="560" lineend="563" name="apply" signature="apply(node, keys={})" />
+            <scope ilk="function" line="565" lineend="568" name="attach" signature="attach(tree_obj)" />
+            <scope ilk="function" line="570" lineend="574" name="children" signature="children(node)" />
+            <scope ilk="function" line="576" lineend="580" name="copy" signature="copy(src, parent, keys={})" />
+            <scope ilk="function" line="581" lineend="587" name="copy_to" signature="copy_to(src, dest_tree, parent, keys={})" />
+            <scope ilk="function" line="589" lineend="591" name="degree" signature="degree(node)" />
+            <scope ilk="function" line="593" lineend="603" name="delete" signature="delete(*nodes)" />
+            <scope ilk="function" line="605" lineend="607" name="depth" signature="depth(node)" />
+            <scope ilk="function" line="609" lineend="613" name="dump" signature="dump(node)" />
+            <scope ilk="function" line="615" lineend="618" name="dump_to_file" signature="dump_to_file(node, file)" />
+            <scope ilk="function" line="620" lineend="622" name="exist?" signature="exist?(node, key=None)" />
+            <scope ilk="function" line="624" lineend="629" name="find" signature="find(node, keys={})" />
+            <scope ilk="function" line="631" lineend="634" name="find_child" signature="find_child(node, label)" />
+            <scope ilk="function" line="636" lineend="639" name="first_child" signature="first_child(node)" />
+            <scope ilk="function" line="641" lineend="643" name="get" signature="get(node)" />
+            <scope ilk="function" line="644" lineend="646" name="get_value" signature="get_value(node, key, default_val=None)" />
+            <scope ilk="function" line="648" lineend="651" name="index" signature="index(node)" />
+            <scope ilk="function" line="653" lineend="656" name="insert" signature="insert(parent, keys={})" />
+            <scope ilk="function" line="658" lineend="661" name="ancestor?" signature="ancestor?(node1, node2)" />
+            <scope ilk="function" line="662" lineend="665" name="before?" signature="before?(node1, node2)" />
+            <scope ilk="function" line="666" lineend="668" name="leaf?" signature="leaf?(node)" />
+            <scope ilk="function" line="669" lineend="671" name="link?" signature="link?(node)" />
+            <scope ilk="function" line="672" lineend="674" name="root?" signature="root?(node)" />
+            <scope ilk="function" line="676" lineend="685" name="keys" signature="keys(node, *nodes)" />
+            <scope ilk="function" line="687" lineend="694" name="label" signature="label(node, text=nil)" />
+            <scope ilk="function" line="696" lineend="699" name="last_child" signature="last_child(node)" />
+            <scope ilk="function" line="701" lineend="705" name="link" signature="link(parent, node, keys={})" />
+            <scope ilk="function" line="707" lineend="710" name="move" signature="move(node, dest, keys={})" />
+            <scope ilk="function" line="712" lineend="715" name="next" signature="next(node)" />
+            <scope ilk="function" line="717" lineend="720" name="next_sibling" signature="next_sibling(node)" />
+            <scope ilk="function" line="722" lineend="724" name="notify_create" signature="notify_create(*args, &amp;b)" />
+            <scope ilk="function" line="726" lineend="734" name="notify_delete" signature="notify_delete(id)" />
+            <scope ilk="function" line="736" lineend="742" name="notify_info" signature="notify_info(id)" />
+            <scope ilk="function" line="744" lineend="748" name="notify_names" signature="notify_names()" />
+            <scope ilk="function" line="750" lineend="753" name="parent" signature="parent(node)" />
+            <scope ilk="function" line="755" lineend="757" name="fullpath" signature="fullpath(node)" />
+            <scope ilk="function" line="759" lineend="761" name="position" signature="position(node)" />
+            <scope ilk="function" line="763" lineend="766" name="previous" signature="previous(node)" />
+            <scope ilk="function" line="768" lineend="771" name="prev_sibling" signature="prev_sibling(node)" />
+            <scope ilk="function" line="773" lineend="777" name="restore" signature="restore(node, str, keys={})" />
+            <scope ilk="function" line="778" lineend="784" name="restore_overwrite" signature="restore_overwrite(node, str, keys={})" />
+            <scope ilk="function" line="786" lineend="790" name="restore_from_file" signature="restore_from_file(node, file, keys={})" />
+            <scope ilk="function" line="791" lineend="798" name="restore_overwrite_from_file" signature="restore_overwrite_from_file(node, file, keys={})" />
+            <scope ilk="function" line="800" lineend="803" name="root" signature="root(node=None)" />
+            <scope ilk="function" line="805" lineend="813" name="set" signature="set(node, data)" />
+            <scope ilk="function" line="815" lineend="817" name="size" signature="size(node)" />
+            <scope ilk="function" line="819" lineend="822" name="sort" signature="sort(node, keys={})" />
+            <scope ilk="function" line="824" lineend="827" name="tag_add" signature="tag_add(tag, *nodes)" />
+            <scope ilk="function" line="829" lineend="833" name="tag_delete" signature="tag_delete(tag, *nodes)" />
+            <scope ilk="function" line="835" lineend="840" name="tag_forget" signature="tag_forget(tag)" />
+            <scope ilk="function" line="842" lineend="847" name="tag_get" signature="tag_get(node, *patterns)" />
+            <scope ilk="function" line="849" lineend="853" name="tag_names" signature="tag_names(node = None)" />
+            <scope ilk="function" line="855" lineend="859" name="tag_nodes" signature="tag_nodes(tag)" />
+            <scope ilk="function" line="861" lineend="864" name="tag_set" signature="tag_set(node, *tags)" />
+            <scope ilk="function" line="866" lineend="870" name="tag_unset" signature="tag_unset(node, *tags)" />
+            <scope ilk="function" line="872" lineend="874" name="trace_create" signature="trace_create(*args, &amp;b)" />
+            <scope ilk="function" line="889" lineend="894" name="trace_delete" signature="trace_delete(*args)" />
+            <scope ilk="function" line="896" lineend="902" name="trace_info" signature="trace_info(id)" />
+            <scope ilk="function" line="904" lineend="908" name="trace_names" signature="trace_names()" />
+            <scope ilk="function" line="910" lineend="912" name="type" signature="type(node, key)" />
+            <scope ilk="function" line="914" lineend="917" name="unset" signature="unset(node, *keys)" />
+            <scope ilk="function" line="919" lineend="921" name="values" signature="values(node, key=None)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

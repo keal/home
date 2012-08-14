@@ -1,0 +1,62 @@
+<scope ilk="blob" lang="Ruby" name="net/smtp">
+      <import line="23" module="net/protocol" symbol="*" />
+      <import line="24" module="digest/md5" symbol="*" />
+      <scope doc="= net/smtp.rb" ilk="namespace" line="26" lineend="697" name="Net">
+        <scope doc="Module mixed in to all SMTP error classes" ilk="namespace" line="29" lineend="32" name="SMTPError" />
+        <scope classrefs="ProtoAuthError" doc="Represents an SMTP authentication error." ilk="class" line="35" lineend="37" name="SMTPAuthenticationError">
+          <import symbol="SMTPError" />
+        </scope>
+        <scope classrefs="ProtoServerError" doc="Represents SMTP error code 420 or 450, a temporary error." ilk="class" line="40" lineend="42" name="SMTPServerBusy">
+          <import symbol="SMTPError" />
+        </scope>
+        <scope classrefs="ProtoSyntaxError" doc="Represents an SMTP command syntax error (error code 500)" ilk="class" line="45" lineend="47" name="SMTPSyntaxError">
+          <import symbol="SMTPError" />
+        </scope>
+        <scope classrefs="ProtoFatalError" doc="Represents a fatal SMTP error (error code 5xx, except for&#xA;500)" ilk="class" line="50" lineend="52" name="SMTPFatalError">
+          <import symbol="SMTPError" />
+        </scope>
+        <scope classrefs="ProtoUnknownError" doc="Unexpected reply code returned from server." ilk="class" line="55" lineend="57" name="SMTPUnknownError">
+          <import symbol="SMTPError" />
+        </scope>
+        <scope classrefs="Object" doc="= Net::SMTP" ilk="class" line="164" lineend="693" name="SMTP">
+          <scope attributes="__classmethod__" doc="The default SMTP port, port 25." ilk="function" line="169" lineend="171" name="default_port" signature="SMTP.default_port" />
+          <scope attributes="__ctor__" doc="Creates a new Net::SMTP object." ilk="function" line="184" lineend="194" name="initialize" signature="initialize( address, port = nil )" />
+          <scope doc="Provide human-readable stringification of class state." ilk="function" line="197" lineend="199" name="inspect" signature="inspect" />
+          <scope doc="+true+ if the SMTP object uses ESMTP (which it does by&#xA;default)." ilk="function" line="202" lineend="204" name="esmtp?" signature="esmtp?" />
+          <scope doc="Set whether to use ESMTP or not." ilk="function" line="213" lineend="215" name="esmtp=" signature="esmtp=( bool )" />
+          <scope ilk="function" line="220" lineend="220" name="address" />
+          <scope ilk="function" line="223" lineend="223" name="port" />
+          <scope ilk="function" line="228" lineend="228" name="open_timeout" />
+          <scope ilk="function" line="228" lineend="228" name="open_timeout=" />
+          <scope ilk="function" line="233" lineend="233" name="read_timeout" />
+          <scope doc="Set the number of seconds to wait until timing-out a read(2)&#xA;call." ilk="function" line="237" lineend="240" name="read_timeout=" signature="read_timeout=( sec )" />
+          <scope doc="WARNING: This method causes serious security holes." ilk="function" line="256" lineend="258" name="set_debug_output" signature="set_debug_output( arg )" />
+          <scope attributes="__classmethod__" doc="SMTP session control" ilk="function" line="312" lineend="317" name="start" signature="SMTP.start( address, port = nil, helo = &apos;localhost.localdomain&apos;, user = nil, secret = nil, authtype = nil, &amp;block)" />
+          <scope doc="+true+ if the SMTP session has been started." ilk="function" line="320" lineend="322" name="started?" signature="started?" />
+          <scope doc="Opens a TCP connection and starts the SMTP session." ilk="function" line="374" lineend="387" name="start" signature="start( helo = &apos;localhost.localdomain&apos;, user = nil, secret = nil, authtype = nil )" />
+          <scope ilk="function" line="389" lineend="415" name="do_start" signature="do_start( helodomain, user, secret, authtype )" />
+          <scope doc="Finishes the SMTP session and closes TCP connection." ilk="function" line="420" lineend="423" name="finish" signature="finish" />
+          <scope ilk="function" line="425" lineend="432" name="do_finish" signature="do_finish" />
+          <scope doc="Sends +msgstr+ as a message." ilk="function" line="471" lineend="475" name="send_message" signature="send_message( msgstr, from_addr, *to_addrs )" />
+          <scope doc="obsolete" ilk="function" line="524" lineend="528" name="open_message_stream" signature="open_message_stream( from_addr, *to_addrs, &amp;block )" />
+          <scope doc="obsolete" ilk="function" line="534" lineend="554" name="send0" signature="send0( from_addr, to_addrs )" />
+          <scope doc="auth" ilk="function" line="562" lineend="568" name="check_auth_args" signature="check_auth_args( user, secret, authtype )" />
+          <scope ilk="function" line="570" lineend="572" name="authenticate" signature="authenticate( user, secret, authtype )" />
+          <scope ilk="function" line="574" lineend="578" name="auth_plain" signature="auth_plain( user, secret )" />
+          <scope ilk="function" line="580" lineend="587" name="auth_login" signature="auth_login( user, secret )" />
+          <scope ilk="function" line="589" lineend="609" name="auth_cram_md5" signature="auth_cram_md5( user, secret )" />
+          <scope ilk="function" line="611" lineend="614" name="base64_encode" signature="base64_encode( str )" />
+          <scope doc="SMTP command dispatcher" ilk="function" line="622" lineend="624" name="helo" signature="helo( domain )" />
+          <scope ilk="function" line="626" lineend="628" name="ehlo" signature="ehlo( domain )" />
+          <scope ilk="function" line="630" lineend="632" name="mailfrom" signature="mailfrom( fromaddr )" />
+          <scope ilk="function" line="634" lineend="636" name="rcptto" signature="rcptto( to )" />
+          <scope ilk="function" line="638" lineend="640" name="quit" signature="quit" />
+          <scope doc="row level library" ilk="function" line="648" lineend="654" name="getok" signature="getok( fmt, *args )" />
+          <scope ilk="function" line="656" lineend="659" name="get_response" signature="get_response( fmt, *args )" />
+          <scope ilk="function" line="661" lineend="669" name="recv_response" signature="recv_response" />
+          <scope ilk="function" line="671" lineend="681" name="check_response" signature="check_response( res, allow_continue = false )" />
+          <scope ilk="function" line="683" lineend="691" name="critical" signature="critical( &amp;block )" />
+        </scope>
+      </scope>
+    </scope>
+    

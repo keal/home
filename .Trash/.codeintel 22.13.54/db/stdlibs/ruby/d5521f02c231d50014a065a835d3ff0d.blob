@@ -1,0 +1,58 @@
+<scope ilk="blob" lang="Ruby" name="stringio">
+      <scope classrefs="Data" doc="Pseudo I/O on String object." ilk="class" name="StringIO">
+        <import symbol="Enumerable" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates new StringIO instance from with `string&apos; and `mode&apos;." ilk="function" name="new" signature=" StringIO.new(string=&quot;&quot;[, mode])" />
+        <scope attributes="__classmethod__" doc="Equivalent to StringIO.new except that when it is called&#xA;with a block, it yields with the new instance and closes it,&#xA;and returns the result which returned from the block." ilk="function" name="open" signature=" StringIO.open(string=&quot;&quot;[, mode]) {|strio| ...}" />
+        <scope doc="See IO#&lt;&lt;." ilk="function" name="&lt;&lt;" signature="strio &lt;&lt; obj     -&gt; strio" />
+        <scope doc="Returns *strio* itself. Just for compatibility to IO." ilk="function" name="binmode" signature=" strio.binmode -&gt; true " />
+        <scope doc="Closes strio. The *strio* is unavailable for any further&#xA;data operations; an IOError is raised if such an attempt is&#xA;made." ilk="function" name="close" signature="strio.close  -&gt; nil" />
+        <scope doc="Closes the read end of a StringIO. Will raise an IOError if&#xA;the *strio* is not readable." ilk="function" name="close_read" signature="strio.close_read    -&gt; nil" />
+        <scope doc="Closes the write end of a StringIO. Will raise an IOError if&#xA;the *strio* is not writeable." ilk="function" name="close_write" signature="strio.close_write    -&gt; nil" />
+        <scope doc="Returns true if *strio* is completely closed, false&#xA;otherwise." ilk="function" name="closed?" signature="strio.closed?    -&gt; true or false" />
+        <scope doc="Returns true if *strio* is not readable, false otherwise." ilk="function" name="closed_read?" signature="strio.closed_read?    -&gt; true or false" />
+        <scope doc="Returns true if *strio* is not writable, false otherwise." ilk="function" name="closed_write?" signature="strio.closed_write?    -&gt; true or false" />
+        <scope doc="See IO#each." ilk="function" name="each" signature="strio.each(sep_string=$/)      {|line| block }  -&gt; strio&#xA;strio.each_line(sep_string=$/) {|line| block }  -&gt; strio" />
+        <scope doc="See IO#each_byte." ilk="function" name="each_byte" signature="strio.each_byte {|byte| block }  -&gt; strio" />
+        <scope doc="See IO#each." ilk="function" name="each_line" signature="strio.each(sep_string=$/)      {|line| block }  -&gt; strio&#xA;strio.each_line(sep_string=$/) {|line| block }  -&gt; strio" />
+        <scope doc="Returns true if *strio* is at end of file. The stringio must&#xA;be opened for reading or an IOError will be raised." ilk="function" name="eof" signature="strio.eof     -&gt; true or false&#xA;strio.eof?    -&gt; true or false" />
+        <scope doc="Returns true if *strio* is at end of file. The stringio must&#xA;be opened for reading or an IOError will be raised." ilk="function" name="eof?" signature="strio.eof     -&gt; true or false&#xA;strio.eof?    -&gt; true or false" />
+        <scope doc="Raises NotImplementedError." ilk="function" name="fcntl" signature=" strio.fcntl " />
+        <scope doc="Returns nil. Just for compatibility to IO." ilk="function" name="fileno" signature=" strio.fileno -&gt; nil " />
+        <scope doc="Returns *strio* itself. Just for compatibility to IO." ilk="function" name="flush" signature=" strio.flush -&gt; strio " />
+        <scope doc="Returns 0. Just for compatibility to IO." ilk="function" name="fsync" signature=" strio.fsync -&gt; 0 " />
+        <scope doc="See IO#getc." ilk="function" name="getc" signature="strio.getc   -&gt; fixnum or nil" />
+        <scope doc="See IO#gets." ilk="function" name="gets" signature="strio.gets(sep_string=$/)   -&gt; string or nil" />
+        <scope doc="Returns false. Just for compatibility to IO." ilk="function" name="isatty" signature="strio.isatty -&gt; nil&#xA;strio.tty? -&gt; nil" />
+        <scope doc="Returns the size of the buffer string." ilk="function" name="length" signature="strio.size   -&gt; integer" />
+        <scope doc="Returns the current line number in *strio*. The stringio&#xA;must be opened for reading." ilk="function" name="lineno" signature="strio.lineno    -&gt; integer" />
+        <scope doc="Manually sets the current line number to the given value. $." ilk="function" name="lineno=" signature="strio.lineno = integer    -&gt; integer" />
+        <scope doc="Returns nil. Just for compatibility to IO." ilk="function" name="path" signature=" strio.path -&gt; nil " />
+        <scope doc="Returns nil. Just for compatibility to IO." ilk="function" name="pid" signature=" strio.pid -&gt; nil " />
+        <scope doc="Returns the current offset (in bytes) of *strio*." ilk="function" name="pos" signature="strio.pos     -&gt; integer&#xA;strio.tell    -&gt; integer" />
+        <scope doc="Seeks to the given position (in bytes) in *strio*." ilk="function" name="pos=" signature="strio.pos = integer    -&gt; integer" />
+        <scope doc="See IO#print." ilk="function" name="print" signature="strio.print()             -&gt; nil&#xA;strio.print(obj, ...)     -&gt; nil" />
+        <scope doc="See IO#printf." ilk="function" name="printf" signature="strio.printf(format_string [, obj, ...] )   -&gt; nil" />
+        <scope doc="See IO#putc." ilk="function" name="putc" signature="strio.putc(obj)    -&gt; obj" />
+        <scope doc="See IO#puts." ilk="function" name="puts" signature="strio.puts(obj, ...)    -&gt; nil" />
+        <scope doc="See IO#read." ilk="function" name="read" signature="strio.read([length [, buffer]])    -&gt; string, buffer, or nil" />
+        <scope doc="See IO#readchar." ilk="function" name="readchar" signature="strio.readchar   -&gt; fixnum" />
+        <scope doc="See IO#readline." ilk="function" name="readline" signature="strio.readline(sep_string=$/)   -&gt; string" />
+        <scope doc="See IO#readlines." ilk="function" name="readlines" signature="strio.readlines(sep_string=$/)  -&gt;   array" />
+        <scope doc="Reinitializes *strio* with the given `other_StrIO&apos; or&#xA;`string&apos; and `mode&apos; (see StringIO#new)." ilk="function" name="reopen" signature="strio.reopen(other_StrIO)     -&gt; strio&#xA;strio.reopen(string, mode)    -&gt; strio" />
+        <scope doc="Positions *strio* to the beginning of input, resetting&#xA;lineno to zero." ilk="function" name="rewind" signature="strio.rewind    -&gt; 0" />
+        <scope doc="Seeks to a given offset `amount&apos; in the stream according to&#xA;the value of `whence&apos; (see IO#seek)." ilk="function" name="seek" signature="strio.seek(amount, whence=SEEK_SET) -&gt; 0" />
+        <scope doc="Returns the size of the buffer string." ilk="function" name="size" signature="strio.size   -&gt; integer" />
+        <scope doc="Returns underlying String object, the subject of IO." ilk="function" name="string" signature=" strio.string     -&gt; string" />
+        <scope doc="Changes underlying String object, the subject of IO." ilk="function" name="string=" signature="strio.string = string  -&gt; string" />
+        <scope doc="Returns true always." ilk="function" name="sync" signature="strio.sync    -&gt; true" />
+        <scope doc="Returns the argument unchanged. Just for compatibility to&#xA;IO." ilk="function" name="sync=" signature=" strio.sync = boolean -&gt; boolean " />
+        <scope doc="Similar to #read, but raises EOFError at end of string&#xA;instead of returning nil, as well as IO#sysread does." ilk="function" name="sysread" signature="strio.sysread(integer[, outbuf])    -&gt; string" />
+        <scope doc="Appends the given string to the underlying buffer string of&#xA;*strio*. The stream must be opened for writing." ilk="function" name="syswrite" signature="strio.write(string)    -&gt; integer&#xA;strio.syswrite(string) -&gt; integer" />
+        <scope doc="Returns the current offset (in bytes) of *strio*." ilk="function" name="tell" signature="strio.pos     -&gt; integer&#xA;strio.tell    -&gt; integer" />
+        <scope doc="Truncates the buffer string to at most `integer&apos; bytes. The&#xA;*strio* must be opened for writing." ilk="function" name="truncate" signature="strio.truncate(integer)    -&gt; 0" />
+        <scope doc="Returns false. Just for compatibility to IO." ilk="function" name="tty?" signature="strio.isatty -&gt; nil&#xA;strio.tty? -&gt; nil" />
+        <scope doc="Pushes back one character (passed as a parameter) onto&#xA;*strio* such that a subsequent buffered read will return it.&#xA;Pushing back behind the beginning of the buffer string is&#xA;not possible." ilk="function" name="ungetc" signature="strio.ungetc(integer)   -&gt; nil" />
+        <scope doc="Appends the given string to the underlying buffer string of&#xA;*strio*. The stream must be opened for writing." ilk="function" name="write" signature="strio.write(string)    -&gt; integer&#xA;strio.syswrite(string) -&gt; integer" />
+      </scope>
+    </scope>
+    

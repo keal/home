@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="threadswait">
+      <scope classrefs="Object" doc="This class watches for termination of multiple threads.&#xA;Basic functionality (wait until specified threads have&#xA;terminated) can be accessed through the class method&#xA;ThreadsWait::all_waits." ilk="class" name="ThreadsWait">
+        <scope attributes="__classmethod__" doc="Waits until all specified threads have terminated. If a&#xA;block is provided, it is executed for each thread&#xA;termination." ilk="function" name="all_waits" signature="(*threads) {|thread| ...}" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a ThreadsWait object, specifying the threads to wait&#xA;on. Non-blocking." ilk="function" name="new" signature="(*threads)" />
+        <scope doc="Waits until all of the specified threads are terminated. If&#xA;a block is supplied for the method, it is executed for each&#xA;thread termination." ilk="function" name="all_waits" signature="() {|th if block_given?| ...}" />
+        <scope doc="Returns true if there are no threads to be synchronized." ilk="function" name="empty?" signature="()" />
+        <scope doc="Returns true if any thread has terminated." ilk="function" name="finished?" signature="()" />
+        <scope doc="Waits for specified threads to terminate." ilk="function" name="join" signature="(*threads)" />
+        <scope doc="Specifies the threads that this object will wait for, but&#xA;does not actually wait." ilk="function" name="join_nowait" signature="(*threads)" />
+        <scope doc="Waits until any of the specified threads has terminated, and&#xA;returns the one that does." ilk="function" name="next_wait" signature="(nonblock = nil)" />
+        <scope doc="Returns the array of threads in the wait queue." ilk="function" name="threads" />
+      </scope>
+    </scope>
+    

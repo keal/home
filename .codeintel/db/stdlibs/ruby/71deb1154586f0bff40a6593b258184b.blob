@@ -1,0 +1,72 @@
+<scope ilk="blob" lang="Ruby" name="rss/maker/0.9">
+      <import line="1" module="rss/0.9" symbol="*" />
+      <import line="3" module="rss/maker/base" symbol="*" />
+      <scope ilk="namespace" line="5" lineend="224" name="RSS">
+        <scope ilk="namespace" line="6" lineend="223" name="Maker">
+          <scope classrefs="RSSBase" ilk="class" line="8" lineend="219" name="RSS09">
+            <scope attributes="__ctor__" ilk="function" line="10" lineend="12" name="initialize" signature="initialize(rss_version=&quot;0.91&quot;)" />
+            <scope ilk="function" line="15" lineend="17" name="make_rss" signature="make_rss" />
+            <scope ilk="function" line="19" lineend="21" name="setup_elements" signature="setup_elements(rss)" />
+            <scope classrefs="ChannelBase" ilk="class" line="23" lineend="135" name="Channel">
+              <scope ilk="function" line="25" lineend="42" name="to_rss" signature="to_rss(rss)" />
+              <scope ilk="function" line="44" lineend="46" name="have_required_values?" signature="have_required_values?" />
+              <scope ilk="function" line="49" lineend="51" name="setup_items" signature="setup_items(rss)" />
+              <scope ilk="function" line="53" lineend="55" name="setup_image" signature="setup_image(rss)" />
+              <scope ilk="function" line="57" lineend="59" name="setup_textinput" signature="setup_textinput(rss)" />
+              <scope ilk="function" line="61" lineend="63" name="variables" signature="variables" />
+              <scope ilk="function" line="65" lineend="67" name="required_variable_names" signature="required_variable_names" />
+              <scope classrefs="SkipDaysBase" ilk="class" line="69" lineend="94" name="SkipDays">
+                <scope ilk="function" line="70" lineend="78" name="to_rss" signature="to_rss(rss, channel)" />
+                <scope classrefs="DayBase" ilk="class" line="80" lineend="93" name="Day">
+                  <scope ilk="function" line="81" lineend="88" name="to_rss" signature="to_rss(rss, days)" />
+                  <scope ilk="function" line="90" lineend="92" name="have_required_values?" signature="have_required_values?" />
+                </scope>
+              </scope>
+              <scope classrefs="SkipHoursBase" ilk="class" line="96" lineend="121" name="SkipHours">
+                <scope ilk="function" line="97" lineend="105" name="to_rss" signature="to_rss(rss, channel)" />
+                <scope classrefs="HourBase" ilk="class" line="107" lineend="120" name="Hour">
+                  <scope ilk="function" line="108" lineend="115" name="to_rss" signature="to_rss(rss, hours)" />
+                  <scope ilk="function" line="117" lineend="119" name="have_required_values?" signature="have_required_values?" />
+                </scope>
+              </scope>
+              <scope classrefs="CloudBase" ilk="class" line="123" lineend="126" name="Cloud">
+                <scope ilk="function" line="124" lineend="125" name="to_rss" signature="to_rss(*args)" />
+              </scope>
+              <scope classrefs="CategoriesBase" ilk="class" line="128" lineend="134" name="Categories">
+                <scope ilk="function" line="129" lineend="130" name="to_rss" signature="to_rss(*args)" />
+                <scope classrefs="CategoryBase" ilk="class" line="132" lineend="133" name="Category" />
+              </scope>
+            </scope>
+            <scope classrefs="ImageBase" ilk="class" line="137" lineend="151" name="Image">
+              <scope ilk="function" line="138" lineend="146" name="to_rss" signature="to_rss(rss)" />
+              <scope ilk="function" line="148" lineend="150" name="have_required_values?" signature="have_required_values?" />
+            </scope>
+            <scope classrefs="ItemsBase" ilk="class" line="153" lineend="202" name="Items">
+              <scope ilk="function" line="154" lineend="161" name="to_rss" signature="to_rss(rss)" />
+              <scope classrefs="ItemBase" ilk="class" line="163" lineend="201" name="Item">
+                <scope ilk="function" line="164" lineend="171" name="to_rss" signature="to_rss(rss)" />
+                <scope ilk="function" line="174" lineend="176" name="have_required_values?" signature="have_required_values?" />
+                <scope classrefs="GuidBase" ilk="class" line="178" lineend="181" name="Guid">
+                  <scope ilk="function" line="179" lineend="180" name="to_rss" signature="to_rss(*args)" />
+                </scope>
+                <scope classrefs="EnclosureBase" ilk="class" line="183" lineend="186" name="Enclosure">
+                  <scope ilk="function" line="184" lineend="185" name="to_rss" signature="to_rss(*args)" />
+                </scope>
+                <scope classrefs="SourceBase" ilk="class" line="188" lineend="191" name="Source">
+                  <scope ilk="function" line="189" lineend="190" name="to_rss" signature="to_rss(*args)" />
+                </scope>
+                <scope classrefs="CategoriesBase" ilk="class" line="193" lineend="199" name="Categories">
+                  <scope ilk="function" line="194" lineend="195" name="to_rss" signature="to_rss(*args)" />
+                  <scope classrefs="CategoryBase" ilk="class" line="197" lineend="198" name="Category" />
+                </scope>
+              </scope>
+            </scope>
+            <scope classrefs="TextinputBase" ilk="class" line="204" lineend="218" name="Textinput">
+              <scope ilk="function" line="205" lineend="212" name="to_rss" signature="to_rss(rss)" />
+              <scope ilk="function" line="215" lineend="217" name="have_required_values?" signature="have_required_values?" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

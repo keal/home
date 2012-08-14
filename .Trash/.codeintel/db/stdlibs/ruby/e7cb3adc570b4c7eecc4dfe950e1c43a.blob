@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="pstore">
+      <scope classrefs="Object" doc="PStore implements a file based persistance mechanism based&#xA;on a Hash. User code can store hierarchies of Ruby objects&#xA;(values) into the data store file by name (keys)." ilk="class" name="PStore">
+        <scope classrefs="StandardError" doc="The error type thrown by all PStore methods." ilk="class" name="Error" />
+        <scope attributes="__classmethod__ __ctor__" doc="To construct a PStore object, pass in the `file&apos; path where&#xA;you would like the data to be stored." ilk="function" name="new" signature="(file)" />
+        <scope doc="Retrieves a value from the PStore file data, by `name&apos;. The&#xA;hierarchy of Ruby objects stored under that root `name&apos; will&#xA;be returned." ilk="function" name="[]" signature="(name)" />
+        <scope doc="Stores an individual Ruby object or a hierarchy of Ruby&#xA;objects in the data store file under the root `name&apos;.&#xA;Assigning to a `name&apos; already in the data store clobbers the&#xA;old data." ilk="function" name="[]=" signature="(name, value)" />
+        <scope doc="Ends the current PStore#transaction, discarding any changes&#xA;to the data store." ilk="function" name="abort" signature="()" />
+        <scope doc="Ends the current PStore#transaction, committing any changes&#xA;to the data store immediately." ilk="function" name="commit" signature="()" />
+        <scope attributes="private" doc="Commits changes to the data store file." ilk="function" name="commit_new" signature="(f)" />
+        <scope doc="Removes an object hierarchy from the data store, by `name&apos;." ilk="function" name="delete" signature="(name)" />
+        <scope doc="This method is just like PStore#[], save that you may also&#xA;provide a `default&apos; value for the object. In the event the&#xA;specified `name&apos; is not found in the data store, your&#xA;`default&apos; will be returned instead." ilk="function" name="fetch" signature="(name, default=PStore::Error)" />
+        <scope attributes="private" doc="Raises PStore::Error if the calling code is not in a&#xA;PStore#transaction." ilk="function" name="in_transaction" signature="()" />
+        <scope attributes="private" doc="Raises PStore::Error if the calling code is not in a&#xA;PStore#transaction or if the code is in a read-only&#xA;PStore#transaction." ilk="function" name="in_transaction_wr" signature="()" />
+        <scope doc="Returns the path to the data store file." ilk="function" name="path" signature="()" />
+        <scope doc="Returns true if the supplied `name&apos; is currently in the data&#xA;store." ilk="function" name="root?" signature="(name)" />
+        <scope doc="Returns the names of all object hierarchies currently in the&#xA;store." ilk="function" name="roots" signature="()" />
+        <scope doc="Opens a new transaction for the data store. Code executed&#xA;inside a block passed to this method may read and write data&#xA;to and from the data store file." ilk="function" name="transaction" signature="(read_only=false) {|pstore| ...}" />
+      </scope>
+    </scope>
+    

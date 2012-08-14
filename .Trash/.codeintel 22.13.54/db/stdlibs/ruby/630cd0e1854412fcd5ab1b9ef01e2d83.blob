@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="rexml/entity">
+      <import line="1" module="rexml/child" symbol="*" />
+      <import line="2" module="rexml/source" symbol="*" />
+      <import line="3" module="rexml/xmltokens" symbol="*" />
+      <scope ilk="namespace" line="5" lineend="159" name="REXML">
+        <scope classrefs="Child" doc="God, I hate DTDs. I really do." ilk="class" line="8" lineend="143" name="Entity">
+          <scope ilk="function" line="23" lineend="23" name="name" />
+          <scope ilk="function" line="23" lineend="23" name="external" />
+          <scope ilk="function" line="23" lineend="23" name="ref" />
+          <scope ilk="function" line="23" lineend="23" name="ndata" />
+          <scope ilk="function" line="23" lineend="23" name="pubid" />
+          <scope attributes="__ctor__" doc="Create a new entity." ilk="function" line="35" lineend="64" name="initialize" signature="initialize" />
+          <scope attributes="__classmethod__" doc="Evaluates whether the given string matchs an entity&#xA;definition, returning true if so, and false otherwise." ilk="function" line="68" lineend="70" name="matches?" signature="Entity::matches?" />
+          <scope doc="Evaluates to the unnormalized value of this entity; that is,&#xA;replacing all entities -- both %ent; and &amp;ent; entities." ilk="function" line="75" lineend="80" name="unnormalized" signature="unnormalized" />
+          <scope doc="once :unnormalized Returns the value of this entity&#xA;unprocessed -- raw." ilk="function" line="86" lineend="88" name="normalized" signature="normalized" />
+          <scope doc="Write out a fully formed, correct entity definition&#xA;(assuming the Entity object itself is valid.)" ilk="function" line="92" name="write" signature="write" />
+          <scope ilk="function" line="129" lineend="142" name="value" signature="value" />
+          <import symbol="XMLTokens" />
+        </scope>
+        <scope doc="This is a set of entity constants -- the ones defined in the&#xA;XML specification." ilk="namespace" line="147" lineend="158" name="EntityConst" />
+      </scope>
+    </scope>
+    

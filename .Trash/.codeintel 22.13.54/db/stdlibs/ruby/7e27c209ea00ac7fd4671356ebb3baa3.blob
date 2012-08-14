@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/test/AllTests">
+      <import line="1" module="TestParse.rb" symbol="*" />
+      <import line="2" module="TestInline.rb" symbol="*" />
+    </scope>
+    

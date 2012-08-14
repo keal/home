@@ -1,0 +1,30 @@
+<scope ilk="blob" lang="Ruby" name="webrick/log">
+      <scope doc="log.rb -- Log Class" ilk="namespace" line="11" lineend="88" name="WEBrick">
+        <scope classrefs="Object" ilk="class" line="12" lineend="72" name="BasicLog">
+          <scope ilk="function" line="16" lineend="16" name="level" />
+          <scope ilk="function" line="16" lineend="16" name="level=" />
+          <scope attributes="__ctor__" doc="log-level constant" ilk="function" line="18" lineend="30" name="initialize" signature="initialize(log_file=nil, level=nil)" />
+          <scope ilk="function" line="32" lineend="35" name="close" signature="close" />
+          <scope ilk="function" line="37" lineend="42" name="log" signature="log(level, data)" />
+          <scope ilk="function" line="44" lineend="46" name="&lt;&lt;" signature="&lt;&lt;(obj" />
+          <scope ilk="function" line="48" name="fatal" signature="fatal(msg)" />
+          <scope ilk="function" line="49" name="error" signature="error(msg)" />
+          <scope ilk="function" line="50" name="warn" signature="warn(msg)" />
+          <scope ilk="function" line="51" name="info" signature="info(msg)" />
+          <scope ilk="function" line="52" name="debug" signature="debug(msg)" />
+          <scope ilk="function" line="54" name="fatal?" signature="fatal?" />
+          <scope ilk="function" line="55" name="error?" signature="error?" />
+          <scope ilk="function" line="56" name="warn?" signature="warn?" />
+          <scope ilk="function" line="57" name="info?" signature="info?" />
+          <scope ilk="function" line="58" name="debug?" signature="debug?" />
+          <scope ilk="function" line="62" lineend="71" name="format" signature="format(arg)" />
+        </scope>
+        <scope classrefs="BasicLog" ilk="class" line="74" lineend="87" name="Log">
+          <scope ilk="function" line="75" lineend="75" name="time_format" />
+          <scope ilk="function" line="75" lineend="75" name="time_format=" />
+          <scope attributes="__ctor__" ilk="function" line="77" lineend="80" name="initialize" signature="initialize(log_file=nil, level=nil)" />
+          <scope ilk="function" line="82" lineend="86" name="log" signature="log(level, data)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="soap/rpc/httpserver">
+      <import line="9" module="logger" symbol="*" />
+      <import line="10" module="soap/rpc/soaplet" symbol="*" />
+      <import line="11" module="soap/streamHandler" symbol="*" />
+      <import line="12" module="webrick" symbol="*" />
+      <scope doc="SOAP4R - WEBrick HTTP Server Copyright (C) 2003, 2004 by&#xA;NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="15" name="SOAP" />
+      <scope ilk="namespace" line="16" name="RPC" />
+      <scope classrefs="Logger::Application" ilk="class" line="19" lineend="125" name="HTTPServer">
+        <scope ilk="function" line="20" lineend="20" name="server" />
+        <scope ilk="function" line="21" lineend="21" name="default_namespace" />
+        <scope ilk="function" line="21" lineend="21" name="default_namespace=" />
+        <scope attributes="__ctor__" ilk="function" line="23" lineend="35" name="initialize" signature="initialize(config)" />
+        <scope ilk="function" line="37" lineend="39" name="on_init" signature="on_init" />
+        <scope ilk="function" line="41" lineend="43" name="status" signature="status" />
+        <scope ilk="function" line="45" lineend="47" name="shutdown" signature="shutdown" />
+        <scope ilk="function" line="49" lineend="51" name="mapping_registry" signature="mapping_registry" />
+        <scope ilk="function" line="53" lineend="55" name="mapping_registry=" signature="mapping_registry=(mapping_registry)" />
+        <scope ilk="function" line="57" lineend="59" name="generate_explicit_type" signature="generate_explicit_type" />
+        <scope ilk="function" line="61" lineend="63" name="generate_explicit_type=" signature="generate_explicit_type=(generate_explicit_type)" />
+        <scope doc="servant entry interface" ilk="function" line="67" lineend="69" name="add_rpc_request_servant" signature="add_rpc_request_servant(factory, namespace = @default_namespace)" />
+        <scope ilk="function" line="71" lineend="73" name="add_rpc_servant" signature="add_rpc_servant(obj, namespace = @default_namespace)" />
+        <scope ilk="function" line="75" lineend="77" name="add_request_headerhandler" signature="add_request_headerhandler(factory)" />
+        <scope ilk="function" line="79" lineend="81" name="add_headerhandler" signature="add_headerhandler(obj)" />
+        <scope doc="method entry interface" ilk="function" line="86" lineend="88" name="add_rpc_method" signature="add_rpc_method(obj, name, *param)" />
+        <scope ilk="function" line="91" lineend="96" name="add_rpc_method_as" signature="add_rpc_method_as(obj, name, name_as, *param)" />
+        <scope ilk="function" line="99" lineend="102" name="add_document_method" signature="add_document_method(obj, soapaction, name, req_qnames, res_qnames)" />
+        <scope ilk="function" line="104" lineend="106" name="add_rpc_operation" signature="add_rpc_operation(receiver, qname, soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="108" lineend="110" name="add_rpc_request_operation" signature="add_rpc_request_operation(factory, qname, soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="112" lineend="114" name="add_document_operation" signature="add_document_operation(receiver, soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="116" lineend="118" name="add_document_request_operation" signature="add_document_request_operation(factory, soapaction, name, param_def, opt = {})" />
+        <scope ilk="function" line="122" lineend="124" name="run" signature="run" />
+      </scope>
+    </scope>
+    

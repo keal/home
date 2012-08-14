@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="shell/system-command">
+      <import line="13" module="shell/filter" symbol="*" />
+      <scope classrefs="Object" doc="shell/system-command.rb - $Release Version: 0.6.0 $&#xA;$Revision: 1.2.2.1 $ $Date: 2004/03/21 12:21:11 $ by Keiju&#xA;ISHITSUKA(Nihon Rational Software Co.,Ltd)" ilk="class" line="15" lineend="168" name="Shell">
+        <scope classrefs="Filter" ilk="class" line="16" lineend="167" name="SystemCommand">
+          <scope attributes="__ctor__" ilk="function" line="17" lineend="29" name="initialize" signature="initialize(sh, command, *opts)" />
+          <scope ilk="function" line="31" lineend="31" name="command" />
+          <scope ilk="function" line="34" lineend="36" name="wait?" signature="wait?" />
+          <scope ilk="function" line="38" lineend="40" name="active?" signature="active?" />
+          <scope ilk="function" line="42" lineend="47" name="input=" signature="input=(inp)" />
+          <scope ilk="function" line="49" lineend="58" name="start" signature="start" />
+          <scope ilk="function" line="60" lineend="62" name="flush" signature="flush" />
+          <scope ilk="function" line="64" lineend="73" name="terminate" signature="terminate" />
+          <scope ilk="function" line="75" lineend="79" name="kill" signature="kill(sig)" />
+          <scope ilk="function" line="82" lineend="114" name="start_import" signature="start_import" />
+          <scope ilk="function" line="116" lineend="141" name="start_export" signature="start_export" />
+          <scope ilk="function" line="144" lineend="148" name="each" signature="each(rs = nil)" />
+          <scope doc="ex) if you wish to output: &quot;shell: job(#{@command}:#{@pid})&#xA;close pipe-out.&quot; then mes: &quot;job(%id) close pipe-out.&quot;" ilk="function" line="156" lineend="166" name="notify" signature="notify(*opts, &amp;block)" />
+        </scope>
+      </scope>
+    </scope>
+    

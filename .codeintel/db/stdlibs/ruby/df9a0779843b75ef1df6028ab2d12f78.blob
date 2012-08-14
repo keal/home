@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="shellwords">
+      <scope doc="This module is originally a port of shellwords.pl, but&#xA;modified to conform to POSIX / SUSv3 (IEEE Std 1003.1-2001)." ilk="namespace" name="Shellwords">
+        <scope doc="Split text into an array of tokens in the same way the UNIX&#xA;Bourne shell does." ilk="function" name="shellwords" signature="(line)" />
+      </scope>
+    </scope>
+    

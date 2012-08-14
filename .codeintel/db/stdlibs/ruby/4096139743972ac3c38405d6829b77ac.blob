@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="shell/builtin-command">
+      <import line="13" module="shell/filter" symbol="*" />
+      <scope classrefs="Object" doc="shell/builtin-command.rb - $Release Version: 0.6.0 $&#xA;$Revision: 1.1 $ $Date: 2001/05/17 10:02:48 $ by Keiju&#xA;ISHITSUKA(Nihon Rational Software Co.,Ltd)" ilk="class" line="15" lineend="154" name="Shell">
+        <scope classrefs="Filter" ilk="class" line="16" lineend="23" name="BuiltInCommand">
+          <scope ilk="function" line="17" lineend="19" name="wait?" signature="wait?" />
+          <scope ilk="function" line="20" lineend="22" name="active?" signature="active?" />
+        </scope>
+        <scope classrefs="BuiltInCommand" ilk="class" line="25" lineend="37" name="Echo">
+          <scope attributes="__ctor__" ilk="function" line="26" lineend="29" name="initialize" signature="initialize(sh, *strings)" />
+          <scope ilk="function" line="31" lineend="36" name="each" signature="each(rs = nil)" />
+        </scope>
+        <scope classrefs="BuiltInCommand" ilk="class" line="39" lineend="54" name="Cat">
+          <scope attributes="__ctor__" ilk="function" line="40" lineend="43" name="initialize" signature="initialize(sh, *filenames)" />
+          <scope ilk="function" line="45" lineend="53" name="each" signature="each(rs = nil)" />
+        </scope>
+        <scope classrefs="BuiltInCommand" ilk="class" line="56" lineend="78" name="Glob">
+          <scope attributes="__ctor__" ilk="function" line="57" lineend="70" name="initialize" signature="initialize(sh, pattern)" />
+          <scope ilk="function" line="72" lineend="77" name="each" signature="each(rs = nil)" />
+        </scope>
+        <scope classrefs="BuiltInCommand" doc="class Sort &lt; Cat def initialize(sh, *filenames) super end" ilk="class" line="94" lineend="108" name="AppendIO">
+          <scope attributes="__ctor__" ilk="function" line="95" lineend="99" name="initialize" signature="initialize(sh, io, filter)" />
+          <scope ilk="function" line="101" lineend="106" name="input=" signature="input=(filter)" />
+        </scope>
+        <scope classrefs="AppendIO" ilk="class" line="110" lineend="124" name="AppendFile">
+          <scope attributes="__ctor__" ilk="function" line="111" lineend="115" name="initialize" signature="initialize(sh, to_filename, filter)" />
+          <scope ilk="function" line="117" lineend="123" name="input=" signature="input=(filter)" />
+        </scope>
+        <scope classrefs="BuiltInCommand" ilk="class" line="126" lineend="140" name="Tee">
+          <scope attributes="__ctor__" ilk="function" line="127" lineend="130" name="initialize" signature="initialize(sh, filename)" />
+          <scope ilk="function" line="132" lineend="139" name="each" signature="each(rs = nil)" />
+        </scope>
+        <scope classrefs="BuiltInCommand" ilk="class" line="142" lineend="153" name="Concat">
+          <scope attributes="__ctor__" ilk="function" line="143" lineend="146" name="initialize" signature="initialize(sh, *jobs)" />
+          <scope ilk="function" line="148" lineend="152" name="each" signature="each(rs = nil)" />
+        </scope>
+      </scope>
+    </scope>
+    

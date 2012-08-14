@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="rss/dublincore">
+      <import line="1" module="rss/1.0" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="160" name="RSS">
+        <scope ilk="namespace" line="10" lineend="43" name="BaseDublinCoreModel">
+          <scope ilk="function" line="11" lineend="42" name="append_features" signature="append_features(klass)" />
+        </scope>
+        <scope ilk="namespace" line="45" lineend="142" name="DublinCoreModel">
+          <scope doc="FIXME" ilk="function" line="133" lineend="140" name="dc_validate" signature="dc_validate(tags)" />
+        </scope>
+        <scope classrefs="Object" doc="For backward compatibility" ilk="class" line="147" lineend="152" name="RDF">
+          <scope classrefs="Object" ilk="class" line="148" lineend="148" name="Channel">
+            <import symbol="DublinCoreModel" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="149" lineend="149" name="Image">
+            <import symbol="DublinCoreModel" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="150" lineend="150" name="Item">
+            <import symbol="DublinCoreModel" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="151" lineend="151" name="Textinput">
+            <import symbol="DublinCoreModel" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,81 @@
+<scope ilk="blob" lang="Ruby" name="readline">
+      <scope ilk="namespace" name="Readline">
+        <scope attributes="__classmethod__" ilk="function" name="basic_quote_characters" />
+        <scope attributes="__classmethod__" ilk="function" name="basic_quote_characters=" />
+        <scope attributes="__classmethod__" ilk="function" name="basic_word_break_characters" />
+        <scope attributes="__classmethod__" ilk="function" name="basic_word_break_characters=" />
+        <scope attributes="__classmethod__" ilk="function" name="completer_quote_characters" />
+        <scope attributes="__classmethod__" ilk="function" name="completer_quote_characters=" />
+        <scope attributes="__classmethod__" ilk="function" name="completer_word_break_characters" />
+        <scope attributes="__classmethod__" ilk="function" name="completer_word_break_characters=" />
+        <scope attributes="__classmethod__" ilk="function" name="completion_append_character" />
+        <scope attributes="__classmethod__" ilk="function" name="completion_append_character=" />
+        <scope attributes="__classmethod__" ilk="function" name="completion_case_fold" />
+        <scope attributes="__classmethod__" ilk="function" name="completion_case_fold=" />
+        <scope attributes="__classmethod__" ilk="function" name="completion_proc" />
+        <scope attributes="__classmethod__" ilk="function" name="completion_proc=" />
+        <scope attributes="__classmethod__" ilk="function" name="emacs_editing_mode" />
+        <scope attributes="__classmethod__" ilk="function" name="filename_quote_characters" />
+        <scope attributes="__classmethod__" ilk="function" name="filename_quote_characters=" />
+        <scope attributes="__classmethod__" ilk="function" name="readline" />
+        <scope attributes="__classmethod__" ilk="function" name="vi_editing_mode" />
+        <scope ilk="function" name="&lt;" />
+        <scope ilk="function" name="&lt;=" />
+        <scope ilk="function" name="&lt;=&gt;" />
+        <scope ilk="function" name="==" />
+        <scope ilk="function" name="===" />
+        <scope ilk="function" name="&gt;" />
+        <scope ilk="function" name="&gt;=" />
+        <scope ilk="function" name="ancestors" />
+        <scope ilk="function" name="autoload" />
+        <scope ilk="function" name="autoload?" />
+        <scope ilk="function" name="basic_quote_characters" />
+        <scope ilk="function" name="basic_quote_characters=" />
+        <scope ilk="function" name="basic_word_break_characters" />
+        <scope ilk="function" name="basic_word_break_characters=" />
+        <scope ilk="function" name="class_eval" />
+        <scope ilk="function" name="class_variables" />
+        <scope ilk="function" name="completer_quote_characters" />
+        <scope ilk="function" name="completer_quote_characters=" />
+        <scope ilk="function" name="completer_word_break_characters" />
+        <scope ilk="function" name="completer_word_break_characters=" />
+        <scope ilk="function" name="completion_append_character" />
+        <scope ilk="function" name="completion_append_character=" />
+        <scope ilk="function" name="completion_case_fold" />
+        <scope ilk="function" name="completion_case_fold=" />
+        <scope ilk="function" name="completion_proc" />
+        <scope ilk="function" name="completion_proc=" />
+        <scope ilk="function" name="const_defined?" />
+        <scope ilk="function" name="const_get" />
+        <scope ilk="function" name="const_missing" />
+        <scope ilk="function" name="const_set" />
+        <scope ilk="function" name="constants" />
+        <scope ilk="function" name="emacs_editing_mode" />
+        <scope ilk="function" name="filename_quote_characters" />
+        <scope ilk="function" name="filename_quote_characters=" />
+        <scope ilk="function" name="freeze" />
+        <scope ilk="function" name="include?" />
+        <scope ilk="function" name="included_modules" />
+        <scope ilk="function" name="instance_method" />
+        <scope ilk="function" name="instance_methods" />
+        <scope ilk="function" name="method_defined?" />
+        <scope ilk="function" name="module_eval" />
+        <scope ilk="function" name="name" />
+        <scope ilk="function" name="private_class_method" />
+        <scope ilk="function" name="private_instance_methods" />
+        <scope ilk="function" name="private_method_defined?" />
+        <scope ilk="function" name="protected_instance_methods" />
+        <scope ilk="function" name="protected_method_defined?" />
+        <scope ilk="function" name="public_class_method" />
+        <scope ilk="function" name="public_instance_methods" />
+        <scope ilk="function" name="public_method_defined?" />
+        <scope ilk="function" name="readline" />
+        <scope ilk="function" name="to_s" />
+        <scope ilk="function" name="vi_editing_mode" />
+        <variable attributes="__const__" citdl="Object" name="FILENAME_COMPLETION_PROC" />
+        <variable attributes="__const__" citdl="Object" name="HISTORY" />
+        <variable attributes="__const__" citdl="Object" name="USERNAME_COMPLETION_PROC" />
+        <variable attributes="__const__" citdl="String" name="VERSION" />
+      </scope>
+    </scope>
+    

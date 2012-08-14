@@ -1,0 +1,47 @@
+<scope ilk="blob" lang="Ruby" name="ipaddr">
+      <import line="33" module="socket" symbol="*" />
+      <scope classrefs="Object" doc="ipaddr.rb - A class to manipulate an IP address" ilk="class" line="36" lineend="38" name="Socket" />
+      <scope classrefs="Object" ilk="class" line="40" lineend="75" name="IPSocket">
+        <scope ilk="function" line="41" lineend="46" name="valid_v4?" signature="valid_v4?(addr)" />
+        <scope ilk="function" line="48" lineend="59" name="valid_v6?" signature="valid_v6?(addr)" />
+        <scope ilk="function" line="61" lineend="63" name="valid?" signature="valid?(addr)" />
+        <scope ilk="function" line="66" lineend="74" name="getaddress" signature="getaddress(s)" />
+      </scope>
+      <scope classrefs="Object" doc="IPAddr provides a set of methods to manipulate an IP&#xA;address." ilk="class" line="80" lineend="524" name="IPAddr">
+        <scope ilk="function" line="87" lineend="87" name="family" />
+        <scope attributes="__classmethod__" doc="Creates a new ipaddr containing the given network byte&#xA;ordered string form of an IP address." ilk="function" line="91" lineend="93" name="new_ntoh" signature="IPAddr::new_ntoh(addr)" />
+        <scope attributes="__classmethod__" doc="Convert a network byte ordered string form of an IP address&#xA;into human readable form." ilk="function" line="97" lineend="107" name="ntop" signature="IPAddr::ntop(addr)" />
+        <scope doc="Returns a new ipaddr built by bitwise AND." ilk="function" line="110" lineend="112" name="&amp;" signature="&amp;(other" />
+        <scope doc="Returns a new ipaddr built by bitwise OR." ilk="function" line="115" lineend="117" name="|" signature="|(other" />
+        <scope doc="Returns a new ipaddr built by bitwise right-shift." ilk="function" line="120" lineend="122" name="&gt;&gt;" signature="&gt;&gt;(num" />
+        <scope doc="Returns a new ipaddr built by bitwise left shift." ilk="function" line="125" lineend="127" name="&lt;&lt;" signature="&lt;&lt;(num" />
+        <scope doc="Returns a new ipaddr built by bitwise negation." ilk="function" line="130" lineend="132" name="~" signature="~" />
+        <scope doc="Returns true if two ipaddr are equal." ilk="function" line="135" lineend="140" name="==" signature="==(other" />
+        <scope doc="Returns a new ipaddr built by masking IP address with the&#xA;given prefixlen/netmask." ilk="function" line="144" lineend="146" name="mask" signature="mask(prefixlen)" />
+        <scope doc="Returns true if the given ipaddr is in the range." ilk="function" line="156" lineend="186" name="include?" signature="include?(other)" />
+        <scope doc="Returns the integer representation of the ipaddr." ilk="function" line="190" lineend="192" name="to_i" signature="to_i" />
+        <scope doc="Returns a string containing the IP address representation." ilk="function" line="195" lineend="217" name="to_s" signature="to_s" />
+        <scope doc="Returns a string containing the IP address representation in&#xA;canonical form." ilk="function" line="221" lineend="223" name="to_string" signature="to_string" />
+        <scope doc="Returns a network byte ordered string form of the IP&#xA;address." ilk="function" line="226" lineend="237" name="hton" signature="hton" />
+        <scope doc="Returns true if the ipaddr is an IPv4 address." ilk="function" line="240" lineend="242" name="ipv4?" signature="ipv4?" />
+        <scope doc="Returns true if the ipaddr is an IPv6 address." ilk="function" line="245" lineend="247" name="ipv6?" signature="ipv6?" />
+        <scope doc="Returns true if the ipaddr is an IPv4-mapped IPv6 address." ilk="function" line="250" lineend="252" name="ipv4_mapped?" signature="ipv4_mapped?" />
+        <scope doc="Returns true if the ipaddr is an IPv4-compatible IPv6&#xA;address." ilk="function" line="255" lineend="261" name="ipv4_compat?" signature="ipv4_compat?" />
+        <scope doc="Returns a new ipaddr built by converting the native IPv4&#xA;address into an IPv4-mapped IPv6 address." ilk="function" line="265" lineend="270" name="ipv4_mapped" signature="ipv4_mapped" />
+        <scope doc="Returns a new ipaddr built by converting the native IPv4&#xA;address into an IPv4-compatible IPv6 address." ilk="function" line="274" lineend="279" name="ipv4_compat" signature="ipv4_compat" />
+        <scope doc="Returns a new ipaddr built by converting the IPv6 address&#xA;into a native IPv4 address." ilk="function" line="284" lineend="289" name="native" signature="native" />
+        <scope doc="Returns a string for DNS reverse lookup." ilk="function" line="293" lineend="302" name="reverse" signature="reverse" />
+        <scope doc="Returns a string for DNS reverse lookup compatible with&#xA;RFC3172." ilk="function" line="305" lineend="310" name="ip6_arpa" signature="ip6_arpa" />
+        <scope doc="Returns a string for DNS reverse lookup compatible with&#xA;RFC1886." ilk="function" line="313" lineend="318" name="ip6_int" signature="ip6_int" />
+        <scope doc="Returns a string containing a human-readable representation&#xA;of the ipaddr." ilk="function" line="322" lineend="333" name="inspect" signature="inspect" />
+        <scope ilk="function" line="337" lineend="355" name="set" signature="set(addr, *family)" />
+        <scope ilk="function" line="357" lineend="391" name="mask!" signature="mask!(mask)" />
+        <scope attributes="__ctor__" doc="Creates a new ipaddr containing the given human readable&#xA;form of an IP address." ilk="function" line="403" lineend="444" name="initialize" signature="initialize(addr = &apos;::&apos;, family = Socket::AF_UNSPEC)" />
+        <scope ilk="function" line="446" lineend="456" name="in_addr" signature="in_addr(addr)" />
+        <scope ilk="function" line="458" lineend="484" name="in6_addr" signature="in6_addr(left)" />
+        <scope ilk="function" line="486" lineend="496" name="addr_mask" signature="addr_mask(addr)" />
+        <scope ilk="function" line="498" lineend="509" name="_reverse" signature="_reverse" />
+        <scope ilk="function" line="511" lineend="522" name="_to_string" signature="_to_string(addr)" />
+      </scope>
+    </scope>
+    

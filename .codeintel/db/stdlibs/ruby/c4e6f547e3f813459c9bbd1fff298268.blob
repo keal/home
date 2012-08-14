@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/winop">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/winop.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="16" name="Tk::BLT">
+        <scope ilk="namespace" line="10" lineend="14" name="Winop" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="18" lineend="107" name="Tk::BLT::">
+        <scope ilk="function" line="19" lineend="21" name="changes" signature="changes(win)" />
+        <scope ilk="function" line="23" lineend="25" name="colormap" signature="colormap(win)" />
+        <scope ilk="function" line="27" lineend="29" name="convolve" signature="convolve(src, dest, filter)" />
+        <scope ilk="function" line="31" lineend="33" name="image_convolve" signature="image_convolve(src, dest, filter)" />
+        <scope ilk="function" line="34" lineend="36" name="image_gradient" signature="image_gradient(photo, left, right, type)" />
+        <scope ilk="function" line="37" lineend="39" name="image_read_jpeg" signature="image_read_jpeg(file, photo)" />
+        <scope ilk="function" line="40" lineend="43" name="image_resample" signature="image_resample(src, dest, horiz_filter=None, vert_filter=None)" />
+        <scope ilk="function" line="44" lineend="46" name="image_rotate" signature="image_rotate(src, dest, angle)" />
+        <scope ilk="function" line="47" lineend="49" name="image_snap" signature="image_snap(win, photo, width=None, height=None)" />
+        <scope ilk="function" line="50" lineend="54" name="image_subsample" signature="image_subsample(src, dest, x, y, width, height, horiz_filter=None, vert_filter=None)" />
+        <scope ilk="function" line="56" lineend="58" name="quantize" signature="quantize(src, dest, colors)" />
+        <scope ilk="function" line="60" lineend="62" name="query" signature="query()" />
+        <scope ilk="function" line="64" lineend="66" name="read_jpeg" signature="read_jpeg(file, photo)" />
+        <scope ilk="function" line="68" lineend="71" name="resample" signature="resample(src, dest, horiz_filter=None, vert_filter=None)" />
+        <scope ilk="function" line="73" lineend="77" name="subsample" signature="subsample(src, dest, x, y, width, height, horiz_filter=None, vert_filter=None)" />
+        <scope ilk="function" line="79" lineend="81" name="raise" signature="raise(*wins)" />
+        <scope ilk="function" line="83" lineend="85" name="lower" signature="lower(*wins)" />
+        <scope ilk="function" line="87" lineend="89" name="map" signature="map(*wins)" />
+        <scope ilk="function" line="91" lineend="93" name="unmap" signature="unmap(*wins)" />
+        <scope ilk="function" line="95" lineend="97" name="move" signature="move(win, x, y)" />
+        <scope ilk="function" line="99" lineend="101" name="snap" signature="snap(win, photo)" />
+        <scope ilk="function" line="103" lineend="105" name="warpto" signature="warpto(win = None)" />
+      </scope>
+    </scope>
+    

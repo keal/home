@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tk/textimage">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/text" symbol="*" />
+      <scope classrefs="TkObject" doc="tk/textimage.rb - treat Tk text image object" ilk="class" line="7" lineend="82" name="TkTextImage">
+        <scope attributes="__ctor__" ilk="function" line="10" lineend="34" name="initialize" signature="initialize(parent, index, keys)" />
+        <scope ilk="function" line="36" lineend="38" name="id" signature="id" />
+        <scope ilk="function" line="39" lineend="41" name="mark" signature="mark" />
+        <scope ilk="function" line="43" lineend="45" name="[]" signature="[](slot" />
+        <scope ilk="function" line="46" lineend="49" name="[]=" signature="[]=(slot" />
+        <scope ilk="function" line="51" lineend="53" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="55" lineend="58" name="configure" signature="configure(slot, value=None)" />
+        <scope doc="def configure(slot, value) tk_call @t.path, &apos;image&apos;,&#xA;&apos;configure&apos;, @index, &quot;-#{slot}&quot;, value end" ilk="function" line="63" lineend="65" name="configinfo" signature="configinfo(slot = nil)" />
+        <scope ilk="function" line="67" lineend="69" name="current_configinfo" signature="current_configinfo(slot = nil)" />
+        <scope ilk="function" line="71" lineend="74" name="image" signature="image" />
+        <scope ilk="function" line="76" lineend="81" name="image=" signature="image=(value)" />
+        <import symbol="TkText::IndexModMethods" />
+      </scope>
+    </scope>
+    

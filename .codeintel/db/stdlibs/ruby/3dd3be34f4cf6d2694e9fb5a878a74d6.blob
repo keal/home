@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="irb/completion">
+      <import line="10" module="readline" symbol="*" />
+      <scope doc="irb/completor.rb - $Release Version: 0.9$ $Revision: 1.8.2.1&#xA;$ $Date: 2004/03/10 08:21:02 $ by Keiju&#xA;ISHITSUKA(keiju@ishitsuka.com)" ilk="namespace" line="12" lineend="182" name="IRB">
+        <scope ilk="namespace" line="13" lineend="181" name="InputCompletor">
+          <scope attributes="__classmethod__" doc="unknown(maybe String)" ilk="function" line="170" lineend="180" name="select_message" signature="self.select_message(receiver, message, candidates)" />
+        </scope>
+      </scope>
+    </scope>
+    

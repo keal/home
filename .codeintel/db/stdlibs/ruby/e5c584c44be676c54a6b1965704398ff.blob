@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="optparse/time">
+      <import line="1" module="optparse" symbol="*" />
+      <import line="2" module="time" symbol="*" />
+    </scope>
+    

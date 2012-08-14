@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="rexml/quickpath">
+      <import line="1" module="rexml/functions" symbol="*" />
+      <import line="2" module="rexml/xmltokens" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="266" name="REXML">
+        <scope classrefs="Object" ilk="class" line="5" lineend="265" name="QuickPath">
+          <scope attributes="__classmethod__" ilk="function" line="11" lineend="13" name="first" signature="QuickPath::first" />
+          <scope attributes="__classmethod__" ilk="function" line="15" lineend="18" name="each" signature="QuickPath::each" />
+          <scope attributes="__classmethod__" ilk="function" line="20" lineend="43" name="match" signature="QuickPath::match" />
+          <scope attributes="__classmethod__" doc="Given an array of nodes it filters the array based on the&#xA;path." ilk="function" line="48" lineend="104" name="filter" signature="QuickPath::filter" />
+          <scope attributes="__classmethod__" ilk="function" line="106" lineend="142" name="axe" signature="QuickPath::axe( elements, axe_name, rest )" />
+          <scope attributes="__classmethod__" doc="A predicate filters a node-set with respect to an axis to&#xA;produce a new node-set." ilk="function" line="160" lineend="204" name="predicate" signature="QuickPath::predicate( elements, path )" />
+          <scope attributes="__classmethod__" ilk="function" line="206" lineend="208" name="attribute" signature="QuickPath::attribute( name )" />
+          <scope attributes="__classmethod__" ilk="function" line="210" lineend="212" name="name" signature="QuickPath::name()" />
+          <scope attributes="__classmethod__" ilk="function" line="214" lineend="220" name="method_missing" signature="QuickPath::method_missing( id, *args )" />
+          <scope attributes="__classmethod__" ilk="function" line="222" lineend="238" name="function" signature="QuickPath::function( elements, fname, rest )" />
+          <scope attributes="__classmethod__" ilk="function" line="240" lineend="264" name="parse_args" signature="QuickPath::parse_args( element, string )" />
+          <import symbol="Functions" />
+          <import symbol="XMLTokens" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="bigdecimal/util">
+      <scope classrefs="Numeric" doc="BigDecimal utility library." ilk="class" line="20" lineend="24" name="Float">
+        <scope ilk="function" line="21" lineend="23" name="to_d" signature="to_d" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="26" lineend="30" name="String">
+        <scope ilk="function" line="27" lineend="29" name="to_d" signature="to_d" />
+      </scope>
+      <scope classrefs="Numeric" ilk="class" line="32" lineend="57" name="BigDecimal">
+        <scope doc="to &quot;nnnnnn.mmm&quot; form digit string Use BigDecimal#to_s(&quot;F&quot;)&#xA;instead." ilk="function" line="35" lineend="43" name="to_digits" signature="to_digits" />
+        <scope doc="Convert BigDecimal to Rational" ilk="function" line="46" lineend="56" name="to_r" signature="to_r" />
+      </scope>
+      <scope classrefs="Numeric" ilk="class" line="59" lineend="68" name="Rational">
+        <scope doc="Convert Rational to BigDecimal" ilk="function" line="61" lineend="67" name="to_d" signature="to_d(nFig=0)" />
+      </scope>
+    </scope>
+    

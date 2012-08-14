@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpauth/userdb">
+      <scope doc="httpauth/userdb.rb -- UserDB mix-in module." ilk="namespace" line="10" lineend="29" name="WEBrick">
+        <scope ilk="namespace" line="11" lineend="28" name="HTTPAuth">
+          <scope ilk="namespace" line="12" lineend="27" name="UserDB">
+            <scope doc="BasicAuth or DigestAuth" ilk="function" line="15" lineend="17" name="make_passwd" signature="make_passwd(realm, user, pass)" />
+            <scope ilk="function" line="19" lineend="21" name="set_passwd" signature="set_passwd(realm, user, pass)" />
+            <scope ilk="function" line="23" lineend="26" name="get_passwd" signature="get_passwd(realm, user, reload_db=false)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

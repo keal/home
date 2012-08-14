@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="rexml/dtd/elementdecl">
+      <import line="1" module="rexml/child" symbol="*" />
+      <scope ilk="namespace" line="2" lineend="17" name="REXML">
+        <scope ilk="namespace" line="3" lineend="16" name="DTD">
+          <scope classrefs="Child" ilk="class" line="4" lineend="15" name="ElementDecl">
+            <scope attributes="__ctor__" doc="\s*(((([&quot;&apos;]).*?\5)|[^\/&apos;&quot;&gt;]*)*?)(\/)?&gt;/um, true)" ilk="function" line="11" lineend="14" name="initialize" signature="initialize" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

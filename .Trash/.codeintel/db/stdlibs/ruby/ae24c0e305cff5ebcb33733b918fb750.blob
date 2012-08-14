@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="xsd/xmlparser">
+      <import line="9" module="xsd/xmlparser/parser" symbol="*" />
+      <scope doc="XSD4R - XML Instance parser library." ilk="namespace" line="12" name="XSD" />
+      <scope ilk="namespace" line="15" lineend="39" name="XMLParser">
+        <scope ilk="function" line="16" lineend="18" name="create_parser" signature="create_parser(host, opt)" />
+        <scope doc="$1 is necessary." ilk="function" line="24" lineend="37" name="filter_ns" signature="filter_ns(ns, attrs)" />
+      </scope>
+    </scope>
+    

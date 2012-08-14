@@ -1,0 +1,36 @@
+<scope ilk="blob" lang="Ruby" name="rexml/parsers/xpathparser">
+      <import line="1" module="rexml/namespace" symbol="*" />
+      <import line="2" module="rexml/xmltokens" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="692" name="REXML">
+        <scope ilk="namespace" line="5" lineend="691" name="Parsers">
+          <scope classrefs="Object" doc="You don&apos;t want to use this class. Really." ilk="class" line="10" lineend="690" name="XPathParser">
+            <scope ilk="function" line="14" lineend="17" name="namespaces=" signature="namespaces=( namespaces )" />
+            <scope ilk="function" line="19" lineend="25" name="parse" signature="parse" />
+            <scope ilk="function" line="27" lineend="31" name="predicate" signature="predicate" />
+            <scope ilk="function" line="33" lineend="89" name="abbreviate" signature="abbreviate( path )" />
+            <scope ilk="function" line="91" lineend="128" name="expand" signature="expand( path )" />
+            <scope ilk="function" line="130" lineend="178" name="predicate_to_string" signature="predicate_to_string( path, &amp;block )" />
+            <scope doc="LocationPath | RelativeLocationPath | &apos;/&apos;&#xA;RelativeLocationPath? | &apos;//&apos; RelativeLocationPath" ilk="function" line="185" lineend="200" name="LocationPath" signature="LocationPath" />
+            <scope doc="RelativeLocationPath | Step | (AXIS_NAME &apos;::&apos; | &apos;@&apos; | &apos;&apos;)&#xA;AxisSpecifier NodeTest Predicate" ilk="function" line="211" lineend="268" name="RelativeLocationPath" signature="RelativeLocationPath" />
+            <scope doc="Returns a 1-1 map of the nodeset The contents of the&#xA;resulting array are either: true/false, if a positive match&#xA;String, if a name match NodeTest" ilk="function" line="283" lineend="323" name="NodeTest" signature="NodeTest" />
+            <scope doc="Filters the supplied nodeset on the predicate(s)" ilk="function" line="326" lineend="344" name="Predicate" signature="Predicate" />
+            <scope doc="The following return arrays of true/false, a 1-1 mapping of&#xA;the supplied nodeset, except for axe(), which returns a&#xA;filtered nodeset | OrExpr S &apos;or&apos; S AndExpr | AndExpr" ilk="function" line="352" lineend="369" name="OrExpr" signature="OrExpr" />
+            <scope doc="| AndExpr S &apos;and&apos; S EqualityExpr | EqualityExpr" ilk="function" line="373" lineend="392" name="AndExpr" signature="AndExpr" />
+            <scope doc="| EqualityExpr (&apos;=&apos; | &apos;!=&apos;)  RelationalExpr | RelationalExpr" ilk="function" line="396" lineend="417" name="EqualityExpr" signature="EqualityExpr" />
+            <scope doc="| RelationalExpr (&apos;&lt;&apos; | &apos;&gt;&apos; | &apos;&lt;=&apos; | &apos;&gt;=&apos;) AdditiveExpr |&#xA;AdditiveExpr" ilk="function" line="421" lineend="444" name="RelationalExpr" signature="RelationalExpr" />
+            <scope doc="| AdditiveExpr (&apos;+&apos; | S &apos;-&apos;) MultiplicativeExpr |&#xA;MultiplicativeExpr" ilk="function" line="448" lineend="469" name="AdditiveExpr" signature="AdditiveExpr" />
+            <scope doc="| MultiplicativeExpr (&apos;*&apos; | S (&apos;div&apos; | &apos;mod&apos;) S) UnaryExpr |&#xA;UnaryExpr" ilk="function" line="473" lineend="496" name="MultiplicativeExpr" signature="MultiplicativeExpr" />
+            <scope doc="| &apos;-&apos; UnaryExpr | UnionExpr" ilk="function" line="500" lineend="516" name="UnaryExpr" signature="UnaryExpr" />
+            <scope doc="| UnionExpr &apos;|&apos; PathExpr | PathExpr" ilk="function" line="520" lineend="537" name="UnionExpr" signature="UnionExpr" />
+            <scope doc="| LocationPath | FilterExpr (&apos;/&apos; | &apos;//&apos;)&#xA;RelativeLocationPath" ilk="function" line="541" lineend="557" name="PathExpr" signature="PathExpr" />
+            <scope doc="| FilterExpr Predicate | PrimaryExpr" ilk="function" line="561" lineend="570" name="FilterExpr" signature="FilterExpr" />
+            <scope doc="| VARIABLE_REFERENCE | &apos;(&apos; expr &apos;)&apos; | LITERAL | NUMBER |&#xA;FunctionCall" ilk="function" line="580" lineend="613" name="PrimaryExpr" signature="PrimaryExpr" />
+            <scope doc="| FUNCTION_NAME &apos;(&apos; ( expr ( &apos;,&apos; expr )* )? &apos;)&apos;" ilk="function" line="616" lineend="626" name="FunctionCall" signature="FunctionCall" />
+            <scope doc="get_group( &apos;[foo]bar&apos; ) -&gt; [&apos;bar&apos;, &apos;[foo]&apos;]" ilk="function" line="629" lineend="645" name="get_group" signature="get_group" />
+            <scope ilk="function" line="647" lineend="689" name="parse_args" signature="parse_args( string )" />
+            <import symbol="XMLTokens" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

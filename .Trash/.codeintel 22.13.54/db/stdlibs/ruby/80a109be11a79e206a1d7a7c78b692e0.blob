@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/notebook">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/frame" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/notebook.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="12" lineend="13" name="NoteBook" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="148" name="Tk::BWidget::">
+        <scope classrefs="TkEvent::Event" ilk="class" line="24" lineend="30" name="Event_for_Tabs">
+          <scope attributes="__classmethod__" ilk="function" line="25" lineend="29" name="_get_extra_args_tbl[" signature="self._get_extra_args_tbl [" />
+        </scope>
+        <scope ilk="function" line="32" lineend="34" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="37" lineend="47" name="tagid" signature="tagid(id)" />
+        <scope doc="def tabbind(*args) _bind_for_event_class(Event_for_Tabs,&#xA;[path, &apos;bindtabs&apos;], *args) self end" ilk="function" line="53" lineend="63" name="tabbind" signature="tabbind(context, *args)" />
+        <scope doc="def tabbind_append(*args)&#xA;_bind_append_for_event_class(Event_for_Tabs, [path,&#xA;&apos;bindtabs&apos;], *args) self end" ilk="function" line="69" lineend="79" name="tabbind_append" signature="tabbind_append(context, *args)" />
+        <scope ilk="function" line="81" lineend="84" name="tabbind_remove" signature="tabbind_remove(*args)" />
+        <scope ilk="function" line="86" lineend="88" name="tabbindinfo" signature="tabbindinfo(*args)" />
+        <scope ilk="function" line="90" lineend="94" name="add" signature="add(page, &amp;b)" />
+        <scope ilk="function" line="96" lineend="99" name="compute_size" signature="compute_size" />
+        <scope ilk="function" line="101" lineend="104" name="delete" signature="delete(page, destroyframe=None)" />
+        <scope ilk="function" line="106" lineend="110" name="get_frame" signature="get_frame(page, &amp;b)" />
+        <scope ilk="function" line="112" lineend="114" name="index" signature="index(page)" />
+        <scope ilk="function" line="116" lineend="120" name="insert" signature="insert(index, page, keys={}, &amp;b)" />
+        <scope ilk="function" line="122" lineend="125" name="move" signature="move(page, index)" />
+        <scope ilk="function" line="127" lineend="129" name="get_page" signature="get_page(page)" />
+        <scope ilk="function" line="131" lineend="133" name="pages" signature="pages(first=None, last=None)" />
+        <scope ilk="function" line="135" lineend="142" name="raise" signature="raise(page=nil)" />
+        <scope ilk="function" line="144" lineend="147" name="see" signature="see(page)" />
+        <import symbol="TkItemConfigMethod" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,70 @@
+<scope ilk="blob" lang="Ruby" name="rinda/tuplespace">
+      <import line="1" module="monitor" symbol="*" />
+      <import line="2" module="thread" symbol="*" />
+      <import line="3" module="drb/drb" symbol="*" />
+      <import line="4" module="rinda/rinda" symbol="*" />
+      <scope ilk="namespace" line="6" lineend="588" name="Rinda">
+        <scope classrefs="Object" doc="A TupleEntry is a Tuple (i.e." ilk="class" line="12" lineend="156" name="TupleEntry">
+          <scope ilk="function" line="16" lineend="16" name="expires" />
+          <scope ilk="function" line="16" lineend="16" name="expires=" />
+          <scope attributes="__ctor__" doc="Creates a TupleEntry based on +ary+ with an optional renewer&#xA;or expiry time +sec+." ilk="function" line="25" lineend="31" name="initialize" signature="initialize(ary, sec=nil)" />
+          <scope doc="Marks this TupleEntry as canceled." ilk="function" line="36" lineend="38" name="cancel" signature="cancel" />
+          <scope doc="A TupleEntry is dead when it is canceled or expired." ilk="function" line="43" lineend="45" name="alive?" signature="alive?" />
+          <scope doc="Return the object which makes up the tuple itself: the Array&#xA;or Hash." ilk="function" line="51" name="value" signature="value" />
+          <scope doc="Returns the canceled status." ilk="function" line="56" name="canceled?" signature="canceled?" />
+          <scope doc="Has this tuple expired? (true/false)." ilk="function" line="64" lineend="71" name="expired?" signature="expired?" />
+          <scope doc="Reset the expiry time according to +sec_or_renewer+." ilk="function" line="83" lineend="86" name="renew" signature="renew(sec_or_renewer)" />
+          <scope doc="Returns an expiry Time based on +sec+ which can be one of:&#xA;Numeric:: +sec+ seconds into the future +true+::  the expiry&#xA;time is the start of 1970 (i.e." ilk="function" line="95" lineend="104" name="make_expires" signature="make_expires(sec=nil)" />
+          <scope doc="Retrieves +key+ from the tuple." ilk="function" line="109" lineend="111" name="[]" signature="[](key" />
+          <scope doc="Fetches +key+ from the tuple." ilk="function" line="116" lineend="118" name="fetch" signature="fetch(key)" />
+          <scope doc="The size of the tuple." ilk="function" line="123" lineend="125" name="size" signature="size" />
+          <scope doc="Creates a Rinda::Tuple for +ary+." ilk="function" line="130" lineend="132" name="make_tuple" signature="make_tuple(ary)" />
+          <scope doc="Returns a valid argument to make_expires and the renewer or&#xA;nil." ilk="function" line="143" lineend="154" name="get_renewer" signature="get_renewer(it)" />
+          <import symbol="DRbUndumped" />
+        </scope>
+        <scope classrefs="TupleEntry" doc="A TemplateEntry is a Template together with expiry and&#xA;cancellation data." ilk="class" line="161" lineend="176" name="TemplateEntry">
+          <scope doc="Matches this TemplateEntry against +tuple+." ilk="function" line="166" lineend="168" name="match" signature="match(tuple)" />
+          <scope ilk="function" line="172" lineend="174" name="make_tuple" signature="make_tuple(ary)" />
+        </scope>
+        <scope classrefs="TemplateEntry" doc="&lt;i&gt;Documentation?&lt;/i&gt;" ilk="class" line="181" lineend="212" name="WaitTemplateEntry">
+          <scope ilk="function" line="183" lineend="183" name="found" />
+          <scope attributes="__ctor__" ilk="function" line="185" lineend="190" name="initialize" signature="initialize(place, ary, expires=nil)" />
+          <scope ilk="function" line="192" lineend="195" name="cancel" signature="cancel" />
+          <scope ilk="function" line="197" lineend="199" name="wait" signature="wait" />
+          <scope ilk="function" line="201" lineend="204" name="read" signature="read(tuple)" />
+          <scope ilk="function" line="206" lineend="210" name="signal" signature="signal" />
+        </scope>
+        <scope classrefs="TemplateEntry" doc="A NotifyTemplateEntry is returned by TupleSpace#notify and&#xA;is notified of TupleSpace changes." ilk="class" line="238" lineend="282" name="NotifyTemplateEntry">
+          <scope attributes="__ctor__" doc="Creates a new NotifyTemplateEntry that watches +place+ for&#xA;+event+s that match +tuple+." ilk="function" line="244" lineend="249" name="initialize" signature="initialize(place, event, tuple, expires=nil)" />
+          <scope doc="Called by TupleSpace to notify this NotifyTemplateEntry of a&#xA;new event." ilk="function" line="254" lineend="256" name="notify" signature="notify(ev)" />
+          <scope doc="Retrieves a notification." ilk="function" line="262" lineend="267" name="pop" signature="pop" />
+          <scope doc="Yields event/tuple pairs until this NotifyTemplateEntry&#xA;expires." ilk="function" line="272" lineend="280" name="each" signature="each" />
+        </scope>
+        <scope classrefs="Object" doc="TupleBag is an unordered collection of tuples." ilk="class" line="288" lineend="371" name="TupleBag">
+          <scope attributes="__ctor__" ilk="function" line="290" lineend="292" name="initialize" signature="initialize" />
+          <scope doc="+true+ if the TupleBag to see if it has any expired entries." ilk="function" line="297" lineend="304" name="has_expires?" signature="has_expires?" />
+          <scope doc="Add +ary+ to the TupleBag." ilk="function" line="309" lineend="313" name="push" signature="push(ary)" />
+          <scope doc="Removes +ary+ from the TupleBag." ilk="function" line="318" lineend="321" name="delete" signature="delete(ary)" />
+          <scope doc="Finds all live tuples that match +template+." ilk="function" line="326" lineend="330" name="find_all" signature="find_all(template)" />
+          <scope doc="Finds a live tuple that matches +template+." ilk="function" line="335" lineend="339" name="find" signature="find(template)" />
+          <scope doc="Finds all tuples in the TupleBag which when treated as&#xA;templates, match +tuple+ and are alive." ilk="function" line="345" lineend="349" name="find_all_template" signature="find_all_template(tuple)" />
+          <scope doc="Delete tuples which dead tuples from the TupleBag, returning&#xA;the deleted tuples." ilk="function" line="355" lineend="369" name="delete_unless_alive" signature="delete_unless_alive" />
+        </scope>
+        <scope classrefs="Object" doc="The Tuplespace manages access to the tuples it contains,&#xA;ensuring mutual exclusion requirements are met." ilk="class" line="380" lineend="586" name="TupleSpace">
+          <scope attributes="__ctor__" doc="Creates a new TupleSpace." ilk="function" line="392" lineend="400" name="initialize" signature="initialize(period=60)" />
+          <scope doc="Adds +tuple+" ilk="function" line="405" lineend="427" name="write" signature="write(tuple, sec=nil)" />
+          <scope doc="Removes +tuple+" ilk="function" line="432" lineend="434" name="take" signature="take(tuple, sec=nil, &amp;block)" />
+          <scope doc="Moves +tuple+ to +port+." ilk="function" line="439" lineend="471" name="move" signature="move(port, tuple, sec=nil)" />
+          <scope doc="Reads +tuple+, but does not remove it." ilk="function" line="476" lineend="495" name="read" signature="read(tuple, sec=nil)" />
+          <scope doc="Returns all tuples matching +tuple+. Does not remove the&#xA;found tuples." ilk="function" line="500" lineend="508" name="read_all" signature="read_all(tuple)" />
+          <scope doc="Registers for notifications of +event+. Returns a&#xA;NotifyTemplateEntry." ilk="function" line="522" lineend="528" name="notify" signature="notify(event, tuple, sec=nil)" />
+          <scope doc="Removes dead tuples." ilk="function" line="535" lineend="550" name="keep_clean" signature="keep_clean" />
+          <scope doc="Notifies all registered listeners for +event+ of a status&#xA;change of +tuple+." ilk="function" line="556" lineend="561" name="notify_event" signature="notify_event(event, tuple)" />
+          <scope doc="Creates a thread that scans the tuplespace for expired&#xA;tuples." ilk="function" line="566" lineend="574" name="start_keeper" signature="start_keeper" />
+          <scope doc="Checks the tuplespace to see if it needs cleaning." ilk="function" line="579" lineend="584" name="need_keeper?" signature="need_keeper?" />
+          <import symbol="DRbUndumped" />
+          <import symbol="MonitorMixin" />
+        </scope>
+      </scope>
+    </scope>
+    

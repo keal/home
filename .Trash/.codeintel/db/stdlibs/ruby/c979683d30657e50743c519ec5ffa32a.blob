@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="optparse/uri">
+      <import line="3" module="optparse" symbol="*" />
+      <import line="4" module="uri" symbol="*" />
+    </scope>
+    

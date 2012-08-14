@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/progressdlg">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/variable" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="9" module="tkextlib/bwidget/progressbar" symbol="*" />
+      <import line="10" module="tkextlib/bwidget/messagedlg" symbol="*" />
+      <scope doc="tkextlib/bwidget/progressdlg.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="12" lineend="17" name="Tk">
+        <scope ilk="namespace" line="13" lineend="16" name="BWidget">
+          <scope classrefs="Tk::BWidget::" ilk="class" line="14" lineend="15" name="ProgressDlg" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="19" lineend="54" name="Tk::BWidget::">
+        <scope ilk="function" line="24" lineend="29" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="31" lineend="33" name="textvariable" signature="textvariable" />
+        <scope ilk="function" line="35" lineend="37" name="text" signature="text" />
+        <scope ilk="function" line="39" lineend="41" name="text=" signature="text= (txt)" />
+        <scope ilk="function" line="43" lineend="45" name="variable" signature="variable" />
+        <scope ilk="function" line="47" lineend="49" name="value" signature="value" />
+        <scope ilk="function" line="51" lineend="53" name="value=" signature="value= (val)" />
+      </scope>
+    </scope>
+    

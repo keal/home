@@ -1,0 +1,149 @@
+<scope ilk="blob" lang="Ruby" name="tk/variable">
+      <import line="4" module="tk" symbol="*" />
+      <scope classrefs="Object" doc="tk/variable.rb : treat Tk variable object" ilk="class" line="6" lineend="444" name="TkVariable">
+        <scope attributes="__classmethod__" doc="def TkVariable.callback(args)" ilk="function" line="44" lineend="89" name="callback" signature="TkVariable.callback(id, name1, name2, op)" />
+        <scope attributes="__classmethod__" ilk="function" line="91" lineend="97" name="new_hash" signature="self.new_hash(val = {})" />
+        <scope doc="default_value is available only when the variable is an&#xA;assoc array." ilk="function" line="102" lineend="111" name="default_value" signature="default_value(val=nil, &amp;b)" />
+        <scope ilk="function" line="112" lineend="116" name="set_default_value" signature="set_default_value(val)" />
+        <scope ilk="function" line="118" lineend="122" name="default_proc" signature="default_proc(cmd = Proc.new)" />
+        <scope ilk="function" line="124" lineend="128" name="undef_default" signature="undef_default" />
+        <scope ilk="function" line="130" lineend="132" name="default_value_type" signature="default_value_type" />
+        <scope ilk="function" line="133" lineend="140" name="default_element_value_type" signature="default_element_value_type(idxs)" />
+        <scope ilk="function" line="142" lineend="202" name="_set_default_value_type_core" signature="_set_default_value_type_core(type, idxs)" />
+        <scope ilk="function" line="205" lineend="208" name="set_default_value_type" signature="set_default_value_type(type)" />
+        <scope ilk="function" line="211" lineend="214" name="set_default_element_value_type" signature="set_default_element_value_type(idxs, type)" />
+        <scope ilk="function" line="216" lineend="259" name="_to_default_type" signature="_to_default_type(val, idxs = nil)" />
+        <scope ilk="function" line="262" lineend="264" name="_to_default_element_type" signature="_to_default_element_type(idxs, val)" />
+        <scope attributes="__ctor__" ilk="function" line="267" lineend="341" name="initialize" signature="initialize(val=&quot;&quot;, type=nil)" />
+        <scope ilk="function" line="343" lineend="361" name="wait" signature="wait(on_thread = false, check_root = false)" />
+        <scope ilk="function" line="362" lineend="364" name="eventloop_wait" signature="eventloop_wait(check_root = false)" />
+        <scope ilk="function" line="365" lineend="367" name="thread_wait" signature="thread_wait(check_root = false)" />
+        <scope ilk="function" line="368" lineend="370" name="tkwait" signature="tkwait(on_thread = true)" />
+        <scope ilk="function" line="371" lineend="373" name="eventloop_tkwait" signature="eventloop_tkwait" />
+        <scope ilk="function" line="374" lineend="376" name="thread_tkwait" signature="thread_tkwait" />
+        <scope ilk="function" line="378" lineend="380" name="id" signature="id" />
+        <scope ilk="function" line="382" lineend="385" name="ref" signature="ref(*idxs)" />
+        <scope ilk="function" line="387" lineend="392" name="is_hash?" signature="is_hash?" />
+        <scope ilk="function" line="394" lineend="396" name="is_scalar?" signature="is_scalar?" />
+        <scope ilk="function" line="398" lineend="408" name="exist?" signature="exist?(*elems)" />
+        <scope ilk="function" line="410" lineend="419" name="keys" signature="keys" />
+        <scope ilk="function" line="421" lineend="424" name="size" signature="size" />
+        <scope ilk="function" line="426" lineend="432" name="clear" signature="clear" />
+        <scope ilk="function" line="434" lineend="440" name="update" signature="update(hash)" />
+        <import symbol="Tk" />
+        <import symbol="Comparable" />
+      </scope>
+      <scope doc="use Tcl function version of set tkvariable" ilk="function" line="451" lineend="461" name="_value" signature="_value" />
+      <scope ilk="function" line="463" lineend="492" name="value=" signature="value=(val)" />
+      <scope ilk="function" line="494" lineend="511" name="_element_value" signature="_element_value(*idxs)" />
+      <scope ilk="function" line="513" lineend="523" name="[]=" signature="[]=(*args" />
+      <scope ilk="function" line="525" lineend="532" name="unset" signature="unset(*elems)" />
+      <scope doc="use Ruby script version of set tkvariable (traditional&#xA;methods)" ilk="function" line="540" lineend="556" name="_value" signature="_value" />
+      <scope ilk="function" line="558" lineend="607" name="value=" signature="value=(val)" />
+      <scope ilk="function" line="609" lineend="628" name="_element_value" signature="_element_value(*idxs)" />
+      <scope ilk="function" line="630" lineend="643" name="[]=" signature="[]=(*args" />
+      <scope ilk="function" line="645" lineend="658" name="unset" signature="unset(*elems)" />
+      <scope ilk="function" line="665" lineend="667" name="value" signature="value" />
+      <scope ilk="function" line="669" lineend="671" name="[]" signature="[](*idxs" />
+      <scope ilk="function" line="673" lineend="676" name="set_value" signature="set_value(val)" />
+      <scope ilk="function" line="678" lineend="685" name="set_element_value" signature="set_element_value(idxs, val)" />
+      <scope ilk="function" line="687" lineend="691" name="set_value_type" signature="set_value_type(val)" />
+      <scope ilk="function" line="695" lineend="703" name="set_element_value_type" signature="set_element_value_type(idxs, val)" />
+      <scope ilk="function" line="705" lineend="707" name="numeric" signature="numeric" />
+      <scope ilk="function" line="708" lineend="710" name="numeric_element" signature="numeric_element(*idxs)" />
+      <scope ilk="function" line="711" lineend="721" name="set_numeric" signature="set_numeric(val)" />
+      <scope ilk="function" line="723" lineend="738" name="set_numeric_element" signature="set_numeric_element(idxs, val)" />
+      <scope ilk="function" line="739" lineend="743" name="set_numeric_type" signature="set_numeric_type(val)" />
+      <scope ilk="function" line="745" lineend="748" name="set_numeric_element_type" signature="set_numeric_element_type(idxs, val)" />
+      <scope ilk="function" line="750" lineend="761" name="bool" signature="bool" />
+      <scope ilk="function" line="762" lineend="764" name="bool_element" signature="bool_element(*idxs)" />
+      <scope ilk="function" line="765" lineend="777" name="set_bool" signature="set_bool(val)" />
+      <scope ilk="function" line="779" lineend="796" name="set_bool_element" signature="set_bool_element(idxs, val)" />
+      <scope ilk="function" line="797" lineend="801" name="set_bool_type" signature="set_bool_type(val)" />
+      <scope ilk="function" line="803" lineend="806" name="set_bool_element_type" signature="set_bool_element_type(idxs, val)" />
+      <scope ilk="function" line="808" lineend="811" name="variable" signature="variable" />
+      <scope ilk="function" line="812" lineend="814" name="variable_element" signature="variable_element(*idxs)" />
+      <scope ilk="function" line="815" lineend="819" name="set_variable" signature="set_variable(var)" />
+      <scope ilk="function" line="821" lineend="829" name="set_variable_element" signature="set_variable_element(idxs, var)" />
+      <scope ilk="function" line="830" lineend="835" name="set_variable_type" signature="set_variable_type(var)" />
+      <scope ilk="function" line="837" lineend="840" name="set_variable_element_type" signature="set_variable_element_type(idxs, var)" />
+      <scope ilk="function" line="842" lineend="844" name="window" signature="window" />
+      <scope ilk="function" line="845" lineend="847" name="window_element" signature="window_element(*idxs)" />
+      <scope ilk="function" line="848" lineend="852" name="set_window" signature="set_window(win)" />
+      <scope ilk="function" line="854" lineend="862" name="set_window_element" signature="set_window_element(idxs, win)" />
+      <scope ilk="function" line="863" lineend="867" name="set_window_type" signature="set_window_type(win)" />
+      <scope ilk="function" line="869" lineend="872" name="set_window_element_type" signature="set_window_element_type(idxs, win)" />
+      <scope ilk="function" line="874" lineend="876" name="procedure" signature="procedure" />
+      <scope ilk="function" line="877" lineend="879" name="procedure_element" signature="procedure_element(*idxs)" />
+      <scope ilk="function" line="880" lineend="883" name="set_procedure" signature="set_procedure(cmd)" />
+      <scope ilk="function" line="885" lineend="893" name="set_procedure_element" signature="set_procedure_element(idxs, cmd)" />
+      <scope ilk="function" line="894" lineend="898" name="set_procedure_type" signature="set_procedure_type(cmd)" />
+      <scope ilk="function" line="900" lineend="903" name="set_procedure_element_type" signature="set_procedure_element_type(idxs, cmd)" />
+      <scope ilk="function" line="905" lineend="907" name="to_i" signature="to_i" />
+      <scope ilk="function" line="908" lineend="910" name="element_to_i" signature="element_to_i(*idxs)" />
+      <scope ilk="function" line="912" lineend="914" name="to_f" signature="to_f" />
+      <scope ilk="function" line="915" lineend="917" name="element_to_f" signature="element_to_f(*idxs)" />
+      <scope ilk="function" line="919" lineend="922" name="to_s" signature="to_s" />
+      <scope ilk="function" line="924" lineend="926" name="element_to_s" signature="element_to_s(*idxs)" />
+      <scope ilk="function" line="927" lineend="929" name="string_element" signature="string_element(*idxs)" />
+      <scope ilk="function" line="930" lineend="934" name="set_string" signature="set_string(val)" />
+      <scope ilk="function" line="936" lineend="944" name="set_string_element" signature="set_string_element(idxs, val)" />
+      <scope ilk="function" line="945" lineend="949" name="set_string_type" signature="set_string_type(val)" />
+      <scope ilk="function" line="951" lineend="954" name="set_string_element_type" signature="set_string_element_type(idxs, val)" />
+      <scope ilk="function" line="956" lineend="958" name="to_sym" signature="to_sym" />
+      <scope ilk="function" line="960" lineend="962" name="element_to_sym" signature="element_to_sym(*idxs)" />
+      <scope ilk="function" line="964" lineend="968" name="set_symbol" signature="set_symbol(val)" />
+      <scope ilk="function" line="970" lineend="978" name="set_symbol_element" signature="set_symbol_element(idxs, val)" />
+      <scope ilk="function" line="979" lineend="983" name="set_symbol_type" signature="set_symbol_type(val)" />
+      <scope ilk="function" line="985" lineend="988" name="set_symbol_element_type" signature="set_symbol_element_type(idxs, val)" />
+      <scope ilk="function" line="990" lineend="993" name="list" signature="list" />
+      <scope ilk="function" line="995" lineend="997" name="list_element" signature="list_element(*idxs)" />
+      <scope ilk="function" line="1000" lineend="1002" name="numlist" signature="numlist" />
+      <scope ilk="function" line="1003" lineend="1005" name="numlist_element" signature="numlist_element(*idxs)" />
+      <scope ilk="function" line="1007" lineend="1017" name="set_list" signature="set_list(val)" />
+      <scope ilk="function" line="1023" lineend="1038" name="set_list_element" signature="set_list_element(idxs, val)" />
+      <scope ilk="function" line="1041" lineend="1045" name="set_list_type" signature="set_list_type(val)" />
+      <scope ilk="function" line="1047" lineend="1050" name="set_list_element_type" signature="set_list_element_type(idxs, val)" />
+      <scope ilk="function" line="1051" lineend="1055" name="set_numlist_type" signature="set_numlist_type(val)" />
+      <scope ilk="function" line="1057" lineend="1060" name="set_numlist_element_type" signature="set_numlist_element_type(idxs, val)" />
+      <scope ilk="function" line="1062" lineend="1065" name="lappend" signature="lappend(*elems)" />
+      <scope ilk="function" line="1066" lineend="1072" name="element_lappend" signature="element_lappend(idxs, *elems)" />
+      <scope ilk="function" line="1074" lineend="1076" name="lindex" signature="lindex(idx)" />
+      <scope ilk="function" line="1078" lineend="1085" name="element_lindex" signature="element_lindex(elem_idxs, idx)" />
+      <scope ilk="function" line="1088" lineend="1090" name="lget_i" signature="lget_i(idx)" />
+      <scope ilk="function" line="1091" lineend="1093" name="element_lget_i" signature="element_lget_i(elem_idxs, idx)" />
+      <scope ilk="function" line="1095" lineend="1097" name="lget_f" signature="lget_f(idx)" />
+      <scope ilk="function" line="1098" lineend="1100" name="element_lget_f" signature="element_lget_f(elem_idxs, idx)" />
+      <scope ilk="function" line="1102" lineend="1105" name="lset" signature="lset(idx, val)" />
+      <scope ilk="function" line="1106" lineend="1112" name="element_lset" signature="element_lset(elem_idxs, idx, val)" />
+      <scope ilk="function" line="1114" lineend="1117" name="inspect" signature="inspect" />
+      <scope ilk="function" line="1119" lineend="1136" name="coerce" signature="coerce(other)" />
+      <scope ilk="function" line="1138" lineend="1144" name="&amp;" signature="&amp;(other" />
+      <scope ilk="function" line="1145" lineend="1151" name="|" signature="|(other" />
+      <scope ilk="function" line="1152" lineend="1165" name="+" signature="+(other" />
+      <scope ilk="function" line="1166" lineend="1172" name="-" signature="-(other" />
+      <scope ilk="function" line="1173" lineend="1180" name="*" signature="*(other" />
+      <scope ilk="function" line="1181" lineend="1183" name="/" signature="/(other" />
+      <scope ilk="function" line="1184" lineend="1191" name="%" signature="%(other" />
+      <scope ilk="function" line="1192" lineend="1194" name="**" signature="**(other" />
+      <scope ilk="function" line="1195" lineend="1197" name="=~" signature="=~(other" />
+      <scope ilk="function" line="1199" lineend="1221" name="==" signature="==(other" />
+      <scope ilk="function" line="1223" lineend="1225" name="zero?" signature="zero?" />
+      <scope ilk="function" line="1226" lineend="1228" name="nonzero?" signature="nonzero?" />
+      <scope ilk="function" line="1230" lineend="1249" name="&lt;=&gt;" signature="&lt;=&gt;(other" />
+      <scope ilk="function" line="1251" lineend="1253" name="to_eval" signature="to_eval" />
+      <scope ilk="function" line="1255" lineend="1264" name="trace_callback" signature="trace_callback(elem, op)" />
+      <scope ilk="function" line="1266" lineend="1317" name="trace" signature="trace(opts, cmd = Proc.new)" />
+      <scope ilk="function" line="1319" lineend="1375" name="trace_element" signature="trace_element(elem, opts, cmd = Proc.new)" />
+      <scope ilk="function" line="1377" lineend="1380" name="trace_vinfo" signature="trace_vinfo" />
+      <scope ilk="function" line="1382" lineend="1390" name="_trace_vinfo_for_element" signature="_trace_vinfo_for_element(elem)" />
+      <scope ilk="function" line="1392" lineend="1454" name="trace_vdelete" signature="trace_vdelete(opts,cmd)" />
+      <scope ilk="function" line="1456" lineend="1525" name="trace_vdelete_for_element" signature="trace_vdelete_for_element(elem,opts,cmd)" />
+      <scope classrefs="TkVariable" ilk="class" line="1528" lineend="1621" name="TkVarAccess">
+        <scope attributes="__classmethod__" ilk="function" line="1529" lineend="1541" name="new" signature="self.new(name, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="1543" lineend="1566" name="new_hash" signature="self.new_hash(name, *args)" />
+        <scope attributes="__ctor__" ilk="function" line="1568" lineend="1620" name="initialize" signature="initialize(varname, val=nil)" />
+      </scope>
+      <scope ilk="namespace" line="1623" lineend="1651" name="Tk" />
+    </scope>
+    

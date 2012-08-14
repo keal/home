@@ -1,0 +1,33 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/complexType">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="wsdl/xmlSchema/content" symbol="*" />
+      <import line="11" module="wsdl/xmlSchema/element" symbol="*" />
+      <import line="12" module="xsd/namedelements" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema complexType definition for WSDL." ilk="namespace" line="15" name="WSDL" />
+      <scope ilk="namespace" line="16" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="19" lineend="135" name="ComplexType">
+        <scope ilk="function" line="20" lineend="20" name="name" />
+        <scope ilk="function" line="20" lineend="20" name="name=" />
+        <scope ilk="function" line="21" lineend="21" name="complexcontent" />
+        <scope ilk="function" line="21" lineend="21" name="complexcontent=" />
+        <scope ilk="function" line="22" lineend="22" name="simplecontent" />
+        <scope ilk="function" line="22" lineend="22" name="simplecontent=" />
+        <scope ilk="function" line="23" lineend="23" name="content" />
+        <scope ilk="function" line="24" lineend="24" name="final" />
+        <scope ilk="function" line="24" lineend="24" name="final=" />
+        <scope ilk="function" line="25" lineend="25" name="mixed" />
+        <scope ilk="function" line="25" lineend="25" name="mixed=" />
+        <scope ilk="function" line="26" lineend="26" name="attributes" />
+        <scope attributes="__ctor__" ilk="function" line="28" lineend="37" name="initialize" signature="initialize(name = nil)" />
+        <scope ilk="function" line="39" lineend="43" name="targetnamespace" signature="targetnamespace" />
+        <scope ilk="function" line="45" lineend="47" name="elementformdefault" signature="elementformdefault" />
+        <scope ilk="function" line="50" lineend="60" name="each_element" signature="each_element" />
+        <scope ilk="function" line="62" lineend="73" name="find_element" signature="find_element(name)" />
+        <scope ilk="function" line="75" lineend="86" name="find_element_by_name" signature="find_element_by_name(name)" />
+        <scope ilk="function" line="88" lineend="93" name="sequence_elements=" signature="sequence_elements=(elements)" />
+        <scope ilk="function" line="95" lineend="100" name="all_elements=" signature="all_elements=(elements)" />
+        <scope ilk="function" line="102" lineend="121" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="123" lineend="134" name="parse_attr" signature="parse_attr(attr, value)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpauth/basicauth">
+      <import line="10" module="webrick/config" symbol="*" />
+      <import line="11" module="webrick/httpstatus" symbol="*" />
+      <import line="12" module="webrick/httpauth/authenticator" symbol="*" />
+      <scope doc="httpauth/basicauth.rb -- HTTP basic access authentication" ilk="namespace" line="14" lineend="65" name="WEBrick">
+        <scope ilk="namespace" line="15" lineend="64" name="HTTPAuth">
+          <scope classrefs="Object" ilk="class" line="16" lineend="59" name="BasicAuth">
+            <scope attributes="__classmethod__" ilk="function" line="21" lineend="24" name="make_passwd" signature="self.make_passwd(realm, user, pass)" />
+            <scope ilk="function" line="26" lineend="26" name="realm" />
+            <scope ilk="function" line="26" lineend="26" name="userdb" />
+            <scope ilk="function" line="26" lineend="26" name="logger" />
+            <scope attributes="__ctor__" ilk="function" line="28" lineend="31" name="initialize" signature="initialize(config, default=Config::BasicAuth)" />
+            <scope ilk="function" line="33" lineend="53" name="authenticate" signature="authenticate(req, res)" />
+            <scope ilk="function" line="55" lineend="58" name="challenge" signature="challenge(req, res)" />
+            <import symbol="Authenticator" />
+          </scope>
+          <scope classrefs="BasicAuth" ilk="class" line="61" lineend="63" name="ProxyBasicAuth">
+            <import symbol="ProxyAuthenticator" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

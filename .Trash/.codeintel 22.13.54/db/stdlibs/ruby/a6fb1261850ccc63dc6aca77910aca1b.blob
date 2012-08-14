@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="tk/scrollbar">
+      <import line="4" module="tk" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/scrollbar.rb : treat scrollbar widget" ilk="class" line="6" lineend="106" name="TkScrollbar">
+        <scope ilk="function" line="11" lineend="29" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="32" lineend="39" name="propagate_set" signature="propagate_set(src_win, first, last)" />
+        <scope ilk="function" line="41" lineend="58" name="assign" signature="assign(*wins)" />
+        <scope ilk="function" line="60" lineend="66" name="assigned_list" signature="assigned_list" />
+        <scope ilk="function" line="68" lineend="72" name="configure" signature="configure(*args)" />
+        <scope doc="def delta(deltax=None, deltay=None)" ilk="function" line="75" lineend="77" name="delta" signature="delta(deltax, deltay)" />
+        <scope doc="def fraction(x=None, y=None)" ilk="function" line="80" lineend="82" name="fraction" signature="fraction(x, y)" />
+        <scope ilk="function" line="84" lineend="86" name="identify" signature="identify(x, y)" />
+        <scope ilk="function" line="88" lineend="96" name="get" signature="get" />
+        <scope ilk="function" line="98" lineend="101" name="set" signature="set(first, last)" />
+        <scope ilk="function" line="103" lineend="105" name="activate" signature="activate(element=None)" />
+      </scope>
+      <scope classrefs="TkScrollbar" ilk="class" line="108" lineend="115" name="TkXScrollbar">
+        <scope ilk="function" line="109" lineend="113" name="create_self" signature="create_self(keys)" />
+      </scope>
+      <scope classrefs="TkScrollbar" ilk="class" line="117" lineend="124" name="TkYScrollbar">
+        <scope ilk="function" line="118" lineend="122" name="create_self" signature="create_self(keys)" />
+      </scope>
+    </scope>
+    

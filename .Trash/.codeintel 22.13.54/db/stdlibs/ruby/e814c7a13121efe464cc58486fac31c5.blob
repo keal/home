@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="irb/ext/tracer">
+      <import line="12" module="tracer" symbol="*" />
+      <scope doc="irb/lib/tracer.rb - $Release Version: 0.9.5$ $Revision:&#xA;1.1.2.1 $ $Date: 2005/04/19 19:24:58 $ by Keiju&#xA;ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="14" lineend="60" name="IRB">
+        <scope attributes="__classmethod__" doc="initialize tracing function" ilk="function" line="17" lineend="24" name="initialize_tracer" signature="IRB.initialize_tracer" />
+        <scope classrefs="Object" ilk="class" line="26" lineend="41" name="Context">
+          <scope ilk="function" line="27" lineend="27" name="use_tracer" />
+          <scope ilk="function" line="30" lineend="40" name="use_tracer=" signature="use_tracer=(opt)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="43" lineend="57" name="WorkSpace">
+          <scope ilk="function" line="45" lineend="56" name="evaluate" signature="evaluate(context, statements, file = nil, line = nil)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="win32ole_type">
+      <scope classrefs="Object" doc="WIN32OLE_TYPE objects represent OLE type libarary&#xA;information." ilk="class" name="WIN32OLE_TYPE">
+        <scope attributes="__classmethod__ __ctor__" doc="Returns a new WIN32OLE_TYPE object. The first argument&#xA;`typelib&apos; specifies OLE type library name." ilk="function" name="new" signature="WIN32OLE_TYPE.new(typelib, ole_class) -&gt; WIN32OLE_TYPE object" />
+        <scope attributes="__classmethod__" doc="Returns array of WIN32OLE_TYPE objects defined by the&#xA;`typelib&apos; type library." ilk="function" name="ole_classes" signature="WIN32OLE_TYPE.ole_classes(typelib)" />
+        <scope attributes="__classmethod__" doc="Returns array of ProgID." ilk="function" name="progids" signature="WIN32OLE_TYPE.progids" />
+        <scope attributes="__classmethod__" doc="Returns array of type libraries." ilk="function" name="typelibs" signature="WIN32OLE_TYPE.typelibs" />
+        <scope doc="Returns GUID." ilk="function" name="guid" signature="WIN32OLE_TYPE#guid  #=&gt; GUID" />
+        <scope doc="Returns helpcontext. If helpcontext is not found, then&#xA;returns nil." ilk="function" name="helpcontext" signature="WIN32OLE_TYPE#helpcontext" />
+        <scope doc="Returns helpfile path. If helpfile is not found, then&#xA;returns nil." ilk="function" name="helpfile" signature="WIN32OLE_TYPE#helpfile" />
+        <scope doc="Returns help string." ilk="function" name="helpstring" signature="WIN32OLE_TYPE#helpstring #=&gt; help string." />
+        <scope doc="Returns major version." ilk="function" name="major_version" signature="WIN32OLE_TYPE#major_version" />
+        <scope doc="Returns minor version." ilk="function" name="minor_version" signature="WIN32OLE_TYPE#minor_version #=&gt; OLE minor version" />
+        <scope doc="Returns OLE type name." ilk="function" name="name" signature="WIN32OLE_TYPE#name #=&gt; OLE type name" />
+        <scope doc="Returns array of WIN32OLE_METHOD objects which represent OLE&#xA;method defined in OLE type library." ilk="function" name="ole_methods" signature="WIN32OLE_TYPE#ole_methods # the array of WIN32OLE_METHOD objects." />
+        <scope doc="returns type of OLE class." ilk="function" name="ole_type" signature="WIN32OLE_TYPE#ole_type #=&gt; OLE type string." />
+        <scope doc="Returns ProgID if it exists. If not found, then returns nil." ilk="function" name="progid" signature="WIN32OLE_TYPE#progid  #=&gt; ProgID" />
+        <scope doc="Returns source class when the OLE class is &apos;Alias&apos;." ilk="function" name="src_type" signature="WIN32OLE_TYPE#src_type #=&gt; OLE source class" />
+        <scope doc="Alias for #name" ilk="function" name="to_s" signature="()" />
+        <scope doc="Returns number which represents type." ilk="function" name="typekind" signature="WIN32OLE_TYPE#typekind #=&gt; number of type." />
+        <scope doc="Returns array of WIN32OLE_VARIABLE objects which represent&#xA;variables defined in OLE class." ilk="function" name="variables" signature="WIN32OLE_TYPE#variables" />
+        <scope doc="Returns true if the OLE class is public." ilk="function" name="visible?" signature="WIN32OLE_TYPE#visible  #=&gt; true or false" />
+      </scope>
+    </scope>
+    

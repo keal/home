@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="irb/output-method">
+      <import line="13" module="e2mmap" symbol="*" />
+      <scope doc="output-method.rb - optput methods used by irb $Release&#xA;Version: 0.9.5$ $Revision: 1.2.4.1 $ $Date: 2005/04/19&#xA;19:24:57 $ by Keiju ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="15" lineend="85" name="IRB">
+        <scope classrefs="Object" doc="OutputMethod StdioOutputMethod" ilk="class" line="19" lineend="78" name="OutputMethod">
+          <scope ilk="function" line="22" lineend="24" name="print" signature="print(*opts)" />
+          <scope ilk="function" line="26" lineend="28" name="printn" signature="printn(*opts)" />
+          <scope doc="extend printf" ilk="function" line="31" lineend="36" name="printf" signature="printf(format, *opts)" />
+          <scope doc="% &lt;&#165;&#213;&#165;&#233;&#165;&#176;&gt;  [#0- +] &lt;&#186;&#199;&#190;&#174;&#165;&#213;&#165;&#163;&#161;&#188;&#165;&#235;&#165;&#201;&#201;&#253;&gt;&#xA;(\*|\*[1-9][0-9]*\$|[1-9][0-9]*)&#xA;&lt;&#192;&#186;&#197;&#217;&gt;.(\*|\*[1-9][0-9]*\$|[1-9][0-9]*|)?&#xA;#&lt;&#196;&#185;&#164;&#181;&#189;&#164;&#192;&#181;&#202;&#184;&#187;&#250;&gt;(hh|h|l|ll|L|q|j|z|t)" ilk="function" line="44" lineend="46" name="parse_printf_format" signature="parse_printf_format(format, opts)" />
+          <scope ilk="function" line="48" lineend="61" name="foo" signature="foo(format)" />
+          <scope ilk="function" line="63" lineend="68" name="puts" signature="puts(*objs)" />
+          <scope ilk="function" line="70" lineend="72" name="pp" signature="pp(*objs)" />
+          <scope ilk="function" line="74" lineend="76" name="ppx" signature="ppx(prefix, *objs)" />
+        </scope>
+        <scope classrefs="OutputMethod" ilk="class" line="80" lineend="84" name="StdioOutputMethod">
+          <scope ilk="function" line="81" lineend="83" name="print" signature="print(*opts)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="process/status">
+      <scope classrefs="Object" doc="Process::Status encapsulates the information on the status&#xA;of a running or terminated system process. The built-in&#xA;variable $? is either nil or a Process::Status object." ilk="class" name="Status">
+        <scope doc="Logical AND of the bits in `stat&apos; with `num&apos;." ilk="function" name="&amp;" signature="stat &amp; num   =&gt; fixnum" />
+        <scope doc="Returns true if the integer value of `stat&apos; equals `other&apos;." ilk="function" name="==" signature="stat == other   =&gt; true or false" />
+        <scope doc="Shift the bits in `stat&apos; right `num&apos; places." ilk="function" name="&gt;&gt;" signature="stat &gt;&gt; num   =&gt; fixnum" />
+        <scope doc="Returns true if `stat&apos; generated a coredump when it&#xA;terminated. Not available on all platforms." ilk="function" name="coredump?" signature="stat.coredump?   =&gt; true or false" />
+        <scope doc="Returns true if `stat&apos; exited normally (for example using an&#xA;exit() call or finishing the program)." ilk="function" name="exited?" signature="stat.exited?   =&gt; true or false" />
+        <scope doc="Returns the least significant eight bits of the return code&#xA;of `stat&apos;. Only available if exited? is true." ilk="function" name="exitstatus" signature="stat.exitstatus   =&gt; fixnum or nil" />
+        <scope doc="Override the inspection method." ilk="function" name="inspect" signature="stat.inspect   =&gt; string" />
+        <scope doc="Returns the process ID that this status object represents." ilk="function" name="pid" signature="stat.pid   =&gt; fixnum" />
+        <scope doc="Returns true if `stat&apos; terminated because of an uncaught&#xA;signal." ilk="function" name="signaled?" signature="stat.signaled?   =&gt; true or false" />
+        <scope doc="Returns true if this process is stopped. This is only&#xA;returned if the corresponding wait call had the WUNTRACED&#xA;flag set." ilk="function" name="stopped?" signature="stat.stopped?   =&gt; true or false" />
+        <scope doc="Returns the number of the signal that caused `stat&apos; to stop&#xA;(or nil if self is not stopped)." ilk="function" name="stopsig" signature="stat.stopsig   =&gt; fixnum or nil" />
+        <scope doc="Returns true if `stat&apos; is successful, false if not. Returns&#xA;nil if exited? is not true." ilk="function" name="success?" signature="stat.success?   =&gt; true, false or nil" />
+        <scope doc="Returns the number of the signal that caused `stat&apos; to&#xA;terminate (or nil if self was not terminated by an uncaught&#xA;signal)." ilk="function" name="termsig" signature="stat.termsig   =&gt; fixnum or nil" />
+        <scope doc="Returns the bits in `stat&apos; as a Fixnum. Poking around in&#xA;these bits is platform dependent." ilk="function" name="to_i" signature="stat.to_i     =&gt; fixnum&#xA;stat.to_int   =&gt; fixnum" />
+        <scope doc="Returns the bits in `stat&apos; as a Fixnum. Poking around in&#xA;these bits is platform dependent." ilk="function" name="to_int" signature="stat.to_i     =&gt; fixnum&#xA;stat.to_int   =&gt; fixnum" />
+        <scope doc="Equivalent to `stat&apos;.to_i.to_s." ilk="function" name="to_s" signature="stat.to_s   =&gt; string" />
+      </scope>
+    </scope>
+    

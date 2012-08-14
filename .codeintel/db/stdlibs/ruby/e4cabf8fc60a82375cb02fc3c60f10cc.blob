@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/labelframe">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/frame" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="9" module="tkextlib/bwidget/label" symbol="*" />
+      <scope doc="tkextlib/bwidget/labelframe.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="11" lineend="16" name="Tk">
+        <scope ilk="namespace" line="12" lineend="15" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="13" lineend="14" name="LabelFrame" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="18" lineend="46" name="Tk::BWidget::">
+        <scope ilk="function" line="23" lineend="25" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="28" lineend="30" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="33" lineend="35" name="__tkvariable_optkeys" signature="__tkvariable_optkeys" />
+        <scope attributes="__classmethod__" ilk="function" line="38" lineend="40" name="align" signature="self.align(*args)" />
+        <scope ilk="function" line="41" lineend="45" name="get_frame" signature="get_frame(&amp;b)" />
+      </scope>
+    </scope>
+    

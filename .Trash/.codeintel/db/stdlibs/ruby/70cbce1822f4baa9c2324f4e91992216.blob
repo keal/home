@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpservlet/erbhandler">
+      <import line="11" module="webrick/httpservlet/abstract.rb" symbol="*" />
+      <import line="13" module="erb" symbol="*" />
+      <scope doc="erbhandler.rb -- ERBHandler Class" ilk="namespace" line="15" lineend="54" name="WEBrick">
+        <scope ilk="namespace" line="16" lineend="53" name="HTTPServlet">
+          <scope classrefs="AbstractServlet" ilk="class" line="18" lineend="52" name="ERBHandler">
+            <scope attributes="__ctor__" ilk="function" line="19" lineend="22" name="initialize" signature="initialize(server, name)" />
+            <scope ilk="function" line="24" lineend="40" name="do_GET" signature="do_GET(req, res)" />
+            <scope ilk="function" line="45" lineend="51" name="evaluate" signature="evaluate(erb, servlet_request, servlet_response)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

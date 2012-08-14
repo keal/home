@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/ri/ri_reader">
+      <import line="1" module="rdoc/ri/ri_descriptions" symbol="*" />
+      <import line="2" module="rdoc/ri/ri_writer" symbol="*" />
+      <import line="3" module="rdoc/markup/simple_markup/to_flow" symbol="*" />
+      <scope ilk="namespace" line="5" lineend="100" name="RI">
+        <scope classrefs="Object" ilk="class" line="6" lineend="99" name="RiReader">
+          <scope attributes="__ctor__" ilk="function" line="8" lineend="10" name="initialize" signature="initialize(ri_cache)" />
+          <scope ilk="function" line="12" lineend="14" name="top_level_namespace" signature="top_level_namespace" />
+          <scope ilk="function" line="16" lineend="22" name="lookup_namespace_in" signature="lookup_namespace_in(target, namespaces)" />
+          <scope ilk="function" line="24" lineend="32" name="find_class_by_name" signature="find_class_by_name(full_name)" />
+          <scope ilk="function" line="34" lineend="40" name="find_methods" signature="find_methods(name, is_class_method, namespaces)" />
+          <scope doc="return the MethodDescription for a given MethodEntry by&#xA;deserializing the YAML" ilk="function" line="44" lineend="47" name="get_method" signature="get_method(method_entry)" />
+          <scope doc="Return a class description" ilk="function" line="50" lineend="62" name="get_class" signature="get_class(class_entry)" />
+          <scope doc="return the names of all classes and modules" ilk="function" line="65" lineend="68" name="full_class_names" signature="full_class_names" />
+          <scope doc="return a list of all classes, modules, and methods" ilk="function" line="71" lineend="74" name="all_names" signature="all_names" />
+          <scope doc="----" ilk="function" line="80" lineend="87" name="find_classes_in" signature="find_classes_in(res, klass)" />
+          <scope ilk="function" line="89" lineend="97" name="find_names_in" signature="find_names_in(res, klass)" />
+        </scope>
+      </scope>
+    </scope>
+    

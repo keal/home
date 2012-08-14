@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="shell/filter">
+      <scope classrefs="Object" doc="shell/filter.rb - $Release Version: 0.6.0 $ $Revision:&#xA;1.3.2.1 $ $Date: 2004/03/21 12:21:11 $ by Keiju&#xA;ISHITSUKA(Nihon Rational Software Co.,Ltd)" ilk="class" line="13" lineend="110" name="Shell">
+        <scope classrefs="Object" doc="Filter A method to require each()" ilk="class" line="19" lineend="109" name="Filter">
+          <scope attributes="__ctor__" ilk="function" line="22" lineend="25" name="initialize" signature="initialize(sh)" />
+          <scope ilk="function" line="27" lineend="27" name="input" />
+          <scope ilk="function" line="29" lineend="31" name="input=" signature="input=(filter)" />
+          <scope ilk="function" line="33" lineend="38" name="each" signature="each(rs = nil)" />
+          <scope ilk="function" line="40" lineend="51" name="&lt;" signature="&lt; (src" />
+          <scope ilk="function" line="53" lineend="68" name="&gt;" signature="&gt; (to" />
+          <scope ilk="function" line="70" lineend="76" name="&gt;&gt;" signature="&gt;&gt; (to" />
+          <scope ilk="function" line="78" lineend="84" name="|" signature="| (filter" />
+          <scope ilk="function" line="86" lineend="88" name="+" signature="+ (filter" />
+          <scope ilk="function" line="90" lineend="94" name="to_a" signature="to_a" />
+          <scope ilk="function" line="96" lineend="100" name="to_s" signature="to_s" />
+          <scope ilk="function" line="102" lineend="108" name="inspect" signature="inspect" />
+          <import symbol="Enumerable" />
+        </scope>
+      </scope>
+    </scope>
+    

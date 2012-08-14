@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/generators/chm_generator">
+      <import line="1" module="rdoc/generators/html_generator" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="112" name="Generators">
+        <scope classrefs="HTMLGenerator" ilk="class" line="5" lineend="109" name="CHMGenerator">
+          <scope attributes="__classmethod__" doc="Standard generator factory" ilk="function" line="10" lineend="12" name="for" signature="CHMGenerator.for(options)" />
+          <scope attributes="__ctor__" ilk="function" line="15" lineend="19" name="initialize" signature="initialize(*args)" />
+          <scope ilk="function" line="21" lineend="33" name="check_for_html_help_workshop" signature="check_for_html_help_workshop" />
+          <scope doc="Generate the html as normal, then wrap it in a help project" ilk="function" line="37" lineend="41" name="generate" signature="generate(info)" />
+          <scope doc="The project contains the project file, a table of contents&#xA;and an index" ilk="function" line="45" lineend="49" name="create_help_project" signature="create_help_project" />
+          <scope doc="The project file links together all the various files that&#xA;go to make up the help." ilk="function" line="54" lineend="67" name="create_project_file" signature="create_project_file" />
+          <scope doc="The contents is a list of all files and modules." ilk="function" line="74" lineend="102" name="create_contents_and_index" signature="create_contents_and_index" />
+          <scope doc="Invoke the windows help compiler to compiler the project" ilk="function" line="105" lineend="107" name="compile_project" signature="compile_project" />
+        </scope>
+      </scope>
+    </scope>
+    

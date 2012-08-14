@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="tk/entry">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/label" symbol="*" />
+      <import line="8" module="tk/scrollable" symbol="*" />
+      <import line="9" module="tk/validation" symbol="*" />
+      <scope classrefs="TkLabel" doc="tk/entry.rb - Tk entry classes $Date: 2005/10/22 22:16:24 $&#xA;by Yukihiro Matsumoto &lt;matz@caelum.co.jp&gt;" ilk="class" line="11" lineend="117" name="TkEntry">
+        <scope doc="def create_self(keys) super(__conv_vcmd_on_hash_kv(keys))&#xA;end private :create_self" ilk="function" line="24" lineend="26" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="29" lineend="31" name="bbox" signature="bbox(index)" />
+        <scope ilk="function" line="32" lineend="34" name="cursor" signature="cursor" />
+        <scope ilk="function" line="36" lineend="40" name="cursor=" signature="cursor=(index)" />
+        <scope ilk="function" line="42" lineend="44" name="index" signature="index(idx)" />
+        <scope ilk="function" line="45" lineend="48" name="insert" signature="insert(pos,text)" />
+        <scope ilk="function" line="49" lineend="52" name="delete" signature="delete(first, last=None)" />
+        <scope ilk="function" line="53" lineend="56" name="mark" signature="mark(pos)" />
+        <scope ilk="function" line="57" lineend="60" name="dragto" signature="dragto(pos)" />
+        <scope ilk="function" line="61" lineend="64" name="selection_adjust" signature="selection_adjust(index)" />
+        <scope ilk="function" line="65" lineend="68" name="selection_clear" signature="selection_clear" />
+        <scope ilk="function" line="69" lineend="72" name="selection_from" signature="selection_from(index)" />
+        <scope ilk="function" line="73" lineend="75" name="selection_present" signature="selection_present()" />
+        <scope ilk="function" line="76" lineend="79" name="selection_range" signature="selection_range(s, e)" />
+        <scope ilk="function" line="80" lineend="83" name="selection_to" signature="selection_to(index)" />
+        <scope ilk="function" line="85" lineend="87" name="invoke_validate" signature="invoke_validate" />
+        <scope ilk="function" line="88" lineend="94" name="validate" signature="validate(mode = nil)" />
+        <scope ilk="function" line="96" lineend="98" name="value" signature="value" />
+        <scope ilk="function" line="99" lineend="103" name="value=" signature="value= (val)" />
+        <scope ilk="function" line="107" lineend="109" name="[]" signature="[](*args" />
+        <scope ilk="function" line="110" lineend="116" name="[]=" signature="[]=(*args" />
+        <import symbol="X_Scrollable" />
+        <import symbol="TkValidation" />
+      </scope>
+    </scope>
+    

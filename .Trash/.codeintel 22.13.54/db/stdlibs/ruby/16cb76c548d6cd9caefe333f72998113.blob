@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="tmpdir">
+      <scope classrefs="Object" doc="tmpdir - retrieve temporary directory path" ilk="class" line="7" lineend="45" name="Dir">
+        <import line="12" module="Win32API" symbol="*" />
+        <scope attributes="__classmethod__" doc="Returns the operating system&apos;s temporary file path." ilk="function" line="30" lineend="44" name="tmpdir" signature="Dir::tmpdir" />
+      </scope>
+    </scope>
+    

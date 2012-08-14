@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="drb/invokemethod">
+      <scope doc="for ruby-1.8.0" ilk="namespace" line="3" lineend="36" name="DRb">
+        <scope classrefs="Object" ilk="class" line="4" lineend="35" name="DRbServer">
+          <scope ilk="namespace" line="5" lineend="34" name="InvokeMethod18Mixin">
+            <scope ilk="function" line="6" lineend="11" name="block_yield" signature="block_yield(x)" />
+            <scope ilk="function" line="13" lineend="33" name="perform_with_block" signature="perform_with_block" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

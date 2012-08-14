@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpservlet/prochandler">
+      <import line="11" module="webrick/httpservlet/abstract.rb" symbol="*" />
+      <scope doc="prochandler.rb -- ProcHandler Class" ilk="namespace" line="13" lineend="33" name="WEBrick">
+        <scope ilk="namespace" line="14" lineend="32" name="HTTPServlet">
+          <scope classrefs="AbstractServlet" ilk="class" line="16" lineend="30" name="ProcHandler">
+            <scope ilk="function" line="17" lineend="19" name="get_instance" signature="get_instance(server, *options)" />
+            <scope attributes="__ctor__" ilk="function" line="21" lineend="23" name="initialize" signature="initialize(proc)" />
+            <scope ilk="function" line="25" lineend="27" name="do_GET" signature="do_GET(request, response)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,30 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/ui/console/testrunner">
+      <import line="5" module="test/unit/ui/testrunnermediator" symbol="*" />
+      <import line="6" module="test/unit/ui/testrunnerutilities" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="8" lineend="121" name="Test">
+        <scope ilk="namespace" line="9" lineend="120" name="Unit">
+          <scope ilk="namespace" line="10" lineend="119" name="UI">
+            <scope ilk="namespace" line="11" lineend="118" name="Console">
+              <scope classrefs="Object" doc="Runs a Test::Unit::TestSuite on the console." ilk="class" line="14" lineend="117" name="TestRunner">
+                <scope attributes="__ctor__" doc="Creates a new TestRunner for running the passed suite." ilk="function" line="23" lineend="33" name="initialize" signature="initialize(suite, output_level=NORMAL, io=STDOUT)" />
+                <scope doc="Begins the test run." ilk="function" line="36" lineend="40" name="start" signature="start" />
+                <scope ilk="function" line="43" lineend="50" name="setup_mediator" signature="setup_mediator" />
+                <scope ilk="function" line="52" lineend="54" name="create_mediator" signature="create_mediator(suite)" />
+                <scope ilk="function" line="56" lineend="62" name="attach_to_mediator" signature="attach_to_mediator" />
+                <scope ilk="function" line="64" lineend="66" name="start_mediator" signature="start_mediator" />
+                <scope ilk="function" line="68" lineend="72" name="add_fault" signature="add_fault(fault)" />
+                <scope ilk="function" line="74" lineend="77" name="started" signature="started(result)" />
+                <scope ilk="function" line="79" lineend="88" name="finished" signature="finished(elapsed_time)" />
+                <scope ilk="function" line="90" lineend="92" name="test_started" signature="test_started(name)" />
+                <scope ilk="function" line="94" lineend="98" name="test_finished" signature="test_finished(name)" />
+                <scope ilk="function" line="100" lineend="102" name="nl" signature="nl(level=NORMAL)" />
+                <scope ilk="function" line="104" lineend="107" name="output" signature="output(something, level=NORMAL)" />
+                <scope ilk="function" line="109" lineend="112" name="output_single" signature="output_single(something, level=NORMAL)" />
+                <scope ilk="function" line="114" lineend="116" name="output?" signature="output?(level)" />
+              </scope>
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

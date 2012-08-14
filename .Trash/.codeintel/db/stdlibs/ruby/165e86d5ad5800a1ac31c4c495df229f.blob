@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="runit/error">
+      <import line="5" module="test/unit/assertionfailederror.rb" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="7" lineend="9" name="RUNIT" />
+    </scope>
+    

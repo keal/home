@@ -1,0 +1,45 @@
+<scope ilk="blob" lang="Ruby" name="soap/mapping/wsdlliteralregistry">
+      <import line="9" module="soap/baseData" symbol="*" />
+      <import line="10" module="soap/mapping/mapping" symbol="*" />
+      <import line="11" module="soap/mapping/typeMap" symbol="*" />
+      <import line="12" module="xsd/codegen/gensupport" symbol="*" />
+      <import line="13" module="xsd/namedelements" symbol="*" />
+      <scope doc="SOAP4R - WSDL literal mapping registry." ilk="namespace" line="16" name="SOAP" />
+      <scope ilk="namespace" line="17" name="Mapping" />
+      <scope classrefs="Registry" ilk="class" line="20" lineend="414" name="WSDLLiteralRegistry">
+        <scope ilk="function" line="21" lineend="21" name="definedelements" />
+        <scope ilk="function" line="22" lineend="22" name="definedtypes" />
+        <scope ilk="function" line="23" lineend="23" name="excn_handler_obj2soap" />
+        <scope ilk="function" line="23" lineend="23" name="excn_handler_obj2soap=" />
+        <scope ilk="function" line="24" lineend="24" name="excn_handler_soap2obj" />
+        <scope ilk="function" line="24" lineend="24" name="excn_handler_soap2obj=" />
+        <scope attributes="__ctor__" ilk="function" line="26" lineend="34" name="initialize" signature="initialize(definedtypes = XSD::NamedElements::Empty, definedelements = XSD::NamedElements::Empty)" />
+        <scope ilk="function" line="36" lineend="53" name="obj2soap" signature="obj2soap(obj, qname)" />
+        <scope doc="node should be a SOAPElement" ilk="function" line="56" lineend="75" name="soap2obj" signature="soap2obj(node, obj_class = nil)" />
+        <scope ilk="function" line="81" lineend="102" name="obj2elesoap" signature="obj2elesoap(obj, ele)" />
+        <scope ilk="function" line="104" lineend="110" name="obj2typesoap" signature="obj2typesoap(obj, type, qualified)" />
+        <scope ilk="function" line="112" lineend="117" name="simpleobj2soap" signature="simpleobj2soap(obj, type)" />
+        <scope ilk="function" line="119" lineend="146" name="complexobj2soap" signature="complexobj2soap(obj, type, qualified)" />
+        <scope ilk="function" line="148" lineend="176" name="any2soap" signature="any2soap(obj, qname)" />
+        <scope ilk="function" line="178" lineend="186" name="stubobj2soap" signature="stubobj2soap(obj, qname)" />
+        <scope ilk="function" line="188" lineend="203" name="mappingobj2soap" signature="mappingobj2soap(obj, qname)" />
+        <scope ilk="function" line="205" lineend="224" name="add_elements2soap" signature="add_elements2soap(obj, ele)" />
+        <scope ilk="function" line="226" lineend="235" name="add_attributes2soap" signature="add_attributes2soap(obj, ele)" />
+        <scope ilk="function" line="237" lineend="247" name="base2soap" signature="base2soap(obj, type)" />
+        <scope ilk="function" line="249" lineend="256" name="anytype2obj" signature="anytype2obj(node)" />
+        <scope ilk="function" line="258" lineend="273" name="any2obj" signature="any2obj(node, obj_class = nil)" />
+        <scope ilk="function" line="275" lineend="280" name="soapele2stubobj" signature="soapele2stubobj(node, obj_class)" />
+        <scope ilk="function" line="282" lineend="287" name="soapele2plainobj" signature="soapele2plainobj(node)" />
+        <scope ilk="function" line="289" lineend="328" name="add_elements2stubobj" signature="add_elements2stubobj(node, obj)" />
+        <scope ilk="function" line="330" lineend="346" name="add_attributes2stubobj" signature="add_attributes2stubobj(node, obj)" />
+        <scope ilk="function" line="348" lineend="352" name="add_elements2plainobj" signature="add_elements2plainobj(node, obj)" />
+        <scope ilk="function" line="354" lineend="361" name="add_attributes2plainobj" signature="add_attributes2plainobj(node, obj)" />
+        <scope ilk="function" line="364" lineend="369" name="define_xmlattr_accessor" signature="define_xmlattr_accessor(obj, qname)" />
+        <scope ilk="function" line="371" lineend="382" name="define_xmlattr_accessor" signature="define_xmlattr_accessor(obj, qname)" />
+        <scope ilk="function" line="386" lineend="391" name="define_xmlattr" signature="define_xmlattr(obj)" />
+        <scope ilk="function" line="393" lineend="402" name="define_xmlattr" signature="define_xmlattr(obj)" />
+        <scope doc="it caches @@schema_element." ilk="function" line="407" lineend="409" name="schema_element_definition" signature="schema_element_definition(klass)" />
+        <scope ilk="function" line="411" lineend="413" name="schema_attribute_definition" signature="schema_attribute_definition(klass)" />
+      </scope>
+    </scope>
+    

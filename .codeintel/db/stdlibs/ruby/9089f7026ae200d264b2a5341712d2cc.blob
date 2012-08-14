@@ -1,0 +1,30 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/selectiondialog">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/selectiondialog.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Selectiondialog" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="92" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="child_site" signature="child_site" />
+        <scope ilk="function" line="25" lineend="28" name="clear_items" signature="clear_items" />
+        <scope ilk="function" line="30" lineend="33" name="clear_selection" signature="clear_selection" />
+        <scope ilk="function" line="35" lineend="37" name="get" signature="get" />
+        <scope ilk="function" line="39" lineend="41" name="insert_items" signature="insert_items(idx, *args)" />
+        <scope ilk="function" line="43" lineend="45" name="insert_selection" signature="insert_selection(pos, text)" />
+        <scope ilk="function" line="47" lineend="50" name="select_item" signature="select_item" />
+        <scope doc="based on TkListbox ( and TkTextWin )" ilk="function" line="53" lineend="55" name="curselection" signature="curselection" />
+        <scope ilk="function" line="56" lineend="59" name="delete" signature="delete(first, last=None)" />
+        <scope ilk="function" line="60" lineend="62" name="index" signature="index(idx)" />
+        <scope ilk="function" line="63" lineend="65" name="nearest" signature="nearest(y)" />
+        <scope ilk="function" line="66" lineend="69" name="scan_mark" signature="scan_mark(x, y)" />
+        <scope ilk="function" line="70" lineend="73" name="scan_dragto" signature="scan_dragto(x, y)" />
+        <scope ilk="function" line="74" lineend="77" name="selection_anchor" signature="selection_anchor(index)" />
+        <scope ilk="function" line="78" lineend="81" name="selection_clear" signature="selection_clear(first, last=None)" />
+        <scope ilk="function" line="82" lineend="84" name="selection_includes" signature="selection_includes(index)" />
+        <scope ilk="function" line="85" lineend="88" name="selection_set" signature="selection_set(first, last=None)" />
+        <scope ilk="function" line="89" lineend="91" name="size" signature="size" />
+      </scope>
+    </scope>
+    

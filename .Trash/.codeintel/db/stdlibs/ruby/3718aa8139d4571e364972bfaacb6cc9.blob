@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="e2mmap">
+      <scope doc="e2mmap.rb - for ruby 1.1 $Release Version: 2.0$ $Revision:&#xA;1.10 $ $Date: 1999/02/17 12:33:17 $ by Keiju ISHITSUKA" ilk="namespace" line="53" lineend="193" name="Exception2MessageMapper">
+        <scope ilk="function" line="58" lineend="61" name="E2MM.extend_object" signature="E2MM.extend_object(cl)" />
+        <scope doc="backward compatibility" ilk="function" line="64" lineend="67" name="E2MM.extend_to" signature="E2MM.extend_to(b)" />
+        <scope ilk="function" line="69" lineend="80" name="bind" signature="bind(cl)">
+          <scope ilk="function" line="71" lineend="73" name="Raise" signature="Raise(err = nil, *rest)" />
+          <scope attributes="__classmethod__" ilk="function" line="76" lineend="78" name="included" signature="self.included(mod)" />
+        </scope>
+        <scope doc="Fail(err, *rest) err:    exception rest:   message arguments" ilk="function" line="86" lineend="88" name="Raise" signature="Raise(err = nil, *rest)" />
+        <scope doc="backward compatibility" ilk="function" line="93" lineend="99" name="fail" signature="fail(err = nil, *rest)" />
+        <scope classrefs="Object" ilk="class" line="100" lineend="102" name="self" />
+        <scope doc="def_e2message(c, m) c:  exception m:  message_form define&#xA;exception c with message m." ilk="function" line="110" lineend="112" name="def_e2message" signature="def_e2message(c, m)" />
+        <scope doc="def_exception(n, m, s) n:  exception_name m:  message_form&#xA;s:  superclass(default: StandardError) define exception&#xA;named ``c&apos;&apos; with message m." ilk="function" line="120" lineend="122" name="def_exception" signature="def_exception(n, m, s = StandardError)" />
+        <scope doc="E2MM.def_exception(k, e, m) k:  class to define exception&#xA;under." ilk="function" line="136" lineend="139" name="E2MM.def_e2message" signature="E2MM.def_e2message(k, c, m)" />
+        <scope doc="E2MM.def_exception(k, n, m, s) k:  class to define exception&#xA;under." ilk="function" line="148" lineend="153" name="E2MM.def_exception" signature="E2MM.def_exception(k, n, m, s = StandardError)" />
+        <scope doc="Fail(klass, err, *rest) klass:  class to define exception&#xA;under." ilk="function" line="160" lineend="171" name="E2MM.Raise" signature="E2MM.Raise(klass = E2MM, err = nil, *rest)" />
+        <scope classrefs="Object" ilk="class" line="172" lineend="174" name="E2MM" />
+        <scope ilk="function" line="176" lineend="185" name="E2MM.e2mm_message" signature="E2MM.e2mm_message(klass, exp)" />
+        <scope classrefs="Object" ilk="class" line="186" lineend="188" name="self" />
+      </scope>
+    </scope>
+    

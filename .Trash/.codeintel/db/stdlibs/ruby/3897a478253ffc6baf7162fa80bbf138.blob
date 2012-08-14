@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/buttonbox">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/buttonbox.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Itk::" ilk="class" line="11" lineend="12" name="Buttonbox" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="119" name="Tk::Iwidgets::">
+        <scope ilk="function" line="25" lineend="27" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="30" lineend="32" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="35" lineend="37" name="__item_boolval_optkeys" signature="__item_boolval_optkeys(id)" />
+        <scope ilk="function" line="40" lineend="47" name="tagid" signature="tagid(tagOrId)" />
+        <scope ilk="function" line="59" lineend="71" name="add" signature="add(tag=nil, keys={})" />
+        <scope ilk="function" line="73" lineend="76" name="default" signature="default(idx)" />
+        <scope ilk="function" line="78" lineend="81" name="delete" signature="delete(idx)" />
+        <scope ilk="function" line="83" lineend="86" name="hide" signature="hide(idx)" />
+        <scope ilk="function" line="88" lineend="90" name="index" signature="index(idx)" />
+        <scope ilk="function" line="92" lineend="104" name="insert" signature="insert(idx, tag=nil, keys={})" />
+        <scope ilk="function" line="106" lineend="113" name="invoke" signature="invoke(idx=nil)" />
+        <scope ilk="function" line="115" lineend="118" name="show" signature="show(idx)" />
+        <import symbol="TkItemConfigMethod" />
+      </scope>
+    </scope>
+    

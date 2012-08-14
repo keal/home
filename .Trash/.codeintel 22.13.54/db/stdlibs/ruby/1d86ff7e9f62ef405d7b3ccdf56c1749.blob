@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="bigdecimal/ludcmp">
+      <scope doc="ludcmp.rb" ilk="namespace" line="4" lineend="77" name="LUSolve">
+        <scope ilk="function" line="5" lineend="53" name="ludecomp" signature="ludecomp(a,n,zero=0,one=1)" />
+        <scope ilk="function" line="55" lineend="76" name="lusolve" signature="lusolve(a,b,ps,zero=0.0)" />
+      </scope>
+    </scope>
+    

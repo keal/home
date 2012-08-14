@@ -1,0 +1,26 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/data">
+      <import line="9" module="xsd/datatypes" symbol="*" />
+      <import line="10" module="wsdl/xmlSchema/annotation" symbol="*" />
+      <import line="11" module="wsdl/xmlSchema/schema" symbol="*" />
+      <import line="12" module="wsdl/xmlSchema/import" symbol="*" />
+      <import line="13" module="wsdl/xmlSchema/include" symbol="*" />
+      <import line="14" module="wsdl/xmlSchema/simpleType" symbol="*" />
+      <import line="15" module="wsdl/xmlSchema/simpleRestriction" symbol="*" />
+      <import line="16" module="wsdl/xmlSchema/simpleExtension" symbol="*" />
+      <import line="17" module="wsdl/xmlSchema/complexType" symbol="*" />
+      <import line="18" module="wsdl/xmlSchema/complexContent" symbol="*" />
+      <import line="19" module="wsdl/xmlSchema/simpleContent" symbol="*" />
+      <import line="20" module="wsdl/xmlSchema/any" symbol="*" />
+      <import line="21" module="wsdl/xmlSchema/element" symbol="*" />
+      <import line="22" module="wsdl/xmlSchema/all" symbol="*" />
+      <import line="23" module="wsdl/xmlSchema/choice" symbol="*" />
+      <import line="24" module="wsdl/xmlSchema/sequence" symbol="*" />
+      <import line="25" module="wsdl/xmlSchema/attribute" symbol="*" />
+      <import line="26" module="wsdl/xmlSchema/unique" symbol="*" />
+      <import line="27" module="wsdl/xmlSchema/enumeration" symbol="*" />
+      <import line="28" module="wsdl/xmlSchema/length" symbol="*" />
+      <import line="29" module="wsdl/xmlSchema/pattern" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema data definitions." ilk="namespace" line="31" name="WSDL" />
+      <scope ilk="namespace" line="32" lineend="79" name="XMLSchema" />
+    </scope>
+    

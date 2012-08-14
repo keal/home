@@ -1,0 +1,57 @@
+<scope ilk="blob" lang="Ruby" name="rss/image">
+      <import line="1" module="rss/1.0" symbol="*" />
+      <import line="2" module="rss/dublincore" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="216" name="RSS">
+        <scope ilk="namespace" line="11" lineend="17" name="ImageModelUtils">
+          <scope ilk="function" line="12" lineend="16" name="validate_one_tag_name" signature="validate_one_tag_name(name, tags)" />
+        </scope>
+        <scope ilk="namespace" line="19" lineend="129" name="ImageItemModel">
+          <scope attributes="__classmethod__" ilk="function" line="23" lineend="27" name="append_features" signature="self.append_features(klass)" />
+          <scope ilk="function" line="29" lineend="31" name="image_validate" signature="image_validate(tags)" />
+          <scope classrefs="Element" ilk="class" line="33" lineend="128" name="Item">
+            <scope classrefs="Object" ilk="class" line="37" lineend="45" name="self">
+              <scope ilk="function" line="38" lineend="40" name="required_prefix" signature="required_prefix" />
+              <scope ilk="function" line="42" lineend="44" name="required_uri" signature="required_uri" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="60" lineend="64" name="initialize" signature="initialize(about=nil, resource=nil)" />
+            <scope ilk="function" line="66" lineend="68" name="full_name" signature="full_name" />
+            <scope ilk="function" line="70" lineend="78" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="81" lineend="87" name="image_width=" signature="image_width=(new_value)" />
+            <scope ilk="function" line="90" lineend="96" name="image_height=" signature="image_height=(new_value)" />
+            <scope ilk="function" line="104" lineend="111" name="_tags" signature="_tags" />
+            <scope ilk="function" line="113" lineend="118" name="_attrs" signature="_attrs" />
+            <scope ilk="function" line="120" lineend="122" name="maker_target" signature="maker_target(target)" />
+            <scope ilk="function" line="124" lineend="127" name="setup_maker_attributes" signature="setup_maker_attributes(item)" />
+            <import symbol="RSS10" />
+            <import symbol="DublinCoreModel" />
+          </scope>
+        </scope>
+        <scope ilk="namespace" line="131" lineend="209" name="ImageFaviconModel">
+          <scope attributes="__classmethod__" ilk="function" line="135" lineend="141" name="append_features" signature="self.append_features(klass)" />
+          <scope ilk="function" line="143" lineend="145" name="image_validate" signature="image_validate(tags)" />
+          <scope classrefs="Element" ilk="class" line="147" lineend="207" name="Favicon">
+            <scope classrefs="Object" ilk="class" line="151" lineend="159" name="self">
+              <scope ilk="function" line="152" lineend="154" name="required_prefix" signature="required_prefix" />
+              <scope ilk="function" line="156" lineend="158" name="required_uri" signature="required_uri" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="171" lineend="175" name="initialize" signature="initialize(about=nil, size=nil)" />
+            <scope ilk="function" line="177" lineend="179" name="full_name" signature="full_name" />
+            <scope ilk="function" line="181" lineend="189" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="192" lineend="197" name="_attrs" signature="_attrs" />
+            <scope ilk="function" line="199" lineend="201" name="maker_target" signature="maker_target(target)" />
+            <scope ilk="function" line="203" lineend="206" name="setup_maker_attributes" signature="setup_maker_attributes(favicon)" />
+            <import symbol="RSS10" />
+            <import symbol="DublinCoreModel" />
+          </scope>
+        </scope>
+        <scope classrefs="Object" ilk="class" line="211" lineend="214" name="RDF">
+          <scope classrefs="Object" ilk="class" line="212" lineend="212" name="Channel">
+            <import symbol="ImageFaviconModel" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="213" lineend="213" name="Item">
+            <import symbol="ImageItemModel" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

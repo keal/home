@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/generators/template/html/one_page_html">
+      <scope ilk="namespace" line="1" name="RDoc" />
+      <scope ilk="namespace" line="2" lineend="121" name="Page" />
+    </scope>
+    

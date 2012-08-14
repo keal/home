@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="tkclass">
+      <import line="8" module="tk" symbol="*" />
+      <scope doc="tkclass.rb - Tk classes Date: 2000/11/27 09:23:36 by&#xA;Yukihiro Matsumoto &lt;matz@caelum.co.jp&gt;" ilk="function" line="45" lineend="47" name="Mainloop" signature="Mainloop" />
+    </scope>
+    

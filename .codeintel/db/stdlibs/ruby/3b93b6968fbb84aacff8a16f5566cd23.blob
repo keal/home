@@ -1,0 +1,5 @@
+<scope ilk="blob" lang="Ruby" name="tk/label">
+      <import line="4" module="tk" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/label.rb : treat label widget" ilk="class" line="6" lineend="18" name="TkLabel" />
+    </scope>
+    

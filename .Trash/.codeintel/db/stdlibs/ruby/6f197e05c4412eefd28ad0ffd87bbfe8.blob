@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="xmlrpc/marshal">
+      <import line="9" module="xmlrpc/parser" symbol="*" />
+      <import line="10" module="xmlrpc/create" symbol="*" />
+      <import line="11" module="xmlrpc/config" symbol="*" />
+      <import line="12" module="xmlrpc/utils" symbol="*" />
+      <scope doc="Marshalling of XML-RPC methodCall and methodResponse" ilk="namespace" line="14" lineend="75" name="XMLRPC">
+        <scope classrefs="Object" ilk="class" line="16" lineend="73" name="Marshal">
+          <scope classrefs="Object" doc="class methods -------------------------------" ilk="class" line="21" lineend="42" name="self">
+            <scope ilk="function" line="23" lineend="25" name="dump_call" signature="dump_call( methodName, *params )" />
+            <scope ilk="function" line="27" lineend="29" name="dump_response" signature="dump_response( param )" />
+            <scope ilk="function" line="31" lineend="33" name="load_call" signature="load_call( stringOrReadable )" />
+            <scope ilk="function" line="35" lineend="37" name="load_response" signature="load_response( stringOrReadable )" />
+          </scope>
+          <scope attributes="__ctor__" doc="class self instance methods ----------------------------" ilk="function" line="46" lineend="49" name="initialize" signature="initialize( parser = nil, writer = nil )" />
+          <scope ilk="function" line="51" lineend="53" name="dump_call" signature="dump_call( methodName, *params )" />
+          <scope ilk="function" line="55" lineend="57" name="dump_response" signature="dump_response( param )" />
+          <scope doc="returns [ methodname, params ]" ilk="function" line="62" lineend="64" name="load_call" signature="load_call( stringOrReadable )" />
+          <scope doc="returns paramOrFault" ilk="function" line="69" lineend="71" name="load_response" signature="load_response( stringOrReadable )" />
+          <import symbol="ParserWriterChooseMixin" />
+        </scope>
+      </scope>
+    </scope>
+    

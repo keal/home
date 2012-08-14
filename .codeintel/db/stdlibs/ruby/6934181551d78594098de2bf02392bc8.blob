@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="eregex">
+      <scope classrefs="Object" doc="this is just a proof of concept toy." ilk="class" line="3" lineend="12" name="RegOr">
+        <scope attributes="__ctor__" ilk="function" line="4" lineend="7" name="initialize" signature="initialize(re1, re2)" />
+        <scope ilk="function" line="9" lineend="11" name="=~" signature="=~ (str" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="14" lineend="23" name="RegAnd">
+        <scope attributes="__ctor__" ilk="function" line="15" lineend="18" name="initialize" signature="initialize(re1, re2)" />
+        <scope ilk="function" line="20" lineend="22" name="=~" signature="=~ (str" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="25" lineend="32" name="Regexp">
+        <scope ilk="function" line="26" lineend="28" name="|" signature="|(other" />
+        <scope ilk="function" line="29" lineend="31" name="&amp;" signature="&amp;(other" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="uri/http">
+      <import line="9" module="uri/generic" symbol="*" />
+      <scope doc="= uri/http.rb" ilk="namespace" line="11" lineend="65" name="URI">
+        <scope classrefs="Generic" doc="RFC1738 section 3.3." ilk="class" line="16" lineend="62" name="HTTP">
+          <scope attributes="__classmethod__" doc="== Description" ilk="function" line="34" lineend="37" name="build" signature="self.build(args)" />
+          <scope attributes="__ctor__" doc="== Description" ilk="function" line="45" lineend="47" name="initialize" signature="initialize(*arg)" />
+          <scope doc="== Description" ilk="function" line="54" lineend="61" name="request_uri" signature="request_uri" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="irb/cmd/help">
+      <import line="12" module="rdoc/ri/ri_driver" symbol="*" />
+      <scope doc="help.rb - helper using ri $Release Version: 0.9.5$&#xA;$Revision: 1.2.4.1 $ $Date: 2005/04/19 19:24:58 $" ilk="namespace" line="14" lineend="34" name="IRB">
+        <scope ilk="namespace" line="15" lineend="33" name="ExtendCommand">
+          <scope ilk="namespace" line="16" lineend="32" name="Help">
+            <scope attributes="__classmethod__" ilk="function" line="21" lineend="30" name="execute" signature="self.execute(context, *names)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

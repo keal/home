@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/dialog">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/frame" symbol="*" />
+      <import line="8" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="9" module="tkextlib/bwidget/buttonbox" symbol="*" />
+      <scope doc="tkextlib/bwidget/dialog.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="11" lineend="16" name="Tk">
+        <scope ilk="namespace" line="12" lineend="15" name="BWidget">
+          <scope classrefs="TkWindow" ilk="class" line="13" lineend="14" name="Dialog" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="18" lineend="157" name="Tk::BWidget::">
+        <scope ilk="function" line="25" lineend="27" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="30" lineend="32" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope attributes="__ctor__" ilk="function" line="35" lineend="50" name="initialize" signature="initialize(parent=nil, keys=nil)" />
+        <scope ilk="function" line="52" lineend="60" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="62" lineend="68" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="70" lineend="82" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="84" lineend="99" name="configinfo" signature="configinfo(slot=nil)" />
+        <scope ilk="function" line="101" lineend="111" name="tagid" signature="tagid(tagOrId)" />
+        <scope ilk="function" line="113" lineend="117" name="add" signature="add(keys={}, &amp;b)" />
+        <scope ilk="function" line="119" lineend="123" name="get_frame" signature="get_frame(&amp;b)" />
+        <scope ilk="function" line="125" lineend="129" name="get_buttonbox" signature="get_buttonbox(&amp;b)" />
+        <scope ilk="function" line="131" lineend="133" name="draw" signature="draw(focus_win=None)" />
+        <scope ilk="function" line="135" lineend="137" name="enddialog" signature="enddialog(ret)" />
+        <scope ilk="function" line="139" lineend="141" name="index" signature="index(idx)" />
+        <scope ilk="function" line="143" lineend="146" name="invoke" signature="invoke(idx)" />
+        <scope ilk="function" line="148" lineend="151" name="set_focus" signature="set_focus(idx)" />
+        <scope ilk="function" line="153" lineend="156" name="withdraw" signature="withdraw" />
+        <import symbol="TkItemConfigMethod" />
+      </scope>
+    </scope>
+    

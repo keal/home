@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="webrick/https">
+      <import line="11" module="webrick/ssl" symbol="*" />
+      <scope doc="https.rb -- SSL/TLS enhancement for HTTPServer" ilk="namespace" line="13" lineend="63" name="WEBrick">
+        <scope ilk="namespace" line="14" lineend="16" name="Config" />
+        <scope classrefs="Object" ilk="class" line="18" lineend="62" name="HTTPRequest">
+          <scope ilk="function" line="19" lineend="19" name="cipher" />
+          <scope ilk="function" line="19" lineend="19" name="server_cert" />
+          <scope ilk="function" line="19" lineend="19" name="client_cert" />
+          <scope ilk="function" line="23" lineend="31" name="parse" signature="parse(socket=nil)" />
+          <scope ilk="function" line="35" lineend="40" name="parse_uri" signature="parse_uri(str, scheme=&quot;https&quot;)" />
+          <scope ilk="function" line="44" lineend="61" name="meta_vars" signature="meta_vars" />
+        </scope>
+      </scope>
+    </scope>
+    

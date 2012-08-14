@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="tk/optiondb">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/optiondb.rb : treat option database" ilk="namespace" line="6" lineend="369" name="TkOptionDB">
+        <scope ilk="namespace" line="13" lineend="18" name="Priority" />
+        <scope ilk="function" line="20" lineend="25" name="add" signature="add(pat, value, pri=None)" />
+        <scope ilk="function" line="26" lineend="31" name="clear" signature="clear" />
+        <scope ilk="function" line="32" lineend="34" name="get" signature="get(win, name, klass)" />
+        <scope ilk="function" line="35" lineend="37" name="readfile" signature="readfile(file, pri=None)" />
+        <scope ilk="function" line="41" lineend="83" name="read_entries" signature="read_entries(file, f_enc=nil)" />
+        <scope ilk="function" line="86" lineend="127" name="read_with_encoding" signature="read_with_encoding(file, f_enc=nil, pri=None)" />
+        <scope classrefs="Object" doc="support procs on the resource database" ilk="class" line="140" lineend="209" name="@@resource_proc_class">
+          <scope ilk="function" line="168" lineend="172" name="__check_proc_string__" signature="__check_proc_string__(str)" />
+          <scope ilk="function" line="174" lineend="206" name="method_missing" signature="method_missing(id, *args)" />
+        </scope>
+        <scope ilk="function" line="250" lineend="299" name="__create_new_class" signature="__create_new_class(klass, func, safe = 4, add = false, parent = nil)" />
+        <scope ilk="function" line="303" lineend="320" name="__remove_methods_of_proc_class" signature="__remove_methods_of_proc_class(klass)">
+          <scope classrefs="Object" doc="for security, make these methods invalid" ilk="class" line="305" lineend="319" name="klass">
+            <scope ilk="function" line="306" name="__null_method" signature="__null_method(*args)" />
+          </scope>
+        </scope>
+        <scope ilk="function" line="327" lineend="336" name="__get_random_basename" signature="__get_random_basename" />
+        <scope doc="define new proc class : If you want to modify the new class&#xA;or create a new subclass, you must do such operation in the&#xA;block parameter." ilk="function" line="344" lineend="350" name="new_proc_class" signature="new_proc_class(klass, func, safe = 4, add = false, parent = nil, &amp;b)" />
+        <scope ilk="function" line="353" lineend="360" name="eval_under_random_base" signature="eval_under_random_base(parent = nil, &amp;b)" />
+        <scope ilk="function" line="363" lineend="367" name="new_proc_class_random" signature="new_proc_class_random(klass, func, safe = 4, add = false, &amp;b)" />
+      </scope>
+    </scope>
+    

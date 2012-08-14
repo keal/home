@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="rexml/dtd/notationdecl">
+      <import line="1" module="rexml/child" symbol="*" />
+      <scope ilk="namespace" line="2" lineend="39" name="REXML">
+        <scope ilk="namespace" line="3" lineend="38" name="DTD">
+          <scope classrefs="Child" ilk="class" line="4" lineend="37" name="NotationDecl">
+            <scope attributes="__ctor__" ilk="function" line="9" lineend="21" name="initialize" signature="initialize" />
+            <scope ilk="function" line="23" lineend="25" name="to_s" signature="to_s" />
+            <scope ilk="function" line="27" lineend="30" name="write" signature="write( output, indent )" />
+            <scope attributes="__classmethod__" ilk="function" line="32" lineend="36" name="parse_source" signature="NotationDecl.parse_source" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

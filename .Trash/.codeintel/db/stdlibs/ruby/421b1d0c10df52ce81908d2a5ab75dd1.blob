@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/importer">
+      <import line="9" module="wsdl/xmlSchema/importer" symbol="*" />
+      <import line="10" module="wsdl/parser" symbol="*" />
+      <scope doc="WSDL4R - WSDL importer library." ilk="namespace" line="13" name="WSDL" />
+      <scope classrefs="WSDL::XMLSchema::" ilk="class" line="16" lineend="35" name="Importer">
+        <scope attributes="__classmethod__" ilk="function" line="17" lineend="19" name="import" signature="self.import(location, originalroot = nil)" />
+        <scope ilk="function" line="23" lineend="33" name="parse" signature="parse(content, location, originalroot)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,74 @@
+<scope ilk="blob" lang="Ruby" name="dl">
+      <scope ilk="namespace" name="DL">
+        <scope attributes="__classmethod__" ilk="function" name="callback" />
+        <scope attributes="__classmethod__" ilk="function" name="define_callback" />
+        <scope attributes="__classmethod__" ilk="function" name="dlopen" />
+        <scope attributes="__classmethod__" ilk="function" name="last_error" />
+        <scope attributes="__classmethod__" ilk="function" name="last_error=" />
+        <scope attributes="__classmethod__" ilk="function" name="malloc" />
+        <scope attributes="__classmethod__" ilk="function" name="remove_callback" />
+        <scope attributes="__classmethod__" ilk="function" name="sizeof" />
+        <scope attributes="__classmethod__" ilk="function" name="strdup" />
+        <scope attributes="__classmethod__" ilk="function" name="win32_last_error" />
+        <scope attributes="__classmethod__" ilk="function" name="win32_last_error=" />
+        <scope ilk="function" name="&lt;" />
+        <scope ilk="function" name="&lt;=" />
+        <scope ilk="function" name="&lt;=&gt;" />
+        <scope ilk="function" name="==" />
+        <scope ilk="function" name="===" />
+        <scope ilk="function" name="&gt;" />
+        <scope ilk="function" name="&gt;=" />
+        <scope ilk="function" name="ancestors" />
+        <scope ilk="function" name="autoload" />
+        <scope ilk="function" name="autoload?" />
+        <scope ilk="function" name="callback" />
+        <scope ilk="function" name="class_eval" />
+        <scope ilk="function" name="class_variables" />
+        <scope ilk="function" name="const_defined?" />
+        <scope ilk="function" name="const_get" />
+        <scope ilk="function" name="const_missing" />
+        <scope ilk="function" name="const_set" />
+        <scope ilk="function" name="constants" />
+        <scope ilk="function" name="define_callback" />
+        <scope ilk="function" name="dlopen" />
+        <scope ilk="function" name="freeze" />
+        <scope ilk="function" name="include?" />
+        <scope ilk="function" name="included_modules" />
+        <scope ilk="function" name="instance_method" />
+        <scope ilk="function" name="instance_methods" />
+        <scope ilk="function" name="last_error" />
+        <scope ilk="function" name="last_error=" />
+        <scope ilk="function" name="malloc" />
+        <scope ilk="function" name="method_defined?" />
+        <scope ilk="function" name="module_eval" />
+        <scope ilk="function" name="name" />
+        <scope ilk="function" name="private_class_method" />
+        <scope ilk="function" name="private_instance_methods" />
+        <scope ilk="function" name="private_method_defined?" />
+        <scope ilk="function" name="protected_instance_methods" />
+        <scope ilk="function" name="protected_method_defined?" />
+        <scope ilk="function" name="public_class_method" />
+        <scope ilk="function" name="public_instance_methods" />
+        <scope ilk="function" name="public_method_defined?" />
+        <scope ilk="function" name="remove_callback" />
+        <scope ilk="function" name="sizeof" />
+        <scope ilk="function" name="strdup" />
+        <scope ilk="function" name="to_s" />
+        <scope ilk="function" name="win32_last_error" />
+        <scope ilk="function" name="win32_last_error=" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALIGN_DOUBLE" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALIGN_FLOAT" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALIGN_INT" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALIGN_LONG" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALIGN_SHORT" />
+        <variable attributes="__const__" citdl="Fixnum" name="ALIGN_VOIDP" />
+        <variable attributes="__const__" citdl="String" name="DLSTACK" />
+        <variable attributes="__const__" citdl="DL::Symbol" name="FREE" />
+        <variable attributes="__const__" citdl="Hash" name="FuncTable" />
+        <variable attributes="__const__" citdl="Fixnum" name="MAX_ARG" />
+        <variable attributes="__const__" citdl="Fixnum" name="RTLD_GLOBAL" />
+        <variable attributes="__const__" citdl="Fixnum" name="RTLD_LAZY" />
+        <variable attributes="__const__" citdl="Fixnum" name="RTLD_NOW" />
+      </scope>
+    </scope>
+    

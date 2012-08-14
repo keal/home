@@ -1,0 +1,45 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httputils">
+      <import line="11" module="socket" symbol="*" />
+      <import line="12" module="tempfile" symbol="*" />
+      <scope doc="httputils.rb -- HTTPUtils Module" ilk="namespace" line="14" lineend="399" name="WEBrick">
+        <scope ilk="namespace" line="19" lineend="398" name="HTTPUtils">
+          <scope ilk="function" line="21" lineend="39" name="normalize_path" signature="normalize_path(path)" />
+          <scope doc="Load Apache compatible mime.types file." ilk="function" line="101" lineend="114" name="load_mime_types" signature="load_mime_types(file)" />
+          <scope ilk="function" line="117" lineend="121" name="mime_type" signature="mime_type(filename, mime_tab)" />
+          <scope ilk="function" line="126" lineend="153" name="parse_header" signature="parse_header(raw)" />
+          <scope ilk="function" line="156" lineend="159" name="split_header_value" signature="split_header_value(str)" />
+          <scope ilk="function" line="162" lineend="174" name="parse_range_header" signature="parse_range_header(ranges_specifier)" />
+          <scope ilk="function" line="177" lineend="192" name="parse_qvalues" signature="parse_qvalues(value)" />
+          <scope ilk="function" line="197" lineend="201" name="dequote" signature="dequote(str)" />
+          <scope ilk="function" line="204" lineend="206" name="quote" signature="quote(str)" />
+          <scope classrefs="String" ilk="class" line="211" lineend="291" name="FormData">
+            <scope ilk="function" line="215" lineend="215" name="name" />
+            <scope ilk="function" line="215" lineend="215" name="name=" />
+            <scope ilk="function" line="215" lineend="215" name="filename" />
+            <scope ilk="function" line="215" lineend="215" name="filename=" />
+            <scope ilk="function" line="215" lineend="215" name="next_data" />
+            <scope ilk="function" line="215" lineend="215" name="next_data=" />
+            <scope attributes="__ctor__" ilk="function" line="218" lineend="232" name="initialize" signature="initialize(*args)" />
+            <scope ilk="function" line="234" lineend="240" name="[]" signature="[](*key" />
+            <scope ilk="function" line="242" lineend="255" name="&lt;&lt;" signature="&lt;&lt;(str" />
+            <scope ilk="function" line="257" lineend="267" name="append_data" signature="append_data(data)" />
+            <scope ilk="function" line="269" lineend="276" name="each_data" signature="each_data" />
+            <scope ilk="function" line="278" lineend="284" name="list" signature="list" />
+            <scope ilk="function" line="288" lineend="290" name="to_s" signature="to_s" />
+          </scope>
+          <scope ilk="function" line="293" lineend="311" name="parse_query" signature="parse_query(str)" />
+          <scope ilk="function" line="314" lineend="339" name="parse_form_data" signature="parse_form_data(io, boundary)" />
+          <scope ilk="function" line="358" name="_make_regex" signature="_make_regex(str)" />
+          <scope ilk="function" line="359" name="_make_regex!" signature="_make_regex!(str)" />
+          <scope ilk="function" line="360" name="_escape" signature="_escape(str, regex)" />
+          <scope ilk="function" line="361" name="_unescape" signature="_unescape(str, regex)" />
+          <scope ilk="function" line="369" lineend="371" name="escape" signature="escape(str)" />
+          <scope ilk="function" line="373" lineend="375" name="unescape" signature="unescape(str)" />
+          <scope ilk="function" line="377" lineend="381" name="escape_form" signature="escape_form(str)" />
+          <scope ilk="function" line="383" lineend="385" name="unescape_form" signature="unescape_form(str)" />
+          <scope ilk="function" line="387" lineend="393" name="escape_path" signature="escape_path(str)" />
+          <scope ilk="function" line="395" lineend="397" name="escape8bit" signature="escape8bit(str)" />
+        </scope>
+      </scope>
+    </scope>
+    

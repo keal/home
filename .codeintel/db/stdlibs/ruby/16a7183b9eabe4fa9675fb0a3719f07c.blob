@@ -1,0 +1,332 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/component">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/component.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="1835" name="Tk::BLT">
+        <scope ilk="namespace" line="10" lineend="1834" name="PlotComponent">
+          <scope ilk="namespace" line="13" lineend="52" name="OptKeys">
+            <scope ilk="function" line="14" lineend="16" name="__item_font_optkeys" signature="__item_font_optkeys(id)" />
+            <scope ilk="function" line="19" lineend="21" name="__item_numstrval_optkeys" signature="__item_numstrval_optkeys(id)" />
+            <scope ilk="function" line="24" lineend="28" name="__item_boolval_optkeys" signature="__item_boolval_optkeys(id)" />
+            <scope ilk="function" line="31" lineend="35" name="__item_strval_optkeys" signature="__item_strval_optkeys(id)" />
+            <scope ilk="function" line="38" lineend="40" name="__item_listval_optkeys" signature="__item_listval_optkeys(id)" />
+            <scope ilk="function" line="43" lineend="45" name="__item_numlistval_optkeys" signature="__item_numlistval_optkeys(id)" />
+            <scope ilk="function" line="48" lineend="50" name="__item_tkvariable_optkeys" signature="__item_tkvariable_optkeys(id)" />
+          </scope>
+          <scope ilk="function" line="56" lineend="63" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+          <scope ilk="function" line="66" lineend="74" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+          <scope ilk="function" line="77" lineend="82" name="__item_pathname" signature="__item_pathname(id)" />
+          <scope ilk="function" line="85" lineend="87" name="axis_cget" signature="axis_cget(id, option)" />
+          <scope ilk="function" line="88" lineend="110" name="axis_configure" signature="axis_configure(*args)" />
+          <scope ilk="function" line="111" lineend="113" name="axis_configinfo" signature="axis_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="114" lineend="116" name="current_axis_configinfo" signature="current_axis_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="118" lineend="120" name="crosshairs_cget" signature="crosshairs_cget(option)" />
+          <scope ilk="function" line="121" lineend="123" name="crosshairs_configure" signature="crosshairs_configure(slot, value=None)" />
+          <scope ilk="function" line="124" lineend="126" name="crosshairs_configinfo" signature="crosshairs_configinfo(slot=nil)" />
+          <scope ilk="function" line="127" lineend="129" name="current_crosshairs_configinfo" signature="current_crosshairs_configinfo(slot=nil)" />
+          <scope ilk="function" line="131" lineend="133" name="element_cget" signature="element_cget(id, option)" />
+          <scope ilk="function" line="134" lineend="144" name="element_configure" signature="element_configure(*args)" />
+          <scope ilk="function" line="145" lineend="147" name="element_configinfo" signature="element_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="148" lineend="150" name="current_element_configinfo" signature="current_element_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="152" lineend="154" name="bar_cget" signature="bar_cget(id, option)" />
+          <scope ilk="function" line="155" lineend="165" name="bar_configure" signature="bar_configure(*args)" />
+          <scope ilk="function" line="166" lineend="168" name="bar_configinfo" signature="bar_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="169" lineend="171" name="current_bar_configinfo" signature="current_bar_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="173" lineend="175" name="line_cget" signature="line_cget(id, option)" />
+          <scope ilk="function" line="176" lineend="186" name="line_configure" signature="line_configure(*args)" />
+          <scope ilk="function" line="187" lineend="189" name="line_configinfo" signature="line_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="190" lineend="192" name="current_line_configinfo" signature="current_line_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="194" lineend="196" name="gridline_cget" signature="gridline_cget(option)" />
+          <scope ilk="function" line="197" lineend="199" name="gridline_configure" signature="gridline_configure(slot, value=None)" />
+          <scope ilk="function" line="200" lineend="202" name="gridline_configinfo" signature="gridline_configinfo(slot=nil)" />
+          <scope ilk="function" line="203" lineend="205" name="current_gridline_configinfo" signature="current_gridline_configinfo(slot=nil)" />
+          <scope ilk="function" line="207" lineend="209" name="legend_cget" signature="legend_cget(option)" />
+          <scope ilk="function" line="210" lineend="212" name="legend_configure" signature="legend_configure(slot, value=None)" />
+          <scope ilk="function" line="213" lineend="215" name="legend_configinfo" signature="legend_configinfo(slot=nil)" />
+          <scope ilk="function" line="216" lineend="218" name="current_legend_configinfo" signature="current_legend_configinfo(slot=nil)" />
+          <scope ilk="function" line="220" lineend="222" name="pen_cget" signature="pen_cget(id, option)" />
+          <scope ilk="function" line="223" lineend="233" name="pen_configure" signature="pen_configure(*args)" />
+          <scope ilk="function" line="234" lineend="236" name="pen_configinfo" signature="pen_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="237" lineend="239" name="current_pen_configinfo" signature="current_pen_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="241" lineend="243" name="postscript_cget" signature="postscript_cget(option)" />
+          <scope ilk="function" line="244" lineend="246" name="postscript_configure" signature="postscript_configure(slot, value=None)" />
+          <scope ilk="function" line="247" lineend="249" name="postscript_configinfo" signature="postscript_configinfo(slot=nil)" />
+          <scope ilk="function" line="250" lineend="252" name="current_postscript_configinfo" signature="current_postscript_configinfo(slot=nil)" />
+          <scope ilk="function" line="254" lineend="256" name="marker_cget" signature="marker_cget(id, option)" />
+          <scope ilk="function" line="257" lineend="267" name="marker_configure" signature="marker_configure(*args)" />
+          <scope ilk="function" line="268" lineend="270" name="marker_configinfo" signature="marker_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="271" lineend="273" name="current_marker_configinfo" signature="current_marker_configinfo(id, slot=nil)" />
+          <scope ilk="function" line="280" lineend="287" name="itemcget" signature="itemcget(tagOrId, option)" />
+          <scope ilk="function" line="288" lineend="313" name="itemconfiginfo" signature="itemconfiginfo(tagOrId, slot = nil)" />
+          <scope ilk="function" line="314" lineend="322" name="current_itemconfiginfo" signature="current_itemconfiginfo(tagOrId, slot = nil)" />
+          <scope classrefs="TkObject" ilk="class" line="329" lineend="436" name="Axis">
+            <scope attributes="__classmethod__" ilk="function" line="333" lineend="337" name="id2obj" signature="self.id2obj(chart, id)" />
+            <scope attributes="__classmethod__" ilk="function" line="339" lineend="347" name="new" signature="self.new(chart, axis=nil, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="349" lineend="369" name="initialize" signature="initialize(chart, axis=nil, keys={})" />
+            <scope ilk="function" line="371" lineend="373" name="id" signature="id" />
+            <scope ilk="function" line="375" lineend="377" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="379" lineend="381" name="cget" signature="cget(option)" />
+            <scope ilk="function" line="382" lineend="385" name="configure" signature="configure(key, value=None)" />
+            <scope ilk="function" line="386" lineend="388" name="configinfo" signature="configinfo(key=nil)" />
+            <scope ilk="function" line="389" lineend="391" name="current_configinfo" signature="current_configinfo(key=nil)" />
+            <scope ilk="function" line="393" lineend="401" name="command" signature="command(cmd=nil, &amp;b)" />
+            <scope ilk="function" line="403" lineend="406" name="delete" signature="delete" />
+            <scope ilk="function" line="408" lineend="410" name="invtransform" signature="invtransform(val)" />
+            <scope ilk="function" line="412" lineend="414" name="limits" signature="limits" />
+            <scope ilk="function" line="416" lineend="418" name="name" signature="name" />
+            <scope ilk="function" line="420" lineend="422" name="transform" signature="transform(val)" />
+            <scope ilk="function" line="424" lineend="427" name="view" signature="view" />
+            <scope ilk="function" line="429" lineend="431" name="use" signature="use(name=None)" />
+            <scope ilk="function" line="433" lineend="435" name="use_as" signature="use_as(axis)" />
+          </scope>
+          <scope classrefs="TkObject" ilk="class" line="440" lineend="490" name="Crosshairs">
+            <scope attributes="__classmethod__" ilk="function" line="443" lineend="446" name="new" signature="self.new(chart, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="448" lineend="454" name="initialize" signature="initialize(chart, keys={})" />
+            <scope ilk="function" line="456" lineend="458" name="id" signature="id" />
+            <scope ilk="function" line="460" lineend="462" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="464" lineend="466" name="cget" signature="cget(option)" />
+            <scope ilk="function" line="467" lineend="470" name="configure" signature="configure(key, value=None)" />
+            <scope ilk="function" line="471" lineend="473" name="configinfo" signature="configinfo(key=nil)" />
+            <scope ilk="function" line="474" lineend="476" name="current_configinfo" signature="current_configinfo(key=nil)" />
+            <scope ilk="function" line="478" lineend="481" name="off" signature="off" />
+            <scope ilk="function" line="482" lineend="485" name="on" signature="on" />
+            <scope ilk="function" line="486" lineend="489" name="toggle" signature="toggle" />
+          </scope>
+          <scope classrefs="TkObject" ilk="class" line="494" lineend="611" name="Element">
+            <scope attributes="__classmethod__" ilk="function" line="510" lineend="512" name="type2class" signature="Element.type2class(type)" />
+            <scope attributes="__classmethod__" ilk="function" line="514" lineend="518" name="id2obj" signature="Element.id2obj(chart, id)" />
+            <scope attributes="__classmethod__" ilk="function" line="520" lineend="530" name="new" signature="self.new(chart, element=nil, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="532" lineend="553" name="initialize" signature="initialize(chart, element=nil, keys={})" />
+            <scope ilk="function" line="555" lineend="557" name="id" signature="id" />
+            <scope ilk="function" line="559" lineend="561" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="563" lineend="566" name="cget" signature="cget(option)" />
+            <scope ilk="function" line="567" lineend="571" name="configure" signature="configure(key, value=None)" />
+            <scope ilk="function" line="572" lineend="575" name="configinfo" signature="configinfo(key=nil)" />
+            <scope ilk="function" line="576" lineend="579" name="current_configinfo" signature="current_configinfo(key=nil)" />
+            <scope ilk="function" line="581" lineend="583" name="activate" signature="activate(*args)" />
+            <scope ilk="function" line="585" lineend="588" name="closest" signature="closest(x, y, var, keys={})" />
+            <scope ilk="function" line="590" lineend="593" name="deactivate" signature="deactivate" />
+            <scope ilk="function" line="595" lineend="598" name="delete" signature="delete" />
+            <scope ilk="function" line="600" lineend="602" name="exist?" signature="exist?" />
+            <scope ilk="function" line="604" lineend="606" name="name" signature="name" />
+            <scope ilk="function" line="608" lineend="610" name="type" signature="type" />
+          </scope>
+          <scope classrefs="Element" ilk="class" line="613" lineend="616" name="Bar" />
+          <scope classrefs="Element" ilk="class" line="617" lineend="620" name="Line" />
+          <scope classrefs="TkObject" ilk="class" line="624" lineend="674" name="GridLine">
+            <scope attributes="__classmethod__" ilk="function" line="627" lineend="630" name="new" signature="self.new(chart, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="632" lineend="638" name="initialize" signature="initialize(chart, keys={})" />
+            <scope ilk="function" line="640" lineend="642" name="id" signature="id" />
+            <scope ilk="function" line="644" lineend="646" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="648" lineend="650" name="cget" signature="cget(option)" />
+            <scope ilk="function" line="651" lineend="654" name="configure" signature="configure(key, value=None)" />
+            <scope ilk="function" line="655" lineend="657" name="configinfo" signature="configinfo(key=nil)" />
+            <scope ilk="function" line="658" lineend="660" name="current_configinfo" signature="current_configinfo(key=nil)" />
+            <scope ilk="function" line="662" lineend="665" name="off" signature="off" />
+            <scope ilk="function" line="666" lineend="669" name="on" signature="on" />
+            <scope ilk="function" line="670" lineend="673" name="toggle" signature="toggle" />
+          </scope>
+          <scope classrefs="TkObject" ilk="class" line="678" lineend="727" name="Legend">
+            <scope attributes="__classmethod__" ilk="function" line="681" lineend="684" name="new" signature="self.new(chart, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="686" lineend="692" name="initialize" signature="initialize(chart, keys={})" />
+            <scope ilk="function" line="694" lineend="696" name="id" signature="id" />
+            <scope ilk="function" line="698" lineend="700" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="702" lineend="704" name="cget" signature="cget(option)" />
+            <scope ilk="function" line="705" lineend="708" name="configure" signature="configure(key, value=None)" />
+            <scope ilk="function" line="709" lineend="711" name="configinfo" signature="configinfo(key=nil)" />
+            <scope ilk="function" line="712" lineend="714" name="current_configinfo" signature="current_configinfo(key=nil)" />
+            <scope ilk="function" line="716" lineend="718" name="activate" signature="activate(*args)" />
+            <scope ilk="function" line="720" lineend="722" name="deactivate" signature="deactivate(*args)" />
+            <scope ilk="function" line="724" lineend="726" name="get" signature="get(pos, y=nil)" />
+          </scope>
+          <scope classrefs="TkObject" ilk="class" line="731" lineend="803" name="Pen">
+            <scope attributes="__classmethod__" ilk="function" line="735" lineend="739" name="id2obj" signature="self.id2obj(chart, id)" />
+            <scope attributes="__classmethod__" ilk="function" line="741" lineend="749" name="new" signature="self.new(chart, pen=nil, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="751" lineend="771" name="initialize" signature="initialize(chart, pen=nil, keys={})" />
+            <scope ilk="function" line="773" lineend="775" name="id" signature="id" />
+            <scope ilk="function" line="777" lineend="779" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="781" lineend="783" name="cget" signature="cget(option)" />
+            <scope ilk="function" line="784" lineend="787" name="configure" signature="configure(key, value=None)" />
+            <scope ilk="function" line="788" lineend="790" name="configinfo" signature="configinfo(key=nil)" />
+            <scope ilk="function" line="791" lineend="793" name="current_configinfo" signature="current_configinfo(key=nil)" />
+            <scope ilk="function" line="795" lineend="798" name="delete" signature="delete" />
+            <scope ilk="function" line="800" lineend="802" name="name" signature="name" />
+          </scope>
+          <scope classrefs="TkObject" ilk="class" line="807" lineend="859" name="Postscript">
+            <scope attributes="__classmethod__" ilk="function" line="810" lineend="813" name="new" signature="self.new(chart, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="815" lineend="821" name="initialize" signature="initialize(chart, keys={})" />
+            <scope ilk="function" line="823" lineend="825" name="id" signature="id" />
+            <scope ilk="function" line="827" lineend="829" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="831" lineend="833" name="cget" signature="cget(option)" />
+            <scope ilk="function" line="834" lineend="837" name="configure" signature="configure(key, value=None)" />
+            <scope ilk="function" line="838" lineend="840" name="configinfo" signature="configinfo(key=nil)" />
+            <scope ilk="function" line="841" lineend="843" name="current_configinfo" signature="current_configinfo(key=nil)" />
+            <scope ilk="function" line="845" lineend="858" name="output" signature="output(file=nil, keys={})" />
+          </scope>
+          <scope classrefs="TkObject" ilk="class" line="862" lineend="1010" name="Marker">
+            <scope attributes="__classmethod__" ilk="function" line="875" lineend="877" name="type2class" signature="Marker.type2class(type)" />
+            <scope attributes="__classmethod__" ilk="function" line="879" lineend="883" name="id2obj" signature="Marker.id2obj(chart, id)" />
+            <scope attributes="__classmethod__" ilk="function" line="885" lineend="921" name="_parse_create_args" signature="self._parse_create_args(keys)" />
+            <scope attributes="__classmethod__" ilk="function" line="924" lineend="933" name="create" signature="self.create(chart, keys={})" />
+            <scope attributes="__classmethod__" ilk="function" line="935" lineend="952" name="create_type" signature="self.create_type(chart, type, keys={})" />
+            <scope attributes="__ctor__" ilk="function" line="954" lineend="963" name="initialize" signature="initialize(parent, *args)" />
+            <scope ilk="function" line="964" lineend="966" name="create_self" signature="create_self(*args)" />
+            <scope ilk="function" line="969" lineend="971" name="id" signature="id" />
+            <scope ilk="function" line="973" lineend="975" name="to_eval" signature="to_eval" />
+            <scope ilk="function" line="977" lineend="979" name="cget" signature="cget(option)" />
+            <scope ilk="function" line="980" lineend="983" name="configure" signature="configure(key, value=None)" />
+            <scope ilk="function" line="984" lineend="986" name="configinfo" signature="configinfo(key=nil)" />
+            <scope ilk="function" line="987" lineend="989" name="current_configinfo" signature="current_configinfo(key=nil)" />
+            <scope ilk="function" line="991" lineend="993" name="after" signature="after(target=None)" />
+            <scope ilk="function" line="995" lineend="997" name="before" signature="before(target=None)" />
+            <scope ilk="function" line="999" lineend="1001" name="delete" signature="delete" />
+            <scope ilk="function" line="1003" lineend="1005" name="exist?" signature="exist?" />
+            <scope ilk="function" line="1007" lineend="1009" name="type" signature="type" />
+          </scope>
+          <scope classrefs="Marker" ilk="class" line="10121501212" lineend="1015" name="TextMarker" />
+          <scope classrefs="Marker" ilk="class" line="1016" lineend="1019" name="LineMarker" />
+          <scope classrefs="Marker" ilk="class" line="1020" lineend="1023" name="BitmapMarker" />
+          <scope classrefs="Marker" ilk="class" line="1024" lineend="1027" name="ImageMarker" />
+          <scope classrefs="Marker" ilk="class" line="1028" lineend="1031" name="PolygonMarker" />
+          <scope classrefs="Marker" ilk="class" line="1032" lineend="1035" name="WindowMarker" />
+          <scope ilk="function" line="1039" lineend="1049" name="__destroy_hook__" signature="__destroy_hook__" />
+          <scope ilk="function" line="1053" lineend="1066" name="tagid" signature="tagid(tag)" />
+          <scope ilk="function" line="1068" lineend="1076" name="_component_bind" signature="_component_bind(target, tag, context, *args)" />
+          <scope ilk="function" line="1077" lineend="1085" name="_component_bind_append" signature="_component_bind_append(target, tag, context, *args)" />
+          <scope ilk="function" line="1086" lineend="1089" name="_component_bind_remove" signature="_component_bind_remove(target, tag, context)" />
+          <scope ilk="function" line="1090" lineend="1092" name="_component_bindinfo" signature="_component_bindinfo(target, tag, context=nil)" />
+          <scope ilk="function" line="1096" lineend="1098" name="axis_bind" signature="axis_bind(tag, context, *args)" />
+          <scope ilk="function" line="1099" lineend="1101" name="axis_bind_append" signature="axis_bind_append(tag, context, *args)" />
+          <scope ilk="function" line="1102" lineend="1104" name="axis_bind_remove" signature="axis_bind_remove(tag, context)" />
+          <scope ilk="function" line="1105" lineend="1107" name="axis_bindinfo" signature="axis_bindinfo(tag, context=nil)" />
+          <scope ilk="function" line="1109" lineend="1111" name="element_bind" signature="element_bind(tag, context, *args)" />
+          <scope ilk="function" line="1112" lineend="1114" name="element_bind_append" signature="element_bind_append(tag, context, *args)" />
+          <scope ilk="function" line="1115" lineend="1117" name="element_bind_remove" signature="element_bind_remove(tag, context)" />
+          <scope ilk="function" line="1118" lineend="1120" name="element_bindinfo" signature="element_bindinfo(tag, context=nil)" />
+          <scope ilk="function" line="1122" lineend="1124" name="bar_bind" signature="bar_bind(tag, context, *args)" />
+          <scope ilk="function" line="1125" lineend="1127" name="bar_bind_append" signature="bar_bind_append(tag, context, *args)" />
+          <scope ilk="function" line="1128" lineend="1130" name="bar_bind_remove" signature="bar_bind_remove(tag, context)" />
+          <scope ilk="function" line="1131" lineend="1133" name="bar_bindinfo" signature="bar_bindinfo(tag, context=nil)" />
+          <scope ilk="function" line="1135" lineend="1137" name="line_bind" signature="line_bind(tag, context, *args)" />
+          <scope ilk="function" line="1138" lineend="1140" name="line_bind_append" signature="line_bind_append(tag, context, *args)" />
+          <scope ilk="function" line="1141" lineend="1143" name="line_bind_remove" signature="line_bind_remove(tag, context)" />
+          <scope ilk="function" line="1144" lineend="1146" name="line_bindinfo" signature="line_bindinfo(tag, context=nil)" />
+          <scope ilk="function" line="1148" lineend="1150" name="legend_bind" signature="legend_bind(tag, context, *args)" />
+          <scope ilk="function" line="1151" lineend="1153" name="legend_bind_append" signature="legend_bind_append(tag, context, *args)" />
+          <scope ilk="function" line="1154" lineend="1156" name="legend_bind_remove" signature="legend_bind_remove(tag, context)" />
+          <scope ilk="function" line="1157" lineend="1159" name="legend_bindinfo" signature="legend_bindinfo(tag, context=nil)" />
+          <scope ilk="function" line="1161" lineend="1163" name="marker_bind" signature="marker_bind(tag, context, *args)" />
+          <scope ilk="function" line="1164" lineend="1166" name="marker_bind_append" signature="marker_bind_append(tag, context, *args)" />
+          <scope ilk="function" line="1167" lineend="1169" name="marker_bind_remove" signature="marker_bind_remove(tag, context)" />
+          <scope ilk="function" line="1170" lineend="1172" name="marker_bindinfo" signature="marker_bindinfo(tag, context=nil)" />
+          <scope ilk="function" line="1176" lineend="1179" name="axis_create" signature="axis_create(id=nil, keys={})" />
+          <scope ilk="function" line="1180" lineend="1183" name="axis_delete" signature="axis_delete(*ids)" />
+          <scope ilk="function" line="1184" lineend="1186" name="axis_invtransform" signature="axis_invtransform(id, val)" />
+          <scope ilk="function" line="1187" lineend="1189" name="axis_limits" signature="axis_limits(id)" />
+          <scope ilk="function" line="1190" lineend="1195" name="axis_names" signature="axis_names(*pats)" />
+          <scope ilk="function" line="1196" lineend="1198" name="axis_transform" signature="axis_transform(id, val)" />
+          <scope ilk="function" line="1199" lineend="1202" name="axis_view" signature="axis_view(id)" />
+          <scope ilk="function" line="1203" lineend="1212" name="axis_use" signature="axis_use(id, target=nil)" />
+          <scope ilk="function" line="1216" lineend="1219" name="crosshairs_off" signature="crosshairs_off" />
+          <scope ilk="function" line="1220" lineend="1223" name="crosshairs_on" signature="crosshairs_on" />
+          <scope ilk="function" line="1224" lineend="1227" name="crosshairs_toggle" signature="crosshairs_toggle" />
+          <scope ilk="function" line="1231" lineend="1234" name="element_create" signature="element_create(id=nil, keys={})" />
+          <scope ilk="function" line="1235" lineend="1245" name="element_activate" signature="element_activate(*args)" />
+          <scope ilk="function" line="1246" lineend="1255" name="element_closest" signature="element_closest(x, y, var, *args)" />
+          <scope ilk="function" line="1256" lineend="1259" name="element_deactivate" signature="element_deactivate(*ids)" />
+          <scope ilk="function" line="1260" lineend="1263" name="element_delete" signature="element_delete(*ids)" />
+          <scope ilk="function" line="1264" lineend="1266" name="element_exist?" signature="element_exist?(id)" />
+          <scope ilk="function" line="1267" lineend="1272" name="element_names" signature="element_names(*pats)" />
+          <scope ilk="function" line="1273" lineend="1280" name="element_show" signature="element_show(*names)" />
+          <scope ilk="function" line="1281" lineend="1283" name="element_type" signature="element_type(id)" />
+          <scope ilk="function" line="1287" lineend="1290" name="bar_create" signature="bar_create(id=nil, keys={})" />
+          <scope ilk="function" line="1292" lineend="1302" name="bar_activate" signature="bar_activate(*args)" />
+          <scope ilk="function" line="1303" lineend="1312" name="bar_closest" signature="bar_closest(x, y, var, *args)" />
+          <scope ilk="function" line="1313" lineend="1316" name="bar_deactivate" signature="bar_deactivate(*ids)" />
+          <scope ilk="function" line="1317" lineend="1320" name="bar_delete" signature="bar_delete(*ids)" />
+          <scope ilk="function" line="1321" lineend="1323" name="bar_exist?" signature="bar_exist?(id)" />
+          <scope ilk="function" line="1324" lineend="1329" name="bar_names" signature="bar_names(*pats)" />
+          <scope ilk="function" line="1330" lineend="1337" name="bar_show" signature="bar_show(*names)" />
+          <scope ilk="function" line="1338" lineend="1340" name="bar_type" signature="bar_type(id)" />
+          <scope ilk="function" line="1344" lineend="1347" name="line_create" signature="line_create(id=nil, keys={})" />
+          <scope ilk="function" line="1349" lineend="1359" name="line_activate" signature="line_activate(*args)" />
+          <scope ilk="function" line="1360" lineend="1369" name="line_closest" signature="line_closest(x, y, var, *args)" />
+          <scope ilk="function" line="1370" lineend="1373" name="line_deactivate" signature="line_deactivate(*ids)" />
+          <scope ilk="function" line="1374" lineend="1377" name="line_delete" signature="line_delete(*ids)" />
+          <scope ilk="function" line="1378" lineend="1380" name="line_exist?" signature="line_exist?(id)" />
+          <scope ilk="function" line="1381" lineend="1386" name="line_names" signature="line_names(*pats)" />
+          <scope ilk="function" line="1387" lineend="1394" name="line_show" signature="line_show(*names)" />
+          <scope ilk="function" line="1395" lineend="1397" name="line_type" signature="line_type(id)" />
+          <scope ilk="function" line="1401" lineend="1404" name="gridline_off" signature="gridline_off" />
+          <scope ilk="function" line="1405" lineend="1408" name="gridline_on" signature="gridline_on" />
+          <scope ilk="function" line="1409" lineend="1412" name="gridline_toggle" signature="gridline_toggle" />
+          <scope ilk="function" line="1416" lineend="1442" name="legend_window_create" signature="legend_window_create(parent=nil, keys=nil)">
+            <scope classrefs="Object" ilk="class" line="1430" lineend="1434" name="legend">
+              <scope ilk="function" line="1431" lineend="1433" name="__destroy_hook__" signature="__destroy_hook__" />
+            </scope>
+          </scope>
+          <scope ilk="function" line="1444" lineend="1449" name="legend_activate" signature="legend_activate(*pats)" />
+          <scope ilk="function" line="1450" lineend="1455" name="legend_deactivate" signature="legend_deactivate(*pats)" />
+          <scope ilk="function" line="1456" lineend="1465" name="legend_get" signature="legend_get(pos, y=nil)" />
+          <scope ilk="function" line="1469" lineend="1472" name="pen_create" signature="pen_create(id=nil, keys={})" />
+          <scope ilk="function" line="1473" lineend="1476" name="pen_delete" signature="pen_delete(*ids)" />
+          <scope ilk="function" line="1477" lineend="1482" name="pen_names" signature="pen_names(*pats)" />
+          <scope ilk="function" line="1486" lineend="1498" name="postscript_output" signature="postscript_output(file=nil, keys={})" />
+          <scope ilk="function" line="1502" lineend="1523" name="marker_create" signature="marker_create(type, keys={})" />
+          <scope ilk="function" line="1524" lineend="1531" name="marker_after" signature="marker_after(id, target=nil)" />
+          <scope ilk="function" line="1532" lineend="1539" name="marker_before" signature="marker_before(id, target=None)" />
+          <scope ilk="function" line="1540" lineend="1543" name="marker_delete" signature="marker_delete(*ids)" />
+          <scope ilk="function" line="1544" lineend="1546" name="marker_exist?" signature="marker_exist?(id)" />
+          <scope ilk="function" line="1547" lineend="1552" name="marker_names" signature="marker_names(*pats)" />
+          <scope ilk="function" line="1553" lineend="1555" name="marker_type" signature="marker_type(id)" />
+          <scope ilk="function" line="1559" lineend="1561" name="xaxis_cget" signature="xaxis_cget(option)" />
+          <scope ilk="function" line="1562" lineend="1577" name="xaxis_configure" signature="xaxis_configure(slot, value=None)" />
+          <scope ilk="function" line="1578" lineend="1580" name="xaxis_configinfo" signature="xaxis_configinfo(slot=nil)" />
+          <scope ilk="function" line="1581" lineend="1583" name="current_xaxis_configinfo" signature="current_xaxis_configinfo(slot=nil)" />
+          <scope ilk="function" line="1584" lineend="1592" name="xaxis_bind" signature="xaxis_bind(context, *args)" />
+          <scope ilk="function" line="1593" lineend="1601" name="xaxis_bind_append" signature="xaxis_bind_append(context, *args)" />
+          <scope ilk="function" line="1602" lineend="1605" name="xaxis_bind_remove" signature="xaxis_bind_remove(context)" />
+          <scope ilk="function" line="1606" lineend="1608" name="xaxis_bindinfo" signature="xaxis_bindinfo(context=nil)" />
+          <scope ilk="function" line="1609" lineend="1611" name="xaxis_invtransform" signature="xaxis_invtransform(val)" />
+          <scope ilk="function" line="1612" lineend="1614" name="xaxis_limits" signature="xaxis_limits" />
+          <scope ilk="function" line="1615" lineend="1617" name="xaxis_transform" signature="xaxis_transform(val)" />
+          <scope ilk="function" line="1618" lineend="1626" name="xaxis_use" signature="xaxis_use(target=nil)" />
+          <scope ilk="function" line="1628" lineend="1630" name="x2axis_cget" signature="x2axis_cget(option)" />
+          <scope ilk="function" line="1631" lineend="1646" name="x2axis_configure" signature="x2axis_configure(slot, value=None)" />
+          <scope ilk="function" line="1647" lineend="1649" name="x2axis_configinfo" signature="x2axis_configinfo(slot=nil)" />
+          <scope ilk="function" line="1650" lineend="1652" name="current_x2axis_configinfo" signature="current_x2axis_configinfo(slot=nil)" />
+          <scope ilk="function" line="1653" lineend="1661" name="x2axis_bind" signature="x2axis_bind(context, *args)" />
+          <scope ilk="function" line="1662" lineend="1670" name="x2axis_bind_append" signature="x2axis_bind_append(context, *args)" />
+          <scope ilk="function" line="1671" lineend="1674" name="x2axis_bind_remove" signature="x2axis_bind_remove(context)" />
+          <scope ilk="function" line="1675" lineend="1677" name="x2axis_bindinfo" signature="x2axis_bindinfo(context=nil)" />
+          <scope ilk="function" line="1678" lineend="1680" name="x2axis_invtransform" signature="x2axis_invtransform(val)" />
+          <scope ilk="function" line="1681" lineend="1683" name="x2axis_limits" signature="x2axis_limits" />
+          <scope ilk="function" line="1684" lineend="1686" name="x2axis_transform" signature="x2axis_transform(val)" />
+          <scope ilk="function" line="1687" lineend="1695" name="x2axis_use" signature="x2axis_use(target=nil)" />
+          <scope ilk="function" line="1697" lineend="1699" name="yaxis_cget" signature="yaxis_cget(option)" />
+          <scope ilk="function" line="1700" lineend="1715" name="yaxis_configure" signature="yaxis_configure(slot, value=None)" />
+          <scope ilk="function" line="1716" lineend="1718" name="yaxis_configinfo" signature="yaxis_configinfo(slot=nil)" />
+          <scope ilk="function" line="1719" lineend="1721" name="current_yaxis_configinfo" signature="current_yaxis_configinfo(slot=nil)" />
+          <scope ilk="function" line="1722" lineend="1730" name="yaxis_bind" signature="yaxis_bind(context, *args)" />
+          <scope ilk="function" line="1731" lineend="1739" name="yaxis_bind_append" signature="yaxis_bind_append(context, *args)" />
+          <scope ilk="function" line="1740" lineend="1743" name="yaxis_bind_remove" signature="yaxis_bind_remove(context)" />
+          <scope ilk="function" line="1744" lineend="1746" name="yaxis_bindinfo" signature="yaxis_bindinfo(context=nil)" />
+          <scope ilk="function" line="1747" lineend="1749" name="yaxis_invtransform" signature="yaxis_invtransform(val)" />
+          <scope ilk="function" line="1750" lineend="1752" name="yaxis_limits" signature="yaxis_limits" />
+          <scope ilk="function" line="1753" lineend="1755" name="yaxis_transform" signature="yaxis_transform(val)" />
+          <scope ilk="function" line="1756" lineend="1764" name="yaxis_use" signature="yaxis_use(target=nil)" />
+          <scope ilk="function" line="1766" lineend="1768" name="y2axis_cget" signature="y2axis_cget(option)" />
+          <scope ilk="function" line="1769" lineend="1784" name="y2axis_configure" signature="y2axis_configure(slot, value=None)" />
+          <scope ilk="function" line="1785" lineend="1787" name="y2axis_configinfo" signature="y2axis_configinfo(slot=nil)" />
+          <scope ilk="function" line="1788" lineend="1790" name="current_y2axis_configinfo" signature="current_y2axis_configinfo(slot=nil)" />
+          <scope ilk="function" line="1791" lineend="1799" name="y2axis_bind" signature="y2axis_bind(context, *args)" />
+          <scope ilk="function" line="1800" lineend="1808" name="y2axis_bind_append" signature="y2axis_bind_append(context, *args)" />
+          <scope ilk="function" line="1809" lineend="1812" name="y2axis_bind_remove" signature="y2axis_bind_remove(context)" />
+          <scope ilk="function" line="1813" lineend="1815" name="y2axis_bindinfo" signature="y2axis_bindinfo(context=nil)" />
+          <scope ilk="function" line="1816" lineend="1818" name="y2axis_invtransform" signature="y2axis_invtransform(val)" />
+          <scope ilk="function" line="1819" lineend="1821" name="y2axis_limits" signature="y2axis_limits" />
+          <scope ilk="function" line="1822" lineend="1824" name="y2axis_transform" signature="y2axis_transform(val)" />
+          <scope ilk="function" line="1825" lineend="1833" name="y2axis_use" signature="y2axis_use(target=nil)" />
+        </scope>
+      </scope>
+    </scope>
+    

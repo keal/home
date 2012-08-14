@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="webrick/compat">
+      <scope doc="compat.rb -- cross platform compatibility" ilk="namespace" line="11" lineend="15" name="Errno">
+        <scope classrefs="SystemCallError" ilk="class" line="12" lineend="12" name="EPROTO" />
+        <scope classrefs="SystemCallError" ilk="class" line="13" lineend="13" name="ECONNRESET" />
+        <scope classrefs="SystemCallError" ilk="class" line="14" lineend="14" name="ECONNABORTED" />
+      </scope>
+    </scope>
+    

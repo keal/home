@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="dl/types">
+      <import line="3" module="dl" symbol="*" />
+      <scope doc="-*- ruby -*-" ilk="namespace" line="5" lineend="245" name="DL">
+        <scope classrefs="Object" ilk="class" line="6" lineend="244" name="Types">
+          <scope attributes="__ctor__" doc="DL::Importable primitive types" ilk="function" line="164" lineend="166" name="initialize" signature="initialize" />
+          <scope ilk="function" line="168" lineend="170" name="typealias" signature="typealias(ty1, ty2, enc=nil, dec=nil, ty3=nil, senc=nil, sdec=nil)" />
+          <scope ilk="function" line="172" lineend="174" name="init_types" signature="init_types" />
+          <scope ilk="function" line="176" lineend="206" name="encode_argument_type" signature="encode_argument_type(alias_type)" />
+          <scope ilk="function" line="208" lineend="211" name="encode_return_type" signature="encode_return_type(ty)" />
+          <scope ilk="function" line="213" lineend="243" name="encode_struct_type" signature="encode_struct_type(alias_type)" />
+        </scope>
+      </scope>
+    </scope>
+    

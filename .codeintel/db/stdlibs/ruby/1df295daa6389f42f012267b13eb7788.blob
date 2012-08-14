@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="tk/menubar">
+      <import line="87" module="tk" symbol="*" />
+      <import line="88" module="tk/frame" symbol="*" />
+      <import line="89" module="tk/composite" symbol="*" />
+      <import line="90" module="tk/menuspec" symbol="*" />
+      <scope classrefs="TkFrame" doc="tk/menubar.rb" ilk="class" line="92" lineend="131" name="TkMenubar">
+        <scope attributes="__ctor__" ilk="function" line="96" lineend="110" name="initialize" signature="initialize(parent = nil, spec = nil, options = nil)" />
+        <scope ilk="function" line="112" lineend="126" name="add_menu" signature="add_menu(menu_info)" />
+        <scope ilk="function" line="128" lineend="130" name="[]" signature="[](index" />
+        <import symbol="TkComposite" />
+        <import symbol="TkMenuSpec" />
+      </scope>
+    </scope>
+    

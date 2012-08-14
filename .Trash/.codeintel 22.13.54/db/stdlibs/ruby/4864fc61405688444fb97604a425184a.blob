@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="yaml/encoding">
+      <scope doc="Handle Unicode-to-Internal conversion" ilk="namespace" line="5" lineend="33" name="YAML">
+        <scope attributes="__classmethod__" doc="Escape the string, condensing common escapes" ilk="function" line="10" lineend="16" name="escape" signature="YAML.escape( value, skip = &quot;&quot; )" />
+        <scope attributes="__classmethod__" doc="Unescape the condenses escapes" ilk="function" line="21" lineend="31" name="unescape" signature="YAML.unescape( value )" />
+      </scope>
+    </scope>
+    

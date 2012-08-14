@@ -1,0 +1,30 @@
+<scope ilk="blob" lang="Ruby" name="xsd/xmlparser/parser">
+      <import line="9" module="xsd/qname" symbol="*" />
+      <import line="10" module="xsd/ns" symbol="*" />
+      <import line="11" module="xsd/charset" symbol="*" />
+      <scope doc="XSD4R - XML Instance parser library." ilk="namespace" line="14" name="XSD" />
+      <scope ilk="namespace" line="15" name="XMLParser" />
+      <scope classrefs="Object" ilk="class" line="18" lineend="92" name="Parser">
+        <scope classrefs="Error" ilk="class" line="19" lineend="19" name="ParseError" />
+        <scope classrefs="ParseError" ilk="class" line="20" lineend="20" name="FormatDecodeError" />
+        <scope classrefs="FormatDecodeError" ilk="class" line="21" lineend="21" name="UnknownElementError" />
+        <scope classrefs="FormatDecodeError" ilk="class" line="22" lineend="22" name="UnknownAttributeError" />
+        <scope classrefs="FormatDecodeError" ilk="class" line="23" lineend="23" name="UnexpectedElementError" />
+        <scope classrefs="FormatDecodeError" ilk="class" line="24" lineend="24" name="ElementConstraintError" />
+        <scope attributes="__classmethod__" ilk="function" line="28" lineend="30" name="factory" signature="self.factory" />
+        <scope attributes="__classmethod__" ilk="function" line="32" lineend="34" name="create_parser" signature="self.create_parser(host, opt = {})" />
+        <scope attributes="__classmethod__" ilk="function" line="36" lineend="41" name="add_factory" signature="self.add_factory(factory)" />
+        <scope ilk="function" line="45" lineend="45" name="charset" />
+        <scope ilk="function" line="45" lineend="45" name="charset=" />
+        <scope attributes="__ctor__" ilk="function" line="47" lineend="50" name="initialize" signature="initialize(host, opt = {})" />
+        <scope ilk="function" line="52" lineend="57" name="parse" signature="parse(string_or_readable)" />
+        <scope ilk="function" line="61" lineend="64" name="do_parse" signature="do_parse(string_or_readable)" />
+        <scope ilk="function" line="66" lineend="68" name="start_element" signature="start_element(name, attrs)" />
+        <scope ilk="function" line="70" lineend="72" name="characters" signature="characters(text)" />
+        <scope ilk="function" line="74" lineend="76" name="end_element" signature="end_element(name)" />
+        <scope ilk="function" line="78" lineend="79" name="prologue" signature="prologue" />
+        <scope ilk="function" line="81" lineend="82" name="epilogue" signature="epilogue" />
+        <scope ilk="function" line="84" lineend="91" name="xmldecl_encoding=" signature="xmldecl_encoding=(charset)" />
+      </scope>
+    </scope>
+    

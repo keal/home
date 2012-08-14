@@ -1,0 +1,111 @@
+<scope ilk="blob" lang="Ruby" name="cgi">
+      <scope classrefs="Object" doc="CGI class. See documentation for the file cgi.rb for an&#xA;overview of the CGI protocol." ilk="class" name="CGI">
+        <scope doc="Mixin module for generating HTML version 4 with framesets." ilk="namespace" name="Html4Fr" />
+        <scope classrefs="Object" doc="Class representing an HTTP session. See documentation for&#xA;the file cgi/session.rb for an introduction to HTTP&#xA;sessions." ilk="class" name="Session">
+          <scope classrefs="Object" doc="In-memory session storage class." ilk="class" name="MemoryStore">
+            <scope attributes="__classmethod__ __ctor__" doc="Create a new MemoryStore instance." ilk="function" name="new" signature="(session, option=nil)" />
+            <scope doc="Close session storage." ilk="function" name="close" signature="()" />
+            <scope doc="Delete the session state." ilk="function" name="delete" signature="()" />
+            <scope doc="Restore session state." ilk="function" name="restore" signature="()" />
+            <scope doc="Update session state." ilk="function" name="update" signature="()" />
+          </scope>
+          <scope classrefs="Object" doc="File-based session storage class." ilk="class" name="FileStore">
+            <scope attributes="__classmethod__ __ctor__" doc="Create a new FileStore instance." ilk="function" name="new" signature="(session, option={})" />
+            <scope doc="Update and close the session&apos;s FileStore file." ilk="function" name="close" signature="()" />
+            <scope doc="Close and delete the session&apos;s FileStore file." ilk="function" name="delete" signature="()" />
+            <scope doc="Restore session state from the session&apos;s FileStore file." ilk="function" name="restore" signature="()" />
+            <scope doc="Save session state to the session&apos;s FileStore file." ilk="function" name="update" signature="()" />
+          </scope>
+          <scope classrefs="RuntimeError" ilk="class" name="NoSession" />
+          <scope attributes="__classmethod__ __ctor__" doc="Create a new CGI::Session object for request." ilk="function" name="new" signature="(request, option={})" />
+          <scope doc="Retrieve the session data for key key." ilk="function" name="[]" signature="(key)" />
+          <scope doc="Set the session date for key key." ilk="function" name="[]=" signature="(key, val)" />
+          <scope doc="Store session data on the server and close the session&#xA;storage. For some session storage types, this is a no-op." ilk="function" name="close" signature="()" />
+          <scope attributes="private" doc="Create a new session id." ilk="function" name="create_new_id" signature="()" />
+          <scope doc="Delete the session from storage. Also closes the storage." ilk="function" name="delete" signature="()" />
+          <scope doc="The id of this session." ilk="function" name="new_session" />
+          <scope doc="The id of this session." ilk="function" name="session_id" />
+          <scope doc="Store session data on the server. For some session storage&#xA;types, this is a no-op." ilk="function" name="update" signature="()" />
+        </scope>
+        <scope doc="Mixin module providing HTML generation methods." ilk="namespace" name="HtmlExtension">
+          <scope doc="Generate an Anchor element as a string." ilk="function" name="a" signature="(href = &quot;&quot;) {|| ...}" />
+          <scope doc="Generate a Document Base URI element as a String." ilk="function" name="base" signature="(href = &quot;&quot;) {|| ...}" />
+          <scope doc="Generate a BlockQuote element as a string." ilk="function" name="blockquote" signature="(cite = nil) {|| ...}" />
+          <scope doc="Generate a Table Caption element as a string." ilk="function" name="caption" signature="(align = nil) {|| ...}" />
+          <scope doc="Generate a Checkbox Input element as a string." ilk="function" name="checkbox" signature="(name = &quot;&quot;, value = nil, checked = nil)" />
+          <scope doc="Generate a sequence of checkbox elements, as a String." ilk="function" name="checkbox_group" signature="(name = &quot;&quot;, *values)" />
+          <scope doc="Generate an File Upload Input element as a string." ilk="function" name="file_field" signature="(name = &quot;&quot;, size = 20, maxlength = nil)" />
+          <scope doc="Generate a Form element as a string." ilk="function" name="form" signature="(method = &quot;post&quot;, action = script_name, enctype = &quot;application/x-www-form-urlencoded&quot;) {|| ...}" />
+          <scope doc="Generate a Hidden Input element as a string." ilk="function" name="hidden" signature="(name = &quot;&quot;, value = nil)" />
+          <scope doc="Generate a top-level HTML element as a string." ilk="function" name="html" signature="(attributes = {}) {|| ...}" />
+          <scope doc="Generate an Image Button Input element as a string." ilk="function" name="image_button" signature="(src = &quot;&quot;, name = nil, alt = nil)" />
+          <scope doc="Generate an Image element as a string." ilk="function" name="img" signature="(src = &quot;&quot;, alt = &quot;&quot;, width = nil, height = nil)" />
+          <scope doc="Generate a Form element with multipart encoding as a String." ilk="function" name="multipart_form" signature="(action = nil, enctype = &quot;multipart/form-data&quot;) {|| ...}" />
+          <scope doc="Generate a Password Input element as a string." ilk="function" name="password_field" signature="(name = &quot;&quot;, value = nil, size = 40, maxlength = nil)" />
+          <scope doc="Generate a Select element as a string." ilk="function" name="popup_menu" signature="(name = &quot;&quot;, *values)" />
+          <scope doc="Generates a radio-button Input element." ilk="function" name="radio_button" signature="(name = &quot;&quot;, value = nil, checked = nil)" />
+          <scope doc="Generate a sequence of radio button Input elements, as a&#xA;String." ilk="function" name="radio_group" signature="(name = &quot;&quot;, *values)" />
+          <scope doc="Generate a reset button Input element, as a String." ilk="function" name="reset" signature="(value = nil, name = nil)" />
+          <scope doc="Alias for #popup_menu" ilk="function" name="scrolling_list" signature="(name = &quot;&quot;, *values)" />
+          <scope doc="Generate a submit button Input element, as a String." ilk="function" name="submit" signature="(value = nil, name = nil)" />
+          <scope doc="Generate a text field Input element, as a String." ilk="function" name="text_field" signature="(name = &quot;&quot;, value = nil, size = 40, maxlength = nil)" />
+          <scope doc="Generate a TextArea element, as a String." ilk="function" name="textarea" signature="(name = &quot;&quot;, cols = 70, rows = 10) {|| ...}" />
+        </scope>
+        <scope doc="Base module for HTML-generation mixins." ilk="namespace" name="TagMaker" />
+        <scope doc="Mixin module for HTML version 4 transitional generation&#xA;methods." ilk="namespace" name="Html4Tr" />
+        <scope classrefs="DelegateClass(Array)" doc="Class representing an HTTP cookie." ilk="class" name="Cookie">
+          <scope attributes="__classmethod__ __ctor__" doc="Create a new CGI::Cookie object." ilk="function" name="new" signature="(name = &quot;&quot;, *value)" />
+          <scope attributes="__classmethod__" doc="Parse a raw cookie string into a hash of cookie-name=&gt;Cookie&#xA;pairs." ilk="function" name="parse" signature="(raw_cookie)" />
+          <scope ilk="function" name="domain" />
+          <scope ilk="function" name="domain=" />
+          <scope ilk="function" name="expires" />
+          <scope ilk="function" name="expires=" />
+          <scope ilk="function" name="name" />
+          <scope ilk="function" name="name=" />
+          <scope ilk="function" name="path" />
+          <scope ilk="function" name="path=" />
+          <scope ilk="function" name="secure" />
+          <scope doc="Set whether the Cookie is a secure cookie or not." ilk="function" name="secure=" signature="(val)" />
+          <scope doc="Convert the Cookie to its string representation." ilk="function" name="to_s" signature="()" />
+          <scope ilk="function" name="value" />
+          <scope ilk="function" name="value=" />
+        </scope>
+        <scope doc="Mixin module for HTML version 3 generation methods." ilk="namespace" name="Html3" />
+        <scope doc="Mixin module." ilk="namespace" name="QueryExtension">
+          <scope ilk="namespace" name="Value" />
+          <scope doc="Get the value for the parameter with a given key." ilk="function" name="[]" signature="(key)" />
+          <scope doc="Get the cookies as a hash of cookie-name=&gt;Cookie pairs." ilk="function" name="cookies" />
+          <scope doc="Get the cookies as a hash of cookie-name=&gt;Cookie pairs." ilk="function" name="cookies=" />
+          <scope doc="Returns true if a given parameter key exists in the query." ilk="function" name="has_key?" signature="(*args)" />
+          <scope doc="Alias for #has_key?" ilk="function" name="include?" signature="(*args)" />
+          <scope attributes="private" doc="Initialize the data from the query." ilk="function" name="initialize_query" signature="()" />
+          <scope doc="Alias for #has_key?" ilk="function" name="key?" signature="(*args)" />
+          <scope doc="Return all parameter keys as an array." ilk="function" name="keys" signature="(*args)" />
+          <scope ilk="function" name="multipart?" signature="()" />
+          <scope doc="Get the parameters as a hash of name=&gt;values pairs, where&#xA;values is an Array." ilk="function" name="params" />
+          <scope doc="Set all the parameters." ilk="function" name="params=" signature="(hash)" />
+          <scope doc="Get the raw cookies as a string." ilk="function" name="raw_cookie" signature="()" />
+          <scope doc="Get the raw RFC2965 cookies as a string." ilk="function" name="raw_cookie2" signature="()" />
+          <scope attributes="private" doc="offline mode. read name=value pairs on standard input." ilk="function" name="read_from_cmdline" signature="()" />
+          <scope attributes="private" ilk="function" name="read_multipart" signature="(boundary, content_length)" />
+        </scope>
+        <scope doc="Mixin module for HTML version 4 generation methods." ilk="namespace" name="Html4" />
+        <scope attributes="__classmethod__" doc="URL-encode a string." ilk="function" name="escape" signature="(string)" />
+        <scope attributes="__classmethod__" doc="Escape only the tags of certain HTML elements in string." ilk="function" name="escapeElement" signature="(string, *elements)" />
+        <scope attributes="__classmethod__" doc="Escape special characters in HTML, namely &amp;\&quot;&lt;&gt;" ilk="function" name="escapeHTML" signature="(string)" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a new CGI instance." ilk="function" name="new" signature="(type = &quot;query&quot;)" />
+        <scope attributes="__classmethod__" doc="Parse an HTTP query string into a hash of key=&gt;value pairs." ilk="function" name="parse" signature="(query)" />
+        <scope attributes="__classmethod__" doc="Prettify (indent) an HTML string." ilk="function" name="pretty" signature="(string, shift = &quot; &quot;)" />
+        <scope attributes="__classmethod__" doc="Format a Time object as a String using the format specified&#xA;by RFC 1123." ilk="function" name="rfc1123_date" signature="(time)" />
+        <scope attributes="__classmethod__" doc="URL-decode a string." ilk="function" name="unescape" signature="(string)" />
+        <scope attributes="__classmethod__" doc="Undo escaping such as that done by CGI::escapeElement()" ilk="function" name="unescapeElement" signature="(string, *elements)" />
+        <scope attributes="__classmethod__" doc="Unescape a string that has been HTML-escaped" ilk="function" name="unescapeHTML" signature="(string)" />
+        <scope attributes="private" ilk="function" name="env_table" signature="()" />
+        <scope doc="Create an HTTP header block as a string." ilk="function" name="header" signature="(options = &quot;text/html&quot;)" />
+        <scope doc="Print an HTTP header and body to $DEFAULT_OUTPUT ($&gt;)" ilk="function" name="out" signature="(options = &quot;text/html&quot;) {|| ...}" />
+        <scope doc="Print an argument or list of arguments to the default output&#xA;stream" ilk="function" name="print" signature="(*options)" />
+        <scope attributes="private" ilk="function" name="stdinput" signature="()" />
+        <scope attributes="private" ilk="function" name="stdoutput" signature="()" />
+      </scope>
+    </scope>
+    

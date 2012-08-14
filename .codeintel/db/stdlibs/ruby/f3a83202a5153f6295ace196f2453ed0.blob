@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="profiler">
+      <scope ilk="namespace" line="1" lineend="59" name="Profiler__">
+        <scope doc="internal values" ilk="function" line="23" lineend="28" name="start_profile" signature="start_profile" />
+        <scope ilk="function" line="29" lineend="31" name="stop_profile" signature="stop_profile" />
+        <scope ilk="function" line="32" lineend="48" name="print_profile" signature="print_profile(f)" />
+        <scope ilk="function" line="49" lineend="57" name="get_name" signature="get_name(klass, id)" />
+      </scope>
+    </scope>
+    

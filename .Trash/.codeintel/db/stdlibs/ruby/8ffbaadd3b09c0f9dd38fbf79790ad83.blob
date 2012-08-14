@@ -1,0 +1,35 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpserver">
+      <import line="11" module="webrick/server" symbol="*" />
+      <import line="12" module="webrick/httputils" symbol="*" />
+      <import line="13" module="webrick/httpstatus" symbol="*" />
+      <import line="14" module="webrick/httprequest" symbol="*" />
+      <import line="15" module="webrick/httpresponse" symbol="*" />
+      <import line="16" module="webrick/httpservlet" symbol="*" />
+      <import line="17" module="webrick/accesslog" symbol="*" />
+      <scope doc="httpserver.rb -- HTTPServer Class" ilk="namespace" line="19" lineend="210" name="WEBrick">
+        <scope classrefs="ServerError" ilk="class" line="20" lineend="20" name="HTTPServerError" />
+        <scope classrefs="::WEBrick::GenericServer" ilk="class" line="22" lineend="209" name="HTTPServer">
+          <scope attributes="__ctor__" ilk="function" line="23" lineend="41" name="initialize" signature="initialize(config={}, default=Config::HTTP)" />
+          <scope ilk="function" line="43" lineend="87" name="run" signature="run(sock)" />
+          <scope ilk="function" line="89" lineend="105" name="service" signature="service(req, res)" />
+          <scope ilk="function" line="107" lineend="109" name="do_OPTIONS" signature="do_OPTIONS(req, res)" />
+          <scope ilk="function" line="111" lineend="114" name="mount" signature="mount(dir, servlet, *options)" />
+          <scope ilk="function" line="116" lineend="120" name="mount_proc" signature="mount_proc(dir, proc=nil, &amp;block)" />
+          <scope ilk="function" line="122" lineend="125" name="unmount" signature="unmount(dir)" />
+          <scope ilk="function" line="128" lineend="134" name="search_servlet" signature="search_servlet(path)" />
+          <scope ilk="function" line="136" lineend="145" name="virtual_host" signature="virtual_host(server)" />
+          <scope ilk="function" line="147" lineend="154" name="lookup_server" signature="lookup_server(req)" />
+          <scope ilk="function" line="156" lineend="161" name="access_log" signature="access_log(config, req, res)" />
+          <scope classrefs="Object" ilk="class" line="163" lineend="208" name="MountTable">
+            <scope attributes="__ctor__" ilk="function" line="164" lineend="167" name="initialize" signature="initialize" />
+            <scope ilk="function" line="169" lineend="172" name="[]" signature="[](dir" />
+            <scope ilk="function" line="174" lineend="179" name="[]=" signature="[]=(dir" />
+            <scope ilk="function" line="181" lineend="186" name="delete" signature="delete(dir)" />
+            <scope ilk="function" line="188" lineend="191" name="scan" signature="scan(path)" />
+            <scope ilk="function" line="195" lineend="201" name="compile" signature="compile" />
+            <scope ilk="function" line="203" lineend="207" name="normalize" signature="normalize(dir)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

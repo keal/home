@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="irb/cmd/subirb">
+      <import line="14" module="irb/cmd/nop.rb" symbol="*" />
+      <import line="15" module="irb/ext/multi-irb" symbol="*" />
+      <scope doc="!/usr/local/bin/ruby" ilk="namespace" line="17" lineend="43" name="IRB">
+        <scope ilk="namespace" line="18" lineend="42" name="ExtendCommand">
+          <scope classrefs="Nop" ilk="class" line="19" lineend="23" name="IrbCommand">
+            <scope ilk="function" line="20" lineend="22" name="execute" signature="execute(*obj)" />
+          </scope>
+          <scope classrefs="Nop" ilk="class" line="25" lineend="29" name="Jobs">
+            <scope ilk="function" line="26" lineend="28" name="execute" signature="execute" />
+          </scope>
+          <scope classrefs="Nop" ilk="class" line="31" lineend="35" name="Foreground">
+            <scope ilk="function" line="32" lineend="34" name="execute" signature="execute(key)" />
+          </scope>
+          <scope classrefs="Nop" ilk="class" line="37" lineend="41" name="Kill">
+            <scope ilk="function" line="38" lineend="40" name="execute" signature="execute(*keys)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

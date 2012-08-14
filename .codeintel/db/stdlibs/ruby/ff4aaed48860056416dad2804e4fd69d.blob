@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/vu/dial">
+      <import line="5" module="tk" symbol="*" />
+      <import line="16" module="tkextlib/vu.rb" symbol="*" />
+      <scope doc="create module/class" ilk="namespace" line="8" lineend="13" name="Tk">
+        <scope ilk="namespace" line="9" lineend="12" name="Vu">
+          <scope classrefs="TkWindow" ilk="class" line="10" lineend="11" name="Dial" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" doc="define module/class" ilk="class" line="19" lineend="102" name="Tk::Vu::">
+        <scope ilk="function" line="26" lineend="28" name="__methodcall_optkeys" signature="__methodcall_optkeys" />
+        <scope ilk="function" line="33" lineend="40" name="coords" signature="coords(val = nil)" />
+        <scope ilk="function" line="42" lineend="44" name="constrain" signature="constrain(val = None)" />
+        <scope ilk="function" line="46" lineend="48" name="get" signature="get(*args)" />
+        <scope ilk="function" line="50" lineend="52" name="identify" signature="identify(x, y)" />
+        <scope ilk="function" line="54" lineend="64" name="get_label" signature="get_label(val=nil)" />
+        <scope ilk="function" line="66" lineend="69" name="set_label" signature="set_label(val, str, *args)" />
+        <scope ilk="function" line="71" lineend="74" name="set_label_constrain" signature="set_label_constrain(val, str, *args)" />
+        <scope ilk="function" line="76" lineend="86" name="get_tag" signature="get_tag(val=nil)" />
+        <scope ilk="function" line="88" lineend="91" name="set_tag" signature="set_tag(val, str, *args)" />
+        <scope ilk="function" line="93" lineend="96" name="set_tag_constrain" signature="set_tag_constrain(val, str, *args)" />
+        <scope ilk="function" line="98" lineend="101" name="set" signature="set(val = None)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,39 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/unix_dnd">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/unix_dnd.rb" ilk="namespace" line="12" lineend="129" name="Tk::BLT">
+        <scope ilk="namespace" line="13" lineend="128" name="DnD">
+          <scope classrefs="Object" ilk="class" line="22" lineend="71" name="self">
+            <scope ilk="function" line="23" lineend="25" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+            <scope ilk="function" line="28" lineend="30" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+            <scope ilk="function" line="36" lineend="38" name="cget" signature="cget(win, option)" />
+            <scope ilk="function" line="39" lineend="41" name="configure" signature="configure(win, slot, value=None)" />
+            <scope ilk="function" line="42" lineend="44" name="configinfo" signature="configinfo(win, slot=nil)" />
+            <scope ilk="function" line="45" lineend="47" name="current_configinfo" signature="current_configinfo(win, slot=nil)" />
+            <scope ilk="function" line="49" lineend="51" name="tokwn_cget" signature="tokwn_cget(win, option)" />
+            <scope ilk="function" line="52" lineend="54" name="token_configure" signature="token_configure(win, slot, value=None)" />
+            <scope ilk="function" line="55" lineend="57" name="token_configinfo" signature="token_configinfo(win, slot=nil)" />
+            <scope ilk="function" line="58" lineend="60" name="current_token_configinfo" signature="current_token_configinfo(win, slot=nil)" />
+            <scope ilk="function" line="62" lineend="64" name="token_windowconfigure" signature="token_windowconfigure(win, slot, value=None)" />
+            <scope ilk="function" line="65" lineend="67" name="token_windowconfiginfo" signature="token_windowconfiginfo(win, slot=nil)" />
+            <scope ilk="function" line="68" lineend="70" name="current_token_windowconfiginfo" signature="current_token_windowconfiginfo(win, slot=nil)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="75" lineend="77" name="cancel" signature="self.cancel(win)" />
+          <scope attributes="__classmethod__" ilk="function" line="78" lineend="80" name="delete" signature="self.delete(*wins)" />
+          <scope attributes="__classmethod__" ilk="function" line="81" lineend="83" name="delete_source" signature="self.delete_source(*wins)" />
+          <scope attributes="__classmethod__" ilk="function" line="84" lineend="86" name="delete_target" signature="self.delete_target(*wins)" />
+          <scope attributes="__classmethod__" ilk="function" line="87" lineend="89" name="drag" signature="self.drag(win, x, y, token=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="90" lineend="92" name="drop" signature="self.drop(win, x, y, token=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="93" lineend="99" name="get_data" signature="self.get_data(win, fmt=nil, cmd=nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="100" lineend="102" name="names" signature="self.names(pat=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="103" lineend="105" name="source_names" signature="self.source_names(pat=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="106" lineend="108" name="target_names" signature="self.target_names(pat=None)" />
+          <scope attributes="__classmethod__" ilk="function" line="109" lineend="111" name="pull" signature="self.pull(win, fmt)" />
+          <scope attributes="__classmethod__" ilk="function" line="112" lineend="114" name="register" signature="self.register(win, keys={})" />
+          <scope attributes="__classmethod__" ilk="function" line="115" lineend="117" name="select" signature="self.select(win, x, y, timestamp)" />
+          <scope attributes="__classmethod__" ilk="function" line="118" lineend="124" name="set_data" signature="self.set_data(win, fmt=nil, cmd=nil)" />
+          <scope attributes="__classmethod__" ilk="function" line="125" lineend="127" name="token" signature="self.token(*args)" />
+        </scope>
+      </scope>
+    </scope>
+    

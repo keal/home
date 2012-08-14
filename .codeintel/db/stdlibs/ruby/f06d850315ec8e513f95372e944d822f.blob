@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="irb/ext/loader">
+      <scope doc="loader.rb - $Release Version: 0.9.5$ $Revision: 1.1.2.1 $&#xA;$Date: 2005/04/19 19:24:58 $ by Keiju ISHITSUKA(keiju@ruby-&#xA;lang.org)" ilk="namespace" line="14" lineend="119" name="IRB">
+        <scope classrefs="Exception" ilk="class" line="15" lineend="15" name="LoadAbort" />
+        <scope ilk="namespace" line="17" lineend="118" name="IrbLoader">
+          <scope ilk="function" line="30" lineend="42" name="search_file_from_ruby_path" signature="search_file_from_ruby_path(fn)" />
+          <scope ilk="function" line="44" lineend="61" name="source_file" signature="source_file(path)" />
+          <scope ilk="function" line="63" lineend="89" name="load_file" signature="load_file(path, priv = nil)" />
+          <scope ilk="function" line="91" lineend="117" name="old" signature="old" />
+        </scope>
+      </scope>
+    </scope>
+    

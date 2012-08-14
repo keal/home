@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/cursor">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="tkextlib/tcllib/cursor.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="12" lineend="53" name="Tk">
+        <scope ilk="namespace" line="13" lineend="44" name="Tcllib">
+          <scope ilk="namespace" line="14" lineend="43" name="Cursor">
+            <scope attributes="__classmethod__" ilk="function" line="16" lineend="18" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="20" lineend="26" name="package_version" signature="self.package_version" />
+            <scope attributes="__classmethod__" ilk="function" line="28" lineend="30" name="not_available" signature="self.not_available" />
+            <scope attributes="__classmethod__" ilk="function" line="32" lineend="34" name="cursor_display" signature="self.cursor_display(win=None)" />
+            <scope attributes="__classmethod__" ilk="function" line="36" lineend="38" name="cursor_propagate" signature="self.cursor_propagate(win, cursor)" />
+            <scope attributes="__classmethod__" ilk="function" line="40" lineend="42" name="cursor_restore" signature="self.cursor_restore(win, cursor = None)" />
+          </scope>
+        </scope>
+        <scope attributes="__classmethod__" ilk="function" line="46" lineend="52" name="cursor_display" signature="self.cursor_display(parent=None)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="55" lineend="69" name="TkWindow">
+        <scope ilk="function" line="56" lineend="60" name="cursor_propagate" signature="cursor_propagate(cursor)" />
+        <scope ilk="function" line="61" lineend="68" name="cursor_restore" signature="cursor_restore(cursor = None)" />
+      </scope>
+      <scope doc="TkPackage.require(&apos;cursor&apos;, &apos;0.1&apos;)" ilk="namespace" line="74" lineend="97" name="Tk">
+        <scope ilk="namespace" line="75" lineend="96" name="Tcllib">
+          <scope classrefs="Object" ilk="class" line="76" lineend="78" name="Cursor" />
+          <scope ilk="namespace" line="80" lineend="95" name="Cursor">
+            <scope attributes="__classmethod__" ilk="function" line="82" lineend="84" name="cursor_display" signature="self.cursor_display(win=None)" />
+            <scope attributes="__classmethod__" ilk="function" line="86" lineend="89" name="cursor_propagate" signature="self.cursor_propagate(win, cursor)" />
+            <scope attributes="__classmethod__" ilk="function" line="91" lineend="94" name="cursor_restore" signature="self.cursor_restore(win, cursor = None)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/element">
+      <import line="9" module="wsdl/xmlSchema/element" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema element definition for WSDL." ilk="namespace" line="12" name="WSDL" />
+      <scope ilk="namespace" line="13" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="16" lineend="24" name="Element">
+        <scope ilk="function" line="17" lineend="19" name="map_as_array?" signature="map_as_array?" />
+        <scope ilk="function" line="21" lineend="23" name="attributes" signature="attributes" />
+      </scope>
+    </scope>
+    

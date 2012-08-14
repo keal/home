@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tk/macpkg">
+      <import line="9" module="tk" symbol="*" />
+      <scope doc="tk/macpkg.rb : methods for Tcl/Tk packages for Macintosh&#xA;2000/11/22 by Hidetoshi Nagai &lt;nagai@ai.kyutech.ac.jp&gt;" ilk="namespace" line="11" lineend="21" name="Tk">
+        <scope attributes="__classmethod__" ilk="function" line="12" lineend="15" name="load_tclscript_rsrc" signature="Tk.load_tclscript_rsrc(resource_name, file=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="17" lineend="20" name="load_tclscript_rsrcid" signature="Tk.load_tclscript_rsrcid(resource_id, file=None)" />
+      </scope>
+      <scope ilk="namespace" line="23" lineend="73" name="TkMacResource">
+        <scope attributes="__classmethod__" ilk="function" line="30" lineend="32" name="package_name" signature="self.package_name" />
+        <scope ilk="function" line="36" lineend="38" name="close" signature="close(rsrcRef)" />
+        <scope ilk="function" line="40" lineend="42" name="delete" signature="delete(rsrcType, opts=nil)" />
+        <scope ilk="function" line="44" lineend="50" name="files" signature="files(rsrcRef=nil)" />
+        <scope ilk="function" line="52" lineend="54" name="list" signature="list(rsrcType, rsrcRef=nil)" />
+        <scope ilk="function" line="56" lineend="58" name="open" signature="open(fname, access=nil)" />
+        <scope ilk="function" line="60" lineend="62" name="read" signature="read(rsrcType, rsrcID, rsrcRef=nil)" />
+        <scope ilk="function" line="64" lineend="66" name="types" signature="types(rsrcRef=nil)" />
+        <scope ilk="function" line="68" lineend="70" name="write" signature="write(rsrcType, data, opts=nil)" />
+      </scope>
+    </scope>
+    

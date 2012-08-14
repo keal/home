@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="xsd/codegen/methoddef">
+      <import line="9" module="xsd/codegen/gensupport" symbol="*" />
+      <import line="10" module="xsd/codegen/commentdef" symbol="*" />
+      <scope doc="XSD4R - Generating method definition code Copyright (C) 2004&#xA;NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="13" name="XSD" />
+      <scope ilk="namespace" line="14" name="CodeGen" />
+      <scope classrefs="Object" ilk="class" line="17" lineend="59" name="MethodDef">
+        <scope ilk="function" line="21" lineend="21" name="definition" />
+        <scope ilk="function" line="21" lineend="21" name="definition=" />
+        <scope attributes="__ctor__" ilk="function" line="23" lineend="31" name="initialize" signature="initialize(name, *params)" />
+        <scope ilk="function" line="33" lineend="40" name="dump" signature="dump" />
+        <scope ilk="function" line="44" lineend="50" name="dump_method_def" signature="dump_method_def" />
+        <scope ilk="function" line="52" lineend="54" name="dump_method_def_end" signature="dump_method_def_end" />
+        <scope ilk="function" line="56" lineend="58" name="dump_definition" signature="dump_definition" />
+        <import symbol="GenSupport" />
+        <import symbol="CommentDef" />
+      </scope>
+    </scope>
+    

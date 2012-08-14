@@ -1,0 +1,29 @@
+<scope ilk="blob" lang="Ruby" name="uri/ldap">
+      <import line="13" module="uri/generic" symbol="*" />
+      <scope doc="= uri/ldap.rb" ilk="namespace" line="15" lineend="190" name="URI">
+        <scope classrefs="Generic" doc="LDAP URI SCHEMA (described in RFC2255) ldap://&lt;host&gt;/&lt;dn&gt;[?&lt;&#xA;attrs&gt;[?&lt;scope&gt;[?&lt;filter&gt;[?&lt;extensions&gt;]]]]" ilk="class" line="21" lineend="187" name="LDAP">
+          <scope attributes="__classmethod__" ilk="function" line="41" lineend="57" name="build" signature="self.build(args)" />
+          <scope attributes="__ctor__" ilk="function" line="59" lineend="68" name="initialize" signature="initialize(*arg)" />
+          <scope ilk="function" line="70" lineend="72" name="parse_dn" signature="parse_dn" />
+          <scope ilk="function" line="75" lineend="89" name="parse_query" signature="parse_query" />
+          <scope ilk="function" line="92" lineend="101" name="build_path_query" signature="build_path_query" />
+          <scope ilk="function" line="104" lineend="106" name="dn" signature="dn" />
+          <scope ilk="function" line="108" lineend="112" name="set_dn" signature="set_dn(val)" />
+          <scope ilk="function" line="115" lineend="118" name="dn=" signature="dn=(val)" />
+          <scope ilk="function" line="120" lineend="122" name="attributes" signature="attributes" />
+          <scope ilk="function" line="124" lineend="128" name="set_attributes" signature="set_attributes(val)" />
+          <scope ilk="function" line="131" lineend="134" name="attributes=" signature="attributes=(val)" />
+          <scope ilk="function" line="136" lineend="138" name="scope" signature="scope" />
+          <scope ilk="function" line="140" lineend="144" name="set_scope" signature="set_scope(val)" />
+          <scope ilk="function" line="147" lineend="150" name="scope=" signature="scope=(val)" />
+          <scope ilk="function" line="152" lineend="154" name="filter" signature="filter" />
+          <scope ilk="function" line="156" lineend="160" name="set_filter" signature="set_filter(val)" />
+          <scope ilk="function" line="163" lineend="166" name="filter=" signature="filter=(val)" />
+          <scope ilk="function" line="168" lineend="170" name="extensions" signature="extensions" />
+          <scope ilk="function" line="172" lineend="176" name="set_extensions" signature="set_extensions(val)" />
+          <scope ilk="function" line="179" lineend="182" name="extensions=" signature="extensions=(val)" />
+          <scope ilk="function" line="184" lineend="186" name="hierarchical?" signature="hierarchical?" />
+        </scope>
+      </scope>
+    </scope>
+    

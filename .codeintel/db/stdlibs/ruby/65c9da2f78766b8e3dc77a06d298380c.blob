@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="tk/pack">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/pack.rb : control pack geometry manager" ilk="namespace" line="6" lineend="71" name="TkPack">
+        <scope ilk="function" line="12" lineend="31" name="configure" signature="configure(win, *args)" />
+        <scope ilk="function" line="34" lineend="41" name="forget" signature="forget(*args)" />
+        <scope ilk="function" line="43" lineend="52" name="info" signature="info(slave)" />
+        <scope ilk="function" line="54" lineend="62" name="propagate" signature="propagate(master, mode=None)" />
+        <scope ilk="function" line="64" lineend="68" name="slaves" signature="slaves(master)" />
+      </scope>
+    </scope>
+    

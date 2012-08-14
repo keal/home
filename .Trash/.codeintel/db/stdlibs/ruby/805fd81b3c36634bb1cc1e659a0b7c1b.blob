@@ -1,0 +1,28 @@
+<scope ilk="blob" lang="Ruby" name="rexml/attribute">
+      <import line="1" module="rexml/namespace" symbol="*" />
+      <import line="2" module="rexml/text" symbol="*" />
+      <scope ilk="namespace" line="4" lineend="162" name="REXML">
+        <scope classrefs="Object" doc="Defines an Element Attribute; IE, a attribute=value pair, as&#xA;in: &lt;element attribute=&quot;value&quot;/&gt;." ilk="class" line="9" name="Attribute">
+          <scope ilk="function" line="14" lineend="14" name="element" />
+          <scope ilk="function" line="17" lineend="17" name="normalized=" />
+          <scope attributes="__ctor__" doc="Constructor." ilk="function" line="26" lineend="43" name="initialize" signature="initialize( first, second=nil, parent=nil )" />
+          <scope doc="Returns the namespace of the attribute." ilk="function" line="54" lineend="60" name="prefix" signature="prefix" />
+          <scope doc="Returns the namespace URL, if defined, or nil otherwise" ilk="function" line="67" lineend="70" name="namespace" signature="namespace" />
+          <scope doc="Returns true if other is an Attribute and has the same name&#xA;and value, false otherwise." ilk="function" line="74" lineend="76" name="==" signature="==( other" />
+          <scope doc="Creates (and returns) a hash from both the name and value" ilk="function" line="79" lineend="81" name="hash" signature="hash" />
+          <scope doc="Returns this attribute out as XML source, expanding the name" ilk="function" line="89" lineend="91" name="to_string" signature="to_string" />
+          <scope doc="Returns the attribute value, with entities replaced" ilk="function" line="94" lineend="105" name="to_s" signature="to_s" />
+          <scope doc="Returns the UNNORMALIZED value of this attribute." ilk="function" line="109" lineend="118" name="value" signature="value" />
+          <scope doc="Returns a copy of this attribute" ilk="function" line="121" lineend="123" name="clone" signature="clone" />
+          <scope doc="Sets the element of which this object is an attribute." ilk="function" line="129" lineend="132" name="element=" signature="element=( element )" />
+          <scope doc="Removes this Attribute from the tree, and returns true if&#xA;successfull" ilk="function" line="137" lineend="139" name="remove" signature="remove" />
+          <scope doc="Writes this attribute (EG, puts &apos;key=&quot;value&quot;&apos; to the output)" ilk="function" line="142" lineend="144" name="write" signature="write( output, indent=-1 )" />
+          <import symbol="Node" />
+          <import symbol="Namespace" />
+        </scope>
+        <scope ilk="function" line="146" lineend="148" name="node_type" signature="node_type" />
+        <scope ilk="function" line="150" lineend="154" name="inspect" signature="inspect" />
+        <scope ilk="function" line="156" lineend="160" name="xpath" signature="xpath" />
+      </scope>
+    </scope>
+    

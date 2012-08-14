@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="weakref">
+      <import line="12" module="delegate" symbol="*" />
+      <import line="76" module="thread" symbol="*" />
+      <scope classrefs="Delegator" doc="Weak Reference class that does not bother GCing." ilk="class" line="14" lineend="73" name="WeakRef">
+        <scope classrefs="StandardError" ilk="class" line="16" lineend="17" name="RefError" />
+        <scope attributes="__ctor__" doc="ref -&gt; obj" ilk="function" line="43" lineend="57" name="initialize" signature="initialize(orig)" />
+        <scope ilk="function" line="59" lineend="68" name="__getobj__" signature="__getobj__" />
+        <scope ilk="function" line="70" lineend="72" name="weakref_alive?" signature="weakref_alive?" />
+      </scope>
+    </scope>
+    

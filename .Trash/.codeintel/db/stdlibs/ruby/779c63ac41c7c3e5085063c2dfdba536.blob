@@ -1,0 +1,54 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/vu/pie">
+      <import line="5" module="tk" symbol="*" />
+      <import line="22" module="tkextlib/vu.rb" symbol="*" />
+      <scope doc="create module/class" ilk="namespace" line="8" lineend="19" name="Tk">
+        <scope ilk="namespace" line="9" lineend="18" name="Vu">
+          <scope ilk="namespace" line="10" lineend="11" name="PieSliceConfigMethod" />
+          <scope classrefs="TkWindow" ilk="class" line="12" lineend="13" name="Pie" />
+          <scope classrefs="TkObject" ilk="class" line="14" lineend="15" name="PieSlice" />
+          <scope classrefs="PieSlice" ilk="class" line="16" lineend="17" name="NamedPieSlice" />
+        </scope>
+      </scope>
+      <scope doc="call setup script  --  &lt;libdir&gt;/tkextlib/vu.rb" ilk="namespace" line="24" lineend="35" name="Tk::Vu::">
+        <scope ilk="function" line="27" lineend="33" name="__item_pathname" signature="__item_pathname(tagOrId)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="37" lineend="115" name="Tk::Vu::">
+        <scope ilk="function" line="42" lineend="44" name="__destroy_hook__" signature="__destroy_hook__" />
+        <scope ilk="function" line="50" lineend="57" name="tagid" signature="tagid(tag)" />
+        <scope ilk="function" line="61" lineend="64" name="delete" signature="delete(*glob_pats)" />
+        <scope ilk="function" line="66" lineend="69" name="explode" signature="explode(slice, *args)" />
+        <scope ilk="function" line="71" lineend="73" name="explode_value" signature="explode_value(slice)" />
+        <scope ilk="function" line="75" lineend="78" name="lower" signature="lower(slice, below=None)" />
+        <scope ilk="function" line="80" lineend="82" name="names" signature="names(*glob_pats)" />
+        <scope ilk="function" line="85" lineend="88" name="order" signature="order(*args)" />
+        <scope ilk="function" line="90" lineend="93" name="raise" signature="raise(slice, above=None)" />
+        <scope ilk="function" line="95" lineend="98" name="swap" signature="swap(slice1, slice2)" />
+        <scope ilk="function" line="100" lineend="102" name="set" signature="set(slice, *args)" />
+        <scope ilk="function" line="107" lineend="109" name="slice_value" signature="slice_value(slice)" />
+        <scope ilk="function" line="111" lineend="113" name="value" signature="value(val = None)" />
+        <import symbol="Tk::Vu::" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="117" lineend="208" name="Tk::Vu::">
+        <scope attributes="__classmethod__" ilk="function" line="122" lineend="126" name="id2obj" signature="self.id2obj(pie, id)" />
+        <scope attributes="__ctor__" ilk="function" line="128" lineend="144" name="initialize" signature="initialize(parent, *args)" />
+        <scope ilk="function" line="146" lineend="148" name="id" signature="id" />
+        <scope ilk="function" line="150" lineend="152" name="[]" signature="[](key" />
+        <scope ilk="function" line="154" lineend="157" name="[]=" signature="[]=(key" />
+        <scope ilk="function" line="159" lineend="161" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="163" lineend="166" name="configure" signature="configure(*args)" />
+        <scope ilk="function" line="168" lineend="170" name="configinfo" signature="configinfo(*args)" />
+        <scope ilk="function" line="172" lineend="174" name="current_configinfo" signature="current_configinfo(*args)" />
+        <scope ilk="function" line="176" lineend="178" name="delete" signature="delete" />
+        <scope ilk="function" line="180" lineend="183" name="explode" signature="explode(value)" />
+        <scope ilk="function" line="185" lineend="187" name="explode_value" signature="explode_value" />
+        <scope ilk="function" line="189" lineend="192" name="lower" signature="lower(other=None)" />
+        <scope ilk="function" line="194" lineend="197" name="raise" signature="raise(other=None)" />
+        <scope ilk="function" line="199" lineend="202" name="set" signature="set(value)" />
+        <scope ilk="function" line="205" lineend="207" name="value" signature="value" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="210" lineend="235" name="Tk::Vu::">
+        <scope attributes="__classmethod__" ilk="function" line="211" lineend="217" name="new" signature="self.new(parent, name, *args)" />
+        <scope attributes="__ctor__" ilk="function" line="219" lineend="234" name="initialize" signature="initialize(parent, name, *args)" />
+      </scope>
+    </scope>
+    

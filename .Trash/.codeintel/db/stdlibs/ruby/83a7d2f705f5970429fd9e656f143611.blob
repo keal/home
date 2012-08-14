@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tk/textwindow">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/text" symbol="*" />
+      <scope classrefs="TkObject" doc="tk/textwindow.rb - treat Tk text window object" ilk="class" line="7" lineend="149" name="TkTextWindow">
+        <scope attributes="__ctor__" ilk="function" line="10" lineend="55" name="initialize" signature="initialize(parent, index, keys = {})" />
+        <scope ilk="function" line="57" lineend="59" name="id" signature="id" />
+        <scope ilk="function" line="60" lineend="62" name="mark" signature="mark" />
+        <scope ilk="function" line="64" lineend="66" name="[]" signature="[](slot" />
+        <scope ilk="function" line="67" lineend="70" name="[]=" signature="[]=(slot" />
+        <scope ilk="function" line="72" lineend="74" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="76" lineend="105" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="107" lineend="109" name="configinfo" signature="configinfo(slot = nil)" />
+        <scope ilk="function" line="111" lineend="113" name="current_configinfo" signature="current_configinfo(slot = nil)" />
+        <scope ilk="function" line="115" lineend="117" name="window" signature="window" />
+        <scope ilk="function" line="119" lineend="126" name="window=" signature="window=(value)" />
+        <scope ilk="function" line="128" lineend="130" name="create" signature="create" />
+        <scope ilk="function" line="132" lineend="148" name="create=" signature="create=(value)" />
+        <import symbol="TkText::IndexModMethods" />
+      </scope>
+    </scope>
+    

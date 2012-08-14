@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/util/backtracefilter">
+      <scope ilk="namespace" line="1" lineend="40" name="Test">
+        <scope ilk="namespace" line="2" lineend="39" name="Unit">
+          <scope ilk="namespace" line="3" lineend="38" name="Util">
+            <scope ilk="namespace" line="4" lineend="37" name="BacktraceFilter">
+              <scope ilk="function" line="9" lineend="36" name="filter_backtrace" signature="filter_backtrace(backtrace, prefix=nil)" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

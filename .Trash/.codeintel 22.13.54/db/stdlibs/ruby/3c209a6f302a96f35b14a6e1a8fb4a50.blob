@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/arrowbutton">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/bwidget.rb" symbol="*" />
+      <import line="8" module="tkextlib/bwidget/button" symbol="*" />
+      <scope doc="tkextlib/bwidget/arrowbutton.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="BWidget">
+          <scope classrefs="Tk::BWidget::" ilk="class" line="12" lineend="13" name="ArrowButton" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="21" name="Tk::BWidget::" />
+    </scope>
+    

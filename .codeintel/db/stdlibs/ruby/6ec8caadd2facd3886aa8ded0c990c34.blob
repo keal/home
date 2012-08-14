@@ -1,0 +1,131 @@
+<scope ilk="blob" lang="Ruby" name="rss/1.0">
+      <import line="1" module="rss/parser" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="650" name="RSS">
+        <scope ilk="namespace" line="5" lineend="15" name="RSS10">
+          <scope attributes="__classmethod__" ilk="function" line="9" lineend="13" name="append_features" signature="self.append_features(klass)" />
+        </scope>
+        <scope classrefs="Element" ilk="class" line="17" lineend="629" name="RDF">
+          <scope classrefs="Object" ilk="class" line="22" lineend="28" name="self">
+            <scope ilk="function" line="24" lineend="26" name="required_uri" signature="required_uri" />
+          </scope>
+          <scope ilk="function" line="53" lineend="53" name="rss_version" />
+          <scope ilk="function" line="53" lineend="53" name="rss_version=" />
+          <scope ilk="function" line="53" lineend="53" name="version" />
+          <scope ilk="function" line="53" lineend="53" name="version=" />
+          <scope ilk="function" line="53" lineend="53" name="encoding" />
+          <scope ilk="function" line="53" lineend="53" name="encoding=" />
+          <scope ilk="function" line="53" lineend="53" name="standalone" />
+          <scope ilk="function" line="53" lineend="53" name="standalone=" />
+          <scope attributes="__ctor__" ilk="function" line="55" lineend="57" name="initialize" signature="initialize(version=nil, encoding=nil, standalone=nil)" />
+          <scope ilk="function" line="59" lineend="61" name="full_name" signature="full_name" />
+          <scope ilk="function" line="63" lineend="75" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+          <scope ilk="function" line="78" lineend="80" name="rdf_validate" signature="rdf_validate(tags)" />
+          <scope ilk="function" line="82" lineend="84" name="children" signature="children" />
+          <scope ilk="function" line="86" lineend="96" name="_tags" signature="_tags" />
+          <scope classrefs="Element" ilk="class" line="98" lineend="151" name="Seq">
+            <scope classrefs="Object" ilk="class" line="102" lineend="108" name="self">
+              <scope ilk="function" line="104" lineend="106" name="required_uri" signature="required_uri" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="116" lineend="119" name="initialize" signature="initialize(li=[])" />
+            <scope ilk="function" line="121" lineend="128" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="130" lineend="132" name="full_name" signature="full_name" />
+            <scope ilk="function" line="135" lineend="137" name="children" signature="children" />
+            <scope ilk="function" line="139" lineend="141" name="rdf_validate" signature="rdf_validate(tags)" />
+            <scope ilk="function" line="143" lineend="149" name="_tags" signature="_tags" />
+            <import symbol="RSS10" />
+          </scope>
+          <scope classrefs="Element" ilk="class" line="153" lineend="193" name="Li">
+            <scope classrefs="Object" ilk="class" line="157" lineend="163" name="self">
+              <scope ilk="function" line="159" lineend="161" name="required_uri" signature="required_uri" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="171" lineend="174" name="initialize" signature="initialize(resource=nil)" />
+            <scope ilk="function" line="176" lineend="178" name="full_name" signature="full_name" />
+            <scope ilk="function" line="180" lineend="184" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="187" lineend="191" name="_attrs" signature="_attrs" />
+            <import symbol="RSS10" />
+          </scope>
+          <scope classrefs="Element" ilk="class" line="195" lineend="414" name="Channel">
+            <scope classrefs="Object" ilk="class" line="199" lineend="205" name="self">
+              <scope ilk="function" line="201" lineend="203" name="required_uri::RSS::" signature="required_uri ::RSS::" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="232" lineend="235" name="initialize" signature="initialize(about=nil)" />
+            <scope ilk="function" line="237" lineend="251" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="254" lineend="256" name="children" signature="children" />
+            <scope ilk="function" line="258" lineend="269" name="_tags" signature="_tags" />
+            <scope ilk="function" line="271" lineend="275" name="_attrs" signature="_attrs" />
+            <scope ilk="function" line="277" lineend="279" name="maker_target" signature="maker_target(maker)" />
+            <scope ilk="function" line="281" lineend="283" name="setup_maker_attributes" signature="setup_maker_attributes(channel)" />
+            <scope classrefs="Element" ilk="class" line="285" lineend="320" name="Image">
+              <scope classrefs="Object" ilk="class" line="289" lineend="295" name="self">
+                <scope ilk="function" line="291" lineend="293" name="required_uri::RSS::" signature="required_uri ::RSS::" />
+              </scope>
+              <scope attributes="__ctor__" ilk="function" line="303" lineend="306" name="initialize" signature="initialize(resource=nil)" />
+              <scope ilk="function" line="308" lineend="312" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+              <scope ilk="function" line="315" lineend="319" name="_attrs" signature="_attrs" />
+              <import symbol="RSS10" />
+            </scope>
+            <scope classrefs="Element" ilk="class" line="322" lineend="357" name="Textinput">
+              <scope classrefs="Object" ilk="class" line="326" lineend="332" name="self">
+                <scope ilk="function" line="328" lineend="330" name="required_uri::RSS::" signature="required_uri ::RSS::" />
+              </scope>
+              <scope attributes="__ctor__" ilk="function" line="340" lineend="343" name="initialize" signature="initialize(resource=nil)" />
+              <scope ilk="function" line="345" lineend="349" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+              <scope ilk="function" line="352" lineend="356" name="_attrs" signature="_attrs" />
+              <import symbol="RSS10" />
+            </scope>
+            <scope classrefs="Element" ilk="class" line="359" lineend="412" name="Items">
+              <scope classrefs="Object" ilk="class" line="364" lineend="368" name="Seq" />
+              <scope classrefs="Object" ilk="class" line="370" lineend="376" name="self">
+                <scope ilk="function" line="372" lineend="374" name="required_uri::RSS::" signature="required_uri ::RSS::" />
+              </scope>
+              <scope attributes="__ctor__" ilk="function" line="382" lineend="385" name="initialize" signature="initialize(seq=Seq.new)" />
+              <scope ilk="function" line="387" lineend="394" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+              <scope ilk="function" line="397" lineend="399" name="children" signature="children" />
+              <scope ilk="function" line="402" lineend="406" name="_tags" signature="_tags" />
+              <scope ilk="function" line="408" lineend="410" name="rdf_validate" signature="rdf_validate(tags)" />
+              <import symbol="RSS10" />
+            </scope>
+            <import symbol="RSS10" />
+          </scope>
+          <scope classrefs="Element" ilk="class" line="416" lineend="484" name="Image">
+            <scope classrefs="Object" ilk="class" line="420" lineend="426" name="self">
+              <scope ilk="function" line="422" lineend="424" name="required_uri::RSS::" signature="required_uri ::RSS::" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="446" lineend="449" name="initialize" signature="initialize(about=nil)" />
+            <scope ilk="function" line="451" lineend="462" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="465" lineend="473" name="_tags" signature="_tags" />
+            <scope ilk="function" line="475" lineend="479" name="_attrs" signature="_attrs" />
+            <scope ilk="function" line="481" lineend="483" name="maker_target" signature="maker_target(maker)" />
+            <import symbol="RSS10" />
+          </scope>
+          <scope classrefs="Element" ilk="class" line="486" lineend="554" name="Item">
+            <scope classrefs="Object" ilk="class" line="490" lineend="496" name="self">
+              <scope ilk="function" line="492" lineend="494" name="required_uri::RSS::" signature="required_uri ::RSS::" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="516" lineend="519" name="initialize" signature="initialize(about=nil)" />
+            <scope ilk="function" line="521" lineend="532" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="535" lineend="543" name="_tags" signature="_tags" />
+            <scope ilk="function" line="545" lineend="549" name="_attrs" signature="_attrs" />
+            <scope ilk="function" line="551" lineend="553" name="maker_target" signature="maker_target(maker)" />
+            <import symbol="RSS10" />
+          </scope>
+          <scope classrefs="Element" ilk="class" line="556" lineend="627" name="Textinput">
+            <scope classrefs="Object" ilk="class" line="560" lineend="566" name="self">
+              <scope ilk="function" line="562" lineend="564" name="required_uri::RSS::" signature="required_uri ::RSS::" />
+            </scope>
+            <scope attributes="__ctor__" ilk="function" line="587" lineend="590" name="initialize" signature="initialize(about=nil)" />
+            <scope ilk="function" line="592" lineend="604" name="to_s" signature="to_s(need_convert=true, indent=calc_indent)" />
+            <scope ilk="function" line="607" lineend="616" name="_tags" signature="_tags" />
+            <scope ilk="function" line="618" lineend="622" name="_attrs" signature="_attrs" />
+            <scope ilk="function" line="624" lineend="626" name="maker_target" signature="maker_target(maker)" />
+            <import symbol="RSS10" />
+          </scope>
+          <import symbol="RSS10" />
+          <import symbol="RootElementMixin" />
+        </scope>
+        <scope ilk="namespace" line="635" lineend="648" name="ListenerMixin">
+          <scope ilk="function" line="637" lineend="647" name="start_RDF" signature="start_RDF(tag_name, prefix, attrs, ns)" />
+        </scope>
+      </scope>
+    </scope>
+    

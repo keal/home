@@ -1,0 +1,53 @@
+<scope ilk="blob" lang="Ruby" name="soap/mimemessage">
+      <import line="9" module="soap/attachment" symbol="*" />
+      <scope doc="SOAP4R - MIME Message implementation." ilk="namespace" line="12" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="20" lineend="237" name="MIMEMessage">
+        <scope classrefs="StandardError" ilk="class" line="21" lineend="21" name="MIMEMessageError" />
+        <scope classrefs="Object" ilk="class" line="25" lineend="43" name="Header">
+          <scope ilk="function" line="26" lineend="26" name="str" />
+          <scope ilk="function" line="26" lineend="26" name="str=" />
+          <scope ilk="function" line="26" lineend="26" name="key" />
+          <scope ilk="function" line="26" lineend="26" name="key=" />
+          <scope ilk="function" line="26" lineend="26" name="root" />
+          <scope ilk="function" line="26" lineend="26" name="root=" />
+          <scope attributes="__ctor__" ilk="function" line="28" lineend="30" name="initialize" signature="initialize" />
+          <scope ilk="function" line="32" lineend="34" name="[]" signature="[](key" />
+          <scope ilk="function" line="36" lineend="38" name="[]=" signature="[]=(key" />
+          <scope ilk="function" line="40" lineend="42" name="to_s" signature="to_s" />
+        </scope>
+        <scope classrefs="Hash" ilk="class" line="45" lineend="106" name="Headers">
+          <scope attributes="__classmethod__" ilk="function" line="46" lineend="48" name="parse" signature="self.parse(str)" />
+          <scope ilk="function" line="50" lineend="66" name="parse" signature="parse(str)" />
+          <scope ilk="function" line="68" lineend="76" name="parse_line" signature="parse_line(line)" />
+          <scope ilk="function" line="78" lineend="91" name="parse_rhs" signature="parse_rhs(str)" />
+          <scope ilk="function" line="93" lineend="99" name="add" signature="add(key, value)" />
+          <scope ilk="function" line="101" lineend="105" name="to_s" signature="to_s" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="108" lineend="146" name="Part">
+          <scope ilk="function" line="109" lineend="109" name="headers" />
+          <scope ilk="function" line="109" lineend="109" name="headers=" />
+          <scope ilk="function" line="109" lineend="109" name="body" />
+          <scope ilk="function" line="109" lineend="109" name="body=" />
+          <scope attributes="__ctor__" ilk="function" line="111" lineend="116" name="initialize" signature="initialize" />
+          <scope attributes="__classmethod__" ilk="function" line="118" lineend="120" name="parse" signature="self.parse(str)" />
+          <scope ilk="function" line="122" lineend="131" name="parse" signature="parse(str)" />
+          <scope ilk="function" line="133" lineend="139" name="contentid" signature="contentid" />
+          <scope ilk="function" line="143" lineend="145" name="to_s" signature="to_s" />
+        </scope>
+        <scope attributes="__ctor__" ilk="function" line="148" lineend="152" name="initialize" signature="initialize" />
+        <scope attributes="__classmethod__" ilk="function" line="154" lineend="156" name="parse" signature="self.parse(head, str)" />
+        <scope ilk="function" line="158" lineend="158" name="parts" />
+        <scope ilk="function" line="158" lineend="158" name="headers" />
+        <scope ilk="function" line="160" lineend="165" name="close" signature="close" />
+        <scope ilk="function" line="167" lineend="181" name="parse" signature="parse(head, str)" />
+        <scope ilk="function" line="183" lineend="190" name="root" signature="root" />
+        <scope ilk="function" line="192" lineend="197" name="boundary" signature="boundary" />
+        <scope ilk="function" line="199" lineend="206" name="add_part" signature="add_part(content)" />
+        <scope ilk="function" line="208" lineend="214" name="add_attachment" signature="add_attachment(attach)" />
+        <scope ilk="function" line="216" lineend="218" name="has_parts?" signature="has_parts? (@parts" />
+        <scope ilk="function" line="220" lineend="222" name="headers_str" signature="headers_str" />
+        <scope ilk="function" line="224" lineend="232" name="content_str" signature="content_str" />
+        <scope ilk="function" line="234" lineend="236" name="to_s" signature="to_s" />
+      </scope>
+    </scope>
+    

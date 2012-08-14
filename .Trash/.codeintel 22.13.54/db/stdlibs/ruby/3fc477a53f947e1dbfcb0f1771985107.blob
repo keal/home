@@ -1,0 +1,23 @@
+<scope ilk="blob" lang="Ruby" name="nkf">
+      <scope doc="NKF - Ruby extension for Network Kanji Filter" ilk="namespace" name="NKF">
+        <scope doc="Alias for #guess2" ilk="function" name="guess" signature="(p1)" />
+        <scope doc="Returns guessed encoding of `str&apos; as integer." ilk="function" name="guess1" signature="NKF.guess1(str)  -&gt; integer" />
+        <scope doc="Returns guessed encoding of `str&apos; as integer by nkf routine." ilk="function" name="guess2" signature="NKF.guess2(str)  -&gt; integer" />
+        <scope doc="Convert `str&apos; and return converted result. Conversion&#xA;details are specified by `opt&apos; as String." ilk="function" name="nkf" signature="NKF.nkf(opt, str)   -&gt; string" />
+        <variable attributes="__const__" citdl="Fixnum" name="ASCII" />
+        <variable attributes="__const__" citdl="Fixnum" name="AUTO" />
+        <variable attributes="__const__" citdl="Fixnum" name="BINARY" />
+        <variable attributes="__const__" citdl="Fixnum" name="EUC" />
+        <variable attributes="__const__" citdl="Fixnum" name="JIS" />
+        <variable attributes="__const__" citdl="String" name="NKF_RELEASE_DATE" />
+        <variable attributes="__const__" citdl="String" name="NKF_VERSION" />
+        <variable attributes="__const__" citdl="Fixnum" name="NOCONV" />
+        <variable attributes="__const__" citdl="Fixnum" name="SJIS" />
+        <variable attributes="__const__" citdl="Fixnum" name="UNKNOWN" />
+        <variable attributes="__const__" citdl="Fixnum" name="UTF16" />
+        <variable attributes="__const__" citdl="Fixnum" name="UTF32" />
+        <variable attributes="__const__" citdl="Fixnum" name="UTF8" />
+        <variable attributes="__const__" citdl="String" name="VERSION" />
+      </scope>
+    </scope>
+    

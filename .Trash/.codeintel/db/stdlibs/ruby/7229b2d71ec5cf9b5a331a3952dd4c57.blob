@@ -1,0 +1,213 @@
+<scope ilk="blob" lang="Ruby" name="net/imap">
+      <import line="16" module="socket" symbol="*" />
+      <import line="17" module="monitor" symbol="*" />
+      <import line="18" module="digest/md5" symbol="*" />
+      <import line="20" module="openssl" symbol="*" />
+      <import line="3206" module="getoptlong" symbol="*" />
+      <scope doc="= net/imap.rb" ilk="namespace" line="24" lineend="3202" name="Net">
+        <scope classrefs="Object" doc="Net::IMAP implements Internet Message Access Protocol (IMAP)&#xA;client functionality." ilk="class" line="200" lineend="3201" name="IMAP">
+          <scope ilk="function" line="208" lineend="208" name="greeting" />
+          <scope ilk="function" line="217" lineend="217" name="responses" />
+          <scope ilk="function" line="220" lineend="220" name="response_handlers" />
+          <scope ilk="function" line="223" lineend="223" name="client_thread" />
+          <scope ilk="function" line="223" lineend="223" name="client_thread=" />
+          <scope attributes="__classmethod__" doc="Returns the debug mode." ilk="function" line="263" lineend="265" name="debug" signature="self.debug" />
+          <scope attributes="__classmethod__" doc="Sets the debug mode." ilk="function" line="268" lineend="270" name="debug=" signature="self.debug=(val)" />
+          <scope attributes="__classmethod__" doc="Adds an authenticator for Net::IMAP#authenticate." ilk="function" line="281" lineend="283" name="add_authenticator" signature="self.add_authenticator(auth_type, authenticator)" />
+          <scope doc="Disconnects from the server." ilk="function" line="286" lineend="290" name="disconnect" signature="disconnect" />
+          <scope doc="Returns true if disconnected from the server." ilk="function" line="293" lineend="295" name="disconnected?" signature="disconnected?" />
+          <scope doc="Sends a CAPABILITY command, and returns an array of&#xA;capabilities that the server supports." ilk="function" line="307" lineend="312" name="capability" signature="capability" />
+          <scope doc="Sends a NOOP command to the server. It does nothing." ilk="function" line="315" lineend="317" name="noop" signature="noop" />
+          <scope doc="Sends a LOGOUT command to inform the server that the client&#xA;is done with the connection." ilk="function" line="321" lineend="323" name="logout" signature="logout" />
+          <scope doc="Sends an AUTHENTICATE command to authenticate the client." ilk="function" line="350" lineend="365" name="authenticate" signature="authenticate(auth_type, *args)" />
+          <scope doc="Sends a LOGIN command to identify the client and carries the&#xA;plaintext +password+ authenticating this +user+." ilk="function" line="373" lineend="375" name="login" signature="login(user, password)" />
+          <scope doc="Sends a SELECT command to select a +mailbox+ so that&#xA;messages in the +mailbox+ can be accessed." ilk="function" line="389" lineend="394" name="select" signature="select(mailbox)" />
+          <scope doc="Sends a EXAMINE command to select a +mailbox+ so that&#xA;messages in the +mailbox+ can be accessed." ilk="function" line="402" lineend="407" name="examine" signature="examine(mailbox)" />
+          <scope doc="Sends a CREATE command to create a new +mailbox+." ilk="function" line="413" lineend="415" name="create" signature="create(mailbox)" />
+          <scope doc="Sends a DELETE command to remove the +mailbox+." ilk="function" line="422" lineend="424" name="delete" signature="delete(mailbox)" />
+          <scope doc="Sends a RENAME command to change the name of the +mailbox+&#xA;to +newname+." ilk="function" line="433" lineend="435" name="rename" signature="rename(mailbox, newname)" />
+          <scope doc="Sends a SUBSCRIBE command to add the specified +mailbox+&#xA;name to the server&apos;s set of &quot;active&quot; or &quot;subscribed&quot;&#xA;mailboxes as returned by #lsub()." ilk="function" line="443" lineend="445" name="subscribe" signature="subscribe(mailbox)" />
+          <scope doc="Sends a UNSUBSCRIBE command to remove the specified&#xA;+mailbox+ name from the server&apos;s set of &quot;active&quot; or&#xA;&quot;subscribed&quot; mailboxes." ilk="function" line="453" lineend="455" name="unsubscribe" signature="unsubscribe(mailbox)" />
+          <scope doc="Sends a LIST command, and returns a subset of names from the&#xA;complete set of all names available to the client." ilk="function" line="479" lineend="484" name="list" signature="list(refname, mailbox)" />
+          <scope doc="Sends the GETQUOTAROOT command along with specified&#xA;+mailbox+." ilk="function" line="490" lineend="498" name="getquotaroot" signature="getquotaroot(mailbox)" />
+          <scope doc="Sends the GETQUOTA command along with specified +mailbox+." ilk="function" line="504" lineend="509" name="getquota" signature="getquota(mailbox)" />
+          <scope doc="Sends a SETQUOTA command along with the specified +mailbox+&#xA;and +quota+." ilk="function" line="516" lineend="523" name="setquota" signature="setquota(mailbox, quota)" />
+          <scope doc="Sends the SETACL command along with +mailbox+, +user+ and&#xA;the +rights+ that user is to have on that mailbox." ilk="function" line="529" lineend="535" name="setacl" signature="setacl(mailbox, user, rights)" />
+          <scope doc="Send the GETACL command along with specified +mailbox+." ilk="function" line="540" lineend="545" name="getacl" signature="getacl(mailbox)" />
+          <scope doc="Sends a LSUB command, and returns a subset of names from the&#xA;set of names that the user has declared as being &quot;active&quot; or&#xA;&quot;subscribed&quot;." ilk="function" line="552" lineend="557" name="lsub" signature="lsub(refname, mailbox)" />
+          <scope doc="Sends a STATUS command, and returns the status of the&#xA;indicated +mailbox+." ilk="function" line="575" lineend="580" name="status" signature="status(mailbox, attr)" />
+          <scope doc="Sends a APPEND command to append the +message+ to the end of&#xA;the +mailbox+." ilk="function" line="600" lineend="608" name="append" signature="append(mailbox, message, flags = nil, date_time = nil)" />
+          <scope doc="Sends a CHECK command to request a checkpoint of the&#xA;currently selected mailbox." ilk="function" line="614" lineend="616" name="check" signature="check" />
+          <scope doc="Sends a CLOSE command to close the currently selected&#xA;mailbox." ilk="function" line="621" lineend="623" name="close" signature="close" />
+          <scope doc="Sends a EXPUNGE command to permanently remove from the&#xA;currently selected mailbox all messages that have the&#xA;\Deleted flag set." ilk="function" line="627" lineend="632" name="expunge" signature="expunge" />
+          <scope doc="Sends a SEARCH command to search the mailbox for messages&#xA;that match the given searching criteria, and returns message&#xA;sequence numbers." ilk="function" line="674" lineend="676" name="search" signature="search(keys, charset = nil)" />
+          <scope doc="As for #search(), but returns unique identifiers." ilk="function" line="679" lineend="681" name="uid_search" signature="uid_search(keys, charset = nil)" />
+          <scope doc="Sends a FETCH command to retrieve data associated with a&#xA;message in the mailbox." ilk="function" line="706" lineend="708" name="fetch" signature="fetch(set, attr)" />
+          <scope doc="As for #fetch(), but +set+ contains unique identifiers." ilk="function" line="711" lineend="713" name="uid_fetch" signature="uid_fetch(set, attr)" />
+          <scope doc="Sends a STORE command to alter data associated with messages&#xA;in the mailbox, in particular their flags." ilk="function" line="729" lineend="731" name="store" signature="store(set, attr, flags)" />
+          <scope doc="As for #store(), but +set+ contains unique identifiers." ilk="function" line="734" lineend="736" name="uid_store" signature="uid_store(set, attr, flags)" />
+          <scope doc="Sends a COPY command to copy the specified message(s) to the&#xA;end of the specified destination +mailbox+." ilk="function" line="742" lineend="744" name="copy" signature="copy(set, mailbox)" />
+          <scope doc="As for #copy(), but +set+ contains unique identifiers." ilk="function" line="747" lineend="749" name="uid_copy" signature="uid_copy(set, mailbox)" />
+          <scope doc="Sends a SORT command to sort messages in the mailbox." ilk="function" line="760" lineend="762" name="sort" signature="sort(sort_keys, search_keys, charset)" />
+          <scope doc="As for #sort(), but returns an array of unique identifiers." ilk="function" line="765" lineend="767" name="uid_sort" signature="uid_sort(sort_keys, search_keys, charset)" />
+          <scope doc="Adds a response handler." ilk="function" line="781" lineend="783" name="add_response_handler" signature="add_response_handler(handler = Proc.new)" />
+          <scope doc="Removes the response handler." ilk="function" line="786" lineend="788" name="remove_response_handler" signature="remove_response_handler(handler)" />
+          <scope doc="As for #search(), but returns message sequence numbers in&#xA;threaded format, as a Net::IMAP::ThreadMember tree." ilk="function" line="803" lineend="805" name="thread" signature="thread(algorithm, search_keys, charset)" />
+          <scope doc="As for #thread(), but returns unique identifiers instead of&#xA;message sequence numbers." ilk="function" line="809" lineend="811" name="uid_thread" signature="uid_thread(algorithm, search_keys, charset)" />
+          <scope attributes="__classmethod__" doc="Decode a string from modified UTF-7 format to UTF-8." ilk="function" line="821" lineend="834" name="decode_utf7" signature="self.decode_utf7(s)" />
+          <scope attributes="__classmethod__" doc="Encode a string from UTF-8 format to modified UTF-7." ilk="function" line="837" lineend="846" name="encode_utf7" signature="self.encode_utf7(s)" />
+          <scope attributes="__ctor__" doc="Creates a new Net::IMAP object and connects it to the&#xA;specified +port+ (143 by default) on the named +host+." ilk="function" line="875" lineend="920" name="initialize" signature="initialize(host, port = PORT, usessl = false, certs = nil, verify = false)" />
+          <scope ilk="function" line="922" lineend="962" name="receive_responses" signature="receive_responses" />
+          <scope ilk="function" line="964" lineend="977" name="get_tagged_response" signature="get_tagged_response(tag, cmd)" />
+          <scope ilk="function" line="979" lineend="997" name="get_response" signature="get_response" />
+          <scope ilk="function" line="999" lineend="1004" name="record_response" signature="record_response(name, data)" />
+          <scope ilk="function" line="1006" lineend="1029" name="send_command" signature="send_command(cmd, *args, &amp;block)" />
+          <scope ilk="function" line="1031" lineend="1034" name="generate_tag" signature="generate_tag" />
+          <scope ilk="function" line="1036" lineend="1049" name="put_string" signature="put_string(str)" />
+          <scope ilk="function" line="1051" lineend="1068" name="send_data" signature="send_data(data)" />
+          <scope ilk="function" line="1070" lineend="1083" name="send_string_data" signature="send_string_data(str)" />
+          <scope ilk="function" line="1085" lineend="1087" name="send_quoted_string" signature="send_quoted_string(str)" />
+          <scope ilk="function" line="1089" lineend="1093" name="send_literal" signature="send_literal(str)" />
+          <scope ilk="function" line="1095" lineend="1100" name="send_number_data" signature="send_number_data(num)" />
+          <scope ilk="function" line="1102" lineend="1114" name="send_list_data" signature="send_list_data(list)" />
+          <scope ilk="function" line="1118" lineend="1124" name="send_time_data" signature="send_time_data(time)" />
+          <scope ilk="function" line="1126" lineend="1128" name="send_symbol_data" signature="send_symbol_data(symbol)" />
+          <scope ilk="function" line="1130" lineend="1144" name="search_internal" signature="search_internal(cmd, keys, charset)" />
+          <scope ilk="function" line="1146" lineend="1155" name="fetch_internal" signature="fetch_internal(cmd, set, attr)" />
+          <scope ilk="function" line="1157" lineend="1166" name="store_internal" signature="store_internal(cmd, set, attr, flags)" />
+          <scope ilk="function" line="1168" lineend="1170" name="copy_internal" signature="copy_internal(cmd, set, mailbox)" />
+          <scope ilk="function" line="1172" lineend="1183" name="sort_internal" signature="sort_internal(cmd, sort_keys, search_keys, charset)" />
+          <scope ilk="function" line="1185" lineend="1194" name="thread_internal" signature="thread_internal(cmd, algorithm, search_keys, charset)" />
+          <scope ilk="function" line="1196" lineend="1205" name="normalize_searching_criteria" signature="normalize_searching_criteria(keys)" />
+          <scope attributes="__classmethod__" ilk="function" line="1207" lineend="1256" name="u16tou8" signature="self.u16tou8(s)" />
+          <scope attributes="__classmethod__" ilk="function" line="1259" lineend="1323" name="u8tou16" signature="self.u8tou16(s)" />
+          <scope classrefs="Object" ilk="class" line="1326" lineend="1336" name="RawData">
+            <scope doc=":nodoc:" ilk="function" line="1327" lineend="1329" name="send_data" signature="send_data(imap)" />
+            <scope attributes="__ctor__" ilk="function" line="1333" lineend="1335" name="initialize" signature="initialize(data)" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1338" lineend="1348" name="Atom">
+            <scope doc=":nodoc:" ilk="function" line="1339" lineend="1341" name="send_data" signature="send_data(imap)" />
+            <scope attributes="__ctor__" ilk="function" line="1345" lineend="1347" name="initialize" signature="initialize(data)" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1350" lineend="1360" name="QuotedString">
+            <scope doc=":nodoc:" ilk="function" line="1351" lineend="1353" name="send_data" signature="send_data(imap)" />
+            <scope attributes="__ctor__" ilk="function" line="1357" lineend="1359" name="initialize" signature="initialize(data)" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1362" lineend="1372" name="Literal">
+            <scope doc=":nodoc:" ilk="function" line="1363" lineend="1365" name="send_data" signature="send_data(imap)" />
+            <scope attributes="__ctor__" ilk="function" line="1369" lineend="1371" name="initialize" signature="initialize(data)" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1374" lineend="1416" name="MessageSet">
+            <scope doc=":nodoc:" ilk="function" line="1375" lineend="1377" name="send_data" signature="send_data(imap)" />
+            <scope attributes="__ctor__" ilk="function" line="1381" lineend="1383" name="initialize" signature="initialize(data)" />
+            <scope ilk="function" line="1385" lineend="1407" name="format_internal" signature="format_internal(data)" />
+            <scope ilk="function" line="1409" lineend="1415" name="ensure_nz_number" signature="ensure_nz_number(num)" />
+          </scope>
+          <scope classrefs="Struct.new" doc="Net::IMAP::BodyTypeBasic represents basic body structures of&#xA;messages." ilk="class" line="1732" lineend="1749" name="BodyTypeBasic">
+            <scope ilk="function" line="1737" lineend="1739" name="multipart?" signature="multipart?" />
+            <scope doc="Obsolete: use +subtype+ instead." ilk="function" line="1744" lineend="1748" name="media_subtype" signature="media_subtype" />
+          </scope>
+          <scope classrefs="Struct.new" doc="Net::IMAP::BodyTypeText represents TEXT body structures of&#xA;messages." ilk="class" line="1759" lineend="1777" name="BodyTypeText">
+            <scope ilk="function" line="1765" lineend="1767" name="multipart?" signature="multipart?" />
+            <scope doc="Obsolete: use +subtype+ instead." ilk="function" line="1772" lineend="1776" name="media_subtype" signature="media_subtype" />
+          </scope>
+          <scope classrefs="Struct.new" doc="Net::IMAP::BodyTypeMessage represents MESSAGE/RFC822 body&#xA;structures of messages." ilk="class" line="1789" lineend="1807" name="BodyTypeMessage">
+            <scope ilk="function" line="1795" lineend="1797" name="multipart?" signature="multipart?" />
+            <scope doc="Obsolete: use +subtype+ instead." ilk="function" line="1802" lineend="1806" name="media_subtype" signature="media_subtype" />
+          </scope>
+          <scope classrefs="Struct.new" doc="Net::IMAP::BodyTypeMultipart represents multipart body&#xA;structures of messages." ilk="class" line="1832" lineend="1848" name="BodyTypeMultipart">
+            <scope ilk="function" line="1836" lineend="1838" name="multipart?" signature="multipart?" />
+            <scope doc="Obsolete: use +subtype+ instead." ilk="function" line="1843" lineend="1847" name="media_subtype" signature="media_subtype" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="1850" lineend="3106" name="ResponseParser">
+            <scope doc=":nodoc:" ilk="function" line="1851" lineend="1857" name="parse" signature="parse(str)" />
+            <scope doc="1:  LBRA    )(\[)|\" ilk="function" line="1924" lineend="1937" name="response" signature="response" />
+            <scope ilk="function" line="1939" lineend="1943" name="continue_req" signature="continue_req" />
+            <scope ilk="function" line="1945" lineend="1979" name="response_untagged" signature="response_untagged" />
+            <scope ilk="function" line="1981" lineend="1988" name="response_tagged" signature="response_tagged" />
+            <scope ilk="function" line="1990" lineend="1995" name="response_cond" signature="response_cond" />
+            <scope ilk="function" line="1997" lineend="2011" name="numeric_response" signature="numeric_response" />
+            <scope ilk="function" line="2013" lineend="2047" name="msg_att" signature="msg_att" />
+            <scope ilk="function" line="2049" lineend="2054" name="envelope_data" signature="envelope_data" />
+            <scope ilk="function" line="2056" lineend="2089" name="envelope" signature="envelope" />
+            <scope ilk="function" line="2091" lineend="2096" name="flags_data" signature="flags_data" />
+            <scope ilk="function" line="2098" lineend="2104" name="internaldate_data" signature="internaldate_data" />
+            <scope ilk="function" line="2106" lineend="2111" name="rfc822_text" signature="rfc822_text" />
+            <scope ilk="function" line="2113" lineend="2118" name="rfc822_size" signature="rfc822_size" />
+            <scope ilk="function" line="2120" lineend="2137" name="body_data" signature="body_data" />
+            <scope ilk="function" line="2139" lineend="2157" name="body" signature="body" />
+            <scope ilk="function" line="2159" lineend="2169" name="body_type_1part" signature="body_type_1part" />
+            <scope ilk="function" line="2171" lineend="2184" name="body_type_basic" signature="body_type_basic" />
+            <scope ilk="function" line="2186" lineend="2198" name="body_type_text" signature="body_type_text" />
+            <scope ilk="function" line="2200" lineend="2216" name="body_type_msg" signature="body_type_msg" />
+            <scope ilk="function" line="2218" lineend="2234" name="body_type_mpart" signature="body_type_mpart" />
+            <scope ilk="function" line="2236" lineend="2241" name="media_type" signature="media_type" />
+            <scope ilk="function" line="2243" lineend="2254" name="body_fields" signature="body_fields" />
+            <scope ilk="function" line="2256" lineend="2279" name="body_fld_param" signature="body_fld_param" />
+            <scope ilk="function" line="2281" lineend="2315" name="body_ext_1part" signature="body_ext_1part" />
+            <scope ilk="function" line="2317" lineend="2345" name="body_ext_mpart" signature="body_ext_mpart" />
+            <scope ilk="function" line="2347" lineend="2359" name="body_fld_dsp" signature="body_fld_dsp" />
+            <scope ilk="function" line="2361" lineend="2385" name="body_fld_lang" signature="body_fld_lang" />
+            <scope ilk="function" line="2387" lineend="2399" name="body_extensions" signature="body_extensions" />
+            <scope ilk="function" line="2401" lineend="2414" name="body_extension" signature="body_extension" />
+            <scope ilk="function" line="2416" lineend="2449" name="section" signature="section" />
+            <scope ilk="function" line="2451" lineend="2465" name="format_string" signature="format_string(str)" />
+            <scope ilk="function" line="2467" lineend="2472" name="uid_data" signature="uid_data" />
+            <scope ilk="function" line="2474" lineend="2482" name="text_response" signature="text_response" />
+            <scope ilk="function" line="2484" lineend="2489" name="flags_response" signature="flags_response" />
+            <scope ilk="function" line="2491" lineend="2496" name="list_response" signature="list_response" />
+            <scope ilk="function" line="2498" lineend="2510" name="mailbox_list" signature="mailbox_list" />
+            <scope ilk="function" line="2512" lineend="2543" name="getquota_response" signature="getquota_response" />
+            <scope ilk="function" line="2545" lineend="2560" name="getquotaroot_response" signature="getquotaroot_response" />
+            <scope ilk="function" line="2562" lineend="2587" name="getacl_response" signature="getacl_response" />
+            <scope ilk="function" line="2589" lineend="2610" name="search_response" signature="search_response" />
+            <scope ilk="function" line="2612" lineend="2637" name="thread_response" signature="thread_response" />
+            <scope ilk="function" line="2639" lineend="2672" name="thread_branch" signature="thread_branch(token)" />
+            <scope ilk="function" line="2674" lineend="2699" name="status_response" signature="status_response" />
+            <scope ilk="function" line="2701" lineend="2717" name="capability_response" signature="capability_response" />
+            <scope ilk="function" line="2719" lineend="2730" name="resp_text" signature="resp_text" />
+            <scope ilk="function" line="2732" lineend="2756" name="resp_text_code" signature="resp_text_code" />
+            <scope ilk="function" line="2758" lineend="2779" name="address_list" signature="address_list" />
+            <scope doc="4: HOST )(?:NIL|&quot;((?:[^\x80-\xff\x00\r\n&quot;\\]|\\[&quot;\\])*)&quot;)\" ilk="function" line="2788" lineend="2813" name="address" signature="address" />
+            <scope doc="FLAG        )\\([^\x80-\xff(){ \x00-\x1f\x7f%&quot;\\]+)|\" ilk="function" line="2852" lineend="2861" name="flag_list" signature="flag_list" />
+            <scope ilk="function" line="2863" lineend="2871" name="nstring" signature="nstring" />
+            <scope ilk="function" line="2873" lineend="2880" name="astring" signature="astring" />
+            <scope ilk="function" line="2882" lineend="2890" name="string" signature="string" />
+            <scope ilk="function" line="2894" lineend="2896" name="string_token?" signature="string_token?(token)" />
+            <scope ilk="function" line="2898" lineend="2906" name="case_insensitive_string" signature="case_insensitive_string" />
+            <scope ilk="function" line="2908" lineend="2923" name="atom" signature="atom" />
+            <scope ilk="function" line="2934" lineend="2936" name="atom_token?" signature="atom_token?(token)" />
+            <scope ilk="function" line="2938" lineend="2946" name="number" signature="number" />
+            <scope ilk="function" line="2948" lineend="2951" name="nil_atom" signature="nil_atom" />
+            <scope ilk="function" line="2953" lineend="2962" name="match" signature="match(*args)" />
+            <scope ilk="function" line="2964" lineend="2969" name="lookahead" signature="lookahead" />
+            <scope ilk="function" line="2971" lineend="2973" name="shift_token" signature="shift_token" />
+            <scope ilk="function" line="2975" lineend="3092" name="next_token" signature="next_token" />
+            <scope ilk="function" line="3094" lineend="3105" name="parse_error" signature="parse_error(fmt, *args)" />
+          </scope>
+          <scope classrefs="Object" doc="Authenticator for the &quot;LOGIN&quot; authentication type." ilk="class" line="3110" lineend="3131" name="LoginAuthenticator">
+            <scope ilk="function" line="3111" lineend="3119" name="process" signature="process(data)" />
+            <scope attributes="__ctor__" ilk="function" line="3126" lineend="3130" name="initialize" signature="initialize(user, password)" />
+          </scope>
+          <scope classrefs="Object" doc="Authenticator for the &quot;CRAM-MD5&quot; authentication type." ilk="class" line="3136" lineend="3165" name="CramMD5Authenticator">
+            <scope ilk="function" line="3137" lineend="3140" name="process" signature="process(challenge)" />
+            <scope attributes="__ctor__" ilk="function" line="3144" lineend="3147" name="initialize" signature="initialize(user, password)" />
+            <scope ilk="function" line="3149" lineend="3164" name="hmac_md5" signature="hmac_md5(text, key)" />
+          </scope>
+          <scope classrefs="StandardError" doc="Superclass of IMAP errors." ilk="class" line="3169" lineend="3170" name="Error" />
+          <scope classrefs="Error" doc="Error raised when data is in the incorrect format." ilk="class" line="3173" lineend="3174" name="DataFormatError" />
+          <scope classrefs="Error" doc="Error raised when a response from the server is non-&#xA;parseable." ilk="class" line="3177" lineend="3178" name="ResponseParseError" />
+          <scope classrefs="Error" doc="Superclass of all errors used to encapsulate &quot;fail&quot;&#xA;responses from the server." ilk="class" line="3182" lineend="3183" name="ResponseError" />
+          <scope classrefs="ResponseError" doc="Error raised upon a &quot;NO&quot; response from the server,&#xA;indicating that the client command could not be completed&#xA;successfully." ilk="class" line="3187" lineend="3188" name="NoResponseError" />
+          <scope classrefs="ResponseError" doc="Error raised upon a &quot;BAD&quot; response from the server,&#xA;indicating that the client command violated the IMAP&#xA;protocol, or an internal server failure has occurred." ilk="class" line="3193" lineend="3194" name="BadResponseError" />
+          <scope classrefs="ResponseError" doc="Error raised upon a &quot;BYE&quot; response from the server,&#xA;indicating that the client is not being allowed to login, or&#xA;has been timed out due to inactivity." ilk="class" line="3199" lineend="3200" name="ByeResponseError" />
+          <import symbol="MonitorMixin" />
+          <import symbol="OpenSSL" />
+          <import symbol="SSL" />
+        </scope>
+      </scope>
+      <scope doc=":enddoc:" ilk="function" line="3214" lineend="3224" name="usage" signature="usage" />
+      <scope ilk="function" line="3226" lineend="3235" name="get_password" signature="get_password" />
+      <scope ilk="function" line="3237" lineend="3244" name="get_command" signature="get_command" />
+    </scope>
+    

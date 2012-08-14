@@ -1,0 +1,83 @@
+<scope ilk="blob" lang="Ruby" name="tk/menu">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/itemconfig" symbol="*" />
+      <import line="6" module="tk/menuspec" symbol="*" />
+      <scope doc="tk/menu.rb : treat menu and menubutton" ilk="namespace" line="8" lineend="43" name="TkMenuEntryConfig">
+        <scope ilk="function" line="11" lineend="13" name="__item_cget_cmd" signature="__item_cget_cmd(id)" />
+        <scope ilk="function" line="16" lineend="18" name="__item_config_cmd" signature="__item_config_cmd(id)" />
+        <scope ilk="function" line="21" lineend="23" name="__item_strval_optkeys" signature="__item_strval_optkeys(id)" />
+        <scope ilk="function" line="26" lineend="28" name="__item_listval_optkeys" signature="__item_listval_optkeys(id)" />
+        <scope ilk="function" line="31" lineend="33" name="__item_val2ruby_optkeys" signature="__item_val2ruby_optkeys(id)" />
+      </scope>
+      <scope classrefs="TkWindow" ilk="class" line="45" lineend="351" name="TkMenu">
+        <scope doc="def create_self(keys) if keys and keys != None&#xA;tk_call_without_enc(&apos;menu&apos;, @path, *hash_kv(keys, true))&#xA;else tk_call_without_enc(&apos;menu&apos;, @path)" ilk="function" line="62" lineend="64" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="67" lineend="69" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope attributes="__classmethod__" ilk="function" line="72" lineend="88" name="new_menuspec" signature="self.new_menuspec(menu_spec, parent = nil, tearoff = false, keys = nil)" />
+        <scope ilk="function" line="90" lineend="93" name="tagid" signature="tagid(id)" />
+        <scope ilk="function" line="95" lineend="98" name="activate" signature="activate(index)" />
+        <scope ilk="function" line="99" lineend="102" name="add" signature="add(type, keys=nil)" />
+        <scope ilk="function" line="103" lineend="105" name="add_cascade" signature="add_cascade(keys=nil)" />
+        <scope ilk="function" line="106" lineend="108" name="add_checkbutton" signature="add_checkbutton(keys=nil)" />
+        <scope ilk="function" line="109" lineend="111" name="add_command" signature="add_command(keys=nil)" />
+        <scope ilk="function" line="112" lineend="114" name="add_radiobutton" signature="add_radiobutton(keys=nil)" />
+        <scope ilk="function" line="115" lineend="117" name="add_separator" signature="add_separator(keys=nil)" />
+        <scope ilk="function" line="118" lineend="121" name="index" signature="index(idx)" />
+        <scope ilk="function" line="122" lineend="124" name="invoke" signature="invoke(index)" />
+        <scope ilk="function" line="125" lineend="129" name="insert" signature="insert(index, type, keys=nil)" />
+        <scope ilk="function" line="130" lineend="138" name="delete" signature="delete(first, last=nil)" />
+        <scope ilk="function" line="139" lineend="147" name="popup" signature="popup(x, y, index=nil)" />
+        <scope ilk="function" line="148" lineend="150" name="post" signature="post(x, y)" />
+        <scope ilk="function" line="151" lineend="154" name="postcascade" signature="postcascade(index)" />
+        <scope ilk="function" line="155" lineend="158" name="postcommand" signature="postcommand(cmd=Proc.new)" />
+        <scope ilk="function" line="159" lineend="162" name="set_focus" signature="set_focus" />
+        <scope ilk="function" line="163" lineend="166" name="tearoffcommand" signature="tearoffcommand(cmd=Proc.new)" />
+        <scope ilk="function" line="167" lineend="169" name="menutype" signature="menutype(index)" />
+        <scope ilk="function" line="170" lineend="173" name="unpost" signature="unpost" />
+        <scope ilk="function" line="174" lineend="176" name="yposition" signature="yposition(index)" />
+        <import symbol="TkMenuEntryConfig" />
+      </scope>
+      <scope classrefs="TkMenu" ilk="class" line="354" lineend="370" name="TkMenuClone">
+        <scope attributes="__ctor__" ilk="function" line="355" lineend="369" name="initialize" signature="initialize(parent, type=None)" />
+      </scope>
+      <scope ilk="namespace" line="373" lineend="395" name="TkSystemMenu">
+        <scope attributes="__ctor__" ilk="function" line="374" lineend="394" name="initialize" signature="initialize(parent, keys=nil)" />
+      </scope>
+      <scope classrefs="TkMenu" ilk="class" line="398" lineend="402" name="TkSysMenu_Help">
+        <import symbol="TkSystemMenu" />
+      </scope>
+      <scope classrefs="TkMenu" ilk="class" line="405" lineend="409" name="TkSysMenu_System">
+        <import symbol="TkSystemMenu" />
+      </scope>
+      <scope classrefs="TkMenu" ilk="class" line="412" lineend="416" name="TkSysMenu_Apple">
+        <import symbol="TkSystemMenu" />
+      </scope>
+      <scope classrefs="TkLabel" ilk="class" line="419" lineend="440" name="TkMenubutton">
+        <scope ilk="function" line="423" lineend="432" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="435" lineend="437" name="__boolval_optkeys" signature="__boolval_optkeys" />
+      </scope>
+      <scope classrefs="TkMenubutton" ilk="class" line="444" lineend="563" name="TkOptionMenubutton">
+        <scope classrefs="TkMenu" ilk="class" line="447" lineend="453" name="OptionMenu">
+          <scope attributes="__ctor__" ilk="function" line="448" lineend="452" name="initialize" signature="initialize(path)" />
+        </scope>
+        <scope attributes="__ctor__" ilk="function" line="455" lineend="497" name="initialize" signature="initialize(*args)" />
+        <scope ilk="function" line="499" lineend="501" name="value" signature="value" />
+        <scope ilk="function" line="503" lineend="505" name="value=" signature="value=(val)" />
+        <scope ilk="function" line="507" lineend="510" name="activate" signature="activate(index)" />
+        <scope ilk="function" line="511" lineend="515" name="add" signature="add(value)" />
+        <scope ilk="function" line="516" lineend="518" name="index" signature="index(index)" />
+        <scope ilk="function" line="519" lineend="521" name="invoke" signature="invoke(index)" />
+        <scope ilk="function" line="522" lineend="526" name="insert" signature="insert(index, value)" />
+        <scope ilk="function" line="527" lineend="530" name="delete" signature="delete(index, last=None)" />
+        <scope ilk="function" line="531" lineend="533" name="yposition" signature="yposition(index)" />
+        <scope ilk="function" line="534" lineend="536" name="menu" signature="menu" />
+        <scope ilk="function" line="537" lineend="539" name="menucget" signature="menucget(key)" />
+        <scope ilk="function" line="540" lineend="543" name="menuconfigure" signature="menuconfigure(key, val=None)" />
+        <scope ilk="function" line="544" lineend="546" name="menuconfiginfo" signature="menuconfiginfo(key=nil)" />
+        <scope ilk="function" line="547" lineend="549" name="current_menuconfiginfo" signature="current_menuconfiginfo(key=nil)" />
+        <scope ilk="function" line="550" lineend="552" name="entrycget" signature="entrycget(index, key)" />
+        <scope ilk="function" line="553" lineend="556" name="entryconfigure" signature="entryconfigure(index, key, val=None)" />
+        <scope ilk="function" line="557" lineend="559" name="entryconfiginfo" signature="entryconfiginfo(index, key=nil)" />
+        <scope ilk="function" line="560" lineend="562" name="current_entryconfiginfo" signature="current_entryconfiginfo(index, key=nil)" />
+      </scope>
+    </scope>
+    

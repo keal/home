@@ -1,0 +1,41 @@
+<scope ilk="blob" lang="Ruby" name="tk/texttag">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/text" symbol="*" />
+      <import line="6" module="tk/tagfont" symbol="*" />
+      <scope classrefs="TkObject" doc="tk/texttag.rb - methods for treating text tags" ilk="class" line="8" lineend="227" name="TkTextTag">
+        <scope attributes="__classmethod__" ilk="function" line="17" lineend="21" name="id2obj" signature="TkTextTag.id2obj(text, id)" />
+        <scope attributes="__ctor__" ilk="function" line="23" lineend="47" name="initialize" signature="initialize(parent, *args)" />
+        <scope ilk="function" line="49" lineend="51" name="id" signature="id" />
+        <scope ilk="function" line="53" lineend="60" name="exist?" signature="exist?" />
+        <scope ilk="function" line="62" lineend="64" name="first" signature="first" />
+        <scope ilk="function" line="66" lineend="68" name="last" signature="last" />
+        <scope ilk="function" line="70" lineend="74" name="add" signature="add(*indices)" />
+        <scope ilk="function" line="76" lineend="80" name="remove" signature="remove(*indices)" />
+        <scope ilk="function" line="82" lineend="89" name="ranges" signature="ranges" />
+        <scope ilk="function" line="91" lineend="97" name="nextrange" signature="nextrange(first, last=None)" />
+        <scope ilk="function" line="99" lineend="105" name="prevrange" signature="prevrange(first, last=None)" />
+        <scope ilk="function" line="107" lineend="109" name="[]" signature="[](key" />
+        <scope ilk="function" line="111" lineend="114" name="[]=" signature="[]=(key" />
+        <scope ilk="function" line="116" lineend="118" name="cget" signature="cget(key)" />
+        <scope ilk="function" line="144" lineend="146" name="configure" signature="configure(key, val=None)" />
+        <scope doc="def configure(key, val=None) if key.kind_of?(Hash) tk_call&#xA;@t.path, &apos;tag&apos;, &apos;configure&apos;, @id, *hash_kv(key) else tk_call&#xA;@t.path, &apos;tag&apos;, &apos;configure&apos;, @id, &quot;-#{key}&quot;, val" ilk="function" line="163" lineend="165" name="configinfo" signature="configinfo(key=nil)" />
+        <scope ilk="function" line="167" lineend="169" name="current_configinfo" signature="current_configinfo(key=nil)" />
+        <scope doc="def bind(seq, cmd=Proc.new, *args) _bind([@t.path, &apos;tag&apos;,&#xA;&apos;bind&apos;, @id], seq, cmd, *args) self end" ilk="function" line="175" lineend="184" name="bind" signature="bind(seq, *args)" />
+        <scope doc="def bind_append(seq, cmd=Proc.new, *args)&#xA;_bind_append([@t.path, &apos;tag&apos;, &apos;bind&apos;, @id], seq, cmd, *args)&#xA;self end" ilk="function" line="190" lineend="199" name="bind_append" signature="bind_append(seq, *args)" />
+        <scope ilk="function" line="201" lineend="204" name="bind_remove" signature="bind_remove(seq)" />
+        <scope ilk="function" line="206" lineend="208" name="bindinfo" signature="bindinfo(context=nil)" />
+        <scope ilk="function" line="210" lineend="214" name="raise" signature="raise(above=None)" />
+        <scope ilk="function" line="216" lineend="220" name="lower" signature="lower(below=None)" />
+        <scope ilk="function" line="222" lineend="226" name="destroy" signature="destroy" />
+        <import symbol="TkTreatTagFont" />
+        <import symbol="TkText::IndexModMethods" />
+      </scope>
+      <scope classrefs="TkTextTag" ilk="class" line="229" lineend="273" name="TkTextNamedTag">
+        <scope attributes="__classmethod__" ilk="function" line="230" lineend="247" name="new" signature="self.new(parent, name, *args)" />
+        <scope attributes="__ctor__" ilk="function" line="249" lineend="272" name="initialize" signature="initialize(parent, name, *args)" />
+      </scope>
+      <scope classrefs="TkTextNamedTag" ilk="class" line="275" lineend="279" name="TkTextTagSel">
+        <scope attributes="__classmethod__" ilk="function" line="276" lineend="278" name="new" signature="self.new(parent, *args)" />
+      </scope>
+    </scope>
+    

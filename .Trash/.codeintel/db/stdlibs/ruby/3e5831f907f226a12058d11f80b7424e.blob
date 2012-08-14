@@ -1,0 +1,72 @@
+<scope ilk="blob" lang="Ruby" name="debug">
+      <import line="10" module="tracer" symbol="*" />
+      <import line="11" module="pp" symbol="*" />
+      <scope classrefs="Object" doc="Copyright (C) 2000  Network Applied Communication&#xA;Laboratory, Inc." ilk="class" line="13" lineend="17" name="Tracer">
+        <scope attributes="__classmethod__" ilk="function" line="14" lineend="16" name="trace_func" signature="Tracer.trace_func(*vars)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="21" name="DEBUGGER__" />
+      <scope classrefs="Object" ilk="class" line="22" lineend="60" name="Mutex">
+        <scope attributes="__ctor__" ilk="function" line="23" lineend="27" name="initialize" signature="initialize" />
+        <scope ilk="function" line="29" lineend="31" name="locked?" signature="locked?" />
+        <scope ilk="function" line="33" lineend="44" name="lock" signature="lock" />
+        <scope ilk="function" line="46" lineend="59" name="unlock" signature="unlock" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="63" lineend="754" name="Context">
+        <import line="67" module="readline" symbol="*" />
+        <scope ilk="function" line="68" lineend="70" name="readline" signature="readline(prompt, hist)" />
+        <scope ilk="function" line="72" lineend="79" name="readline" signature="readline(prompt, hist)" />
+        <scope attributes="__ctor__" ilk="function" line="83" lineend="98" name="initialize" signature="initialize" />
+        <scope ilk="function" line="100" lineend="102" name="stop_next" signature="stop_next(n=1)" />
+        <scope ilk="function" line="104" lineend="106" name="set_suspend" signature="set_suspend" />
+        <scope ilk="function" line="108" lineend="110" name="clear_suspend" signature="clear_suspend" />
+        <scope ilk="function" line="112" lineend="114" name="suspend_all" signature="suspend_all" />
+        <scope ilk="function" line="116" lineend="118" name="resume_all" signature="resume_all" />
+        <scope ilk="function" line="120" lineend="128" name="check_suspend" signature="check_suspend" />
+        <scope ilk="function" line="130" lineend="132" name="trace?" signature="trace?" />
+        <scope ilk="function" line="134" lineend="136" name="set_trace" signature="set_trace(arg)" />
+        <scope ilk="function" line="138" lineend="140" name="stdout" signature="stdout" />
+        <scope ilk="function" line="142" lineend="144" name="break_points" signature="break_points" />
+        <scope ilk="function" line="146" lineend="148" name="display" signature="display" />
+        <scope ilk="function" line="150" lineend="152" name="context" signature="context(th)" />
+        <scope ilk="function" line="154" lineend="156" name="set_trace_all" signature="set_trace_all(arg)" />
+        <scope ilk="function" line="158" lineend="160" name="set_last_thread" signature="set_last_thread(th)" />
+        <scope ilk="function" line="162" lineend="173" name="debug_eval" signature="debug_eval(str, binding)" />
+        <scope ilk="function" line="175" lineend="181" name="debug_silent_eval" signature="debug_silent_eval(str, binding)" />
+        <scope ilk="function" line="183" lineend="188" name="var_list" signature="var_list(ary, binding)" />
+        <scope ilk="function" line="190" lineend="210" name="debug_variable_info" signature="debug_variable_info(input, binding)" />
+        <scope ilk="function" line="212" lineend="245" name="debug_method_info" signature="debug_method_info(input, binding)" />
+        <scope ilk="function" line="247" lineend="254" name="thnum" signature="thnum" />
+        <scope ilk="function" line="256" lineend="538" name="debug_command" signature="debug_command(file, line, id, binding)" />
+        <scope ilk="function" line="540" lineend="582" name="debug_print_help" signature="debug_print_help" />
+        <scope ilk="function" line="584" lineend="593" name="display_expressions" signature="display_expressions(binding)" />
+        <scope ilk="function" line="595" lineend="597" name="display_expression" signature="display_expression(exp, binding)" />
+        <scope ilk="function" line="599" lineend="604" name="frame_set_pos" signature="frame_set_pos(file, line)" />
+        <scope ilk="function" line="606" lineend="615" name="display_frames" signature="display_frames(pos)" />
+        <scope ilk="function" line="617" lineend="621" name="format_frame" signature="format_frame(pos)" />
+        <scope ilk="function" line="623" lineend="639" name="display_list" signature="display_list(b, e, file, line)" />
+        <scope ilk="function" line="641" lineend="650" name="line_at" signature="line_at(file, line)" />
+        <scope ilk="function" line="652" lineend="658" name="debug_funcname" signature="debug_funcname(id)" />
+        <scope ilk="function" line="660" lineend="681" name="check_break_points" signature="check_break_points(file, klass, pos, binding, id)" />
+        <scope ilk="function" line="683" lineend="701" name="excn_handle" signature="excn_handle(file, line, id, binding)" />
+        <scope ilk="function" line="703" lineend="753" name="trace_func" signature="trace_func(event, file, line, id, binding, klass)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="765" lineend="934" name="DEBUGGER__">
+        <scope ilk="function" line="766" lineend="768" name="stdout" signature="stdout" />
+        <scope ilk="function" line="770" lineend="772" name="stdout=" signature="stdout=(s)" />
+        <scope ilk="function" line="774" lineend="776" name="display" signature="display" />
+        <scope ilk="function" line="778" lineend="780" name="break_points" signature="break_points" />
+        <scope ilk="function" line="782" lineend="784" name="waiting" signature="waiting" />
+        <scope ilk="function" line="786" lineend="795" name="set_trace" signature="set_trace( arg )" />
+        <scope ilk="function" line="797" lineend="799" name="set_last_thread" signature="set_last_thread(th)" />
+        <scope ilk="function" line="801" lineend="812" name="suspend" signature="suspend" />
+        <scope ilk="function" line="814" lineend="829" name="resume" signature="resume" />
+        <scope ilk="function" line="831" lineend="837" name="context" signature="context(thread=Thread.current)" />
+        <scope ilk="function" line="839" lineend="841" name="interrupt" signature="interrupt" />
+        <scope ilk="function" line="843" lineend="850" name="get_thread" signature="get_thread(num)" />
+        <scope ilk="function" line="852" lineend="866" name="thread_list" signature="thread_list(num)" />
+        <scope ilk="function" line="868" lineend="872" name="thread_list_all" signature="thread_list_all" />
+        <scope ilk="function" line="874" lineend="885" name="make_thread_list" signature="make_thread_list" />
+        <scope ilk="function" line="887" lineend="933" name="debug_thread_info" signature="debug_thread_info(input, binding)" />
+      </scope>
+    </scope>
+    

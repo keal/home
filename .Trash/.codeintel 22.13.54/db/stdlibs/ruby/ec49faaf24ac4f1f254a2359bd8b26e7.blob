@@ -1,0 +1,44 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/markup/simple_markup/inline">
+      <scope ilk="namespace" line="1" lineend="338" name="SM">
+        <scope classrefs="Object" doc="We manage a set of attributes." ilk="class" line="6" lineend="37" name="Attribute">
+          <scope attributes="__classmethod__" ilk="function" line="12" lineend="20" name="bitmap_for" signature="Attribute.bitmap_for(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="22" lineend="29" name="as_string" signature="Attribute.as_string(bitmap)" />
+          <scope attributes="__classmethod__" ilk="function" line="31" lineend="36" name="each_name_of" signature="Attribute.each_name_of(bitmap)" />
+        </scope>
+        <scope classrefs="Object" doc="An AttrChanger records a change in attributes." ilk="class" line="45" lineend="49" name="AttrChanger">
+          <scope ilk="function" line="46" lineend="48" name="to_s" signature="to_s" />
+        </scope>
+        <scope classrefs="Object" doc="An array of attributes which parallels the characters in a&#xA;string" ilk="class" line="52" lineend="66" name="AttrSpan">
+          <scope attributes="__ctor__" ilk="function" line="53" lineend="55" name="initialize" signature="initialize(length)" />
+          <scope ilk="function" line="57" lineend="61" name="set_attrs" signature="set_attrs(start, length, bits)" />
+          <scope ilk="function" line="63" lineend="65" name="[]" signature="[](n" />
+        </scope>
+        <scope classrefs="Object" doc="Hold details of a special sequence" ilk="class" line="71" lineend="86" name="Special">
+          <scope ilk="function" line="72" lineend="72" name="type" />
+          <scope ilk="function" line="73" lineend="73" name="text" />
+          <scope ilk="function" line="73" lineend="73" name="text=" />
+          <scope attributes="__ctor__" ilk="function" line="75" lineend="77" name="initialize" signature="initialize(type, text)" />
+          <scope ilk="function" line="79" lineend="81" name="==" signature="==(o" />
+          <scope ilk="function" line="83" lineend="85" name="to_s" signature="to_s" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="88" lineend="336" name="AttributeManager">
+          <scope doc="Return an attribute object with the given turn_on and&#xA;turn_off bits set" ilk="function" line="122" lineend="124" name="attribute" signature="attribute(turn_on, turn_off)" />
+          <scope ilk="function" line="127" lineend="130" name="change_attribute" signature="change_attribute(current, new)" />
+          <scope ilk="function" line="132" lineend="137" name="changed_attribute_by_name" signature="changed_attribute_by_name(current_set, new_set)" />
+          <scope ilk="function" line="139" lineend="143" name="copy_string" signature="copy_string(start_pos, end_pos)" />
+          <scope doc="Map attributes like &lt;b&gt;text&lt;/b&gt;to the sequence&#xA;\001\002&lt;char&gt;\001\003&lt;char&gt;, where &lt;char&gt; is a per-&#xA;attribute specific character" ilk="function" line="148" lineend="168" name="convert_attrs" signature="convert_attrs(str, attrs)" />
+          <scope ilk="function" line="170" lineend="180" name="convert_html" signature="convert_html(str, attrs)" />
+          <scope ilk="function" line="182" lineend="190" name="convert_specials" signature="convert_specials(str, attrs)" />
+          <scope doc="&quot;" ilk="function" line="199" lineend="202" name="mask_protected_sequences" signature="mask_protected_sequences" />
+          <scope ilk="function" line="204" lineend="206" name="unmask_protected_sequences" signature="unmask_protected_sequences" />
+          <scope attributes="__ctor__" ilk="function" line="208" lineend="218" name="initialize" signature="initialize" />
+          <scope ilk="function" line="220" lineend="234" name="add_word_pair" signature="add_word_pair(start, stop, name)" />
+          <scope ilk="function" line="236" lineend="238" name="add_html" signature="add_html(tag, name)" />
+          <scope ilk="function" line="240" lineend="242" name="add_special" signature="add_special(pattern, name)" />
+          <scope ilk="function" line="244" lineend="259" name="flow" signature="flow(str)" />
+          <scope ilk="function" line="261" lineend="281" name="display_attributes" signature="display_attributes" />
+          <scope ilk="function" line="283" lineend="334" name="split_into_flow" signature="split_into_flow" />
+        </scope>
+      </scope>
+    </scope>
+    

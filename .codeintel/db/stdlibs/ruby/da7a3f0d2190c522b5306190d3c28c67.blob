@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="sha1">
+      <import line="6" module="digest/sha1" symbol="*" />
+      <scope classrefs="Object" doc="just for compatibility; requiring &quot;sha1&quot; is obsoleted" ilk="class" line="10" lineend="14" name="SHA1">
+        <scope attributes="__classmethod__" ilk="function" line="11" lineend="13" name="sha1" signature="self.sha1(*args)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/disjointlistbox">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/disjointlistbox.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Itk::" ilk="class" line="11" lineend="12" name="Disjointlistbox" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="50" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="26" lineend="29" name="set_lhs" signature="set_lhs(*items)" />
+        <scope ilk="function" line="30" lineend="33" name="set_rhs" signature="set_rhs(*items)" />
+        <scope ilk="function" line="35" lineend="37" name="get_lhs" signature="get_lhs" />
+        <scope ilk="function" line="38" lineend="40" name="get_rhs" signature="get_rhs" />
+        <scope ilk="function" line="42" lineend="45" name="insert_lhs" signature="insert_lhs(*items)" />
+        <scope ilk="function" line="46" lineend="49" name="insert_rhs" signature="insert_rhs(*items)" />
+      </scope>
+    </scope>
+    

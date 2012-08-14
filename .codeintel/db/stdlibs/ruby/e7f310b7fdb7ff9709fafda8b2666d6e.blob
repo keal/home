@@ -1,0 +1,33 @@
+<scope ilk="blob" lang="Ruby" name="iconv">
+      <scope classrefs="Data" ilk="class" name="Iconv">
+        <scope classrefs="ArgError" doc="Input conversion stopped due to an input byte that does not&#xA;belong to the input codeset, or the output codeset does not&#xA;contain the character." ilk="class" name="IllegalSequence">
+          <import symbol="Iconv::Failure" />
+        </scope>
+        <scope classrefs="ArgError" doc="Input conversion stopped due to an incomplete character or&#xA;shift sequence at the end of the input buffer." ilk="class" name="InvalidCharacter">
+          <import symbol="Iconv::Failure" />
+        </scope>
+        <scope classrefs="RuntimeError" doc="Detected a bug of underlying iconv(3) libray." ilk="class" name="BrokenLibrary">
+          <import symbol="Iconv::Failure" />
+        </scope>
+        <scope classrefs="ArgError" doc="Requested coding-system is not available on this system." ilk="class" name="InvalidEncoding">
+          <import symbol="Iconv::Failure" />
+        </scope>
+        <scope doc="Base attributes for Iconv exceptions." ilk="namespace" name="Failure">
+          <scope attributes="__classmethod__ __ctor__" doc="Creates new code converter from a coding-system designated&#xA;with from to another one designated with to." ilk="function" name="new" signature=" Iconv.new(to, from)" />
+          <scope doc="Returns substring of the original string passed to Iconv&#xA;that starts at the character caused the exception." ilk="function" name="failed" signature=" failed" />
+          <scope doc="Returns inspected string like as: #&lt;`class&apos;: `success&apos;,&#xA;`failed&apos;&gt;" ilk="function" name="inspect" signature=" inspect" />
+          <scope doc="Returns string(s) translated successfully until the&#xA;exception occurred." ilk="function" name="success" signature=" success" />
+        </scope>
+        <scope classrefs="RuntimeError" doc="Iconv library internal error. Must not occur." ilk="class" name="OutOfRange">
+          <import symbol="Iconv::Failure" />
+        </scope>
+        <scope attributes="__classmethod__" doc="Returns the map from canonical name to system dependent&#xA;name." ilk="function" name="charset_map" signature=" Iconv.charset_map" />
+        <scope attributes="__classmethod__" doc="Document-method: Iconv::conv" ilk="function" name="conv" signature=" Iconv.iconv(to, from, *strs)" />
+        <scope attributes="__classmethod__" doc="Shorthand for" ilk="function" name="iconv" signature=" Iconv.iconv(to, from, *strs)" />
+        <scope attributes="__classmethod__ __ctor__" doc="Creates new code converter from a coding-system designated&#xA;with from to another one designated with to." ilk="function" name="new" signature=" Iconv.new(to, from)" />
+        <scope attributes="__classmethod__" doc="Equivalent to Iconv.new except that when it is called with a&#xA;block, it yields with the new instance and closes it, and&#xA;returns the result which returned from the block." ilk="function" name="open" signature=" Iconv.open(to, from) { |iconv| ... }" />
+        <scope doc="Finishes conversion." ilk="function" name="close" signature="()" />
+        <scope doc="Shorthand for" ilk="function" name="iconv" signature=" Iconv.iconv(to, from, *strs)" />
+      </scope>
+    </scope>
+    

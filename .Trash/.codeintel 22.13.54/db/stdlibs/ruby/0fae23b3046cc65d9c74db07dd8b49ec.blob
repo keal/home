@@ -1,0 +1,37 @@
+<scope ilk="blob" lang="Ruby" name="time">
+      <import line="43" module="parsedate" symbol="*" />
+      <import line="466" module="test/unit" symbol="*" />
+      <scope classrefs="Object" doc="Implements the extensions to the Time class that are&#xA;described in the documentation for the time.rb library." ilk="class" line="49" lineend="463" name="Time">
+        <scope classrefs="Object" ilk="class" line="50" lineend="380" name="Time">
+          <scope doc="Following definition of military zones is original one." ilk="function" line="69" lineend="84" name="zone_offset" signature="zone_offset(zone, year=Time.now.year)" />
+          <scope ilk="function" line="86" lineend="94" name="zone_utc?" signature="zone_utc?(zone)" />
+          <scope ilk="function" line="99" lineend="105" name="month_days" signature="month_days(y, m)" />
+          <scope ilk="function" line="108" lineend="148" name="apply_offset" signature="apply_offset(year, mon, day, hour, min, sec, off)" />
+          <scope ilk="function" line="151" lineend="186" name="make_time" signature="make_time(year, mon, day, hour, min, sec, sec_fraction, zone, now)" />
+          <scope doc="Parses +date+ using Date._parse and converts it to a Time&#xA;object." ilk="function" line="239" lineend="244" name="parse" signature="parse(date, now=Time.now)" />
+          <scope doc="Parses +date+ as date-time defined by RFC 2822 and converts&#xA;it to a Time object." ilk="function" line="261" lineend="298" name="rfc2822" signature="rfc2822(date)" />
+          <scope doc="Parses +date+ as HTTP-date defined by RFC 2616 and converts&#xA;it to a Time object." ilk="function" line="310" lineend="339" name="httpdate" signature="httpdate(date)" />
+          <scope doc="Parses +date+ as dateTime defined by XML Schema and converts&#xA;it to a Time object." ilk="function" line="351" lineend="378" name="xmlschema" signature="xmlschema(date)" />
+        </scope>
+        <scope doc="class &lt;&lt; self" ilk="function" line="391" lineend="403" name="rfc2822" signature="rfc2822" />
+        <scope doc="Returns a string which represents the time as rfc1123-date&#xA;of HTTP-date defined by RFC 2616:" ilk="function" line="422" lineend="428" name="httpdate" signature="httpdate" />
+        <scope doc="Returns a string which represents the time as dateTime&#xA;defined by XML Schema:" ilk="function" line="444" lineend="461" name="xmlschema" signature="xmlschema(fraction_digits=0)" />
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="468" lineend="796" name="TimeExtentionTest">
+        <scope doc=":nodoc:" ilk="function" line="469" lineend="474" name="test_rfc822" signature="test_rfc822" />
+        <scope ilk="function" line="476" lineend="510" name="test_rfc2822" signature="test_rfc2822" />
+        <scope ilk="function" line="512" lineend="531" name="test_rfc2616" signature="test_rfc2616" />
+        <scope ilk="function" line="533" lineend="563" name="test_rfc3339" signature="test_rfc3339" />
+        <scope doc="http://www.w3.org/TR/xmlschema-2/" ilk="function" line="566" lineend="601" name="test_xmlschema" signature="test_xmlschema" />
+        <scope ilk="function" line="603" lineend="624" name="test_encode_xmlschema" signature="test_encode_xmlschema" />
+        <scope ilk="function" line="626" lineend="637" name="test_completion" signature="test_completion" />
+        <scope ilk="function" line="639" lineend="700" name="test_invalid" signature="test_invalid" />
+        <scope ilk="function" line="702" lineend="713" name="test_zone_0000" signature="test_zone_0000" />
+        <scope ilk="function" line="715" lineend="737" name="test_parse_leap_second" signature="test_parse_leap_second" />
+        <scope ilk="function" line="739" lineend="761" name="test_rfc2822_leap_second" signature="test_rfc2822_leap_second" />
+        <scope ilk="function" line="763" lineend="785" name="test_xmlschema_leap_second" signature="test_xmlschema_leap_second" />
+        <scope ilk="function" line="787" lineend="791" name="test_ruby_talk_152866" signature="test_ruby_talk_152866" />
+        <scope ilk="function" line="793" lineend="795" name="test_parse_fraction" signature="test_parse_fraction" />
+      </scope>
+    </scope>
+    

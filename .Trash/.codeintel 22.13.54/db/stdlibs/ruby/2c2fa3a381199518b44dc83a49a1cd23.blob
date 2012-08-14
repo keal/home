@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/ui/testrunnerutilities">
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="5" lineend="44" name="Test">
+        <scope ilk="namespace" line="6" lineend="43" name="Unit">
+          <scope ilk="namespace" line="7" lineend="42" name="UI">
+            <scope doc="Provides some utilities common to most, if not all,&#xA;TestRunners." ilk="namespace" line="23" lineend="41" name="TestRunnerUtilities">
+              <scope doc="Creates a new TestRunner and runs the suite." ilk="function" line="26" lineend="28" name="run" signature="run(suite, output_level=NORMAL)" />
+              <scope doc="Takes care of the ARGV parsing and suite determination&#xA;necessary for running one of the TestRunners from the&#xA;command line." ilk="function" line="33" lineend="40" name="start_command_line_test" signature="start_command_line_test" />
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="soap/httpconfigloader">
+      <import line="9" module="soap/property" symbol="*" />
+      <scope doc="SOAP4R - HTTP config loader." ilk="namespace" line="12" name="SOAP" />
+      <scope ilk="namespace" line="15" lineend="116" name="HTTPConfigLoader">
+        <scope ilk="function" line="18" lineend="52" name="set_options" signature="set_options(client, options)" />
+        <scope ilk="function" line="54" lineend="58" name="set_basic_auth" signature="set_basic_auth(client, basic_auth)" />
+        <scope ilk="function" line="60" lineend="95" name="set_ssl_config" signature="set_ssl_config(client, ssl_config)" />
+        <scope ilk="function" line="97" lineend="107" name="ssl_config_int" signature="ssl_config_int(value)" />
+        <scope ilk="function" line="109" lineend="111" name="cert_from_file" signature="cert_from_file(filename)" />
+        <scope ilk="function" line="113" lineend="115" name="key_from_file" signature="key_from_file(filename)" />
+      </scope>
+    </scope>
+    

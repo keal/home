@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="parsedate">
+      <import line="4" module="date/format" symbol="*" />
+      <scope doc="parsedate.rb: Written by Tadayoshi Funaba 2001, 2002 $Id:&#xA;parsedate.rb,v 2.6 2002-05-14 07:43:18+09 tadf Exp $" ilk="namespace" line="6" lineend="15" name="ParseDate">
+        <scope ilk="function" line="8" lineend="11" name="parsedate" signature="parsedate(str, comp=false)" />
+      </scope>
+    </scope>
+    

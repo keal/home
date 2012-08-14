@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="tk/menuspec">
+      <scope doc="tk/menuspec.rb Hidethoshi NAGAI (nagai@ai.kyutech.ac.jp)" ilk="namespace" line="41" lineend="269" name="TkMenuSpec">
+        <scope ilk="function" line="42" lineend="148" name="_create_menu" signature="_create_menu(parent, menu_info, menu_name = nil, tearoff = false, default_opts = nil)" />
+        <scope ilk="function" line="151" lineend="163" name="_use_menubar?" signature="_use_menubar?(parent)" />
+        <scope ilk="function" line="166" lineend="172" name="_create_menu_for_menubar" signature="_create_menu_for_menubar(parent)" />
+        <scope ilk="function" line="175" lineend="255" name="_create_menubutton" signature="_create_menubutton(parent, menu_info, tearoff=false, default_opts = nil)" />
+        <scope ilk="function" line="258" lineend="267" name="_get_cascade_menus" signature="_get_cascade_menus(menu)" />
+      </scope>
+    </scope>
+    

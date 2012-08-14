@@ -1,0 +1,62 @@
+<scope ilk="blob" lang="Ruby" name="open-uri">
+      <import line="57" module="uri" symbol="*" />
+      <import line="58" module="stringio" symbol="*" />
+      <import line="59" module="time" symbol="*" />
+      <scope doc="= open-uri.rb" ilk="namespace" line="61" lineend="92" name="Kernel">
+        <scope doc=":nodoc: makes possible to open various resources including&#xA;URIs." ilk="function" line="80" lineend="90" name="open" signature="open(name, *rest, &amp;block)" />
+      </scope>
+      <scope ilk="namespace" line="94" lineend="546" name="OpenURI">
+        <scope attributes="__classmethod__" ilk="function" line="102" lineend="109" name="check_options" signature="OpenURI.check_options(options)" />
+        <scope attributes="__classmethod__" ilk="function" line="111" lineend="119" name="scan_open_optional_arguments" signature="OpenURI.scan_open_optional_arguments(*rest)" />
+        <scope attributes="__classmethod__" ilk="function" line="121" lineend="145" name="open_uri" signature="OpenURI.open_uri(name, *rest)" />
+        <scope attributes="__classmethod__" ilk="function" line="147" lineend="194" name="open_loop" signature="OpenURI.open_loop(uri, options)" />
+        <scope attributes="__classmethod__" ilk="function" line="196" lineend="202" name="redirectable?" signature="OpenURI.redirectable?(uri1, uri2)" />
+        <scope attributes="__classmethod__" ilk="function" line="204" lineend="292" name="open_http" signature="OpenURI.open_http(buf, target, proxy, options)">
+          <import line="214" module="net/http" symbol="*" />
+          <import line="233" module="net/https" symbol="*" />
+        </scope>
+        <scope classrefs="StandardError" ilk="class" line="294" lineend="300" name="HTTPError">
+          <scope attributes="__ctor__" ilk="function" line="295" lineend="298" name="initialize" signature="initialize(message, io)" />
+          <scope ilk="function" line="299" lineend="299" name="io" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="302" lineend="327" name="Buffer">
+          <scope attributes="__ctor__" doc=":nodoc:" ilk="function" line="303" lineend="306" name="initialize" signature="initialize" />
+          <scope ilk="function" line="307" lineend="307" name="size" />
+          <scope ilk="function" line="310" lineend="321" name="&lt;&lt;" signature="&lt;&lt;(str">
+            <import line="314" module="tempfile" symbol="*" />
+          </scope>
+          <scope ilk="function" line="323" lineend="326" name="io" signature="io" />
+        </scope>
+        <scope doc="Mixin for holding meta-information." ilk="namespace" line="330" lineend="435" name="Meta">
+          <scope attributes="__classmethod__" ilk="function" line="331" lineend="344" name="init" signature="Meta.init(obj, src=nil)" />
+          <scope doc="returns a Hash which represents header fields." ilk="function" line="357" lineend="359" name="meta_add_field" signature="meta_add_field(name, value)" />
+          <scope doc="returns a Time which represents Last-Modified field." ilk="function" line="362" lineend="368" name="last_modified" signature="last_modified" />
+          <scope ilk="function" line="375" lineend="390" name="content_type_parse" signature="content_type_parse" />
+          <scope doc="returns &quot;type/subtype&quot; which is MIME Content-Type." ilk="function" line="395" lineend="398" name="content_type" signature="content_type" />
+          <scope doc="returns a charset parameter in Content-Type field." ilk="function" line="410" lineend="422" name="charset" signature="charset" />
+          <scope doc="returns a list of encodings in Content-Encoding field as an&#xA;Array of String." ilk="function" line="427" lineend="434" name="content_encoding" signature="content_encoding" />
+        </scope>
+        <scope doc="Mixin for HTTP and FTP URIs." ilk="namespace" line="438" lineend="545" name="OpenRead">
+          <scope doc="OpenURI::OpenRead#open provides `open&apos; for URI::HTTP and&#xA;URI::FTP." ilk="function" line="530" lineend="532" name="open" signature="open(*rest, &amp;block)" />
+          <scope doc="OpenURI::OpenRead#read([options]) reads a content referenced&#xA;by self and returns the content as string." ilk="function" line="538" lineend="544" name="read" signature="read(options={})" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="548" lineend="691" name="URI">
+        <scope classrefs="Object" ilk="class" line="549" lineend="625" name="Generic">
+          <scope doc="returns a proxy URI." ilk="function" line="563" lineend="624" name="find_proxy" signature="find_proxy">
+            <import line="600" module="socket" symbol="*" />
+          </scope>
+        </scope>
+        <scope classrefs="Object" ilk="class" line="627" lineend="633" name="HTTP">
+          <scope ilk="function" line="628" lineend="630" name="buffer_open" signature="buffer_open(buf, proxy, options)" />
+          <import symbol="OpenURI::OpenRead" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="635" lineend="690" name="FTP">
+          <scope ilk="function" line="636" lineend="687" name="buffer_open" signature="buffer_open(buf, proxy, options)">
+            <import line="641" module="net/ftp" symbol="*" />
+          </scope>
+          <import symbol="OpenURI::OpenRead" />
+        </scope>
+      </scope>
+    </scope>
+    

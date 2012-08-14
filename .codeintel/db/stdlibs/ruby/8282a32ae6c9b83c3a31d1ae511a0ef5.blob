@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="rexml/node">
+      <import line="1" module="rexml/parseexception" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="66" name="REXML">
+        <scope doc="Represents a node in the tree." ilk="namespace" line="6" lineend="56" name="Node">
+          <scope doc="@return the next sibling (nil if unset)" ilk="function" line="8" lineend="11" name="next_sibling_node" signature="next_sibling_node" />
+          <scope doc="@return the previous sibling (nil if unset)" ilk="function" line="14" lineend="19" name="previous_sibling_node" signature="previous_sibling_node" />
+          <scope ilk="function" line="21" lineend="25" name="to_s" signature="to_s" />
+          <scope ilk="function" line="27" lineend="34" name="indent" signature="indent" />
+          <scope ilk="function" line="36" lineend="38" name="parent?" signature="parent?" />
+          <scope doc="Visit all subnodes of +self+ recursively" ilk="function" line="42" lineend="47" name="each_recursive" signature="each_recursive(&amp;block)" />
+          <scope doc="Find (and return) first subnode (recursively) for which the&#xA;block evaluates to true." ilk="function" line="51" lineend="56" name="find_first_recursive" signature="find_first_recursive(&amp;block)" />
+        </scope>
+        <scope doc="Returns the index that +self+ has in its parent&apos;s elements&#xA;array, so that the following equation holds true:" ilk="function" line="62" lineend="64" name="index_in_parent" signature="index_in_parent" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="profile">
+      <import line="1" module="profiler" symbol="*" />
+    </scope>
+    

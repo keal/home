@@ -1,0 +1,69 @@
+<scope ilk="blob" lang="Ruby" name="net/protocol">
+      <import line="21" module="socket" symbol="*" />
+      <import line="22" module="timeout" symbol="*" />
+      <scope doc="= net/protocol.rb" ilk="namespace" line="24" lineend="390" name="Net">
+        <scope classrefs="Object" doc=":nodoc:" ilk="class" line="26" lineend="35" name="Protocol">
+          <scope attributes="__classmethod__" doc=":nodoc: internal use only" ilk="function" line="28" lineend="34" name="protocol_param" signature="Protocol.protocol_param(name, val)" />
+        </scope>
+        <scope classrefs="StandardError" ilk="class" line="38" lineend="38" name="ProtocolError" />
+        <scope classrefs="ProtocolError" ilk="class" line="39" lineend="39" name="ProtoSyntaxError" />
+        <scope classrefs="ProtocolError" ilk="class" line="40" lineend="40" name="ProtoFatalError" />
+        <scope classrefs="ProtocolError" ilk="class" line="41" lineend="41" name="ProtoUnknownError" />
+        <scope classrefs="ProtocolError" ilk="class" line="42" lineend="42" name="ProtoServerError" />
+        <scope classrefs="ProtocolError" ilk="class" line="43" lineend="43" name="ProtoAuthError" />
+        <scope classrefs="ProtocolError" ilk="class" line="44" lineend="44" name="ProtoCommandError" />
+        <scope classrefs="ProtocolError" ilk="class" line="45" lineend="45" name="ProtoRetriableError" />
+        <scope classrefs="Object" ilk="class" line="49" lineend="199" name="BufferedIO">
+          <scope attributes="__ctor__" doc=":nodoc: internal use only" ilk="function" line="50" lineend="55" name="initialize" signature="initialize(io)" />
+          <scope ilk="function" line="57" lineend="57" name="io" />
+          <scope ilk="function" line="58" lineend="58" name="read_timeout" />
+          <scope ilk="function" line="58" lineend="58" name="read_timeout=" />
+          <scope ilk="function" line="59" lineend="59" name="debug_output" />
+          <scope ilk="function" line="59" lineend="59" name="debug_output=" />
+          <scope ilk="function" line="61" lineend="63" name="inspect" signature="inspect" />
+          <scope ilk="function" line="65" lineend="67" name="closed?" signature="closed?" />
+          <scope ilk="function" line="69" lineend="71" name="close" signature="close" />
+          <scope doc="Read" ilk="function" line="79" lineend="95" name="read" signature="read(len, dest = &apos;&apos;, ignore_eof = false)" />
+          <scope ilk="function" line="97" lineend="111" name="read_all" signature="read_all(dest = &apos;&apos;)" />
+          <scope ilk="function" line="113" lineend="123" name="readuntil" signature="readuntil(terminator, ignore_eof = false)" />
+          <scope ilk="function" line="125" lineend="127" name="readline" signature="readline" />
+          <scope ilk="function" line="131" lineend="135" name="rbuf_fill" signature="rbuf_fill" />
+          <scope ilk="function" line="137" lineend="141" name="rbuf_consume" signature="rbuf_consume(len)" />
+          <scope doc="Write" ilk="function" line="149" lineend="153" name="write" signature="write(str)" />
+          <scope ilk="function" line="155" lineend="159" name="writeline" signature="writeline(str)" />
+          <scope ilk="function" line="163" lineend="171" name="writing" signature="writing" />
+          <scope ilk="function" line="173" lineend="178" name="write0" signature="write0(str)" />
+          <scope doc="Logging" ilk="function" line="186" lineend="189" name="LOG_off" signature="LOG_off" />
+          <scope ilk="function" line="191" lineend="193" name="LOG_on" signature="LOG_on" />
+          <scope ilk="function" line="195" lineend="198" name="LOG" signature="LOG(msg)" />
+        </scope>
+        <scope classrefs="BufferedIO" ilk="class" line="202" lineend="325" name="InternetMessageIO">
+          <scope attributes="__classmethod__" doc=":nodoc: internal use only" ilk="function" line="203" lineend="211" name="old_open" signature="InternetMessageIO.old_open(addr, port, open_timeout = nil, read_timeout = nil, debug_output = nil)" />
+          <scope attributes="__ctor__" ilk="function" line="213" lineend="216" name="initialize" signature="initialize(io)" />
+          <scope doc="Read" ilk="function" line="222" lineend="232" name="each_message_chunk" signature="each_message_chunk" />
+          <scope doc="*library private* (cannot handle &apos;break&apos;)" ilk="function" line="235" lineend="239" name="each_list_item" signature="each_list_item" />
+          <scope ilk="function" line="241" lineend="247" name="write_message_0" signature="write_message_0(src)" />
+          <scope doc="Write" ilk="function" line="253" lineend="264" name="write_message" signature="write_message(src)" />
+          <scope ilk="function" line="266" lineend="281" name="write_message_by_block" signature="write_message_by_block(&amp;block)" />
+          <scope ilk="function" line="285" lineend="295" name="using_each_crlf_line" signature="using_each_crlf_line" />
+          <scope ilk="function" line="297" lineend="303" name="each_crlf_line" signature="each_crlf_line(src)" />
+          <scope ilk="function" line="305" lineend="324" name="buffer_filling" signature="buffer_filling(buf, src)" />
+        </scope>
+        <scope classrefs="Object" doc="The writer adapter class" ilk="class" line="331" lineend="359" name="WriteAdapter">
+          <scope attributes="__ctor__" ilk="function" line="332" lineend="335" name="initialize" signature="initialize(socket, method)" />
+          <scope ilk="function" line="337" lineend="339" name="inspect" signature="inspect" />
+          <scope ilk="function" line="341" lineend="343" name="write" signature="write(str)" />
+          <scope ilk="function" line="347" lineend="350" name="&lt;&lt;" signature="&lt;&lt;(str" />
+          <scope ilk="function" line="352" lineend="354" name="puts" signature="puts(str = &apos;&apos;)" />
+          <scope ilk="function" line="356" lineend="358" name="printf" signature="printf(*args)" />
+        </scope>
+        <scope classrefs="Object" ilk="class" line="362" lineend="383" name="ReadAdapter">
+          <scope attributes="__ctor__" doc=":nodoc: internal use only" ilk="function" line="363" lineend="365" name="initialize" signature="initialize(block)" />
+          <scope ilk="function" line="367" lineend="369" name="inspect" signature="inspect" />
+          <scope ilk="function" line="371" lineend="373" name="&lt;&lt;" signature="&lt;&lt;(str" />
+          <scope doc="This method is needed because @block must be called by&#xA;yield, not Proc#call." ilk="function" line="380" lineend="382" name="call_block" signature="call_block(str)" />
+        </scope>
+        <scope ilk="namespace" line="386" lineend="388" name="NetPrivate" />
+      </scope>
+    </scope>
+    

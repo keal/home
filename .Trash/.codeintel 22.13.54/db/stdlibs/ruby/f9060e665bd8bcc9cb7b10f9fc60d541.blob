@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpservlet/abstract">
+      <import line="11" module="thread" symbol="*" />
+      <import line="13" module="webrick/htmlutils" symbol="*" />
+      <import line="14" module="webrick/httputils" symbol="*" />
+      <import line="15" module="webrick/httpstatus" symbol="*" />
+      <scope doc="httpservlet.rb -- HTTPServlet Module" ilk="namespace" line="17" lineend="71" name="WEBrick">
+        <scope ilk="namespace" line="18" lineend="70" name="HTTPServlet">
+          <scope classrefs="StandardError" ilk="class" line="19" lineend="19" name="HTTPServletError" />
+          <scope classrefs="Object" ilk="class" line="21" lineend="68" name="AbstractServlet">
+            <scope attributes="__classmethod__" ilk="function" line="22" lineend="24" name="get_instance" signature="self.get_instance(config, *options)" />
+            <scope attributes="__ctor__" ilk="function" line="26" lineend="30" name="initialize" signature="initialize(server, *options)" />
+            <scope ilk="function" line="32" lineend="40" name="service" signature="service(req, res)" />
+            <scope ilk="function" line="42" lineend="44" name="do_GET" signature="do_GET(req, res)" />
+            <scope ilk="function" line="46" lineend="48" name="do_HEAD" signature="do_HEAD(req, res)" />
+            <scope ilk="function" line="50" lineend="55" name="do_OPTIONS" signature="do_OPTIONS(req, res)" />
+            <scope ilk="function" line="59" lineend="67" name="redirect_to_directory_uri" signature="redirect_to_directory_uri(req, res)" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

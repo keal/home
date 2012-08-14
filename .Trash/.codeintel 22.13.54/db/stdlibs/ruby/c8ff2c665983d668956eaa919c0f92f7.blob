@@ -1,0 +1,41 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/ctext">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tk/text" symbol="*" />
+      <import line="11" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;ctext&apos;, &apos;3.1&apos;)" ilk="namespace" line="16" lineend="33" name="Tk">
+        <scope ilk="namespace" line="17" lineend="32" name="Tcllib">
+          <scope classrefs="TkText" ilk="class" line="18" lineend="31" name="CText">
+            <scope attributes="__classmethod__" ilk="function" line="20" lineend="22" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="24" lineend="30" name="package_version" signature="self.package_version" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="35" lineend="160" name="Tk::Tcllib::">
+        <scope ilk="function" line="40" lineend="47" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="50" lineend="53" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="56" lineend="58" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="61" lineend="63" name="append" signature="append(*args)" />
+        <scope ilk="function" line="65" lineend="67" name="copy" signature="copy" />
+        <scope ilk="function" line="69" lineend="71" name="cut" signature="cut" />
+        <scope ilk="function" line="73" lineend="75" name="fast_delete" signature="fast_delete(*args)" />
+        <scope ilk="function" line="77" lineend="79" name="fast_insert" signature="fast_insert(*args)" />
+        <scope ilk="function" line="81" lineend="83" name="highlight" signature="highlight(*args)" />
+        <scope ilk="function" line="85" lineend="87" name="paste" signature="paste" />
+        <scope ilk="function" line="89" lineend="91" name="edit" signature="edit(*args)" />
+        <scope ilk="function" line="93" lineend="96" name="add_highlight_class" signature="add_highlight_class(klass, col, *keywords)" />
+        <scope ilk="function" line="98" lineend="102" name="add_highlight_class_for_special_chars" signature="add_highlight_class_for_special_chars(klass, col, *chrs)" />
+        <scope ilk="function" line="104" lineend="108" name="add_highlight_class_for_regexp" signature="add_highlight_class_for_regexp(klass, col, tcl_regexp)" />
+        <scope ilk="function" line="110" lineend="114" name="add_highlight_class_with_only_char_start" signature="add_highlight_class_with_only_char_start(klass, col, chr)" />
+        <scope ilk="function" line="116" lineend="119" name="clear_highlight_classes" signature="clear_highlight_classes" />
+        <scope ilk="function" line="121" lineend="123" name="get_highlight_classes" signature="get_highlight_classes" />
+        <scope ilk="function" line="125" lineend="128" name="delete_highlight_class" signature="delete_highlight_class(klass)" />
+        <scope ilk="function" line="130" lineend="133" name="enable_C_comments" signature="enable_C_comments" />
+        <scope ilk="function" line="135" lineend="138" name="disable_C_comments" signature="disable_C_comments" />
+        <scope ilk="function" line="140" lineend="142" name="find_next_char" signature="find_next_char(idx, chr)" />
+        <scope ilk="function" line="144" lineend="146" name="find_next_space" signature="find_next_space(idx)" />
+        <scope ilk="function" line="148" lineend="150" name="find_previous_space" signature="find_previous_space(idx)" />
+        <scope ilk="function" line="152" lineend="155" name="set_update_proc" signature="set_update_proc(cmd=Proc.new)" />
+        <scope ilk="function" line="157" lineend="159" name="modified?" signature="modified?(mode)" />
+      </scope>
+    </scope>
+    

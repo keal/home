@@ -1,0 +1,19 @@
+<scope ilk="blob" lang="Ruby" name="resolv-replace">
+      <import line="1" module="socket" symbol="*" />
+      <import line="2" module="resolv" symbol="*" />
+      <scope classrefs="Object" ilk="class" line="4" lineend="13" name="IPSocket">
+        <scope ilk="function" line="6" lineend="12" name="getaddress" signature="getaddress(host)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="15" lineend="21" name="TCPSocket">
+        <scope attributes="__ctor__" ilk="function" line="17" lineend="20" name="initialize" signature="initialize(host, serv, *rest)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="23" lineend="55" name="UDPSocket">
+        <scope ilk="function" line="25" lineend="27" name="bind" signature="bind(host, port)" />
+        <scope ilk="function" line="30" lineend="32" name="connect" signature="connect(host, port)" />
+        <scope ilk="function" line="35" lineend="54" name="send" signature="send(mesg, flags, *rest)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="57" lineend="62" name="SOCKSSocket">
+        <scope attributes="__ctor__" ilk="function" line="59" lineend="61" name="initialize" signature="initialize(host, serv)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/failure">
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="5" lineend="49" name="Test">
+        <scope ilk="namespace" line="6" lineend="48" name="Unit">
+          <scope classrefs="Object" doc="Encapsulates a test failure." ilk="class" line="10" lineend="47" name="Failure">
+            <scope ilk="function" line="11" lineend="11" name="test_name" />
+            <scope ilk="function" line="11" lineend="11" name="location" />
+            <scope ilk="function" line="11" lineend="11" name="message" />
+            <scope attributes="__ctor__" doc="Creates a new Failure with the given location and message." ilk="function" line="17" lineend="21" name="initialize" signature="initialize(test_name, location, message)" />
+            <scope doc="Returns a single character representation of a failure." ilk="function" line="24" lineend="26" name="single_character_display" signature="single_character_display" />
+            <scope doc="Returns a brief version of the error description." ilk="function" line="29" lineend="31" name="short_display" signature="short_display" />
+            <scope doc="Returns a verbose version of the error description." ilk="function" line="34" lineend="41" name="long_display" signature="long_display" />
+            <scope doc="Overridden to return long_display." ilk="function" line="44" lineend="46" name="to_s" signature="to_s" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

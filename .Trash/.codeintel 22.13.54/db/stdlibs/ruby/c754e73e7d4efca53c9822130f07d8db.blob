@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tile/tcheckbutton">
+      <import line="5" module="tk" symbol="*" />
+      <import line="6" module="tkextlib/tile.rb" symbol="*" />
+      <scope doc="tcheckbutton widget by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="8" lineend="16" name="Tk">
+        <scope ilk="namespace" line="9" lineend="15" name="Tile">
+          <scope classrefs="TkCheckButton" ilk="class" line="10" lineend="11" name="TCheckButton" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="18" lineend="32" name="Tk::Tile::">
+        <scope attributes="__classmethod__" ilk="function" line="29" lineend="31" name="style" signature="self.style(*args)" />
+        <import symbol="Tk::Tile::" />
+      </scope>
+    </scope>
+    

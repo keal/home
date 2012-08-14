@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="uri/common">
+      <scope doc="= uri/common.rb" ilk="namespace" line="9" lineend="597" name="URI">
+        <scope ilk="namespace" line="10" lineend="215" name="REGEXP">
+          <scope doc="Patterns used to parse URI&apos;s" ilk="namespace" line="14" lineend="183" name="PATTERN" />
+        </scope>
+        <scope doc="REGEXP" ilk="namespace" line="217" lineend="247" name="Util">
+          <scope doc=":nodoc:" ilk="function" line="218" lineend="245" name="make_components_hash" signature="make_components_hash(klass, array_hash)" />
+        </scope>
+        <scope ilk="namespace" line="249" lineend="321" name="Escape">
+          <scope doc="== Synopsis" ilk="function" line="280" lineend="292" name="escape" signature="escape(str, unsafe = UNSAFE)" />
+          <scope doc="== Synopsis" ilk="function" line="315" lineend="319" name="unescape" signature="unescape(str)" />
+        </scope>
+        <scope classrefs="StandardError" doc="Base class for all URI exceptions." ilk="class" line="331" lineend="331" name="Error" />
+        <scope classrefs="Error" doc="Not a URI." ilk="class" line="335" lineend="335" name="InvalidURIError" />
+        <scope classrefs="Error" doc="Not a URI component." ilk="class" line="339" lineend="339" name="InvalidComponentError" />
+        <scope classrefs="Error" doc="URI is valid, bad usage is not." ilk="class" line="343" lineend="343" name="BadURIError" />
+        <scope attributes="__classmethod__" doc="== Synopsis" ilk="function" line="376" lineend="446" name="split" signature="self.split(uri)" />
+        <scope attributes="__classmethod__" doc="== Synopsis" ilk="function" line="479" lineend="492" name="parse" signature="self.parse(uri)" />
+        <scope attributes="__classmethod__" doc="== Synopsis" ilk="function" line="515" lineend="521" name="join" signature="self.join(*str)" />
+        <scope attributes="__classmethod__" doc="== Synopsis" ilk="function" line="547" lineend="556" name="extract" signature="self.extract(str, schemes = nil, &amp;block)" />
+        <scope attributes="__classmethod__" doc="== Synopsis" ilk="function" line="589" lineend="595" name="regexp" signature="self.regexp(schemes = nil)" />
+      </scope>
+      <scope ilk="namespace" line="599" lineend="607" name="Kernel">
+        <scope doc="alias for URI.parse." ilk="function" line="603" lineend="605" name="URI" signature="URI(uri_str)" />
+      </scope>
+    </scope>
+    

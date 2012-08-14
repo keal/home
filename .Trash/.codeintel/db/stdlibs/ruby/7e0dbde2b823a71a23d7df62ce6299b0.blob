@@ -1,0 +1,75 @@
+<scope ilk="blob" lang="Ruby" name="win32/registry">
+      <import line="264" module="Win32API" symbol="*" />
+      <scope ilk="namespace" line="266" lineend="831" name="Win32">
+        <scope classrefs="Object" ilk="class" line="267" lineend="830" name="Registry">
+          <scope ilk="namespace" line="268" lineend="329" name="Constants" />
+          <scope classrefs="::StandardError" doc="Error" ilk="class" line="336" lineend="345" name="Error">
+            <scope attributes="__ctor__" ilk="function" line="338" lineend="343" name="initialize" signature="initialize(code)" />
+            <scope ilk="function" line="344" lineend="344" name="code" />
+          </scope>
+          <scope classrefs="Registry" doc="Predefined Keys" ilk="class" line="350" lineend="372" name="PredefinedKey">
+            <scope attributes="__ctor__" ilk="function" line="351" lineend="356" name="initialize" signature="initialize(hkey, keyname)" />
+            <scope doc="Predefined keys cannot be closed" ilk="function" line="359" lineend="361" name="close" signature="close" />
+            <scope doc="Fake class for Registry#open, Registry#create" ilk="function" line="364" lineend="366" name="class" signature="class" />
+          </scope>
+          <scope doc="Win32 APIs" ilk="namespace" line="377" lineend="490" name="API">
+            <scope ilk="function" line="396" lineend="398" name="check" signature="check(result)" />
+            <scope ilk="function" line="400" lineend="402" name="packdw" signature="packdw(dw)" />
+            <scope ilk="function" line="404" lineend="407" name="unpackdw" signature="unpackdw(dw)" />
+            <scope ilk="function" line="409" lineend="411" name="packqw" signature="packqw(qw)" />
+            <scope ilk="function" line="413" lineend="416" name="unpackqw" signature="unpackqw(qw)" />
+            <scope ilk="function" line="418" lineend="422" name="OpenKey" signature="OpenKey(hkey, name, opt, desired)" />
+            <scope ilk="function" line="424" lineend="430" name="CreateKey" signature="CreateKey(hkey, name, opt, desired)" />
+            <scope ilk="function" line="432" lineend="437" name="EnumValue" signature="EnumValue(hkey, index)" />
+            <scope ilk="function" line="439" lineend="445" name="EnumKey" signature="EnumKey(hkey, index)" />
+            <scope ilk="function" line="447" lineend="454" name="QueryValue" signature="QueryValue(hkey, name)" />
+            <scope ilk="function" line="456" lineend="458" name="SetValue" signature="SetValue(hkey, name, type, data, size)" />
+            <scope ilk="function" line="460" lineend="462" name="DeleteValue" signature="DeleteValue(hkey, name)" />
+            <scope ilk="function" line="464" lineend="466" name="DeleteKey" signature="DeleteKey(hkey, name)" />
+            <scope ilk="function" line="468" lineend="470" name="FlushKey" signature="FlushKey(hkey)" />
+            <scope ilk="function" line="472" lineend="474" name="CloseKey" signature="CloseKey(hkey)" />
+            <scope ilk="function" line="476" lineend="489" name="QueryInfoKey" signature="QueryInfoKey(hkey)" />
+          </scope>
+          <scope attributes="__classmethod__" doc="utility functions" ilk="function" line="495" lineend="497" name="expand_environ" signature="self.expand_environ(str)" />
+          <scope attributes="__classmethod__" ilk="function" line="509" lineend="511" name="type2name" signature="self.type2name(type)" />
+          <scope attributes="__classmethod__" ilk="function" line="513" lineend="515" name="wtime2time" signature="self.wtime2time(wtime)" />
+          <scope attributes="__classmethod__" ilk="function" line="517" lineend="519" name="time2wtime" signature="self.time2wtime(time)" />
+          <scope attributes="__classmethod__" doc="constructors" ilk="function" line="526" lineend="539" name="open" signature="self.open(hkey, subkey, desired = KEY_READ, opt = REG_OPTION_RESERVED)" />
+          <scope attributes="__classmethod__" ilk="function" line="541" lineend="553" name="create" signature="self.create(hkey, subkey, desired = KEY_ALL_ACCESS, opt = REG_OPTION_RESERVED)" />
+          <scope attributes="__ctor__" doc="initialize" ilk="function" line="563" lineend="570" name="initialize" signature="initialize(hkey, parent, keyname, disposition)" />
+          <scope ilk="function" line="571" lineend="571" name="hkey" />
+          <scope ilk="function" line="571" lineend="571" name="parent" />
+          <scope ilk="function" line="571" lineend="571" name="keyname" />
+          <scope ilk="function" line="571" lineend="571" name="disposition" />
+          <scope doc="attributes" ilk="function" line="576" lineend="578" name="created?" signature="created?" />
+          <scope ilk="function" line="580" lineend="582" name="open?" signature="open?" />
+          <scope ilk="function" line="584" lineend="591" name="name" signature="name" />
+          <scope ilk="function" line="593" lineend="595" name="inspect" signature="inspect" />
+          <scope doc="marshalling" ilk="function" line="600" lineend="602" name="_dump" signature="_dump(depth)" />
+          <scope doc="open/close" ilk="function" line="607" lineend="609" name="open" signature="open(subkey, desired = KEY_READ, opt = REG_OPTION_RESERVED, &amp;blk)" />
+          <scope ilk="function" line="611" lineend="613" name="create" signature="create(subkey, desired = KEY_ALL_ACCESS, opt = REG_OPTION_RESERVED, &amp;blk)" />
+          <scope ilk="function" line="615" lineend="619" name="close" signature="close" />
+          <scope doc="iterator" ilk="function" line="624" lineend="641" name="each_value" signature="each_value" />
+          <scope ilk="function" line="644" lineend="656" name="each_key" signature="each_key" />
+          <scope ilk="function" line="658" lineend="662" name="keys" signature="keys" />
+          <scope doc="reader" ilk="function" line="667" lineend="688" name="read" signature="read(name, *rtype)" />
+          <scope ilk="function" line="690" lineend="700" name="[]" signature="[](name" />
+          <scope ilk="function" line="702" lineend="704" name="read_s" signature="read_s(name)" />
+          <scope ilk="function" line="706" lineend="713" name="read_s_expand" signature="read_s_expand(name)" />
+          <scope ilk="function" line="715" lineend="717" name="read_i" signature="read_i(name)" />
+          <scope ilk="function" line="719" lineend="721" name="read_bin" signature="read_bin(name)" />
+          <scope doc="writer" ilk="function" line="726" lineend="744" name="write" signature="write(name, type, data)" />
+          <scope ilk="function" line="746" lineend="762" name="[]=" signature="[]=(name" />
+          <scope ilk="function" line="764" lineend="766" name="write_s" signature="write_s(name, value)" />
+          <scope ilk="function" line="768" lineend="770" name="write_i" signature="write_i(name, value)" />
+          <scope ilk="function" line="772" lineend="774" name="write_bin" signature="write_bin(name, value)" />
+          <scope doc="delete" ilk="function" line="779" lineend="781" name="delete_value" signature="delete_value(name)" />
+          <scope ilk="function" line="784" lineend="804" name="delete_key" signature="delete_key(name, recursive = false)" />
+          <scope doc="flush" ilk="function" line="809" lineend="811" name="flush" signature="flush" />
+          <scope doc="key information" ilk="function" line="816" lineend="818" name="info" signature="info" />
+          <import symbol="Constants" />
+          <import symbol="Enumerable" />
+        </scope>
+      </scope>
+    </scope>
+    

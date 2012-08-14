@@ -1,0 +1,51 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/vector">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/vector.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="243" name="Tk::BLT">
+        <scope classrefs="TkVariable" ilk="class" line="10" lineend="220" name="Vector">
+          <scope attributes="__classmethod__" ilk="function" line="13" lineend="15" name="create" signature="self.create(*args)" />
+          <scope attributes="__classmethod__" ilk="function" line="17" lineend="19" name="destroy" signature="self.destroy(*args)" />
+          <scope attributes="__classmethod__" ilk="function" line="21" lineend="23" name="expr" signature="self.expr(expression)" />
+          <scope attributes="__classmethod__" ilk="function" line="25" lineend="35" name="names" signature="self.names(pat=None)" />
+          <scope attributes="__ctor__" ilk="function" line="39" lineend="67" name="initialize" signature="initialize(size=nil, keys={})" />
+          <scope ilk="function" line="69" lineend="71" name="destroy" signature="destroy" />
+          <scope ilk="function" line="73" lineend="75" name="inspect" signature="inspect" />
+          <scope ilk="function" line="77" lineend="79" name="to_s" signature="to_s" />
+          <scope ilk="function" line="81" lineend="83" name="*" signature="*(item" />
+          <scope ilk="function" line="85" lineend="87" name="+" signature="+(item" />
+          <scope ilk="function" line="89" lineend="91" name="-" signature="-(item" />
+          <scope ilk="function" line="93" lineend="95" name="/" signature="/(item" />
+          <scope ilk="function" line="97" lineend="99" name="append" signature="append(*vectors)" />
+          <scope ilk="function" line="101" lineend="109" name="binread" signature="binread(channel, len=None, keys={})" />
+          <scope ilk="function" line="111" lineend="114" name="clear" signature="clear()" />
+          <scope ilk="function" line="116" lineend="119" name="delete" signature="delete(*indices)" />
+          <scope ilk="function" line="121" lineend="124" name="dup_vector" signature="dup_vector(vec)" />
+          <scope ilk="function" line="126" lineend="129" name="expr" signature="expr(expression)" />
+          <scope ilk="function" line="131" lineend="133" name="index" signature="index(idx, val=None)" />
+          <scope ilk="function" line="135" lineend="137" name="[]" signature="[](idx" />
+          <scope ilk="function" line="139" lineend="141" name="[]=" signature="[]=(idx" />
+          <scope ilk="function" line="143" lineend="145" name="length" signature="length()" />
+          <scope ilk="function" line="147" lineend="149" name="length=" signature="length=(size)" />
+          <scope ilk="function" line="151" lineend="154" name="merge" signature="merge(*vectors)" />
+          <scope ilk="function" line="156" lineend="159" name="normalize" signature="normalize(vec=None)" />
+          <scope ilk="function" line="161" lineend="164" name="notify" signature="notify(keyword)" />
+          <scope ilk="function" line="166" lineend="168" name="offset" signature="offset()" />
+          <scope ilk="function" line="170" lineend="172" name="offset=" signature="offset=(val)" />
+          <scope ilk="function" line="174" lineend="176" name="random" signature="random()" />
+          <scope ilk="function" line="178" lineend="181" name="populate" signature="populate(vector, density=None)" />
+          <scope ilk="function" line="183" lineend="185" name="range" signature="range(first, last=None)" />
+          <scope ilk="function" line="187" lineend="189" name="search" signature="search(val1, val2=None)" />
+          <scope ilk="function" line="191" lineend="194" name="set" signature="set(item)" />
+          <scope ilk="function" line="196" lineend="199" name="seq" signature="seq(start, finish=None, step=None)" />
+          <scope ilk="function" line="201" lineend="204" name="sort" signature="sort(*vectors)" />
+          <scope ilk="function" line="206" lineend="209" name="sort_reverse" signature="sort_reverse(*vectors)" />
+          <scope ilk="function" line="211" lineend="214" name="split" signature="split(*vectors)" />
+          <scope ilk="function" line="216" lineend="219" name="variable" signature="variable(var)" />
+        </scope>
+        <scope classrefs="Vector" ilk="class" line="222" lineend="242" name="VectorAccess">
+          <scope attributes="__classmethod__" ilk="function" line="223" lineend="226" name="new" signature="self.new(name)" />
+          <scope attributes="__ctor__" ilk="function" line="228" lineend="241" name="initialize" signature="initialize(vec_name)" />
+        </scope>
+      </scope>
+    </scope>
+    

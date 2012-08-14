@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="uri/ftp">
+      <import line="9" module="uri/generic" symbol="*" />
+      <scope doc="= uri/ftp.rb" ilk="namespace" line="11" lineend="148" name="URI">
+        <scope classrefs="Generic" doc="RFC1738 section 3.2." ilk="class" line="16" lineend="146" name="FTP">
+          <scope attributes="__classmethod__" doc="Typecode is, &quot;a&quot;, &quot;i&quot; or &quot;d&quot;." ilk="function" line="35" lineend="50" name="new2" signature="self.new2(user, password, host, port, path, typecode = nil, arg_check = true)" />
+          <scope attributes="__classmethod__" doc="== Description" ilk="function" line="59" lineend="70" name="build" signature="self.build(args)" />
+          <scope attributes="__ctor__" doc="== Description" ilk="function" line="86" lineend="100" name="initialize" signature="initialize(*arg)" />
+          <scope ilk="function" line="101" lineend="101" name="typecode" />
+          <scope ilk="function" line="103" lineend="110" name="check_typecode" signature="check_typecode(v)" />
+          <scope ilk="function" line="113" lineend="115" name="set_typecode" signature="set_typecode(v)" />
+          <scope ilk="function" line="118" lineend="122" name="typecode=" signature="typecode=(typecode)" />
+          <scope ilk="function" line="124" lineend="131" name="merge" signature="merge(oth)" />
+          <scope ilk="function" line="133" lineend="145" name="to_s" signature="to_s" />
+        </scope>
+      </scope>
+    </scope>
+    

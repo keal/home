@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="drb/extservm">
+      <import line="6" module="drb/drb" symbol="*" />
+      <import line="7" module="thread" symbol="*" />
+      <scope ilk="namespace" line="9" lineend="96" name="DRb">
+        <scope classrefs="Object" ilk="class" line="10" lineend="95" name="ExtServManager">
+          <scope attributes="__classmethod__" ilk="function" line="15" lineend="17" name="command" signature="self.command" />
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="command=" signature="self.command=(cmd)" />
+          <scope attributes="__ctor__" ilk="function" line="23" lineend="29" name="initialize" signature="initialize" />
+          <scope ilk="function" line="30" lineend="30" name="uri" />
+          <scope ilk="function" line="30" lineend="30" name="uri=" />
+          <scope ilk="function" line="32" lineend="41" name="service" signature="service(name)" />
+          <scope ilk="function" line="43" lineend="57" name="regist" signature="regist(name, ro)" />
+          <scope ilk="function" line="59" lineend="63" name="unregist" signature="unregist(name)" />
+          <scope ilk="function" line="66" lineend="73" name="invoke_thread" signature="invoke_thread" />
+          <scope ilk="function" line="75" lineend="80" name="invoke_service" signature="invoke_service(name)" />
+          <scope ilk="function" line="82" lineend="94" name="invoke_service_command" signature="invoke_service_command(name, command)" />
+          <import symbol="DRbUndumped" />
+        </scope>
+      </scope>
+    </scope>
+    

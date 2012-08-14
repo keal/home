@@ -1,0 +1,55 @@
+<scope ilk="blob" lang="Ruby" name="rexml/doctype">
+      <import line="1" module="rexml/parent" symbol="*" />
+      <import line="2" module="rexml/parseexception" symbol="*" />
+      <import line="3" module="rexml/namespace" symbol="*" />
+      <import line="4" module="rexml/entity" symbol="*" />
+      <import line="5" module="rexml/attlistdecl" symbol="*" />
+      <import line="6" module="rexml/xmltokens" symbol="*" />
+      <scope ilk="namespace" line="8" lineend="278" name="REXML">
+        <scope classrefs="Parent" doc="Represents an XML DOCTYPE declaration; that is, the contents&#xA;of &lt;!DOCTYPE ..." ilk="class" line="12" lineend="204" name="DocType">
+          <scope ilk="function" line="27" lineend="27" name="name" />
+          <scope ilk="function" line="27" lineend="27" name="external_id" />
+          <scope ilk="function" line="27" lineend="27" name="entities" />
+          <scope ilk="function" line="27" lineend="27" name="namespaces" />
+          <scope attributes="__ctor__" doc="Constructor" ilk="function" line="41" lineend="68" name="initialize" signature="initialize( first, parent=nil )" />
+          <scope ilk="function" line="70" lineend="72" name="node_type" signature="node_type" />
+          <scope ilk="function" line="74" lineend="82" name="attributes_of" signature="attributes_of" />
+          <scope ilk="function" line="84" lineend="92" name="attribute_of" signature="attribute_of" />
+          <scope ilk="function" line="94" lineend="96" name="clone" signature="clone" />
+          <scope doc="output:: Where to write the string indent:: An integer." ilk="function" line="116" lineend="136" name="write" signature="write( output, indent=0, transitive=false, ie_hack=false )" />
+          <scope ilk="function" line="138" lineend="140" name="context" signature="context" />
+          <scope ilk="function" line="142" lineend="144" name="entity" signature="entity( name )" />
+          <scope ilk="function" line="146" lineend="150" name="add" signature="add" />
+          <scope doc="This method retrieves the public identifier identifying the&#xA;document&apos;s DTD." ilk="function" line="156" lineend="163" name="public" signature="public" />
+          <scope doc="This method retrieves the system identifier identifying the&#xA;document&apos;s DTD" ilk="function" line="168" lineend="175" name="system" signature="system" />
+          <scope doc="This method returns a list of notations that have been&#xA;declared in the _internal_ DTD subset." ilk="function" line="182" lineend="184" name="notations" signature="notations" />
+          <scope doc="Retrieves a named notation." ilk="function" line="190" lineend="194" name="notation" signature="notation(name)" />
+          <scope doc="Method contributed by Henrik Martensson" ilk="function" line="199" lineend="203" name="strip_quotes" signature="strip_quotes(quoted_string)" />
+          <import symbol="XMLTokens" />
+        </scope>
+        <scope classrefs="Child" doc="We don&apos;t really handle any of these since we&apos;re not a&#xA;validating parser, so we can be pretty dumb about them." ilk="class" line="212" lineend="226" name="Declaration">
+          <scope attributes="__ctor__" ilk="function" line="213" lineend="216" name="initialize" signature="initialize" />
+          <scope ilk="function" line="218" lineend="220" name="to_s" signature="to_s" />
+          <scope ilk="function" line="222" lineend="225" name="write" signature="write( output, indent )" />
+        </scope>
+        <scope classrefs="Declaration" ilk="class" line="229" lineend="233" name="ElementDecl">
+          <scope attributes="__ctor__" ilk="function" line="230" lineend="232" name="initialize" signature="initialize( src )" />
+        </scope>
+        <scope classrefs="Child" ilk="class" line="235" lineend="246" name="ExternalEntity">
+          <scope attributes="__ctor__" ilk="function" line="236" lineend="239" name="initialize" signature="initialize( src )" />
+          <scope ilk="function" line="240" lineend="242" name="to_s" signature="to_s" />
+          <scope ilk="function" line="243" lineend="245" name="write" signature="write( output, indent )" />
+        </scope>
+        <scope classrefs="Child" ilk="class" line="248" lineend="277" name="NotationDecl">
+          <scope ilk="function" line="249" lineend="249" name="public" />
+          <scope ilk="function" line="249" lineend="249" name="public=" />
+          <scope ilk="function" line="249" lineend="249" name="system" />
+          <scope ilk="function" line="249" lineend="249" name="system=" />
+          <scope attributes="__ctor__" ilk="function" line="250" lineend="256" name="initialize" signature="initialize" />
+          <scope ilk="function" line="258" lineend="264" name="to_s" signature="to_s" />
+          <scope ilk="function" line="266" lineend="269" name="write" signature="write( output, indent=-1 )" />
+          <scope doc="This method retrieves the name of the notation." ilk="function" line="274" lineend="276" name="name" signature="name" />
+        </scope>
+      </scope>
+    </scope>
+    

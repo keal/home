@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="abbrev">
+      <scope doc="Calculate the set of unique abbreviations for a given set of&#xA;strings." ilk="namespace" name="Abbrev">
+        <scope doc="Given a set of strings, calculate the set of unambiguous&#xA;abbreviations for those strings, and return a hash where the&#xA;keys are all the possible abbreviations and the values are&#xA;the full strings. Thus, given input of &quot;car&quot; and &quot;cone&quot;, the&#xA;keys pointing to &quot;car&quot; would be &quot;ca&quot; and &quot;car&quot;, while those&#xA;pointing to &quot;cone&quot; would be &quot;co&quot;, &quot;con&quot;, and &quot;cone&quot;." ilk="function" name="abbrev" signature="(words, pattern = nil)" />
+      </scope>
+    </scope>
+    

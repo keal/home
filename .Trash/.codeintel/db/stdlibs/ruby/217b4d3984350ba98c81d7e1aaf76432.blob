@@ -1,0 +1,33 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/winico/winico">
+      <import line="6" module="tk" symbol="*" />
+      <import line="9" module="tkextlib/setup.rb" symbol="*" />
+      <import line="12" module="tkextlib/winico/setup.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;winico&apos;, &apos;0.5&apos;)&#xA;TkPackage.require(&apos;winico&apos;, &apos;0.6&apos;)" ilk="namespace" line="18" lineend="33" name="Tk">
+        <scope classrefs="TkObject" ilk="class" line="19" lineend="32" name="Winico">
+          <scope attributes="__classmethod__" ilk="function" line="21" lineend="23" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="25" lineend="31" name="package_version" signature="self.package_version" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="35" lineend="189" name="Tk::Winico">
+        <scope attributes="__classmethod__" ilk="function" line="39" lineend="41" name="id2obj" signature="self.id2obj(id)" />
+        <scope attributes="__classmethod__" ilk="function" line="43" lineend="47" name="info" signature="self.info" />
+        <scope attributes="__classmethod__" ilk="function" line="49" lineend="54" name="icon_info" signature="self.icon_info(id)" />
+        <scope attributes="__classmethod__" ilk="function" line="58" lineend="60" name="new_from_file" signature="self.new_from_file(file_name)" />
+        <scope attributes="__classmethod__" ilk="function" line="62" lineend="64" name="new_from_resource" signature="self.new_from_resource(resource_name, file_name = nil)" />
+        <scope attributes="__ctor__" ilk="function" line="66" lineend="85" name="initialize" signature="initialize(file_name, resource_name=nil, winico_id=nil)" />
+        <scope ilk="function" line="87" lineend="89" name="id" signature="id" />
+        <scope ilk="function" line="91" lineend="95" name="set_window" signature="set_window(win_id, *opts)" />
+        <scope ilk="function" line="97" lineend="101" name="delete" signature="delete" />
+        <scope ilk="function" line="104" lineend="106" name="info" signature="info" />
+        <scope classrefs="TkValidateCommand" ilk="class" line="110" lineend="148" name="Winico_callback">
+          <scope classrefs="TkUtil::CallbackSubst" ilk="class" line="111" lineend="143" name="ValidateArgs">
+            <scope attributes="__classmethod__" ilk="function" line="140" lineend="142" name="ret_val" signature="self.ret_val(val)" />
+          </scope>
+          <scope attributes="__classmethod__" ilk="function" line="145" lineend="147" name="_config_keys[" signature="self._config_keys [" />
+        </scope>
+        <scope ilk="function" line="152" lineend="165" name="add_to_taskbar" signature="add_to_taskbar(keys = {})" />
+        <scope ilk="function" line="168" lineend="181" name="modify_taskbar" signature="modify_taskbar(keys = {})" />
+        <scope ilk="function" line="184" lineend="187" name="delete_from_taskbar" signature="delete_from_taskbar" />
+      </scope>
+    </scope>
+    

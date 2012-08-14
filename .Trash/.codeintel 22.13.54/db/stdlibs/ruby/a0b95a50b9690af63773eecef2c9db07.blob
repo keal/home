@@ -1,0 +1,32 @@
+<scope ilk="blob" lang="Ruby" name="soap/attachment">
+      <import line="9" module="soap/baseData" symbol="*" />
+      <import line="10" module="soap/mapping" symbol="*" />
+      <scope doc="soap/attachment.rb: SOAP4R - SwA implementation." ilk="namespace" line="13" name="SOAP" />
+      <scope classrefs="SOAPExternalReference" ilk="class" line="16" lineend="29" name="SOAPAttachment">
+        <scope ilk="function" line="17" lineend="17" name="data" />
+        <scope attributes="__ctor__" ilk="function" line="19" lineend="22" name="initialize" signature="initialize(value)" />
+        <scope ilk="function" line="26" lineend="28" name="external_contentid" signature="external_contentid" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="32" lineend="84" name="Attachment">
+        <scope ilk="function" line="33" lineend="33" name="io" />
+        <scope ilk="function" line="34" lineend="34" name="contenttype" />
+        <scope ilk="function" line="34" lineend="34" name="contenttype=" />
+        <scope attributes="__ctor__" ilk="function" line="36" lineend="40" name="initialize" signature="initialize(string_or_readable = nil)" />
+        <scope ilk="function" line="42" lineend="44" name="contentid" signature="contentid" />
+        <scope ilk="function" line="46" lineend="48" name="contentid=" signature="contentid=(contentid)" />
+        <scope ilk="function" line="50" lineend="52" name="mime_contentid" signature="mime_contentid" />
+        <scope ilk="function" line="54" lineend="60" name="content" signature="content" />
+        <scope ilk="function" line="62" lineend="64" name="to_s" signature="to_s" />
+        <scope ilk="function" line="66" lineend="68" name="write" signature="write(out)" />
+        <scope ilk="function" line="70" lineend="74" name="save" signature="save(filename)" />
+        <scope attributes="__classmethod__" ilk="function" line="76" lineend="79" name="contentid" signature="self.contentid(obj)" />
+        <scope attributes="__classmethod__" ilk="function" line="81" lineend="83" name="mime_contentid" signature="self.mime_contentid(obj)" />
+      </scope>
+      <scope ilk="namespace" line="87" lineend="104" name="Mapping">
+        <scope classrefs="SOAP::Mapping::" ilk="class" line="88" lineend="100" name="AttachmentFactory">
+          <scope ilk="function" line="89" lineend="93" name="obj2soap" signature="obj2soap(soap_class, obj, info, map)" />
+          <scope ilk="function" line="95" lineend="99" name="soap2obj" signature="soap2obj(obj_class, node, info, map)" />
+        </scope>
+      </scope>
+    </scope>
+    

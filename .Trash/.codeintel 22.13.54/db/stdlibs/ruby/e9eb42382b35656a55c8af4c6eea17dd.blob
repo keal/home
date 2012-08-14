@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="tk/scrollbox">
+      <import line="7" module="tk" symbol="*" />
+      <import line="8" module="tk/listbox" symbol="*" />
+      <scope classrefs="TkListbox" doc="tk/scrollbox.rb - Tk Listbox with Scrollbar as an example of&#xA;Composite Widget $Date: 2004/10/11 04:51:07 $ by Yukihiro&#xA;Matsumoto &lt;matz@netlab.co.jp&gt;" ilk="class" line="10" lineend="36" name="TkScrollbox">
+        <scope ilk="function" line="12" lineend="34" name="initialize_composite" signature="initialize_composite(keys=nil)" />
+        <import symbol="TkComposite" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/xmlSchema/simpleRestriction">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="xsd/namedelements" symbol="*" />
+      <scope doc="WSDL4R - XMLSchema simpleContent restriction definition for&#xA;WSDL." ilk="namespace" line="13" name="WSDL" />
+      <scope ilk="namespace" line="14" name="XMLSchema" />
+      <scope classrefs="Info" ilk="class" line="17" lineend="69" name="SimpleRestriction">
+        <scope ilk="function" line="18" lineend="18" name="base" />
+        <scope ilk="function" line="19" lineend="19" name="enumeration" />
+        <scope ilk="function" line="20" lineend="20" name="length" />
+        <scope ilk="function" line="20" lineend="20" name="length=" />
+        <scope ilk="function" line="21" lineend="21" name="pattern" />
+        <scope ilk="function" line="21" lineend="21" name="pattern=" />
+        <scope attributes="__ctor__" ilk="function" line="23" lineend="29" name="initialize" signature="initialize" />
+        <scope ilk="function" line="31" lineend="36" name="valid?" signature="valid?(value)" />
+        <scope ilk="function" line="38" lineend="47" name="parse_element" signature="parse_element(element)" />
+        <scope ilk="function" line="49" lineend="54" name="parse_attr" signature="parse_attr(attr, value)" />
+        <scope ilk="function" line="58" lineend="60" name="check_restriction" signature="check_restriction(value)" />
+        <scope ilk="function" line="62" lineend="64" name="check_length" signature="check_length(value)" />
+        <scope ilk="function" line="66" lineend="68" name="check_pattern" signature="check_pattern(value)" />
+      </scope>
+    </scope>
+    

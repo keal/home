@@ -1,0 +1,44 @@
+<scope ilk="blob" lang="Ruby" name="rexml/functions">
+      <scope ilk="namespace" line="1" lineend="367" name="REXML">
+        <scope doc="If you add a method, keep in mind two things: (1) the first&#xA;argument will always be a list of nodes from which to&#xA;filter." ilk="namespace" line="9" lineend="366" name="Functions">
+          <scope attributes="__classmethod__" ilk="function" line="14" name="namespace_context=" signature="Functions::namespace_context=(x)" />
+          <scope attributes="__classmethod__" ilk="function" line="15" name="variables=" signature="Functions::variables=(x)" />
+          <scope attributes="__classmethod__" ilk="function" line="16" name="namespace_context" signature="Functions::namespace_context" />
+          <scope attributes="__classmethod__" ilk="function" line="17" name="variables" signature="Functions::variables" />
+          <scope attributes="__classmethod__" ilk="function" line="19" name="context=" signature="Functions::context=(value)" />
+          <scope attributes="__classmethod__" ilk="function" line="21" lineend="29" name="text" signature="Functions::text( )" />
+          <scope attributes="__classmethod__" ilk="function" line="31" lineend="33" name="last" signature="Functions::last( )" />
+          <scope attributes="__classmethod__" ilk="function" line="35" lineend="37" name="position" signature="Functions::position( )" />
+          <scope attributes="__classmethod__" ilk="function" line="39" lineend="41" name="count" signature="Functions::count( node_set )" />
+          <scope attributes="__classmethod__" doc="Since REXML is non-validating, this method is not&#xA;implemented as it requires a DTD" ilk="function" line="45" lineend="46" name="id" signature="Functions::id( object )" />
+          <scope attributes="__classmethod__" doc="UNTESTED" ilk="function" line="49" lineend="53" name="local_name" signature="Functions::local_name( node_set=nil )" />
+          <scope attributes="__classmethod__" ilk="function" line="55" lineend="57" name="namespace_uri" signature="Functions::namespace_uri( node_set=nil )" />
+          <scope attributes="__classmethod__" ilk="function" line="59" lineend="63" name="name" signature="Functions::name( node_set=nil )" />
+          <scope attributes="__classmethod__" doc="Helper method." ilk="function" line="66" lineend="76" name="get_namespace" signature="Functions::get_namespace( node_set = nil )" />
+          <scope attributes="__classmethod__" doc="A node-set is converted to a string by returning the string-&#xA;value of the node in the node-set that is first in document&#xA;order." ilk="function" line="113" lineend="128" name="string" signature="Functions::string( object=nil )" />
+          <scope attributes="__classmethod__" doc="UNTESTED" ilk="function" line="131" lineend="133" name="concat" signature="Functions::concat( *objects )" />
+          <scope attributes="__classmethod__" doc="Fixed by Mike Stok" ilk="function" line="136" lineend="138" name="starts_with" signature="Functions::starts_with( string, test )" />
+          <scope attributes="__classmethod__" doc="Fixed by Mike Stok" ilk="function" line="141" lineend="143" name="contains" signature="Functions::contains( string, test )" />
+          <scope attributes="__classmethod__" doc="Kouhei fixed this" ilk="function" line="146" lineend="154" name="substring_before" signature="Functions::substring_before( string, test )" />
+          <scope attributes="__classmethod__" doc="Kouhei fixed this too" ilk="function" line="157" lineend="162" name="substring_after" signature="Functions::substring_after( string, test )" />
+          <scope attributes="__classmethod__" doc="Take equal portions of Mike Stok and Sean Russell; mix&#xA;vigorously, and pour into a tall, chilled glass." ilk="function" line="166" lineend="196" name="substring" signature="Functions::substring( string, start, length=nil )" />
+          <scope attributes="__classmethod__" doc="UNTESTED" ilk="function" line="199" lineend="201" name="string_length" signature="Functions::string_length( string )" />
+          <scope attributes="__classmethod__" doc="UNTESTED" ilk="function" line="204" lineend="211" name="normalize_space" signature="Functions::normalize_space( string=nil )" />
+          <scope attributes="__classmethod__" doc="This is entirely Mike Stok&apos;s beast" ilk="function" line="214" lineend="248" name="translate" signature="Functions::translate( string, tr1, tr2 )" />
+          <scope attributes="__classmethod__" doc="UNTESTED" ilk="function" line="251" lineend="262" name="boolean" signature="Functions::boolean( object=nil )" />
+          <scope doc="UNTESTED" ilk="function" line="265" lineend="267" name="Functions" signature="Functions::" />
+          <scope doc="UNTESTED" ilk="function" line="270" lineend="272" name="Functions" signature="Functions::" />
+          <scope doc="UNTESTED" ilk="function" line="275" lineend="277" name="Functions" signature="Functions::" />
+          <scope attributes="__classmethod__" doc="UNTESTED" ilk="function" line="280" lineend="296" name="lang" signature="Functions::lang( language )" />
+          <scope attributes="__classmethod__" ilk="function" line="298" lineend="300" name="compare_language" signature="Functions::compare_language" />
+          <scope attributes="__classmethod__" doc="a string that consists of optional whitespace followed by an&#xA;optional minus sign followed by a Number followed by&#xA;whitespace is converted to the IEEE 754 number that is&#xA;nearest (according to the IEEE 754 round-to-nearest rule) to&#xA;the mathematical value represented by the string; any other&#xA;string is converted to NaN" ilk="function" line="315" lineend="335" name="number" signature="Functions::number( object=nil )" />
+          <scope attributes="__classmethod__" ilk="function" line="337" lineend="340" name="sum" signature="Functions::sum( nodes )" />
+          <scope attributes="__classmethod__" ilk="function" line="342" lineend="344" name="floor" signature="Functions::floor( number )" />
+          <scope attributes="__classmethod__" ilk="function" line="346" lineend="348" name="ceiling" signature="Functions::ceiling( number )" />
+          <scope attributes="__classmethod__" ilk="function" line="350" lineend="356" name="round" signature="Functions::round( number )" />
+          <scope attributes="__classmethod__" ilk="function" line="358" lineend="360" name="processing_instruction" signature="Functions::processing_instruction( node )" />
+          <scope attributes="__classmethod__" ilk="function" line="362" lineend="365" name="method_missing" signature="Functions::method_missing( id )" />
+        </scope>
+      </scope>
+    </scope>
+    

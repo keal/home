@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tk/bindtag">
+      <import line="4" module="tk" symbol="*" />
+      <scope classrefs="Object" doc="tk/bind.rb : control event binding" ilk="class" line="6" lineend="52" name="TkBindTag">
+        <scope attributes="__classmethod__" doc="BTagID_TBL = {}" ilk="function" line="15" lineend="17" name="id2obj" signature="TkBindTag.id2obj(id)" />
+        <scope attributes="__classmethod__" ilk="function" line="19" lineend="28" name="new_by_name" signature="TkBindTag.new_by_name(name, *args, &amp;b)" />
+        <scope attributes="__ctor__" ilk="function" line="30" lineend="36" name="initialize" signature="initialize(*args, &amp;b)" />
+        <scope ilk="function" line="40" lineend="42" name="name" signature="name" />
+        <scope ilk="function" line="44" lineend="46" name="to_eval" signature="to_eval" />
+        <scope ilk="function" line="48" lineend="51" name="inspect" signature="inspect" />
+        <import symbol="TkBindCore" />
+      </scope>
+      <scope classrefs="TkBindTag" ilk="class" line="55" lineend="62" name="TkBindTagAll">
+        <scope attributes="__classmethod__" ilk="function" line="56" lineend="61" name="new" signature="TkBindTagAll.new(*args, &amp;b)" />
+      </scope>
+      <scope classrefs="TkBindTag" ilk="class" line="65" lineend="81" name="TkDatabaseClass">
+        <scope attributes="__classmethod__" ilk="function" line="66" lineend="69" name="new" signature="self.new(name, *args, &amp;b)" />
+        <scope attributes="__ctor__" ilk="function" line="71" lineend="75" name="initialize" signature="initialize(name, *args, &amp;b)" />
+        <scope ilk="function" line="77" lineend="80" name="inspect" signature="inspect" />
+      </scope>
+    </scope>
+    

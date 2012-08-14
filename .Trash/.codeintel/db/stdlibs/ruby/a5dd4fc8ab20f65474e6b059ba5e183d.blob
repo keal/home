@@ -1,0 +1,47 @@
+<scope ilk="blob" lang="Ruby" name="tcltk">
+      <import line="6" module="tcltklib" symbol="*" />
+      <scope doc="module TclTk: collection of tcl/tk utilities (supplies&#xA;namespace.)" ilk="namespace" line="11" lineend="18" name="TclTk" />
+      <scope doc="TclTk.mainloop(): call TclTkLib.mainloop()" ilk="function" line="21" lineend="25" name="TclTk.mainloop" signature="TclTk.mainloop()" />
+      <scope doc="TclTk.deletecallbackkey(ca): remove callback from TclTk&#xA;module this does not remove callbacks from tcl/tk&#xA;interpreter without calling this method, TclTkInterpreter&#xA;will not be GCed ca: callback(TclTkCallback)" ilk="function" line="31" lineend="34" name="TclTk.deletecallbackkey" signature="TclTk.deletecallbackkey(ca)" />
+      <scope doc="TclTk.dcb(ca, wid, W): call TclTk.deletecallbackkey() for&#xA;each callbacks in an array." ilk="function" line="42" lineend="48" name="TclTk.dcb" signature="TclTk.dcb(ca, wid, w)" />
+      <scope doc="TclTk._addcallback(ca): register callback ca:&#xA;callback(TclTkCallback)" ilk="function" line="52" lineend="55" name="TclTk._addcallback" signature="TclTk._addcallback(ca)" />
+      <scope doc="TclTk._callcallback(key, arg): invoke registered callback&#xA;key: key to select callback (to_s value of the&#xA;TclTkCallback) arg: parameter from tcl/tk interpreter" ilk="function" line="60" lineend="66" name="TclTk._callcallback" signature="TclTk._callcallback(key, arg)" />
+      <scope doc="TclTk._newname(prefix): generate unique name(String) prefix:&#xA;prefix of the unique name" ilk="function" line="70" lineend="80" name="TclTk._newname" signature="TclTk._newname(prefix)" />
+      <scope classrefs="Object" doc="class TclTkInterpreter: tcl/tk interpreter" ilk="class" line="85" lineend="179" name="TclTkInterpreter">
+        <scope attributes="__ctor__" doc="initialize():" ilk="function" line="88" lineend="150" name="initialize" signature="initialize()">
+          <scope doc="@ip._get_eval_string(*args): generate string to evaluate in&#xA;tcl interpreter *args: script which is going to be evaluated&#xA;under tcl/tk" ilk="function" line="103" lineend="116" name="@ip" signature="@ip." />
+          <scope doc="@ip._eval_args(*args): evaluate string under tcl/tk&#xA;interpreter returns result string." ilk="function" line="121" lineend="135" name="@ip" signature="@ip." />
+        </scope>
+        <scope doc="commands(): returns hash of the tcl/tk commands" ilk="function" line="153" lineend="155" name="commands" signature="commands()" />
+        <scope doc="rootwidget(): returns root widget(TclTkWidget)" ilk="function" line="158" lineend="160" name="rootwidget" signature="rootwidget()" />
+        <scope doc="_tcltkip(): returns @ip(TclTkIp)" ilk="function" line="163" lineend="165" name="_tcltkip" signature="_tcltkip()" />
+        <scope doc="method_missing(id, *args): execute undefined method as&#xA;tcl/tk command id: method symbol *args: method arguments" ilk="function" line="170" lineend="178" name="method_missing" signature="method_missing(id, *args)" />
+      </scope>
+      <scope classrefs="Object" doc="class TclTkObject: base class of the tcl/tk objects" ilk="class" line="182" lineend="197" name="TclTkObject">
+        <scope attributes="__ctor__" doc="initialize(ip, exp): ip: interpreter(TclTkIp) exp: tcl/tk&#xA;representation" ilk="function" line="187" lineend="191" name="initialize" signature="initialize(ip, exp)" />
+        <scope doc="to_s(): returns tcl/tk representation" ilk="function" line="194" lineend="196" name="to_s" signature="to_s()" />
+      </scope>
+      <scope classrefs="TclTkObject" doc="class TclTkCommand: tcl/tk commands you should not call&#xA;TclTkCommand.new() commands are created by&#xA;TclTkInterpreter:initialize()" ilk="class" line="202" lineend="209" name="TclTkCommand">
+        <scope doc="e(*args): execute command." ilk="function" line="206" lineend="208" name="e" signature="e(*args)" />
+      </scope>
+      <scope classrefs="TclTkCommand" doc="class TclTkLibCommand: tcl/tk commands in the library" ilk="class" line="212" lineend="220" name="TclTkLibCommand">
+        <scope attributes="__ctor__" doc="initialize(ip, name): ip: interpreter(TclTkInterpreter)&#xA;name: command name (String)" ilk="function" line="217" lineend="219" name="initialize" signature="initialize(ip, name)" />
+      </scope>
+      <scope classrefs="TclTkObject" doc="class TclTkVariable: tcl/tk variable" ilk="class" line="223" lineend="253" name="TclTkVariable">
+        <scope attributes="__ctor__" doc="initialize(interp, dat): interp:&#xA;interpreter(TclTkInterpreter) dat: the value to set(String)&#xA;if nil, not initialize variable" ilk="function" line="229" lineend="238" name="initialize" signature="initialize(interp, dat)" />
+        <scope doc="although you can set/refer variable by using set in tcl/tk,&#xA;we provide the method for accessing variables set(data): set&#xA;tcl/tk variable using `set&apos; data: new value" ilk="function" line="245" lineend="247" name="set" signature="set(data)" />
+        <scope doc="get(): read tcl/tk variable(String) using `set&apos;" ilk="function" line="250" lineend="252" name="get" signature="get()" />
+      </scope>
+      <scope classrefs="TclTkCommand" doc="class TclTkWidget: tcl/tk widget" ilk="class" line="256" lineend="301" name="TclTkWidget">
+        <scope attributes="__ctor__" doc="initialize(*args): *args: parameters" ilk="function" line="260" lineend="300" name="initialize" signature="initialize(*args)" />
+      </scope>
+      <scope classrefs="TclTkObject" doc="class TclTkCallback: tcl/tk callbacks" ilk="class" line="304" lineend="345" name="TclTkCallback">
+        <scope attributes="__ctor__" doc="initialize(interp, pr, arg): interp:&#xA;interpreter(TclTkInterpreter) pr: callback procedure(Proc)&#xA;arg: string to pass as block parameters of pr bind command&#xA;of tcl/tk uses % replacement for parameters" ilk="function" line="316" lineend="326" name="initialize" signature="initialize(interp, pr, arg = nil)" />
+        <scope doc="to_eval(): retuens string representation for @ip._eval_args" ilk="function" line="329" lineend="338" name="to_eval" signature="to_eval()" />
+        <scope doc="_call(arg): invoke callback arg: callback parameter" ilk="function" line="342" lineend="344" name="_call" signature="_call(arg)" />
+      </scope>
+      <scope classrefs="TclTkCommand" doc="class TclTkImage: tcl/tk images" ilk="class" line="348" lineend="365" name="TclTkImage">
+        <scope attributes="__ctor__" doc="initialize(interp, t, *args): generating image is done by&#xA;TclTkImage.new() destrying is done by image delete&#xA;(inconsistent, sigh) interp: interpreter(TclTkInterpreter)&#xA;t: image type (photo, bitmap, etc.)" ilk="function" line="356" lineend="364" name="initialize" signature="initialize(interp, t, *args)" />
+      </scope>
+    </scope>
+    

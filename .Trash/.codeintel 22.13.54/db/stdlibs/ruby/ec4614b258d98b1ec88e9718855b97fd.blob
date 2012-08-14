@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="yaml">
+      <scope ilk="namespace" name="YAML">
+        <scope attributes="__classmethod__" doc="Add a transfer method for a builtin type" ilk="function" name="add_builtin_type" signature="( type_tag, &amp;transfer_proc )" />
+        <scope attributes="__classmethod__" doc="Add a global handler for a YAML domain type." ilk="function" name="add_domain_type" signature="( domain, type_tag, &amp;transfer_proc )" />
+        <scope attributes="__classmethod__" doc="Add a private document type" ilk="function" name="add_private_type" signature="( type_re, &amp;transfer_proc )" />
+        <scope attributes="__classmethod__" doc="Add a transfer method for a builtin type" ilk="function" name="add_ruby_type" signature="( type_tag, &amp;transfer_proc )" />
+        <scope attributes="__classmethod__" doc="Detect typing of a string" ilk="function" name="detect_implicit" signature="( val )" />
+        <scope attributes="__classmethod__" doc="Converts `obj&apos; to YAML and writes the YAML result to `io&apos;." ilk="function" name="dump" signature="( obj, io = nil )" />
+        <scope attributes="__classmethod__" doc="Returns a YAML stream containing each of the items in objs,&#xA;each having their own document." ilk="function" name="dump_stream" signature="( *objs )" />
+        <scope attributes="__classmethod__" doc="Calls `block&apos; with each consecutive document in the YAML&#xA;stream contained in `io&apos;." ilk="function" name="each_document" signature="( io, &amp;block )" />
+        <scope attributes="__classmethod__" doc="Calls `block&apos; with a tree of +YAML::BaseNodes+, one tree for&#xA;each consecutive document in the YAML stream contained in&#xA;`io&apos;." ilk="function" name="each_node" signature="( io, &amp;doc_proc )" />
+        <scope attributes="__classmethod__" doc="Returns a new default emitter" ilk="function" name="emitter" signature="()" />
+        <scope attributes="__classmethod__" doc="Returns a new generic parser" ilk="function" name="generic_parser" signature="()" />
+        <scope attributes="__classmethod__" doc="Load a document from the current `io&apos; stream." ilk="function" name="load" signature="( io )" />
+        <scope attributes="__classmethod__" doc="Calls `block&apos; with each consecutive document in the YAML&#xA;stream contained in `io&apos;." ilk="function" name="load_documents" signature="( io, &amp;doc_proc )" />
+        <scope attributes="__classmethod__" doc="Load a document from the file located at `filepath&apos;." ilk="function" name="load_file" signature="( filepath )" />
+        <scope attributes="__classmethod__" doc="Loads all documents from the current `io&apos; stream, returning&#xA;a +YAML::Stream+ object containing all loaded documents." ilk="function" name="load_stream" signature="( io )" />
+        <scope attributes="__classmethod__" doc="Allocate blank object" ilk="function" name="object_maker" signature="( obj_class, val )" />
+        <scope attributes="__classmethod__" doc="Parse the first document from the current `io&apos; stream" ilk="function" name="parse" signature="( io )" />
+        <scope attributes="__classmethod__" doc="Calls `block&apos; with a tree of +YAML::BaseNodes+, one tree for&#xA;each consecutive document in the YAML stream contained in&#xA;`io&apos;." ilk="function" name="parse_documents" signature="( io, &amp;doc_proc )" />
+        <scope attributes="__classmethod__" doc="Parse a document from the file located at `filepath&apos;." ilk="function" name="parse_file" signature="( filepath )" />
+        <scope attributes="__classmethod__" doc="Returns a new default parser" ilk="function" name="parser" signature="()" />
+        <scope attributes="__classmethod__" doc="Allocate an Emitter if needed" ilk="function" name="quick_emit" signature="( oid, opts = {}, &amp;e )" />
+        <scope attributes="__classmethod__" doc="Method to extract colon-seperated type and class, returning&#xA;the type and the constant of the class" ilk="function" name="read_type_class" signature="( type, obj_class )" />
+        <scope attributes="__classmethod__" doc="Returns the default resolver" ilk="function" name="resolver" signature="()" />
+        <scope attributes="__classmethod__" doc="Convert a type_id to a taguri" ilk="function" name="tagurize" signature="( val )" />
+        <scope attributes="__classmethod__" doc="Apply a transfer method to a Ruby object" ilk="function" name="transfer" signature="( type_id, obj )" />
+        <scope attributes="__classmethod__" doc="Apply any implicit a node may qualify for" ilk="function" name="try_implicit" signature="( obj )" />
+      </scope>
+    </scope>
+    

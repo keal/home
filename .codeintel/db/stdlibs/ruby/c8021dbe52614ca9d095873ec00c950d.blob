@@ -1,0 +1,22 @@
+<scope ilk="blob" lang="Ruby" name="irb/locale">
+      <scope doc="irb/locale.rb - internationalization module $Release&#xA;Version: 0.9.5$ $Revision: 1.6.2.3 $ $Date: 2005/09/01&#xA;18:30:46 $ by Keiju ISHITSUKA(keiju@ruby-lang.org)" ilk="namespace" line="15" lineend="180" name="IRB">
+        <scope classrefs="Object" ilk="class" line="16" lineend="179" name="Locale">
+          <scope attributes="__ctor__" ilk="function" line="22" lineend="24" name="initialize" signature="initialize(locale = nil)" />
+          <scope ilk="function" line="26" lineend="26" name="lang" />
+          <scope ilk="function" line="28" lineend="37" name="lc2kconv" signature="lc2kconv(lang)" />
+          <scope ilk="function" line="40" lineend="49" name="String" signature="String(mes)" />
+          <scope ilk="function" line="51" lineend="53" name="format" signature="format(*opts)" />
+          <scope ilk="function" line="55" lineend="57" name="gets" signature="gets(*rs)" />
+          <scope ilk="function" line="59" lineend="61" name="readline" signature="readline(*rs)" />
+          <scope ilk="function" line="63" lineend="66" name="print" signature="print(*opts)" />
+          <scope ilk="function" line="68" lineend="71" name="printf" signature="printf(*opts)" />
+          <scope ilk="function" line="73" lineend="76" name="puts" signature="puts(*opts)" />
+          <scope ilk="function" line="78" lineend="101" name="require" signature="require(file, priv = nil)" />
+          <scope doc="/" ilk="function" line="129" lineend="136" name="real_load" signature="real_load(path, priv)" />
+          <scope ilk="function" line="139" lineend="153" name="find" signature="find(file , paths = $:)" />
+          <scope ilk="function" line="155" lineend="165" name="search_file" signature="search_file(path, file)" />
+          <scope ilk="function" line="168" lineend="177" name="lc_path" signature="lc_path(file = &quot;&quot;, lc = @lang)" />
+        </scope>
+      </scope>
+    </scope>
+    

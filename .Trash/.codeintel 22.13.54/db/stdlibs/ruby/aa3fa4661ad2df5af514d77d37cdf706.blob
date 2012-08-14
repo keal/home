@@ -1,0 +1,31 @@
+<scope ilk="blob" lang="Ruby" name="shell/process-controller">
+      <import line="13" module="mutex_m" symbol="*" />
+      <import line="14" module="monitor" symbol="*" />
+      <import line="15" module="sync" symbol="*" />
+      <scope classrefs="Object" doc="shell/process-controller.rb - $Release Version: 0.6.0 $&#xA;$Revision: 1.3 $ $Date: 2003/10/16 17:47:19 $ by Keiju&#xA;ISHITSUKA(Nihon Rational Software Co.,Ltd)" ilk="class" line="17" lineend="258" name="Shell">
+        <scope classrefs="Object" ilk="class" line="18" lineend="257" name="ProcessController">
+          <scope classrefs="Object" ilk="class" line="23" lineend="58" name="self">
+            <scope ilk="function" line="25" lineend="32" name="process_controllers_exclusive" signature="process_controllers_exclusive" />
+            <scope ilk="function" line="34" lineend="39" name="activate" signature="activate(pc)" />
+            <scope ilk="function" line="41" lineend="49" name="inactivate" signature="inactivate(pc)" />
+            <scope ilk="function" line="51" lineend="57" name="each_active_object" signature="each_active_object" />
+          </scope>
+          <scope attributes="__ctor__" ilk="function" line="60" lineend="68" name="initialize" signature="initialize(shell)" />
+          <scope ilk="function" line="70" lineend="77" name="jobs" signature="jobs" />
+          <scope ilk="function" line="79" lineend="81" name="active_jobs" signature="active_jobs" />
+          <scope ilk="function" line="83" lineend="85" name="waiting_jobs" signature="waiting_jobs" />
+          <scope ilk="function" line="87" lineend="91" name="jobs_exist?" signature="jobs_exist?" />
+          <scope ilk="function" line="93" lineend="97" name="active_jobs_exist?" signature="active_jobs_exist?" />
+          <scope ilk="function" line="99" lineend="103" name="waiting_jobs_exist?" signature="waiting_jobs_exist?" />
+          <scope doc="schedule a command" ilk="function" line="106" lineend="115" name="add_schedule" signature="add_schedule(command)" />
+          <scope doc="start a job" ilk="function" line="118" lineend="135" name="start_job" signature="start_job(command = nil)" />
+          <scope ilk="function" line="137" lineend="141" name="waiting_job?" signature="waiting_job?(job)" />
+          <scope ilk="function" line="143" lineend="147" name="active_job?" signature="active_job?(job)" />
+          <scope doc="terminate a job" ilk="function" line="150" lineend="158" name="terminate_job" signature="terminate_job(command)" />
+          <scope doc="kill a job" ilk="function" line="161" lineend="178" name="kill_job" signature="kill_job(sig, command)" />
+          <scope doc="wait for all jobs to terminate" ilk="function" line="181" lineend="191" name="wait_all_jobs_execution" signature="wait_all_jobs_execution" />
+          <scope doc="simple fork" ilk="function" line="194" lineend="256" name="sfork" signature="sfork(command, &amp;block)" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpservlet/cgi_runner">
+      <scope doc="cgi_runner.rb -- CGI launcher." ilk="function" line="11" lineend="19" name="sysread" signature="sysread(io, size)" />
+    </scope>
+    

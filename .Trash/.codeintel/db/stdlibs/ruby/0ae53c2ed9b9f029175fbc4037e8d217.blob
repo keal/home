@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="openssl/digest">
+      <scope doc="Should we care what if somebody require this file directly?&#xA;require &apos;openssl&apos;" ilk="namespace" line="21" lineend="48" name="OpenSSL">
+        <scope ilk="namespace" line="22" lineend="47" name="Digest" />
+      </scope>
+    </scope>
+    

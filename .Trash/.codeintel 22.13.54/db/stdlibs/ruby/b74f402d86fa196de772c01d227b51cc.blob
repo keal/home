@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="soap/mapping/rubytypeFactory">
+      <scope doc="SOAP4R - Ruby type mapping factory." ilk="namespace" line="9" name="SOAP" />
+      <scope ilk="namespace" line="10" name="Mapping" />
+      <scope classrefs="Factory" ilk="class" line="13" lineend="471" name="RubytypeFactory">
+        <scope attributes="__ctor__" ilk="function" line="25" lineend="36" name="initialize" signature="initialize(config = {})" />
+        <scope ilk="function" line="38" lineend="242" name="obj2soap" signature="obj2soap(soap_class, obj, info, map)" />
+        <scope ilk="function" line="244" lineend="253" name="soap2obj" signature="soap2obj(obj_class, node, info, map)" />
+        <scope ilk="function" line="257" lineend="262" name="addiv2soapattr" signature="addiv2soapattr(node, obj, map)" />
+        <scope ilk="function" line="264" lineend="283" name="unknownobj2soap" signature="unknownobj2soap(soap_class, obj, info, map)">
+          <scope classrefs="Object" ilk="class" line="268" lineend="268" name="obj" />
+        </scope>
+        <scope ilk="function" line="286" lineend="288" name="singleton_methods_true" signature="singleton_methods_true(obj)" />
+        <scope ilk="function" line="290" lineend="292" name="singleton_methods_true" signature="singleton_methods_true(obj)" />
+        <scope ilk="function" line="295" lineend="318" name="rubytype2obj" signature="rubytype2obj(node, info, map, rubytype)" />
+        <scope ilk="function" line="320" lineend="375" name="rubytypestruct2obj" signature="rubytypestruct2obj(node, info, map, rubytype)" />
+        <scope ilk="function" line="377" lineend="396" name="anytype2obj" signature="anytype2obj(node, info, map)" />
+        <scope ilk="function" line="398" lineend="415" name="unknowntype2obj" signature="unknowntype2obj(node, info, map)" />
+        <scope ilk="function" line="417" lineend="444" name="unknownstruct2obj" signature="unknownstruct2obj(node, info, map)" />
+        <scope ilk="function" line="446" lineend="454" name="exception2obj" signature="exception2obj(klass, node, map)" />
+        <scope doc="Only creates empty array. Do String#replace it with real&#xA;string." ilk="function" line="457" lineend="462" name="array2obj" signature="array2obj(node, map, rubytype)" />
+        <scope doc="Only creates empty string. Do String#replace it with real&#xA;string." ilk="function" line="465" lineend="470" name="string2obj" signature="string2obj(node, map, rubytype)" />
+      </scope>
+    </scope>
+    

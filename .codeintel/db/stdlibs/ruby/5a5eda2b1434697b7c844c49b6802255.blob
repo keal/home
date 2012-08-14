@@ -1,0 +1,52 @@
+<scope ilk="blob" lang="Ruby" name="irb/ruby-lex">
+      <import line="13" module="e2mmap" symbol="*" />
+      <import line="14" module="irb/slex" symbol="*" />
+      <import line="15" module="irb/ruby-token" symbol="*" />
+      <scope classrefs="Object" doc="irb/ruby-lex.rb - ruby lexcal analizer $Release Version:&#xA;0.9.5$ $Revision: 1.22.2.5 $ $Date: 2005/06/30 10:11:14 $ by&#xA;Keiju ISHITSUKA(keiju@ruby-lang.org)" ilk="class" line="17" lineend="1134" name="RubyLex">
+        <scope classrefs="Object" ilk="class" line="32" lineend="37" name="self">
+          <scope ilk="function" line="33" lineend="33" name="debug_level" />
+          <scope ilk="function" line="33" lineend="33" name="debug_level=" />
+          <scope ilk="function" line="34" lineend="36" name="debug?" signature="debug?" />
+        </scope>
+        <scope attributes="__ctor__" ilk="function" line="40" lineend="66" name="initialize" signature="initialize" />
+        <scope ilk="function" line="68" lineend="68" name="skip_space" />
+        <scope ilk="function" line="68" lineend="68" name="skip_space=" />
+        <scope ilk="function" line="69" lineend="69" name="readed_auto_clean_up" />
+        <scope ilk="function" line="69" lineend="69" name="readed_auto_clean_up=" />
+        <scope ilk="function" line="70" lineend="70" name="exception_on_syntax_error" />
+        <scope ilk="function" line="70" lineend="70" name="exception_on_syntax_error=" />
+        <scope ilk="function" line="72" lineend="72" name="seek" />
+        <scope ilk="function" line="73" lineend="73" name="char_no" />
+        <scope ilk="function" line="74" lineend="74" name="line_no" />
+        <scope ilk="function" line="75" lineend="75" name="indent" />
+        <scope doc="io functions" ilk="function" line="78" lineend="87" name="set_input" signature="set_input(io, p = nil, &amp;block)" />
+        <scope ilk="function" line="89" lineend="99" name="get_readed" signature="get_readed" />
+        <scope ilk="function" line="101" lineend="120" name="getc" signature="getc" />
+        <scope ilk="function" line="122" lineend="130" name="gets" signature="gets" />
+        <scope ilk="function" line="132" lineend="134" name="eof?" signature="eof?" />
+        <scope ilk="function" line="136" lineend="142" name="getc_of_rests" signature="getc_of_rests" />
+        <scope ilk="function" line="144" lineend="163" name="ungetc" signature="ungetc(c = nil)" />
+        <scope ilk="function" line="165" lineend="171" name="peek_equal?" signature="peek_equal?(str)" />
+        <scope ilk="function" line="173" lineend="178" name="peek_match?" signature="peek_match?(regexp)" />
+        <scope ilk="function" line="180" lineend="185" name="peek" signature="peek(i = 0)" />
+        <scope ilk="function" line="187" lineend="193" name="buf_input" signature="buf_input" />
+        <scope ilk="function" line="196" lineend="203" name="set_prompt" signature="set_prompt(p = nil, &amp;block)" />
+        <scope ilk="function" line="205" lineend="209" name="prompt" signature="prompt" />
+        <scope ilk="function" line="211" lineend="225" name="initialize_input" signature="initialize_input" />
+        <scope ilk="function" line="227" lineend="260" name="each_top_level_statement" signature="each_top_level_statement" />
+        <scope ilk="function" line="262" lineend="277" name="lex" signature="lex" />
+        <scope ilk="function" line="279" lineend="299" name="token" signature="token" />
+        <scope doc=", &quot;when&quot;" ilk="function" line="339" lineend="530" name="lex_init" signature="lex_init()" />
+        <scope ilk="function" line="532" lineend="730" name="lex_int2" signature="lex_int2" />
+        <scope ilk="function" line="732" lineend="754" name="identify_gvar" signature="identify_gvar" />
+        <scope ilk="function" line="756" lineend="863" name="identify_identifier" signature="identify_identifier" />
+        <scope ilk="function" line="865" lineend="915" name="identify_here_document" signature="identify_here_document" />
+        <scope ilk="function" line="917" lineend="933" name="identify_quotation" signature="identify_quotation" />
+        <scope ilk="function" line="935" lineend="1029" name="identify_number" signature="identify_number" />
+        <scope ilk="function" line="1031" lineend="1068" name="identify_string" signature="identify_string(ltype, quoted = ltype)" />
+        <scope ilk="function" line="1070" lineend="1084" name="identify_comment" signature="identify_comment" />
+        <scope ilk="function" line="1086" lineend="1133" name="read_escape" signature="read_escape" />
+        <import symbol="RubyToken" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="rexml/encodings/US-ASCII">
+      <scope ilk="namespace" line="1" lineend="30" name="REXML">
+        <scope ilk="namespace" line="2" lineend="29" name="Encoding">
+          <scope doc="Convert from UTF-8" ilk="function" line="4" lineend="16" name="encode_ascii" signature="encode_ascii" />
+          <scope doc="Convert to UTF-8" ilk="function" line="19" lineend="21" name="decode_ascii" signature="decode_ascii(str)" />
+          <scope classrefs="Object" ilk="class" line="24" lineend="27" name="obj" />
+        </scope>
+      </scope>
+    </scope>
+    

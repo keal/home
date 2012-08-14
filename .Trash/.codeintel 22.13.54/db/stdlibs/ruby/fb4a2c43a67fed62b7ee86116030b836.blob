@@ -1,0 +1,17 @@
+<scope ilk="blob" lang="Ruby" name="tk/itemfont">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/itemfont.rb : control font of widget items" ilk="namespace" line="6" lineend="12" name="TkItemFontOptkeys">
+        <scope ilk="function" line="7" lineend="10" name="__item_font_optkeys" signature="__item_font_optkeys(id)" />
+      </scope>
+      <scope ilk="namespace" line="14" lineend="300" name="TkTreatItemFont">
+        <scope ilk="function" line="17" lineend="20" name="__item_pathname" signature="__item_pathname(id)" />
+        <scope ilk="function" line="25" lineend="55" name="tagfont_configinfo" signature="tagfont_configinfo(tagOrId, key = nil)" />
+        <scope ilk="function" line="58" lineend="121" name="tagfont_configure" signature="tagfont_configure(tagOrId, slot)" />
+        <scope ilk="function" line="123" lineend="171" name="latintagfont_configure" signature="latintagfont_configure(tagOrId, ltn, keys=nil)" />
+        <scope ilk="function" line="174" lineend="222" name="kanjitagfont_configure" signature="kanjitagfont_configure(tagOrId, knj, keys=nil)" />
+        <scope ilk="function" line="224" lineend="247" name="tagfont_copy" signature="tagfont_copy(tagOrId, win, wintag=nil, winkey=nil, targetkey=nil)" />
+        <scope ilk="function" line="250" lineend="273" name="latintagfont_copy" signature="latintagfont_copy(tagOrId, win, wintag=nil, winkey=nil, targetkey=nil)" />
+        <scope ilk="function" line="276" lineend="299" name="kanjifont_copy" signature="kanjifont_copy(tagOrId, win, wintag=nil, winkey=nil, targetkey=nil)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,24 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/getstring">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tk/entry" symbol="*" />
+      <import line="11" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;getstring&apos;, &apos;0.1&apos;)" ilk="namespace" line="16" lineend="31" name="Tk::Tcllib">
+        <scope classrefs="TkWindow" ilk="class" line="17" lineend="30" name="GetString_Dialog">
+          <scope attributes="__classmethod__" ilk="function" line="19" lineend="21" name="package_name" signature="self.package_name" />
+          <scope attributes="__classmethod__" ilk="function" line="23" lineend="29" name="package_version" signature="self.package_version" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="34" lineend="131" name="Tk::Tcllib::">
+        <scope attributes="__classmethod__" ilk="function" line="39" lineend="43" name="show" signature="self.show(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="44" lineend="46" name="display" signature="self.display(*args)" />
+        <scope attributes="__ctor__" ilk="function" line="48" lineend="68" name="initialize" signature="initialize(*args)" />
+        <scope ilk="function" line="70" lineend="72" name="create_self" signature="create_self(keys)" />
+        <scope ilk="function" line="75" lineend="79" name="show" signature="show" />
+        <scope ilk="function" line="82" lineend="84" name="status" signature="status" />
+        <scope ilk="function" line="86" lineend="88" name="value" signature="value" />
+        <scope ilk="function" line="90" lineend="97" name="cget" signature="cget(slot)" />
+        <scope ilk="function" line="99" lineend="120" name="configure" signature="configure(slot, value=None)" />
+        <scope ilk="function" line="122" lineend="130" name="configinfo" signature="configinfo(slot = nil)" />
+      </scope>
+    </scope>
+    

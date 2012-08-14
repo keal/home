@@ -1,0 +1,65 @@
+<scope ilk="blob" lang="Ruby" name="soap/mapping/registry">
+      <import line="9" module="soap/baseData" symbol="*" />
+      <import line="10" module="soap/mapping/mapping" symbol="*" />
+      <import line="11" module="soap/mapping/typeMap" symbol="*" />
+      <import line="12" module="soap/mapping/factory" symbol="*" />
+      <import line="13" module="soap/mapping/rubytypeFactory" symbol="*" />
+      <scope doc="SOAP4R - Mapping registry." ilk="namespace" line="16" name="SOAP" />
+      <scope ilk="namespace" line="19" lineend="21" name="Marshallable" />
+      <scope ilk="namespace" line="24" name="Mapping" />
+      <scope ilk="namespace" line="27" lineend="27" name="MappedException" />
+      <scope classrefs="Object" doc="Inner class to pass an exception." ilk="class" line="36" lineend="60" name="SOAPException">
+        <scope ilk="function" line="37" lineend="37" name="excn_type_name" />
+        <scope ilk="function" line="37" lineend="37" name="cause" />
+        <scope attributes="__ctor__" ilk="function" line="38" lineend="41" name="initialize" signature="initialize(e)" />
+        <scope ilk="function" line="43" lineend="59" name="to_e" signature="to_e" />
+        <import symbol="Marshallable" />
+      </scope>
+      <scope classrefs="Object" doc="For anyType object: SOAP::Mapping::Object not ::Object" ilk="class" line="64" lineend="170" name="Object">
+        <scope attributes="__ctor__" ilk="function" line="65" lineend="69" name="initialize" signature="initialize" />
+        <scope ilk="function" line="71" lineend="74" name="inspect" signature="inspect" />
+        <scope ilk="function" line="76" lineend="78" name="__xmlattr" signature="__xmlattr" />
+        <scope ilk="function" line="80" lineend="82" name="__xmlele" signature="__xmlele" />
+        <scope ilk="function" line="84" lineend="96" name="[]" signature="[](qname" />
+        <scope ilk="function" line="98" lineend="114" name="[]=" signature="[]=(qname" />
+        <scope ilk="function" line="116" lineend="132" name="__add_xmlele_value" signature="__add_xmlele_value(qname, value)" />
+        <scope ilk="function" line="137" lineend="142" name="__define_attr_accessor" signature="__define_attr_accessor(qname)" />
+        <scope ilk="function" line="144" lineend="155" name="__define_attr_accessor" signature="__define_attr_accessor(qname)" />
+        <scope ilk="function" line="158" lineend="169" name="__set_xmlele_value" signature="__set_xmlele_value(key, org, value)" />
+        <import symbol="Marshallable" />
+      </scope>
+      <scope classrefs="Error" ilk="class" line="173" lineend="173" name="MappingError" />
+      <scope classrefs="Object" ilk="class" line="176" lineend="533" name="Registry">
+        <scope classrefs="Object" ilk="class" line="177" lineend="249" name="Map">
+          <scope attributes="__ctor__" ilk="function" line="178" lineend="182" name="initialize" signature="initialize(registry)" />
+          <scope ilk="function" line="184" lineend="207" name="obj2soap" signature="obj2soap(obj)" />
+          <scope ilk="function" line="209" lineend="218" name="soap2obj" signature="soap2obj(node, klass = nil)" />
+          <scope doc="Give priority to former entry." ilk="function" line="221" lineend="226" name="init" signature="init(init_map = [])" />
+          <scope doc="Give priority to latter entry." ilk="function" line="229" lineend="233" name="add" signature="add(obj_class, soap_class, factory, info)" />
+          <scope ilk="function" line="235" lineend="238" name="clear" signature="clear" />
+          <scope ilk="function" line="240" lineend="243" name="find_mapped_soap_class" signature="find_mapped_soap_class(target_obj_class)" />
+          <scope ilk="function" line="245" lineend="248" name="find_mapped_obj_class" signature="find_mapped_obj_class(target_soap_class)" />
+        </scope>
+        <scope ilk="function" line="388" lineend="388" name="default_factory" />
+        <scope ilk="function" line="388" lineend="388" name="default_factory=" />
+        <scope ilk="function" line="389" lineend="389" name="excn_handler_obj2soap" />
+        <scope ilk="function" line="389" lineend="389" name="excn_handler_obj2soap=" />
+        <scope ilk="function" line="390" lineend="390" name="excn_handler_soap2obj" />
+        <scope ilk="function" line="390" lineend="390" name="excn_handler_soap2obj=" />
+        <scope attributes="__ctor__" doc="Does not allow Array&apos;s subclass here." ilk="function" line="392" lineend="411" name="initialize" signature="initialize(config = {})" />
+        <scope ilk="function" line="413" lineend="415" name="add" signature="add(obj_class, soap_class, factory, info = nil)" />
+        <scope doc="general Registry ignores type_qname" ilk="function" line="419" lineend="425" name="obj2soap" signature="obj2soap(obj, type_qname = nil)" />
+        <scope ilk="function" line="427" lineend="434" name="soap2obj" signature="soap2obj(node, klass = nil)" />
+        <scope ilk="function" line="436" lineend="438" name="find_mapped_soap_class" signature="find_mapped_soap_class(obj_class)" />
+        <scope ilk="function" line="440" lineend="442" name="find_mapped_obj_class" signature="find_mapped_obj_class(soap_class)" />
+        <scope ilk="function" line="446" lineend="469" name="_obj2soap" signature="_obj2soap(obj)" />
+        <scope doc="Might return nil as a mapping result." ilk="function" line="472" lineend="491" name="_soap2obj" signature="_soap2obj(node, klass = nil)" />
+        <scope ilk="function" line="493" lineend="500" name="addiv2obj" signature="addiv2obj(obj, attr)" />
+        <scope ilk="function" line="503" lineend="508" name="addextend2obj" signature="addextend2obj(obj, attr)" />
+        <scope doc="(class &lt; false; self; end).ancestors includes &quot;TrueClass&quot;&#xA;under 1.6..." ilk="function" line="511" lineend="517" name="addextend2obj" signature="addextend2obj(obj, attr)" />
+        <scope ilk="function" line="520" lineend="531" name="addextend2soap" signature="addextend2soap(node, obj)">
+          <scope classrefs="Object" ilk="class" line="522" lineend="522" name="obj" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,59 @@
+<scope ilk="blob" lang="Ruby" name="tk/timer">
+      <import line="6" module="tk" symbol="*" />
+      <scope classrefs="Object" doc="tk/timer.rb : methods for Tcl/Tk after command" ilk="class" line="8" lineend="502" name="TkTimer">
+        <scope attributes="__classmethod__" doc="class methods" ilk="function" line="30" lineend="32" name="start" signature="self.start(*args, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="34" lineend="38" name="callback" signature="self.callback(obj_id)" />
+        <scope attributes="__classmethod__" ilk="function" line="40" lineend="58" name="info" signature="self.info(obj = nil)" />
+        <scope doc="instance methods" ilk="function" line="64" lineend="91" name="do_callback" signature="do_callback" />
+        <scope ilk="function" line="93" lineend="103" name="set_callback" signature="set_callback(sleep, args=nil)" />
+        <scope ilk="function" line="105" lineend="138" name="set_next_callback" signature="set_next_callback(args)" />
+        <scope attributes="__ctor__" ilk="function" line="140" lineend="194" name="initialize" signature="initialize(*args, &amp;b)" />
+        <scope ilk="function" line="196" lineend="196" name="after_id" />
+        <scope ilk="function" line="197" lineend="197" name="after_script" />
+        <scope ilk="function" line="198" lineend="198" name="current_proc" />
+        <scope ilk="function" line="199" lineend="199" name="current_args" />
+        <scope ilk="function" line="200" lineend="200" name="current_sleep" />
+        <scope ilk="function" line="202" lineend="202" name="return_value" />
+        <scope ilk="function" line="204" lineend="204" name="loop_exec" />
+        <scope ilk="function" line="204" lineend="204" name="loop_exec=" />
+        <scope ilk="function" line="206" lineend="208" name="cb_call" signature="cb_call" />
+        <scope ilk="function" line="210" lineend="212" name="get_procs" signature="get_procs" />
+        <scope ilk="function" line="214" lineend="217" name="current_status" signature="current_status" />
+        <scope ilk="function" line="219" lineend="221" name="cancel_on_exception?" signature="cancel_on_exception?" />
+        <scope ilk="function" line="223" lineend="232" name="cancel_on_exception=" signature="cancel_on_exception=(mode)" />
+        <scope ilk="function" line="234" lineend="236" name="running?" signature="running?" />
+        <scope ilk="function" line="238" lineend="240" name="loop_rest" signature="loop_rest" />
+        <scope ilk="function" line="242" lineend="245" name="loop_rest=" signature="loop_rest=(rest)" />
+        <scope ilk="function" line="247" lineend="255" name="set_interval" signature="set_interval(interval)" />
+        <scope ilk="function" line="257" lineend="293" name="set_procs" signature="set_procs(interval, loop_exec, *procs)" />
+        <scope ilk="function" line="295" lineend="307" name="add_procs" signature="add_procs(*procs)" />
+        <scope ilk="function" line="309" lineend="323" name="delete_procs" signature="delete_procs(*procs)" />
+        <scope ilk="function" line="325" lineend="330" name="delete_at" signature="delete_at(n)" />
+        <scope ilk="function" line="332" lineend="348" name="set_start_proc" signature="set_start_proc(sleep=nil, init_proc=nil, *init_args, &amp;b)" />
+        <scope ilk="function" line="350" lineend="392" name="start" signature="start(*init_args, &amp;b)" />
+        <scope ilk="function" line="394" lineend="410" name="reset" signature="reset(*reset_args)" />
+        <scope ilk="function" line="412" lineend="419" name="restart" signature="restart(*restart_args, &amp;b)" />
+        <scope ilk="function" line="421" lineend="429" name="cancel" signature="cancel" />
+        <scope ilk="function" line="432" lineend="447" name="continue" signature="continue(wait=nil)" />
+        <scope ilk="function" line="449" lineend="456" name="skip" signature="skip" />
+        <scope ilk="function" line="458" lineend="465" name="info" signature="info" />
+        <scope ilk="function" line="467" lineend="486" name="wait" signature="wait(on_thread = true, check_root = false)" />
+        <scope ilk="function" line="487" lineend="489" name="eventloop_wait" signature="eventloop_wait(check_root = false)" />
+        <scope ilk="function" line="490" lineend="492" name="thread_wait" signature="thread_wait(check_root = false)" />
+        <scope ilk="function" line="493" lineend="495" name="tkwait" signature="tkwait(on_thread = true)" />
+        <scope ilk="function" line="496" lineend="498" name="eventloop_tkwait" signature="eventloop_tkwait" />
+        <scope ilk="function" line="499" lineend="501" name="thread_tkwait" signature="thread_tkwait" />
+        <import symbol="TkCore" />
+      </scope>
+      <scope classrefs="TkTimer" ilk="class" line="507" lineend="634" name="TkRTTimer">
+        <scope attributes="__ctor__" ilk="function" line="510" lineend="517" name="initialize" signature="initialize(*args, &amp;b)" />
+        <scope ilk="function" line="519" lineend="524" name="start" signature="start(*args, &amp;b)" />
+        <scope ilk="function" line="526" lineend="531" name="cancel" signature="cancel" />
+        <scope ilk="function" line="534" lineend="538" name="continue" signature="continue(wait=nil)" />
+        <scope ilk="function" line="540" lineend="543" name="set_interval" signature="set_interval(interval)" />
+        <scope ilk="function" line="545" lineend="558" name="_offset_ave" signature="_offset_ave" />
+        <scope ilk="function" line="561" lineend="611" name="set_next_callback" signature="set_next_callback(args)" />
+        <scope ilk="function" line="613" lineend="633" name="cb_call" signature="cb_call" />
+      </scope>
+    </scope>
+    

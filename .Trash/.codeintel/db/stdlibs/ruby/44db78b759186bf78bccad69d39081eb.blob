@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="conditionvariable">
+      <scope classrefs="Object" doc="ConditionVariable objects augment class Mutex. Using&#xA;condition variables, it is possible to suspend while in the&#xA;middle of a critical section until a resource becomes&#xA;available." ilk="class" name="ConditionVariable">
+        <scope attributes="__classmethod__ __ctor__" doc="Creates a new ConditionVariable" ilk="function" name="new" signature="()" />
+        <scope doc="Wakes up all threads waiting for this lock." ilk="function" name="broadcast" signature="()" />
+        <scope doc="Wakes up the first thread in line waiting for this lock." ilk="function" name="signal" signature="()" />
+        <scope doc="Releases the lock held in mutex and waits; reacquires the&#xA;lock on wakeup." ilk="function" name="wait" signature="(mutex)" />
+      </scope>
+    </scope>
+    

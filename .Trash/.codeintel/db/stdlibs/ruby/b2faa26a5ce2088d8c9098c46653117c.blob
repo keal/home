@@ -1,0 +1,69 @@
+<scope ilk="blob" lang="Ruby" name="test/unit/ui/gtk2/testrunner">
+      <import line="5" module="gtk2" symbol="*" />
+      <import line="6" module="test/unit/ui/testrunnermediator" symbol="*" />
+      <import line="7" module="test/unit/ui/testrunnerutilities" symbol="*" />
+      <scope doc="Author:: Kenta MURATA." ilk="namespace" line="9" lineend="463" name="Test">
+        <scope ilk="namespace" line="10" lineend="462" name="Unit">
+          <scope ilk="namespace" line="11" lineend="461" name="UI">
+            <scope ilk="namespace" line="12" lineend="460" name="GTK2">
+              <scope classrefs="Gtk::Label" ilk="class" line="16" lineend="20" name="EnhancedLabel">
+                <scope ilk="function" line="17" lineend="19" name="set_text" signature="set_text(text)" />
+              </scope>
+              <scope classrefs="Gtk::TreeView" ilk="class" line="22" lineend="52" name="FaultList">
+                <scope attributes="__ctor__" ilk="function" line="23" lineend="36" name="initialize" signature="initialize" />
+                <scope doc="def initialize" ilk="function" line="38" lineend="43" name="add_fault" signature="add_fault(fault)" />
+                <scope doc="def add_fault(fault)" ilk="function" line="45" lineend="47" name="get_fault" signature="get_fault(iter)" />
+                <scope doc="def get_fault" ilk="function" line="49" lineend="51" name="clear" signature="clear" />
+              </scope>
+              <scope classrefs="Object" ilk="class" line="54" lineend="458" name="TestRunner">
+                <scope ilk="function" line="57" lineend="62" name="lazy_initialize" signature="lazy_initialize(symbol)" />
+                <scope ilk="function" line="65" lineend="70" name="status_entry" signature="status_entry" />
+                <scope ilk="function" line="73" lineend="79" name="status_panel" signature="status_panel" />
+                <scope ilk="function" line="82" lineend="93" name="fault_detail_label" signature="fault_detail_label" />
+                <scope ilk="function" line="96" lineend="101" name="inner_detail_sub_panel" signature="inner_detail_sub_panel" />
+                <scope ilk="function" line="104" lineend="109" name="outer_detail_sub_panel" signature="outer_detail_sub_panel" />
+                <scope ilk="function" line="112" lineend="120" name="detail_scrolled_window" signature="detail_scrolled_window" />
+                <scope ilk="function" line="123" lineend="129" name="detail_panel" signature="detail_panel" />
+                <scope ilk="function" line="132" lineend="136" name="fault_list" signature="fault_list" />
+                <scope ilk="function" line="139" lineend="147" name="list_scrolled_window" signature="list_scrolled_window" />
+                <scope ilk="function" line="150" lineend="156" name="list_panel" signature="list_panel" />
+                <scope ilk="function" line="159" lineend="164" name="error_count_label" signature="error_count_label" />
+                <scope ilk="function" line="167" lineend="172" name="failure_count_label" signature="failure_count_label" />
+                <scope ilk="function" line="175" lineend="180" name="assertion_count_label" signature="assertion_count_label" />
+                <scope ilk="function" line="183" lineend="188" name="run_count_label" signature="run_count_label" />
+                <scope ilk="function" line="191" lineend="204" name="info_panel" signature="info_panel" />
+                <scope doc="def info_panel" ilk="function" line="207" lineend="212" name="green_style" signature="green_style" />
+                <scope doc="def green_style" ilk="function" line="215" lineend="220" name="red_style" signature="red_style" />
+                <scope doc="def red_style" ilk="function" line="223" lineend="232" name="test_progress_bar" signature="test_progress_bar" />
+                <scope doc="def test_progress_bar" ilk="function" line="235" lineend="241" name="progress_panel" signature="progress_panel" />
+                <scope doc="def progress_panel" ilk="function" line="243" lineend="247" name="run_button" signature="run_button" />
+                <scope doc="def run_button" ilk="function" line="249" lineend="254" name="suite_name_entry" signature="suite_name_entry" />
+                <scope doc="def suite_name_entry" ilk="function" line="257" lineend="265" name="suite_panel" signature="suite_panel" />
+                <scope doc="def suite_panel" ilk="function" line="268" lineend="278" name="main_panel" signature="main_panel" />
+                <scope doc="def main_panel" ilk="function" line="281" lineend="289" name="main_window" signature="main_window" />
+                <scope doc="def main_window" ilk="function" line="292" lineend="303" name="setup_ui" signature="setup_ui" />
+                <scope doc="def setup_ui" ilk="function" line="306" lineend="308" name="output_status" signature="output_status(string)" />
+                <scope doc="def output_status(string)" ilk="function" line="311" lineend="314" name="finished" signature="finished(elapsed_time)" />
+                <scope doc="def finished(elapsed_time)" ilk="function" line="317" lineend="319" name="test_started" signature="test_started(test_name)" />
+                <scope doc="def test_started(test_name)" ilk="function" line="322" lineend="325" name="started" signature="started(result)" />
+                <scope doc="def started(result)" ilk="function" line="328" lineend="330" name="test_finished" signature="test_finished(result)" />
+                <scope doc="def test_finished(result)" ilk="function" line="332" lineend="337" name="result_changed" signature="result_changed(result)" />
+                <scope doc="def result_changed(result)" ilk="function" line="340" lineend="342" name="clear_fault" signature="clear_fault" />
+                <scope doc="def clear_fault" ilk="function" line="345" lineend="348" name="raw_show_fault" signature="raw_show_fault(string)" />
+                <scope doc="def raw_show_fault(string)" ilk="function" line="351" lineend="353" name="show_fault" signature="show_fault(fault)" />
+                <scope doc="def show_fault(fault)" ilk="function" line="356" lineend="362" name="add_fault" signature="add_fault(fault)" />
+                <scope doc="def add_fault(fault)" ilk="function" line="365" lineend="377" name="reset_ui" signature="reset_ui(count)" />
+                <scope doc="def reset_ui(count)" ilk="function" line="380" lineend="382" name="stop" signature="stop" />
+                <scope doc="def stop" ilk="function" line="385" lineend="387" name="run_test" signature="run_test" />
+                <scope ilk="function" line="390" lineend="408" name="start_ui" signature="start_ui" />
+                <scope doc="def start_ui" ilk="function" line="411" lineend="420" name="attach_to_mediator" signature="attach_to_mediator" />
+                <scope doc="def attach_to_mediator" ilk="function" line="423" lineend="430" name="setup_mediator" signature="setup_mediator" />
+                <scope doc="def setup_mediator" ilk="function" line="433" lineend="439" name="start" signature="start" />
+                <scope attributes="__ctor__" doc="def start" ilk="function" line="441" lineend="456" name="initialize" signature="initialize(suite, output_level = NORMAL)" />
+              </scope>
+            </scope>
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    

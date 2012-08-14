@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="tk/toplevel">
+      <import line="4" module="tk" symbol="*" />
+      <import line="5" module="tk/wm" symbol="*" />
+      <import line="6" module="tk/menuspec" symbol="*" />
+      <scope classrefs="TkWindow" doc="tk/toplevel.rb : treat toplevel widget" ilk="class" line="8" lineend="257" name="TkToplevel">
+        <scope doc="old version def initialize(parent=nil, screen=nil,&#xA;classname=nil, keys=nil) if screen.kind_of? Hash keys =&#xA;screen.dup else" ilk="function" line="48" lineend="50" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="53" lineend="55" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="58" lineend="60" name="__val2ruby_optkeys" signature="__val2ruby_optkeys" />
+        <scope ilk="function" line="63" lineend="65" name="__methodcall_optkeys" signature="__methodcall_optkeys" />
+        <scope ilk="function" line="68" lineend="95" name="_wm_command_option_chk" signature="_wm_command_option_chk(keys)" />
+        <scope attributes="__ctor__" ilk="function" line="98" lineend="184" name="initialize" signature="initialize(parent=nil, screen=nil, classname=nil, keys=nil)" />
+        <scope doc="def create_self(keys) if keys and keys != None&#xA;tk_call_without_enc(&apos;toplevel&apos;, @path, *hash_kv(keys, true))&#xA;else tk_call_without_enc(&apos;toplevel&apos;, @path)" ilk="function" line="195" lineend="197" name="specific_class" signature="specific_class" />
+        <scope ilk="function" line="199" lineend="208" name="add_menu" signature="add_menu(menu_info, tearoff=false, opts=nil)" />
+        <scope ilk="function" line="210" lineend="216" name="add_menubar" signature="add_menubar(menu_spec, tearoff=false, opts=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="218" lineend="224" name="database_class" signature="self.database_class" />
+        <scope attributes="__classmethod__" ilk="function" line="225" lineend="227" name="database_classname" signature="self.database_classname" />
+        <scope attributes="__classmethod__" ilk="function" line="229" lineend="235" name="bind" signature="self.bind(*args, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="236" lineend="242" name="bind_append" signature="self.bind_append(*args, &amp;b)" />
+        <scope attributes="__classmethod__" ilk="function" line="243" lineend="249" name="bind_remove" signature="self.bind_remove(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="250" lineend="256" name="bindinfo" signature="self.bindinfo(*args)" />
+        <import symbol="Wm" />
+        <import symbol="TkMenuSpec" />
+      </scope>
+    </scope>
+    

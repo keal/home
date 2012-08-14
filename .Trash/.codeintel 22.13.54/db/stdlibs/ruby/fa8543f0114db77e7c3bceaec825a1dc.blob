@@ -1,0 +1,29 @@
+<scope ilk="blob" lang="Ruby" name="mathn">
+      <import line="13" module="complex.rb" symbol="*" />
+      <import line="14" module="rational.rb" symbol="*" />
+      <import line="15" module="matrix.rb" symbol="*" />
+      <scope classrefs="Object" doc="mathn.rb - $Release Version: 0.5 $ $Revision: 1.1.1.1.4.1 $&#xA;$Date: 1998/01/16 12:36:05 $ by Keiju ISHITSUKA(SHL Japan&#xA;Inc.)" ilk="class" line="17" lineend="66" name="Integer">
+        <scope ilk="function" line="19" lineend="35" name="gcd2" signature="gcd2(int)" />
+        <scope attributes="__classmethod__" ilk="function" line="37" lineend="43" name="from_prime_division" signature="Integer.from_prime_division(pd)" />
+        <scope ilk="function" line="45" lineend="65" name="prime_division" signature="prime_division" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="68" lineend="106" name="Prime">
+        <scope attributes="__ctor__" ilk="function" line="71" lineend="75" name="initialize" signature="initialize" />
+        <scope ilk="function" line="77" lineend="98" name="succ" signature="succ" />
+        <scope ilk="function" line="101" lineend="105" name="each" signature="each" />
+        <import symbol="Enumerable" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="108" lineend="110" name="Fixnum" />
+      <scope classrefs="Object" ilk="class" line="112" lineend="114" name="Bignum" />
+      <scope classrefs="Object" ilk="class" line="116" lineend="229" name="Rational">
+        <scope ilk="function" line="119" lineend="121" name="inspect" signature="inspect" />
+        <scope ilk="function" line="125" lineend="184" name="**" signature="** (other" />
+        <scope ilk="function" line="186" lineend="228" name="power2" signature="power2(other)" />
+      </scope>
+      <scope ilk="namespace" line="231" lineend="302" name="Math">
+        <scope ilk="function" line="232" lineend="253" name="sqrt" signature="sqrt(a)" />
+        <scope ilk="function" line="255" lineend="298" name="rsqrt" signature="rsqrt(a)" />
+      </scope>
+      <scope classrefs="Object" ilk="class" line="304" lineend="306" name="Complex" />
+    </scope>
+    

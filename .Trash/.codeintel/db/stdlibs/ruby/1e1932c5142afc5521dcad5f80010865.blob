@@ -1,0 +1,60 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/scrolledtext">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/text" symbol="*" />
+      <import line="8" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/scrolledtext.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="12" lineend="13" name="Scrolledtext" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="538" name="Tk::Iwidgets::">
+        <scope ilk="function" line="22" lineend="24" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="27" lineend="29" name="__font_optkeys" signature="__font_optkeys" />
+        <scope attributes="__ctor__" ilk="function" line="34" lineend="37" name="initialize" signature="initialize(*args)" />
+        <scope ilk="function" line="39" lineend="45" name="method_missing" signature="method_missing(id, *args)" />
+        <scope ilk="function" line="49" lineend="51" name="child_site" signature="child_site" />
+        <scope ilk="function" line="53" lineend="56" name="clear" signature="clear" />
+        <scope ilk="function" line="58" lineend="65" name="import" signature="import(file, idx=nil)" />
+        <scope ilk="function" line="67" lineend="70" name="export" signature="export(file)" />
+        <scope ilk="function" line="76" lineend="82" name="tagid" signature="tagid(tag)" />
+        <scope ilk="function" line="85" lineend="87" name="bbox" signature="bbox(index)" />
+        <scope ilk="function" line="88" lineend="91" name="compare" signature="compare(idx1, op, idx2)" />
+        <scope ilk="function" line="93" lineend="95" name="debug" signature="debug" />
+        <scope ilk="function" line="96" lineend="100" name="debug=" signature="debug=(boolean)" />
+        <scope ilk="function" line="102" lineend="105" name="delete" signature="delete(first, last=None)" />
+        <scope ilk="function" line="107" lineend="109" name="dlineinfo" signature="dlineinfo(index)" />
+        <scope ilk="function" line="111" lineend="113" name="get" signature="get(*index)" />
+        <scope ilk="function" line="114" lineend="117" name="get_displaychars" signature="get_displaychars(*index)" />
+        <scope ilk="function" line="119" lineend="129" name="image_cget" signature="image_cget(index, slot)" />
+        <scope ilk="function" line="131" lineend="143" name="image_configure" signature="image_configure(index, slot, value=None)" />
+        <scope ilk="function" line="145" lineend="232" name="image_configinfo" signature="image_configinfo(index, slot = nil)" />
+        <scope ilk="function" line="234" lineend="253" name="current_image_configinfo" signature="current_image_configinfo(index, slot = nil)" />
+        <scope ilk="function" line="255" lineend="260" name="image_names" signature="image_names" />
+        <scope ilk="function" line="262" lineend="264" name="index" signature="index(idx)" />
+        <scope ilk="function" line="266" lineend="269" name="insert" signature="insert(index, *args)" />
+        <scope ilk="function" line="271" lineend="276" name="mark_names" signature="mark_names" />
+        <scope ilk="function" line="278" lineend="286" name="mark_gravity" signature="mark_gravity(mark, direction=nil)" />
+        <scope ilk="function" line="288" lineend="292" name="mark_set" signature="mark_set(mark, index)" />
+        <scope ilk="function" line="295" lineend="299" name="mark_unset" signature="mark_unset(*marks)" />
+        <scope ilk="function" line="302" lineend="305" name="mark_next" signature="mark_next(index)" />
+        <scope ilk="function" line="308" lineend="311" name="mark_previous" signature="mark_previous(index)" />
+        <scope ilk="function" line="314" lineend="317" name="scan_mark" signature="scan_mark(x, y)" />
+        <scope ilk="function" line="318" lineend="321" name="scan_dragto" signature="scan_dragto(x, y)" />
+        <scope ilk="function" line="324" lineend="342" name="_ktext_length" signature="_ktext_length(txt)" />
+        <scope ilk="function" line="345" lineend="363" name="tksearch" signature="tksearch(*args)" />
+        <scope ilk="function" line="365" lineend="383" name="tksearch_with_count" signature="tksearch_with_count(*args)" />
+        <scope ilk="function" line="385" lineend="440" name="search_with_length" signature="search_with_length(pat,start,stop=None)" />
+        <scope ilk="function" line="442" lineend="444" name="search" signature="search(pat,start,stop=None)" />
+        <scope ilk="function" line="446" lineend="496" name="rsearch_with_length" signature="rsearch_with_length(pat,start,stop=None)" />
+        <scope ilk="function" line="498" lineend="500" name="rsearch" signature="rsearch(pat,start,stop=None)" />
+        <scope ilk="function" line="502" lineend="505" name="see" signature="see(index)" />
+        <scope ilk="function" line="509" lineend="516" name="xview" signature="xview(*index)" />
+        <scope ilk="function" line="517" lineend="519" name="xview_moveto" signature="xview_moveto(*index)" />
+        <scope ilk="function" line="520" lineend="522" name="xview_scroll" signature="xview_scroll(*index)" />
+        <scope ilk="function" line="524" lineend="531" name="yview" signature="yview(*index)" />
+        <scope ilk="function" line="532" lineend="534" name="yview_moveto" signature="yview_moveto(*index)" />
+        <scope ilk="function" line="535" lineend="537" name="yview_scroll" signature="yview_scroll(*index)" />
+        <import symbol="TkTextTagConfig" />
+      </scope>
+    </scope>
+    

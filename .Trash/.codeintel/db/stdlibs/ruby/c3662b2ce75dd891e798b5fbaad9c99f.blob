@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="xmlrpc/create">
+      <import line="9" module="date" symbol="*" />
+      <import line="10" module="xmlrpc/base64" symbol="*" />
+      <scope doc="Creates XML-RPC call/response documents" ilk="namespace" line="12" lineend="294" name="XMLRPC">
+        <scope ilk="namespace" line="14" lineend="101" name="XMLWriter">
+          <scope classrefs="Object" ilk="class" line="16" lineend="24" name="Abstract">
+            <scope ilk="function" line="17" lineend="19" name="ele" signature="ele(name, *children)" />
+            <scope ilk="function" line="21" lineend="23" name="tag" signature="tag(name, txt)" />
+          </scope>
+          <scope classrefs="Abstract" ilk="class" line="27" lineend="58" name="Simple">
+            <scope ilk="function" line="29" lineend="31" name="document_to_str" signature="document_to_str(doc)" />
+            <scope ilk="function" line="33" lineend="35" name="document" signature="document(*params)" />
+            <scope ilk="function" line="37" lineend="39" name="pi" signature="pi(name, *params)" />
+            <scope ilk="function" line="41" lineend="48" name="element" signature="element(name, attrs, *children)" />
+            <scope ilk="function" line="50" lineend="56" name="text" signature="text(txt)" />
+          </scope>
+          <scope classrefs="Abstract" doc="class Simple" ilk="class" line="61" lineend="87" name="XMLParser">
+            <scope attributes="__ctor__" ilk="function" line="63" lineend="65" name="initialize" signature="initialize">
+              <import line="64" module="xmltreebuilder" symbol="*" />
+            </scope>
+            <scope ilk="function" line="67" lineend="69" name="document_to_str" signature="document_to_str(doc)" />
+            <scope ilk="function" line="71" lineend="73" name="document" signature="document(*params)" />
+            <scope ilk="function" line="75" lineend="77" name="pi" signature="pi(name, *params)" />
+            <scope ilk="function" line="79" lineend="81" name="element" signature="element(name, attrs, *children)" />
+            <scope ilk="function" line="83" lineend="85" name="text" signature="text(txt)" />
+          </scope>
+          <scope attributes="__classmethod__" doc="yields an instance of each installed XML writer" ilk="function" line="92" lineend="99" name="each_installed_writer" signature="self.each_installed_writer" />
+        </scope>
+        <scope classrefs="Object" doc="module XMLWriter" ilk="class" line="103" lineend="292" name="Create">
+          <scope attributes="__ctor__" ilk="function" line="105" lineend="107" name="initialize" signature="initialize(xml_writer = nil)" />
+          <scope ilk="function" line="110" lineend="130" name="methodCall" signature="methodCall(name, *params)" />
+          <scope doc="generates a XML-RPC methodResponse document" ilk="function" line="144" lineend="166" name="methodResponse" signature="methodResponse(is_ret, *params)" />
+          <scope doc="converts a Ruby object into a XML-RPC &lt;value&gt; tag" ilk="function" line="178" lineend="285" name="conv2value" signature="conv2value(param)" />
+          <scope ilk="function" line="287" lineend="289" name="wrong_type" signature="wrong_type(value)" />
+        </scope>
+      </scope>
+    </scope>
+    

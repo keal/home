@@ -1,0 +1,6 @@
+<scope ilk="blob" lang="Ruby" name="xmlrpc/config">
+      <scope doc="$Id: config.rb,v 1.1 2003/07/19 10:05:54 matz Exp $&#xA;Configuration file for XML-RPC for Ruby" ilk="namespace" line="6" lineend="39" name="XMLRPC">
+        <scope ilk="namespace" line="8" lineend="37" name="Config" />
+      </scope>
+    </scope>
+    

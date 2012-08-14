@@ -1,0 +1,54 @@
+<scope ilk="blob" lang="Ruby" name="soap/encodingstyle/soapHandler">
+      <import line="9" module="soap/encodingstyle/handler" symbol="*" />
+      <scope doc="SOAP4R - SOAP EncodingStyle handler library Copyright (C)&#xA;2001, 2003, 2005  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="12" name="SOAP" />
+      <scope ilk="namespace" line="13" name="EncodingStyle" />
+      <scope classrefs="Handler" ilk="class" line="16" lineend="576" name="SOAPHandler">
+        <scope attributes="__ctor__" ilk="function" line="20" lineend="26" name="initialize" signature="initialize(charset = nil)" />
+        <scope doc="encode interface." ilk="function" line="32" lineend="71" name="encode_data" signature="encode_data(generator, ns, data, parent)" />
+        <scope ilk="function" line="73" lineend="77" name="encode_data_end" signature="encode_data_end(generator, ns, data, parent)" />
+        <scope classrefs="Object" doc="decode interface." ilk="class" line="83" lineend="95" name="SOAPTemporalObject">
+          <scope ilk="function" line="84" lineend="84" name="parent" />
+          <scope ilk="function" line="84" lineend="84" name="parent=" />
+          <scope ilk="function" line="85" lineend="85" name="position" />
+          <scope ilk="function" line="85" lineend="85" name="position=" />
+          <scope ilk="function" line="86" lineend="86" name="id" />
+          <scope ilk="function" line="86" lineend="86" name="id=" />
+          <scope ilk="function" line="87" lineend="87" name="root" />
+          <scope ilk="function" line="87" lineend="87" name="root=" />
+          <scope attributes="__ctor__" ilk="function" line="89" lineend="94" name="initialize" signature="initialize" />
+        </scope>
+        <scope classrefs="SOAPTemporalObject" ilk="class" line="97" lineend="143" name="SOAPUnknown">
+          <scope ilk="function" line="98" lineend="98" name="type" />
+          <scope ilk="function" line="99" lineend="99" name="definedtype" />
+          <scope ilk="function" line="99" lineend="99" name="definedtype=" />
+          <scope ilk="function" line="100" lineend="100" name="extraattr" />
+          <scope attributes="__ctor__" ilk="function" line="102" lineend="109" name="initialize" signature="initialize(handler, elename, type, extraattr)" />
+          <scope ilk="function" line="111" lineend="120" name="as_struct" signature="as_struct" />
+          <scope ilk="function" line="122" lineend="131" name="as_string" signature="as_string" />
+          <scope ilk="function" line="133" lineend="142" name="as_nil" signature="as_nil" />
+        </scope>
+        <scope ilk="function" line="145" lineend="180" name="decode_tag" signature="decode_tag(ns, elename, attrs, parent)" />
+        <scope ilk="function" line="182" lineend="199" name="decode_tag_end" signature="decode_tag_end(ns, node)" />
+        <scope ilk="function" line="201" lineend="203" name="decode_text" signature="decode_text(ns, text)" />
+        <scope ilk="function" line="205" lineend="209" name="decode_prologue" signature="decode_prologue" />
+        <scope ilk="function" line="211" lineend="213" name="decode_epilogue" signature="decode_epilogue" />
+        <scope ilk="function" line="215" lineend="240" name="decode_parent" signature="decode_parent(parent, node)" />
+        <scope ilk="function" line="244" lineend="246" name="content_ranksize" signature="content_ranksize(typename)" />
+        <scope ilk="function" line="248" lineend="250" name="content_typename" signature="content_typename(typename)" />
+        <scope ilk="function" line="252" lineend="255" name="create_arytype" signature="create_arytype(ns, data)" />
+        <scope ilk="function" line="257" lineend="301" name="encode_attrs" signature="encode_attrs(generator, ns, data, parent)" />
+        <scope ilk="function" line="303" lineend="311" name="encode_attr_value" signature="encode_attr_value(generator, ns, qname, value)" />
+        <scope ilk="function" line="313" lineend="367" name="decode_tag_by_wsdl" signature="decode_tag_by_wsdl(ns, elename, typestr, parent, arytypestr, extraattr)" />
+        <scope ilk="function" line="369" lineend="378" name="decode_definedtype" signature="decode_definedtype(elename, typename, typedef, arytypestr)" />
+        <scope ilk="function" line="380" lineend="382" name="decode_basetype" signature="decode_basetype(klass, elename)" />
+        <scope ilk="function" line="384" lineend="388" name="decode_defined_simpletype" signature="decode_defined_simpletype(elename, typename, typedef, arytypestr)" />
+        <scope ilk="function" line="390" lineend="418" name="decode_defined_complextype" signature="decode_defined_complextype(elename, typename, typedef, arytypestr)" />
+        <scope ilk="function" line="420" lineend="449" name="decode_tag_by_type" signature="decode_tag_by_type(ns, elename, typestr, parent, arytypestr, extraattr)" />
+        <scope ilk="function" line="451" lineend="471" name="decode_textbuf" signature="decode_textbuf(node)" />
+        <scope ilk="function" line="483" lineend="537" name="decode_attrs" signature="decode_attrs(ns, attrs)" />
+        <scope ilk="function" line="539" lineend="547" name="decode_attr_value" signature="decode_attr_value(ns, qname, value)" />
+        <scope ilk="function" line="549" lineend="552" name="decode_arypos" signature="decode_arypos(position)" />
+        <scope ilk="function" line="554" lineend="575" name="decode_resolve_id" signature="decode_resolve_id" />
+      </scope>
+    </scope>
+    

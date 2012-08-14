@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="wsdl/soap/standaloneServerStubCreator">
+      <import line="9" module="wsdl/info" symbol="*" />
+      <import line="10" module="wsdl/soap/mappingRegistryCreator" symbol="*" />
+      <import line="11" module="wsdl/soap/methodDefCreator" symbol="*" />
+      <import line="12" module="wsdl/soap/classDefCreatorSupport" symbol="*" />
+      <scope doc="WSDL4R - Creating standalone server stub code from WSDL." ilk="namespace" line="15" name="WSDL" />
+      <scope ilk="namespace" line="16" name="SOAP" />
+      <scope classrefs="Object" ilk="class" line="19" lineend="81" name="StandaloneServerStubCreator">
+        <scope ilk="function" line="22" lineend="22" name="definitions" />
+        <scope attributes="__ctor__" ilk="function" line="24" lineend="26" name="initialize" signature="initialize(definitions)" />
+        <scope ilk="function" line="28" lineend="33" name="dump" signature="dump(service_name)" />
+        <scope ilk="function" line="37" lineend="80" name="dump_porttype" signature="dump_porttype(name)" />
+        <import symbol="ClassDefCreatorSupport" />
+      </scope>
+    </scope>
+    

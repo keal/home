@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/finddialog">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/finddialog.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Finddialog" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="42" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="26" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope ilk="function" line="29" lineend="31" name="__val2ruby_optkeys" signature="__val2ruby_optkeys" />
+        <scope ilk="function" line="34" lineend="37" name="clear" signature="clear" />
+        <scope ilk="function" line="39" lineend="41" name="find" signature="find" />
+      </scope>
+    </scope>
+    

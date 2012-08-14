@@ -1,0 +1,56 @@
+<scope ilk="blob" lang="Ruby" name="webrick/httpresponse">
+      <import line="11" module="time" symbol="*" />
+      <import line="12" module="webrick/httpversion" symbol="*" />
+      <import line="13" module="webrick/htmlutils" symbol="*" />
+      <import line="14" module="webrick/httputils" symbol="*" />
+      <import line="15" module="webrick/httpstatus" symbol="*" />
+      <scope doc="httpresponse.rb -- HTTPResponse Class" ilk="namespace" line="17" lineend="327" name="WEBrick">
+        <scope classrefs="Object" ilk="class" line="18" lineend="326" name="HTTPResponse">
+          <scope ilk="function" line="21" lineend="21" name="http_version" />
+          <scope ilk="function" line="21" lineend="21" name="status" />
+          <scope ilk="function" line="21" lineend="21" name="header" />
+          <scope ilk="function" line="22" lineend="22" name="cookies" />
+          <scope ilk="function" line="23" lineend="23" name="reason_phrase" />
+          <scope ilk="function" line="23" lineend="23" name="reason_phrase=" />
+          <scope ilk="function" line="24" lineend="24" name="body" />
+          <scope ilk="function" line="24" lineend="24" name="body=" />
+          <scope ilk="function" line="26" lineend="26" name="request_method" />
+          <scope ilk="function" line="26" lineend="26" name="request_method=" />
+          <scope ilk="function" line="26" lineend="26" name="request_uri" />
+          <scope ilk="function" line="26" lineend="26" name="request_uri=" />
+          <scope ilk="function" line="26" lineend="26" name="request_http_version" />
+          <scope ilk="function" line="26" lineend="26" name="request_http_version=" />
+          <scope ilk="function" line="27" lineend="27" name="filename" />
+          <scope ilk="function" line="27" lineend="27" name="filename=" />
+          <scope ilk="function" line="28" lineend="28" name="keep_alive" />
+          <scope ilk="function" line="28" lineend="28" name="keep_alive=" />
+          <scope ilk="function" line="29" lineend="29" name="config" />
+          <scope ilk="function" line="29" lineend="29" name="sent_size" />
+          <scope attributes="__ctor__" ilk="function" line="31" lineend="47" name="initialize" signature="initialize(config)" />
+          <scope ilk="function" line="49" lineend="51" name="status_line" signature="status_line" />
+          <scope ilk="function" line="53" lineend="56" name="status=" signature="status=(status)" />
+          <scope ilk="function" line="58" lineend="60" name="[]" signature="[](field" />
+          <scope ilk="function" line="62" lineend="64" name="[]=" signature="[]=(field" />
+          <scope ilk="function" line="66" lineend="70" name="content_length" signature="content_length" />
+          <scope ilk="function" line="72" lineend="74" name="content_length=" signature="content_length=(len)" />
+          <scope ilk="function" line="76" lineend="78" name="content_type" signature="content_type" />
+          <scope ilk="function" line="80" lineend="82" name="content_type=" signature="content_type=(type)" />
+          <scope ilk="function" line="84" lineend="86" name="each" signature="each" />
+          <scope ilk="function" line="88" lineend="90" name="chunked?" signature="chunked?" />
+          <scope ilk="function" line="92" lineend="94" name="chunked=" signature="chunked=(val)" />
+          <scope ilk="function" line="96" lineend="98" name="keep_alive?" signature="keep_alive?" />
+          <scope ilk="function" line="100" lineend="112" name="send_response" signature="send_response(socket)" />
+          <scope ilk="function" line="114" lineend="167" name="setup_header" signature="setup_header()" />
+          <scope ilk="function" line="169" lineend="182" name="send_header" signature="send_header(socket)" />
+          <scope ilk="function" line="184" lineend="189" name="send_body" signature="send_body(socket)" />
+          <scope ilk="function" line="191" lineend="195" name="to_s" signature="to_s" />
+          <scope ilk="function" line="197" lineend="201" name="set_redirect" signature="set_redirect(status, url)" />
+          <scope ilk="function" line="203" lineend="252" name="set_error" signature="set_error(ex, backtrace=false)" />
+          <scope ilk="function" line="256" lineend="278" name="send_body_io" signature="send_body_io(socket)" />
+          <scope ilk="function" line="280" lineend="300" name="send_body_string" signature="send_body_string(socket)" />
+          <scope ilk="function" line="302" lineend="321" name="_send_file" signature="_send_file(output, input, offset, size)" />
+          <scope ilk="function" line="323" lineend="325" name="_write_data" signature="_write_data(socket, data)" />
+        </scope>
+      </scope>
+    </scope>
+    

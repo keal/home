@@ -1,0 +1,7 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/generators/template/chm/chm">
+      <scope ilk="namespace" line="1" name="RDoc" />
+      <scope ilk="namespace" line="2" lineend="86" name="Page">
+        <import line="4" module="rdoc/generators/template/html/html" symbol="*" />
+      </scope>
+    </scope>
+    

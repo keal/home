@@ -1,0 +1,9 @@
+<scope ilk="blob" lang="Ruby" name="xsd/codegen/commentdef">
+      <import line="9" module="xsd/codegen/gensupport" symbol="*" />
+      <scope doc="XSD4R - Generating comment definition code Copyright (C)&#xA;2004  NAKAMURA, Hiroshi &lt;nahi@ruby-lang.org&gt;." ilk="namespace" line="12" name="XSD" />
+      <scope ilk="namespace" line="13" name="CodeGen" />
+      <scope ilk="namespace" line="16" lineend="30" name="CommentDef">
+        <scope ilk="function" line="23" lineend="29" name="dump_comment" signature="dump_comment" />
+      </scope>
+    </scope>
+    

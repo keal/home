@@ -1,0 +1,8 @@
+<scope ilk="blob" lang="Ruby" name="bigdecimal/jacobian">
+      <scope doc="jacobian.rb" ilk="namespace" line="6" lineend="63" name="Jacobian">
+        <scope ilk="function" line="7" lineend="19" name="isEqual" signature="isEqual(a,b,zero=0.0,e=1.0e-8)" />
+        <scope ilk="function" line="21" lineend="50" name="dfdxi" signature="dfdxi(f,fx,x,i)" />
+        <scope ilk="function" line="52" lineend="62" name="jacobian" signature="jacobian(f,fx,x)" />
+      </scope>
+    </scope>
+    

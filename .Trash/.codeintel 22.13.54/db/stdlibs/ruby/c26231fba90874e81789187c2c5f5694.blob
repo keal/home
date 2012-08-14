@@ -1,0 +1,18 @@
+<scope ilk="blob" lang="Ruby" name="runit/testcase">
+      <import line="5" module="runit/testresult" symbol="*" />
+      <import line="6" module="runit/testsuite" symbol="*" />
+      <import line="7" module="runit/assert" symbol="*" />
+      <import line="8" module="runit/error" symbol="*" />
+      <import line="9" module="test/unit/testcase" symbol="*" />
+      <scope doc="Author:: Nathaniel Talbott." ilk="namespace" line="11" lineend="45" name="RUNIT">
+        <scope classrefs="Test::Unit::" ilk="class" line="12" lineend="44" name="TestCase">
+          <scope attributes="__classmethod__" ilk="function" line="15" lineend="26" name="suite" signature="self.suite" />
+          <scope attributes="__ctor__" ilk="function" line="28" lineend="30" name="initialize" signature="initialize(test_name, suite_name=self.class.name)" />
+          <scope ilk="function" line="32" lineend="34" name="assert_equals" signature="assert_equals(*args)" />
+          <scope ilk="function" line="36" lineend="38" name="name" signature="name" />
+          <scope ilk="function" line="40" lineend="43" name="run" signature="run(result, &amp;progress_block)" />
+          <import symbol="RUNIT::Assert" />
+        </scope>
+      </scope>
+    </scope>
+    

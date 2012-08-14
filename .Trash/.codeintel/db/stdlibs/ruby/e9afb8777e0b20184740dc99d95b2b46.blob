@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/tile/frame">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/frame" symbol="*" />
+      <import line="8" module="tkextlib/blt/tile.rb" symbol="*" />
+      <scope doc="tkextlib/blt/tile/frame.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="16" name="Tk::BLT">
+        <scope ilk="namespace" line="11" lineend="15" name="Tile">
+          <scope classrefs="TkFrame" ilk="class" line="12" lineend="14" name="Frame" />
+        </scope>
+      </scope>
+    </scope>
+    

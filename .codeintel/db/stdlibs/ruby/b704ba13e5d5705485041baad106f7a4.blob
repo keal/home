@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="rexml/output">
+      <import line="1" module="rexml/encoding" symbol="*" />
+      <scope ilk="namespace" line="3" lineend="24" name="REXML">
+        <scope classrefs="Object" ilk="class" line="4" name="Output">
+          <scope ilk="function" line="7" lineend="7" name="encoding" />
+          <scope attributes="__ctor__" ilk="function" line="9" lineend="14" name="initialize" signature="initialize" />
+          <scope ilk="function" line="16" lineend="18" name="&lt;&lt;" signature="&lt;&lt;( content" />
+          <import symbol="Encoding" />
+        </scope>
+        <scope ilk="function" line="20" lineend="22" name="to_s" signature="to_s" />
+      </scope>
+    </scope>
+    

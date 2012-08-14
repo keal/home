@@ -1,0 +1,16 @@
+<scope ilk="blob" lang="Ruby" name="thwait">
+      <import line="39" module="thread.rb" symbol="*" />
+      <import line="40" module="e2mmap.rb" symbol="*" />
+      <scope classrefs="Object" doc="This class watches for termination of multiple threads." ilk="class" line="54" lineend="158" name="ThreadsWait">
+        <scope attributes="__classmethod__" doc="Waits until all specified threads have terminated." ilk="function" line="65" lineend="74" name="all_waits" signature="ThreadsWait.all_waits(*threads)" />
+        <scope attributes="__ctor__" doc="Creates a ThreadsWait object, specifying the threads to wait&#xA;on." ilk="function" line="80" lineend="84" name="initialize" signature="initialize(*threads)" />
+        <scope ilk="function" line="87" lineend="87" name="threads" />
+        <scope doc="Returns +true+ if there are no threads to be synchronized." ilk="function" line="92" lineend="94" name="empty?" signature="empty?" />
+        <scope doc="Returns +true+ if any thread has terminated." ilk="function" line="99" lineend="101" name="finished?" signature="finished?" />
+        <scope doc="Waits for specified threads to terminate." ilk="function" line="106" lineend="109" name="join" signature="join(*threads)" />
+        <scope doc="Specifies the threads that this object will wait for, but&#xA;does not actually wait." ilk="function" line="115" lineend="127" name="join_nowait" signature="join_nowait(*threads)" />
+        <scope doc="Waits until any of the specified threads has terminated, and&#xA;returns the one that does." ilk="function" line="136" lineend="144" name="next_wait" signature="next_wait(nonblock = nil)" />
+        <scope doc="Waits until all of the specified threads are terminated." ilk="function" line="152" lineend="157" name="all_waits" signature="all_waits" />
+      </scope>
+    </scope>
+    

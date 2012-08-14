@@ -1,0 +1,13 @@
+<scope ilk="blob" lang="Ruby" name="tk/tagfont">
+      <import line="4" module="tk" symbol="*" />
+      <scope doc="tk/tagfont.rb : control font of tags" ilk="namespace" line="6" lineend="43" name="TkTreatTagFont">
+        <scope ilk="function" line="7" lineend="9" name="font_configinfo" signature="font_configinfo" />
+        <scope doc="alias font font_configinfo" ilk="function" line="12" lineend="15" name="font_configure" signature="font_configure(slot)" />
+        <scope ilk="function" line="17" lineend="20" name="latinfont_configure" signature="latinfont_configure(ltn, keys=nil)" />
+        <scope ilk="function" line="23" lineend="26" name="kanjifont_configure" signature="kanjifont_configure(knj, keys=nil)" />
+        <scope ilk="function" line="28" lineend="31" name="font_copy" signature="font_copy(win, wintag=nil)" />
+        <scope ilk="function" line="33" lineend="36" name="latinfont_copy" signature="latinfont_copy(win, wintag=nil)" />
+        <scope ilk="function" line="39" lineend="42" name="kanjifont_copy" signature="kanjifont_copy(win, wintag=nil)" />
+      </scope>
+    </scope>
+    

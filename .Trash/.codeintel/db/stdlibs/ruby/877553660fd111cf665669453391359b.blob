@@ -1,0 +1,92 @@
+<scope ilk="blob" lang="Ruby" name="rexml/element">
+      <import line="1" module="rexml/parent" symbol="*" />
+      <import line="2" module="rexml/namespace" symbol="*" />
+      <import line="3" module="rexml/attribute" symbol="*" />
+      <import line="4" module="rexml/cdata" symbol="*" />
+      <import line="5" module="rexml/xpath" symbol="*" />
+      <import line="6" module="rexml/parseexception" symbol="*" />
+      <scope ilk="namespace" line="8" lineend="1243" name="REXML">
+        <scope classrefs="Parent" doc="Represents a tagged XML element." ilk="class" line="20" name="Element">
+          <scope ilk="function" line="27" lineend="27" name="attributes" />
+          <scope ilk="function" line="27" lineend="27" name="elements" />
+          <scope ilk="function" line="30" lineend="30" name="context" />
+          <scope ilk="function" line="30" lineend="30" name="context=" />
+          <scope attributes="__ctor__" doc="Constructor arg:: if not supplied, will be set to the&#xA;default value." ilk="function" line="58" lineend="74" name="initialize" signature="initialize( arg = UNDEFINED, parent=nil, context=nil )" />
+          <import symbol="Namespace" />
+        </scope>
+        <scope ilk="function" line="76" lineend="89" name="inspect" signature="inspect" />
+        <scope doc="Creates a shallow copy of self." ilk="function" line="96" lineend="98" name="clone" signature="clone" />
+        <scope doc="Evaluates to the root node of the document that this element&#xA;belongs to." ilk="function" line="119" lineend="121" name="root_node" signature="root_node" />
+        <scope ilk="function" line="123" lineend="127" name="root" signature="root" />
+        <scope doc="Evaluates to the document to which this element belongs, or&#xA;nil if this element doesn&apos;t belong to a document." ilk="function" line="131" lineend="134" name="document" signature="document" />
+        <scope doc="Evaluates to +true+ if whitespace is respected for this&#xA;element." ilk="function" line="145" lineend="159" name="whitespace" signature="whitespace" />
+        <scope ilk="function" line="161" lineend="170" name="ignore_whitespace_nodes" signature="ignore_whitespace_nodes" />
+        <scope doc="Evaluates to +true+ if raw mode is set for this element." ilk="function" line="178" lineend="183" name="raw" signature="raw" />
+        <scope doc="once :whitespace, :raw, :ignore_whitespace_nodes" ilk="function" line="195" lineend="200" name="prefixes" signature="prefixes" />
+        <scope ilk="function" line="202" lineend="207" name="namespaces" signature="namespaces" />
+        <scope doc="Evalutas to the URI for a prefix, or the empty string if no&#xA;such namespace is declared for this element." ilk="function" line="222" lineend="235" name="namespace" signature="namespace(prefix=nil)" />
+        <scope doc="Adds a namespace to this element." ilk="function" line="250" lineend="258" name="add_namespace" signature="add_namespace( prefix, uri=nil )" />
+        <scope doc="Removes a namespace from this node." ilk="function" line="270" lineend="275" name="delete_namespace" signature="delete_namespace" />
+        <scope doc="Elements                                      #" ilk="function" line="295" lineend="307" name="add_element" signature="add_element" />
+        <scope doc="Deletes a child element." ilk="function" line="320" lineend="322" name="delete_element" signature="delete_element" />
+        <scope doc="Evaluates to +true+ if this element has at least one child&#xA;Element doc = Document.new &quot;&lt;a&gt;&lt;b/&gt;&lt;c&gt;Text&lt;/c&gt;&lt;/a&gt;&quot;&#xA;doc.root.has_elements               # -&gt; true&#xA;doc.elements[&quot;/a/b&quot;].has_elements   # -&gt; false&#xA;doc.elements[&quot;/a/c&quot;].has_elements   # -&gt; false" ilk="function" line="329" lineend="331" name="has_elements?" signature="has_elements?" />
+        <scope doc="Iterates through the child elements, yielding for each&#xA;Element that has a particular attribute set." ilk="function" line="355" lineend="363" name="each_element_with_attribute" signature="each_element_with_attribute( key, value=nil, max=0, name=nil, &amp;block )" />
+        <scope doc="Iterates through the children, yielding for each Element&#xA;that has a particular text set." ilk="function" line="386" lineend="394" name="each_element_with_text" signature="each_element_with_text( text=nil, max=0, name=nil, &amp;block )" />
+        <scope doc="Synonym for Element.elements.each" ilk="function" line="397" lineend="399" name="each_element" signature="each_element( xpath=nil, &amp;block )" />
+        <scope doc="Synonym for Element.to_a This is a little slower than&#xA;calling elements.each directly." ilk="function" line="405" lineend="407" name="get_elements" signature="get_elements( xpath )" />
+        <scope doc="Returns the next sibling that is an element, or nil if there&#xA;is no Element sibling after this one doc = Document.new&#xA;&apos;&lt;a&gt;&lt;b/&gt;text&lt;c/&gt;&lt;/a&gt;&apos; doc.root.elements[&apos;b&apos;].next_element&#xA;#-&gt; &lt;c/&gt; doc.root.elements[&apos;c&apos;].next_element          #-&gt;&#xA;nil" ilk="function" line="414" lineend="418" name="next_element" signature="next_element" />
+        <scope doc="Returns the previous sibling that is an element, or nil if&#xA;there is no Element sibling prior to this one doc =&#xA;Document.new &apos;&lt;a&gt;&lt;b/&gt;text&lt;c/&gt;&lt;/a&gt;&apos;&#xA;doc.root.elements[&apos;c&apos;].previous_element          #-&gt; &lt;b/&gt;&#xA;doc.root.elements[&apos;b&apos;].previous_element          #-&gt; nil" ilk="function" line="425" lineend="429" name="previous_element" signature="previous_element" />
+        <scope doc="Text                                          #" ilk="function" line="437" lineend="439" name="has_text?" signature="has_text?" />
+        <scope doc="A convenience method which returns the String value of the&#xA;_first_ child text element, if one exists, and +nil+&#xA;otherwise." ilk="function" line="455" lineend="459" name="text" signature="text( path = nil )" />
+        <scope doc="Returns the first child Text node, if any, or +nil+&#xA;otherwise." ilk="function" line="466" lineend="475" name="get_text" signature="get_text" />
+        <scope doc="Sets the first Text child of this object." ilk="function" line="497" lineend="502" name="text=" signature="text=( text )" />
+        <scope doc="A helper method to add a Text child." ilk="function" line="528" lineend="538" name="add_text" signature="add_text( text )" />
+        <scope ilk="function" line="540" lineend="542" name="node_type" signature="node_type" />
+        <scope ilk="function" line="544" lineend="553" name="xpath" signature="xpath" />
+        <scope doc="Attributes                                    #" ilk="function" line="559" lineend="567" name="attribute" signature="attribute( name, namespace=nil )" />
+        <scope doc="Evaluates to +true+ if this element has any attributes set,&#xA;false otherwise." ilk="function" line="571" lineend="573" name="has_attributes?" signature="has_attributes?" />
+        <scope doc="Adds an attribute to this element, overwriting any existing&#xA;attribute by the same name." ilk="function" line="591" lineend="597" name="add_attribute" signature="add_attribute( key, value=nil )" />
+        <scope doc="Add multiple attributes to this element." ilk="function" line="603" lineend="609" name="add_attributes" signature="add_attributes" />
+        <scope doc="Removes an attribute key:: either an Attribute or a String." ilk="function" line="624" lineend="627" name="delete_attribute" signature="delete_attribute(key)" />
+        <scope doc="Other Utilities                               #" ilk="function" line="635" lineend="637" name="cdatas" signature="cdatas" />
+        <scope doc="Get an array of all Comment children." ilk="function" line="641" lineend="643" name="comments" signature="comments" />
+        <scope doc="Get an array of all Instruction children." ilk="function" line="647" lineend="649" name="instructions" signature="instructions" />
+        <scope doc="Get an array of all Text children." ilk="function" line="653" lineend="655" name="texts" signature="texts" />
+        <scope doc="Writes out this element, and recursively, all children." ilk="function" line="679" lineend="694" name="write" signature="write(writer=$stdout, indent=-1, transitive=false, ie_hack=false)" />
+        <scope ilk="function" line="715" lineend="727" name="__to_xpath_helper" signature="__to_xpath_helper" />
+        <scope doc="A private helper method" ilk="function" line="730" lineend="737" name="each_with_something" signature="each_with_something( test, max=0, name=nil )" />
+        <scope doc="A private helper method" ilk="function" line="740" lineend="760" name="write_children" signature="write_children( writer, indent, transitive, ie_hack )" />
+        <scope classrefs="Object" doc="ELEMENTS #" ilk="class" line="771" lineend="971" name="Elements">
+          <scope attributes="__ctor__" doc="Constructor parent:: the parent Element" ilk="function" line="775" lineend="777" name="initialize" signature="initialize" />
+          <scope doc="Fetches a child element." ilk="function" line="800" lineend="818" name="[]" signature="[]( index" />
+          <scope doc="Sets an element, replacing any previous matching element." ilk="function" line="833" lineend="841" name="[]=" signature="[]=( index" />
+          <scope doc="Returns +true+ if there are no +Element+ children, +false+&#xA;otherwise" ilk="function" line="844" lineend="846" name="empty?" signature="empty?" />
+          <scope doc="Returns the index of the supplied child (starting at 1), or&#xA;-1 if the element is not a child element:: an +Element+&#xA;child" ilk="function" line="851" lineend="860" name="index" signature="index" />
+          <scope doc="Deletes a child Element element:: Either an Element, which&#xA;is removed directly; an xpath, where the first matching&#xA;child is removed; or an Integer, where the n&apos;th Element is&#xA;removed." ilk="function" line="873" lineend="880" name="delete" signature="delete" />
+          <scope doc="Removes multiple elements." ilk="function" line="888" lineend="898" name="delete_all" signature="delete_all( xpath )" />
+          <scope doc="Adds an element element:: if supplied, is either an Element,&#xA;String, or Source (see Element.initialize)." ilk="function" line="909" lineend="920" name="add" signature="add" />
+          <scope doc="Iterates through all of the child Elements, optionally&#xA;filtering them by a given XPath xpath:: optional." ilk="function" line="938" lineend="940" name="each" signature="each( xpath=nil, &amp;block)" />
+          <scope doc="Returns the number of +Element+ children of the parent&#xA;object." ilk="function" line="946" lineend="950" name="size" signature="size" />
+          <scope doc="Returns an Array of Element children." ilk="function" line="959" lineend="963" name="to_a" signature="to_a( xpath=nil )" />
+          <scope doc="Private helper class." ilk="function" line="967" lineend="970" name="literalize" signature="literalize" />
+          <import symbol="Enumerable" />
+        </scope>
+        <scope classrefs="Hash" doc="ATTRIBUTES #" ilk="class" line="979" name="Attributes">
+          <scope attributes="__ctor__" doc="Constructor element:: the Element of which this is an&#xA;Attribute" ilk="function" line="982" lineend="984" name="initialize" signature="initialize" />
+          <scope doc="Fetches an attribute value." ilk="function" line="996" lineend="1000" name="[]" signature="[](name" />
+          <scope ilk="function" line="1002" lineend="1004" name="to_a" signature="to_a" />
+          <scope doc="Returns the number of attributes the owning Element&#xA;contains." ilk="function" line="1009" lineend="1013" name="length" signature="length" />
+          <scope doc="Itterates over the attributes of an Element." ilk="function" line="1023" lineend="1031" name="each_attribute" signature="each_attribute" />
+          <scope doc="Itterates over each attribute of an Element, yielding the&#xA;expanded name and value as a pair of Strings." ilk="function" line="1038" lineend="1042" name="each" signature="each" />
+          <scope doc="Fetches an attribute name:: the name by which to search for&#xA;the attribute." ilk="function" line="1053" lineend="1084" name="get_attribute" signature="get_attribute( name )" />
+          <scope doc="Sets an attribute, overwriting any existing attribute value&#xA;by the same name." ilk="function" line="1098" lineend="1127" name="[]=" signature="[]=( name" />
+          <scope doc="Returns an array of Strings containing all of the prefixes&#xA;declared by this set of # attributes." ilk="function" line="1135" lineend="1149" name="prefixes" signature="prefixes" />
+          <scope ilk="function" line="1151" lineend="1165" name="namespaces" signature="namespaces" />
+          <scope doc="Removes an attribute attribute:: either a String, which is&#xA;the name of the attribute to remove -- namespaces are&#xA;significant here -- or the attribute to remove." ilk="function" line="1177" lineend="1204" name="delete" signature="delete( attribute )" />
+          <scope doc="Adds an attribute, overriding any existing attribute by the&#xA;same name." ilk="function" line="1209" lineend="1211" name="add" signature="add( attribute )" />
+          <scope doc="Deletes all attributes matching a name. Namespaces are&#xA;significant." ilk="function" line="1219" lineend="1226" name="delete_all" signature="delete_all( name )" />
+        </scope>
+        <scope ilk="function" line="1233" lineend="1241" name="get_attribute_ns" signature="get_attribute_ns(namespace, name)" />
+      </scope>
+    </scope>
+    

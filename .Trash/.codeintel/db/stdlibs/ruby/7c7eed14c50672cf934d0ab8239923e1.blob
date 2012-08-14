@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="tk/palette">
+      <import line="5" module="tk" symbol="*" />
+      <scope doc="tk/palette.rb : methods for Tcl/Tk standard library&#xA;&apos;palette.tcl&apos; 1998/06/21 by Hidetoshi Nagai&#xA;&lt;nagai@ai.kyutech.ac.jp&gt;" ilk="namespace" line="7" lineend="55" name="TkPalette">
+        <scope attributes="__classmethod__" ilk="function" line="17" lineend="20" name="set" signature="TkPalette.set(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="21" lineend="23" name="setPalette" signature="TkPalette.setPalette(*args)" />
+        <scope attributes="__classmethod__" ilk="function" line="25" lineend="27" name="bisque" signature="TkPalette.bisque" />
+        <scope attributes="__classmethod__" ilk="function" line="29" lineend="31" name="darken" signature="TkPalette.darken(color, percent)" />
+        <scope attributes="__classmethod__" ilk="function" line="33" lineend="50" name="recolorTree" signature="TkPalette.recolorTree(win, colors)" />
+        <scope ilk="function" line="52" lineend="54" name="recolorTree" signature="recolorTree(colors)" />
+      </scope>
+    </scope>
+    

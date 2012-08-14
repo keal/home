@@ -1,0 +1,25 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/bitmap">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <scope doc="tkextlib/blt/bitmap.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="99" name="Tk::BLT">
+        <scope classrefs="TkObject" ilk="class" line="10" lineend="98" name="Bitmap">
+          <scope attributes="__classmethod__" ilk="function" line="18" lineend="21" name="data" signature="self.data(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="23" lineend="25" name="exist?" signature="self.exist?(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="27" lineend="29" name="height" signature="self.height(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="31" lineend="33" name="width" signature="self.width(name)" />
+          <scope attributes="__classmethod__" ilk="function" line="35" lineend="37" name="source" signature="self.source(name)" />
+          <scope classrefs="Object" ilk="class" line="41" lineend="61" name="self">
+            <scope ilk="function" line="44" lineend="46" name="new" signature="new(data, keys={})" />
+            <scope ilk="function" line="49" lineend="51" name="new_with_name" signature="new_with_name(name, data, keys={})" />
+            <scope ilk="function" line="54" lineend="56" name="compose" signature="compose(text, keys={})" />
+            <scope ilk="function" line="58" lineend="60" name="compose_with_name" signature="compose_with_name(name, text, keys={})" />
+          </scope>
+          <scope attributes="__ctor__" ilk="function" line="63" lineend="81" name="initialize" signature="initialize(type, name, data, keys = {})" />
+          <scope ilk="function" line="83" lineend="85" name="exist?" signature="exist?" />
+          <scope ilk="function" line="87" lineend="89" name="height" signature="height" />
+          <scope ilk="function" line="91" lineend="93" name="width" signature="width" />
+          <scope ilk="function" line="95" lineend="97" name="source" signature="source" />
+        </scope>
+      </scope>
+    </scope>
+    

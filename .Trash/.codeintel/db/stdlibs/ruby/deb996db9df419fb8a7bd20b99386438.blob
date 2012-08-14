@@ -1,0 +1,27 @@
+<scope ilk="blob" lang="Ruby" name="tsort">
+      <import line="245" module="test/unit" symbol="*" />
+      <scope doc="!/usr/bin/env ruby -- tsort.rb - provides a module for&#xA;topological sorting and strongly connected components." ilk="namespace" line="122" lineend="242" name="TSort">
+        <scope classrefs="StandardError" ilk="class" line="123" lineend="124" name="Cyclic" />
+        <scope doc="Returns a topologically sorted array of nodes." ilk="function" line="133" lineend="137" name="tsort" signature="tsort" />
+        <scope doc="The iterator version of the #tsort method." ilk="function" line="147" lineend="155" name="tsort_each" signature="tsort_each" />
+        <scope doc="Returns strongly connected components as an array of arrays&#xA;of nodes." ilk="function" line="162" lineend="166" name="strongly_connected_components" signature="strongly_connected_components" />
+        <scope doc="The iterator version of the #strongly_connected_components&#xA;method." ilk="function" line="177" lineend="188" name="each_strongly_connected_component" signature="each_strongly_connected_component" />
+        <scope doc="Iterates over strongly connected component in the subgraph&#xA;reachable from _node_." ilk="function" line="198" lineend="223" name="each_strongly_connected_component_from" signature="each_strongly_connected_component_from(node, id_map={}, stack=[])" />
+        <scope doc="Should be implemented by a extended class." ilk="function" line="230" lineend="232" name="tsort_each_node" signature="tsort_each_node" />
+        <scope doc="Should be implemented by a extended class." ilk="function" line="239" lineend="241" name="tsort_each_child" signature="tsort_each_child(node)" />
+      </scope>
+      <scope classrefs="Hash" ilk="class" line="247" lineend="253" name="TSortHash">
+        <scope doc=":nodoc:" ilk="function" line="250" lineend="252" name="tsort_each_child" signature="tsort_each_child(node, &amp;block)" />
+        <import symbol="TSort" />
+      </scope>
+      <scope classrefs="Array" ilk="class" line="255" lineend="261" name="TSortArray">
+        <scope doc=":nodoc:" ilk="function" line="258" lineend="260" name="tsort_each_child" signature="tsort_each_child(node, &amp;block)" />
+        <import symbol="TSort" />
+      </scope>
+      <scope classrefs="Test::Unit::" ilk="class" line="263" lineend="286" name="TSortTest">
+        <scope doc=":nodoc:" ilk="function" line="264" lineend="268" name="test_dag" signature="test_dag" />
+        <scope ilk="function" line="270" lineend="275" name="test_cycle" signature="test_cycle" />
+        <scope ilk="function" line="277" lineend="285" name="test_array" signature="test_array" />
+      </scope>
+    </scope>
+    

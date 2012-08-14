@@ -1,0 +1,74 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/scrolledcanvas">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tk/canvas" symbol="*" />
+      <import line="8" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/scrolledcanvas.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="15" name="Tk">
+        <scope ilk="namespace" line="11" lineend="14" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="12" lineend="13" name="Scrolledcanvas" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="17" lineend="347" name="Tk::Iwidgets::">
+        <scope ilk="function" line="24" lineend="26" name="__boolval_optkeys" signature="__boolval_optkeys" />
+        <scope ilk="function" line="29" lineend="31" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope attributes="__ctor__" ilk="function" line="34" lineend="37" name="initialize" signature="initialize(*args)" />
+        <scope ilk="function" line="39" lineend="45" name="method_missing" signature="method_missing(id, *args)" />
+        <scope ilk="function" line="49" lineend="51" name="child_site" signature="child_site" />
+        <scope ilk="function" line="53" lineend="56" name="justify" signature="justify(dir)" />
+        <scope ilk="function" line="61" lineend="69" name="tagid" signature="tagid(tag)" />
+        <scope doc="create a canvas item without creating a TkcItem object" ilk="function" line="73" lineend="75" name="create" signature="create(type, *args)" />
+        <scope ilk="function" line="79" lineend="82" name="addtag" signature="addtag(tag, mode, *args)" />
+        <scope ilk="function" line="83" lineend="85" name="addtag_above" signature="addtag_above(tagOrId, target)" />
+        <scope ilk="function" line="86" lineend="88" name="addtag_all" signature="addtag_all(tagOrId)" />
+        <scope ilk="function" line="89" lineend="91" name="addtag_below" signature="addtag_below(tagOrId, target)" />
+        <scope ilk="function" line="92" lineend="94" name="addtag_closest" signature="addtag_closest(tagOrId, x, y, halo=None, start=None)" />
+        <scope ilk="function" line="95" lineend="97" name="addtag_enclosed" signature="addtag_enclosed(tagOrId, x1, y1, x2, y2)" />
+        <scope ilk="function" line="98" lineend="100" name="addtag_overlapping" signature="addtag_overlapping(tagOrId, x1, y1, x2, y2)" />
+        <scope ilk="function" line="101" lineend="103" name="addtag_withtag" signature="addtag_withtag(tagOrId, tag)" />
+        <scope ilk="function" line="105" lineend="108" name="bbox" signature="bbox(tagOrId, *tags)" />
+        <scope doc="def itembind(tag, context, cmd=Proc.new, *args) _bind([path,&#xA;&quot;bind&quot;, tagid(tag)], context, cmd, *args) self end" ilk="function" line="114" lineend="123" name="itembind" signature="itembind(tag, context, *args)" />
+        <scope doc="def itembind_append(tag, context, cmd=Proc.new, *args)&#xA;_bind_append([path, &quot;bind&quot;, tagid(tag)], context, cmd,&#xA;*args) self end" ilk="function" line="129" lineend="138" name="itembind_append" signature="itembind_append(tag, context, *args)" />
+        <scope ilk="function" line="140" lineend="143" name="itembind_remove" signature="itembind_remove(tag, context)" />
+        <scope ilk="function" line="145" lineend="147" name="itembindinfo" signature="itembindinfo(tag, context=nil)" />
+        <scope ilk="function" line="149" lineend="152" name="canvasx" signature="canvasx(screen_x, *args)" />
+        <scope ilk="function" line="153" lineend="156" name="canvasy" signature="canvasy(screen_y, *args)" />
+        <scope ilk="function" line="158" lineend="165" name="coords" signature="coords(tag, *args)" />
+        <scope ilk="function" line="167" lineend="171" name="dchars" signature="dchars(tag, first, last=None)" />
+        <scope ilk="function" line="173" lineend="183" name="delete" signature="delete(*args)" />
+        <scope ilk="function" line="186" lineend="189" name="dtag" signature="dtag(tag, tag_to_del=None)" />
+        <scope ilk="function" line="191" lineend="195" name="find" signature="find(mode, *args)" />
+        <scope ilk="function" line="196" lineend="198" name="find_above" signature="find_above(target)" />
+        <scope ilk="function" line="199" lineend="201" name="find_all" signature="find_all" />
+        <scope ilk="function" line="202" lineend="204" name="find_below" signature="find_below(target)" />
+        <scope ilk="function" line="205" lineend="207" name="find_closest" signature="find_closest(x, y, halo=None, start=None)" />
+        <scope ilk="function" line="208" lineend="210" name="find_enclosed" signature="find_enclosed(x1, y1, x2, y2)" />
+        <scope ilk="function" line="211" lineend="213" name="find_overlapping" signature="find_overlapping(x1, y1, x2, y2)" />
+        <scope ilk="function" line="214" lineend="216" name="find_withtag" signature="find_withtag(tag)" />
+        <scope ilk="function" line="218" lineend="230" name="itemfocus" signature="itemfocus(tagOrId=nil)" />
+        <scope ilk="function" line="232" lineend="236" name="gettags" signature="gettags(tagOrId)" />
+        <scope ilk="function" line="238" lineend="241" name="icursor" signature="icursor(tagOrId, index)" />
+        <scope ilk="function" line="243" lineend="245" name="index" signature="index(tagOrId, idx)" />
+        <scope ilk="function" line="247" lineend="251" name="insert" signature="insert(tagOrId, index, string)" />
+        <scope ilk="function" line="253" lineend="260" name="lower" signature="lower(tag, below=nil)" />
+        <scope ilk="function" line="262" lineend="265" name="move" signature="move(tag, x, y)" />
+        <scope ilk="function" line="267" lineend="269" name="postscript" signature="postscript(keys)" />
+        <scope ilk="function" line="271" lineend="278" name="raise" signature="raise(tag, above=nil)" />
+        <scope ilk="function" line="280" lineend="283" name="scale" signature="scale(tag, x, y, xs, ys)" />
+        <scope ilk="function" line="285" lineend="288" name="scan_mark" signature="scan_mark(x, y)" />
+        <scope ilk="function" line="289" lineend="292" name="scan_dragto" signature="scan_dragto(x, y)" />
+        <scope ilk="function" line="294" lineend="297" name="select" signature="select(mode, *args)" />
+        <scope ilk="function" line="298" lineend="300" name="select_adjust" signature="select_adjust(tagOrId, index)" />
+        <scope ilk="function" line="301" lineend="303" name="select_clear" signature="select_clear" />
+        <scope ilk="function" line="304" lineend="306" name="select_from" signature="select_from(tagOrId, index)" />
+        <scope ilk="function" line="307" lineend="309" name="select_item" signature="select_item" />
+        <scope ilk="function" line="310" lineend="312" name="select_to" signature="select_to(tagOrId, index)" />
+        <scope ilk="function" line="314" lineend="316" name="itemtype" signature="itemtype(tag)" />
+        <scope ilk="function" line="318" lineend="325" name="xview" signature="xview(*index)" />
+        <scope ilk="function" line="326" lineend="328" name="xview_moveto" signature="xview_moveto(*index)" />
+        <scope ilk="function" line="329" lineend="331" name="xview_scroll" signature="xview_scroll(*index)" />
+        <scope ilk="function" line="333" lineend="340" name="yview" signature="yview(*index)" />
+        <scope ilk="function" line="341" lineend="343" name="yview_moveto" signature="yview_moveto(*index)" />
+        <scope ilk="function" line="344" lineend="346" name="yview_scroll" signature="yview_scroll(*index)" />
+        <import symbol="TkCanvasItemConfig" />
+      </scope>
+    </scope>
+    

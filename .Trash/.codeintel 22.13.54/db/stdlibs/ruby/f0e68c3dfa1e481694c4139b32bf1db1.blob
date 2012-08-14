@@ -1,0 +1,20 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/iwidgets/scrolledframe">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/iwidgets.rb" symbol="*" />
+      <scope doc="tkextlib/iwidgets/scrolledframe.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="Iwidgets">
+          <scope classrefs="Tk::Iwidgets::" ilk="class" line="11" lineend="12" name="Scrolledframe" />
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="16" lineend="59" name="Tk::Iwidgets::">
+        <scope ilk="function" line="21" lineend="23" name="child_site" signature="child_site" />
+        <scope ilk="function" line="25" lineend="28" name="justify" signature="justify(dir)" />
+        <scope ilk="function" line="30" lineend="37" name="xview" signature="xview(*index)" />
+        <scope ilk="function" line="38" lineend="40" name="xview_moveto" signature="xview_moveto(*index)" />
+        <scope ilk="function" line="41" lineend="43" name="xview_scroll" signature="xview_scroll(*index)" />
+        <scope ilk="function" line="45" lineend="52" name="yview" signature="yview(*index)" />
+        <scope ilk="function" line="53" lineend="55" name="yview_moveto" signature="yview_moveto(*index)" />
+        <scope ilk="function" line="56" lineend="58" name="yview_scroll" signature="yview_scroll(*index)" />
+      </scope>
+    </scope>
+    

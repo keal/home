@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="irb/ext/math-mode">
+      <import line="12" module="mathn" symbol="*" />
+      <scope doc="math-mode.rb - $Release Version: 0.9.5$ $Revision: 1.2.2.1 $&#xA;$Date: 2005/04/19 19:24:58 $ by Keiju ISHITSUKA(keiju@ruby-&#xA;lang.org)" ilk="namespace" line="14" lineend="36" name="IRB">
+        <scope classrefs="Object" ilk="class" line="15" lineend="35" name="Context">
+          <scope ilk="function" line="16" lineend="16" name="math_mode" />
+          <scope ilk="function" line="19" lineend="30" name="math_mode=" signature="math_mode=(opt)" />
+          <scope ilk="function" line="32" lineend="34" name="inspect?" signature="inspect?" />
+        </scope>
+      </scope>
+    </scope>
+    

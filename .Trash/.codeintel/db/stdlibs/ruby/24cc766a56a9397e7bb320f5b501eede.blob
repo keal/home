@@ -1,0 +1,29 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/tcllib/ico">
+      <import line="9" module="tk" symbol="*" />
+      <import line="10" module="tk/image" symbol="*" />
+      <import line="11" module="tkextlib/tcllib.rb" symbol="*" />
+      <scope doc="TkPackage.require(&apos;ico&apos;, &apos;0.3&apos;)" ilk="namespace" line="16" lineend="33" name="Tk">
+        <scope ilk="namespace" line="17" lineend="32" name="Tcllib">
+          <scope classrefs="TkImage" ilk="class" line="18" lineend="31" name="ICO">
+            <scope attributes="__classmethod__" ilk="function" line="20" lineend="22" name="package_name" signature="self.package_name" />
+            <scope attributes="__classmethod__" ilk="function" line="24" lineend="30" name="package_version" signature="self.package_version" />
+          </scope>
+        </scope>
+      </scope>
+      <scope classrefs="Object" ilk="class" line="35" lineend="114" name="Tk::Tcllib::">
+        <scope attributes="__classmethod__" ilk="function" line="36" lineend="39" name="list" signature="self.list(file, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="41" lineend="43" name="get" signature="self.get(file, index, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="45" lineend="49" name="get_image" signature="self.get_image(file, index, keys={})" />
+        <scope attributes="__classmethod__" ilk="function" line="51" lineend="55" name="get_data" signature="self.get_data(file, index, keys={})" />
+        <scope attributes="__classmethod__" ilk="function" line="57" lineend="60" name="write" signature="self.write(file, index, depth, data, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="62" lineend="66" name="copy" signature="self.copy(from_file, from_index, to_file, to_index, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="68" lineend="71" name="exe_to_ico" signature="self.exe_to_ico(exe_file, ico_file, keys=nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="73" lineend="75" name="clear_cache" signature="self.clear_cache(file=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="77" lineend="84" name="transparent_color" signature="self.transparent_color(image, color)" />
+        <scope attributes="__classmethod__" ilk="function" line="86" lineend="88" name="show" signature="self.show(file, keys=nil)" />
+        <scope attributes="__ctor__" ilk="function" line="92" lineend="103" name="initialize" signature="initialize(file, index, keys=nil)" />
+        <scope ilk="function" line="105" lineend="108" name="write" signature="write(file, index, depth, keys=nil)" />
+        <scope ilk="function" line="110" lineend="113" name="transparent_color" signature="transparent_color(color)" />
+      </scope>
+    </scope>
+    

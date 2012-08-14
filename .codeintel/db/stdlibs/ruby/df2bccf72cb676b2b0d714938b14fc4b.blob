@@ -1,0 +1,12 @@
+<scope ilk="blob" lang="Ruby" name="rexml/syncenumerator">
+      <scope ilk="namespace" line="1" lineend="33" name="REXML">
+        <scope classrefs="Object" ilk="class" line="2" lineend="32" name="SyncEnumerator">
+          <scope attributes="__ctor__" doc="Creates a new SyncEnumerator which enumerates rows of given&#xA;Enumerable objects." ilk="function" line="7" lineend="11" name="initialize" signature="initialize(*enums)" />
+          <scope doc="Returns the number of enumerated Enumerable objects, i.e." ilk="function" line="15" lineend="17" name="size" signature="size" />
+          <scope doc="Returns the number of enumerated Enumerable objects, i.e." ilk="function" line="21" lineend="23" name="length" signature="length" />
+          <scope doc="Enumerates rows of the Enumerable objects." ilk="function" line="26" lineend="31" name="each" signature="each" />
+          <import symbol="Enumerable" />
+        </scope>
+      </scope>
+    </scope>
+    

@@ -1,0 +1,15 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/usage">
+      <import line="69" module="rdoc/markup/simple_markup" symbol="*" />
+      <import line="70" module="rdoc/markup/simple_markup/to_flow" symbol="*" />
+      <import line="71" module="rdoc/ri/ri_formatter" symbol="*" />
+      <import line="72" module="rdoc/ri/ri_options" symbol="*" />
+      <scope doc="= Synopsis" ilk="namespace" line="74" lineend="203" name="RDoc">
+        <scope attributes="__classmethod__" doc="Display usage information from the comment at the top of the&#xA;file." ilk="function" line="81" lineend="95" name="usage" signature="RDoc.usage(*args)" />
+        <scope attributes="__classmethod__" doc="Display usage" ilk="function" line="98" lineend="123" name="usage_no_exit" signature="RDoc.usage_no_exit(*args)" />
+        <scope attributes="__classmethod__" doc="Find the first comment in the file (that isn&apos;t a shebang&#xA;line) If the file doesn&apos;t start with a comment, report the&#xA;fact and return empty string" ilk="function" line="133" lineend="139" name="gets" signature="RDoc.gets(file)" />
+        <scope attributes="__classmethod__" ilk="function" line="141" lineend="156" name="find_comment" signature="RDoc.find_comment(file)" />
+        <scope attributes="__classmethod__" doc="Given an array of flow items and an array of section names,&#xA;extract those sections from the flow which have headings&#xA;corresponding to a section name in the list." ilk="function" line="165" lineend="195" name="extract_sections" signature="RDoc.extract_sections(flow, sections)" />
+        <scope attributes="__classmethod__" doc="Report the fact that no doc comment count be found" ilk="function" line="199" lineend="202" name="no_comment" signature="RDoc.no_comment" />
+      </scope>
+    </scope>
+    

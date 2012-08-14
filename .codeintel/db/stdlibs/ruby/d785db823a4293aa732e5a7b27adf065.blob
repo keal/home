@@ -1,0 +1,43 @@
+<scope ilk="blob" lang="Ruby" name="rinda/rinda">
+      <import line="1" module="drb/drb" symbol="*" />
+      <import line="2" module="thread" symbol="*" />
+      <scope doc="A module to implement the Linda distributed computing&#xA;paradigm in Ruby." ilk="namespace" line="19" lineend="282" name="Rinda">
+        <scope classrefs="RuntimeError" doc="Rinda error base class" ilk="class" line="24" lineend="24" name="RindaError" />
+        <scope classrefs="RindaError" doc="Raised when a hash-based tuple has an invalid key." ilk="class" line="29" lineend="29" name="InvalidHashTupleKey" />
+        <scope classrefs="ThreadError" doc="Raised when trying to use a canceled tuple." ilk="class" line="34" lineend="34" name="RequestCanceledError" />
+        <scope classrefs="ThreadError" doc="Raised when trying to use an expired tuple." ilk="class" line="39" lineend="39" name="RequestExpiredError" />
+        <scope classrefs="Object" doc="A tuple is the elementary object in Rinda programming." ilk="class" line="46" lineend="125" name="Tuple">
+          <scope attributes="__ctor__" doc="Creates a new Tuple from +ary_or_hash+ which must be an&#xA;Array or Hash." ilk="function" line="51" lineend="57" name="initialize" signature="initialize(ary_or_hash)" />
+          <scope doc="The number of elements in the tuple." ilk="function" line="62" lineend="64" name="size" signature="size" />
+          <scope doc="Accessor method for elements of the tuple." ilk="function" line="69" lineend="71" name="[]" signature="[](k" />
+          <scope doc="Fetches item +k+ from the tuple." ilk="function" line="76" lineend="78" name="fetch" signature="fetch(k)" />
+          <scope doc="Iterate through the tuple, yielding the index or key, and&#xA;the value, thus ensuring arrays are iterated similarly to&#xA;hashes." ilk="function" line="84" lineend="90" name="each" signature="each" />
+          <scope doc="Return the tuple itself" ilk="function" line="94" lineend="96" name="value" signature="value" />
+          <scope ilk="function" line="100" lineend="102" name="hash?" signature="hash?(ary_or_hash)" />
+          <scope doc="Munges +ary+ into a valid Tuple." ilk="function" line="107" lineend="112" name="init_with_ary" signature="init_with_ary(ary)" />
+          <scope doc="Ensures +hash+ is a valid Tuple." ilk="function" line="117" lineend="123" name="init_with_hash" signature="init_with_hash(hash)" />
+        </scope>
+        <scope classrefs="Tuple" doc="Templates are used to match tuples in Rinda." ilk="class" line="130" lineend="173" name="Template">
+          <scope doc="Matches this template against +tuple+." ilk="function" line="148" lineend="164" name="match" signature="match(tuple)" />
+          <scope doc="Alias for #match." ilk="function" line="169" lineend="171" name="===" signature="===(tuple" />
+        </scope>
+        <scope classrefs="Object" doc="&lt;i&gt;Documentation?&lt;/i&gt;" ilk="class" line="178" lineend="203" name="DRbObjectTemplate">
+          <scope attributes="__ctor__" doc="Creates a new DRbObjectTemplate that will match against&#xA;+uri+ and +ref+." ilk="function" line="183" lineend="186" name="initialize" signature="initialize(uri=nil, ref=nil)" />
+          <scope doc="This DRbObjectTemplate matches +ro+ if the remote object&apos;s&#xA;drburi and drbref are the same." ilk="function" line="192" lineend="201" name="===" signature="===(ro" />
+        </scope>
+        <scope classrefs="Object" doc="TupleSpaceProxy allows a remote Tuplespace to appear as&#xA;local." ilk="class" line="208" lineend="256" name="TupleSpaceProxy">
+          <scope attributes="__ctor__" doc="Creates a new TupleSpaceProxy to wrap +ts+." ilk="function" line="213" lineend="215" name="initialize" signature="initialize(ts)" />
+          <scope doc="Adds +tuple+ to the proxied TupleSpace. See&#xA;TupleSpace#write." ilk="function" line="220" lineend="222" name="write" signature="write(tuple, sec=nil)" />
+          <scope doc="Takes +tuple+ from the proxied TupleSpace. See&#xA;TupleSpace#take." ilk="function" line="227" lineend="231" name="take" signature="take(tuple, sec=nil, &amp;block)" />
+          <scope doc="Reads +tuple+ from the proxied TupleSpace. See&#xA;TupleSpace#read." ilk="function" line="236" lineend="238" name="read" signature="read(tuple, sec=nil, &amp;block)" />
+          <scope doc="Reads all tuples matching +tuple+ from the proxied&#xA;TupleSpace." ilk="function" line="244" lineend="246" name="read_all" signature="read_all(tuple)" />
+          <scope doc="Registers for notifications of event +ev+ on the proxied&#xA;TupleSpace." ilk="function" line="252" lineend="254" name="notify" signature="notify(ev, tuple, sec=nil)" />
+        </scope>
+        <scope classrefs="Object" doc="An SimpleRenewer allows a TupleSpace to check if a&#xA;TupleEntry is still alive." ilk="class" line="262" lineend="280" name="SimpleRenewer">
+          <scope attributes="__ctor__" doc="Creates a new SimpleRenewer that keeps an object alive for&#xA;another +sec+ seconds." ilk="function" line="270" lineend="272" name="initialize" signature="initialize(sec=180)" />
+          <scope doc="Called by the TupleSpace to check if the object is still&#xA;alive." ilk="function" line="277" lineend="279" name="renew" signature="renew" />
+          <import symbol="DRbUndumped" />
+        </scope>
+      </scope>
+    </scope>
+    

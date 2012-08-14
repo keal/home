@@ -1,0 +1,10 @@
+<scope ilk="blob" lang="Ruby" name="rdoc/tokenstream">
+      <scope doc="A TokenStream is a list of tokens, gathered during the parse&#xA;of some entity (say a method)." ilk="namespace" line="8" lineend="25" name="TokenStream">
+        <scope ilk="function" line="9" lineend="11" name="token_stream" signature="token_stream" />
+        <scope ilk="function" line="13" lineend="15" name="start_collecting_tokens" signature="start_collecting_tokens" />
+        <scope ilk="function" line="16" lineend="18" name="add_token" signature="add_token(tk)" />
+        <scope ilk="function" line="19" lineend="21" name="add_tokens" signature="add_tokens(tks)" />
+        <scope ilk="function" line="22" lineend="24" name="pop_token" signature="pop_token" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,11 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/blt/tabnotebook">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/blt.rb" symbol="*" />
+      <import line="8" module="tkextlib/blt/tabset.rb" symbol="*" />
+      <scope doc="tkextlib/blt/tabnotebook.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="10" lineend="21" name="Tk::BLT">
+        <scope classrefs="Tabset" ilk="class" line="11" lineend="20" name="Tabnotebook">
+          <scope ilk="function" line="16" lineend="18" name="get_tab" signature="get_tab(index)" />
+        </scope>
+      </scope>
+    </scope>
+    

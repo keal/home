@@ -1,0 +1,39 @@
+<scope ilk="blob" lang="Ruby" name="thread">
+      <scope classrefs="StandardError" doc="thread.rb - thread support classes $Date: 2005/06/07&#xA;09:41:17 $ by Yukihiro Matsumoto &lt;matz@netlab.co.jp&gt;" ilk="class" line="16" lineend="17" name="ThreadError" />
+      <scope classrefs="Object" ilk="class" line="24" lineend="38" name="Thread">
+        <scope attributes="__classmethod__" doc="Wraps a block in Thread.critical, restoring the original&#xA;value upon exit from the critical section." ilk="function" line="29" lineend="37" name="exclusive" signature="Thread.exclusive" />
+      </scope>
+      <scope classrefs="Object" doc="Mutex implements a simple semaphore that can be used to&#xA;coordinate access to shared data from multiple concurrent&#xA;threads." ilk="class" line="61" lineend="159" name="Mutex">
+        <scope attributes="__ctor__" doc="Creates a new Mutex" ilk="function" line="65" lineend="70" name="initialize" signature="initialize" />
+        <scope doc="Returns +true+ if this lock is currently held by some&#xA;thread." ilk="function" line="75" lineend="77" name="locked?" signature="locked?" />
+        <scope doc="Attempts to obtain the lock and returns immediately." ilk="function" line="83" lineend="92" name="try_lock" signature="try_lock" />
+        <scope doc="Attempts to grab the lock and waits if it isn&apos;t available." ilk="function" line="97" lineend="105" name="lock" signature="lock" />
+        <scope doc="Releases the lock. Returns +nil+ if ref wasn&apos;t locked." ilk="function" line="110" lineend="126" name="unlock" signature="unlock" />
+        <scope doc="Obtains a lock, runs the block, and releases the lock when&#xA;the block completes." ilk="function" line="132" lineend="139" name="synchronize" signature="synchronize" />
+        <scope doc="If the mutex is locked, unlocks the mutex, wakes one waiting&#xA;thread, and yields in a critical section." ilk="function" line="145" lineend="158" name="exclusive_unlock" signature="exclusive_unlock" />
+      </scope>
+      <scope classrefs="Object" doc="ConditionVariable objects augment class Mutex." ilk="class" line="188" lineend="238" name="ConditionVariable">
+        <scope attributes="__ctor__" doc="Creates a new ConditionVariable" ilk="function" line="192" lineend="194" name="initialize" signature="initialize" />
+        <scope doc="Releases the lock held in +mutex+ and waits; reacquires the&#xA;lock on wakeup." ilk="function" line="199" lineend="208" name="wait" signature="wait(mutex)" />
+        <scope doc="Wakes up the first thread in line waiting for this lock." ilk="function" line="213" lineend="220" name="signal" signature="signal" />
+        <scope doc="Wakes up all threads waiting for this lock." ilk="function" line="225" lineend="237" name="broadcast" signature="broadcast" />
+      </scope>
+      <scope classrefs="Object" doc="This class provides a way to synchronize communication&#xA;between threads." ilk="class" line="267" lineend="367" name="Queue">
+        <scope attributes="__ctor__" doc="Creates a new queue." ilk="function" line="271" lineend="277" name="initialize" signature="initialize" />
+        <scope doc="Pushes +obj+ to the queue." ilk="function" line="282" lineend="297" name="push" signature="push(obj)" />
+        <scope doc="Retrieves data from the queue." ilk="function" line="314" lineend="323" name="pop" signature="pop(non_block=false)" />
+        <scope doc="Returns +true+ is the queue is empty." ilk="function" line="338" lineend="340" name="empty?" signature="empty?" />
+        <scope doc="Removes all objects from the queue." ilk="function" line="345" lineend="347" name="clear" signature="clear" />
+        <scope doc="Returns the length of the queue." ilk="function" line="352" lineend="354" name="length" signature="length" />
+        <scope doc="Returns the number of threads waiting on the queue." ilk="function" line="364" lineend="366" name="num_waiting" signature="num_waiting" />
+      </scope>
+      <scope classrefs="Queue" doc="This class represents queues of specified size capacity." ilk="class" line="375" lineend="481" name="SizedQueue">
+        <scope attributes="__ctor__" doc="Creates a fixed-length queue with a maximum size of +max+." ilk="function" line="379" lineend="385" name="initialize" signature="initialize(max)" />
+        <scope doc="Returns the maximum size of the queue." ilk="function" line="390" lineend="392" name="max" signature="max" />
+        <scope doc="Sets the maximum size of the queue." ilk="function" line="397" lineend="416" name="max=" signature="max=(max)" />
+        <scope doc="Pushes +obj+ to the queue." ilk="function" line="422" lineend="430" name="push" signature="push(obj)" />
+        <scope doc="Retrieves data from the queue and runs a waiting thread, if&#xA;any." ilk="function" line="445" lineend="463" name="pop" signature="pop(*args)" />
+        <scope doc="Returns the number of threads waiting on the queue." ilk="function" line="478" lineend="480" name="num_waiting" signature="num_waiting" />
+      </scope>
+    </scope>
+    

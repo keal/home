@@ -1,0 +1,78 @@
+<scope ilk="blob" lang="Ruby" name="tk/namespace">
+      <import line="5" module="tk" symbol="*" />
+      <scope classrefs="TkObject" doc="tk/namespace.rb : methods to manipulate Tcl/Tk namespace by&#xA;Hidetoshi Nagai &lt;nagai@ai.kyutech.ac.jp&gt;" ilk="class" line="7" lineend="484" name="TkNamespace">
+        <scope attributes="__classmethod__" ilk="function" line="24" lineend="26" name="id2obj" signature="TkNamespace.id2obj(id)" />
+        <scope classrefs="TkObject" ilk="class" line="30" lineend="121" name="Ensemble">
+          <scope ilk="function" line="31" lineend="33" name="__cget_cmd" signature="__cget_cmd" />
+          <scope ilk="function" line="36" lineend="38" name="__config_cmd" signature="__config_cmd" />
+          <scope ilk="function" line="41" lineend="44" name="__configinfo_struct" signature="__configinfo_struct" />
+          <scope ilk="function" line="47" lineend="49" name="__boolval_optkeys" signature="__boolval_optkeys" />
+          <scope ilk="function" line="52" lineend="54" name="__listval_optkeys" signature="__listval_optkeys" />
+          <scope attributes="__classmethod__" ilk="function" line="57" lineend="59" name="exist?" signature="self.exist?(ensemble)" />
+          <scope attributes="__ctor__" ilk="function" line="61" lineend="63" name="initialize" signature="initialize(keys = {})" />
+          <scope ilk="function" line="65" lineend="76" name="cget" signature="cget(slot)" />
+          <scope ilk="function" line="78" lineend="116" name="configinfo" signature="configinfo(slot = nil)" />
+          <scope ilk="function" line="118" lineend="120" name="exists?" signature="exists?" />
+        </scope>
+        <scope classrefs="Array" ilk="class" line="125" lineend="155" name="ScopeArgs">
+          <scope doc="alias __tk_call             tk_call alias&#xA;__tk_call_without_enc tk_call_without_enc alias&#xA;__tk_call_with_enc    tk_call_with_enc" ilk="function" line="131" lineend="136" name="tk_call" signature="tk_call(*args)" />
+          <scope ilk="function" line="137" lineend="142" name="tk_call_without_enc" signature="tk_call_without_enc(*args)" />
+          <scope ilk="function" line="143" lineend="148" name="tk_call_with_enc" signature="tk_call_with_enc(*args)" />
+          <scope attributes="__ctor__" ilk="function" line="150" lineend="154" name="initialize" signature="initialize(namespace, *args)" />
+          <import symbol="Tk" />
+        </scope>
+        <scope classrefs="TkObject" ilk="class" line="159" lineend="177" name="NsCode">
+          <scope attributes="__ctor__" ilk="function" line="160" lineend="163" name="initialize" signature="initialize(scope, use_obj_id = false)" />
+          <scope ilk="function" line="164" lineend="166" name="path" signature="path" />
+          <scope ilk="function" line="167" lineend="169" name="to_eval" signature="to_eval" />
+          <scope ilk="function" line="170" lineend="176" name="call" signature="call(*args)" />
+        </scope>
+        <scope ilk="function" line="181" lineend="189" name="install_cmd" signature="install_cmd(cmd)" />
+        <scope ilk="function" line="194" lineend="199" name="tk_call" signature="tk_call(*args)" />
+        <scope ilk="function" line="200" lineend="205" name="tk_call_without_enc" signature="tk_call_without_enc(*args)" />
+        <scope ilk="function" line="206" lineend="211" name="tk_call_with_enc" signature="tk_call_with_enc(*args)" />
+        <scope attributes="__ctor__" ilk="function" line="216" lineend="256" name="initialize" signature="initialize(name = nil, parent = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="258" lineend="269" name="children" signature="self.children(*args)" />
+        <scope ilk="function" line="270" lineend="272" name="children" signature="children(pattern=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="274" lineend="276" name="code" signature="self.code(script = Proc.new)" />
+        <scope ilk="function" line="290" lineend="311" name="code" signature="code(script = Proc.new)" />
+        <scope attributes="__classmethod__" ilk="function" line="313" lineend="315" name="current_path" signature="self.current_path" />
+        <scope ilk="function" line="316" lineend="318" name="current_path" signature="current_path" />
+        <scope attributes="__classmethod__" ilk="function" line="320" lineend="327" name="current" signature="self.current" />
+        <scope ilk="function" line="328" lineend="332" name="current_namespace" signature="current_namespace" />
+        <scope attributes="__classmethod__" ilk="function" line="335" lineend="344" name="delete" signature="self.delete(*ns_list)" />
+        <scope ilk="function" line="345" lineend="347" name="delete" signature="delete" />
+        <scope attributes="__classmethod__" ilk="function" line="349" lineend="351" name="ensemble_create" signature="self.ensemble_create(*keys)" />
+        <scope attributes="__classmethod__" ilk="function" line="352" lineend="358" name="ensemble_configure" signature="self.ensemble_configure(cmd, slot, value=None)" />
+        <scope attributes="__classmethod__" ilk="function" line="359" lineend="367" name="ensemble_configinfo" signature="self.ensemble_configinfo(cmd, slot = nil)" />
+        <scope attributes="__classmethod__" ilk="function" line="368" lineend="370" name="ensemble_exist?" signature="self.ensemble_exist?(cmd)" />
+        <scope attributes="__classmethod__" ilk="function" line="372" lineend="375" name="eval" signature="self.eval(namespace, cmd = Proc.new, *args)" />
+        <scope ilk="function" line="387" lineend="392" name="eval" signature="eval(cmd = Proc.new, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="394" lineend="396" name="exist?" signature="self.exist?(ns)" />
+        <scope ilk="function" line="397" lineend="399" name="exist?" signature="exist?" />
+        <scope attributes="__classmethod__" ilk="function" line="401" lineend="403" name="export" signature="self.export(*patterns)" />
+        <scope attributes="__classmethod__" ilk="function" line="404" lineend="406" name="export_with_clear" signature="self.export_with_clear(*patterns)" />
+        <scope ilk="function" line="407" lineend="409" name="export" signature="export" />
+        <scope ilk="function" line="410" lineend="412" name="export_with_clear" signature="export_with_clear" />
+        <scope attributes="__classmethod__" ilk="function" line="414" lineend="416" name="forget" signature="self.forget(*patterns)" />
+        <scope ilk="function" line="417" lineend="419" name="forget" signature="forget" />
+        <scope attributes="__classmethod__" ilk="function" line="421" lineend="423" name="import" signature="self.import(*patterns)" />
+        <scope attributes="__classmethod__" ilk="function" line="424" lineend="426" name="force_import" signature="self.force_import(*patterns)" />
+        <scope ilk="function" line="427" lineend="429" name="import" signature="import" />
+        <scope ilk="function" line="430" lineend="432" name="force_import" signature="force_import" />
+        <scope attributes="__classmethod__" ilk="function" line="434" lineend="436" name="inscope" signature="self.inscope(namespace, script, *args)" />
+        <scope ilk="function" line="437" lineend="439" name="inscope" signature="inscope(script, *args)" />
+        <scope attributes="__classmethod__" ilk="function" line="441" lineend="443" name="origin" signature="self.origin(cmd)" />
+        <scope attributes="__classmethod__" ilk="function" line="445" lineend="452" name="parent" signature="self.parent(namespace=None)" />
+        <scope ilk="function" line="453" lineend="455" name="parent" signature="parent" />
+        <scope attributes="__classmethod__" ilk="function" line="457" lineend="459" name="get_path" signature="self.get_path" />
+        <scope attributes="__classmethod__" ilk="function" line="460" lineend="462" name="set_path" signature="self.set_path(*namespace_list)" />
+        <scope ilk="function" line="463" lineend="465" name="set_path" signature="set_path" />
+        <scope attributes="__classmethod__" ilk="function" line="467" lineend="469" name="qualifiers" signature="self.qualifiers(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="471" lineend="473" name="tail" signature="self.tail(str)" />
+        <scope attributes="__classmethod__" ilk="function" line="475" lineend="477" name="which" signature="self.which(name)" />
+        <scope attributes="__classmethod__" ilk="function" line="478" lineend="480" name="which_command" signature="self.which_command(name)" />
+        <scope attributes="__classmethod__" ilk="function" line="481" lineend="483" name="which_variable" signature="self.which_variable(name)" />
+      </scope>
+    </scope>
+    

@@ -1,0 +1,21 @@
+<scope ilk="blob" lang="Ruby" name="tkextlib/bwidget/dynamichelp">
+      <import line="6" module="tk" symbol="*" />
+      <import line="7" module="tkextlib/bwidget.rb" symbol="*" />
+      <scope doc="tkextlib/bwidget/dynamichelp.rb by Hidetoshi NAGAI&#xA;(nagai@ai.kyutech.ac.jp)" ilk="namespace" line="9" lineend="14" name="Tk">
+        <scope ilk="namespace" line="10" lineend="13" name="BWidget">
+          <scope ilk="namespace" line="11" lineend="12" name="DynamicHelp" />
+        </scope>
+      </scope>
+      <scope ilk="namespace" line="16" lineend="56" name="Tk::BWidget::">
+        <scope attributes="__classmethod__" ilk="function" line="20" lineend="22" name="__pathname" signature="self.__pathname" />
+        <scope ilk="function" line="24" lineend="26" name="__strval_optkeys" signature="__strval_optkeys" />
+        <scope attributes="__classmethod__" ilk="function" line="29" lineend="31" name="__cget_cmd[" signature="self.__cget_cmd [" />
+        <scope attributes="__classmethod__" ilk="function" line="33" lineend="35" name="__config_cmd[" signature="self.__config_cmd [" />
+        <scope attributes="__classmethod__" ilk="function" line="37" lineend="39" name="cget" signature="self.cget(slot)" />
+        <scope attributes="__classmethod__" ilk="function" line="41" lineend="43" name="add" signature="self.add(widget, keys={})" />
+        <scope attributes="__classmethod__" ilk="function" line="45" lineend="47" name="delete" signature="self.delete(widget)" />
+        <scope attributes="__classmethod__" ilk="function" line="49" lineend="51" name="include" signature="self.include(klass, type)" />
+        <scope attributes="__classmethod__" ilk="function" line="53" lineend="55" name="sethelp" signature="self.sethelp(path, subpath, force=None)" />
+      </scope>
+    </scope>
+    

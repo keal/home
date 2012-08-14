@@ -1,0 +1,34 @@
+<scope ilk="blob" lang="Ruby" name="xmlrpc/utils">
+      <scope doc="Defines ParserWriterChooseMixin, which makes it possible to&#xA;choose a different XML writer and/or XML parser then the&#xA;default one." ilk="namespace" line="12" lineend="164" name="XMLRPC">
+        <scope doc="This module enables a user-class to be marshalled by XML-RPC&#xA;for Ruby into a Hash, with one additional key/value pair&#xA;&quot;___class___&quot; =&gt; ClassName" ilk="namespace" line="19" lineend="20" name="Marshallable" />
+        <scope ilk="namespace" line="23" lineend="53" name="ParserWriterChooseMixin">
+          <scope ilk="function" line="25" lineend="28" name="set_writer" signature="set_writer(writer)" />
+          <scope ilk="function" line="30" lineend="33" name="set_parser" signature="set_parser(parser)" />
+          <scope ilk="function" line="37" lineend="43" name="create" signature="create" />
+          <scope ilk="function" line="45" lineend="51" name="parser" signature="parser" />
+        </scope>
+        <scope doc="module ParserWriterChooseMixin" ilk="namespace" line="56" name="Service" />
+        <scope classrefs="Object" ilk="class" line="63" lineend="99" name="BasicInterface">
+          <scope ilk="function" line="64" lineend="64" name="prefix" />
+          <scope ilk="function" line="64" lineend="64" name="methods" />
+          <scope attributes="__ctor__" ilk="function" line="66" lineend="69" name="initialize" signature="initialize(prefix)" />
+          <scope ilk="function" line="71" lineend="83" name="add_method" signature="add_method(sig, help=nil, meth_name=nil)" />
+          <scope doc="---------------------------------" ilk="function" line="87" lineend="97" name="parse_sig" signature="parse_sig(sig)" />
+        </scope>
+        <scope classrefs="BasicInterface" doc="class BasicInterface" ilk="class" line="105" lineend="125" name="Interface">
+          <scope attributes="__ctor__" ilk="function" line="106" lineend="110" name="initialize" signature="initialize(prefix, &amp;p)" />
+          <scope ilk="function" line="112" lineend="117" name="get_methods" signature="get_methods(obj, delim=&quot;.&quot;)" />
+          <scope doc="---------------------------------" ilk="function" line="121" lineend="123" name="meth" signature="meth(*a)" />
+        </scope>
+        <scope classrefs="BasicInterface" doc="class Interface" ilk="class" line="127" lineend="138" name="PublicInstanceMethodsInterface">
+          <scope attributes="__ctor__" ilk="function" line="128" lineend="130" name="initialize" signature="initialize(prefix)" />
+          <scope ilk="function" line="132" lineend="137" name="get_methods" signature="get_methods(obj, delim=&quot;.&quot;)" />
+        </scope>
+        <scope attributes="__classmethod__" doc="module Service" ilk="function" line="147" lineend="149" name="interface" signature="self.interface(prefix, &amp;p)" />
+        <scope attributes="__classmethod__" doc="short-cut for creating a PublicInstanceMethodsInterface" ilk="function" line="152" lineend="154" name="iPIMethods" signature="self.iPIMethods(prefix)" />
+        <scope ilk="namespace" line="157" lineend="162" name="ParseContentType">
+          <scope ilk="function" line="158" lineend="161" name="parse_content_type" signature="parse_content_type(str)" />
+        </scope>
+      </scope>
+    </scope>
+    

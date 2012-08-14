@@ -1,0 +1,14 @@
+<scope ilk="blob" lang="Ruby" name="soap/marshal">
+      <import line="9" module="soap/mapping" symbol="*" />
+      <import line="10" module="soap/processor" symbol="*" />
+      <scope doc="SOAP4R - Marshalling/Unmarshalling Ruby&apos;s object using SOAP&#xA;Encoding." ilk="namespace" line="13" name="SOAP" />
+      <scope ilk="namespace" line="16" lineend="53" name="Marshal">
+        <scope classrefs="Object" doc="Trying xsd:dateTime data to be recovered as aTime." ilk="class" line="26" lineend="52" name="self">
+          <scope ilk="function" line="28" lineend="30" name="dump" signature="dump(obj, io = nil)" />
+          <scope ilk="function" line="32" lineend="34" name="load" signature="load(stream)" />
+          <scope ilk="function" line="36" lineend="43" name="marshal" signature="marshal(obj, mapping_registry = MarshalMappingRegistry, io = nil)" />
+          <scope ilk="function" line="45" lineend="51" name="unmarshal" signature="unmarshal(stream, mapping_registry = MarshalMappingRegistry)" />
+        </scope>
+      </scope>
+    </scope>
+    

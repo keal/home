@@ -1,0 +1,4 @@
+<scope ilk="blob" lang="Ruby" name="tkfont">
+      <import line="4" module="tk/font" symbol="*" />
+    </scope>
+    

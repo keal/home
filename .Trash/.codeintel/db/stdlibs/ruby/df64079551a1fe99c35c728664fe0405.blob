@@ -1,0 +1,38 @@
+<scope ilk="blob" lang="Ruby" name="openssl/ssl">
+      <import line="17" module="openssl" symbol="*" />
+      <import line="18" module="openssl/buffering" symbol="*" />
+      <import line="19" module="fcntl" symbol="*" />
+      <scope ilk="namespace" line="21" lineend="135" name="OpenSSL">
+        <scope ilk="namespace" line="22" lineend="134" name="SSL">
+          <scope ilk="namespace" line="23" lineend="51" name="SocketForwarder">
+            <scope ilk="function" line="24" lineend="26" name="addr" signature="addr" />
+            <scope ilk="function" line="28" lineend="30" name="peeraddr" signature="peeraddr" />
+            <scope ilk="function" line="32" lineend="34" name="getsockopt" signature="getsockopt(level, optname, optval)" />
+            <scope ilk="function" line="36" lineend="38" name="setsockopt" signature="setsockopt(level, optname)" />
+            <scope ilk="function" line="40" lineend="42" name="fcntl" signature="fcntl(*args)" />
+            <scope ilk="function" line="44" lineend="46" name="closed?" signature="closed?" />
+            <scope ilk="function" line="48" lineend="50" name="do_not_reverse_lookup=" signature="do_not_reverse_lookup=(flag)" />
+          </scope>
+          <scope ilk="namespace" line="53" lineend="60" name="Nonblock">
+            <scope attributes="__ctor__" ilk="function" line="54" lineend="59" name="initialize" signature="initialize(*args)" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="62" lineend="93" name="SSLSocket">
+            <scope ilk="function" line="67" lineend="92" name="post_connection_check" signature="post_connection_check(hostname)" />
+            <import symbol="Buffering" />
+            <import symbol="SocketForwarder" />
+            <import symbol="Nonblock" />
+          </scope>
+          <scope classrefs="Object" ilk="class" line="95" lineend="133" name="SSLServer">
+            <scope ilk="function" line="97" lineend="97" name="start_immediately" />
+            <scope ilk="function" line="97" lineend="97" name="start_immediately=" />
+            <scope attributes="__ctor__" ilk="function" line="99" lineend="107" name="initialize" signature="initialize(svr, ctx)" />
+            <scope ilk="function" line="109" lineend="111" name="to_io" signature="to_io" />
+            <scope ilk="function" line="113" lineend="115" name="listen" signature="listen(backlog=5)" />
+            <scope ilk="function" line="117" lineend="128" name="accept" signature="accept" />
+            <scope ilk="function" line="130" lineend="132" name="close" signature="close" />
+            <import symbol="SocketForwarder" />
+          </scope>
+        </scope>
+      </scope>
+    </scope>
+    
